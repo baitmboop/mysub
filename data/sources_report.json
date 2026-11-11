@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-11T17:50:53+08:00",
- "total_nodes": 1259,
+ "generated_at": "2026-11-11T18:05:29+08:00",
+ "total_nodes": 1266,
  "by_source": {
   "Auto_proxy": 470,
   "NoMoreWalls": 425,
   "mahdibland": 112,
   "ermaozi": 111,
   "tg:@freeVPNjd→sub": 51,
-  "tg:@oneclickvpnkeys": 41,
+  "tg:@oneclickvpnkeys": 48,
   "go4sharing/sub": 18,
   "tg:@vpnfail_v2ray": 17,
   "freefq": 14
@@ -19,7 +19,7 @@
   "NoMoreWalls": 443,
   "mahdibland": 200,
   "tg:@freeVPNjd→sub": 100,
-  "tg:@oneclickvpnkeys": 72,
+  "tg:@oneclickvpnkeys": 87,
   "go4sharing/sub": 22,
   "ripaojiedian": 20,
   "tg:@vpnfail_v2ray": 20,
