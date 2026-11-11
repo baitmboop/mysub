@@ -41,6 +41,13 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: 代码自检
+        # 28 项边界测试, 不需要网络和内核, 5 秒内跑完。
+        # 放在最前面: 代码有结构性问题就立刻停, 不用等下载内核和跑完测速才发现。
+        run: |
+          pip install --quiet pyyaml
+          python3 selfcheck.py
+
       - name: 下载 mihomo 内核
         run: |
           set -euo pipefail
