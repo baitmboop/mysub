@@ -504,6 +504,74 @@ def t_http_proxy_to_uri():
     assert uri2 and uri2.startswith("http://q.example.com:8080"), uri2
 
 
+def t_surge_http_no_auth():
+    """iOS 端的关键: https 代理靠类型名表达, 不是靠 tls=true。
+
+    小火箭读 base64 时只认节点链接, 而普通 HTTP 代理没有公认的分享格式,
+    写成 https://host:port 会被当成网页地址 —— 这就是"列表里有、点了不通"。
+    Surge 的 [Proxy] 段有明确写法, 所以手机端必须吃这份 conf。
+    """
+    p = {"type": "http", "server": "51.159.225.196", "port": 23856,
+         "tls": True, "skip-cert-verify": True}
+    line = gateway._surge_line(p, "N22")
+    assert line == "N22 = https, 51.159.225.196, 23856, skip-cert-verify=true", line
+    # 无认证时绝不能留下空位参数 ", ," —— 客户端会把后面全部字段读错
+    assert ", ," not in line, line
+
+    p2 = {"type": "http", "server": "q.example.com", "port": 8080}
+    assert gateway._surge_line(p2, "N01") == "N01 = http, q.example.com, 8080"
+
+
+def t_surge_comma_guard():
+    """密码里带逗号会把一行拆成两个字段, 客户端可能导入成功却永远连不上。
+    输出端必须宁可跳过, 也不能写出一行看着正常实际是错的内容。"""
+    p = {"type": "ss", "server": "1.1.1.1", "port": 443,
+         "cipher": "aes-128-gcm", "password": "ab,cd"}
+    assert gateway._surge_line(p, "N01") is None
+    ok = {"type": "ss", "server": "1.1.1.1", "port": 443,
+          "cipher": "aes-128-gcm", "password": "abcd"}
+    assert gateway._surge_line(ok, "N01").startswith("N01 = ss, 1.1.1.1, 443")
+
+
+def t_surge_group_refs_exist():
+    """组里引用的名字必须都在 [Proxy] 里存在。
+
+    少一个, Surge 会整份配置导入失败; 名字对不上是最难查的那类错误, 因为
+    conf 看起来完全正常, 只有客户端知道它坏了。
+    """
+    pool = [
+        {"proto": "ss", "server": "1.1.1.1", "port": 443,
+         "cipher": "aes-128-gcm", "password": "pw"},
+        {"proto": "http", "server": "2.2.2.2", "port": 8443, "tls": True},
+    ]
+    conf = gateway.build_surge(pool, [], [])
+    txt = conf.splitlines()
+    assert "[Proxy]" in txt and "[Proxy Group]" in txt and "[Rule]" in txt
+    i, j = txt.index("[Proxy]"), txt.index("[Proxy Group]")
+    defined = {l.split(" = ")[0].strip() for l in txt[i + 1:j] if " = " in l}
+    groups = {}
+    for l in txt[j + 1:]:
+        if l.startswith("["):
+            break
+        if " = " in l:
+            k, v = l.split(" = ", 1)
+            groups[k.strip()] = [x.strip() for x in v.split(",")]
+    assert "自动选择" in groups and groups["自动选择"][0] == "url-test"
+    for gname, parts in groups.items():
+        for ref in parts[1:]:
+            if "=" in ref:      # url = ... / interval = ... 这类参数
+                continue
+            assert ref in defined or ref in groups, f"{gname} 引用了不存在的 {ref}"
+    assert txt[-1] == "FINAL,节点选择"
+
+
+def t_surge_empty_pool():
+    """一个节点都没有时不能产出空 [Proxy], 否则客户端导入即报错。"""
+    conf = gateway.build_surge([], [], [])
+    assert "DIRECT = direct" in conf
+    assert "节点选择 = select, DIRECT" in conf
+
+
 def t_yaml_null_literals():
     """订阅里用字符串 'null' 表示"无认证"(go4sharing 那份就是这么写的)。
     不清掉会生成 https://null:null@host —— 每次连接都被拒, 但测速阶段看不出来。"""

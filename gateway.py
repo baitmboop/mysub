@@ -421,6 +421,208 @@ def to_uri(n: dict) -> str | None:
     return None
 
 
+def _surge_safe(v) -> bool:
+    """Surge 配置是逗号分隔的纯文本, 没有转义机制。
+
+    值里出现逗号或换行就会把这一行拆成两个字段, 客户端要么解析报错、要么悄悄
+    丢掉后面全部参数(比如 password 被截断, 表现为"能导入但连不上")。宁可不收,
+    也不要写出一行看起来正常实际是错的内容。
+    """
+    s = str(v or "")
+    return "," not in s and "\n" not in s and "\r" not in s
+
+
+def _surge_line(p: dict, name: str) -> str | None:
+    """mihomo 节点 → Surge/Shadowrocket 的 [Proxy] 一行。
+
+    为什么要这份而不只是 base64: 普通 HTTP 代理没有公认的分享链接格式。
+    base64 里只能写成 https://host:port, 小火箭不认这种行, 于是"显示不可用"。
+    Surge 格式里 http/https 代理有明确写法, 是 iOS 端唯一可靠的表达方式。
+    """
+    t = p.get("type")
+    srv, port = p.get("server"), p.get("port")
+    if not t or not srv or not port:
+        return None
+    if not _surge_safe(p.get("password")) or not _surge_safe(p.get("username")):
+        return None
+    if not _surge_safe(srv) or not _surge_safe(name):
+        return None
+    head = f"{name} = {t}, {srv}, {port}"
+
+    if t == "ss":
+        if not p.get("cipher") or not p.get("password"):
+            return None
+        if not _surge_safe(p["cipher"]):
+            return None
+        return f"{head}, encrypt-method={p['cipher']}, password={p['password']}, udp-relay=false"
+
+    if t == "vmess":
+        if not p.get("uuid"):
+            return None
+        opts = [f"username={p['uuid']}", "vmess-aead=true"]
+        if p.get("tls"):
+            opts.append("tls=true")
+        if p.get("servername") or p.get("sni"):
+            opts.append(f"sni={p.get('servername') or p.get('sni')}")
+        if p.get("network") == "ws":
+            opts.append("ws=true")
+            if p.get("ws-opts"):
+                wo = p["ws-opts"] or {}
+                if wo.get("path"):
+                    opts.append(f"ws-path={wo['path']}")
+                hd = (wo.get("headers") or {})
+                host = hd.get("Host") or hd.get("host")
+                if host:
+                    opts.append(f"ws-headers=Host:{host}")
+        if p.get("skip-cert-verify"):
+            opts.append("skip-cert-verify=true")
+        return head + ", " + ", ".join(opts)
+
+    if t == "vless":
+        if not p.get("uuid"):
+            return None
+        opts = [f"username={p['uuid']}"]
+        if p.get("tls"):
+            opts.append("tls=true")
+        if p.get("servername") or p.get("sni"):
+            opts.append(f"sni={p.get('servername') or p.get('sni')}")
+        if p.get("flow"):
+            opts.append(f"flow={p['flow']}")
+        if p.get("network") == "ws":
+            opts.append("ws=true")
+            if p.get("ws-opts"):
+                wo = p["ws-opts"] or {}
+                if wo.get("path"):
+                    opts.append(f"ws-path={wo['path']}")
+                hd = (wo.get("headers") or {})
+                host = hd.get("Host") or hd.get("host")
+                if host:
+                    opts.append(f"ws-headers=Host:{host}")
+        # reality 参数 Surge 表达不了, 但 tls=true + sni 仍可能连通; 不通就靠测速淘汰
+        if p.get("skip-cert-verify"):
+            opts.append("skip-cert-verify=true")
+        return head + ", " + ", ".join(opts)
+
+    if t == "trojan":
+        if not p.get("password"):
+            return None
+        opts = [f"password={p['password']}"]
+        if p.get("sni"):
+            opts.append(f"sni={p['sni']}")
+        if p.get("skip-cert-verify"):
+            opts.append("skip-cert-verify=true")
+        return head + ", " + ", ".join(opts)
+
+    if t == "hysteria2":
+        if not p.get("password"):
+            return None
+        opts = [f"password={p['password']}"]
+        if p.get("sni"):
+            opts.append(f"sni={p['sni']}")
+        if p.get("skip-cert-verify"):
+            opts.append("skip-cert-verify=true")
+        return head + ", " + ", ".join(opts)
+
+    if t in ("http", "socks5"):
+        # 关键点: Surge 里 https 代理靠 "https" 这个类型名表达, 不是靠 tls=true。
+        # 没认证时直接省掉 username/password 两个位置参数。
+        kind = t
+        if t == "http" and p.get("tls"):
+            kind = "https"
+        cred = ""
+        if p.get("username") or p.get("password"):
+            cred = f", {p.get('username') or ''}, {p.get('password') or ''}"
+        opts = ""
+        if p.get("skip-cert-verify") and kind == "https":
+            opts = ", skip-cert-verify=true"
+        return f"{name} = {kind}, {srv}, {port}{cred}{opts}"
+
+    return None
+
+
+def build_surge(pool: list, private: list, fallback: list, namer=None) -> str:
+    """生成 Surge / Shadowrocket 配置 (.conf)。
+
+    为什么单独出这一份:
+      iOS 的 Shadowrocket 吃 base64 订阅时只认节点链接。普通 HTTP 代理没有统一的
+      分享链接格式, 只能退化成 https://host:port —— 小火箭会把它当成网页地址,
+      结果就是"列表里有、点了不通"。Surge 格式对 http/https 代理有明确写法,
+      又能带 url-test 组, 所以手机端这条路必须走 conf 而不是 base64。
+
+    节点名在这里用 N01/N02 这种纯 ASCII 短名: Surge 的 [Proxy Group] 是逗号分隔,
+    名字里带空格和点虽然多数版本能认, 但一旦解析器抠字眼就会整组失效, 不值得赌。
+    """
+    namer = namer or (lambda n, i: f"N{i:02d}")
+
+    lines_proxy: list[str] = ["DIRECT = direct"]
+    legend: list[str] = []
+    names: list[str] = []
+
+    def add(mihomo_proxy: dict, nm: str, info: str) -> None:
+        if nm in names:      # 重名会让客户端只认后者, 前面那个凭空消失
+            return
+        line = _surge_line(mihomo_proxy, nm)
+        if not line:
+            return
+        lines_proxy.append(line)
+        names.append(nm)
+        legend.append(f"# {nm:<5} {info}")
+
+    # 私有层通常是 mihomo 原样结构, 直接转
+    for i, p in enumerate(list(private) + list(fallback), 1):
+        nm = namer(p, i) if namer else f"P{i:02d}"
+        add(p, nm, f"{p.get('type')} {p.get('server')}:{p.get('port')}")
+
+    for i, n in enumerate(pool, 1):
+        p = to_mihomo(n, namer(n, i))
+        if not p:
+            continue
+        add(p, p["name"], f"{n.get('proto')} {n.get('server')}:{n.get('port')}")
+
+    if not names:
+        names = ["DIRECT"]
+
+    members = ", ".join(names)
+    group_lines = []
+    if names != ["DIRECT"]:
+        group_lines.append(
+            f"自动选择 = url-test, {members}, "
+            f"url = {TEST_URL}, interval = 300, tolerance = {AUTO_TOLERANCE}"
+        )
+        group_lines.append(f"节点选择 = select, 自动选择, {members}")
+        final = "节点选择"
+    else:
+        group_lines.append("节点选择 = select, DIRECT")
+        final = "节点选择"
+
+    bj = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(time.time() + 8 * 3600))
+    head = [
+        f"# nodepool · Shadowrocket / Surge 配置",
+        f"# 生成于 {bj} (北京时间)",
+        f"# 节点数 {len(names)}"
+        + (f" (自建 {len(private)} / 免费额度 {len(fallback)} / 免费池 {len(pool)})"
+           if names != ["DIRECT"] else ""),
+        "# 「自动选择」= url-test, 由手机当场测速择优, 不用手动点。",
+        "# 编号对照:",
+    ]
+    if names != ["DIRECT"]:
+        head += legend
+    body = (
+        head
+        + ["", "[General]", "loglevel = notify", "bypass-system = true",
+           "skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, "
+           "localhost, *.local, 100.64.0.0/10",
+           "dns-server = 223.5.5.5, 119.29.29.29, 1.1.1.1",
+           "",
+           "[Proxy]"]
+        + lines_proxy
+        + ["", "[Proxy Group]"]
+        + group_lines
+        + ["", "[Rule]", f"FINAL,{final}", ""]
+    )
+    return "\n".join(body)
+
+
 def tier_label(n: dict, idx: int) -> str:
     spd = n.get("speed") or 0
     return f"T2-{idx:02d} · {spd:.1f}MB/s"

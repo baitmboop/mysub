@@ -213,10 +213,14 @@ def main() -> int:
         sub_yaml = gateway.build_config(pool, private, fallback,
                                        namer=cloud_namer, runtime=False)
         sub_b64 = gateway.build_base64(pool, private, fallback, namer=cloud_namer)
+        sub_conf = gateway.build_surge(pool, private, fallback)
         with open(os.path.join(OUT, "sub.yaml"), "w", encoding="utf-8") as f:
             f.write(sub_yaml)
         with open(os.path.join(OUT, "sub-base64.txt"), "w", encoding="utf-8") as f:
             f.write(sub_b64)
+        # iOS/Shadowrocket 走这份: base64 表达不了 http 代理, 只有 conf 能
+        with open(os.path.join(OUT, "sub.conf"), "w", encoding="utf-8") as f:
+            f.write(sub_conf)
         with open(os.path.join(OUT, "nodes_best.json"), "w", encoding="utf-8") as f:
             json.dump(picked, f, ensure_ascii=False, indent=1)
 
@@ -243,7 +247,7 @@ def main() -> int:
         with open(os.path.join(OUT, "report.md"), "w", encoding="utf-8") as f:
             f.write("\n".join(lines) + "\n")
 
-        log(f"✅ 完成: sub.yaml / sub-base64.txt / report.md ({len(pool)} 个节点)")
+        log(f"✅ 完成: sub.yaml / sub-base64.txt / sub.conf / report.md ({len(pool)} 个节点)")
         return 0
     finally:
         try:
