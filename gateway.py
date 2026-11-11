@@ -228,7 +228,14 @@ def pool_nodes(history: dict, alive: dict | None = None,
             continue
         n["fp"] = fp
         pref = cn.get(f"{n['server']}:{n['port']}")
-        n["cn_ok"] = None if pref is None else int(bool(pref.get("ok")))
+        # ok 有三种状态, 不能压成两种:
+        #   1     实测能通
+        #   0     实测不通 → 踢出订阅
+        #   None  只记了一笔失败(timeout 首轮)还没定论 → 当作没测过, 不许踢
+        # 之前写成 int(bool(pref.get("ok"))), None 会被 bool() 变成 False(即 0),
+        # 于是"首轮只记账不判死"的节点反而被立刻踢掉了 —— 和意图完全相反。
+        n["cn_ok"] = (None if (pref is None or pref.get("ok") is None)
+                      else int(bool(pref["ok"])))
         if pref and pref.get("by"):
             n["cn_by"] = pref["by"]
         if pref and pref.get("latency"):
@@ -240,17 +247,39 @@ def pool_nodes(history: dict, alive: dict | None = None,
     # 中国实测明确不通的, 强制踢出订阅 —— 不设下限。
     # 之前用 MIN_KEEP 兜底过, 结果适得其反: 20 个节点里 18 个连不上时,
     # 兜底会把那 18 个又塞回订阅, 用户看到的就是"大半连不上"。
-    # 唯一例外: 通不通的比例太悬殊(>80%)时更像测量环境出了问题
-    # (比如换了个网络测), 这时不信这批数据, 保留原样等 7 天过期自愈。
-    dead = [n for n in out if n.get("cn_ok") == 0]
+    #
+    # 但"实测不通"有两种来源, 期望值完全相反, 必须分开算:
+    #   by=auto    订阅小样本实测。20 个死 16 个 → 大概率是本机网络换了,
+    #              不是节点同时全挂, 所以用比例兜底: 不信这批数据。
+    #   by=verify  全池普查。5922 个公开免费节点死掉八成是常态, 这个"异常比例"
+    #              恰恰就是要剔掉的东西。
+    # 混在一个阈值里的后果很具体: 通宵扫完全池, 因为存活率 18% < 20%,
+    # 一个节点都没被剔, 等于白跑。所以先把普查结论摘出来, 一律照办。
+    swept_dead = [n for n in out
+                  if n.get("cn_ok") == 0 and n.get("cn_by") == "verify"]
+    rest = [n for n in out
+            if not (n.get("cn_ok") == 0 and n.get("cn_by") == "verify")]
+
+    dead = [n for n in rest if n.get("cn_ok") == 0]
     auto_dead = [n for n in dead if n.get("cn_by") != "user_report"]
-    if out and auto_dead and len(auto_dead) > 0.8 * len(out):
+    if rest and auto_dead and len(auto_dead) > 0.8 * len(rest):
         # 自动测出来大面积不通, 更像测量环境有问题(比如换了网络测)。
         # 但用户亲口说"这个不行"的要照办 —— 那是人的判断, 比脚本可信。
-        out = [n for n in out
-               if not (n.get("cn_ok") == 0 and n.get("cn_by") == "user_report")]
+        rest = [n for n in rest
+                if not (n.get("cn_ok") == 0 and n.get("cn_by") == "user_report")]
     else:
-        out = [n for n in out if n.get("cn_ok") != 0]
+        rest = [n for n in rest if n.get("cn_ok") != 0]
+
+    # 剔完不够 MIN_KEEP 就说明判得太狠了, 把普查判死的按速度捞一半回来当候补。
+    # 宁可留几个死节点, 也不能让订阅悄悄变成空的 —— 那个错误没人会发现。
+    if len(rest) >= MIN_KEEP or not swept_dead:
+        out = rest
+    else:
+        swept_dead.sort(key=lambda n: -(n.get("cn_speed") or 0))
+        back = swept_dead[len(swept_dead) // 2:]
+        log(f"  ! 普查判死 {len(swept_dead)} 个后只剩 {len(rest)} 个(低于 "
+            f"MIN_KEEP={MIN_KEEP}), 捞回 {len(back)} 个当候补")
+        out = rest + back
     # "连得上但传不动数据"只是当下拥塞, 允许兜底: 踢完不够 MIN_KEEP 就留着候补。
     keep = [n for n in out if _cn_rank(n) != 1]
     if len(keep) >= MIN_KEEP:

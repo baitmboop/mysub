@@ -16,6 +16,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import gateway  # noqa: E402
 import probe    # noqa: E402
+import verify   # noqa: E402
 
 FAIL = []
 OK = []
@@ -153,6 +154,101 @@ def t_pool_cn_pref_mass_dead_not_trusted():
     cn = {f"10.3.0.{i}:443": {"ok": 0, "at": time.time()} for i in range(18)}
     out = gateway.pool_nodes(many, cn=cn)
     assert len(out) == 20, f"不该据此清空, 实际剩 {len(out)}"
+
+
+def t_cull_never_kills_alive_endpoint_sibling():
+    """同一端口上还有别的协议活着时, 不许按死掉的那个写 ok=0。"""
+    a, rec = verify.cull_decide({}, "refused",
+                                endpoint="1.2.3.4:443",
+                                alive_eps={"1.2.3.4:443"}, ts=1)
+    assert a == "skip" and rec is None, (a, rec)
+
+
+def t_cull_hard_dead_one_strike():
+    """refused 是铁证, 一次就封, 不等第二轮。"""
+    a, rec = verify.cull_decide({}, "refused", endpoint="1.2.3.4:443",
+                                alive_eps=set(), ts=1)
+    assert a == "kill" and rec["ok"] == 0, (a, rec)
+
+
+def t_cull_timeout_needs_two_rounds():
+    """timeout 可能只是本机抖动, 第一轮只记账。"""
+    a1, r1 = verify.cull_decide({}, "timeout", endpoint="1.2.3.4:443",
+                                alive_eps=set(), ts=1)
+    assert a1 == "note", a1
+    assert r1["ok"] is None and r1["strikes"] == 1, r1
+    a2, r2 = verify.cull_decide(r1, "timeout", endpoint="1.2.3.4:443",
+                                alive_eps=set(), ts=2)
+    assert a2 == "kill" and r2["ok"] == 0 and r2["strikes"] == 2, (a2, r2)
+
+
+def t_cull_timeout_then_refused_escalates():
+    """第一轮 timeout, 第二轮 refused —— 拿到铁证就立刻封, 不必等满两轮 timeout。"""
+    _, r1 = verify.cull_decide({}, "timeout", endpoint="1.2.3.4:443",
+                               alive_eps=set(), ts=1)
+    a, r = verify.cull_decide(r1, "refused", endpoint="1.2.3.4:443",
+                              alive_eps=set(), ts=2)
+    assert a == "kill", a
+
+
+def t_cull_user_report_not_overwritten():
+    """人报过不行的节点, 脚本不许改。"""
+    old = {"ok": 0, "by": "user_report", "at": 1}
+    a, rec = verify.cull_decide(old, "refused", endpoint="1.2.3.4:443",
+                                alive_eps=set(), ts=2)
+    assert a == "skip" and rec is None, (a, rec)
+
+
+def t_cull_keeps_old_fields_when_noting():
+    """只记账不封的时候, 原有的 ok/speed 不能被抹掉。"""
+    old = {"ok": 1, "speed": 1.5, "latency": 120, "by": "verify", "at": 1}
+    a, rec = verify.cull_decide(old, "timeout", endpoint="1.2.3.4:443",
+                                alive_eps=set(), ts=2)
+    assert a == "note" and rec["ok"] == 1 and rec["speed"] == 1.5, (a, rec)
+
+
+def t_pool_ok_none_means_undecided_not_dead():
+    """ok=None 是"只记了一笔失败, 还没定论", 不能被当成不通踢掉。
+
+    这条差点酿成误杀: verify 的 timeout 首轮只写 strikes/ok=None, 而
+    pool_nodes 原来用 int(bool(ok)) 解析, None → 0 → 立刻踢出订阅。
+    等于"为了不误杀而只记账", 结果记账本身就把节点杀了。
+    """
+    h = {f"n{i}": {"node": node(server=f"10.6.0.{i}", fp=f"n{i}",
+                                verify_ok=3), "last_ok": time.time()}
+         for i in range(6)}
+    cn = {f"10.6.0.{i}:443": {"ok": None, "strikes": 1, "by": "verify",
+                              "at": time.time()}
+          for i in range(6)}
+    out = gateway.pool_nodes(h, cn=cn)
+    assert len(out) == 6, f"未定论的不该被踢, 应剩 6 个, 实际 {len(out)}"
+    assert all(n["cn_ok"] is None for n in out), [n.get("cn_ok") for n in out]
+
+
+def t_pool_sweep_dead_culled_despite_low_survival():
+    """全池普查(by=verify)判死的不受 80% 兜底保护。
+
+    这是 2026-11-12 通宵全池扫描前发现的坑: 存活率本来就该低于 20%,
+    如果套用小样本的比例兜底, 扫一整夜一个都剔不掉, 等于白跑。
+    """
+    many = {f"n{i}": {"node": node(server=f"10.4.0.{i}", fp=f"n{i}",
+                                   verify_ok=3), "last_ok": time.time()}
+            for i in range(100)}
+    cn = {f"10.4.0.{i}:443": {"ok": 0, "by": "verify", "at": time.time()}
+          for i in range(85)}
+    out = gateway.pool_nodes(many, cn=cn)
+    assert len(out) == 15, f"普查判死的应该照剔, 应剩 15 个, 实际 {len(out)}"
+
+
+def t_pool_sweep_dead_never_empties_pool():
+    """全判死也不能把订阅清空 —— 留一半当候补, 但绝不能是原来的全量。"""
+    h = {f"n{i}": {"node": node(server=f"10.5.0.{i}", fp=f"n{i}",
+                                verify_ok=3), "last_ok": time.time()}
+         for i in range(6)}
+    cn = {f"10.5.0.{i}:443": {"ok": 0, "by": "verify", "at": time.time()}
+          for i in range(6)}
+    out = gateway.pool_nodes(h, cn=cn)
+    assert 0 < len(out) < 6, f"应捞回部分候补, 实际 {len(out)}"
 
 
 def t_pool_min_keep_fallback():

@@ -103,30 +103,71 @@ def key_of(n: dict) -> str:
 
 # --------------------------------------------------------------------------- L1
 
-def l1_tcp(n: dict, timeout: float = 1.5) -> bool:
-    """TCP 能不能连上。域名解析失败也算死。"""
+def l1_tcp_ex(n: dict, timeout: float = 1.5) -> tuple[bool, str]:
+    """TCP 能不能连上, 并且说清楚是**怎么**死的。
+
+    为什么不能只返回 bool: 两种失败的证据强度差很远, 而结果要拿去剔节点。
+
+        refused / reset   对方主机活着、明确拒绝 → 端口没开, 铁死。一次就够。
+        timeout           连不上也无人应答 → 可能只是本机这一分钟网络抖, 要复测。
+        dns               域名解析不了 → 源站写错了或域名已过期, 也算铁死。
+
+    混在一起就变成"一次抖动误杀一批好节点"。分开记, 剔除时区别对待。
+    """
     host, port = n.get("server"), n.get("port")
     if not host or not port:
-        return False
+        return False, "bad"
     try:
         with socket.create_connection((str(host), int(port)), timeout=timeout):
-            return True
-    except (OSError, ValueError):
-        return False
+            return True, "ok"
+    except socket.gaierror:
+        return False, "dns"
+    except (ConnectionRefusedError, ConnectionResetError):
+        return False, "refused"
+    except (socket.timeout, TimeoutError):
+        return False, "timeout"
+    except OSError as e:
+        # EHOSTUNREACH / ENETUNREACH: 路由层面就不通, 同样算明确的死
+        if getattr(e, "errno", None) in (51, 65):     # macOS: ENETUNREACH/EHOSTUNREACH
+            return False, "unreach"
+        return False, "timeout"
+    except ValueError:
+        return False, "bad"
+
+
+def l1_tcp(n: dict, timeout: float = 1.5) -> bool:
+    return l1_tcp_ex(n, timeout)[0]
+
+
+# 哪些失败一次就能判死。timeout 不在里面 —— 那个留到第二轮。
+HARD_DEAD = {"refused", "dns", "unreach", "bad"}
+CULL_STRIKES = 2        # 软失败(refused 以外)要连续这么多轮才封
 
 
 # --------------------------------------------------------------------------- L2/L3
 
 def _curl(args: list[str], timeout: int) -> tuple[float, str, float] | None:
-    """返回 (速度KB/s, http_code, 首包毫秒)。
+    """返回 (速度KB/s, http_code, 首包毫秒)。**绝对不许加 --noproxy**。
 
-    必须带 `--noproxy '*'`: 本机环境里挂着 http_proxy=127.0.0.1:49844(不走 VPN
-    的内部通道), curl 会优先读它, 把所有经内核的请求导去死端口。清环境变量不够
-    保险(大小写两套), 显式 --noproxy 才彻底。注意在 macOS curl 上 --noproxy 与
-    -x 同时给时 **-x 仍然生效**, 所以不会变成测直连。
+    这里踩过一个代价最大的坑, 记清楚, 别再加回来:
+
+        本机 curl 环境里挂着 http_proxy=127.0.0.1:49844(Clash Verge 的混合口),
+        会劫走所有请求。为了绕开它, 曾经给每条命令加了 `--noproxy '*'`。
+        结果 `--noproxy '*'` 匹配的是**目标主机**, 它把 `-x` 一起作废了 ——
+        于是每个节点测出来都是"本机直连速度", 而不是节点速度。
+
+    判决性证据(2026-11-12 01:31 实测):
+        curl -x http://127.0.0.1:1 https://.../generate_204          → 000
+        curl -x http://127.0.0.1:1 --noproxy '*' https://.../204     → 204
+    127.0.0.1:1 上什么都没有, 却返回 204, 说明请求根本没走代理。
+    用同样的方式喂一个假节点给 probe_kernel, 它报 'alive, 2083KB/s'。
+    那一整轮的"可用节点"全是假的。
+
+    正确的做法是清环境变量(CLEAN_ENV, 大小写两套都清), 让 `-x` 成为唯一的
+    代理设置。环境干净时 `-x` 必然生效 —— 上面第一条 000 就是证明。
     """
     out = subprocess.run(
-        ["curl", "-s", "-o", "/dev/null", "-m", str(timeout), "--noproxy", "*", *args,
+        ["curl", "-s", "-o", "/dev/null", "-m", str(timeout), *args,
          "-w", "%{speed_download} %{http_code} %{time_starttransfer}"],
         capture_output=True, text=True, env=CLEAN_ENV).stdout.split()
     if len(out) < 3:
@@ -188,8 +229,8 @@ def _kernel_probe(port: int) -> dict:
     差 800 倍。多个 mihomo 实例同时测速会互相拖垮 CPU 和带宽, 测出来的
     全是假低速。所以 deep_workers 默认 1。
 
-    所有请求都走本文件的 _curl(带 --noproxy), 不要用 sweep_cn.curl_via ——
-    后者没带 --noproxy, 会被本机 49844 那个代理劫走, 导致每个节点都"探测失败"。
+    所有请求都走本文件的 _curl, 不要用 sweep_cn.curl_via —— 后者只清了大写的
+    HTTP_PROXY, 小写 http_proxy 还活着, 会把请求导去本机 Clash 的口。
     """
     via = ["-x", f"http://127.0.0.1:{port}"]
     lat = None
@@ -301,6 +342,33 @@ def _free_port(start: int = 28900, span: int = 200) -> int:
     raise RuntimeError("no free port")
 
 
+CANARY_KERNEL = {"proto": "ss", "server": "127.0.0.1", "port": 1,
+                 "cipher": "aes-256-gcm", "password": "x"}
+CANARY_DIRECT = {"proto": "http", "server": "127.0.0.1", "port": 1}
+
+
+def canary() -> list[str]:
+    """开跑前证明探测器真的在走代理: 指向 127.0.0.1:1 的假节点必须判死。
+
+    这个检查是 2026-11-12 那轮的代价换来的。当时 `--noproxy '*'` 把 `-x` 一起
+    作废, 探测器实际在测本机直连, 于是假节点报 'alive, 2083KB/s', 一整轮 856 个
+    "通过 L1"的节点全被判活, 而且每一条都看着很像真的(有速度、有延迟、有分布)。
+
+    这种错误的可怕之处在于结果是"变好"而不是"变坏"—— 跑出来的数字比之前漂亮得多,
+    人只会觉得运气好, 不会去查。所以必须有一条谁也无法辩解的反证: 死节点绝不可能通。
+    """
+    bad = []
+    r = probe_kernel(CANARY_KERNEL)
+    if r.get("verdict") != "dead":
+        bad.append(f"内核通道把假节点判成 {r.get('verdict')} "
+                   f"({r.get('speed')}KB/s) —— 请求没走代理")
+    r = probe_direct(CANARY_DIRECT)
+    if r.get("verdict") != "dead":
+        bad.append(f"curl 直测通道把假节点判成 {r.get('verdict')} "
+                   f"({r.get('speed')}KB/s) —— 请求没走代理")
+    return bad
+
+
 def classify(n: dict) -> dict:
     proto = (n.get("proto") or n.get("type") or "").lower()
     if not l1_tcp(n):
@@ -331,22 +399,37 @@ def main() -> int:
     ap.add_argument("--file", help="从 JSON 文件读节点列表")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--workers", type=int, default=6, help="TCP 阶段并发")
+    ap.add_argument("--tcp-timeout", type=float, default=1.5,
+                    help="L1 连接超时秒数。全池普查用 1.5s 够快, 但会把远节点"
+                         "和慢节点扫成超时: 实测 4026 个 'timeout' 里低并发重测"
+                         "有 13%% 其实连得上(其中 1 个要 2.25s)。补漏时开到 3.0")
     ap.add_argument("--deep-workers", type=int, default=1,
                     help="内核阶段并发。必须保持 1: 并发多个内核实例会让"
                          "测速失真几百倍(实测 551KB/s → 0.7KB/s)")
     ap.add_argument("--direct-workers", type=int, default=8,
                     help="http/socks5 直测并发。走 curl 无内核, 不受上面的限制")
     ap.add_argument("--resume", action="store_true", help="跳过已有结论的节点")
+    ap.add_argument("--no-canary", action="store_true",
+                    help="跳过入口自检。只在明确知道自己在干什么时用 —— "
+                         "自检不过说明整套测量是假的")
     ap.add_argument("--report", action="store_true", help="只打印已有结果")
     ap.add_argument("--out", default=str(OUT))
     ap.add_argument("--apply", metavar="NODES_JSON",
                     help="把本轮 alive 的节点并入 cn_pref + pool_history, "
                          "参数是这些节点的原始 JSON(verify 结果里不带完整配置)")
+    ap.add_argument("--cull", action="store_true",
+                    help="配合 --apply: 把 L1 判死的也写进 cn_pref(ok=0), "
+                         "gateway 会据此把它们踢出订阅。refused/dns 一次即封, "
+                         "timeout 要连续两轮")
     args = ap.parse_args()
 
     done: dict = gateway.load_json(Path(args.out), {})
     if args.report:
         summarize(done)
+        # --report 也允许落库, 这样通宵跑到一半被打断时, 已经测出来的部分
+        # 不至于白丢 —— 重新 --report --apply 一次就能把已有的结论写进去。
+        if args.apply:
+            apply_results(Path(args.apply), done, cull=args.cull)
         return 0
 
     nodes = load_nodes(args)
@@ -358,20 +441,38 @@ def main() -> int:
     if args.limit:
         nodes = nodes[: args.limit]
 
-    log(f"待验 {len(nodes)} 个; 阶段1 TCP 并发 {args.workers}, 阶段2 并发 {args.deep_workers}")
+    if not args.no_canary:
+        log("入口自检: 假节点必须被判死(否则说明请求没走代理)...")
+        bad = canary()
+        if bad:
+            for m in bad:
+                log(f"  ✗ {m}")
+            log("中止。这一轮的数据会全部是假的, 别跑。")
+            return 2
+        log("  ✓ 内核通道 / curl 通道都正确判死")
+
+    log(f"待验 {len(nodes)} 个; 阶段1 TCP 并发 {args.workers} "
+        f"超时 {args.tcp_timeout}s, 阶段2 并发 {args.deep_workers}")
     if args.deep_workers > 1:
         log("  ! 警告: 阶段2 并发 >1 会让测速严重失真(实测 551→0.7KB/s), 结果只可信 '通/不通'")
 
     # ---- L1: TCP。高并发, 大部分节点死在这里, 成本只有 1.5 秒。
     t0 = time.time()
     alive: list[dict] = []
+    reasons: dict[str, int] = {}
     with ThreadPoolExecutor(max_workers=max(4, args.workers * 4)) as ex:
-        for n, ok in zip(nodes, ex.map(l1_tcp, nodes)):
+        for n, (ok, why) in zip(nodes, ex.map(
+                lambda x: l1_tcp_ex(x, args.tcp_timeout), nodes)):
             if ok:
                 alive.append(n)
             else:
-                done[key_of(n)] = {"verdict": "dead", "stage": "tcp", "at": now()}
+                reasons[why] = reasons.get(why, 0) + 1
+                done[key_of(n)] = {"verdict": "dead", "stage": "tcp",
+                                   "reason": why, "at": now()}
+    detail = " ".join(f"{k}={v}" for k, v in sorted(reasons.items()))
     log(f"  L1 TCP 通过 {len(alive)}/{len(nodes)}, 用时 {time.time()-t0:.0f}s")
+    if detail:
+        log(f"    死因: {detail}")
 
     # ---- L2+L3: 协议探测 + 测速
     #
@@ -410,7 +511,7 @@ def main() -> int:
     save(Path(args.out), done)
     summarize(done)
     if args.apply:
-        apply_results(Path(args.apply), done)
+        apply_results(Path(args.apply), done, cull=args.cull)
     return 0
 
 
@@ -418,13 +519,47 @@ def now() -> str:
     return time.strftime("%Y-%m-%d %H:%M:%S")
 
 
-def apply_results(nodes_json: Path, done: dict) -> None:
-    """把实测可用的节点写进 cn_pref(实测结论) 和 pool_history(节点本体)。
+def cull_decide(old: dict, why: str, *, endpoint: str, alive_eps: set,
+                ts: int) -> tuple[str, dict | None]:
+    """判死一个节点该不该落库、落成什么。返回 (action, 新记录)。
+
+    这里是全流程唯一会"删东西"的地方, 所以规则单独拎出来, 让它能被自检直接测。
+    三条规矩, 每一条都对应一次真实的翻车可能:
+
+      skip  本轮这个端点上还有别的协议活着 → 不许写 ok=0。
+            cn_pref 只按 server:port 索引, 写了会把活的一起踢掉(池里 30 处)。
+      skip  人亲口报过这个节点不行 → 脚本不许盖人的判断。
+      note  软失败(timeout)第一轮只记一笔, 下一轮还死才动手。
+      kill  refused / dns / unreach 是铁证: 主机明确拒绝或域名没了, 一次就封。
+    """
+    if endpoint in alive_eps:
+        return "skip", None
+    if old.get("by") == "user_report":
+        return "skip", None
+
+    strikes = int(old.get("strikes") or 0) + 1
+    if why in HARD_DEAD:
+        strikes = max(strikes, CULL_STRIKES)
+    if strikes < CULL_STRIKES:
+        return "note", {"ok": old.get("ok"), "latency": old.get("latency"),
+                        "speed": old.get("speed"), "at": ts,
+                        "by": old.get("by") or "verify",
+                        "strikes": strikes, "last_fail": why}
+    return "kill", {"ok": 0, "latency": None, "speed": None, "at": ts,
+                    "by": "verify", "strikes": strikes, "last_fail": why}
+
+
+def apply_results(nodes_json: Path, done: dict, *, cull: bool = False) -> None:
+    """把实测结论写进 cn_pref(实测证据) 和 pool_history(节点本体)。
 
     两步都要做, 少一步都没用:
       - 只写 cn_pref → ci_build 在 pool_history 里找不到这个节点, 加不了;
       - 只写 history → 云端探测仍然会把它筛掉, 因为国内好用的节点往往在
         Azure 上连着都费劲(见 ci_build 里的 _cn_ok 注释)。
+
+    cull=True 时把判死的也写进去 (ok:0)。这一步才是"剔垃圾"真正落地的地方:
+    gateway.pool_nodes 看到 ok==0 会强制踢出订阅, 不设下限。不写就等于没剔,
+    池子里几千个死节点下一轮还会重新参与排序。
 
     单位注意: cn_pref 的 speed 是 **MB/s**(历史约定, sweep_cn 也这么写),
     verify 内部一律用 KB/s, 这里必须换算, 否则筛选阈值会差 1024 倍。
@@ -435,15 +570,39 @@ def apply_results(nodes_json: Path, done: dict) -> None:
     pref = gateway.load_json(gateway.CN_PREF, {})
     hist = gateway.load_json(gateway.HISTORY, {})
     ts = int(time.time())
-    added = updated = 0
+    added = updated = killed = 0
+
+    # 本轮实测确定能用的端点, 剔除时一律避让。
+    #
+    # 原因: cn_pref 只用 "server:port" 索引, 不带协议。而同一个端口上同时挂
+    # 多种协议是真实存在的(池里 30 处, 如 34.143.159.175:443 上 vmess/trojan/ss
+    # 各一份)。如果按"死掉的那个协议"写 ok=0, gateway 会把同一端点上的活节点
+    # 一起踢出订阅 —— 剔垃圾变成误杀, 而且事后看不出来是谁干的。
+    alive_eps = {f"{by_key[k].get('server')}:{by_key[k].get('port')}"
+                 for k, r in done.items()
+                 if r.get("verdict") == "alive" and k in by_key}
 
     for key, r in done.items():
-        if r.get("verdict") != "alive":
-            continue
         node = by_key.get(key)
         if not node:
             continue
         endpoint = f"{node.get('server')}:{node.get('port')}"
+
+        if r.get("verdict") != "alive":
+            if not cull or r.get("stage") != "tcp":
+                continue
+            why = r.get("reason") or "timeout"
+            action, rec = cull_decide(pref.get(endpoint) or {}, why,
+                                      endpoint=endpoint, alive_eps=alive_eps,
+                                      ts=ts)
+            if action == "skip":
+                continue
+            pref[endpoint] = rec
+            if action == "kill":
+                killed += 1
+            continue
+
+        # 本轮实测可用: 直接覆盖, 包括盖掉之前误判的 ok=0
         pref[endpoint] = {
             "ok": 1,
             "latency": r.get("latency"),
@@ -465,7 +624,19 @@ def apply_results(nodes_json: Path, done: dict) -> None:
     gateway.save_json(gateway.CN_PREF, pref)
     gateway.save_json(gateway.HISTORY, hist)
     log(f"\n已写入: cn_pref {len(pref)} 条 / pool_history {len(hist)} 条 "
-        f"(新增 {added}, 刷新 {updated})")
+        f"(新增 {added}, 刷新 {updated}, 判死 {killed})")
+
+    # 写完立刻回算一次"订阅还能剩几个"。剔垃圾最容易翻车的地方是一路剔到空,
+    # 而且不会报错 —— 下一轮 CI 把那几个死节点又筛掉, 订阅就静悄悄地变空了。
+    # 这里提前喊出来, 比早上发现订阅 0 个节点强。
+    try:
+        n = len(gateway.pool_nodes(hist))
+        log(f"  订阅候选(按新 cn_pref 回算): {n} 个")
+        if n < gateway.MIN_KEEP:
+            log(f"  ! 警告: 低于 MIN_KEEP({gateway.MIN_KEEP}), "
+                f"先别重建订阅, 检查是不是大面积误判")
+    except Exception as e:                                    # noqa: BLE001
+        log(f"  回算订阅规模失败: {e}")
 
 
 def save(path: Path, done: dict) -> None:
