@@ -223,6 +223,11 @@ def pool_nodes(history: dict, alive: dict | None = None,
         n = dict(rec.get("node") or {})
         if not n.get("server"):
             continue
+        # pool_history 里的节点本体有两种历史写法: 一种带 proto, 一种只有 type
+        # (apply_results 早期写的是 type)。统一成 proto, 否则 to_mihomo 认不出类型,
+        # 节点会静默地从订阅里消失 —— 13 个池子只出 4 个就是这么来的。
+        if not n.get("proto") and n.get("type"):
+            n["proto"] = n["type"]
         # 明确复检不合格的不进订阅, 免得好节点挂了它顶上来
         if n.get("verify_ok") is not None and n["verify_ok"] < 2:
             continue

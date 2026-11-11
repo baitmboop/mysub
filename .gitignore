@@ -17,3 +17,6 @@ out/nodes_best.prev.json
 
 # 内核探测的临时工作目录/缓存, 不进库
 data/kernel_cache/
+out.bak.*
+data/nodes.prev-run.json
+data/nodes_fresh*.json

@@ -630,8 +630,11 @@ def apply_results(nodes_json: Path, done: dict, *, cull: bool = False) -> None:
             hist[key]["ok_hits"] = (hist[key].get("ok_hits") or 0) + 1
             updated += 1
         else:
-            clean = {k: v for k, v in node.items() if k != "proto"}
-            clean["type"] = node.get("proto") or node.get("type")
+            clean = dict(node)
+            # 保留 proto 作为唯一真源(to_mihomo 只认它), 同时补一个 type 给
+            # 仍然按 Clash 字段读的老代码。少了 proto, 这节点下次就读不回来了。
+            if clean.get("proto") and not clean.get("type"):
+                clean["type"] = clean["proto"]
             hist[key] = {"first_seen": ts, "last_ok": ts, "ok_hits": 1,
                          "node": clean}
             added += 1
