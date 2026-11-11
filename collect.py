@@ -38,6 +38,27 @@ RAW_SOURCES = [
     ("freefq", "https://raw.githubusercontent.com/freefq/free/master/v2"),
 ]
 
+# 候选源 —— 每轮都会采, 但只用来"体检", 决定要不要转成正式源。
+# 判据是**独立贡献**(new): 抽到多少条节点里, 有多少是现有源没有的。
+#   new ≈ 0  → 它和现有源高度重合, 或者只是同一个聚合器的镜像, 删掉;
+#   new 可观  → 说明它有一手来源, 转正进 RAW_SOURCES。
+# 只看 raw(抽出条数)会被骗: 一个转贴 NoMoreWalls 的仓库也能抽出几百条。
+#
+# 顺带一个坑: 这些地址大多托管在 raw.githubusercontent.com, 而国内直连它
+# 经常是断的 —— 本地跑 collect.py 会整片超时, 不代表源有问题, 要在 CI 里看。
+CANDIDATE_SOURCES = [
+    ("aiboboxx/v2rayfree", "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2"),
+    ("aiboboxx/clashfree", "https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml"),
+    ("mfuu/v2ray", "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray"),
+    ("Pawdroid/Free-servers", "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub"),
+    ("Barabama/FreeNodes", "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes.txt"),
+    ("anaer/Sub", "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml"),
+    ("w1770946466/Auto_proxy",
+     "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num"),
+    ("mahdibland/Aggregator",
+     "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity"),
+]
+
 
 def build_opener(proxy: str | None):
     if not proxy:
@@ -266,7 +287,11 @@ def main():
     pool: dict[str, dict] = {}
     stats: dict[str, int] = {}
 
-    def ingest(text: str, source: str):
+    def ingest(text: str, source: str, target: dict | None = None):
+        # target 给候选源体检用: 传一份临时池进去, 节点只参与"是不是新的"这个判断,
+        # 不会真的混进正式池 —— 否则每多一个候选源, 当天要测速的节点就多一批,
+        # 而候选源里绝大多数是重复的。
+        tgt = pool if target is None else target
         text = maybe_b64(text)
         found = VG_REGEX.findall(text)
         for uri in found:
@@ -274,16 +299,17 @@ def main():
             if not n or not n.get("server") or not n.get("port"):
                 continue
             fp = fingerprint(n)
-            if fp in pool:
-                srcs = pool[fp]["sources"]
+            if fp in tgt:
+                srcs = tgt[fp]["sources"]
                 if source not in srcs:
                     srcs.append(source)
                 continue
             n["fp"] = fp
             n["sources"] = [source]
-            pool[fp] = n
+            tgt[fp] = n
         stats[source] = stats.get(source, 0) + len(found)
-        print(f"    → 抽出 {len(found):4d} 条, 去重后累计 {len(pool)}")
+        print(f"    → 抽出 {len(found):4d} 条, 去重后累计 {len(tgt)}")
+        return len(found)
 
     print("[1/2] 公开订阅源")
     for name, url in RAW_SOURCES:
@@ -327,6 +353,23 @@ def main():
                 if sub:
                     ingest(sub.decode("utf-8", "ignore"), f"tg:@{ch}→sub")
 
+    print("[3/3] 候选源体检 (只看独立贡献, 不看抽出条数)")
+    cand: dict[str, dict] = {}
+    for name, url in CANDIDATE_SOURCES:
+        # 浅拷贝一份池子做沙盘: 新节点的 fp 只在沙盘里累积, 正式池不受影响。
+        tmp = dict(pool)
+        before = len(tmp)
+        # 超时和重试都比正式源短: 候选源不该拖慢每天的正式采集。
+        body = fetch(url, opener, timeout=12, retries=1)
+        if not body:
+            cand[name] = {"ok": False, "raw": 0, "new": 0}
+            print(f"  * {name}: 无响应")
+            continue
+        got = ingest(body.decode("utf-8", "ignore"), name, tmp) or 0
+        new = len(tmp) - before
+        cand[name] = {"ok": True, "raw": got, "new": new}
+        print(f"  * {name}: 抽出 {got} 条, 其中全新 {new} 个")
+
     nodes = sorted(pool.values(), key=lambda x: (x["proto"], x["server"]))
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
     with open(args.out, "w") as f:
@@ -340,6 +383,21 @@ def main():
     print(f"\n✅ 去重后 {len(nodes)} 个节点 → {args.out}")
     print("   协议:", by_proto)
     print("   来源:", dict(sorted(by_src.items(), key=lambda x: -x[1])[:8]))
+
+    # 源体检报告: 每次采集都留一份, 用来回答"哪个源还值得留着"。
+    # 单独成文件而不是塞进 nodes.json —— 后者是构建的输入, 不该混进统计信息。
+    report = {
+        "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S+08:00",
+                                      time.gmtime(time.time() + 8 * 3600)),
+        "total_nodes": len(nodes),
+        "by_source": dict(sorted(by_src.items(), key=lambda x: -x[1])),
+        "raw_hits": dict(sorted(stats.items(), key=lambda x: -x[1])),
+        "candidates": cand,
+    }
+    rp = os.path.join(os.path.dirname(args.out) or ".", "sources_report.json")
+    with open(rp, "w") as f:
+        json.dump(report, f, ensure_ascii=False, indent=1)
+    print(f"   源体检 → {rp}")
 
 
 if __name__ == "__main__":

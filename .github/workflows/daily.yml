@@ -87,7 +87,9 @@ jobs:
           set -uo pipefail
           git config user.name  "nodepool-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add -A out data/pool_history.json data/nodes.json
+          # sources_report.json 必须显式列出: 这里不是 git add -A, 只点名的文件才进提交。
+          # 漏了它, 云端每轮都生成了体检报告, 但仓库里永远看不到。
+          git add -A out data/pool_history.json data/nodes.json data/sources_report.json
           if git diff --staged --quiet; then
             echo "没有变化"
             echo "changed=false" >> "$GITHUB_OUTPUT"
