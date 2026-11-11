@@ -906,3 +906,45 @@ Azure runner 大概率连不上, 只按云端延迟筛会把它们整批丢掉�
     入口: canary 通过
 
 (结果见下一节, 本轮跑完后补)
+
+## 7. 第二个假阴性: 内核配置漏了 ws-opts
+
+修好 `--noproxy` 之后, 形状变成了另一种反常:
+
+    同批 clashnode 新节点, 同一次扫描
+      http          223 个深测 → 21 个可用 (8.2%)
+      内核类        274 个深测 →  2 个可用 (0.7%)
+
+同一来源、同一天、同一台机器, 差 12 倍。手工拆一个失败的 vless:
+
+    server: 103.116.7.67  port: 2083  network: ws  sni: proxy-1cu.pages.dev
+    内核日志: 103.116.7.67:2083 connect error: ...
+
+回源核对发现原始 YAML 里是有的:
+
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: proxy-1cu.pages.dev
+
+采集侧把它**扁平化**成了顶层 `path` / `host`(这是项目内部的统一结构),
+而 `verify.probe_kernel` 是手写字段白名单往内核里塞的, 漏了这一步还原。
+mihomo 只认 `ws-opts.path`, 顶层 `path`/`host` 它一律忽略 ——
+于是 ws 握手拿不到 Host 头, CF 那边一律 404, 整类节点被统一判死。
+
+正确做法是 `gateway.to_mihomo(n, name)`, 订阅和云端复检一直用的都是它,
+它会把 `path`/`host` 还原成 `ws-opts`。现在 verify 也改成用它, 并且加了
+自检把这条钉住(`t_kernel_proxy_keeps_ws_opts`)。
+
+顺带说明: 抽 6 个 clashnode vless 单独重测, 换成正确配置后仍然全死。
+所以这一批 CF 前置节点本身确实挂了, 0.7% 不全是这个 bug 造成的。
+但 bug 是真的 —— 有 ws 配置的节点在旧代码下**不可能**被测出来。
+
+## 8. 成本: 死节点不该烧 28 秒
+
+`_kernel_probe` 原本对每个节点: 2 个探测站 × (5s, 9s) 两轮重试 = 最坏 28 秒,
+再加 3 秒内核启动。这套重试是给"慢启动好节点"设计的, 对已经死掉的节点纯浪费。
+
+实测同一批 657 个节点: 28s/个 → 4.2 小时; 8s/个 → 2 小时。
+现在 `--probe-timeout` 可配, 全池普查用 8 秒 + 只试一个探测站。死节点实测 6.3 秒。

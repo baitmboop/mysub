@@ -207,6 +207,34 @@ def t_cull_keeps_old_fields_when_noting():
     assert a == "note" and rec["ok"] == 1 and rec["speed"] == 1.5, (a, rec)
 
 
+def t_kernel_proxy_keeps_ws_opts():
+    """ws 节点的 path/host 必须还原成 ws-opts, 否则内核拿不到 Host 头。
+
+    2026-11-12 的实测代价: verify.py 曾经自己抄字段传给内核, 漏了这一步,
+    所有 CF 前置的 vless/trojan 一律 404 被判死, 内核类命中率掉到 0.7%。
+    采集侧把 ws-opts 扁平化成顶层 path/host, 转换时必须还原 —— 两边约定不同,
+    中间那一层少一次映射就全军覆没。
+    """
+    n = node(server="1.2.3.4", port=2083, proto="vless", tls=True,
+             sni="a.pages.dev", network="ws",
+             path="/", host="a.pages.dev")
+    p = gateway.to_mihomo(n, "x")
+    assert p and p.get("ws-opts"), p
+    assert p["ws-opts"]["path"] == "/", p
+    assert p["ws-opts"]["headers"]["Host"] == "a.pages.dev", p
+    assert p.get("network") == "ws", p
+    # 顶层不能再残留 path/host, 内核不认这两个键
+    assert "path" not in p and "host" not in p, p
+
+
+def t_kernel_proxy_rejects_unconvertible():
+    """缺必需字段的节点转换应返回 None, 由调用方按"用户也用不了"处理。"""
+    assert gateway.to_mihomo({"proto": "vless", "server": "1.2.3.4",
+                              "port": 443}, "x") is None
+    assert gateway.to_mihomo({"proto": "ss", "server": "1.2.3.4", "port": 443,
+                              "cipher": "not-a-cipher", "password": "x"}, "x") is None
+
+
 def t_pool_ok_none_means_undecided_not_dead():
     """ok=None 是"只记了一笔失败, 还没定论", 不能被当成不通踢掉。
 

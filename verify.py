@@ -220,7 +220,8 @@ def probe_direct(n: dict) -> dict:
     return {"verdict": "alive", "speed": round(best, 1), "via": "curl"}
 
 
-def _kernel_probe(port: int) -> dict:
+def _kernel_probe(port: int, probe_timeout: float = 5.0,
+                  urls: tuple = ()) -> dict:
     """跑在一个只有该节点的内核实例上。
 
     注意: 这个函数**不能并发调用**。2026-11-11 实测, 同一个 ss 节点:
@@ -231,16 +232,21 @@ def _kernel_probe(port: int) -> dict:
 
     所有请求都走本文件的 _curl, 不要用 sweep_cn.curl_via —— 后者只清了大写的
     HTTP_PROXY, 小写 http_proxy 还活着, 会把请求导去本机 Clash 的口。
+
+    probe_timeout / urls 是可配的, 因为成本差得很远:
+        小样本(订阅几十个)  保留 2 个探测站 × (5s, 9s) 两轮重试 ——
+                            慢启动节点值得多等, 漏掉一个都心疼
+        全池普查(上千个)    1 个站 × 单次 —— 死节点占八成, 每个烧 28 秒
+                            就是几小时的纯浪费。实测同一批 657 个节点,
+                            28s/个 要 4.2 小时, 8s/个 只要 2 小时。
     """
+
     via = ["-x", f"http://127.0.0.1:{port}"]
     lat = None
-    for url in PROBE_URLS:
-        for timeout in (5, 9):
-            r = _curl([*via, url], timeout)
-            if r and r[1] in ("204", "200"):
-                lat = int(r[2])
-                break
-        if lat is not None:
+    for url in (urls or PROBE_URLS):
+        r = _curl([*via, url], probe_timeout)
+        if r and r[1] in ("204", "200"):
+            lat = int(r[2])
             break
     if lat is None:
         return {"verdict": "dead", "stage": "probe"}
@@ -259,7 +265,8 @@ def _kernel_probe(port: int) -> dict:
     return {"verdict": "alive", "latency": lat, "speed": round(best, 1), "via": "kernel"}
 
 
-def probe_kernel(n: dict) -> dict:
+def probe_kernel(n: dict, probe_timeout: float = 5.0,
+                 urls: tuple = ()) -> dict:
     """自己管内核, 不用 sweep_cn.with_kernel。
 
     为什么不能用现成的: with_kernel 在"端口可连接"的瞬间就发请求, 但 mihomo
@@ -272,13 +279,17 @@ def probe_kernel(n: dict) -> dict:
     这一条把 120 个好节点整体判成了"测不了"。所以这里自己做: 共享一个常驻
     工作目录(缓存 cache.db, 省掉每次冷启动), 端口通了再补一段就绪等待。
 
-    注意 `proto` 必须还原成 Clash 的 `type`, 否则内核解析失败 —— 同一个坑犯过两次。
+    节点 → 内核配置必须走 gateway.to_mihomo, 不许自己抄字段。
+    2026-11-12 实测: 手写的字段白名单漏了 `path`/`host` → `ws-opts`,
+    于是所有 ws 前置的 vless/trojan 都拿不到 Host 头, CF 那边一律 404,
+    统一被判死 —— 内核类命中率 0.7%, 同批 http 却有 8.2%。
+    换成 to_mihomo(订阅和云端复检用的都是它)之后才测得出真实结果。
     """
-    proxy = {k: v for k, v in n.items() if k != "proto"}
-    proto = (n.get("proto") or n.get("type") or "").lower()
-    if proto:
-        proxy["type"] = proto
-    proxy.setdefault("name", "node")
+    proxy = gateway.to_mihomo(n, "node")
+    if not proxy:
+        # 连转换都过不了(缺 uuid / 不支持的加密 / 非法 reality 参数):
+        # 用户的 Clash 同样用不了, 判死是诚实结论, 不是测量失败。
+        return {"verdict": "dead", "stage": "config"}
 
     # 每个节点用一个全新的工作目录。
     #
@@ -306,7 +317,7 @@ def probe_kernel(n: dict) -> dict:
         # 是真空转还是启动中的瞬间, 一旦误判就把好节点记成 kernel-exit。
         # 真起不来的话, 下面 curl 会直接拿到 000, 自然会判 dead。
         time.sleep(3.0)
-        return _kernel_probe(port)
+        return _kernel_probe(port, probe_timeout, urls)
     except Exception as e:                                    # noqa: BLE001
         return {"verdict": "unknown", "err": str(e)[:60]}
     finally:
@@ -406,6 +417,9 @@ def main() -> int:
     ap.add_argument("--deep-workers", type=int, default=1,
                     help="内核阶段并发。必须保持 1: 并发多个内核实例会让"
                          "测速失真几百倍(实测 551KB/s → 0.7KB/s)")
+    ap.add_argument("--probe-timeout", type=float, default=5.0,
+                    help="L2 探测单次超时秒数。全池普查建议 8 + 只试一个站: "
+                         "死节点每个能省 20 秒, 657 个节点差 2 小时")
     ap.add_argument("--direct-workers", type=int, default=8,
                     help="http/socks5 直测并发。走 curl 无内核, 不受上面的限制")
     ap.add_argument("--resume", action="store_true", help="跳过已有结论的节点")
@@ -499,7 +513,8 @@ def main() -> int:
     t0 = time.time()
     n_done = 0
     for n in kernelled:                       # 串行, 不并发
-        r = probe_kernel(n)
+        r = probe_kernel(n, args.probe_timeout,
+                         PROBE_URLS if args.probe_timeout <= 5.0 else PROBE_URLS[:1])
         r["at"] = now()
         r["proto"] = n.get("proto") or n.get("type")
         r["server"], r["port"] = n.get("server"), n.get("port")
