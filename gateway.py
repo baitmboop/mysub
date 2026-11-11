@@ -62,6 +62,8 @@ CN_PREF = os.path.join(DATA, "cn_pref.json")      # 中国网络实测结果
 TEST_URL = "https://www.gstatic.com/generate_204"
 KEEP_DAYS = 7          # 历史池保留天数
 MAX_POOL = 300         # 历史池上限, 防文件无限膨胀
+MIN_KEEP = 5           # 剔除"中国实测不通"后至少要剩这么多个, 否则全留
+MIN_SPEED = 0.05       # 低于这个 MB/s 视为传不动数据
 PROBE_WORKERS = 64
 SWEEP_INTERVAL = 600   # 后台保活扫描间隔(秒)
 
@@ -155,11 +157,23 @@ def load_cn_pref(keep_days: int = 7) -> dict:
 
 
 def _cn_rank(n: dict) -> int:
-    """中国实测优先级: 通过过 +1 / 没测过 0 / 测过但不通 -1。"""
+    """中国实测优先级。
+
+    3 = 能传数据 (实测下载速度达标) —— 只有这一档是真的好用
+    2 = 连得上但没测速度
+    1 = 连得上但传不动数据 (延迟低、带宽 0, 典型陷阱节点)
+    0 = 没测过
+    -1 = 测过但不通
+    """
     v = n.get("cn_ok")
     if v is None:
         return 0
-    return 1 if v else -1
+    if not v:
+        return -1
+    sp = n.get("cn_speed")
+    if sp is None:
+        return 2
+    return 3 if sp > MIN_SPEED else 1
 
 
 def pool_nodes(history: dict, alive: dict | None = None,
@@ -189,9 +203,21 @@ def pool_nodes(history: dict, alive: dict | None = None,
         n["cn_ok"] = None if pref is None else int(bool(pref.get("ok")))
         if pref and pref.get("latency"):
             n["cn_latency"] = pref["latency"]
+        if pref and pref.get("speed") is not None:
+            n["cn_speed"] = pref["speed"]
         out.append(n)
-    # 中国实测通过的里面, 再按中国实测延迟从快到慢排 —— 那才是你实际感受到的数字。
+
+    # 中国实测明确不通、或实测传不动数据的, 直接踢出订阅 —— 留着只会让客户端
+    # 一格格往下试, 用户看到的就是"几十个节点大半连不上"。
+    # 但"某一次没连上"不排除偶发, 所以设下限: 踢完不够 MIN_KEEP 个就全留着当候补。
+    keep = [n for n in out
+            if n.get("cn_ok") != 0 and _cn_rank(n) != 1]
+    if len(keep) >= MIN_KEEP:
+        out = keep
+
+    # 排序: 能传数据的优先, 同等条件按实测下载速度降序 —— 那才是实际体验。
     out.sort(key=lambda n: (-_cn_rank(n),
+                            -(n.get("cn_speed") or 0),
                             n.get("cn_latency") or 99999,
                             -(n.get("verify_ok") or 0),
                             -(n.get("score") or 0)))

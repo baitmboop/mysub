@@ -156,11 +156,14 @@ def load_proxies(raw: str) -> dict:
     return out
 
 
-def save_cn_pref(results: list, proxies: dict, path: str) -> int:
+def save_cn_pref(results: list, proxies: dict, path: str,
+                 speeds: dict | None = None) -> int:
     """把本轮实测写成 data/cn_pref.json, 供云端排序时参考。
 
-    键是 server:port (历史池的 node 里能直接拼出来), 值是延迟和是否通。
+    键是 server:port (历史池的 node 里能直接拼出来), 值是延迟/速度/是否通。
+    speed 用真实下载速度而不是延迟排序 —— 延迟低但传不动数据的节点是陷阱。
     """
+    speeds = speeds or {}
     old = {}
     if os.path.exists(path):
         try:
@@ -178,6 +181,8 @@ def save_cn_pref(results: list, proxies: dict, path: str) -> int:
         old[key] = {"ok": 1 if delay else 0, "at": int(now)}
         if delay:
             old[key]["latency"] = delay
+        if nm in speeds:
+            old[key]["speed"] = round(speeds[nm], 3)
         n_new += 1
     cutoff = now - 7 * 86400
     old = {k: v for k, v in old.items()
@@ -191,7 +196,10 @@ def save_cn_pref(results: list, proxies: dict, path: str) -> int:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--url", default=DEFAULT_URL)
-    ap.add_argument("--top", type=int, default=3, help="额外测几个真实下载速度")
+    ap.add_argument("--speed-max", type=int, default=30,
+                    help="最多给几个可用节点测真实下载速度")
+    ap.add_argument("--min-speed", type=float, default=0.05,
+                    help="低于这个 MB/s 视为传不动数据")
     ap.add_argument("--workers", type=int, default=24)
     ap.add_argument("--timeout", type=int, default=6000, help="单节点延迟上限 ms")
     ap.add_argument("--save", action="store_true",
@@ -284,32 +292,51 @@ def main() -> int:
                 print(f"  已记录 {cnt} 条实测到 data/cn_pref.json")
             return 2
 
-        # ---------- 4. 真实站点 ----------
-        print("\n走总出口(fallback 自动选)访问真实站点:")
+        # ---------- 4. 真实下载速度 ----------
+        # 这一步必须在站点测试之前: 延迟低不等于能传数据。实测踩过坑 ——
+        # 463ms 的节点下载 0.00MB/s, 而 1.9s 的节点反而能跑 0.38MB/s。
+        # 按延迟选出来的"第一名"会让 GitHub/YouTube 全超时。
+        grp = urllib.parse.quote(pool_group)
+
+        def switch(nm: str) -> bool:
+            try:
+                req = urllib.request.Request(
+                    f"http://127.0.0.1:{ctl}/proxies/{grp}",
+                    data=json.dumps({"name": nm}).encode(),
+                    headers={"Content-Type": "application/json"},
+                    method="PUT")
+                urllib.request.build_opener(
+                    urllib.request.ProxyHandler({})).open(req, timeout=8)
+                return True
+            except Exception:
+                return False
+
+        targets = alive[: args.speed_max]
+        print(f"\n测真实下载速度 ({len(targets)} 个可用节点)...")
+        speeds = {}
+        for nm, d, _ in targets:
+            if not switch(nm):
+                speeds[nm] = 0.0
+                continue
+            time.sleep(0.5)
+            speeds[nm] = speed_test(mixed)
+            print(f"  {nm:<10} {d:>6}ms  {speeds[nm]:>5.2f} MB/s")
+
+        usable = [(nm, d, speeds.get(nm, 0.0)) for nm, d, _ in alive
+                  if speeds.get(nm, 0.0) >= args.min_speed]
+        usable.sort(key=lambda r: -r[2])
+        print(f"  能真正传数据的: {len(usable)}/{len(alive)} 个"
+              f" (≥{args.min_speed} MB/s)")
+
+        # ---------- 5. 用最快的那个访问真实站点 ----------
+        best = usable[0][0] if usable else alive[0][0]
+        switch(best)
+        time.sleep(0.5)
+        print(f"\n锁定 {best} 访问真实站点:")
         for label, url in SITES:
-            sec, code, err = http_probe(mixed, url, timeout=25)
+            sec, code, err = http_probe(mixed, url, timeout=20)
             mark = "ok " if code and code < 400 else "FAIL"
             print(f"  [{mark}] {label:<8} {str(code or err):<18} {sec}s")
-
-        # ---------- 5. 前 N 名真实下载速度 ----------
-        if args.top > 0:
-            print(f"\n强制切换前 {args.top} 名, 测真实下载速度:")
-            grp = urllib.parse.quote(pool_group)
-            for nm, d, _ in alive[: args.top]:
-                try:
-                    req = urllib.request.Request(
-                        f"http://127.0.0.1:{ctl}/proxies/{grp}",
-                        data=json.dumps({"name": nm}).encode(),
-                        headers={"Content-Type": "application/json"},
-                        method="PUT")
-                    urllib.request.build_opener(
-                        urllib.request.ProxyHandler({})).open(req, timeout=8)
-                except Exception as e:
-                    print(f"    {nm}: 切换失败 {type(e).__name__}")
-                    continue
-                time.sleep(0.6)
-                mbps = speed_test(mixed)
-                print(f"    {nm:<10} {d:>6}ms  {mbps:>5.2f} MB/s")
 
         # ---------- 6. 出口 IP ----------
         sec, code, err = http_probe(mixed, "https://www.cloudflare.com/cdn-cgi/trace",
@@ -318,9 +345,10 @@ def main() -> int:
 
         if args.save:
             cnt = save_cn_pref(results, load_proxies(raw),
-                               os.path.join(ROOT, "data", "cn_pref.json"))
+                               os.path.join(ROOT, "data", "cn_pref.json"),
+                               speeds=speeds)
             print(f"已记录 {cnt} 条实测 → data/cn_pref.json "
-                  f"(可用 {len(alive)} 条, 云端会优先排它们)")
+                  f"(可用 {len(alive)} / 能传数据 {len(usable)})")
         return 0
     finally:
         proc.terminate()

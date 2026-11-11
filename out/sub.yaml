@@ -1,63 +1,59 @@
-# nodepool  生成于 2026-11-11 13:34:47 (北京时间)
-# 节点数 93  (自建 0 / 免费额度 0 / 免费池 93)
+# nodepool  生成于 2026-11-11 13:49:19 (北京时间)
+# 节点数 15  (自建 0 / 免费额度 0 / 免费池 15)
 # 总出口 = fallback, 按 ①→②→③ 顺序自动降级
 proxies:
   - name: N01
-    type: vmess
-    server: 39.108.113.127
-    port: 10086
-    uuid: b0253c6c-0b96-4950-bde1-669f13bc1a01
-    alterId: 0
-    cipher: auto
+    type: ss
+    server: 202.50.253.72
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-    ws-opts:
-      path: /
-    network: ws
   - name: N02
     type: ss
-    server: 202.50.253.81
+    server: 202.50.253.18
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
   - name: N03
     type: ss
-    server: 202.50.253.99
+    server: 202.50.253.27
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
   - name: N04
     type: ss
-    server: 202.50.253.36
+    server: 202.50.253.63
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
   - name: N05
     type: ss
-    server: 202.50.253.63
+    server: 202.50.253.54
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
   - name: N06
     type: ss
-    server: 202.50.253.27
+    server: 202.50.253.36
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
   - name: N07
     type: ss
-    server: 202.50.253.54
+    server: 202.50.253.90
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
   - name: N08
     type: ss
-    server: 202.50.253.90
+    server: 202.50.253.81
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -70,33 +66,6 @@ proxies:
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
   - name: N10
-    type: ss
-    server: 202.50.253.72
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N11
-    type: trojan
-    server: 191.44.112.170.sslip.io
-    port: 443
-    password: 46d221fa-e9b4-748c-4eae-019a88e42991
-    udp: true
-    skipCertVerify: true
-    sni: orbylume.my.to
-    ws-opts:
-      path: /tvpn-trojan/bg
-      headers:
-        Host: orbylume.my.to
-    network: ws
-  - name: N12
-    type: ss
-    server: 202.50.253.18
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N13
     type: vless
     server: 3.169.9.125
     port: 443
@@ -110,773 +79,41 @@ proxies:
       headers:
         Host: d14jyezfrcyf60.cloudfront.net
     network: ws
-  - name: N14
+  - name: N11
+    type: ss
+    server: 202.50.253.99
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N12
     type: hysteria2
     server: 13.143.189.71
     port: 4444
     password: a35c508f-4d5d-4531-842e-6e9d43c762c0
     skipCertVerify: true
     sni: pl3.nexfile.net
-  - name: N15
+  - name: N13
     type: ss
     server: 79.127.139.242
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N16
+  - name: N14
     type: ss
     server: 149.50.215.234
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N17
+  - name: N15
     type: ss
     server: 62.182.193.228
     port: 8388
     cipher: chacha20-ietf-poly1305
     password: 2e555e46dbc421452416834962fd014f
     udp: true
-  - name: N18
-    type: trojan
-    server: 64.176.7.205
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: advanceyouremploymentskillsandcareerdevelopmenthub.com
-  - name: N19
-    type: ss
-    server: 51.222.155.113
-    port: 5601
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-    udp: true
-  - name: N20
-    type: ss
-    server: 167.17.64.175
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N21
-    type: ss
-    server: 77.221.132.206
-    port: 24759
-    cipher: chacha20-ietf-poly1305
-    password: hCgbUnMaoAfSgvE8IKdnGu
-    udp: true
-  - name: N22
-    type: vless
-    server: 178.172.227.228
-    port: 14430
-    uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
-    udp: true
-    skipCertVerify: true
-    ws-opts:
-      path: /vless
-      headers:
-        Host: 178.172.227.228
-    network: ws
-  - name: N23
-    type: ss
-    server: 70.34.212.124
-    port: 8388
-    cipher: aes-256-gcm
-    password: AxIYWtskJWIIaefW
-    udp: true
-  - name: N24
-    type: ss
-    server: bogging-eyeteeth-fly.freesocks.work
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: QFWzCw2uX9B9i6qAYeFBIE
-    udp: true
-  - name: N25
-    type: vless
-    server: 45.86.60.174
-    port: 16443
-    uuid: 13e541f3-d09d-4633-89df-8513db0ced20
-    udp: true
-    skipCertVerify: true
-  - name: N26
-    type: ss
-    server: 130.49.189.158
-    port: 43558
-    cipher: chacha20-ietf-poly1305
-    password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
-    udp: true
-  - name: N27
-    type: ss
-    server: 167.17.64.27
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N28
-    type: vless
-    server: s2503.ccgfw.online
-    port: 443
-    uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision-udp443
-    tls: true
-    servername: u695098u093da7d1s2502.xxti.top
-  - name: N29
-    type: vless
-    server: 15.236.109.186
-    port: 2053
-    uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: w.geogame.ir
-  - name: N30
-    type: ss
-    server: 38.60.223.125
-    port: 13108
-    cipher: aes-128-gcm
-    password: 8722de56b6c0b3f6a4d01cf91c07e6aa
-    udp: true
-  - name: N31
-    type: vless
-    server: w.geogame.ir
-    port: 2053
-    uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: w.geogame.ir
-  - name: N32
-    type: vless
-    server: 159.223.20.232
-    port: 443
-    uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: fs.qicai99.com
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: fs.qicai99.com
-    network: ws
-  - name: N33
-    type: vless
-    server: 152.69.195.67
-    port: 47878
-    uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-    udp: true
-    skipCertVerify: true
-  - name: N34
-    type: vless
-    server: 152.69.226.63
-    port: 25555
-    uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-    udp: true
-    skipCertVerify: true
-    ws-opts:
-      path: /
-    network: ws
-  - name: N35
-    type: vless
-    server: cdn-hk.skyvora.app
-    port: 8443
-    uuid: 3b8896fd-ba38-4da7-b365-d0f01f37aa40
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: cdn-hk.skyvora.app
-    ws-opts:
-      path: /zmeadqv620k
-      headers:
-        Host: cdn-hk.skyvora.app
-    network: ws
-  - name: N36
-    type: vless
-    server: cdn-jp.skyvora.app
-    port: 8443
-    uuid: 76825bbe-3ad2-4156-b9ed-a5bdfcc93bd3
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: cdn-jp.skyvora.app
-    ws-opts:
-      path: /pmcxbjzdau6
-      headers:
-        Host: cdn-jp.skyvora.app
-    network: ws
-  - name: N37
-    type: vless
-    server: 129.101.106.205
-    port: 14443
-    uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: ndfst11.neuroblur.top
-    ws-opts:
-      path: /api/generate
-      headers:
-        Host: ndfst11.neuroblur.top
-    network: ws
-  - name: N38
-    type: ss
-    server: 193.148.19.214
-    port: 12798
-    cipher: aes-128-gcm
-    password: cd706a104284a70f9cffe6ac1df63c18
-    udp: true
-  - name: N39
-    type: ss
-    server: 138.199.55.243
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N40
-    type: ss
-    server: 82.110.60.9
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N41
-    type: vless
-    server: 109.120.134.181
-    port: 443
-    uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: fs.qicai99.com
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: fs.qicai99.com
-    network: ws
-  - name: N42
-    type: vless
-    server: 138.124.49.108
-    port: 8443
-    uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: fs.qicai99.com
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: fs.qicai99.com
-    network: ws
-  - name: N43
-    type: ss
-    server: 51.79.228.131
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N44
-    type: vless
-    server: 5.178.109.174
-    port: 14430
-    uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-    udp: true
-    skipCertVerify: true
-    ws-opts:
-      path: /vless
-      headers:
-        Host: 5.178.109.174
-    network: ws
-  - name: N45
-    type: vless
-    server: 85.192.27.171
-    port: 2053
-    uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: fs.qicai99.com
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: fs.qicai99.com
-    network: ws
-  - name: N46
-    type: vless
-    server: cdn-sg.skyvora.app
-    port: 8443
-    uuid: 3eb38d44-2e61-4553-b6ae-026033eacba5
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: cdn-sg.skyvora.app
-    ws-opts:
-      path: /axzfrv47qcn
-      headers:
-        Host: cdn-sg.skyvora.app
-    network: ws
-  - name: N47
-    type: ss
-    server: 15.235.164.133
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N48
-    type: vless
-    server: 45.76.155.179
-    port: 443
-    uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: sg003.zestapp778.com
-  - name: N49
-    type: trojan
-    server: 149.28.130.108
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: searchcreativejobsandshowcaseyourartistictalents.com
-  - name: N50
-    type: ss
-    server: 185.213.23.63
-    port: 990
-    cipher: chacha20-ietf-poly1305
-    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-    udp: true
-  - name: N51
-    type: trojan
-    server: 216.238.104.154
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
-  - name: N52
-    type: ss
-    server: 15.235.182.183
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N53
-    type: vmess
-    server: 47.244.120.197
-    port: 36703
-    uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-    alterId: 0
-    cipher: auto
-    udp: true
-    ws-opts:
-      path: /arki
-    network: ws
-  - name: N54
-    type: vless
-    server: 95.174.68.188
-    port: 14430
-    uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-    udp: true
-    skipCertVerify: true
-    ws-opts:
-      path: /vless
-      headers:
-        Host: 95.174.68.188
-    network: ws
-  - name: N55
-    type: ss
-    server: 149.88.107.74
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N56
-    type: ss
-    server: 149.88.106.74
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N57
-    type: vless
-    server: sg003.zestapp778.com
-    port: 443
-    uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: sg003.zestapp778.com
-  - name: N58
-    type: hysteria2
-    server: fi1.obxodvpn.us
-    port: 443
-    password: 146d567c-6335-4e63-a8aa-7ec068642440
-    skipCertVerify: true
-    sni: fi1.obxodvpn.us
-  - name: N59
-    type: ss
-    server: 149.88.107.47
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N60
-    type: hysteria2
-    server: 13.143.189.147
-    port: 4444
-    password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-    skipCertVerify: true
-    sni: pl2.nexfile.net
-  - name: N61
-    type: ss
-    server: 152.53.1.57
-    port: 8388
-    cipher: chacha20-ietf-poly1305
-    password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
-    udp: true
-  - name: N62
-    type: hysteria2
-    server: 13.143.189.106
-    port: 4444
-    password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-    skipCertVerify: true
-    sni: pl2.nexfile.net
-  - name: N63
-    type: ss
-    server: oztq9osla2ad.dop15.com
-    port: 26412
-    cipher: 2022-blake3-aes-256-gcm
-    password: "L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U="
-    udp: true
-  - name: N64
-    type: ss
-    server: 66.163.118.103
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N65
-    type: hysteria2
-    server: 104.165.205.42
-    port: 8443
-    password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
-    skipCertVerify: true
-    sni: speedtestmark.com
-  - name: N66
-    type: hysteria2
-    server: 13.143.189.105
-    port: 4444
-    password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-    skipCertVerify: true
-    sni: pl2.nexfile.net
-  - name: N67
-    type: vless
-    server: 193.219.97.198
-    port: 443
-    uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: fs.qicai99.com
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: fs.qicai99.com
-    network: ws
-  - name: N68
-    type: ss
-    server: 167.17.71.167
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N69
-    type: vless
-    server: 5.42.107.38
-    port: 14443
-    uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: germ.onlineai.pro
-    ws-opts:
-      path: /api/generate
-      headers:
-        Host: germ.onlineai.pro
-    network: ws
-  - name: N70
-    type: vless
-    server: germ.onlineai.pro
-    port: 14443
-    uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: germ.onlineai.pro
-    ws-opts:
-      path: /api/generate
-      headers:
-        Host: germ.onlineai.pro
-    network: ws
-  - name: N71
-    type: ss
-    server: 51.79.64.198
-    port: 8119
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-    udp: true
-  - name: N72
-    type: trojan
-    server: 64.176.163.182
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
-  - name: N73
-    type: vless
-    server: 45.144.234.157
-    port: 14430
-    uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-    udp: true
-    skipCertVerify: true
-    ws-opts:
-      path: /vless
-      headers:
-        Host: 45.144.234.157
-    network: ws
-  - name: N74
-    type: vless
-    server: 138.124.124.157
-    port: 443
-    uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: fs.qicai99.com
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: fs.qicai99.com
-    network: ws
-  - name: N75
-    type: trojan
-    server: 45.63.30.142
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: connectwithemployerstohireyouridealteam.com
-  - name: N76
-    type: vless
-    server: 188.137.178.174
-    port: 8443
-    uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: fs.qicai99.com
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: fs.qicai99.com
-    network: ws
-  - name: N77
-    type: vless
-    server: 193.188.21.253
-    port: 14430
-    uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-    udp: true
-    skipCertVerify: true
-    ws-opts:
-      path: /vless
-      headers:
-        Host: 193.188.21.253
-    network: ws
-  - name: N78
-    type: vless
-    server: 45.83.182.80
-    port: 443
-    uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: fs.qicai99.com
-    ws-opts:
-      path: /
-      headers:
-        Host: fs.qicai99.com
-    network: ws
-  - name: N79
-    type: hysteria2
-    server: 13.143.189.149
-    port: 4444
-    password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-    skipCertVerify: true
-    sni: pl2.nexfile.net
-  - name: N80
-    type: hysteria2
-    server: 31.76.62.148
-    port: 4444
-    password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-    skipCertVerify: true
-    sni: lv2.nexfile.net
-  - name: N81
-    type: vmess
-    server: 47.244.120.197
-    port: 23026
-    uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-    alterId: 0
-    cipher: auto
-    udp: true
-    ws-opts:
-      path: /arki
-      headers:
-        Host: 47.244.120.197
-    network: ws
-  - name: N82
-    type: vless
-    server: 178.172.227.124
-    port: 14430
-    uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
-    udp: true
-    skipCertVerify: true
-    ws-opts:
-      path: /vless
-      headers:
-        Host: 178.172.227.124
-    network: ws
-  - name: N83
-    type: vless
-    server: 46.250.242.104
-    port: 443
-    uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: fs.qicai99.com
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: fs.qicai99.com
-    network: ws
-  - name: N84
-    type: vless
-    server: 89.187.7.4
-    port: 2166
-    uuid: e1862eef-e3f2-4e27-b0a5-ddf8df384af9
-    udp: true
-    skipCertVerify: true
-    ws-opts:
-      path: "/Telegram=@AmyraxVPN"
-      headers:
-        Host: 89.187.7.4
-    network: ws
-  - name: N85
-    type: vless
-    server: 130.94.95.198
-    port: 57353
-    uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: in001.zestapp778.com
-  - name: N86
-    type: ss
-    server: 102.133.165.160
-    port: 16233
-    cipher: chacha20-ietf-poly1305
-    password: Xsy8Ox4yOV3xLlpxtjzs3X
-    udp: true
-  - name: N87
-    type: vless
-    server: 68.64.182.205
-    port: 443
-    uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: fs.qicai99.com
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: fs.qicai99.com
-    network: ws
-  - name: N88
-    type: ss
-    server: 194.68.44.42
-    port: 64546
-    cipher: chacha20-ietf-poly1305
-    password: U83u9OGpvSatIUW7LsWffr
-    udp: true
-  - name: N89
-    type: vless
-    server: 172.67.110.86
-    port: 8443
-    uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: moz.ar-marz.fun
-    ws-opts:
-      path: /man
-      headers:
-        Host: moz.ar-marz.fun
-    network: ws
-  - name: N90
-    type: vless
-    server: 38.207.177.204
-    port: 443
-    uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: fs.qicai99.com
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: fs.qicai99.com
-    network: ws
-  - name: N91
-    type: trojan
-    server: 158.247.253.243
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: connectgraduateswithjobopeningsandgrowprofessionally.com
-  - name: N92
-    type: vless
-    server: 191.44.112.170
-    port: 443
-    uuid: 46d221fa-e9b4-748c-4eae-019a88e42991
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: orbylume.my.to
-    ws-opts:
-      path: /tvpn-tor/is
-      headers:
-        Host: orbylume.my.to
-    network: ws
-  - name: N93
-    type: vless
-    server: 95.163.232.240
-    port: 443
-    uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: files.neurixai.app
-    ws-opts:
-      path: /api/generate
-      headers:
-        Host: files.neurixai.app
-    network: ws
 proxy-groups:
   - name: 总出口
     type: fallback
@@ -904,83 +141,5 @@ proxy-groups:
       - N13
       - N14
       - N15
-      - N16
-      - N17
-      - N18
-      - N19
-      - N20
-      - N21
-      - N22
-      - N23
-      - N24
-      - N25
-      - N26
-      - N27
-      - N28
-      - N29
-      - N30
-      - N31
-      - N32
-      - N33
-      - N34
-      - N35
-      - N36
-      - N37
-      - N38
-      - N39
-      - N40
-      - N41
-      - N42
-      - N43
-      - N44
-      - N45
-      - N46
-      - N47
-      - N48
-      - N49
-      - N50
-      - N51
-      - N52
-      - N53
-      - N54
-      - N55
-      - N56
-      - N57
-      - N58
-      - N59
-      - N60
-      - N61
-      - N62
-      - N63
-      - N64
-      - N65
-      - N66
-      - N67
-      - N68
-      - N69
-      - N70
-      - N71
-      - N72
-      - N73
-      - N74
-      - N75
-      - N76
-      - N77
-      - N78
-      - N79
-      - N80
-      - N81
-      - N82
-      - N83
-      - N84
-      - N85
-      - N86
-      - N87
-      - N88
-      - N89
-      - N90
-      - N91
-      - N92
-      - N93
 rules:
   - "MATCH,总出口"
