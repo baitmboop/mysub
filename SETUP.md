@@ -25,10 +25,10 @@ https://gh-proxy.com/https://raw.githubusercontent.com/baitmboop/mysub/main/out/
 
 | 顺序 | 地址前缀 | 实测 | 新鲜度 |
 |---|---|---|---|
-| ① 主用 | `https://gh-proxy.com/https://raw.githubusercontent.com/baitmboop/mysub/main/` | 1.0s / 200 | **实时** |
-| ② 备用 | `https://ghfast.top/https://raw.githubusercontent.com/baitmboop/mysub/main/` | 1.7s / 200 | **实时** |
+| ① 主用 | `https://gh-proxy.com/https://raw.githubusercontent.com/baitmboop/mysub/main/` | 1.0s / 200 | 分钟级（几小时内必新） |
+| ② 备用 | `https://ghfast.top/https://raw.githubusercontent.com/baitmboop/mysub/main/` | 1.7s / 200 | 分钟级 |
 | ③ 备用 | `https://cdn.jsdelivr.net/gh/baitmboop/mysub@main/` | 1.8s / 200 | 可能滞后 ≤12h |
-| ④ 有代理时 | `https://raw.githubusercontent.com/baitmboop/mysub/main/` | 直连超时 | 实时 |
+| ④ 有代理时 | `https://raw.githubusercontent.com/baitmboop/mysub/main/` | 直连超时 | 分钟级 |
 
 用的时候把前缀接上 `out/sub.yaml`（Clash）或 `out/sub-base64.txt`（Base64）。
 比如备用 ② 就是 `https://ghfast.top/https://raw.githubusercontent.com/baitmboop/mysub/main/out/sub.yaml`。
@@ -94,8 +94,8 @@ https://gh-proxy.com/https://raw.githubusercontent.com/baitmboop/mysub/main/out/
 
 | 项目 | 结果 |
 |---|---|
-| Actions 运行 | Run #1 / #2 / #3 全部 **success**，每次约 2 分钟 |
-| 节点数量 | 55 → 65 → **74 个**（历史池逐轮累积，本机同时段只测出 12 个） |
+| Actions 运行 | Run #1~#6 全部 **success**，稳定后每次约 **94 秒** |
+| 节点数量 | 55 → 65 → 74 → 83 → 88 → **89 个**（历史池逐轮累积；本机同时段只测出 12 个） |
 | 配置校验 | `mihomo -t` 通过 |
 | 端到端 | gstatic 204 / GitHub 200 / YouTube 200 / x.com 200 |
 | 出口 IP | 80.174.118.151 |
@@ -143,9 +143,12 @@ https://gh-proxy.com/https://raw.githubusercontent.com/baitmboop/mysub/main/out/
 
 **Q：订阅会不会拿到旧的？**
 
-主用的 gh-proxy / ghfast 是实时回源，拉到的一定是仓库里最新那份。
-如果你换成了 jsDelivr，它有最长 12 小时缓存——工作流里已经加了"清缓存 + 回验"步骤，
-但 jsDelivr 对同一文件约 1 小时只允许清 1 次，偶尔会滞后，属于兜底选项。
+主用的 gh-proxy / ghfast 是实时回源的 GitHub 反代，只有几分钟的分发延迟——
+按天更新的场景完全感觉不到。
+
+如果你换成了 jsDelivr，它有最长 12 小时缓存。工作流里加了"清缓存 + 回验"，
+但 jsDelivr 对同一文件约 1 小时只允许清 1 次（实测会返回 `throttled`），
+所以它只当兜底用。
 
 **Q：怎么确认拿到的是最新版？**
 
