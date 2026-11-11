@@ -60,6 +60,7 @@ jobs:
         run: python3 ci_build.py --keep 40 --delay-limit 3000
 
       - name: 提交结果
+        id: commit
         run: |
           set -uo pipefail
           git config user.name  "nodepool-bot"
@@ -67,23 +68,39 @@ jobs:
           git add -A out data/pool_history.json data/nodes.json
           if git diff --staged --quiet; then
             echo "没有变化"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "chore: 更新订阅 $(date -u +%Y-%m-%d)"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
       - name: 刷新 CDN 缓存
-        # 订阅走 jsDelivr(国内可直连)，但它会把文件缓存最长 12 小时。
-        # 每次跑完主动清一次，保证你拿到的是刚生成的。
+        # 订阅走 jsDelivr(国内可直连)，但它会把 branch 引用缓存最长 12 小时。
+        # 注意: 清缓存不是立刻生效，实测要几十秒。所以清完必须回来校验，
+        # 直到 CDN 吐出的第一行和仓库里的文件一致，才算真的同步了。
+        if: steps.commit.outputs.changed == 'true'
         run: |
           set -uo pipefail
-          for f in out/sub.yaml out/sub-base64.txt; do
-            echo "purge $f"
-            curl -s --max-time 20 \
-              "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/${f}" \
-              | head -c 200 || echo "  (刷新失败，忽略)"
-            echo
+          BASE="https://cdn.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main"
+          EXPECT="$(head -1 out/sub.yaml)"      # 仓库里这份的真实时间戳
+          echo "期望: $EXPECT"
+          sleep 10                              # 等 github 自身的内容分发落定
+          for attempt in 1 2 3 4 5; do
+            for f in out/sub.yaml out/sub-base64.txt; do
+              curl -s --max-time 20 \
+                "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/${f}" >/dev/null \
+                || echo "  purge $f 请求失败(忽略)"
+            done
+            sleep 15
+            HEAD="$(curl -s --max-time 20 "${BASE}/out/sub.yaml" | head -1 || true)"
+            echo "第 ${attempt} 次校验: ${HEAD}"
+            if [ "$HEAD" = "$EXPECT" ]; then
+              echo "✅ CDN 已同步到最新"
+              exit 0
+            fi
           done
+          echo "::warning::CDN 刷新 5 次仍未同步，最迟 12 小时后自动过期"
 
       - name: 保存产物(便于在 Actions 页面直接下载)
         uses: actions/upload-artifact@v4
