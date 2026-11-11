@@ -7154,27 +7154,6 @@
  },
  {
   "proto": "vless",
-  "server": "39.109.111.23",
-  "port": 48158,
-  "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-  "tls": true,
-  "sni": "www.apple.com",
-  "network": "tcp",
-  "path": "",
-  "host": "",
-  "flow": "xtls-rprx-vision",
-  "pbk": "7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo",
-  "sid": "54cca3c1c1c7",
-  "fp": "07f50adf49e08eff",
-  "reality": true,
-  "name": "filembad-261",
-  "source": "tg:@vpnfail_v2ray",
-  "sources": [
-   "tg:@vpnfail_v2ray"
-  ]
- },
- {
-  "proto": "vless",
   "server": "3fb2b6t.se2.h1clayd.click",
   "port": 443,
   "uuid": "16f3d526-8cf8-4af5-a86f-b023c5b52085",
@@ -10994,6 +10973,27 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "subscribe.goonars.com",
+  "port": 443,
+  "uuid": "fb37d713-0ed3-4146-b085-a5c879a9aafa",
+  "tls": true,
+  "sni": "subscribe.goonars.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "ZZihyRejv8lHTwTnNCGF0IB6U9kS-L34L3v0ch6k_30",
+  "sid": "4f339f5f",
+  "fp": "4fe46fca1eef8299",
+  "reality": true,
+  "name": "filembad-440",
+  "source": "tg:@vpnfail_v2ray",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {

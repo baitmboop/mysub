@@ -1,5 +1,5 @@
-# nodepool  生成于 2026-11-11 13:49:19 (北京时间)
-# 节点数 15  (自建 0 / 免费额度 0 / 免费池 15)
+# nodepool  生成于 2026-11-11 13:51:19 (北京时间)
+# 节点数 22  (自建 0 / 免费额度 0 / 免费池 22)
 # 总出口 = fallback, 按 ①→②→③ 顺序自动降级
 proxies:
   - name: N01
@@ -87,33 +87,94 @@ proxies:
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
   - name: N12
+    type: ss
+    server: 186.190.215.251
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N13
+    type: vless
+    server: 193.233.129.97
+    port: 443
+    uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+    udp: true
+    skipCertVerify: true
+    tls: true
+    servername: fs.qicai99.com
+    ws-opts:
+      path: /
+      headers:
+        Host: fs.qicai99.com
+    network: ws
+  - name: N14
     type: hysteria2
     server: 13.143.189.71
     port: 4444
     password: a35c508f-4d5d-4531-842e-6e9d43c762c0
     skipCertVerify: true
     sni: pl3.nexfile.net
-  - name: N13
+  - name: N15
+    type: hysteria2
+    server: 13.143.189.142
+    port: 4444
+    password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+    skipCertVerify: true
+    sni: pl3.nexfile.net
+  - name: N16
     type: ss
     server: 79.127.139.242
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N14
+  - name: N17
+    type: hysteria2
+    server: 13.143.189.146
+    port: 4444
+    password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+    skipCertVerify: true
+    sni: pl3.nexfile.net
+  - name: N18
     type: ss
     server: 149.50.215.234
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N15
+  - name: N19
     type: ss
     server: 62.182.193.228
     port: 8388
     cipher: chacha20-ietf-poly1305
     password: 2e555e46dbc421452416834962fd014f
     udp: true
+  - name: N20
+    type: ss
+    server: 23.166.88.127
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N21
+    type: vless
+    server: 104.27.88.172
+    port: 80
+    uuid: 50414e45-4c5f-5a45-5553-52108a2d5224
+    udp: true
+    skipCertVerify: true
+    ws-opts:
+      path: /api/ws
+      headers:
+        Host: web-app-nr6wpa.app-tp57xz.workers.dev
+    network: ws
+  - name: N22
+    type: vless
+    server: 150.95.109.109
+    port: 2086
+    uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+    udp: true
+    skipCertVerify: true
 proxy-groups:
   - name: 总出口
     type: fallback
@@ -141,5 +202,12 @@ proxy-groups:
       - N13
       - N14
       - N15
+      - N16
+      - N17
+      - N18
+      - N19
+      - N20
+      - N21
+      - N22
 rules:
   - "MATCH,总出口"
