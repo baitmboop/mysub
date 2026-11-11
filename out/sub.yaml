@@ -1,79 +1,79 @@
-# nodepool  生成于 2026-11-11 14:53:14 (北京时间)
-# 节点数 21  (自建 0 / 免费额度 0 / 免费池 21)
+# nodepool  生成于 2026-11-11 15:43:28 (北京时间)
+# 节点数 19  (自建 0 / 免费额度 0 / 免费池 19)
 # 节点选择 = select, 下设"自动选择"(fallback, 每 120s 复检)
 # 自动选择按 ① 自建 → ② 免费额度 → ③ 免费池 的顺序降级
 proxies:
-  - name: N01
+  - name: N01 202.50.253.72
     type: ss
     server: 202.50.253.72
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N02
+  - name: N02 202.50.253.18
     type: ss
     server: 202.50.253.18
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N03
+  - name: N03 202.50.253.27
     type: ss
     server: 202.50.253.27
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N04
+  - name: N04 202.50.253.63
     type: ss
     server: 202.50.253.63
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N05
+  - name: N05 202.50.253.54
     type: ss
     server: 202.50.253.54
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N06
+  - name: N06 202.50.253.36
     type: ss
     server: 202.50.253.36
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N07
+  - name: N07 202.50.253.90
     type: ss
     server: 202.50.253.90
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N08
+  - name: N08 202.50.253.81
     type: ss
     server: 202.50.253.81
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N09
+  - name: N09 202.50.253.45
     type: ss
     server: 202.50.253.45
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N10
+  - name: N10 202.50.253.99
     type: ss
     server: 202.50.253.99
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N11
+  - name: N11 70.34.207.14
     type: trojan
     server: 70.34.207.14
     port: 443
@@ -81,34 +81,14 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
-  - name: N12
+  - name: N12 167.233.129.126
     type: vless
-    server: 156.252.229.77
-    port: 8443
-    uuid: 585a421d-d782-4420-912e-dd58ff5966d7
+    server: 167.233.129.126
+    port: 2474
+    uuid: 287db857-de04-4212-bd69-5d14083e340e
     udp: true
     skipCertVerify: true
-    tls: true
-    servername: play.googleapis.com
-    reality-opts:
-      public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
-      short-id: 974f7f8f
-    client-fingerprint: chrome
-  - name: N13
-    type: vless
-    server: 167.17.64.67
-    port: 10303
-    uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: www.apple.com
-    reality-opts:
-      public-key: RCm8x1FrSdaJ2NY9k5deQQZilwbubeK-4bcH_6E31wk
-      short-id: 14f18ef16e7c32cc
-    client-fingerprint: chrome
-  - name: N14
+  - name: N13 141.227.160.61
     type: vless
     server: 141.227.160.61
     port: 8443
@@ -122,30 +102,7 @@ proxies:
       public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
       short-id: 6ba85179e30d4fc2
     client-fingerprint: chrome
-  - name: N15
-    type: vless
-    server: 178.128.199.136
-    port: 443
-    uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: fs.qicai99.com
-    ws-opts:
-      path: /
-      headers:
-        Host: fs.qicai99.com
-    network: ws
-  - name: N16
-    type: vless
-    server: 140.235.11.243
-    port: 56984
-    uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: sg1.zestapp778.com
-  - name: N17
+  - name: N14 72.35.246.39
     type: vless
     server: 72.35.246.39
     port: 2053
@@ -159,18 +116,34 @@ proxies:
       public-key: TSOm7XIZvGzYoCbh_lFFA9PTQJqI-JU5kKIAffGmUWg
       short-id: 5e39e518bfac6392
     client-fingerprint: chrome
-  - name: N18
-    type: vmess
-    server: 47.244.120.197
-    port: 44867
-    uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-    alterId: 0
-    cipher: auto
+  - name: N15 167.17.64.67
+    type: vless
+    server: 167.17.64.67
+    port: 10303
+    uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
     udp: true
-    ws-opts:
-      path: /arki
-    network: ws
-  - name: N19
+    skipCertVerify: true
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: RCm8x1FrSdaJ2NY9k5deQQZilwbubeK-4bcH_6E31wk
+      short-id: 14f18ef16e7c32cc
+    client-fingerprint: chrome
+  - name: N16 156.252.229.77
+    type: vless
+    server: 156.252.229.77
+    port: 8443
+    uuid: 585a421d-d782-4420-912e-dd58ff5966d7
+    udp: true
+    skipCertVerify: true
+    tls: true
+    servername: play.googleapis.com
+    reality-opts:
+      public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
+      short-id: 974f7f8f
+    client-fingerprint: chrome
+  - name: N17 208.69.78.33
     type: trojan
     server: 208.69.78.33
     port: 443
@@ -178,7 +151,7 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: courses.yourultimateprofessionalcareerhub.com
-  - name: N20
+  - name: N18 216.106.191.201
     type: vless
     server: 216.106.191.201
     port: 10303
@@ -192,7 +165,7 @@ proxies:
       public-key: suK-MYTtZhJ9IJgsxPLTHLQadNotDqYslQcd5BNV_EQ
       short-id: 6aa50b0cc8d23464
     client-fingerprint: chrome
-  - name: N21
+  - name: N19 102.37.156.224
     type: ss
     server: 102.37.156.224
     port: 443
@@ -205,78 +178,72 @@ proxy-groups:
     proxies:
       - 自动选择
       - ③ 免费池
-      - N01
-      - N02
-      - N03
-      - N04
-      - N05
-      - N06
-      - N07
-      - N08
-      - N09
-      - N10
-      - N11
-      - N12
-      - N13
-      - N14
-      - N15
-      - N16
-      - N17
-      - N18
-      - N19
-      - N20
-      - N21
+      - N01 202.50.253.72
+      - N02 202.50.253.18
+      - N03 202.50.253.27
+      - N04 202.50.253.63
+      - N05 202.50.253.54
+      - N06 202.50.253.36
+      - N07 202.50.253.90
+      - N08 202.50.253.81
+      - N09 202.50.253.45
+      - N10 202.50.253.99
+      - N11 70.34.207.14
+      - N12 167.233.129.126
+      - N13 141.227.160.61
+      - N14 72.35.246.39
+      - N15 167.17.64.67
+      - N16 156.252.229.77
+      - N17 208.69.78.33
+      - N18 216.106.191.201
+      - N19 102.37.156.224
   - name: 自动选择
     type: fallback
     url: "https://www.gstatic.com/generate_204"
     interval: 120
     proxies:
-      - N01
-      - N02
-      - N03
-      - N04
-      - N05
-      - N06
-      - N07
-      - N08
-      - N09
-      - N10
-      - N11
-      - N12
-      - N13
-      - N14
-      - N15
-      - N16
-      - N17
-      - N18
-      - N19
-      - N20
-      - N21
+      - N01 202.50.253.72
+      - N02 202.50.253.18
+      - N03 202.50.253.27
+      - N04 202.50.253.63
+      - N05 202.50.253.54
+      - N06 202.50.253.36
+      - N07 202.50.253.90
+      - N08 202.50.253.81
+      - N09 202.50.253.45
+      - N10 202.50.253.99
+      - N11 70.34.207.14
+      - N12 167.233.129.126
+      - N13 141.227.160.61
+      - N14 72.35.246.39
+      - N15 167.17.64.67
+      - N16 156.252.229.77
+      - N17 208.69.78.33
+      - N18 216.106.191.201
+      - N19 102.37.156.224
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
     interval: 600
     proxies:
-      - N01
-      - N02
-      - N03
-      - N04
-      - N05
-      - N06
-      - N07
-      - N08
-      - N09
-      - N10
-      - N11
-      - N12
-      - N13
-      - N14
-      - N15
-      - N16
-      - N17
-      - N18
-      - N19
-      - N20
-      - N21
+      - N01 202.50.253.72
+      - N02 202.50.253.18
+      - N03 202.50.253.27
+      - N04 202.50.253.63
+      - N05 202.50.253.54
+      - N06 202.50.253.36
+      - N07 202.50.253.90
+      - N08 202.50.253.81
+      - N09 202.50.253.45
+      - N10 202.50.253.99
+      - N11 70.34.207.14
+      - N12 167.233.129.126
+      - N13 141.227.160.61
+      - N14 72.35.246.39
+      - N15 167.17.64.67
+      - N16 156.252.229.77
+      - N17 208.69.78.33
+      - N18 216.106.191.201
+      - N19 102.37.156.224
 rules:
   - "MATCH,节点选择"
