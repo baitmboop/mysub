@@ -76,7 +76,7 @@ def main() -> int:
     # 否则就在池子里躺满 keep_days 天。实测过这种代价 —— 池内 102 个节点
     # 距上次构建 5 小时就只剩 13 个能连，其余 89 个全是"采集没抓到、也没人复测"的僵尸。
     hist_snapshot = gateway.load_json(HISTORY, {})
-    seen = {(n.get("fp") or f"{n.get('server')}:{n.get('port')}") for n in nodes}
+    seen = {gateway.fp_key(n) for n in nodes}
     extra = 0
     for fp, rec in hist_snapshot.items():
         n = dict(rec.get("node") or {})
@@ -114,7 +114,7 @@ def main() -> int:
             for f in futs:
                 nm = futs[f]
                 kn = name_map[nm]
-                key = kn.get("fp") or f"{kn.get('server')}:{kn.get('port')}"
+                key = gateway.fp_key(kn)
                 try:
                     med, jitter = f.result()
                 except Exception:
@@ -129,8 +129,12 @@ def main() -> int:
         log(f"✓ 存活 {len(cand)} 个 (≤{args.delay_limit}ms), 耗时 {time.time()-t0:.0f}s")
 
         if not cand:
-            log("✗ 本轮没有存活节点, 保留上一轮产物")
-            return 1
+            # 免费节点池全灭是正常业务状态, 不是"脚本坏了"。
+            # 每 3 小时跑一次, 如果按失败退出, 一天可能收到好几封失败邮件,
+            # 真正的故障反而被淹没。保留上一轮产物 + 打警告就够了。
+            log("! 本轮没有存活节点, 保留上一轮产物")
+            print("::warning::本轮所有候选节点均不可达，已保留上一轮订阅")
+            return 0
 
         # ---------- 3. 多站点复检 ----------
         if args.no_verify:

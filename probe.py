@@ -71,10 +71,29 @@ def emit(obj, indent=0):
     return "\n".join(out)
 
 
+# 各协议建立连接必需的非空字段。缺任何一个都生成不出有效配置, 直接丢弃 ——
+# 用 n["x"] 硬取会在遇到残缺节点(采集解析出错、手工编辑出错)时抛 KeyError,
+# 让整轮构建崩溃。自动流程里宁可少一个节点, 不能整个任务挂掉。
+REQUIRED_FIELDS = {
+    "ss": ("cipher", "password"),
+    "vmess": ("uuid",),
+    "vless": ("uuid",),
+    "trojan": ("password",),
+    "hysteria2": ("password",),
+    "tuic": ("uuid", "password"),
+}
+
+
 def to_mihomo(n: dict, name: str) -> dict | None:
     """统一结构 → mihomo proxy。不支持的直接丢弃。"""
-    p = {"name": name, "type": n["proto"], "server": n["server"], "port": n["port"]}
-    proto = n["proto"]
+    proto = (n or {}).get("proto")
+    if not n or not n.get("server") or not n.get("port"):
+        return None
+    for k in REQUIRED_FIELDS.get(proto, ()):
+        if not n.get(k):
+            return None
+
+    p = {"name": name, "type": proto, "server": n["server"], "port": n["port"]}
 
     if proto == "ss":
         if (n.get("cipher") or "").lower() not in SS_CIPHERS:
@@ -101,7 +120,7 @@ def to_mihomo(n: dict, name: str) -> dict | None:
             if not re.fullmatch(r"[A-Za-z0-9_-]{43}", n["pbk"]):
                 return None
             p["reality-opts"] = {"public-key": n["pbk"], "short-id": sid}
-            p["client-fingerprint"] = n.get("fp") or "chrome"
+            p["client-fingerprint"] = n.get("utls") or "chrome"
 
     elif proto == "trojan":
         p.update(password=n["password"], udp=True, skipCertVerify=True)

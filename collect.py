@@ -172,7 +172,10 @@ def parse_uri(uri: str, source: str) -> dict | None:
                 "flow": p.get("flow", ""),
                 "pbk": p.get("pbk", ""),
                 "sid": p.get("sid", ""),
-                "fp": p.get("fp", ""),
+                # 注意: 这是 URI 里的 uTLS 指纹(chrome/firefox/randomized...),
+                # 不是节点指纹。必须叫 utls —— 曾经叫 fp, 结果被 ingest() 里的
+                # 节点哈希覆盖掉, 所有节点都退回默认指纹, reality 节点握手会失败。
+                "utls": p.get("fp", ""),
                 "reality": p.get("security") == "reality",
                 "name": name,
                 "source": source,

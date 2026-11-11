@@ -103,6 +103,16 @@ def save_json(path: str, obj) -> None:
 
 
 # ---------------------------------------------------------------- 历史池
+def fp_key(n: dict) -> str:
+    """节点在历史池里的唯一键。
+
+    所有写池/查池的地方必须用这一个函数。曾经 ci_build 用 "server:port",
+    merge_history 用 "server:port:proto" —— 没有 fp 字段的老节点会被存成两份,
+    而且"本轮测到死的要摘掉"会因为键对不上而静默失效。
+    """
+    return n.get("fp") or f"{n.get('server')}:{n.get('port')}:{n.get('proto')}"
+
+
 def merge_history(history: dict, best: list, keep_days: int = KEEP_DAYS) -> dict:
     """把本轮测速结果并入历史池。返回更新后的 history。
 
@@ -112,7 +122,7 @@ def merge_history(history: dict, best: list, keep_days: int = KEEP_DAYS) -> dict
     """
     now = time.time()
     for n in best:
-        fp = n.get("fp") or f"{n.get('server')}:{n.get('port')}:{n.get('proto')}"
+        fp = fp_key(n)
         rec = history.get(fp)
         if not rec:
             rec = {"first_seen": now, "ok_hits": 0}
@@ -210,11 +220,16 @@ def pool_nodes(history: dict, alive: dict | None = None,
             n["cn_speed"] = pref["speed"]
         out.append(n)
 
-    # 中国实测明确不通、或实测传不动数据的, 直接踢出订阅 —— 留着只会让客户端
-    # 一格格往下试, 用户看到的就是"几十个节点大半连不上"。
-    # 但"某一次没连上"不排除偶发, 所以设下限: 踢完不够 MIN_KEEP 个就全留着当候补。
-    keep = [n for n in out
-            if n.get("cn_ok") != 0 and _cn_rank(n) != 1]
+    # 中国实测明确不通的, 强制踢出订阅 —— 不设下限。
+    # 之前用 MIN_KEEP 兜底过, 结果适得其反: 20 个节点里 18 个连不上时,
+    # 兜底会把那 18 个又塞回订阅, 用户看到的就是"大半连不上"。
+    # 唯一例外: 通不通的比例太悬殊(>80%)时更像测量环境出了问题
+    # (比如换了个网络测), 这时不信这批数据, 保留原样等 7 天过期自愈。
+    dead = [n for n in out if n.get("cn_ok") == 0]
+    if out and len(dead) <= 0.8 * len(out):
+        out = [n for n in out if n.get("cn_ok") != 0]
+    # "连得上但传不动数据"只是当下拥塞, 允许兜底: 踢完不够 MIN_KEEP 就留着候补。
+    keep = [n for n in out if _cn_rank(n) != 1]
     if len(keep) >= MIN_KEEP:
         out = keep
 
@@ -335,9 +350,9 @@ def to_uri(n: dict) -> str | None:
             q.append("pbk=" + urllib.parse.quote(str(n["pbk"]), safe=""))
             if n.get("sid"):
                 q.append("sid=" + str(n["sid"]))
-            q.append("fp=" + (n.get("fp") or "chrome"))
-        elif n.get("fp"):
-            q.append("fp=" + str(n["fp"]))
+            q.append("fp=" + (n.get("utls") or "chrome"))
+        elif n.get("utls"):
+            q.append("fp=" + str(n["utls"]))
         if n.get("network") and n["network"] != "tcp":
             q.append("type=" + str(n["network"]))
         if n.get("path"):
