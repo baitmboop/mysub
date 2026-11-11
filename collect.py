@@ -143,6 +143,34 @@ ARCHIVE_SOURCES = [
     ("go4sharing/arch", "go4sharing/sub", "2026", 40),
 ]
 
+# 按日期命名的站点归档 —— 没有 GitHub 目录接口可问, 只能按模板猜。
+#
+# 来源: 2026-11-11 从 X 上一个日更账号(@RockHeavens)的帖子展开 t.co 落到两个站,
+# 它们的订阅文件都带日期, 且**今天的地址可以推**:
+#   xinshoucun.net/sub/clash-20261111.yaml   (WP 站, 每天一篇, 189~220 条, 与现池重合 119)
+#   oss.oneclash.cc/2026/11/20261111.yaml    (14 条, 与现池重合 11, 属于转贴)
+# 结构上是最值钱的那类(按天存盘、可回补), 所以按模板往前取几天。
+#
+# 元组: (标签, URL 模板, 往前取几天)。模板里 {ymd} {y} {m} 会被日期填上。
+DATED_SOURCES = [
+    ("xinshoucun", "https://xinshoucun.net/sub/clash-{ymd}.yaml", 3),
+    ("oneclash", "https://oss.oneclash.cc/{y}/{m}/{ymd}.yaml", 2),
+]
+
+
+def dated_urls(template: str, days: int, today: datetime.date | None = None) -> list[str]:
+    """把 URL 模板按"今天, 昨天, 前天…"展开。缺的那天会 404, 由调用方计 miss。
+
+    `today` 只为测试注入, 生产走系统时间。
+    """
+    base = today or datetime.date.today()
+    out = []
+    for i in range(max(1, days)):
+        d = base - datetime.timedelta(days=i)
+        out.append(template.format(ymd=d.strftime("%Y%m%d"),
+                                   y=d.strftime("%Y"), m=d.strftime("%m")))
+    return out
+
 # 博客型源 —— 节点不在 TG 帖子里, 在频道主自己的站上。
 #
 # 为什么需要这一类: t.me/s/ 页面对"文档附件"只给一个 https://t.me/<ch>/<id> 的
@@ -682,6 +710,17 @@ def main():
         got = miss = 0
         for url in urls:
             body = fetch(url, opener, timeout=12, retries=1)
+            if not body:
+                miss += 1
+                continue
+            got += ingest(body.decode("utf-8", "ignore"), name, quiet=True)
+        print(f"  * {name}: 取 {len(urls)} 份 (缺 {miss}), 共抽出 {got} 条")
+
+    for name, tpl, days in DATED_SOURCES:
+        urls = dated_urls(tpl, days)
+        got = miss = 0
+        for url in urls:
+            body = fetch(url, opener, timeout=20, retries=1)
             if not body:
                 miss += 1
                 continue

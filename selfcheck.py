@@ -779,6 +779,38 @@ def t_dead_channels_not_active():
     assert len(collect.TG_CHANNELS) >= 4
 
 
+def t_dated_urls():
+    """按日期猜地址: 今天在最前, 跨月/跨年都要算对, 否则回补会整天 404。"""
+    import datetime
+    import collect
+    u = collect.dated_urls("https://a/{y}/{m}/{ymd}.yaml", 3,
+                          today=datetime.date(2026, 11, 11))
+    assert u[0] == "https://a/2026/11/20261111.yaml", u
+    assert u[1] == "https://a/2026/11/20261110.yaml", u
+    assert len(u) == 3
+    # 跨月: 12-01 往前一天必须是 11-30, 不能变成 12-00 或 11-31
+    v = collect.dated_urls("https://a/{y}/{m}/{ymd}.yaml", 2,
+                          today=datetime.date(2026, 12, 1))
+    assert v[1] == "https://a/2026/11/20261130.yaml", v
+    # 跨年
+    w = collect.dated_urls("https://a/{y}/{m}/{ymd}.yaml", 2,
+                          today=datetime.date(2027, 1, 1))
+    assert w[1] == "https://a/2026/12/20261231.yaml", w
+    # days 写 0 或负数也不能返回空列表
+    assert len(collect.dated_urls("https://a/{ymd}", 0,
+                                 today=datetime.date(2026, 11, 11))) == 1
+
+
+def t_dated_sources_wellformed():
+    """日期型源的表配错(模板没占位符/天数写成 0)会让每天的采集静默变空。"""
+    import collect
+    for tag, tpl, days in collect.DATED_SOURCES:
+        assert tpl.startswith("http"), (tag, tpl)
+        assert "{ymd}" in tpl, (tag, tpl)      # 至少要能按天变
+        assert days >= 1, (tag, days)
+        assert tpl.count("{") == tpl.count("}"), (tag, tpl)
+
+
 def t_opener_ignores_env_proxy():
     """没指定代理时必须真的直连 —— 环境变量里的 http_proxy 常指向失效端口。"""
     import collect
