@@ -357,6 +357,47 @@ def t_issue_template_shape():
     assert body[0]["type"] == "markdown", "示例文字必须放在最前面, 才能被整体跳过"
 
 
+def t_mark_legacy_four_digit_name():
+    """手机端(base64 旧订阅)显示的是 n0158 这种四位编号, 必须认得。"""
+    import mark
+    m = {"n0158": "1.1.1.1"}
+    t, missed = mark.resolve("n0158 超时", m)
+    assert t == {"1.1.1.1"}, (t, missed)
+    assert missed == [], missed
+
+
+def t_mark_name_and_ip_same_target():
+    """用户照抄客户端里整条名字（序号 + IP）时不该重复计数。"""
+    import mark
+    t, missed = mark.resolve("N05 202.50.253.72", {"N05": "202.50.253.72"})
+    assert t == {"202.50.253.72"}, t
+    assert missed == [], missed
+
+
+def t_base64_names_match_yaml():
+    """两种订阅格式必须同名 —— 否则手机看到的名字和说明里的对不上。"""
+    import base64
+    import urllib.parse
+    import yaml
+    pool = [node(server=f"10.9.0.{i}", fp=f"x{i}") for i in range(1, 4)]
+
+    def namer(n, i):
+        return f"N{i:02d} {n['server']}"
+
+    y = gateway.build_config(pool, [], [], namer=namer, runtime=False)
+    b = gateway.build_base64(pool, [], [], namer=namer)
+    ys = [p["name"] for p in (yaml.safe_load(y) or {}).get("proxies") or []]
+    raw = base64.b64decode(b).decode()
+    bs = []
+    for line in raw.splitlines():
+        if line.startswith("vmess://"):
+            import collect
+            bs.append((collect.parse_uri(line, "t") or {}).get("name"))
+        elif "#" in line:
+            bs.append(urllib.parse.unquote(line.split("#", 1)[1]))
+    assert ys == bs, f"yaml={ys} base64={bs}"
+
+
 TESTS = [(k[2:], v) for k, v in sorted(globals().items()) if k.startswith("t_")]
 
 if __name__ == "__main__":

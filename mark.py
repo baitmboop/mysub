@@ -36,9 +36,10 @@ SUB = os.path.join(OUT, "sub.yaml")
 SUMMARY = "/tmp/mark_summary.txt"
 
 IP_RE = re.compile(r"\b(?:\d{1,3}\.){3}\d{1,3}\b")
-# 三种写法都要认: N05 / 第 5 个 / 5 号
-NAME_RE = re.compile(r"(?<![A-Za-z0-9])N\s?(\d{1,3})(?![\d.])", re.I)
-ORD_RE = re.compile(r"第\s*(\d{1,3})\s*[个条]|(?<![\d.])(\d{1,3})\s*号")
+# 三种写法都要认: N05 / 第 5 个 / 5 号。位数放到 4 位 —— 手机端(base64 订阅)
+# 曾经的节点名是 "n0158" 这种四位编号, 1-3 位会直接漏掉。
+NAME_RE = re.compile(r"(?<![A-Za-z0-9])N\s?(\d{1,4})(?![\d.])", re.I)
+ORD_RE = re.compile(r"第\s*(\d{1,4})\s*[个条]|(?<![\d.])(\d{1,4})\s*号")
 
 # 整体性描述 —— 命中就不用逐个点名, 直接让云端重新筛一批
 ALL_WORDS = ("全部", "全都", "所有", "整体", "普遍", "都不行", "都不能",
@@ -72,30 +73,64 @@ def wants_full_rebuild(text: str) -> bool:
     return any(w in t for w in ALL_WORDS)
 
 
-def load_sub_map() -> dict:
-    """节点名 → server, 用来把 "N05" 反查成具体地址。
-
-    名字形如 "N05 1.2.3.4", 同时登记纯序号键, 方便裸写 N05。
-    """
+def _read_yaml_map(m: dict) -> None:
     if not os.path.exists(SUB):
-        return {}
+        return
     try:
         import yaml
         d = yaml.safe_load(open(SUB, encoding="utf-8")) or {}
     except Exception:
-        return {}
-    m = {}
+        return
     for p in d.get("proxies") or []:
         name = str(p.get("name") or "")
         srv = p.get("server")
         if not name or not srv:
             continue
-        m[name] = srv
-        hit = re.match(r"N\s?(\d{1,3})", name, re.I)
+        m[name.lower()] = srv
+        hit = re.match(r"N\s?(\d{1,4})", name, re.I)
         if hit:
             m[f"N{int(hit.group(1)):02d}"] = srv
-        if srv:
-            m[srv] = srv
+            m[f"n{int(hit.group(1)):04d}"] = srv
+        m[srv] = srv
+
+
+def _read_base64_map(m: dict) -> None:
+    """base64 订阅里也可能有手机端显示的名字, 一并收进来。
+
+    正常情况下两个订阅已经同名(都叫 "N01 1.2.3.4"), 但手机还留着旧订阅时
+    显示的是 "n0158" 这种源站原名 —— 用户照着念出来的就是旧名字, 得能认。
+    """
+    p = os.path.join(OUT, "sub-base64.txt")
+    if not os.path.exists(p):
+        return
+    try:
+        import base64
+        import collect
+        raw = base64.b64decode(open(p, encoding="utf-8").read().strip()).decode()
+    except Exception:
+        return
+    for line in raw.splitlines():
+        line = line.strip()
+        if not line or "://" not in line:
+            continue
+        try:
+            n = collect.parse_uri(line, "sub")
+        except Exception:
+            continue
+        if not n or not n.get("server"):
+            continue
+        name = str(n.get("name") or "").lower()
+        if name:
+            m.setdefault(name, n["server"])
+            m.setdefault(name.lstrip("n0") or name, n["server"])
+        m.setdefault(n["server"], n["server"])
+
+
+def load_sub_map() -> dict:
+    """节点名 → server。两种订阅格式都读, 无论手机显示哪个名字都能反查。"""
+    m: dict = {}
+    _read_yaml_map(m)
+    _read_base64_map(m)
     return m
 
 
@@ -115,6 +150,11 @@ def resolve(text: str, sub_map: dict) -> tuple[set, list]:
         key = f"N{num:02d}"
         if key in sub_map:
             targets.add(sub_map[key])
+            continue
+        # 手机端(base64)历史上显示的是 n0158 这种四位编号, 按名字再试一次
+        alt = f"n{num:04d}"
+        if alt in sub_map:
+            targets.add(sub_map[alt])
         elif key not in missed:
             missed.append(key)
     return targets, missed

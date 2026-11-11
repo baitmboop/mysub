@@ -514,14 +514,24 @@ def build_config(pool: list, private: list, fallback: list,
     return header + emit(cfg) + "\n"
 
 
-def build_base64(pool: list, private: list, fallback: list) -> str:
+def build_base64(pool: list, private: list, fallback: list, namer=None) -> str:
+    """生成通用分享链接列表 (base64)。
+
+    namer 必须和 build_config 用同一个 —— 否则同一次构建里, Clash 订阅显示
+    "N01 202.50.253.72", 而 base64 订阅显示源站原始名 "n0091"。手机端多半走
+    base64, 用户看到的名字就跟说明对不上, 报"哪个不通"时谁也不知道是哪个。
+    """
     uris = []
     for p in private + fallback:  # 私有层通常是 mihomo 格式, 尽力转
         u = _proxy_to_uri(p)
         if u:
             uris.append(u)
-    for n in pool:
-        u = to_uri(n)
+    for i, n in enumerate(pool, 1):
+        item = n
+        if namer is not None:
+            item = dict(n)
+            item["name"] = namer(n, i)
+        u = to_uri(item)
         if u:
             uris.append(u)
     return base64.b64encode("\n".join(uris).encode()).decode()

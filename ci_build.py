@@ -212,7 +212,7 @@ def main() -> int:
         os.makedirs(OUT, exist_ok=True)
         sub_yaml = gateway.build_config(pool, private, fallback,
                                        namer=cloud_namer, runtime=False)
-        sub_b64 = gateway.build_base64(pool, private, fallback)
+        sub_b64 = gateway.build_base64(pool, private, fallback, namer=cloud_namer)
         with open(os.path.join(OUT, "sub.yaml"), "w", encoding="utf-8") as f:
             f.write(sub_yaml)
         with open(os.path.join(OUT, "sub-base64.txt"), "w", encoding="utf-8") as f:
