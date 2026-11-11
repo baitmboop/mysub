@@ -132,9 +132,13 @@ github / youtube —— 只能过 `generate_204`。客户端用 `url-test` 按�
 
 两个相关设计：
 
-- **组用 `fallback` 而不是 `url-test`**。`url-test` 选延迟最低（会挑中假好节点），
-  `fallback` 从列表第一个开始、第一个健康就用 —— 而列表顺序由 `probe.py` 的真实下载
-  评分决定，等于"优先用实测最好的，挂了才换下一个"。
+- **默认组用 `url-test`，按序降级保留为备选**。早先用的是 `fallback`（按列表顺序取
+  第一个能通的），因为 `url-test` 会挑中"134ms 却打不开 github"的假好节点。但假好节点
+  现在在入库前就被上面的大站复检剔掉了，进不到组里 —— 所以换成 `url-test` 是安全的：
+  由客户端在你当前网络上实测选最快，而不是由云端（美国机房）的排序替你做决定。
+  想回到按序降级，在客户端里切到「③ 免费池」即可，成员完全一样。
+- **防抖**：`tolerance: 100` —— 延迟差不到 100ms 就不切换，避免两个节点数值抖动时
+  客户端反复重建连接。
 - **排序把复检通过数放在评分之前**。3/3 的永远排在 1/3 前面。
 
 复检走 `/proxies/{name}/delay` 接口而不是切 `POOL`，所以不影响当前选中，可以并发跑——
@@ -145,7 +149,7 @@ github / youtube —— 只能过 `generate_204`。客户端用 `url-test` 按�
 ## 订阅端点
 | 路径 | 用途 |
 |---|---|
-| `/sub/clash?token=` | Clash / mihomo / Stash，带 `fallback` 组 |
+| `/sub/clash?token=` | Clash / mihomo / Stash，`url-test` 自动择优 + `fallback` 按序降级 |
 | `/sub/base64?token=` | v2rayN / Shadowrocket / v2rayNG |
 | `/status?token=` | JSON 状态（池子规模、构建时间） |
 | `/reload?token=` | 手动重建 |
