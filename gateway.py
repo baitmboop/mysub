@@ -214,6 +214,8 @@ def pool_nodes(history: dict, alive: dict | None = None,
         n["fp"] = fp
         pref = cn.get(f"{n['server']}:{n['port']}")
         n["cn_ok"] = None if pref is None else int(bool(pref.get("ok")))
+        if pref and pref.get("by"):
+            n["cn_by"] = pref["by"]
         if pref and pref.get("latency"):
             n["cn_latency"] = pref["latency"]
         if pref and pref.get("speed") is not None:
@@ -226,7 +228,13 @@ def pool_nodes(history: dict, alive: dict | None = None,
     # 唯一例外: 通不通的比例太悬殊(>80%)时更像测量环境出了问题
     # (比如换了个网络测), 这时不信这批数据, 保留原样等 7 天过期自愈。
     dead = [n for n in out if n.get("cn_ok") == 0]
-    if out and len(dead) <= 0.8 * len(out):
+    auto_dead = [n for n in dead if n.get("cn_by") != "user_report"]
+    if out and auto_dead and len(auto_dead) > 0.8 * len(out):
+        # 自动测出来大面积不通, 更像测量环境有问题(比如换了网络测)。
+        # 但用户亲口说"这个不行"的要照办 —— 那是人的判断, 比脚本可信。
+        out = [n for n in out
+               if not (n.get("cn_ok") == 0 and n.get("cn_by") == "user_report")]
+    else:
         out = [n for n in out if n.get("cn_ok") != 0]
     # "连得上但传不动数据"只是当下拥塞, 允许兜底: 踢完不够 MIN_KEEP 就留着候补。
     keep = [n for n in out if _cn_rank(n) != 1]

@@ -244,6 +244,49 @@ def t_tls_fingerprint_not_overwritten():
         assert 'get("utls")' in body, f"{f} 应读 utls 字段"
 
 
+def t_pool_user_report_overrides_mass_dead_guard():
+    """自动测大面积不通时不轻信; 但用户亲口说"这个不行"的必须照办。"""
+    many = {f"n{i}": {"node": node(server=f"10.4.0.{i}", fp=f"n{i}",
+                                   verify_ok=3), "last_ok": time.time()}
+            for i in range(20)}
+    cn = {f"10.4.0.{i}:443": {"ok": 0, "at": time.time()} for i in range(19)}
+    cn["10.4.0.0:443"] = {"ok": 0, "at": time.time(), "by": "user_report"}
+    out = gateway.pool_nodes(many, cn=cn)
+    assert len(out) == 19, f"应只摘掉用户报的那个, 实际 {len(out)}"
+
+
+# ---------------------------------------------------------------- 反馈解析
+def t_mark_resolve_by_ip():
+    import mark
+    t, missed = mark.resolve("202.50.253.72 打不开", {})
+    assert t == {"202.50.253.72"}, t
+    assert missed == []
+
+
+def t_mark_resolve_by_name():
+    import mark
+    t, missed = mark.resolve("N05 和 N07 连不上", {"N05": "1.1.1.1", "N07": "2.2.2.2"})
+    assert t == {"1.1.1.1", "2.2.2.2"}, t
+
+
+def t_mark_unknown_name():
+    import mark
+    t, missed = mark.resolve("N99 不行", {})
+    assert t == set() and missed == ["N99"], (t, missed)
+
+
+def t_mark_nothing_recognized():
+    import mark
+    t, missed = mark.resolve("今天天气不错", {})
+    assert not t and not missed
+
+
+def t_mark_empty_text():
+    import mark
+    t, missed = mark.resolve("", {})
+    assert not t
+
+
 TESTS = [(k[2:], v) for k, v in sorted(globals().items()) if k.startswith("t_")]
 
 if __name__ == "__main__":

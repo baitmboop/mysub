@@ -48,8 +48,14 @@ def log(m: str) -> None:
 
 
 def cloud_namer(n: dict, i: int) -> str:
-    """订阅里的节点名。用纯序号, 避免延迟波动导致名字天天变。"""
-    return f"N{i:02d}"
+    """订阅里的节点名 = 序号 + 服务器地址。
+
+    光有序号不够: 每轮按速度重排后 N05 会指向完全不同的节点, 用户反馈
+    "第 5 个连不上" 时早就不是同一个了, 报的等于废话。带上地址才能定位 ——
+    手机上看一眼就能念出 IP, mark.py 也能据此反查到具体节点。
+    """
+    srv = n.get("server") or ""
+    return f"N{i:02d} {srv}" if srv else f"N{i:02d}"
 
 
 def main() -> int:

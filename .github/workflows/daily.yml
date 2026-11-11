@@ -10,6 +10,10 @@ on:
     # ② 其余时段每 3 小时 —— 只复测池内节点 + 重建订阅, 不打扰源站
     - cron: "0 2,5,8,11,14,17,23 * * *"
   workflow_dispatch: {}      # 支持手动点一下立即跑
+  # 手机端反馈通道: 提一个 issue 写下"哪几个节点连不上", 云端据此把它们
+  # 摘掉并重建订阅。人在外面、电脑关着也能用 —— 不需要任何本机参与。
+  issues:
+    types: [opened, edited]
   push:
     branches: [main]
     # 只在自己改代码时跑。机器人提交的产物(out/、data/)不触发，
@@ -22,6 +26,7 @@ on:
 
 permissions:
   contents: write            # 需要把产物 commit 回仓库
+  actions: write             # 反馈处理完后要手动触发一次重建
 
 concurrency:
   group: daily-sub
@@ -29,6 +34,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'issues'
     runs-on: ubuntu-latest
     timeout-minutes: 40
 
@@ -179,3 +185,82 @@ jobs:
             out/sub-base64.txt
             out/report.md
           retention-days: 14
+
+  # --------------------------------------------------------------------
+  # 手机端反馈: 提 issue 说"哪几个节点连不上", 这里把它们标成不可用,
+  # 然后触发一次重建。全程在云端完成, 不需要用户电脑开机。
+  # --------------------------------------------------------------------
+  report:
+    if: github.event_name == 'issues'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: 拉取仓库
+        uses: actions/checkout@v4
+
+      - name: 准备 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 解析反馈并记录
+        id: mark
+        # 用环境变量传 issue 内容, 不直接拼进 shell —— 正文里带引号或反引号
+        # 会被当成命令执行。
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          set -uo pipefail
+          pip install --quiet pyyaml
+          printf '%s\n%s\n' "$ISSUE_TITLE" "$ISSUE_BODY" > /tmp/body.txt
+          echo "--- 反馈内容 ---"
+          cat /tmp/body.txt
+          echo "----------------"
+
+          set +e
+          python3 mark.py --text "@/tmp/body.txt"
+          rc=$?
+          set -e
+          if [ "$rc" = "2" ]; then
+            echo "::notice::反馈里没有识别到节点名或 IP, 不做处理"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          elif [ "$rc" != "0" ]; then
+            echo "::error::处理反馈时出错 (退出码 $rc)"
+            exit "$rc"
+          fi
+
+          git config user.name  "nodepool-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/cn_pref.json
+          if git diff --staged --quiet; then
+            echo "没有新增标记"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -q -m "chore: 按反馈标记节点不可用 (#${{ github.event.issue.number }})"
+            pushed=0
+            for i in 1 2 3; do
+              if git push; then pushed=1; break; fi
+              echo "::warning::推送被拒(第 $i 次), 重试"
+              git pull --rebase -X theirs origin main || git rebase --abort 2>/dev/null || true
+              sleep 3
+            done
+            [ "$pushed" = "1" ] || { echo "::error::推送失败"; exit 1; }
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 触发重建
+        if: steps.mark.outputs.changed == 'true'
+        # 这次提交只动了 data/, 而 paths-ignore 里排除了 data/**, 所以不会
+        # 自动触发 build。这里显式 dispatch 一次, 让订阅立刻反映反馈。
+        run: |
+          set -uo pipefail
+          code=$(curl -sS -o /tmp/resp.json -w "%{http_code}" -X POST \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/daily.yml/dispatches" \
+            -d '{"ref":"main"}')
+          echo "dispatch HTTP $code"
+          [ "$code" = "204" ] || { cat /tmp/resp.json; exit 1; }
