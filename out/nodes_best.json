@@ -14,15 +14,15 @@
   "sources": [
    "go4sharing/sub"
   ],
-  "latency": 116,
-  "jitter": 5,
+  "latency": 138,
+  "jitter": 2,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8067,
+  "score": 0.8097,
   "speed": 0.0,
   "cn_ok": 1,
   "cn_by": "auto",
@@ -289,6 +289,37 @@
   "cn_speed": 0.1811
  },
  {
+  "proto": "trojan",
+  "server": "191.44.112.170.sslip.io",
+  "port": 443,
+  "password": "46d221fa-e9b4-748c-4eae-019a88e42991",
+  "sni": "orbylume.my.to",
+  "network": "ws",
+  "path": "/tvpn-trojan/bg",
+  "host": "orbylume.my.to",
+  "skipCertVerify": false,
+  "name": "n0145",
+  "source": "ermaozi",
+  "fp": "91ddb20f63a2ebeb",
+  "sources": [
+   "ermaozi"
+  ],
+  "latency": 1080,
+  "jitter": 639,
+  "verify_ok": 2,
+  "verify": {
+   "gstatic": "x",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.5333,
+  "speed": 0.0,
+  "cn_ok": 1,
+  "cn_by": "auto",
+  "cn_latency": 2716,
+  "cn_speed": 0.1327
+ },
+ {
   "proto": "ss",
   "server": "202.50.253.18",
   "port": 19999,
@@ -320,6 +351,31 @@
  {
   "proto": "ss",
   "server": "5.188.181.201",
+  "port": 9042,
+  "cipher": "aes-256-cfb",
+  "password": "S7KwUu7yBy58S3Ga",
+  "name": "n0334",
+  "source": "Auto_proxy",
+  "fp": "9ecb9fc4e516b22d",
+  "sources": [
+   "Auto_proxy",
+   "mahdibland"
+  ],
+  "latency": 138,
+  "jitter": 21,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8097,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "ss",
+  "server": "5.188.181.201",
   "port": 9014,
   "cipher": "aes-256-cfb",
   "password": "KnJGad3FqTvjqbaX",
@@ -342,26 +398,35 @@
   "cn_ok": null
  },
  {
-  "proto": "ss",
-  "server": "193.29.139.235",
-  "port": 443,
-  "cipher": "chacha20-ietf-poly1305",
-  "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-  "name": "n0192",
-  "source": "tg:@vpnfail_v2ray",
-  "fp": "3f5e8d86b64a57eb",
+  "proto": "vless",
+  "server": "zibanabz.jonsonvip.ir",
+  "port": 3939,
+  "uuid": "032c5a4d-0e1b-4077-89ad-129386180d2c",
+  "tls": true,
+  "sni": "ai.android",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "dnnN66V_xqEbGoG5P8E_Zqk3TaZt2lM4SI9N7Ana7FA",
+  "sid": "d9a2600fdecd7be2",
+  "utls": "",
+  "reality": true,
+  "name": "n1088",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "1b0226ac70ee7a48",
   "sources": [
-   "tg:@vpnfail_v2ray"
+   "tg:@oneclickvpnkeys"
   ],
-  "latency": 117,
-  "jitter": 6,
+  "latency": 142,
+  "jitter": 3,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.805,
+  "score": 0.8041,
   "speed": 0.0,
   "cn_ok": null
  },
@@ -377,7 +442,7 @@
   "sources": [
    "mahdibland"
   ],
-  "latency": 117,
+  "latency": 144,
   "jitter": 3,
   "verify_ok": 3,
   "verify": {
@@ -385,24 +450,24 @@
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.805,
+  "score": 0.8014,
   "speed": 0.0,
   "cn_ok": null
  },
  {
   "proto": "ss",
-  "server": "217.30.10.70",
-  "port": 9018,
-  "cipher": "aes-256-cfb",
-  "password": "fG2artUmHfNT2cX7",
-  "name": "n0228",
-  "source": "mahdibland",
-  "fp": "a5863263d72b070d",
+  "server": "193.29.139.235",
+  "port": 443,
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+  "name": "n0192",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "3f5e8d86b64a57eb",
   "sources": [
-   "mahdibland"
+   "tg:@vpnfail_v2ray"
   ],
-  "latency": 120,
-  "jitter": 3,
+  "latency": 145,
+  "jitter": 4,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
