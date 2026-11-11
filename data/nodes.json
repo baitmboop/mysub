@@ -4444,6 +4444,28 @@
  },
  {
   "proto": "vless",
+  "server": "151.115.164.110",
+  "port": 8880,
+  "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+  "tls": false,
+  "sni": "",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-310",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c9f7c41b70f0cc34",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "151.241.226.201",
   "port": 2053,
   "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -11342,28 +11364,6 @@
   "fp": "8a15d5bd989ba297",
   "sources": [
    "NoMoreWalls"
-  ]
- },
- {
-  "proto": "vless",
-  "server": "wetylgtest-production.up.railway.app",
-  "port": 443,
-  "uuid": "a63d95d9-de53-4507-974e-c52460502bf0",
-  "tls": true,
-  "sni": "wetylgtest-production.up.railway.app",
-  "network": "ws",
-  "path": "/api/QM66KW",
-  "host": "wetylgtest-production.up.railway.app",
-  "flow": "",
-  "pbk": "",
-  "sid": "",
-  "utls": "chrome",
-  "reality": false,
-  "name": "canfingV2rayNG-355",
-  "source": "tg:@vpnfail_v2ray",
-  "fp": "30ab441e9abe1243",
-  "sources": [
-   "tg:@vpnfail_v2ray"
   ]
  },
  {
