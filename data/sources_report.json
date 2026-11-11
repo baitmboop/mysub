@@ -1,32 +1,38 @@
 {
- "generated_at": "2026-11-11T20:32:13+08:00",
- "total_nodes": 1611,
+ "generated_at": "2026-11-11T21:32:13+08:00",
+ "total_nodes": 2139,
  "by_source": {
+  "tg:@byxiaoxi→blog": 547,
   "Auto_proxy": 470,
   "NoMoreWalls": 425,
-  "go4sharing/arch": 412,
+  "tg:@wxdy666→sub": 204,
+  "go4sharing/arch": 203,
   "mahdibland": 114,
   "tg:@freeVPNjd→sub": 55,
   "tg:@oneclickvpnkeys": 50,
   "ermaozi": 37,
-  "go4sharing/sub": 18,
   "tg:@vpnfail_v2ray": 16,
-  "freefq": 14
+  "freefq": 14,
+  "tg:@wxdy666": 3,
+  "go4sharing/sub": 1
  },
  "raw_hits": {
+  "tg:@byxiaoxi→blog": 1896,
   "anaer/Sub": 1802,
-  "go4sharing/arch": 924,
+  "go4sharing/arch": 632,
   "Auto_proxy": 560,
   "ermaozi": 516,
   "NoMoreWalls": 443,
+  "tg:@wxdy666→sub": 298,
   "mahdibland": 200,
   "tg:@freeVPNjd→sub": 100,
   "tg:@oneclickvpnkeys": 87,
-  "go4sharing/sub": 22,
   "ripaojiedian": 20,
   "Pawdroid/Free-servers": 20,
   "tg:@vpnfail_v2ray": 19,
   "freefq": 15,
+  "go4sharing/sub": 14,
+  "tg:@wxdy666": 5,
   "tg:@ssrsub": 1,
   "tg:@ripaojiedian": 0,
   "tg:@freefq": 0,
@@ -52,7 +58,7 @@
   "Pawdroid/Free-servers": {
    "ok": true,
    "raw": 20,
-   "new": 15
+   "new": 17
   },
   "Barabama/FreeNodes": {
    "ok": false,
@@ -62,7 +68,7 @@
   "anaer/Sub": {
    "ok": true,
    "raw": 1802,
-   "new": 1755
+   "new": 1741
   }
  }
 }

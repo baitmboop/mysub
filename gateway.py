@@ -262,7 +262,19 @@ def pool_nodes(history: dict, alive: dict | None = None,
                             n.get("cn_latency") or 99999,
                             -(n.get("verify_ok") or 0),
                             -(n.get("score") or 0)))
-    return out
+
+    # 同一个 server:port 只留一条。
+    # 历史池是按指纹(fp)去重的, 而 fp 里含协议/凭据 —— 同一个出口换了密码或换了
+    # 传输参数, 就算两条记录。表现为订阅里两个不同编号指向同一个地址, 客户端会
+    # 同时对同一个端口发起两倍连接, 只会互相挤占。排序完再去重, 留下的是最优那条。
+    seen, uniq = set(), []
+    for n in out:
+        key = f"{n.get('server')}:{n.get('port')}"
+        if key in seen:
+            continue
+        seen.add(key)
+        uniq.append(n)
+    return uniq
 
 
 # ---------------------------------------------------------------- 健康探测

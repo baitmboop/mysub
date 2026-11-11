@@ -42,6 +42,10 @@ TG_CHANNELS = [
     #                 token 一次性, 必须当轮用掉(实测十分钟后同一地址就 403)。
     #   go4sharing —— 频道已停更, 抓它主要是为了捞页面里的 GitHub 仓库(见 SUB_SOURCES)。
     "freeVPNjd", "go4sharing",
+    # wxdy666 —— 2026-11-11 实测: 最新帖 4.7h, 直出 5 个节点 + 20 个链接,
+    # 其中 8 份是有效订阅(最多一份 191 条), 一次贡献 221 个本池没有的节点。
+    # 它同时发"直出节点"和"机场订阅", 两种都能吃, 是最肥的一类。
+    "wxdy666",
 ]
 
 # 已停更的频道, 不再请求。2026-11-11 逐个看了 t.me/s/ 页面里最新帖子的时间:
@@ -139,6 +143,37 @@ ARCHIVE_SOURCES = [
     ("go4sharing/arch", "go4sharing/sub", "2026", 40),
 ]
 
+# 博客型源 —— 节点不在 TG 帖子里, 在频道主自己的站上。
+#
+# 为什么需要这一类: t.me/s/ 页面对"文档附件"只给一个 https://t.me/<ch>/<id> 的
+# 跳转链接, 文件本体要登录态才能下, 抓取侧拿不到。但同一个帖子正文里会带
+# **站内文章 URL**, 而文章页是纯网页, 节点就写在里面。
+#   @byxiaoxi 就是这种: 帖子只写"今日更新 150 个, 点击进入页面", 附件是 .txt,
+#   正文链接指向 blog.banyunxiaoxi.icu/YYYY/MM/DD/...  —  实测文章页里直接有 URI。
+#
+# 元组: (标签, 首页地址, 文章 URL 正则, 最多取几篇)
+# 只要首页能列出文章列表, 就不需要关心它哪天发、目录怎么组织。
+BLOG_SOURCES = [
+    ("tg:@byxiaoxi→blog",
+     "https://blog.banyunxiaoxi.icu/",
+     r"https://blog\.banyunxiaoxi\.icu/20\d\d/\d\d/\d\d/[^\s\"'<>]+",
+     12),
+]
+
+
+def blog_urls(home: str, pattern: str, take: int, opener, timeout: int = 25) -> list[str]:
+    """从一个站点的首页(或归档页)里列出最近 take 篇文章。
+
+    首页通常按时间倒序排, 所以取前 take 个就是最近的。这里不做去重排序之外的
+    任何假设 —— 有的站首页会把置顶/推荐混进来, 抓多了不影响结果(节点会去重)。
+    """
+    body = fetch(home, opener, timeout=timeout, retries=2)
+    if not body:
+        return []
+    html = body.decode("utf-8", "ignore")
+    urls = list(dict.fromkeys(re.findall(pattern, html)))
+    return urls[:take]
+
 # 候选源 —— 每轮都会采, 但只用来"体检", 决定要不要转成正式源。
 # 判据是**独立贡献**(new): 抽到多少条节点里, 有多少是现有源没有的。
 #   new ≈ 0  → 它和现有源高度重合, 或者只是同一个聚合器的镜像, 删掉;
@@ -157,6 +192,36 @@ CANDIDATE_SOURCES = [
     # 要吃到它得先给 ingest 加一条 YAML 解析分支, 光靠 VG_REGEX 抓不到。
     ("anaer/Sub", "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml"),
 ]
+
+
+def cf_decode_email(hexstr: str) -> str:
+    """解 Cloudflare 的邮箱混淆: 首字节是 XOR key, 其后逐字节异或还原。"""
+    try:
+        raw = bytes.fromhex(hexstr)
+    except ValueError:
+        return ""
+    if not raw:
+        return ""
+    key = raw[0]
+    return "".join(chr(c ^ key) for c in raw[1:])
+
+
+def restore_cf_email(text: str) -> str:
+    """把 <a data-cfemail="...">[email protected]</a> 换回原文。
+
+    为什么必须做: Cloudflare 的 Email Obfuscation 会把页面里任何形如 a@b 的
+    文本包成 <a class="__cf_email__" data-cfemail="…">[email protected]</a>。
+    而节点 URI 的 `ss://<base64>@host:port`、`vless://<uuid>@host:port` 恰好含 @,
+    于是 URL 被一个 <a> 标签拦腰截断, 正则只能匹配到协议头。
+    实测 blog.banyunxiaoxi.icu 当天那篇"150 个节点": 不还原只抽出 29 个,
+    还原后 150 个一个不少(29 个是不含 @ 的 vmess, 本来就没被混淆)。
+    """
+    if "data-cfemail=" not in text:
+        return text
+    return re.sub(
+        r'<a[^>]*?data-cfemail="([0-9a-fA-F]+)"[^>]*>.*?</a>',
+        lambda m: cf_decode_email(m.group(1)),
+        text, flags=re.S)
 
 
 def build_opener(proxy: str | None):
@@ -568,7 +633,9 @@ def main():
         # 不会真的混进正式池 —— 否则每多一个候选源, 当天要测速的节点就多一批,
         # 而候选源里绝大多数是重复的。
         tgt = pool if target is None else target
-        text = maybe_b64(text)
+        # 顺序很重要: 先解整体的 base64, 再还原 CF 邮箱混淆。
+        # 反过来的话 base64 文本里不会有 data-cfemail, 但 HTML 页面解 base64 会失败。
+        text = restore_cf_email(maybe_b64(text))
         found = VG_REGEX.findall(text)
         for uri in found:
             _put(parse_uri(uri, source), source, tgt)
@@ -580,7 +647,7 @@ def main():
             print(f"    → 抽出 {len(found) + extra:4d} 条, 去重后累计 {len(tgt)}")
         return len(found) + extra
 
-    print("[1/5] 公开订阅源")
+    print("[1/6] 公开订阅源")
     for name, url in RAW_SOURCES:
         print(f"  * {name}: {url}")
         body = fetch(url, opener)
@@ -592,7 +659,7 @@ def main():
                     if sub:
                         ingest(sub.decode("utf-8", "ignore"), f"{name}→child")
 
-    print("[2/5] 整份订阅 (含 Clash YAML)")
+    print("[2/6] 整份订阅 (含 Clash YAML)")
     # 外部清单: 用户随时追加, 不用改代码。
     extra_subs = []
     for u in load_extra_list(EXTRA_SUBS):
@@ -609,7 +676,7 @@ def main():
             continue
         ingest(body.decode("utf-8", "ignore"), name)
 
-    print("[3/5] 归档型源 (按天回补, 旧的静态代理照样活着)")
+    print("[3/6] 归档型源 (按天回补, 旧的静态代理照样活着)")
     for name, repo, subdir, take in ARCHIVE_SOURCES:
         urls = archive_urls(repo, subdir, take, opener)
         got = miss = 0
@@ -621,7 +688,7 @@ def main():
             got += ingest(body.decode("utf-8", "ignore"), name, quiet=True)
         print(f"  * {name}: 取 {len(urls)} 份 (缺 {miss}), 共抽出 {got} 条")
 
-    print("[4/5] Telegram 频道 (t.me/s/ 网页预览)")
+    print("[4/6] Telegram 频道 (t.me/s/ 网页预览)")
     channels = list(dict.fromkeys(TG_CHANNELS + load_extra_list(EXTRA_CHANNELS)))
     for ch in channels:
         body = fetch(f"https://t.me/s/{ch}", opener)
@@ -663,7 +730,19 @@ def main():
         if links:
             print(f"    · 帖内链接 {len(links)} 个, 其中 {hit} 份是有效订阅")
 
-    print("[5/5] 候选源体检 (只看独立贡献, 不看抽出条数)")
+    print("[5/6] 博客型源 (帖子里只有链接, 节点在频道主自己的站上)")
+    for tag, home, pat, take in BLOG_SOURCES:
+        urls = blog_urls(home, pat, take, opener)
+        got = miss = 0
+        for url in urls:
+            body = fetch(url, opener, timeout=20, retries=1)
+            if not body:
+                miss += 1
+                continue
+            got += ingest(body.decode("utf-8", "ignore"), tag, quiet=True)
+        print(f"  * {tag}: {len(urls)} 篇 (缺 {miss}), 共抽出 {got} 条")
+
+    print("[6/6] 候选源体检 (只看独立贡献, 不看抽出条数)")
     cand: dict[str, dict] = {}
     for name, url in CANDIDATE_SOURCES:
         # 浅拷贝一份池子做沙盘: 新节点的 fp 只在沙盘里累积, 正式池不受影响。

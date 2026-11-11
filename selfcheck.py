@@ -657,6 +657,30 @@ def t_archive_urls_fallback():
     assert "/main/" in got[0]
 
 
+def t_pool_nodes_dedup_by_endpoint():
+    """同一 server:port 在订阅里只能出现一次。
+
+    真实成因不是"凭据不同", 而是历史键格式不一致: 早期 ci_build 用 "server:port",
+    后来统一成 "server:port:proto", 两种格式的记录会同时留在池子里。表现是订阅里
+    两个编号指向同一个地址, 客户端对同一端口发起两倍连接。
+    """
+    n1 = node(server="5.5.5.5", port=443, proto="ss",
+              cipher="aes-128-gcm", password="a")
+    n2 = node(server="5.5.5.5", port=443, proto="ss",
+              cipher="aes-128-gcm", password="b")
+    n1.pop("fp", None)
+    n2.pop("fp", None)
+    n1["score"] = 0.2          # 排序读的是 node.score, 不是记录级 score
+    n2["score"] = 0.9
+    hist = {"5.5.5.5:443": {"node": n1, "score": 0.2, "last_ok": time.time()},
+            "5.5.5.5:443:ss": {"node": n2, "score": 0.9, "last_ok": time.time()}}
+    cn = {"5.5.5.5:443": {"ok": 1, "speed": 0.5, "latency": 100}}
+
+    out = gateway.pool_nodes(hist, cn=cn)
+    assert len(out) == 1, [x.get("password") for x in out]
+    assert out[0]["password"] == "b", out[0]["password"]   # 排序靠前的那条胜出
+
+
 def t_history_truncate_keeps_cn_alive():
     """池子满了要砍, 但绝不能砍掉国内实测能通的 —— 那是唯一真有用的证据。"""
     old_max, old_cn = gateway.MAX_POOL, gateway.load_cn_pref
@@ -676,6 +700,76 @@ def t_history_truncate_keeps_cn_alive():
         assert len(out) == 2, len(out)
     finally:
         gateway.MAX_POOL, gateway.load_cn_pref = old_max, old_cn
+
+
+def t_cf_email_restore():
+    """Cloudflare 邮箱混淆会把 ss://<b64>@host 的 @ 换成 <a data-cfemail>, 必须还原。
+
+    构造方法与线上一致: 首字节放 key, 其余字节 key XOR 原文字符。
+    """
+    import collect
+    # 线上 shape: ss:// 后面直接跟 <a>, CF 把整段 "base64@host:port" 当成邮箱混淆了
+    plain = "YWJj@1.2.3.4:8443"
+    key = 0x5A
+    enc = f"{key:02x}" + "".join(f"{ord(c) ^ key:02x}" for c in plain)
+    page = ('<pre>ss://<a href="/cdn-cgi/l/email-protection" class="__cf_email__" '
+            f'data-cfemail="{enc}">[email protected]</a>#name</pre>')
+    out = collect.restore_cf_email(page)
+    assert "<a" not in out, out
+    assert "ss://YWJj@1.2.3.4:8443#name" in out, out
+    uris = collect.VG_REGEX.findall(out)
+    assert len(uris) == 1 and uris[0].endswith(":8443#name"), uris
+
+
+def t_cf_email_noop():
+    """没有混淆的文本必须原样返回, 不能平白改写内容。"""
+    import collect
+    s = "vless://uuid@host:443?type=ws#n"
+    assert collect.restore_cf_email(s) == s
+    assert collect.cf_decode_email("") == ""
+    assert collect.cf_decode_email("zz") == ""      # 非法 hex 不抛异常
+
+
+def t_blog_urls_dedup_and_cap():
+    """博客型源: 首页里同一篇文章出现多次只算一次, 且不超过 take 篇。"""
+    import collect
+    page = ('<a href="https://blog.x.icu/2026/11/11/a-free-proxies/">A</a>'
+            '<a href="https://blog.x.icu/2026/11/11/a-free-proxies/">A again</a>'
+            '<a href="https://blog.x.icu/2026/11/10/b-free-proxies/">B</a>'
+            '<a href="https://blog.x.icu/2026/11/09/c-free-proxies/">C</a>'
+            '<a href="https://blog.x.icu/about">about</a>')
+    old = collect.fetch
+    collect.fetch = lambda *a, **k: page.encode()
+    try:
+        pat = r"https://blog\.x\.icu/20\d\d/\d\d/\d\d/[^\s\"'<>]+"
+        got = collect.blog_urls("https://blog.x.icu/", pat, 2, None)
+    finally:
+        collect.fetch = old
+    assert len(got) == 2, got                     # take 生效
+    assert len(set(got)) == 2, got                # 重复链接被去掉
+    assert got[0].endswith("a-free-proxies/"), got  # 保持首页顺序(最近的在前)
+
+
+def t_blog_urls_home_down():
+    """首页抓不到就返回空, 不能抛异常把整轮采集带崩。"""
+    import collect
+    old = collect.fetch
+    collect.fetch = lambda *a, **k: None
+    try:
+        got = collect.blog_urls("https://nope.invalid/", r"https://x/(\d+)", 5, None)
+    finally:
+        collect.fetch = old
+    assert got == [], got
+
+
+def t_blog_sources_configured():
+    """配了博客源就必须有可用的正则, 否则每天白抓一个首页。"""
+    import re
+    import collect
+    for tag, home, pat, take in collect.BLOG_SOURCES:
+        assert home.startswith("http"), (tag, home)
+        assert take >= 1, (tag, take)
+        re.compile(pat)          # 正则写错在这一步就炸, 不用等到线上
 
 
 def t_dead_channels_not_active():
