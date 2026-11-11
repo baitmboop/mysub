@@ -78,41 +78,6 @@
   "cn_speed": 1.1033
  },
  {
-  "proto": "vless",
-  "server": "3.169.9.125",
-  "port": 443,
-  "uuid": "67cd3349-f789-4cbb-8b91-4b6b1654ce7c",
-  "tls": true,
-  "sni": "d14jyezfrcyf60.cloudfront.net",
-  "network": "ws",
-  "path": "/",
-  "host": "d14jyezfrcyf60.cloudfront.net",
-  "flow": "",
-  "pbk": "",
-  "sid": "",
-  "fp": "812f079f71221536",
-  "reality": false,
-  "name": "n0348",
-  "source": "ermaozi",
-  "sources": [
-   "ermaozi"
-  ],
-  "latency": 385,
-  "jitter": 0,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9287,
-  "speed": 0.0,
-  "cn_ok": 1,
-  "cn_by": "auto",
-  "cn_latency": 2667,
-  "cn_speed": 1.0937
- },
- {
   "proto": "http",
   "server": "158.173.154.2",
   "port": 9002,
@@ -988,25 +953,27 @@
  },
  {
   "proto": "ss",
-  "server": "68.219.96.146",
+  "server": "156.146.38.169",
   "port": 443,
-  "cipher": "chacha20-ietf-poly1305",
-  "password": "G2shlbeRXdE45aVA",
-  "name": "n0620",
-  "source": "tg:@vpnfail_v2ray",
-  "fp": "d45e0fe450cae98b",
+  "cipher": "aes-128-gcm",
+  "password": "shadowsocks",
+  "name": "n0400",
+  "source": "mahdibland",
+  "fp": "0241ea9939f4637e",
   "sources": [
-   "tg:@vpnfail_v2ray"
+   "mahdibland",
+   "tg:@wxdy666→sub",
+   "tg:@byxiaoxi→blog"
   ],
-  "latency": 129,
-  "jitter": 7,
+  "latency": 25,
+  "jitter": 2,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8233,
+  "score": 0.8889,
   "speed": 0.0,
   "cn_ok": null
  }

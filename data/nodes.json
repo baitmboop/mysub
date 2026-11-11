@@ -33,9 +33,41 @@
  },
  {
   "proto": "http",
+  "server": "138.199.35.195",
+  "port": 9002,
+  "name": "美国 - Los Angeles - 12",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "7bd88986991b1694",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "138.199.35.197",
+  "port": 9002,
+  "name": "美国 - Los Angeles - 9",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "b7518fe9de103d43",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
   "server": "138.199.35.198",
   "port": 9002,
-  "name": "美国 - 洛杉矶 - 3",
+  "name": "美国 - Los Angeles - 4",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -49,9 +81,89 @@
  },
  {
   "proto": "http",
+  "server": "138.199.35.199",
+  "port": 9002,
+  "name": "美国 - Los Angeles - 14",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "8478b5048dd1483b",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "138.199.35.204",
+  "port": 9002,
+  "name": "美国 - Los Angeles - 11",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "81359b1902b2035f",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "138.199.35.206",
+  "port": 9002,
+  "name": "美国 - Los Angeles - 7",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "c70addd1601bcd89",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "138.199.35.207",
+  "port": 9002,
+  "name": "美国 - Los Angeles - 2",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "9c0210359a004662",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "138.199.35.208",
+  "port": 9002,
+  "name": "美国 - Los Angeles - 5",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "db22a76934d38e3e",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
   "server": "138.199.35.209",
   "port": 9002,
-  "name": "美国 - 洛杉矶 - 1",
+  "name": "美国 - Los Angeles - 10",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -65,9 +177,105 @@
  },
  {
   "proto": "http",
+  "server": "138.199.35.210",
+  "port": 9002,
+  "name": "美国 - Los Angeles - 3",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "11c3013f802923e5",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "138.199.35.211",
+  "port": 9002,
+  "name": "美国 - Los Angeles - 13",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "2f37941c1b1ab9b3",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "138.199.35.212",
+  "port": 9002,
+  "name": "美国 - Los Angeles - 4",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "971e2d76cd173fc1",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "138.199.35.213",
+  "port": 9002,
+  "name": "美国 - Los Angeles - 15",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "18b626fd4392e30f",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "138.199.35.214",
+  "port": 9002,
+  "name": "美国 - Los Angeles - 1",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "00d1f7083ccb212b",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "138.199.35.215",
+  "port": 9002,
+  "name": "美国 - Los Angeles - 2",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "7a4f7ef41ce5a58b",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
   "server": "138.199.35.216",
   "port": 9002,
-  "name": "美国 - 洛杉矶 - 2",
+  "name": "美国 - Los Angeles - 2",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -97,9 +305,25 @@
  },
  {
   "proto": "http",
+  "server": "138.199.35.220",
+  "port": 9002,
+  "name": "美国 - Los Angeles - 8",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "209a5155aad9c7a0",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
   "server": "154.61.56.215",
   "port": 3118,
-  "name": "英国 - London - 1",
+  "name": "英国 - London - 2",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -107,6 +331,246 @@
   "sni": "",
   "skipCertVerify": true,
   "fp": "a7f0fc85c3cb8719",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "156.146.59.10",
+  "port": 9002,
+  "name": "美国 - New York City - 29",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "81c70a4e59f25f98",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "156.146.59.11",
+  "port": 9002,
+  "name": "美国 - New York City - 31",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "85cc2d988c97317e",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "156.146.59.15",
+  "port": 9002,
+  "name": "美国 - New York City - 26",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "09e983b960d73dcf",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "156.146.59.21",
+  "port": 9002,
+  "name": "美国 - New York City - 19",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "1f56295d92ea9393",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "156.146.59.23",
+  "port": 9002,
+  "name": "美国 - New York City - 20",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "8154bbc8ef394e78",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "156.146.59.27",
+  "port": 9002,
+  "name": "美国 - New York City - 27",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "35bbd8f0cb59d969",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "156.146.59.31",
+  "port": 9002,
+  "name": "美国 - New York City - 23",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "f8a6470d3063c55b",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "156.146.59.33",
+  "port": 9002,
+  "name": "美国 - New York City - 21",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "1868064c9598338c",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "156.146.59.34",
+  "port": 9002,
+  "name": "美国 - New York City - 28",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "913bcc3ec5c83ce7",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "156.146.59.39",
+  "port": 9002,
+  "name": "美国 - New York City - 30",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "8c826dcf33a39661",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "156.146.59.4",
+  "port": 9002,
+  "name": "美国 - New York City - 17",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "0d20c1580cc8bc27",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "156.146.59.41",
+  "port": 9002,
+  "name": "美国 - New York City - 24",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "a313d06615a1e3c3",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "156.146.59.5",
+  "port": 9002,
+  "name": "美国 - New York City - 18",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "9eab9a6f1b3a31f0",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "156.146.59.8",
+  "port": 9002,
+  "name": "美国 - New York City - 25",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "b9fc31db0634c034",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "156.146.59.9",
+  "port": 9002,
+  "name": "美国 - New York City - 22",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "e6085c0e742c26ea",
   "sources": [
    "go4sharing/arch"
   ]
@@ -177,6 +641,22 @@
  },
  {
   "proto": "http",
+  "server": "167.172.172.190",
+  "port": 443,
+  "name": "德国 - Frankfurt am Main - 1",
+  "source": "go4sharing/arch",
+  "username": "testuser1",
+  "password": "e4b72b531a2d10900519",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "2da0d006a5545dd8",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
   "server": "185.219.159.15",
   "port": 443,
   "name": "拉脱维亚 - 里加 - 1",
@@ -195,7 +675,7 @@
   "proto": "http",
   "server": "185.219.159.16",
   "port": 443,
-  "name": "拉脱维亚 - 里加 - 1",
+  "name": "拉脱维亚 - 里加 - 2",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -225,9 +705,25 @@
  },
  {
   "proto": "http",
+  "server": "193.176.84.16",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 12",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "02bf68356428f0c4",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
   "server": "193.176.84.17",
   "port": 9002,
-  "name": "罗马尼亚 - 布加勒斯特 - 4",
+  "name": "罗马尼亚 - Bucharest - 7",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -243,7 +739,7 @@
   "proto": "http",
   "server": "193.176.84.20",
   "port": 9002,
-  "name": "罗马尼亚 - 布加勒斯特 - 5",
+  "name": "罗马尼亚 - Bucharest - 42",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -259,7 +755,7 @@
   "proto": "http",
   "server": "193.176.84.23",
   "port": 9002,
-  "name": "罗马尼亚 - 布加勒斯特 - 7",
+  "name": "罗马尼亚 - Bucharest - 60",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -275,7 +771,7 @@
   "proto": "http",
   "server": "193.176.84.24",
   "port": 9002,
-  "name": "罗马尼亚 - 布加勒斯特 - 3",
+  "name": "罗马尼亚 - Bucharest - 44",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -291,7 +787,7 @@
   "proto": "http",
   "server": "193.176.84.25",
   "port": 9002,
-  "name": "罗马尼亚 - 布加勒斯特 - 5",
+  "name": "罗马尼亚 - Bucharest - 40",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -323,7 +819,7 @@
   "proto": "http",
   "server": "193.176.84.27",
   "port": 9002,
-  "name": "罗马尼亚 - 布加勒斯特 - 1",
+  "name": "罗马尼亚 - Bucharest - 5",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -337,9 +833,25 @@
  },
  {
   "proto": "http",
+  "server": "193.176.84.29",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 45",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "254de174bcf24ce0",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
   "server": "193.176.84.30",
   "port": 9002,
-  "name": "罗马尼亚 - 布加勒斯特 - 2",
+  "name": "罗马尼亚 - Bucharest - 14",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -355,7 +867,7 @@
   "proto": "http",
   "server": "193.176.84.31",
   "port": 9002,
-  "name": "罗马尼亚 - 布加勒斯特 - 6",
+  "name": "罗马尼亚 - Bucharest - 56",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -371,7 +883,7 @@
   "proto": "http",
   "server": "193.176.84.32",
   "port": 9002,
-  "name": "罗马尼亚 - 布加勒斯特 - 9",
+  "name": "罗马尼亚 - Bucharest - 54",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -387,7 +899,7 @@
   "proto": "http",
   "server": "193.176.84.33",
   "port": 9002,
-  "name": "罗马尼亚 - 布加勒斯特 - 1",
+  "name": "罗马尼亚 - Bucharest - 13",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -403,7 +915,7 @@
   "proto": "http",
   "server": "193.176.84.34",
   "port": 9002,
-  "name": "罗马尼亚 - 布加勒斯特 - 4",
+  "name": "罗马尼亚 - Bucharest - 43",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -419,7 +931,7 @@
   "proto": "http",
   "server": "193.176.84.35",
   "port": 9002,
-  "name": "罗马尼亚 - 布加勒斯特 - 3",
+  "name": "罗马尼亚 - Bucharest - 10",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -451,7 +963,7 @@
   "proto": "http",
   "server": "193.176.84.38",
   "port": 9002,
-  "name": "罗马尼亚 - 布加勒斯特 - 3",
+  "name": "罗马尼亚 - Bucharest - 9",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -467,7 +979,7 @@
   "proto": "http",
   "server": "193.176.84.39",
   "port": 9002,
-  "name": "罗马尼亚 - 布加勒斯特 - 1",
+  "name": "罗马尼亚 - Bucharest - 50",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -547,7 +1059,7 @@
   "proto": "http",
   "server": "38.28.193.188",
   "port": 443,
-  "name": "美国 - 洛杉矶 - 2",
+  "name": "美国 - Los Angeles - 3",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -579,7 +1091,7 @@
   "proto": "http",
   "server": "51.159.225.196",
   "port": 23856,
-  "name": "荷兰 - 哈勒姆 - 1",
+  "name": "荷兰 - Amsterdam - 1",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -595,7 +1107,7 @@
   "proto": "http",
   "server": "82.65.162.76",
   "port": 443,
-  "name": "法国 - 巴黎 - 2",
+  "name": "法国 - 巴黎 - 1",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -627,7 +1139,7 @@
   "proto": "http",
   "server": "84.17.47.123",
   "port": 9002,
-  "name": "荷兰 - 阿姆斯特丹 - 6",
+  "name": "荷兰 - 阿姆斯特丹 - 7",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -643,7 +1155,7 @@
   "proto": "http",
   "server": "84.17.47.124",
   "port": 9002,
-  "name": "荷兰 - 阿姆斯特丹 - 2",
+  "name": "荷兰 - 阿姆斯特丹 - 4",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -659,7 +1171,7 @@
   "proto": "http",
   "server": "84.17.47.125",
   "port": 9002,
-  "name": "荷兰 - 阿姆斯特丹 - 5",
+  "name": "荷兰 - Amsterdam - 1",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -675,7 +1187,7 @@
   "proto": "http",
   "server": "84.17.47.146",
   "port": 9002,
-  "name": "荷兰 - 阿姆斯特丹 - 2",
+  "name": "荷兰 - Amsterdam - 2",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -691,7 +1203,7 @@
   "proto": "http",
   "server": "84.17.47.147",
   "port": 9002,
-  "name": "荷兰 - 阿姆斯特丹 - 3",
+  "name": "荷兰 - Amsterdam - 3",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -707,7 +1219,7 @@
   "proto": "http",
   "server": "84.17.47.148",
   "port": 9002,
-  "name": "荷兰 - 阿姆斯特丹 - 3",
+  "name": "荷兰 - Amsterdam - 4",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -723,7 +1235,7 @@
   "proto": "http",
   "server": "84.17.47.149",
   "port": 9002,
-  "name": "荷兰 - 阿姆斯特丹 - 4",
+  "name": "荷兰 - Amsterdam - 6",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -739,7 +1251,7 @@
   "proto": "http",
   "server": "84.17.47.150",
   "port": 9002,
-  "name": "荷兰 - 阿姆斯特丹 - 4",
+  "name": "荷兰 - Amsterdam - 3",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -747,6 +1259,1062 @@
   "sni": "",
   "skipCertVerify": true,
   "fp": "7f71a97fb281b5a1",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.14.146",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 38",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "f8c01c60d6dfd85d",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.14.147",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 21",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "ec46b3737a294023",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.14.148",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 4",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "7bdb560320918a33",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.14.151",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 44",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "e25d3d26a4a289db",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.14.153",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 55",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "e9a4e9a117e54ff2",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.14.154",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 46",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "2d881d7ba401c233",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.14.155",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 26",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "c6e08095ac844f2c",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.14.156",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 25",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "843e9531fc805ff3",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.14.157",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 9",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "184f401489072842",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.14.159",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 17",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "1e9f9b27eac27081",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.14.160",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 47",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "afba9d4af68250f7",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.154",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 1",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "81f9603f25e694e6",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.155",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 12",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "8f713d52d9370282",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.157",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 37",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "7a12d9b5515ba0b3",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.160",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 50",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "f54442cae01a75c6",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.162",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 5",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "35ab193eeaae2a65",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.164",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 57",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "4964d0c140666565",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.165",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 52",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "85ef3ff1167d2099",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.168",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 3",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "87a32ec45dd75233",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.170",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 35",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "e1f8f8312f66236a",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.171",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 38",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "b5ca6c41778cb3cd",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.175",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 41",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "95e28744c384a27e",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.176",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 7",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "ee2f08aa18918b5a",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.180",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 2",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "bdeffa3a5c6bf5ba",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.181",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 11",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "6bc6d88fb37c37f4",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.185",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 15",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "115a6ef14fb723ac",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.187",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 58",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "3d1d90f95dd8df45",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.194",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 39",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "47c5a47f10d8e093",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.196",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 24",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "1fa5b04d7181885b",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.197",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 36",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "a12a562b30f92325",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.199",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 23",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "3808a98c634dc162",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.200",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 34",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "7bda2a0f022255df",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.202",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 2",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "3a5d69e1bbc85612",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.203",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 10",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "fc6e3d5c657d2ffc",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.204",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 33",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "bd9e9a793c591505",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.206",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 48",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "dcd7944a2df38318",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.208",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 29",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "a21d25067620d62e",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.209",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 11",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "e435c5cd157a02f3",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.214",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 32",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "9d1a7c594486f2ee",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.215",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 37",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "0f4dc30ec464cd50",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.217",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 29",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "ce7ef19b42a729ce",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.225",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 21",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "9512ea10f8c1ed79",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.231",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 28",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "e6d97f56dbcd2e0a",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.233",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 27",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "dc8fb9ef180a0724",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.234",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 49",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "3bd92fe10262173d",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.235",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 19",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "55980bf6a3282e87",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.239",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 51",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "cfbe9d3640878ec3",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.240",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 26",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "33e6e2320fd78e0b",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.241",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 8",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "6c0ff5aaa2034b4d",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.244",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 6",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "7ab827b35fc71009",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.245",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 33",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "8f6e6b9ae0e6b9ed",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.248",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 41",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "cca83f99f67a9aa5",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.252",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 27",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "a25aad66fdd93eb6",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.254",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 31",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "e8b65a7a95e7dccf",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.37",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 35",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "397a80d9c2d227b3",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.38",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 3",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "c93a27113ce67468",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.39",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 47",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "6dc16d2590a0f320",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.40",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 16",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "36449d4693ef83bc",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.41",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 43",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "36f093c4bf218e3d",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.42",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 53",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "259ddc3d685f145d",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.43",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 20",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "84a692d125bcc6b9",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.49",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 1",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "43b9f15d8fc25534",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.50",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 22",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "e173f1cc9a892242",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.57",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 18",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "fc384c14cdf3fb2f",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.58",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 32",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "d2017826866141a7",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "84.239.49.62",
+  "port": 9002,
+  "name": "罗马尼亚 - Bucharest - 30",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "b2a017b7b3d4add9",
   "sources": [
    "go4sharing/arch"
   ]
@@ -785,9 +2353,25 @@
  },
  {
   "proto": "http",
+  "server": "fan.226278.xyz",
+  "port": 443,
+  "name": "美国 - Los Angeles - 16",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "c58f7f408e690149",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
   "server": "fan.365747.xyz",
   "port": 443,
-  "name": "美国 - 聖荷西 - 1",
+  "name": "美国 - San Jose - 5",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -795,6 +2379,22 @@
   "sni": "",
   "skipCertVerify": true,
   "fp": "2aca724d530a089a",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "fan.596189.xyz",
+  "port": 443,
+  "name": "美国 - San Jose - 1",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "267a97f672b4924c",
   "sources": [
    "go4sharing/arch"
   ]
@@ -835,7 +2435,7 @@
   "proto": "http",
   "server": "mmgr.club",
   "port": 443,
-  "name": "美国 - 費利蒙 - 5",
+  "name": "美国 - 西文多弗 - 7",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -851,13 +2451,13 @@
   "proto": "http",
   "server": "purposebydesig.club",
   "port": 443,
-  "name": "美国 - 費利蒙 - 5",
+  "name": "美国 - Fremont - 7",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
   "tls": true,
   "sni": "",
-  "skipCertVerify": false,
+  "skipCertVerify": true,
   "fp": "dadf5b067c0498df",
   "sources": [
    "go4sharing/arch"
@@ -867,13 +2467,13 @@
   "proto": "http",
   "server": "voteshirleysew.club",
   "port": 443,
-  "name": "美国 - 聖荷西 - 4",
+  "name": "美国 - Fremont - 6",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
   "tls": true,
   "sni": "",
-  "skipCertVerify": false,
+  "skipCertVerify": true,
   "fp": "0a5989d0cb83f95f",
   "sources": [
    "go4sharing/arch"
@@ -3108,7 +4708,7 @@
   "proto": "ss",
   "server": "107.174.88.128",
   "port": 443,
-  "name": "美国 - 圣克拉拉 - 6",
+  "name": "美国 - 圣克拉拉 - 2",
   "source": "go4sharing/arch",
   "cipher": "chacha20-ietf-poly1305",
   "password": "063aee2ed1124285b5d8a8b049e24cba",
@@ -3201,7 +4801,7 @@
   "proto": "ss",
   "server": "121.46.230.232",
   "port": 65443,
-  "name": "美国 - Los Angeles - 3",
+  "name": "美国 - Los Angeles - 1",
   "source": "go4sharing/arch",
   "cipher": "aes-256-cfb",
   "password": "7eadc6dbe2ae",
@@ -3214,7 +4814,7 @@
   "proto": "ss",
   "server": "121.46.230.233",
   "port": 65443,
-  "name": "美国 - Los Angeles - 1",
+  "name": "美国 - Los Angeles - 2",
   "source": "go4sharing/arch",
   "cipher": "aes-256-cfb",
   "password": "7eadc6dbe2ae",
@@ -3370,6 +4970,19 @@
  },
  {
   "proto": "ss",
+  "server": "13.38.30.165",
+  "port": 443,
+  "name": "法国 - Paris - 1",
+  "source": "go4sharing/arch",
+  "cipher": "aes-256-cfb",
+  "password": "amazonskr05",
+  "fp": "c6f4558bc2d22d7d",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "13.40.17.62",
   "port": 443,
   "name": "英国 - London - 3",
@@ -3450,6 +5063,19 @@
  },
  {
   "proto": "ss",
+  "server": "130.61.147.181",
+  "port": 59924,
+  "name": "德国 - Frankfurt am Main - 1",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=",
+  "fp": "7a84c06a37f6f49c",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "132.243.175.144",
   "port": 8388,
   "cipher": "chacha20-ietf-poly1305",
@@ -3478,7 +5104,7 @@
   "proto": "ss",
   "server": "134.195.101.231",
   "port": 2377,
-  "name": "美国 - 锡拉丘兹 - 1",
+  "name": "美国 - San Jose - 1",
   "source": "go4sharing/arch",
   "cipher": "chacha20-ietf-poly1305",
   "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
@@ -4427,6 +6053,19 @@
  },
  {
   "proto": "ss",
+  "server": "162.243.36.19",
+  "port": 80,
+  "name": "美国 - Secaucus - 1",
+  "source": "go4sharing/arch",
+  "cipher": "aes-256-gcm",
+  "password": "1BuVr1kYF7v435mF",
+  "fp": "e2806badfeae8abb",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "162.251.62.31",
   "port": 19999,
   "cipher": "aes-256-gcm",
@@ -5309,6 +6948,19 @@
  },
  {
   "proto": "ss",
+  "server": "192.220.55.35",
+  "port": 48378,
+  "name": "美国 - Los Angeles - 2",
+  "source": "go4sharing/arch",
+  "cipher": "aes-256-gcm",
+  "password": "America2026@LAX",
+  "fp": "1e7d2b2dce6dbc0a",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "193.108.116.98",
   "port": 19999,
   "cipher": "aes-256-gcm",
@@ -5634,6 +7286,58 @@
    "ermaozi",
    "mahdibland",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "194.87.47.204",
+  "port": 10901,
+  "name": "意大利 - Palermo - 1",
+  "source": "go4sharing/arch",
+  "cipher": "aes-256-gcm",
+  "password": "d1fa2f4b98a38bc8",
+  "fp": "7c8a08335c1acc9a",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "195.133.23.200",
+  "port": 30331,
+  "name": "俄罗斯 - Saint Petersburg - 1",
+  "source": "go4sharing/arch",
+  "cipher": "aes-256-gcm",
+  "password": "81a20429165df87e",
+  "fp": "6fecb32e53fa1e7f",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "195.133.23.200",
+  "port": 10998,
+  "name": "俄罗斯 - Saint Petersburg - 4",
+  "source": "go4sharing/arch",
+  "cipher": "aes-256-gcm",
+  "password": "81a20429165df87e",
+  "fp": "e979ac0f163e25af",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "195.133.23.5",
+  "port": 20998,
+  "name": "俄罗斯 - Saint Petersburg - 3",
+  "source": "go4sharing/arch",
+  "cipher": "aes-256-gcm",
+  "password": "d99c422199e62b6b",
+  "fp": "797170f8b19ecf38",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -6031,6 +7735,318 @@
  },
  {
   "proto": "ss",
+  "server": "211.91.158.26",
+  "port": 21118,
+  "name": "德国 - Frankfurt am Main - 3",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "32c5d2acf75b5a61",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.26",
+  "port": 21126,
+  "name": "法国 - Aubervilliers - 1",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "7703c07c94bc631d",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.26",
+  "port": 21107,
+  "name": "韩国 - Gangseo-gu - 1",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "13621f0c8a817fe9",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.26",
+  "port": 21114,
+  "name": "韩国 - Gangseo-gu - 3",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "72a469721e4c321a",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.26",
+  "port": 21105,
+  "name": "美国 - Elk Grove Village - 5",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "59b55b549b00f4de",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.26",
+  "port": 21119,
+  "name": "日本 - Ōi - 1",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "01a8c58254b9bb3c",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.26",
+  "port": 21121,
+  "name": "新加坡 - Singapore - 1",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "d7fb3af102877cbc",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.26",
+  "port": 21113,
+  "name": "意大利 - Milan - 1",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "b862934ec87896eb",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.26",
+  "port": 21120,
+  "name": "意大利 - Milan - 2",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "f78cacf8764ba709",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.26",
+  "port": 21125,
+  "name": "印度 - Mumbai - 1",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "16c77784f33429b5",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.26",
+  "port": 21117,
+  "name": "英国 - London - 1",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "0704fb2a0fd642ce",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.44",
+  "port": 21118,
+  "name": "德国 - Frankfurt am Main - 4",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "52d0508d0d179ddc",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.44",
+  "port": 21122,
+  "name": "法国 - Aubervilliers - 2",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "aec6bc8ae425b238",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.44",
+  "port": 21126,
+  "name": "法国 - Aubervilliers - 3",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "37b55a6df75c0f9b",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.44",
+  "port": 21107,
+  "name": "韩国 - Gangseo-gu - 2",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "8b683c6be2cc5f7d",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.44",
+  "port": 21105,
+  "name": "美国 - Elk Grove Village - 6",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "19f0d7c18eb67ca7",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.44",
+  "port": 21108,
+  "name": "美国 - Los Angeles - 7",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "4a8ae74716c1e9ea",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.44",
+  "port": 21119,
+  "name": "日本 - Ōi - 2",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "2fc42a403ba92983",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.44",
+  "port": 21121,
+  "name": "新加坡 - Singapore - 2",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "bc341977c75a9f42",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.44",
+  "port": 21116,
+  "name": "以色列 - Rosh Ha‘Ayin - 1",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "56921aa6dd18b106",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.44",
+  "port": 21113,
+  "name": "意大利 - Milan - 3",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "362e10b9fbc62dd7",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.44",
+  "port": 21125,
+  "name": "印度 - Mumbai - 2",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "76235e2a2b056428",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.44",
+  "port": 21104,
+  "name": "英国 - London - 2",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "6c903ce5c0295b1c",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "211.91.158.44",
+  "port": 21117,
+  "name": "英国 - London - 3",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
+  "fp": "378be81cb3cddeae",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "212.102.47.198",
   "port": 443,
   "cipher": "aes-128-cfb",
@@ -6077,6 +8093,19 @@
   "cipher": "aes-256-gcm",
   "password": "9cfaa78d51ac366f",
   "fp": "31665b3496991d8c",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "212.193.6.107",
+  "port": 30331,
+  "name": "加拿大 - Toronto - 1",
+  "source": "go4sharing/arch",
+  "cipher": "aes-256-gcm",
+  "password": "fbcec76953a2d173",
+  "fp": "d0a20800e243c9e8",
   "sources": [
    "go4sharing/arch"
   ]
@@ -6506,6 +8535,19 @@
   "cipher": "aes-256-cfb",
   "password": "amazonskr05",
   "fp": "1b999f9d702c086b",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "3.66.86.250",
+  "port": 443,
+  "name": "德国 - Frankfurt am Main - 1",
+  "source": "go4sharing/arch",
+  "cipher": "aes-256-cfb",
+  "password": "amazonskr05",
+  "fp": "1560514812d2cceb",
   "sources": [
    "go4sharing/arch"
   ]
@@ -7839,6 +9881,19 @@
  },
  {
   "proto": "ss",
+  "server": "45.140.169.123",
+  "port": 20887,
+  "name": "俄罗斯 - Moscow - 2",
+  "source": "go4sharing/arch",
+  "cipher": "aes-256-gcm",
+  "password": "6b39ae3234dfd68b",
+  "fp": "8422bec0d687dc71",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "45.144.172.123",
   "port": 10771,
   "name": "以色列 - 特拉维夫 - 1",
@@ -7846,6 +9901,19 @@
   "cipher": "aes-256-gcm",
   "password": "78235e7dc55e9ad1",
   "fp": "da372547255175a1",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "45.8.158.176",
+  "port": 10801,
+  "name": "俄罗斯 - Moscow - 1",
+  "source": "go4sharing/arch",
+  "cipher": "aes-256-gcm",
+  "password": "1eadd4e4a37b6601",
+  "fp": "6b13e9ff109268be",
   "sources": [
    "go4sharing/arch"
   ]
@@ -8426,7 +10494,8 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "mahdibland"
+   "mahdibland",
+   "go4sharing/arch"
   ]
  },
  {
@@ -8881,6 +10950,19 @@
    "ermaozi",
    "mahdibland",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "66.112.211.35",
+  "port": 443,
+  "name": "日本 - Asagaya-minami - 3",
+  "source": "go4sharing/arch",
+  "cipher": "aes-128-gcm",
+  "password": "synlgmm",
+  "fp": "6145b0eed402b5c3",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -10298,6 +12380,19 @@
  },
  {
   "proto": "ss",
+  "server": "autodiscover.fuzzyaytor.cyou",
+  "port": 42982,
+  "name": "芬兰 - Helsinki - 1",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS",
+  "fp": "6064233e44bbb97d",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "bogging-eyeteeth-fly.freesocks.work",
   "port": 443,
   "cipher": "chacha20-ietf-poly1305",
@@ -10308,6 +12403,110 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "cn01.somethingstranges.com",
+  "port": 8102,
+  "name": "中国 - Sha Tin - 2",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf",
+  "password": "passwd",
+  "fp": "d3885ffd24ec1e68",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "cn01.somethingstranges.com",
+  "port": 8101,
+  "name": "中国 - Sha Tin - 5",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf",
+  "password": "passwd",
+  "fp": "e9c5eaeb7ab6d756",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "cn02.somethingstranges.com",
+  "port": 8106,
+  "name": "中国 - Hoi Fu Court - 3",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf",
+  "password": "passwd",
+  "fp": "231fe41de38c73ee",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "cn02.somethingstranges.com",
+  "port": 8108,
+  "name": "中国 - Hoi Fu Court - 4",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf",
+  "password": "passwd",
+  "fp": "636a0019ccae8a99",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "cn06.somethingstranges.com",
+  "port": 8232,
+  "name": "菲律宾 - Caloocan - 1",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf",
+  "password": "passwd",
+  "fp": "80cbff3d4b6ba1b0",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "cn06.somethingstranges.com",
+  "port": 8233,
+  "name": "菲律宾 - Quezon City - 2",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf",
+  "password": "passwd",
+  "fp": "b2d45327d16128c8",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "cn18.somethingstranges.com",
+  "port": 8629,
+  "name": "阿拉伯联合酋长国 - Dubai - 1",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf",
+  "password": "passwd",
+  "fp": "d10315c415adc1c5",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "creativeboxvpnf.zanity.net",
+  "port": 5223,
+  "name": "芬兰 - Helsinki - 1",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "YwkJ1ViArbK6AZBCyjEC2p",
+  "fp": "a49c8f0ebdf1afd6",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -10403,6 +12602,19 @@
  },
  {
   "proto": "ss",
+  "server": "netixu.mashhad1market.ir",
+  "port": 1080,
+  "name": "德国 - Falkenstein - 2",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "TU4NUJuMe4XlZ3NCQ_1KiQ",
+  "fp": "02442402d10edd76",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "oztq9osla2ad.dop15.com",
   "port": 26412,
   "cipher": "2022-blake3-aes-256-gcm",
@@ -10465,6 +12677,19 @@
   "fp": "520d996f1da8f6d0",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "robon.mashhad1market.ir",
+  "port": 1080,
+  "name": "俄罗斯 - Novosibirsk - 1",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "TU4NUJuMe4XlZ3NCQ_1KiQ",
+  "fp": "02dfe4e4d47565e3",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -10572,6 +12797,19 @@
   "fp": "75c5765c9ed3b7af",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "vip-ca-1.hkd4fwmg.xyz",
+  "port": 10586,
+  "name": "加拿大 - Montréal - 1",
+  "source": "go4sharing/arch",
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "b1fNrhxfvAkUOEq7LyCrqK3Dg1R/SBeL",
+  "fp": "9779bdbfaeae3114",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -11624,6 +13862,20 @@
  },
  {
   "proto": "trojan",
+  "server": "104.248.167.79",
+  "port": 5624,
+  "name": "英国 - London - 1",
+  "source": "go4sharing/arch",
+  "password": "fg20mtCFHy",
+  "sni": "dsgvc.southbyte.xyz",
+  "network": "tcp",
+  "fp": "a290f2b6479072a2",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "104.25.60.205",
   "port": 443,
   "name": "US美国(mibei77.com 米贝节点分享) (78)(v2clash.blog 2026-10.31更新)",
@@ -11704,6 +13956,34 @@
  },
  {
   "proto": "trojan",
+  "server": "128.14.148.84",
+  "port": 5531,
+  "name": "美国 - Los Angeles - 2",
+  "source": "go4sharing/arch",
+  "password": "fg20mtCFHy",
+  "sni": "ycgsc.southbyte.xyz",
+  "network": "tcp",
+  "fp": "922d569a16eb5cb5",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "128.14.156.48",
+  "port": 5529,
+  "name": "美国 - Los Angeles - 1",
+  "source": "go4sharing/arch",
+  "password": "fg20mtCFHy",
+  "sni": "gonets.southbyte.xyz",
+  "network": "tcp",
+  "fp": "6a8ca53fcaf1c32d",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "128.199.128.117",
   "port": 443,
   "name": "SG新加坡(mibei77.com 米贝节点分享) (2)(v2clash.blog 2026-10.31更新)",
@@ -11715,6 +13995,20 @@
   "fp": "4238d05204ef7fc4",
   "sources": [
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "13.115.230.84",
+  "port": 443,
+  "name": "日本 - Tokyo - 2",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "polished-imp.rooster465.autos",
+  "network": "tcp",
+  "fp": "f57d9d9a7b63adb9",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -11781,6 +14075,20 @@
  },
  {
   "proto": "trojan",
+  "server": "137.184.172.41",
+  "port": 1921,
+  "name": "加拿大 - Toronto - 1",
+  "source": "go4sharing/arch",
+  "password": "fg20mtCFHy",
+  "sni": "sfecv.southbyte.xyz",
+  "network": "tcp",
+  "fp": "e2db9bb34607235a",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "138.197.5.103",
   "port": 443,
   "password": "xxoo",
@@ -11829,6 +14137,20 @@
   "fp": "ea94ff66aea4e9e4",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "139.59.238.97",
+  "port": 50573,
+  "name": "新加坡 - Singapore - 1",
+  "source": "go4sharing/arch",
+  "password": "pvZE3UfT0ziK1omVLlsjINBqeqqwab1M",
+  "sni": "139.59.238.97",
+  "network": "tcp",
+  "fp": "58a65b2dc3c2cd9e",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -11994,6 +14316,22 @@
  },
  {
   "proto": "trojan",
+  "server": "151.101.193.242",
+  "port": 443,
+  "name": "日本 - Narita - 9",
+  "source": "go4sharing/arch",
+  "password": "MITIVPN",
+  "sni": "mitivpn.lifestyle",
+  "network": "ws",
+  "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+  "host": "mitivpn.lifestyle",
+  "fp": "13b2f71149cfea46",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "157.245.159.88",
   "port": 443,
   "name": "SG新加坡(mibei77.com 米贝节点分享) (6)(v2clash.blog 2026-10.31更新)",
@@ -12005,6 +14343,20 @@
   "fp": "8c69eed7281e9022",
   "sources": [
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "157.245.99.215",
+  "port": 5750,
+  "name": "印度 - Bāshettihalli - 1",
+  "source": "go4sharing/arch",
+  "password": "fg20mtCFHy",
+  "sni": "inyct.southbyte.xyz",
+  "network": "tcp",
+  "fp": "d7cfd8539ec2fb34",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -12535,6 +14887,76 @@
   "fp": "9e0df9b4045cdc0a",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "172.105.197.232",
+  "port": 5710,
+  "name": "日本 - Tokyo - 1",
+  "source": "go4sharing/arch",
+  "password": "fg20mtCFHy",
+  "sni": "jpcaw.southbyte.xyz",
+  "network": "tcp",
+  "fp": "fb0d10c045b57956",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "172.233.107.18",
+  "port": 5575,
+  "name": "西班牙 - Madrid - 1",
+  "source": "go4sharing/arch",
+  "password": "fg20mtCFHy",
+  "sni": "fgrsd.southbyte.xyz",
+  "network": "tcp",
+  "fp": "189cd75d2645f902",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "172.234.100.80",
+  "port": 5612,
+  "name": "瑞典 - Stockholm - 1",
+  "source": "go4sharing/arch",
+  "password": "fg20mtCFHy",
+  "sni": "yugdv.southbyte.xyz",
+  "network": "tcp",
+  "fp": "0dfd58744dc9e2d4",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "172.237.131.75",
+  "port": 5446,
+  "name": "美国 - Chicago - 1",
+  "source": "go4sharing/arch",
+  "password": "fg20mtCFHy",
+  "sni": "chosucy.southbyte.xyz",
+  "network": "tcp",
+  "fp": "202169d82d49155d",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "172.238.226.26",
+  "port": 5444,
+  "name": "意大利 - Milan - 1",
+  "source": "go4sharing/arch",
+  "password": "fg20mtCFHy",
+  "sni": "xcvge.southbyte.xyz",
+  "network": "tcp",
+  "fp": "69fcede774158ccf",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -13143,6 +15565,20 @@
  },
  {
   "proto": "trojan",
+  "server": "193.169.239.160",
+  "port": 443,
+  "name": "荷兰 - Amsterdam - 3",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "thorough-falcon.rooster465.autos",
+  "network": "tcp",
+  "fp": "9b4ddc32531a564f",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "193.17.183.48",
   "port": 443,
   "name": "西班牙(v2clash.blog 2026-10.31更新)",
@@ -13263,6 +15699,20 @@
  },
  {
   "proto": "trojan",
+  "server": "206.189.7.80",
+  "port": 5446,
+  "name": "荷兰 - Amsterdam - 1",
+  "source": "go4sharing/arch",
+  "password": "fg20mtCFHy",
+  "sni": "inxgc.southbyte.xyz",
+  "network": "tcp",
+  "fp": "5b78a4793a414034",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "207.180.209.128",
   "port": 443,
   "name": "FR法国(v2clash.blog 2026-10.31更新)",
@@ -13347,6 +15797,20 @@
    "ermaozi",
    "mahdibland",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "209.38.240.27",
+  "port": 5859,
+  "name": "德国 - Frankfurt am Main - 1",
+  "source": "go4sharing/arch",
+  "password": "fg20mtCFHy",
+  "sni": "uyped.southbyte.xyz",
+  "network": "tcp",
+  "fp": "65bcecc389a9f646",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -13869,6 +16333,20 @@
  },
  {
   "proto": "trojan",
+  "server": "2c.fast9988.com",
+  "port": 50887,
+  "name": "中国 - Hong Kong - 2",
+  "source": "go4sharing/arch",
+  "password": "6ec301428255a78a1d826988d86cc87e",
+  "sni": "www.nintendogames.net",
+  "network": "tcp",
+  "fp": "24c531876f90e609",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "3.141.130.47",
   "port": 22222,
   "password": "telegram-id-directvpn",
@@ -13899,6 +16377,20 @@
   "fp": "dd2d6db3fa6b5c43",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "3.79.7.150",
+  "port": 443,
+  "name": "德国 - Frankfurt am Main - 2",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "moved-bluegill.rooster465.autos",
+  "network": "tcp",
+  "fp": "22d04811dcfd5ce3",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -14002,6 +16494,20 @@
   "sni": "sg-proxy.local",
   "network": "tcp",
   "fp": "3b3ff56f853ca3b7",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "43.202.61.210",
+  "port": 443,
+  "name": "韩国 - Incheon - 2",
+  "source": "go4sharing/arch",
+  "password": "FH72359861",
+  "sni": "loyal-molly.rooster465.autos",
+  "network": "tcp",
+  "fp": "6ef76d93e7feeb9d",
   "sources": [
    "go4sharing/arch"
   ]
@@ -14142,6 +16648,20 @@
  },
  {
   "proto": "trojan",
+  "server": "47.86.107.20",
+  "port": 5443,
+  "name": "中国 - Hong Kong - 2",
+  "source": "go4sharing/arch",
+  "password": "fg20mtCFHy",
+  "sni": "hytfes.southbyte.xyz",
+  "network": "tcp",
+  "fp": "068afc97b1845ff8",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "4c2d5151.266nets.com",
   "port": 12019,
   "name": "日本 - 东京 - 1",
@@ -14248,6 +16768,20 @@
  },
  {
   "proto": "trojan",
+  "server": "52.78.13.238",
+  "port": 443,
+  "name": "韩国 - Incheon - 1",
+  "source": "go4sharing/arch",
+  "password": "ND91608427",
+  "sni": "upward-puma.rooster465.autos",
+  "network": "tcp",
+  "fp": "88412d00e9e51b65",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "54.116.249.102",
   "port": 443,
   "name": "KR韩国(mibei77.com 米贝节点分享) (3)(v2clash.blog 2026-10.31更新)",
@@ -14259,6 +16793,34 @@
   "fp": "cca53d11e8dd686b",
   "sources": [
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "54.216.139.140",
+  "port": 443,
+  "name": "爱尔兰 - Dublin - 5",
+  "source": "go4sharing/arch",
+  "password": "FH72359861",
+  "sni": "cunning-grub.rooster465.autos",
+  "network": "tcp",
+  "fp": "dec7cecd8e74719d",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "54.74.159.195",
+  "port": 443,
+  "name": "爱尔兰 - Dublin - 1",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "kind-stork.rooster465.autos",
+  "network": "tcp",
+  "fp": "03652d8d08f1b7d3",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -14882,6 +17444,20 @@
  },
  {
   "proto": "trojan",
+  "server": "87.121.33.162",
+  "port": 443,
+  "name": "澳大利亚 - Sydney - 3",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "together-dingo.rooster465.autos",
+  "network": "tcp",
+  "fp": "ddcee4b491e7745e",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "87.236.146.111",
   "port": 443,
   "name": "捷克(v2clash.blog 2026-10.31更新)",
@@ -14963,6 +17539,20 @@
  },
  {
   "proto": "trojan",
+  "server": "balanced-heron.rooster465.autos",
+  "port": 443,
+  "name": "爱尔兰 - Dublin - 4",
+  "source": "go4sharing/arch",
+  "password": "FH72359861",
+  "sni": "balanced-heron.rooster465.autos",
+  "network": "tcp",
+  "fp": "1fbfe2c08d036bd7",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "blog.findlocaljobnetworkandbuildcommunityconnections.com",
   "port": 443,
   "password": "dba20dcb635e430fa4d3bfc303a149d2",
@@ -15014,6 +17604,62 @@
  },
  {
   "proto": "trojan",
+  "server": "chief-cricket.rooster465.autos",
+  "port": 443,
+  "name": "法国 - Paris - 1",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "",
+  "network": "tcp",
+  "fp": "35e672dc2905cb18",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "cunning-grub.rooster465.autos",
+  "port": 443,
+  "name": "爱尔兰 - Dublin - 2",
+  "source": "go4sharing/arch",
+  "password": "FH72359861",
+  "sni": "cunning-grub.rooster465.autos",
+  "network": "tcp",
+  "fp": "efb9d86542e6b9a0",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "darling-mutt.rooster465.autos",
+  "port": 443,
+  "name": "澳大利亚 - Sydney - 2",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "",
+  "network": "tcp",
+  "fp": "9c2a5da513bf30d3",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "dashing-bedbug.rooster465.autos",
+  "port": 443,
+  "name": "德国 - Frankfurt am Main - 1",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "",
+  "network": "tcp",
+  "fp": "c2ce5a0a6d3d66d6",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "de-bots4.h1cloud.net",
   "port": 25267,
   "password": "happybirthdaydaniel",
@@ -15049,6 +17695,20 @@
  },
  {
   "proto": "trojan",
+  "server": "distinct-quail.rooster465.autos",
+  "port": 443,
+  "name": "法国 - Paris - 4",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "",
+  "network": "tcp",
+  "fp": "94223540ddaa2a5b",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "dx.xxmd.online",
   "port": 7004,
   "password": "6685b4eb-aa84-454a-8049-5f5d39f0d9a0",
@@ -15062,6 +17722,20 @@
   "fp": "d871ffe5bd16d6af",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "emerging-porpoise.rooster465.autos",
+  "port": 443,
+  "name": "日本 - Tokyo - 5",
+  "source": "go4sharing/arch",
+  "password": "FH72359861",
+  "sni": "",
+  "network": "tcp",
+  "fp": "f31922778754f006",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -15080,6 +17754,20 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "enough-basilisk.rooster465.autos",
+  "port": 443,
+  "name": "波兰 - Ursynów - 2",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "",
+  "network": "tcp",
+  "fp": "581fc330b3220492",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -15148,6 +17836,62 @@
   "fp": "ec0e8822ed68fa35",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "funny-hen.rooster465.autos",
+  "port": 443,
+  "name": "爱尔兰 - Dublin - 2",
+  "source": "go4sharing/arch",
+  "password": "EQ30679154",
+  "sni": "funny-hen.rooster465.autos",
+  "network": "tcp",
+  "fp": "50b73b266aad2209",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "funny-squid.rooster465.autos",
+  "port": 443,
+  "name": "日本 - Tokyo - 4",
+  "source": "go4sharing/arch",
+  "password": "FH72359861",
+  "sni": "",
+  "network": "tcp",
+  "fp": "d98572d796dc275b",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "growing-oyster.rooster465.autos",
+  "port": 443,
+  "name": "中国 - Hong Kong - 1",
+  "source": "go4sharing/arch",
+  "password": "FH72359861",
+  "sni": "",
+  "network": "tcp",
+  "fp": "ff17519619ff3f6c",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "helping-shark.rooster465.autos",
+  "port": 443,
+  "name": "日本 - Tokyo - 7",
+  "source": "go4sharing/arch",
+  "password": "FH72359861",
+  "sni": "",
+  "network": "tcp",
+  "fp": "88c5a2421c99ba4a",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -15296,14 +18040,56 @@
  },
  {
   "proto": "trojan",
+  "server": "improved-anteater.rooster465.autos",
+  "port": 443,
+  "name": "日本 - Tokyo - 1",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "improved-anteater.rooster465.autos",
+  "network": "tcp",
+  "fp": "a53b8be8174967e1",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "in.tronsg.com",
   "port": 443,
   "name": "印度 - 班加羅爾 - 1",
   "source": "go4sharing/arch",
   "password": "Trojan@82164024",
-  "sni": "",
+  "sni": "in.tronsg.com",
   "network": "tcp",
   "fp": "00a93143a674708e",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "kind-stork.rooster465.autos",
+  "port": 443,
+  "name": "爱尔兰 - Dublin - 3",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "",
+  "network": "tcp",
+  "fp": "77024a4048a5d916",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "kind-stork.rooster465.autos",
+  "port": 443,
+  "name": "爱尔兰 - Dublin - 4",
+  "source": "go4sharing/arch",
+  "password": "PQ05174892",
+  "sni": "kind-stork.rooster465.autos",
+  "network": "tcp",
+  "fp": "f698fe81cb35b48f",
   "sources": [
    "go4sharing/arch"
   ]
@@ -15375,6 +18161,90 @@
  },
  {
   "proto": "trojan",
+  "server": "legible-ocelot.rooster465.autos",
+  "port": 443,
+  "name": "日本 - Tokyo - 2",
+  "source": "go4sharing/arch",
+  "password": "HC04361579",
+  "sni": "legible-ocelot.rooster465.autos",
+  "network": "tcp",
+  "fp": "52608fc1ae8dfc6e",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "light-filly.rooster465.autos",
+  "port": 443,
+  "name": "日本 - Tokyo - 3",
+  "source": "go4sharing/arch",
+  "password": "FH72359861",
+  "sni": "",
+  "network": "tcp",
+  "fp": "59ee587184ef6d3e",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "loyal-killdeer.rooster465.autos",
+  "port": 443,
+  "name": "日本 - Tokyo - 1",
+  "source": "go4sharing/arch",
+  "password": "FH72359861",
+  "sni": "",
+  "network": "tcp",
+  "fp": "1b8046642102d05e",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "loyal-molly.rooster465.autos",
+  "port": 443,
+  "name": "韩国 - Incheon - 1",
+  "source": "go4sharing/arch",
+  "password": "FH72359861",
+  "sni": "",
+  "network": "tcp",
+  "fp": "b434833e4f0cb8d9",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "magical-kodiak.rooster465.autos",
+  "port": 443,
+  "name": "中国 - Hong Kong - 1",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "",
+  "network": "tcp",
+  "fp": "935bc11f743fce24",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "many-pangolin.rooster465.autos",
+  "port": 443,
+  "name": "日本 - Tokyo - 2",
+  "source": "go4sharing/arch",
+  "password": "FH72359861",
+  "sni": "",
+  "network": "tcp",
+  "fp": "38f715788d5cb4ac",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "mx001.zestapp778.com",
   "port": 15083,
   "password": "5t6i121em5lkmsmk",
@@ -15406,6 +18276,34 @@
  },
  {
   "proto": "trojan",
+  "server": "one-quail.rooster465.autos",
+  "port": 443,
+  "name": "法国 - Paris - 2",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "",
+  "network": "tcp",
+  "fp": "1f0e39990df21b16",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "pet-albacore.rooster465.autos",
+  "port": 443,
+  "name": "日本 - Tokyo - 5",
+  "source": "go4sharing/arch",
+  "password": "HC04361579",
+  "sni": "pet-albacore.rooster465.autos",
+  "network": "tcp",
+  "fp": "fe06d6c811680178",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "ph001.zestapp778.com",
   "port": 46298,
   "password": "5t6i121em5lkmsmk",
@@ -15419,6 +18317,34 @@
   "fp": "fa25cc1a0cf3fbf6",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "polished-imp.rooster465.autos",
+  "port": 443,
+  "name": "日本 - Tokyo - 1",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "",
+  "network": "tcp",
+  "fp": "adfcb9c3e85ed6bc",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "relative-locust.rooster465.autos",
+  "port": 443,
+  "name": "波兰 - Ursynów - 1",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "",
+  "network": "tcp",
+  "fp": "9d1462a1fa158f23",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -15479,6 +18405,20 @@
  },
  {
   "proto": "trojan",
+  "server": "settling-shad.rooster465.autos",
+  "port": 443,
+  "name": "日本 - Tokyo - 6",
+  "source": "go4sharing/arch",
+  "password": "HC04361579",
+  "sni": "settling-shad.rooster465.autos",
+  "network": "tcp",
+  "fp": "12121489c858ce1f",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "sgp.beijingshi.asia",
   "port": 55000,
   "password": "1edijotohkomaiw8",
@@ -15493,6 +18433,20 @@
   "sources": [
    "tg:@freeVPNjd→sub",
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "summary-firefly.rooster465.autos",
+  "port": 443,
+  "name": "爱尔兰 - Dublin - 1",
+  "source": "go4sharing/arch",
+  "password": "FH72359861",
+  "sni": "",
+  "network": "tcp",
+  "fp": "d2327d6f1856c209",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -15529,6 +18483,34 @@
    "NoMoreWalls",
    "ermaozi",
    "mahdibland"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "thorough-falcon.rooster465.autos",
+  "port": 443,
+  "name": "荷兰 - Amsterdam - 1",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "",
+  "network": "tcp",
+  "fp": "2e87e7f6a3b1ecd6",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "thorough-falcon.rooster465.autos",
+  "port": 443,
+  "name": "荷兰 - Amsterdam - 2",
+  "source": "go4sharing/arch",
+  "password": "EQ30679154",
+  "sni": "",
+  "network": "tcp",
+  "fp": "cf6cb07f823881a2",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -15617,6 +18599,76 @@
  },
  {
   "proto": "trojan",
+  "server": "together-dingo.rooster465.autos",
+  "port": 443,
+  "name": "澳大利亚 - Sydney - 1",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "",
+  "network": "tcp",
+  "fp": "981fb55dbbc3e4d7",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "touching-turtle.rooster465.autos",
+  "port": 443,
+  "name": "爱尔兰 - Dublin - 3",
+  "source": "go4sharing/arch",
+  "password": "FH72359861",
+  "sni": "",
+  "network": "tcp",
+  "fp": "8ec58df5eba6820b",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "tough-hermit.rooster465.autos",
+  "port": 443,
+  "name": "法国 - Paris - 3",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "",
+  "network": "tcp",
+  "fp": "8ccbfc894d8d3a25",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "upright-bedbug.rooster465.autos",
+  "port": 443,
+  "name": "中国 - Hong Kong - 2",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "",
+  "network": "tcp",
+  "fp": "ea82f473c9753a9f",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "upward-puma.rooster465.autos",
+  "port": 443,
+  "name": "韩国 - Incheon - 2",
+  "source": "go4sharing/arch",
+  "password": "ND91608427",
+  "sni": "upward-puma.rooster465.autos",
+  "network": "tcp",
+  "fp": "f49cfd44dc2090a0",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "us.blazeppn.info",
   "port": 443,
   "password": "xxoo",
@@ -15647,6 +18699,34 @@
   "fp": "43e9f0ca6f9108c0",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "whole-woodcock.rooster465.autos",
+  "port": 443,
+  "name": "荷兰 - Amsterdam - 1",
+  "source": "go4sharing/arch",
+  "password": "AE62539071",
+  "sni": "",
+  "network": "tcp",
+  "fp": "fb53b11f53278fb7",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "wise-gibbon.rooster465.autos",
+  "port": 443,
+  "name": "日本 - Tokyo - 6",
+  "source": "go4sharing/arch",
+  "password": "FH72359861",
+  "sni": "",
+  "network": "tcp",
+  "fp": "410f7f9b9fb9afa7",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -15887,28 +18967,6 @@
   "fp": "4a4cb46265e47133",
   "sources": [
    "tg:@freeVPNjd→sub"
-  ]
- },
- {
-  "proto": "vless",
-  "server": "100.31.159.227",
-  "port": 1114,
-  "uuid": "6ba2eac6-0ec9-44ca-a42b-a8e23aafb530",
-  "tls": true,
-  "sni": "yahoo.com",
-  "network": "tcp",
-  "path": "",
-  "host": "/?Telegram---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24",
-  "flow": "xtls-rprx-vision",
-  "pbk": "WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ",
-  "sid": "79a1e14b",
-  "utls": "firefox",
-  "reality": true,
-  "name": "filembad-286",
-  "source": "tg:@vpnfail_v2ray",
-  "fp": "07036bc5bc38756a",
-  "sources": [
-   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -28159,6 +31217,28 @@
  },
  {
   "proto": "vless",
+  "server": "89.105.218.133",
+  "port": 443,
+  "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+  "tls": true,
+  "sni": "golos.mail.ru",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+  "sid": "428ef87fd47a3a32",
+  "utls": "",
+  "reality": true,
+  "name": "filembad-314",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "26dc46714d898a7e",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "89.105.218.148",
   "port": 443,
   "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
@@ -30032,28 +33112,6 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "tg:@wxdy666→sub"
-  ]
- },
- {
-  "proto": "vless",
-  "server": "ct.877774.xyz",
-  "port": 443,
-  "uuid": "17745492-5a70-4663-8bde-415f699e8adf",
-  "tls": true,
-  "sni": "nl-ams.862400.xyz",
-  "network": "ws",
-  "path": "/announcement?ed=2048",
-  "host": "nl-ams.862400.xyz",
-  "flow": "",
-  "pbk": "",
-  "sid": "",
-  "utls": "random",
-  "reality": false,
-  "name": "NL-LN",
-  "source": "tg:@wxdy666→sub",
-  "fp": "b5772a74264ffcbf",
-  "sources": [
    "tg:@wxdy666→sub"
   ]
  },
@@ -32142,13 +35200,13 @@
   "port": 9443,
   "uuid": "14c36bd3-d631-4618-99aa-5f6c1c9f4abc",
   "tls": true,
-  "sni": "microsoft.com",
+  "sni": "i.s-microsoft.com",
   "network": "tcp",
   "path": "",
   "host": "",
   "flow": "xtls-rprx-vision",
   "pbk": "rgtOiCdN6uMCpk9LhOTEIm4LVjLlkH-9LYbcf6AXBg4",
-  "sid": "b722af399885",
+  "sid": "5a935ef1ea",
   "utls": "chrome",
   "reality": true,
   "name": "SGP-VLESS-Reality-FERR",
@@ -33020,28 +36078,6 @@
   "fp": "f3f6ee2dc3cf24dc",
   "sources": [
    "tg:@freeVPNjd→sub"
-  ]
- },
- {
-  "proto": "vless",
-  "server": "www.visa.com.hk",
-  "port": 443,
-  "uuid": "17745492-5a70-4663-8bde-415f699e8adf",
-  "tls": true,
-  "sni": "us-lax.862400.xyz",
-  "network": "ws",
-  "path": "/announcement?ed=2048",
-  "host": "us-lax.862400.xyz",
-  "flow": "",
-  "pbk": "",
-  "sid": "",
-  "utls": "random",
-  "reality": false,
-  "name": "US-LN",
-  "source": "tg:@wxdy666→sub",
-  "fp": "5379ce863297d1f5",
-  "sources": [
-   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -34490,10 +37526,10 @@
   "proto": "vmess",
   "server": "112.132.215.108",
   "port": 50002,
-  "name": "中国 - 合肥 - 3",
+  "name": "中国 - Hefei - 2",
   "source": "go4sharing/arch",
   "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-  "alterId": 0,
+  "alterId": 64,
   "cipher": "auto",
   "tls": false,
   "sni": "",
@@ -34564,23 +37600,6 @@
   "proto": "vmess",
   "server": "120.48.133.162",
   "port": 10086,
-  "name": "中国 - 北京 - 2",
-  "source": "go4sharing/arch",
-  "uuid": "4fc543d5-23ce-4556-ae2b-01685edd4397",
-  "alterId": 0,
-  "cipher": "auto",
-  "tls": false,
-  "sni": "",
-  "network": "ws",
-  "fp": "9772b6b55392d7a9",
-  "sources": [
-   "go4sharing/arch"
-  ]
- },
- {
-  "proto": "vmess",
-  "server": "120.48.133.162",
-  "port": 10086,
   "name": "中国 - 北京 - 1",
   "source": "go4sharing/arch",
   "uuid": "fde10e39-48bb-4dcf-b3ba-71d711323a54",
@@ -34591,6 +37610,23 @@
   "network": "ws",
   "path": "/",
   "fp": "2cfec3a73ff14ad0",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "120.48.133.162",
+  "port": 10086,
+  "name": "中国 - 北京 - 2",
+  "source": "go4sharing/arch",
+  "uuid": "4fc543d5-23ce-4556-ae2b-01685edd4397",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "fp": "9772b6b55392d7a9",
   "sources": [
    "go4sharing/arch"
   ]
@@ -36217,6 +39253,23 @@
  },
  {
   "proto": "vmess",
+  "server": "2.27.174.110",
+  "port": 794,
+  "name": "中国 - Taipei - 1",
+  "source": "go4sharing/arch",
+  "uuid": "fd2c3c77-1984-4f7c-befe-efba034e1f3c",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "fp": "0ac90c9800925b2f",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
   "server": "20.2.218.142",
   "port": 8443,
   "uuid": "3960f128-1163-40a3-8dd7-7c91176e14a5",
@@ -36685,6 +39738,25 @@
  },
  {
   "proto": "vmess",
+  "server": "43.198.204.35",
+  "port": 443,
+  "name": "中国 - Hong Kong - 1",
+  "source": "go4sharing/arch",
+  "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "cE0gedPXwOU6cqoN.v.3dns.vip",
+  "network": "ws",
+  "path": "/ws-vmess",
+  "host": "",
+  "fp": "2c57511ff99b47d6",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
   "server": "45.192.224.135",
   "port": 443,
   "name": "澳大利亚 - 悉尼 - 4",
@@ -36996,6 +40068,23 @@
  },
  {
   "proto": "vmess",
+  "server": "64.83.12.153",
+  "port": 443,
+  "name": "美国 - Los Angeles - 2",
+  "source": "go4sharing/arch",
+  "uuid": "9d476209-d8bd-9536-6e8d-61c97ec114db",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "fp": "8aabaac4a26701bb",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
   "server": "67.220.74.250",
   "port": 1270,
   "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -37130,6 +40219,23 @@
   "sources": [
    "Auto_proxy",
    "anaer/Sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "USA.SixMax.ir",
+  "port": 110,
+  "name": "美国 - New York City - 1",
+  "source": "go4sharing/arch",
+  "uuid": "cabf1c07-21c2-4fc7-865c-7c9ee5e36bc8",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "fp": "62552333dc38db70",
+  "sources": [
+   "go4sharing/arch"
   ]
  },
  {
@@ -37690,6 +40796,42 @@
  },
  {
   "proto": "vmess",
+  "server": "jp.vpn.taiaise.cn",
+  "port": 443,
+  "name": "日本 - Monzen-nakachō - 4",
+  "source": "go4sharing/arch",
+  "uuid": "060aede7-11ea-4032-b025-6c4168a5182e",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "jp.vpn.taiaise.cn",
+  "network": "ws",
+  "path": "/jp",
+  "host": "",
+  "fp": "d58ea3da6ffea02e",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "jpaws.ccwink.photos",
+  "port": 53225,
+  "name": "德国 - Nuremberg - 1",
+  "source": "go4sharing/arch",
+  "uuid": "a157bb84-dd84-4ad8-86b0-0656bc76e4d1",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "tcp",
+  "fp": "1e84542aa447a60d",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
   "server": "linode.appleid.bf",
   "port": 2086,
   "uuid": "3960f128-1163-40a3-8dd7-7c91176e14a5",
@@ -37995,7 +41137,7 @@
   "proto": "vmess",
   "server": "v24.hdacd.com",
   "port": 30824,
-  "name": "美国 - 水牛城 - 1",
+  "name": "美国 - Chicago - 1",
   "source": "go4sharing/arch",
   "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
   "alterId": 2,
@@ -38029,7 +41171,7 @@
   "proto": "vmess",
   "server": "v4.hdacd.com",
   "port": 30804,
-  "name": "爱尔兰 - 都柏林 - 1",
+  "name": "爱尔兰 - Dublin - 1",
   "source": "go4sharing/arch",
   "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
   "alterId": 2,
@@ -38044,17 +41186,51 @@
  },
  {
   "proto": "vmess",
-  "server": "v6.hdacd.com",
-  "port": 30806,
-  "name": "日本 - 东京 - 1",
+  "server": "v45.hdacd.com",
+  "port": 30845,
+  "name": "新加坡 - Singapore - 1",
   "source": "go4sharing/arch",
   "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
   "alterId": 2,
   "cipher": "auto",
   "tls": false,
-  "sni": "v6.hdacd.com",
+  "sni": "",
+  "network": "tcp",
+  "fp": "3a32021c8b2531cb",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "v6.hdacd.com",
+  "port": 30806,
+  "name": "日本 - Osaka - 8",
+  "source": "go4sharing/arch",
+  "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+  "alterId": 2,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
   "network": "tcp",
   "fp": "75813cdceaca85ab",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "v9.hdacd.com",
+  "port": 30809,
+  "name": "中国 - Kwai Chung - 1",
+  "source": "go4sharing/arch",
+  "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+  "alterId": 2,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "fp": "bd19dd523696e51b",
   "sources": [
    "go4sharing/arch"
   ]
@@ -38120,7 +41296,7 @@
   "proto": "vmess",
   "server": "www.361371.xyz",
   "port": 443,
-  "name": "美国 - Los Angeles - 3",
+  "name": "美国 - Los Angeles - 1",
   "source": "go4sharing/arch",
   "uuid": "da77c564-3815-468c-8867-0aea0b397027",
   "alterId": 0,
@@ -38171,6 +41347,25 @@
   "path": "/a7fba54d-1031-4b23-b8b6-dbf8ce6ad3b3-vm",
   "host": "",
   "fp": "5e6057b5c0218080",
+  "sources": [
+   "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "www.true.th",
+  "port": 80,
+  "name": "泰国 - Bangkok - 1",
+  "source": "go4sharing/arch",
+  "uuid": "a150d554-e962-4632-829f-ee583ada3f95",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "d7pu5mzr9c4b0.cloudfront.net",
+  "network": "ws",
+  "path": "/htun",
+  "host": "",
+  "fp": "2ce88f901fcd7421",
   "sources": [
    "go4sharing/arch"
   ]
