@@ -10794,27 +10794,6 @@
  },
  {
   "proto": "vless",
-  "server": "s1.berluno.ir",
-  "port": 1155,
-  "uuid": "d07acc1a-c51d-4a1e-93d9-4753d29ae24b",
-  "tls": true,
-  "sni": "tgju.org",
-  "network": "tcp",
-  "path": "",
-  "host": "",
-  "flow": "",
-  "pbk": "o6UTWdONnTOvDOWmhfxXUoeOEtlw7VUkoAWkmOk_FWI",
-  "sid": "4e4aaad65cc07da8",
-  "fp": "0c44936080216626",
-  "reality": true,
-  "name": "filembad-391",
-  "source": "tg:@vpnfail_v2ray",
-  "sources": [
-   "tg:@vpnfail_v2ray"
-  ]
- },
- {
-  "proto": "vless",
   "server": "s2503.ccgfw.online",
   "port": 443,
   "uuid": "30e52776-55ac-3cb4-8d36-e2910f07e2c3",
@@ -11764,6 +11743,25 @@
   "fp": "7b35b9bbda017f85",
   "sources": [
    "freefq"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "yg6.ygkkk.dpdns.org",
+  "port": 80,
+  "uuid": "3c75a551-81d6-46d0-876d-79519719bb22",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "argo.235697.xyz",
+  "network": "ws",
+  "path": "3c75a551-81d6-46d0-876d-79519719bb22-vm",
+  "host": "argo.235697.xyz",
+  "name": "filembad-472",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "955d3d1703a62cda",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  }
 ]
