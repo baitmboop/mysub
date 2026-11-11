@@ -1,0 +1,139 @@
+name: 应用节点反馈
+
+# 备用反馈通道: 把反馈写进 data/report.json 推上来, 效果和"在手机上提 issue"完全一样。
+#
+# 为什么要有它:
+#   issue 表单需要人手工点页面。而这个通道只需要一次 git push —— 任何有仓库写权限的
+#   东西都能触发, 包括跑在云端沙箱里的 AI。所以"手机上报节点"这件事可以变成
+#   "跟 AI 说一句 N05 不通", 由 AI 在云端把文件写好推上来, 人不碰 GitHub 界面。
+#
+# 和 daily.yml 的关系:
+#   本文件只监听 data/report.json, 而提交的是 data/cn_pref.json, 两者的路径不重叠,
+#   所以不会自己触发自己。重建由最后一步显式 dispatch daily.yml 完成。
+#
+# 为什么 JSON 里要带 at:
+#   git 只认内容变化。连续两次报同一个节点, 正文一模一样就不会产生提交, 也就不会
+#   触发。带一个时间戳, 保证每次上报都是一次真实变更。
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/report.json"
+
+permissions:
+  contents: write            # 要把标记提交回仓库
+  actions: write             # 处理完手动触发一次重建
+
+concurrency:
+  group: apply-report
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: 拉取仓库
+        uses: actions/checkout@v4
+
+      - name: 准备 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 读反馈并解析
+        id: mark
+        # 用环境变量把正文传进去, 不拼进 shell —— 正文里带引号或反引号会被当成命令执行。
+        run: |
+          set -uo pipefail
+          pip install --quiet pyyaml
+          python3 - <<'PY'
+          import json, os, sys
+          try:
+              with open("data/report.json", encoding="utf-8") as f:
+                  d = json.load(f)
+          except Exception as e:
+              print(f"::error::data/report.json 不是合法 JSON: {e}")
+              sys.exit(1)
+          text = d.get("text") if isinstance(d, dict) else None
+          if not text:
+              print("::error::data/report.json 里没有 text 字段")
+              sys.exit(1)
+          with open("/tmp/body.txt", "w", encoding="utf-8") as f:
+              f.write(text)
+          print("--- 反馈内容 ---")
+          print(text)
+          print("----------------")
+          PY
+          # mark.py 自己往 $GITHUB_OUTPUT 写 marked / rebuild, 不靠退出码传状态。
+          # 退出码 2 只表示"没认出任何节点", 不算故障。
+          rc=0
+          python3 mark.py --text "@/tmp/body.txt" || rc=$?
+          if [ "$rc" = "2" ]; then
+            echo "::notice::反馈里没有识别到节点, 只做重建"
+          elif [ "$rc" != "0" ]; then
+            echo "::error::处理反馈时出错 (退出码 $rc)"
+            exit "$rc"
+          fi
+          echo "--- 解析结果 ---"
+          cat /tmp/mark_summary.txt 2>/dev/null || true
+
+      - name: 提交标记
+        id: push
+        if: steps.mark.outputs.marked != '0' && steps.mark.outputs.marked != ''
+        run: |
+          set -uo pipefail
+          git config user.name  "nodepool-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/cn_pref.json
+          if git diff --staged --quiet; then
+            echo "这些节点之前已被标记过, 无需重复提交"
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -q -m "chore: 按反馈标记节点不可用 (${{ github.event.head_commit.message }})" \
+            || git commit -q -m "chore: 按反馈标记节点不可用"
+          for i in 1 2 3; do
+            if git push; then
+              echo "pushed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "::warning::推送被拒(第 $i 次), 重试"
+            git pull --rebase -X theirs origin main || git rebase --abort 2>/dev/null || true
+            sleep 3
+          done
+          echo "::error::推送失败"
+          exit 1
+
+      - name: 触发重建
+        id: dispatch
+        if: steps.mark.outputs.rebuild == 'true'
+        # 这次提交只动了 data/, 而 daily.yml 的 paths-ignore 排除了 data/**，
+        # 不会自动触发 build。这里显式 dispatch 一次。workflow_dispatch 那轮会跑
+        # 采集步骤，所以"整体都不行"也能拿到一批新的候选节点。
+        run: |
+          set -uo pipefail
+          code=$(curl -sS -o /tmp/resp.json -w "%{http_code}" -X POST \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/daily.yml/dispatches" \
+            -d '{"ref":"main"}')
+          echo "dispatch HTTP $code"
+          [ "$code" = "204" ] || { cat /tmp/resp.json; exit 1; }
+
+      - name: 写处理摘要
+        if: always()
+        env:
+          MARKED: ${{ steps.mark.outputs.marked }}
+          REBUILD: ${{ steps.mark.outputs.rebuild }}
+        run: |
+          {
+            echo "## 反馈处理结果"
+            echo ""
+            echo "- 标记节点数: ${MARKED:-0}"
+            echo "- 是否触发重建: ${REBUILD:-false}"
+            echo ""
+            cat /tmp/mark_summary.txt 2>/dev/null || true
+          } >> "$GITHUB_STEP_SUMMARY"
