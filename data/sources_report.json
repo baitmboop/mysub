@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T18:15:25+08:00",
+ "generated_at": "2026-11-11T19:11:13+08:00",
  "total_nodes": 1266,
  "by_source": {
   "Auto_proxy": 470,
@@ -57,7 +57,7 @@
   "Pawdroid/Free-servers": {
    "ok": true,
    "raw": 20,
-   "new": 16
+   "new": 15
   },
   "Barabama/FreeNodes": {
    "ok": false,

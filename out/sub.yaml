@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-11 19:10:13 (北京时间)
+# nodepool  生成于 2026-11-11 19:13:13 (北京时间)
 # 节点数 36  (自建 0 / 免费额度 0 / 免费池 36)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -80,28 +80,7 @@ proxies:
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N12 5.188.181.201
-    type: ss
-    server: 5.188.181.201
-    port: 9037
-    cipher: aes-256-cfb
-    password: TN2YqghxeFDKZfLU
-    udp: true
-  - name: N13 5.188.181.201
-    type: ss
-    server: 5.188.181.201
-    port: 9005
-    cipher: aes-256-cfb
-    password: ZET59LF6DvCC8KVt
-    udp: true
-  - name: N14 141.98.101.179
-    type: ss
-    server: 141.98.101.179
-    port: 443
-    cipher: aes-128-gcm
-    password: shadowsocks
-    udp: true
-  - name: N15 91.107.179.0
+  - name: N12 91.107.179.0
     type: vless
     server: 91.107.179.0
     port: 10105
@@ -115,7 +94,14 @@ proxies:
       public-key: PFC3JN1er1JE2vAemwRhNjewz8I4NUWP4XHf2Dza4Es
       short-id: 12e321badd07906e
     client-fingerprint: chrome
-  - name: N16 94.183.164.142
+  - name: N13 5.188.181.201
+    type: ss
+    server: 5.188.181.201
+    port: 9014
+    cipher: aes-256-cfb
+    password: KnJGad3FqTvjqbaX
+    udp: true
+  - name: N14 94.183.164.142
     type: vless
     server: 94.183.164.142
     port: 443
@@ -127,6 +113,20 @@ proxies:
     ws-opts:
       path: /static/js/vendor.cc1645b6.js
     network: ws
+  - name: N15 82.38.31.214
+    type: ss
+    server: 82.38.31.214
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+    udp: true
+  - name: N16 5.188.181.201
+    type: ss
+    server: 5.188.181.201
+    port: 9005
+    cipher: aes-256-cfb
+    password: ZET59LF6DvCC8KVt
+    udp: true
   - name: N17 213.109.163.119
     type: http
     server: 213.109.163.119
@@ -134,56 +134,42 @@ proxies:
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N18 82.38.31.214
+  - name: N18 193.29.139.235
     type: ss
-    server: 82.38.31.214
+    server: 193.29.139.235
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    udp: true
+  - name: N19 82.38.31.218
+    type: ss
+    server: 82.38.31.218
     port: 8080
     cipher: chacha20-ietf-poly1305
     password: k1dBOmOB4oqi7Ump37a1bQ
     udp: true
-  - name: N19 82.38.31.190
+  - name: N20 82.38.31.190
     type: ss
     server: 82.38.31.190
     port: 8080
     cipher: chacha20-ietf-poly1305
     password: k1dBOmOB4oqi7Ump37a1bQ
     udp: true
-  - name: N20 82.38.31.193
+  - name: N21 82.38.31.193
     type: ss
     server: 82.38.31.193
     port: 8080
     cipher: chacha20-ietf-poly1305
     password: k1dBOmOB4oqi7Ump37a1bQ
     udp: true
-  - name: N21 3.169.9.125
-    type: vless
-    server: 3.169.9.125
-    port: 443
-    uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: d14jyezfrcyf60.cloudfront.net
-    ws-opts:
-      path: /
-      headers:
-        Host: d14jyezfrcyf60.cloudfront.net
-    network: ws
-  - name: N22 51.222.155.113
-    type: ss
-    server: 51.222.155.113
-    port: 5601
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-    udp: true
-  - name: N23 13.143.189.146
+  - name: N22 13.143.189.146
     type: hysteria2
     server: 13.143.189.146
     port: 4444
     password: a35c508f-4d5d-4531-842e-6e9d43c762c0
     skipCertVerify: true
     sni: pl3.nexfile.net
-  - name: N24 70.34.207.14
+  - name: N23 70.34.207.14
     type: trojan
     server: 70.34.207.14
     port: 443
@@ -191,42 +177,21 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
-  - name: N25 62.182.193.228
-    type: ss
-    server: 62.182.193.228
-    port: 8388
-    cipher: chacha20-ietf-poly1305
-    password: 2e555e46dbc421452416834962fd014f
-    udp: true
-  - name: N26 bogging-eyeteeth-fly.freesocks.work
-    type: ss
-    server: bogging-eyeteeth-fly.freesocks.work
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: QFWzCw2uX9B9i6qAYeFBIE
-    udp: true
-  - name: N27 51.222.141.125
+  - name: N24 51.222.141.125
     type: ss
     server: 51.222.141.125
     port: 445
     cipher: aes-256-gcm
     password: zDNVedRFPQexG9v
     udp: true
-  - name: N28 13.143.189.142
+  - name: N25 13.143.189.142
     type: hysteria2
     server: 13.143.189.142
     port: 4444
     password: a35c508f-4d5d-4531-842e-6e9d43c762c0
     skipCertVerify: true
     sni: pl3.nexfile.net
-  - name: N29 2.29.138.56
-    type: ss
-    server: 2.29.138.56
-    port: 26412
-    cipher: 2022-blake3-aes-256-gcm
-    password: "L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U="
-    udp: true
-  - name: N30 195.206.235.202
+  - name: N26 195.206.235.202
     type: vless
     server: 195.206.235.202
     port: 443
@@ -240,14 +205,14 @@ proxies:
       public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
       short-id: 6976d670818644cc
     client-fingerprint: chrome
-  - name: N31 66.163.118.103
+  - name: N27 66.163.118.103
     type: ss
     server: 66.163.118.103
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N32 64.176.163.182
+  - name: N28 64.176.163.182
     type: trojan
     server: 64.176.163.182
     port: 443
@@ -255,28 +220,28 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
-  - name: N33 13.143.189.149
+  - name: N29 13.143.189.149
     type: hysteria2
     server: 13.143.189.149
     port: 4444
     password: a35c508f-4d5d-4531-842e-6e9d43c762c0
     skipCertVerify: true
     sni: pl2.nexfile.net
-  - name: N34 185.213.23.63
+  - name: N30 185.213.23.63
     type: ss
     server: 185.213.23.63
     port: 990
     cipher: chacha20-ietf-poly1305
     password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
     udp: true
-  - name: N35 152.53.1.57
+  - name: N31 152.53.1.57
     type: ss
     server: 152.53.1.57
     port: 8388
     cipher: chacha20-ietf-poly1305
     password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
     udp: true
-  - name: N36 45.144.234.157
+  - name: N32 45.144.234.157
     type: vless
     server: 45.144.234.157
     port: 14430
@@ -287,6 +252,47 @@ proxies:
       path: /vless
       headers:
         Host: 45.144.234.157
+    network: ws
+  - name: N33 141.227.160.61
+    type: vless
+    server: 141.227.160.61
+    port: 8443
+    uuid: f59fdac3-5842-449b-8c8d-d5ebcdbf1768
+    udp: true
+    skipCertVerify: true
+    flow: xtls-rprx-vision
+    tls: true
+    servername: apple.com
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: N34 216.238.104.154
+    type: trojan
+    server: 216.238.104.154
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
+  - name: N35 167.17.71.167
+    type: ss
+    server: 167.17.71.167
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N36 178.172.227.228
+    type: vless
+    server: 178.172.227.228
+    port: 14430
+    uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+    udp: true
+    skipCertVerify: true
+    ws-opts:
+      path: /vless
+      headers:
+        Host: 178.172.227.228
     network: ws
 proxy-groups:
   - name: 节点选择
@@ -305,31 +311,31 @@ proxy-groups:
       - N09 202.50.253.27
       - N10 202.50.253.54
       - N11 202.50.253.45
-      - N12 5.188.181.201
+      - N12 91.107.179.0
       - N13 5.188.181.201
-      - N14 141.98.101.179
-      - N15 91.107.179.0
-      - N16 94.183.164.142
+      - N14 94.183.164.142
+      - N15 82.38.31.214
+      - N16 5.188.181.201
       - N17 213.109.163.119
-      - N18 82.38.31.214
-      - N19 82.38.31.190
-      - N20 82.38.31.193
-      - N21 3.169.9.125
-      - N22 51.222.155.113
-      - N23 13.143.189.146
-      - N24 70.34.207.14
-      - N25 62.182.193.228
-      - N26 bogging-eyeteeth-fly.freesocks.work
-      - N27 51.222.141.125
-      - N28 13.143.189.142
-      - N29 2.29.138.56
-      - N30 195.206.235.202
-      - N31 66.163.118.103
-      - N32 64.176.163.182
-      - N33 13.143.189.149
-      - N34 185.213.23.63
-      - N35 152.53.1.57
-      - N36 45.144.234.157
+      - N18 193.29.139.235
+      - N19 82.38.31.218
+      - N20 82.38.31.190
+      - N21 82.38.31.193
+      - N22 13.143.189.146
+      - N23 70.34.207.14
+      - N24 51.222.141.125
+      - N25 13.143.189.142
+      - N26 195.206.235.202
+      - N27 66.163.118.103
+      - N28 64.176.163.182
+      - N29 13.143.189.149
+      - N30 185.213.23.63
+      - N31 152.53.1.57
+      - N32 45.144.234.157
+      - N33 141.227.160.61
+      - N34 216.238.104.154
+      - N35 167.17.71.167
+      - N36 178.172.227.228
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -347,31 +353,31 @@ proxy-groups:
       - N09 202.50.253.27
       - N10 202.50.253.54
       - N11 202.50.253.45
-      - N12 5.188.181.201
+      - N12 91.107.179.0
       - N13 5.188.181.201
-      - N14 141.98.101.179
-      - N15 91.107.179.0
-      - N16 94.183.164.142
+      - N14 94.183.164.142
+      - N15 82.38.31.214
+      - N16 5.188.181.201
       - N17 213.109.163.119
-      - N18 82.38.31.214
-      - N19 82.38.31.190
-      - N20 82.38.31.193
-      - N21 3.169.9.125
-      - N22 51.222.155.113
-      - N23 13.143.189.146
-      - N24 70.34.207.14
-      - N25 62.182.193.228
-      - N26 bogging-eyeteeth-fly.freesocks.work
-      - N27 51.222.141.125
-      - N28 13.143.189.142
-      - N29 2.29.138.56
-      - N30 195.206.235.202
-      - N31 66.163.118.103
-      - N32 64.176.163.182
-      - N33 13.143.189.149
-      - N34 185.213.23.63
-      - N35 152.53.1.57
-      - N36 45.144.234.157
+      - N18 193.29.139.235
+      - N19 82.38.31.218
+      - N20 82.38.31.190
+      - N21 82.38.31.193
+      - N22 13.143.189.146
+      - N23 70.34.207.14
+      - N24 51.222.141.125
+      - N25 13.143.189.142
+      - N26 195.206.235.202
+      - N27 66.163.118.103
+      - N28 64.176.163.182
+      - N29 13.143.189.149
+      - N30 185.213.23.63
+      - N31 152.53.1.57
+      - N32 45.144.234.157
+      - N33 141.227.160.61
+      - N34 216.238.104.154
+      - N35 167.17.71.167
+      - N36 178.172.227.228
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -388,30 +394,30 @@ proxy-groups:
       - N09 202.50.253.27
       - N10 202.50.253.54
       - N11 202.50.253.45
-      - N12 5.188.181.201
+      - N12 91.107.179.0
       - N13 5.188.181.201
-      - N14 141.98.101.179
-      - N15 91.107.179.0
-      - N16 94.183.164.142
+      - N14 94.183.164.142
+      - N15 82.38.31.214
+      - N16 5.188.181.201
       - N17 213.109.163.119
-      - N18 82.38.31.214
-      - N19 82.38.31.190
-      - N20 82.38.31.193
-      - N21 3.169.9.125
-      - N22 51.222.155.113
-      - N23 13.143.189.146
-      - N24 70.34.207.14
-      - N25 62.182.193.228
-      - N26 bogging-eyeteeth-fly.freesocks.work
-      - N27 51.222.141.125
-      - N28 13.143.189.142
-      - N29 2.29.138.56
-      - N30 195.206.235.202
-      - N31 66.163.118.103
-      - N32 64.176.163.182
-      - N33 13.143.189.149
-      - N34 185.213.23.63
-      - N35 152.53.1.57
-      - N36 45.144.234.157
+      - N18 193.29.139.235
+      - N19 82.38.31.218
+      - N20 82.38.31.190
+      - N21 82.38.31.193
+      - N22 13.143.189.146
+      - N23 70.34.207.14
+      - N24 51.222.141.125
+      - N25 13.143.189.142
+      - N26 195.206.235.202
+      - N27 66.163.118.103
+      - N28 64.176.163.182
+      - N29 13.143.189.149
+      - N30 185.213.23.63
+      - N31 152.53.1.57
+      - N32 45.144.234.157
+      - N33 141.227.160.61
+      - N34 216.238.104.154
+      - N35 167.17.71.167
+      - N36 178.172.227.228
 rules:
   - "MATCH,节点选择"
