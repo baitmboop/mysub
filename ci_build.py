@@ -196,6 +196,15 @@ def main() -> int:
         cand = []
         geo: list = []                    # http/socks5, 不受云端结论约束
         tested: dict[str, bool] = {}      # fp -> 本轮连不连得上, 给 pool_nodes 用
+        # 国内实测能传数据的节点, 也不受云端结论约束 —— 理由和 http 一样, 甚至更强:
+        # 2026-11-11 深夜实测, 从本机跑出 60 个 vless/trojan 可用节点(1.5~2.4MB/s,
+        # 延迟 120~280ms), 但它们都是针对国内链路优化的, Azure runner 大概率连不上。
+        # 如果只按云端延迟筛, 这批会被整批丢掉 —— 而它们比现网订阅里的都快。
+        cn_known = gateway.load_cn_pref()
+
+        def _cn_ok(kn) -> bool:
+            v = cn_known.get(f"{kn.get('server')}:{kn.get('port')}") or {}
+            return v.get("ok") == 1 and (v.get("speed") or 0) >= 0.05
         with ThreadPoolExecutor(max_workers=args.workers) as ex:
             futs = {ex.submit(probe.delay_test, nm): nm for nm in name_map}
             for f in futs:
@@ -220,6 +229,12 @@ def main() -> int:
                     # 还快。所以这类节点一律放行, 云端测不通不算死亡证据。
                     n = dict(kn)
                     n.update(name=nm, latency=med, jitter=None)
+                    geo.append(n)
+                elif _cn_ok(kn):
+                    # 同上, 但依据是国内实测(verify.py 写进 cn_pref 的结论)。
+                    # 这里不给它填假延迟, 让排序用 cn_latency 自己带。
+                    n = dict(kn)
+                    n.update(name=nm, latency=None, jitter=None)
                     geo.append(n)
                 else:
                     tested[key] = False

@@ -799,16 +799,30 @@ def t_dated_urls():
     # days 写 0 或负数也不能返回空列表
     assert len(collect.dated_urls("https://a/{ymd}", 0,
                                  today=datetime.date(2026, 11, 11))) == 1
+    # 同日多份(带 {n}): 每天展开成 N 个地址, 顺序是天优先、序号次之
+    s = collect.dated_urls("https://a/{y}/{m}/{n}-{ymd}.yaml", 2,
+                           today=datetime.date(2026, 11, 11), seq=(0, 1))
+    assert s == ["https://a/2026/11/0-20261111.yaml",
+                 "https://a/2026/11/1-20261111.yaml",
+                 "https://a/2026/11/0-20261110.yaml",
+                 "https://a/2026/11/1-20261110.yaml"], s
 
 
 def t_dated_sources_wellformed():
     """日期型源的表配错(模板没占位符/天数写成 0)会让每天的采集静默变空。"""
     import collect
-    for tag, tpl, days in collect.DATED_SOURCES:
+    for entry in collect.DATED_SOURCES:
+        tag, tpl, days = entry[0], entry[1], entry[2]
+        seq = entry[3] if len(entry) > 3 else None
         assert tpl.startswith("http"), (tag, tpl)
         assert "{ymd}" in tpl, (tag, tpl)      # 至少要能按天变
         assert days >= 1, (tag, days)
         assert tpl.count("{") == tpl.count("}"), (tag, tpl)
+        # 模板里有 {n} 就必须给序号, 否则 format 会 KeyError 让整段采集炸掉
+        if "{n}" in tpl:
+            assert seq, (tag, "模板含 {n} 但没配序号")
+        else:
+            assert seq is None, (tag, "模板没有 {n} 却配了序号")
 
 
 def t_opener_ignores_env_proxy():

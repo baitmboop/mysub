@@ -14,3 +14,6 @@ out/nodes_best.prev.json
 
 # 本地 SSH 密钥(仅用于推送，绝不提交)
 .ssh/
+
+# 内核探测的临时工作目录/缓存, 不进库
+data/kernel_cache/

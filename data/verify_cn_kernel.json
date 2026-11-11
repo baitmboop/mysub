@@ -1,0 +1,3567 @@
+{
+ "62.106.75.86:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:24"
+ },
+ "srv21.buddygpt.ru:443:vless": {
+  "verdict": "alive",
+  "latency": 138,
+  "speed": 2078.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:17:56",
+  "proto": "vless",
+  "server": "srv21.buddygpt.ru",
+  "port": 443
+ },
+ "fr5.wizard.select:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:24"
+ },
+ "93.188.184.150:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:24"
+ },
+ "ns.l90909l.vip:2096:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:24"
+ },
+ "89.35.14.34:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:24"
+ },
+ "153.76.185.161:3090:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:24"
+ },
+ "206.223.249.90:33891:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:24"
+ },
+ "167.82.101.251:443:vless": {
+  "verdict": "alive",
+  "latency": 126,
+  "speed": 1561.8,
+  "via": "kernel",
+  "at": "2026-11-12 00:18:59",
+  "proto": "vless",
+  "server": "167.82.101.251",
+  "port": 443
+ },
+ "185.137.157.72:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:24"
+ },
+ "45.195.137.219:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:24"
+ },
+ "212.192.13.91:30129:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:24"
+ },
+ "www.cnae.top:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:24"
+ },
+ "45.194.10.217:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:24"
+ },
+ "45.194.10.135:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:24"
+ },
+ "45.195.137.119:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:24"
+ },
+ "45.195.137.109:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:24"
+ },
+ "45.194.10.67:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:25"
+ },
+ "chengbai02.ascwt179.com:13223:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:25"
+ },
+ "109.120.176.37:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:25"
+ },
+ "2001:bc8:32d7:225::3:55009:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:25"
+ },
+ "155.248.168.35:18122:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:25"
+ },
+ "91.193.58.243:80:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:25"
+ },
+ "91.193.58.246:80:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:25"
+ },
+ "91.193.58.209:80:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:25"
+ },
+ "91.193.58.197:80:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:25"
+ },
+ "91.193.58.179:80:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:25"
+ },
+ "141.133.172.222:20342:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:25"
+ },
+ "91.193.58.93:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:25"
+ },
+ "91.193.58.195:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:25"
+ },
+ "91.193.58.141:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:26"
+ },
+ "91.193.58.117:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:26"
+ },
+ "blackshadow.dpdns.org:443:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:26"
+ },
+ "45.155.52.231:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:26"
+ },
+ "154.193.55.183:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:26"
+ },
+ "91.193.58.92:80:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:26"
+ },
+ "91.193.58.93:80:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:26"
+ },
+ "45.192.2.51:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:26"
+ },
+ "94.182.88.61:2078:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:26"
+ },
+ "176.32.35.51:10910:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:26"
+ },
+ "176.32.35.51:10916:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:26"
+ },
+ "195.133.5.207:20188:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:26"
+ },
+ "ad-013.pixel9xdmq.info:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:26"
+ },
+ "ad-010.pixel9xdmq.info:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:26"
+ },
+ "fn.fifapes.monster:2090:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "94.102.51.218:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "149.130.176.140:62145:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "178.72.162.73:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "94.124.119.187:16565:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "104.171.136.112:2200:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "193.232.178.149:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "64.176.62.54:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "185.136.12.190:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "47.82.120.47:43630:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "157.22.193.73:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "161.104.32.106:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "78.17.109.189:13868:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "185.246.152.159:443:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "46.101.253.244:2083:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "82.40.42.204:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "45.192.200.66:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "104.171.137.176:2200:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "176.98.178.17:4100:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "217.177.74.229:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "138.124.181.52:13868:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:27"
+ },
+ "52.141.0.244:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:28"
+ },
+ "138.124.100.128:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:28"
+ },
+ "195.133.35.75:1337:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:28"
+ },
+ "78.17.112.103:13868:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:28"
+ },
+ "91.206.71.8:80:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:28"
+ },
+ "2.144.21.150:2000:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:28"
+ },
+ "114.29.238.251:13443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "154.196.139.50:443:vless": {
+  "verdict": "alive",
+  "latency": 119,
+  "speed": 1782.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:33:46",
+  "proto": "vless",
+  "server": "154.196.139.50",
+  "port": 443
+ },
+ "217.60.68.196:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "109.206.241.10:449:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "144.31.171.143:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "200.165.228.51:2200:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "65.109.12.58:2053:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "188.241.241.28:2053:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "185.18.52.77:2053:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "31.133.0.133:2053:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "31.133.0.103:2053:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "31.133.0.70:2053:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "31.15.17.129:2053:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "2.144.21.112:40443:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "78.159.247.253:2027:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "165.231.150.12:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "176.100.42.200:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "31.76.39.217:2053:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "91.110.174.210:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "185.227.70.162:8082:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "185.227.70.42:8082:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "5.178.85.233:2793:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "45.151.30.127:9873:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "168.222.140.55:2200:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "176.109.108.83:9830:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "185.72.145.121:5000:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:29"
+ },
+ "134.0.116.208:9878:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:30"
+ },
+ "94.249.239.33:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:30"
+ },
+ "200.165.228.114:9871:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:30"
+ },
+ "185.109.48.13:2053:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:30"
+ },
+ "200.165.225.174:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:30"
+ },
+ "5.175.178.43:2053:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:30"
+ },
+ "157.245.97.66:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:30"
+ },
+ "150.241.101.218.fwqfw783rg2dad.website:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:32"
+ },
+ "104.171.136.172:4100:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:32"
+ },
+ "18.157.224.206:22224:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:32"
+ },
+ "217.19.122.234:9001:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:32"
+ },
+ "renderer-stream-2-62.mirra.now:443:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:32"
+ },
+ "163.8.195.241:2087:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:32"
+ },
+ "188.220.67.245:2087:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:32"
+ },
+ "178.95.170.83:2087:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:32"
+ },
+ "116.93.199.28:25524:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:32"
+ },
+ "89.208.113.120:8082:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:32"
+ },
+ "176.123.161.222:9892:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:32"
+ },
+ "217.19.122.17:10654:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:32"
+ },
+ "147.45.42.218:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:32"
+ },
+ "195.123.212.60:15392:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:32"
+ },
+ "88.198.82.150:443:trojan": {
+  "verdict": "alive",
+  "latency": 122,
+  "speed": 1655.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:36:29",
+  "proto": "trojan",
+  "server": "88.198.82.150",
+  "port": 443
+ },
+ "122.10.117.1:11674:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:32"
+ },
+ "crimson-smoke-7818.397.workers.dev:8880:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:33"
+ },
+ "45.130.254.10:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:33"
+ },
+ "136.85.2.50:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:33"
+ },
+ "129.153.71.28:28863:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:33"
+ },
+ "210.140.81.172:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:33"
+ },
+ "34.80.248.240:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:33"
+ },
+ "34.96.188.243:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:33"
+ },
+ "34.92.16.7:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:33"
+ },
+ "136.110.116.68:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:33"
+ },
+ "27.44.143.169:14343:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:33"
+ },
+ "link.mrpgd.ir:6008:vless": {
+  "verdict": "alive",
+  "latency": 121,
+  "speed": 1683.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:39:31",
+  "proto": "vless",
+  "server": "link.mrpgd.ir",
+  "port": 6008
+ },
+ "103.25.202.102:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:33"
+ },
+ "43.108.48.169:40701:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:33"
+ },
+ "hinet1.2yly.com:24215:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:33"
+ },
+ "support.zoom.us:80:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "zordbx861.233874.xyz:8888:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "qcloudge1.exitvpn.shop:20268:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "g--p.soreanapanel.com:25566:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "c3.nastuh.link:443:ss": {
+  "verdict": "alive",
+  "latency": 132,
+  "speed": 1941.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:41:47",
+  "proto": "ss",
+  "server": "c3.nastuh.link",
+  "port": 443
+ },
+ "45.198.0.24:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "2001:bc8:32d7:1a9::2:23388:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "47.83.247.150:800:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "u2frxj0g13vdi0wo.v.3dns.vip:443:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "hk2.998998.best:443:vmess": {
+  "verdict": "alive",
+  "latency": 124,
+  "speed": 351.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:44:03",
+  "proto": "vmess",
+  "server": "hk2.998998.best",
+  "port": 443
+ },
+ "www.calmlunch.com:443:trojan": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 519.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:44:29",
+  "proto": "trojan",
+  "server": "www.calmlunch.com",
+  "port": 443
+ },
+ "128.203.252.97:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "193.223.104.140:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "45.128.78.176:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "78.17.209.100:443:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 832.8,
+  "via": "kernel",
+  "at": "2026-11-12 00:45:08",
+  "proto": "vless",
+  "server": "78.17.209.100",
+  "port": 443
+ },
+ "103.91.147.228:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "91.242.228.29:443:vless": {
+  "verdict": "alive",
+  "latency": 124,
+  "speed": 1413.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:45:18",
+  "proto": "vless",
+  "server": "91.242.228.29",
+  "port": 443
+ },
+ "45.129.141.154:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "45.144.221.169:443:vless": {
+  "verdict": "alive",
+  "latency": 126,
+  "speed": 1743.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:45:27",
+  "proto": "vless",
+  "server": "45.144.221.169",
+  "port": 443
+ },
+ "gr1.originmesh.online:443:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 1395.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:45:38",
+  "proto": "vless",
+  "server": "gr1.originmesh.online",
+  "port": 443
+ },
+ "150.241.107.95:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "875f9760-be1a-4dfe-8c2b-3f080b5ab158.node1.runet.network:20065:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "152.175.8.61:36155:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "fast.letsconnectpoint.com:443:vless": {
+  "verdict": "alive",
+  "latency": 136,
+  "speed": 983.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:45:51",
+  "proto": "vless",
+  "server": "fast.letsconnectpoint.com",
+  "port": 443
+ },
+ "151.247.22.58:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "usa.letsconnectpoint.com:443:vless": {
+  "verdict": "alive",
+  "latency": 158,
+  "speed": 1825.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:46:00",
+  "proto": "vless",
+  "server": "usa.letsconnectpoint.com",
+  "port": 443
+ },
+ "148-253-210-191.sslip.io:443:vless": {
+  "verdict": "alive",
+  "latency": 124,
+  "speed": 655.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:46:34",
+  "proto": "vless",
+  "server": "148-253-210-191.sslip.io",
+  "port": 443
+ },
+ "94.26.41.47:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "152.175.6.229:31884:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "dorado.yokkastars.com:40443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "217.19.122.156:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "206.1.101.85:42654:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "78.17.53.142:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "89.125.11.50:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "104.19.229.21:443:trojan": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 1866.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:46:43",
+  "proto": "trojan",
+  "server": "104.19.229.21",
+  "port": 443
+ },
+ "tunell2027.crackerbinam.org:48312:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "jp.huahua.wiki:443:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 1678.5,
+  "via": "kernel",
+  "at": "2026-11-12 00:47:00",
+  "proto": "vless",
+  "server": "jp.huahua.wiki",
+  "port": 443
+ },
+ "13.143.180.50:443:vless": {
+  "verdict": "alive",
+  "latency": 124,
+  "speed": 1899.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:47:09",
+  "proto": "vless",
+  "server": "13.143.180.50",
+  "port": 443
+ },
+ "195.141.65.98:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "216.24.57.40:8880:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "172.66.154.57:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "31.77.13.22:2063:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "79.182.39.232:25895:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "5.253.28.224:40443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "dog-jp.kunlun01dns.com:21016:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "dog-us.kunlun01dns.com:21010:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "dog-us.kunlun01dns.com:21011:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "195.189.98.197:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "ca1.fox-lisa.ru:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "87.120.92.68:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "46.17.46.27:18443:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "31.77.236.114:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "212.69.135.70:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "212.69.135.27:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "5.104.74.22:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "5.104.74.70:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "85.202.192.131:34033:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "46.19.138.214:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "sdf65h46wr.df6h451rh.xin:443:anytls": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "5.104.74.124:8443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "79.182.39.109:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "78.17.39.129:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "s2534.wagahaha.xyz:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "2401:c080:3800:3941:5400:7ff:fe03:a59e:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "2401:c080:1000:340d:5400:7ff:fe05:f483:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "2401:c080:3800:3211:5400:7ff:fe05:f484:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "s2533.gogocs.xyz:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "2401:c080:1c02:11f1:5400:7ff:fe05:f481:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "79.182.39.108:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "fetch.mediacorphub.org:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "images.mediacorphub.org:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "2a00:b700:4::1ad:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "forwarded.frnhk.xyz:2083:anytls": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "45.138.100.248:14430:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "199.232.78.159:80:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "87.228.61.175:1443:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "91.201.65.122:9002:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "146.70.61.18:8080:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "146.70.20.147:8080:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "23.94.83.37:52080:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "15.204.247.244:443:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "82.38.31.178:8080:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "23.95.165.21:52080:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "99.79.32.21:443:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "107.155.57.51:8080:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "185.177.229.95:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "217.30.10.44:9042:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "185.212.149.7:52080:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "213.183.63.60:9064:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "169.197.140.214:443:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "108.61.119.63:42314:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:38"
+ },
+ "dog-hk.kunlun01dns.com:21018:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "213.183.63.60:9028:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "138.197.141.58:8080:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "216.152.147.152:443:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "51.75.118.149:20083:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "107.172.219.230:2096:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "67.220.74.197:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "au001.zestapp778.com:54374:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "66.23.203.21:59689:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "38.22.17.214:19999:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "162.251.61.46:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "141.164.45.187:8888:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "149.50.215.240:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "107.155.57.11:8080:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "de.zhou-yufan.com:443:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "193.108.119.87:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "45.32.157.84:443:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "193.108.117.84:19999:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "162.251.60.97:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "216.106.186.155:443:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "38.91.107.84:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "57.129.132.223:80:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "70.34.252.255:443:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "149.7.16.228:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "178.94.25.73:14430:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "154.47.19.225:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "57.129.113.16:8388:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "91.107.247.173:2083:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "167.88.63.39:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:40"
+ },
+ "162.251.62.35:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "68.183.235.122:8080:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "66.163.125.120:19999:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "185.66.68.201:8080:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "217.30.10.44:9062:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "91.201.65.122:9070:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "38.128.66.249:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "68.183.227.236:8080:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "89.105.195.151:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "167.88.62.56:19999:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "91.201.65.122:9065:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "162.251.62.31:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "172.111.36.123:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "38.91.107.19:19999:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "84.235.244.108:22573:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "51.38.71.147:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "23.95.165.21:32080:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "167.88.62.56:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:41"
+ },
+ "142.202.48.87:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:42"
+ },
+ "167.88.63.99:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:42"
+ },
+ "172.111.36.253:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:42"
+ },
+ "213.183.63.60:9085:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:42"
+ },
+ "91.201.65.122:9097:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:42"
+ },
+ "66.163.125.51:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:42"
+ },
+ "213.183.63.60:9066:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:42"
+ },
+ "169.197.140.245:443:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:42"
+ },
+ "5.188.181.201:9020:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:42"
+ },
+ "82.38.31.157:8080:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:42"
+ },
+ "98.98.207.163:8080:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:42"
+ },
+ "15.204.246.108:8881:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "162.19.82.57:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "2.26.48.13:447:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "169.197.140.169:443:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "188.166.81.135:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "149.50.215.238:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "129.146.77.248:39495:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "23.166.88.189:19999:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "128.199.172.224:8080:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "167.88.63.47:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "38.60.224.173:32153:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "38.60.233.126:33079:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "217.30.10.44:9099:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "51.68.34.78:20327:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "kr002.zestapp778.com:37095:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "57.129.41.216:80:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "98.98.142.161:8080:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "68.183.235.240:8080:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "66.163.122.25:443:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:43"
+ },
+ "38.22.17.139:19999:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "38.91.106.182:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "107.151.182.253:8080:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "62.93.166.184:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "69.48.201.136:30016:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "38.143.66.146:19999:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "95.128.71.79:14430:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "193.108.118.247:19999:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "162.19.192.89:16632:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "195.238.126.84:9039:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "91.201.65.122:9074:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "208.69.78.222:443:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "167.88.62.51:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "170.101.101.131:443:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "149.22.91.20:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "62.93.179.97:19999:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "86.38.247.109:2087:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "213.183.63.60:9029:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:44"
+ },
+ "38.128.66.241:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:45"
+ },
+ "213.176.92.168:14430:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:45"
+ },
+ "38.22.17.89:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:45"
+ },
+ "158.51.121.246:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:45"
+ },
+ "82.38.31.211:8080:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:45"
+ },
+ "sql.popmintxo.cc:43385:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:45"
+ },
+ "141.164.45.187:9090:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:45"
+ },
+ "218.237.185.234:4652:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:45"
+ },
+ "195.238.126.20:9008:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:45"
+ },
+ "66.163.122.113:443:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:45"
+ },
+ "217.30.10.44:9006:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "87.248.149.50:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "146.70.46.199:8080:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "sc-thenetherlands2.09vpn.com:80:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "213.202.208.199:5000:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "38.128.66.212:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "146.56.112.110:8888:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "38.64.138.135:19999:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "45.32.241.180:443:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "38.91.107.188:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "172.111.36.126:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "18.196.58.183:443:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "91.201.65.122:9092:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "195.238.126.20:9078:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "162.251.62.42:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "216.152.155.54:443:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "82.38.31.165:443:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:46"
+ },
+ "dog-hk.kunlun01dns.com:21041:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "seoul02.zgjok.com:443:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "47.250.135.244:10000:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "217.30.10.44:9076:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "img.mediacorphub.org:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "195.238.126.20:9002:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "195.238.126.20:9045:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "149.40.57.135:19999:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "34.39.80.57:50818:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "38.91.107.57:19999:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "134.195.196.154:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "91.201.65.122:9053:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "108.61.177.57:16778:trojan": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "169.197.142.68:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "167.88.62.134:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "d2.anonix.cloud:8018:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "62.93.179.117:19999:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "91.201.65.122:9039:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "217.30.10.44:9071:ss": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "38.107.226.5:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "46.105.222.155:1270:vmess": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:48"
+ },
+ "43.174.195.1:443:vless": {
+  "verdict": "alive",
+  "latency": 121,
+  "speed": 1517.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:18:06",
+  "proto": "vless",
+  "server": "43.174.195.1",
+  "port": 443
+ },
+ "2.26.251.236:443:vless": {
+  "verdict": "alive",
+  "latency": 278,
+  "speed": 1713.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:18:15",
+  "proto": "vless",
+  "server": "2.26.251.236",
+  "port": 443
+ },
+ "104.21.70.228:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:24"
+ },
+ "c20s5.portablesubmarines.com:443:vless": {
+  "verdict": "alive",
+  "latency": 121,
+  "speed": 389.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:18:31",
+  "proto": "vless",
+  "server": "c20s5.portablesubmarines.com",
+  "port": 443
+ },
+ "frfx.pafaktalaei.ir:443:vless": {
+  "verdict": "alive",
+  "latency": 140,
+  "speed": 1684.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:18:40",
+  "proto": "vless",
+  "server": "frfx.pafaktalaei.ir",
+  "port": 443
+ },
+ "108.162.194.135:443:vless": {
+  "verdict": "alive",
+  "latency": 130,
+  "speed": 1797.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:18:49",
+  "proto": "vless",
+  "server": "108.162.194.135",
+  "port": 443
+ },
+ "www.ignitelimit.com:443:trojan": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 1925.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:19:07",
+  "proto": "trojan",
+  "server": "www.ignitelimit.com",
+  "port": 443
+ },
+ "support.zoom.us:443:vless": {
+  "verdict": "alive",
+  "latency": 152,
+  "speed": 1417.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:19:18",
+  "proto": "vless",
+  "server": "support.zoom.us",
+  "port": 443
+ },
+ "104.24.9.6:443:vless": {
+  "verdict": "alive",
+  "latency": 127,
+  "speed": 1809.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:19:27",
+  "proto": "vless",
+  "server": "104.24.9.6",
+  "port": 443
+ },
+ "162.159.10.87:443:vless": {
+  "verdict": "alive",
+  "latency": 130,
+  "speed": 1616.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:19:36",
+  "proto": "vless",
+  "server": "162.159.10.87",
+  "port": 443
+ },
+ "162.159.60.167:443:vless": {
+  "verdict": "alive",
+  "latency": 129,
+  "speed": 308.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:19:51",
+  "proto": "vless",
+  "server": "162.159.60.167",
+  "port": 443
+ },
+ "162.159.8.42:443:vless": {
+  "verdict": "alive",
+  "latency": 124,
+  "speed": 1770.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:20:00",
+  "proto": "vless",
+  "server": "162.159.8.42",
+  "port": 443
+ },
+ "185.193.29.123:443:vless": {
+  "verdict": "alive",
+  "latency": 132,
+  "speed": 267.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:20:23",
+  "proto": "vless",
+  "server": "185.193.29.123",
+  "port": 443
+ },
+ "18.239.134.69:80:vless": {
+  "verdict": "alive",
+  "latency": 135,
+  "speed": 1463.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:20:33",
+  "proto": "vless",
+  "server": "18.239.134.69",
+  "port": 80
+ },
+ "38.47.96.220:11424:vless": {
+  "verdict": "alive",
+  "latency": 143,
+  "speed": 1499.5,
+  "via": "kernel",
+  "at": "2026-11-12 00:20:43",
+  "proto": "vless",
+  "server": "38.47.96.220",
+  "port": 11424
+ },
+ "89.125.244.28:443:vless": {
+  "verdict": "alive",
+  "latency": 122,
+  "speed": 414.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:21:03",
+  "proto": "vless",
+  "server": "89.125.244.28",
+  "port": 443
+ },
+ "cindy50.ceoiii.com:36801:vmess": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 700.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:21:18",
+  "proto": "vmess",
+  "server": "cindy50.ceoiii.com",
+  "port": 36801
+ },
+ "104.245.242.7:443:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 483.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:21:38",
+  "proto": "vless",
+  "server": "104.245.242.7",
+  "port": 443
+ },
+ "170.168.97.3:443:vless": {
+  "verdict": "alive",
+  "latency": 143,
+  "speed": 662.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:21:53",
+  "proto": "vless",
+  "server": "170.168.97.3",
+  "port": 443
+ },
+ "170.168.97.3:8443:vless": {
+  "verdict": "alive",
+  "latency": 135,
+  "speed": 432.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:22:13",
+  "proto": "vless",
+  "server": "170.168.97.3",
+  "port": 8443
+ },
+ "88.218.44.4:993:vless": {
+  "verdict": "alive",
+  "latency": 127,
+  "speed": 1529.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:22:23",
+  "proto": "vless",
+  "server": "88.218.44.4",
+  "port": 993
+ },
+ "217.60.193.1:443:vless": {
+  "verdict": "alive",
+  "latency": 121,
+  "speed": 1561.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:22:32",
+  "proto": "vless",
+  "server": "217.60.193.1",
+  "port": 443
+ },
+ "3.170.185.91:80:vless": {
+  "verdict": "alive",
+  "latency": 127,
+  "speed": 1993.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:22:41",
+  "proto": "vless",
+  "server": "3.170.185.91",
+  "port": 80
+ },
+ "2.27.27.64:443:vless": {
+  "verdict": "alive",
+  "latency": 127,
+  "speed": 1532.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:22:51",
+  "proto": "vless",
+  "server": "2.27.27.64",
+  "port": 443
+ },
+ "88.218.44.4:8443:vless": {
+  "verdict": "alive",
+  "latency": 122,
+  "speed": 1755.8,
+  "via": "kernel",
+  "at": "2026-11-12 00:23:00",
+  "proto": "vless",
+  "server": "88.218.44.4",
+  "port": 8443
+ },
+ "88.218.44.4:443:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 637.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:23:15",
+  "proto": "vless",
+  "server": "88.218.44.4",
+  "port": 443
+ },
+ "104.26.2.173:443:vless": {
+  "verdict": "alive",
+  "latency": 141,
+  "speed": 453.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:23:35",
+  "proto": "vless",
+  "server": "104.26.2.173",
+  "port": 443
+ },
+ "www.speedtest.net:8080:vless": {
+  "verdict": "alive",
+  "latency": 119,
+  "speed": 1503.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:23:45",
+  "proto": "vless",
+  "server": "www.speedtest.net",
+  "port": 8080
+ },
+ "104.17.121.110:8880:vless": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 450.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:24:00",
+  "proto": "vless",
+  "server": "104.17.121.110",
+  "port": 8880
+ },
+ "104.21.88.174:2052:vless": {
+  "verdict": "alive",
+  "latency": 118,
+  "speed": 1123.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:24:12",
+  "proto": "vless",
+  "server": "104.21.88.174",
+  "port": 2052
+ },
+ "170.168.97.3:993:vless": {
+  "verdict": "alive",
+  "latency": 122,
+  "speed": 2454.5,
+  "via": "kernel",
+  "at": "2026-11-12 00:24:20",
+  "proto": "vless",
+  "server": "170.168.97.3",
+  "port": 993
+ },
+ "www.true.th:443:vless": {
+  "verdict": "alive",
+  "latency": 128,
+  "speed": 1210.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:24:31",
+  "proto": "vless",
+  "server": "www.true.th",
+  "port": 443
+ },
+ "162.159.156.214:8880:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 385.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:24:47",
+  "proto": "vless",
+  "server": "162.159.156.214",
+  "port": 8880
+ },
+ "77.105.163.46:443:vless": {
+  "verdict": "alive",
+  "latency": 140,
+  "speed": 468.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:25:06",
+  "proto": "vless",
+  "server": "77.105.163.46",
+  "port": 443
+ },
+ "217.60.193.4:443:vless": {
+  "verdict": "alive",
+  "latency": 129,
+  "speed": 1373.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:25:17",
+  "proto": "vless",
+  "server": "217.60.193.4",
+  "port": 443
+ },
+ "213.226.112.19:443:vless": {
+  "verdict": "alive",
+  "latency": 132,
+  "speed": 402.4,
+  "via": "kernel",
+  "at": "2026-11-12 00:25:37",
+  "proto": "vless",
+  "server": "213.226.112.19",
+  "port": 443
+ },
+ "104.16.174.36:443:trojan": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 1736.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:25:46",
+  "proto": "trojan",
+  "server": "104.16.174.36",
+  "port": 443
+ },
+ "104.18.12.149:443:vless": {
+  "verdict": "alive",
+  "latency": 118,
+  "speed": 214.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:26:10",
+  "proto": "vless",
+  "server": "104.18.12.149",
+  "port": 443
+ },
+ "3.170.185.91:443:vless": {
+  "verdict": "alive",
+  "latency": 135,
+  "speed": 1700.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:26:19",
+  "proto": "vless",
+  "server": "3.170.185.91",
+  "port": 443
+ },
+ "104.21.23.72:8880:vless": {
+  "verdict": "alive",
+  "latency": 128,
+  "speed": 1939.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:26:28",
+  "proto": "vless",
+  "server": "104.21.23.72",
+  "port": 8880
+ },
+ "104.18.152.225:443:trojan": {
+  "verdict": "alive",
+  "latency": 126,
+  "speed": 501.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:26:43",
+  "proto": "trojan",
+  "server": "104.18.152.225",
+  "port": 443
+ },
+ "104.18.152.219:443:trojan": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 1915.8,
+  "via": "kernel",
+  "at": "2026-11-12 00:26:52",
+  "proto": "trojan",
+  "server": "104.18.152.219",
+  "port": 443
+ },
+ "2.27.56.216:443:vless": {
+  "verdict": "alive",
+  "latency": 196,
+  "speed": 679.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:27:10",
+  "proto": "vless",
+  "server": "2.27.56.216",
+  "port": 443
+ },
+ "199.232.239.2:443:vless": {
+  "verdict": "alive",
+  "latency": 118,
+  "speed": 902.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:27:25",
+  "proto": "vless",
+  "server": "199.232.239.2",
+  "port": 443
+ },
+ "45.131.4.115:80:vless": {
+  "verdict": "alive",
+  "latency": 124,
+  "speed": 343.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:27:40",
+  "proto": "vless",
+  "server": "45.131.4.115",
+  "port": 80
+ },
+ "104.18.152.73:443:trojan": {
+  "verdict": "alive",
+  "latency": 132,
+  "speed": 588.8,
+  "via": "kernel",
+  "at": "2026-11-12 00:27:55",
+  "proto": "trojan",
+  "server": "104.18.152.73",
+  "port": 443
+ },
+ "www.speedtest.org:443:trojan": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 1515.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:28:05",
+  "proto": "trojan",
+  "server": "www.speedtest.org",
+  "port": 443
+ },
+ "104.18.152.152:443:trojan": {
+  "verdict": "alive",
+  "latency": 122,
+  "speed": 1782.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:28:14",
+  "proto": "trojan",
+  "server": "104.18.152.152",
+  "port": 443
+ },
+ "104.18.22.63:443:trojan": {
+  "verdict": "alive",
+  "latency": 126,
+  "speed": 1686.4,
+  "via": "kernel",
+  "at": "2026-11-12 00:28:23",
+  "proto": "trojan",
+  "server": "104.18.22.63",
+  "port": 443
+ },
+ "104.18.152.133:443:trojan": {
+  "verdict": "alive",
+  "latency": 120,
+  "speed": 792.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:28:39",
+  "proto": "trojan",
+  "server": "104.18.152.133",
+  "port": 443
+ },
+ "86.38.214.205:443:trojan": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 310.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:28:54",
+  "proto": "trojan",
+  "server": "86.38.214.205",
+  "port": 443
+ },
+ "104.18.152.77:443:trojan": {
+  "verdict": "alive",
+  "latency": 122,
+  "speed": 322.4,
+  "via": "kernel",
+  "at": "2026-11-12 00:29:09",
+  "proto": "trojan",
+  "server": "104.18.152.77",
+  "port": 443
+ },
+ "104.18.152.140:443:trojan": {
+  "verdict": "alive",
+  "latency": 138,
+  "speed": 2165.4,
+  "via": "kernel",
+  "at": "2026-11-12 00:29:17",
+  "proto": "trojan",
+  "server": "104.18.152.140",
+  "port": 443
+ },
+ "104.16.174.44:443:trojan": {
+  "verdict": "alive",
+  "latency": 136,
+  "speed": 1539.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:29:27",
+  "proto": "trojan",
+  "server": "104.16.174.44",
+  "port": 443
+ },
+ "104.18.152.204:443:trojan": {
+  "verdict": "alive",
+  "latency": 130,
+  "speed": 1891.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:29:36",
+  "proto": "trojan",
+  "server": "104.18.152.204",
+  "port": 443
+ },
+ "104.16.174.117:443:trojan": {
+  "verdict": "alive",
+  "latency": 126,
+  "speed": 2059.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:29:44",
+  "proto": "trojan",
+  "server": "104.16.174.117",
+  "port": 443
+ },
+ "104.18.152.208:443:trojan": {
+  "verdict": "alive",
+  "latency": 124,
+  "speed": 1233.5,
+  "via": "kernel",
+  "at": "2026-11-12 00:29:55",
+  "proto": "trojan",
+  "server": "104.18.152.208",
+  "port": 443
+ },
+ "104.26.15.137:443:trojan": {
+  "verdict": "alive",
+  "latency": 128,
+  "speed": 300.5,
+  "via": "kernel",
+  "at": "2026-11-12 00:30:17",
+  "proto": "trojan",
+  "server": "104.26.15.137",
+  "port": 443
+ },
+ "104.17.111.4:443:trojan": {
+  "verdict": "alive",
+  "latency": 121,
+  "speed": 1758.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:30:26",
+  "proto": "trojan",
+  "server": "104.17.111.4",
+  "port": 443
+ },
+ "45.40.150.4:80:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 700.8,
+  "via": "kernel",
+  "at": "2026-11-12 00:30:41",
+  "proto": "vless",
+  "server": "45.40.150.4",
+  "port": 80
+ },
+ "50.62.194.30:8880:vless": {
+  "verdict": "alive",
+  "latency": 144,
+  "speed": 1652.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:30:51",
+  "proto": "vless",
+  "server": "50.62.194.30",
+  "port": 8880
+ },
+ "162.159.81.104:80:vless": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 1954.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:30:59",
+  "proto": "vless",
+  "server": "162.159.81.104",
+  "port": 80
+ },
+ "94.140.0.100:8880:vless": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 448.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:31:14",
+  "proto": "vless",
+  "server": "94.140.0.100",
+  "port": 8880
+ },
+ "104.19.87.194:443:vless": {
+  "verdict": "alive",
+  "latency": 119,
+  "speed": 1727.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:31:23",
+  "proto": "vless",
+  "server": "104.19.87.194",
+  "port": 443
+ },
+ "104.26.13.40:8880:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 1760.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:31:32",
+  "proto": "vless",
+  "server": "104.26.13.40",
+  "port": 8880
+ },
+ "45.40.149.50:8880:vless": {
+  "verdict": "alive",
+  "latency": 127,
+  "speed": 1779.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:31:41",
+  "proto": "vless",
+  "server": "45.40.149.50",
+  "port": 8880
+ },
+ "185.148.107.40:8880:vless": {
+  "verdict": "alive",
+  "latency": 121,
+  "speed": 1642.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:31:51",
+  "proto": "vless",
+  "server": "185.148.107.40",
+  "port": 8880
+ },
+ "104.26.14.137:443:trojan": {
+  "verdict": "alive",
+  "latency": 127,
+  "speed": 1948.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:31:59",
+  "proto": "trojan",
+  "server": "104.26.14.137",
+  "port": 443
+ },
+ "104.16.73.213:443:trojan": {
+  "verdict": "alive",
+  "latency": 130,
+  "speed": 424.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:32:19",
+  "proto": "trojan",
+  "server": "104.16.73.213",
+  "port": 443
+ },
+ "217.163.76.118:2086:vless": {
+  "verdict": "alive",
+  "latency": 121,
+  "speed": 1463.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:32:30",
+  "proto": "vless",
+  "server": "217.163.76.118",
+  "port": 2086
+ },
+ "104.18.152.229:443:trojan": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 855.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:32:45",
+  "proto": "trojan",
+  "server": "104.18.152.229",
+  "port": 443
+ },
+ "104.18.152.187:443:trojan": {
+  "verdict": "alive",
+  "latency": 133,
+  "speed": 350.5,
+  "via": "kernel",
+  "at": "2026-11-12 00:33:00",
+  "proto": "trojan",
+  "server": "104.18.152.187",
+  "port": 443
+ },
+ "216.24.57.7:443:trojan": {
+  "verdict": "alive",
+  "latency": 127,
+  "speed": 729.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:33:18",
+  "proto": "trojan",
+  "server": "216.24.57.7",
+  "port": 443
+ },
+ "104.18.152.143:443:trojan": {
+  "verdict": "alive",
+  "latency": 135,
+  "speed": 1695.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:33:27",
+  "proto": "trojan",
+  "server": "104.18.152.143",
+  "port": 443
+ },
+ "104.18.152.207:443:trojan": {
+  "verdict": "alive",
+  "latency": 119,
+  "speed": 1612.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:33:37",
+  "proto": "trojan",
+  "server": "104.18.152.207",
+  "port": 443
+ },
+ "84.75.220.239:443:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 1100.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:33:58",
+  "proto": "vless",
+  "server": "84.75.220.239",
+  "port": 443
+ },
+ "84.75.221.12:443:vless": {
+  "verdict": "alive",
+  "latency": 119,
+  "speed": 1821.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:34:07",
+  "proto": "vless",
+  "server": "84.75.221.12",
+  "port": 443
+ },
+ "8.6.112.6:443:trojan": {
+  "verdict": "alive",
+  "latency": 263,
+  "speed": 275.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:34:34",
+  "proto": "trojan",
+  "server": "8.6.112.6",
+  "port": 443
+ },
+ "18.154.132.116:443:vless": {
+  "verdict": "alive",
+  "latency": 118,
+  "speed": 1987.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:34:43",
+  "proto": "vless",
+  "server": "18.154.132.116",
+  "port": 443
+ },
+ "us22.sofast.live:58011:vless": {
+  "verdict": "alive",
+  "latency": 142,
+  "speed": 555.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:34:58",
+  "proto": "vless",
+  "server": "us22.sofast.live",
+  "port": 58011
+ },
+ "151.101.69.253:443:vless": {
+  "verdict": "alive",
+  "latency": 124,
+  "speed": 1393.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:35:09",
+  "proto": "vless",
+  "server": "151.101.69.253",
+  "port": 443
+ },
+ "104.16.174.37:443:trojan": {
+  "verdict": "alive",
+  "latency": 120,
+  "speed": 1562.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:35:18",
+  "proto": "trojan",
+  "server": "104.16.174.37",
+  "port": 443
+ },
+ "188.114.97.7:443:trojan": {
+  "verdict": "alive",
+  "latency": 126,
+  "speed": 1875.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:35:27",
+  "proto": "trojan",
+  "server": "188.114.97.7",
+  "port": 443
+ },
+ "200.165.235.78:443:vless": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 1742.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:35:36",
+  "proto": "vless",
+  "server": "200.165.235.78",
+  "port": 443
+ },
+ "join-telegram-channel.tirexnet.kdns.fr:443:trojan": {
+  "verdict": "alive",
+  "latency": 129,
+  "speed": 1553.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:35:46",
+  "proto": "trojan",
+  "server": "join-telegram-channel.tirexnet.kdns.fr",
+  "port": 443
+ },
+ "www.speedtest.net:443:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 1547.8,
+  "via": "kernel",
+  "at": "2026-11-12 00:35:56",
+  "proto": "vless",
+  "server": "www.speedtest.net",
+  "port": 443
+ },
+ "194.93.63.246:443:vless": {
+  "verdict": "alive",
+  "latency": 129,
+  "speed": 1916.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:36:04",
+  "proto": "vless",
+  "server": "194.93.63.246",
+  "port": 443
+ },
+ "47.131.189.221:443:vless": {
+  "verdict": "alive",
+  "latency": 140,
+  "speed": 755.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:36:20",
+  "proto": "vless",
+  "server": "47.131.189.221",
+  "port": 443
+ },
+ "104.16.174.101:443:trojan": {
+  "verdict": "alive",
+  "latency": 132,
+  "speed": 1543.8,
+  "via": "kernel",
+  "at": "2026-11-12 00:36:39",
+  "proto": "trojan",
+  "server": "104.16.174.101",
+  "port": 443
+ },
+ "63.141.128.30:8880:vless": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 1365.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:36:50",
+  "proto": "vless",
+  "server": "63.141.128.30",
+  "port": 8880
+ },
+ "104.17.191.15:8880:vless": {
+  "verdict": "alive",
+  "latency": 130,
+  "speed": 792.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:37:05",
+  "proto": "vless",
+  "server": "104.17.191.15",
+  "port": 8880
+ },
+ "172.65.90.53:8880:vless": {
+  "verdict": "alive",
+  "latency": 130,
+  "speed": 1728.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:37:14",
+  "proto": "vless",
+  "server": "172.65.90.53",
+  "port": 8880
+ },
+ "172.64.94.251:8880:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 2006.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:37:22",
+  "proto": "vless",
+  "server": "172.64.94.251",
+  "port": 8880
+ },
+ "www.gov.se:8080:vless": {
+  "verdict": "alive",
+  "latency": 138,
+  "speed": 433.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:37:42",
+  "proto": "vless",
+  "server": "www.gov.se",
+  "port": 8080
+ },
+ "185.148.104.30:8880:vless": {
+  "verdict": "alive",
+  "latency": 127,
+  "speed": 1800.5,
+  "via": "kernel",
+  "at": "2026-11-12 00:37:51",
+  "proto": "vless",
+  "server": "185.148.104.30",
+  "port": 8880
+ },
+ "162.159.152.4:443:vless": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 496.8,
+  "via": "kernel",
+  "at": "2026-11-12 00:38:10",
+  "proto": "vless",
+  "server": "162.159.152.4",
+  "port": 443
+ },
+ "45.131.208.4:80:vless": {
+  "verdict": "alive",
+  "latency": 128,
+  "speed": 2021.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:38:19",
+  "proto": "vless",
+  "server": "45.131.208.4",
+  "port": 80
+ },
+ "104.17.64.70:8880:vless": {
+  "verdict": "alive",
+  "latency": 121,
+  "speed": 1780.4,
+  "via": "kernel",
+  "at": "2026-11-12 00:38:28",
+  "proto": "vless",
+  "server": "104.17.64.70",
+  "port": 8880
+ },
+ "104.27.82.154:8880:vless": {
+  "verdict": "alive",
+  "latency": 127,
+  "speed": 1763.4,
+  "via": "kernel",
+  "at": "2026-11-12 00:38:37",
+  "proto": "vless",
+  "server": "104.27.82.154",
+  "port": 8880
+ },
+ "104.17.144.29:8880:vless": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 1663.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:38:46",
+  "proto": "vless",
+  "server": "104.17.144.29",
+  "port": 8880
+ },
+ "pew.dianawmoon.dpdns.org:443:vless": {
+  "verdict": "alive",
+  "latency": 124,
+  "speed": 803.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:39:04",
+  "proto": "vless",
+  "server": "pew.dianawmoon.dpdns.org",
+  "port": 443
+ },
+ "psf-3.weedly.top:80:vless": {
+  "verdict": "alive",
+  "latency": 129,
+  "speed": 1817.5,
+  "via": "kernel",
+  "at": "2026-11-12 00:39:12",
+  "proto": "vless",
+  "server": "psf-3.weedly.top",
+  "port": 80
+ },
+ "199.232.239.239:443:vless": {
+  "verdict": "alive",
+  "latency": 126,
+  "speed": 1754.8,
+  "via": "kernel",
+  "at": "2026-11-12 00:39:22",
+  "proto": "vless",
+  "server": "199.232.239.239",
+  "port": 443
+ },
+ "104.27.0.121:443:vless": {
+  "verdict": "alive",
+  "latency": 199,
+  "speed": 1341.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:39:42",
+  "proto": "vless",
+  "server": "104.27.0.121",
+  "port": 443
+ },
+ "172.67.79.160:2087:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 829.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:39:57",
+  "proto": "vless",
+  "server": "172.67.79.160",
+  "port": 2087
+ },
+ "195.137.226.11:443:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 882.4,
+  "via": "kernel",
+  "at": "2026-11-12 00:40:14",
+  "proto": "vless",
+  "server": "195.137.226.11",
+  "port": 443
+ },
+ "185.220.100.168:443:trojan": {
+  "verdict": "alive",
+  "latency": 131,
+  "speed": 1889.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:40:23",
+  "proto": "trojan",
+  "server": "185.220.100.168",
+  "port": 443
+ },
+ "www.iplocation.net:8080:vless": {
+  "verdict": "alive",
+  "latency": 128,
+  "speed": 1789.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:40:32",
+  "proto": "vless",
+  "server": "www.iplocation.net",
+  "port": 8080
+ },
+ "104.21.28.176:443:vless": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 909.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:40:47",
+  "proto": "vless",
+  "server": "104.21.28.176",
+  "port": 443
+ },
+ "104.21.81.50:443:vless": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 1356.8,
+  "via": "kernel",
+  "at": "2026-11-12 00:40:57",
+  "proto": "vless",
+  "server": "104.21.81.50",
+  "port": 443
+ },
+ "172.67.139.229:443:vless": {
+  "verdict": "alive",
+  "latency": 132,
+  "speed": 2215.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:41:05",
+  "proto": "vless",
+  "server": "172.67.139.229",
+  "port": 443
+ },
+ "172.64.152.241:443:vless": {
+  "verdict": "alive",
+  "latency": 121,
+  "speed": 1601.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:41:15",
+  "proto": "vless",
+  "server": "172.64.152.241",
+  "port": 443
+ },
+ "172.64.150.43:443:vless": {
+  "verdict": "alive",
+  "latency": 132,
+  "speed": 618.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:41:30",
+  "proto": "vless",
+  "server": "172.64.150.43",
+  "port": 443
+ },
+ "nl.cachevault.net:443:vless": {
+  "verdict": "alive",
+  "latency": 118,
+  "speed": 2035.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:41:38",
+  "proto": "vless",
+  "server": "nl.cachevault.net",
+  "port": 443
+ },
+ "46.243.183.2:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "162.159.135.234:443:vless": {
+  "verdict": "alive",
+  "latency": 137,
+  "speed": 2137.5,
+  "via": "kernel",
+  "at": "2026-11-12 00:41:55",
+  "proto": "vless",
+  "server": "162.159.135.234",
+  "port": 443
+ },
+ "80.93.202.40:8880:vless": {
+  "verdict": "alive",
+  "latency": 154,
+  "speed": 2231.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:42:03",
+  "proto": "vless",
+  "server": "80.93.202.40",
+  "port": 8880
+ },
+ "188.114.98.0:443:vless": {
+  "verdict": "alive",
+  "latency": 133,
+  "speed": 1147.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:42:15",
+  "proto": "vless",
+  "server": "188.114.98.0",
+  "port": 443
+ },
+ "89.117.112.30:8880:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 353.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:42:30",
+  "proto": "vless",
+  "server": "89.117.112.30",
+  "port": 8880
+ },
+ "128.241.25.11:30021:vless": {
+  "verdict": "alive",
+  "latency": 128,
+  "speed": 1025.4,
+  "via": "kernel",
+  "at": "2026-11-12 00:42:43",
+  "proto": "vless",
+  "server": "128.241.25.11",
+  "port": 30021
+ },
+ "104.254.140.30:8880:vless": {
+  "verdict": "alive",
+  "latency": 130,
+  "speed": 884.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:42:58",
+  "proto": "vless",
+  "server": "104.254.140.30",
+  "port": 8880
+ },
+ "a0688bt.us4.h1clayd.click:443:vless": {
+  "verdict": "alive",
+  "latency": 132,
+  "speed": 1413.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:43:08",
+  "proto": "vless",
+  "server": "a0688bt.us4.h1clayd.click",
+  "port": 443
+ },
+ "45.142.120.30:8880:vless": {
+  "verdict": "alive",
+  "latency": 140,
+  "speed": 2094.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:43:17",
+  "proto": "vless",
+  "server": "45.142.120.30",
+  "port": 8880
+ },
+ "141.11.138.132:443:vless": {
+  "verdict": "alive",
+  "latency": 122,
+  "speed": 736.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:43:35",
+  "proto": "vless",
+  "server": "141.11.138.132",
+  "port": 443
+ },
+ "jrnkkm.de5.net:2053:vless": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 2388.4,
+  "via": "kernel",
+  "at": "2026-11-12 00:43:42",
+  "proto": "vless",
+  "server": "jrnkkm.de5.net",
+  "port": 2053
+ },
+ "yg1.ygkkk.dpdns.org:443:vmess": {
+  "verdict": "alive",
+  "latency": 127,
+  "speed": 1301.4,
+  "via": "kernel",
+  "at": "2026-11-12 00:44:14",
+  "proto": "vmess",
+  "server": "yg1.ygkkk.dpdns.org",
+  "port": 443
+ },
+ "188.164.248.151:2096:vless": {
+  "verdict": "alive",
+  "latency": 153,
+  "speed": 1913.4,
+  "via": "kernel",
+  "at": "2026-11-12 00:44:38",
+  "proto": "vless",
+  "server": "188.164.248.151",
+  "port": 2096
+ },
+ "185.162.229.40:8880:vless": {
+  "verdict": "alive",
+  "latency": 130,
+  "speed": 909.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:44:52",
+  "proto": "vless",
+  "server": "185.162.229.40",
+  "port": 8880
+ },
+ "188.241.241.36:8443:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 1435.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:46:11",
+  "proto": "vless",
+  "server": "188.241.241.36",
+  "port": 8443
+ },
+ "de15.h1cloud.net:25362:vless": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 2017.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:46:19",
+  "proto": "vless",
+  "server": "de15.h1cloud.net",
+  "port": 25362
+ },
+ "104.21.70.21:8080:vless": {
+  "verdict": "alive",
+  "latency": 126,
+  "speed": 2160.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:46:51",
+  "proto": "vless",
+  "server": "104.21.70.21",
+  "port": 8080
+ },
+ "chat.openai.com:8880:vless": {
+  "verdict": "alive",
+  "latency": 130,
+  "speed": 1786.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:47:18",
+  "proto": "vless",
+  "server": "chat.openai.com",
+  "port": 8880
+ },
+ "31.56.18.191:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "104.21.57.84:8443:vmess": {
+  "verdict": "alive",
+  "latency": 127,
+  "speed": 1961.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:47:26",
+  "proto": "vmess",
+  "server": "104.21.57.84",
+  "port": 8443
+ },
+ "n03.jinggai.online:443:vless": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 1552.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:47:36",
+  "proto": "vless",
+  "server": "n03.jinggai.online",
+  "port": 443
+ },
+ "104.18.42.98:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "162.159.249.92:443:vless": {
+  "verdict": "dead",
+  "stage": "tcp",
+  "at": "2026-11-12 00:17:37"
+ },
+ "154.211.8.152:2053:vless": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 2169.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:47:44",
+  "proto": "vless",
+  "server": "154.211.8.152",
+  "port": 2053
+ },
+ "103.116.7.67:2083:vless": {
+  "verdict": "alive",
+  "latency": 117,
+  "speed": 1697.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:47:53",
+  "proto": "vless",
+  "server": "103.116.7.67",
+  "port": 2083
+ },
+ "172.67.67.89:2083:vless": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 2093.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:48:01",
+  "proto": "vless",
+  "server": "172.67.67.89",
+  "port": 2083
+ },
+ "172.67.74.177:2083:vless": {
+  "verdict": "alive",
+  "latency": 120,
+  "speed": 1532.8,
+  "via": "kernel",
+  "at": "2026-11-12 00:48:11",
+  "proto": "vless",
+  "server": "172.67.74.177",
+  "port": 2083
+ },
+ "fu.baiproxy.us.ci:2087:vless": {
+  "verdict": "alive",
+  "latency": 134,
+  "speed": 1479.5,
+  "via": "kernel",
+  "at": "2026-11-12 00:48:21",
+  "proto": "vless",
+  "server": "fu.baiproxy.us.ci",
+  "port": 2087
+ },
+ "edition.ativetechnology.ir:46132:vless": {
+  "verdict": "alive",
+  "latency": 124,
+  "speed": 1532.5,
+  "via": "kernel",
+  "at": "2026-11-12 00:48:31",
+  "proto": "vless",
+  "server": "edition.ativetechnology.ir",
+  "port": 46132
+ },
+ "172.66.44.211:2083:vless": {
+  "verdict": "alive",
+  "latency": 146,
+  "speed": 1564.6,
+  "via": "kernel",
+  "at": "2026-11-12 00:48:41",
+  "proto": "vless",
+  "server": "172.66.44.211",
+  "port": 2083
+ },
+ "172.66.0.172:2083:vless": {
+  "verdict": "alive",
+  "latency": 117,
+  "speed": 2173.8,
+  "via": "kernel",
+  "at": "2026-11-12 00:48:49",
+  "proto": "vless",
+  "server": "172.66.0.172",
+  "port": 2083
+ },
+ "epam.com:443:vless": {
+  "verdict": "alive",
+  "latency": 128,
+  "speed": 775.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:49:04",
+  "proto": "vless",
+  "server": "epam.com",
+  "port": 443
+ },
+ "cf.090227.xyz:8443:vless": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 1537.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:49:14",
+  "proto": "vless",
+  "server": "cf.090227.xyz",
+  "port": 8443
+ },
+ "help1.digikala-aparat-zula.com:443:vless": {
+  "verdict": "alive",
+  "latency": 136,
+  "speed": 1448.4,
+  "via": "kernel",
+  "at": "2026-11-12 00:49:24",
+  "proto": "vless",
+  "server": "help1.digikala-aparat-zula.com",
+  "port": 443
+ },
+ "172.64.80.1:8443:vmess": {
+  "verdict": "alive",
+  "latency": 127,
+  "speed": 1852.8,
+  "via": "kernel",
+  "at": "2026-11-12 00:49:33",
+  "proto": "vmess",
+  "server": "172.64.80.1",
+  "port": 8443
+ },
+ "ip13.shabkhosh.sbs:443:vless": {
+  "verdict": "alive",
+  "latency": 122,
+  "speed": 610.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:49:48",
+  "proto": "vless",
+  "server": "ip13.shabkhosh.sbs",
+  "port": 443
+ },
+ "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev:443:vless": {
+  "verdict": "alive",
+  "latency": 134,
+  "speed": 1821.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:49:57",
+  "proto": "vless",
+  "server": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev",
+  "port": 443
+ },
+ "s2317.gogocs.xyz:443:vless": {
+  "verdict": "alive",
+  "latency": 127,
+  "speed": 1683.1,
+  "via": "kernel",
+  "at": "2026-11-12 00:50:06",
+  "proto": "vless",
+  "server": "s2317.gogocs.xyz",
+  "port": 443
+ },
+ "151.101.36.253:443:vless": {
+  "verdict": "alive",
+  "latency": 127,
+  "speed": 1759.5,
+  "via": "kernel",
+  "at": "2026-11-12 00:50:15",
+  "proto": "vless",
+  "server": "151.101.36.253",
+  "port": 443
+ },
+ "s8748.xxti.top:443:vless": {
+  "verdict": "alive",
+  "latency": 119,
+  "speed": 1272.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:50:27",
+  "proto": "vless",
+  "server": "s8748.xxti.top",
+  "port": 443
+ },
+ "172.67.199.126:2053:vless": {
+  "verdict": "alive",
+  "latency": 123,
+  "speed": 2001.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:50:35",
+  "proto": "vless",
+  "server": "172.67.199.126",
+  "port": 2053
+ },
+ "170.114.45.6:2096:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 1539.8,
+  "via": "kernel",
+  "at": "2026-11-12 00:50:45",
+  "proto": "vless",
+  "server": "170.114.45.6",
+  "port": 2096
+ },
+ "104.25.95.49:443:trojan": {
+  "verdict": "alive",
+  "latency": 128,
+  "speed": 724.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:51:03",
+  "proto": "trojan",
+  "server": "104.25.95.49",
+  "port": 443
+ },
+ "104.17.10.171:443:trojan": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 2039.4,
+  "via": "kernel",
+  "at": "2026-11-12 00:51:11",
+  "proto": "trojan",
+  "server": "104.17.10.171",
+  "port": 443
+ },
+ "cdn.sfacg.uk:2083:vmess": {
+  "verdict": "alive",
+  "latency": 128,
+  "speed": 1830.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:51:20",
+  "proto": "vmess",
+  "server": "cdn.sfacg.uk",
+  "port": 2083
+ },
+ "109.104.153.43:33336:ssr": {
+  "verdict": "alive",
+  "latency": 130,
+  "speed": 1582.2,
+  "via": "kernel",
+  "at": "2026-11-12 00:51:30",
+  "proto": "ssr",
+  "server": "109.104.153.43",
+  "port": 33336
+ },
+ "151.101.36.128:443:vless": {
+  "verdict": "alive",
+  "latency": 124,
+  "speed": 1649.4,
+  "via": "kernel",
+  "at": "2026-11-12 00:51:39",
+  "proto": "vless",
+  "server": "151.101.36.128",
+  "port": 443
+ },
+ "shh-hja-bbw.speedbluepanel.sbs:2053:vless": {
+  "verdict": "alive",
+  "latency": 125,
+  "speed": 1523.0,
+  "via": "kernel",
+  "at": "2026-11-12 00:51:49",
+  "proto": "vless",
+  "server": "shh-hja-bbw.speedbluepanel.sbs",
+  "port": 2053
+ },
+ "151.101.36.227:443:vless": {
+  "verdict": "alive",
+  "latency": 127,
+  "speed": 683.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:52:04",
+  "proto": "vless",
+  "server": "151.101.36.227",
+  "port": 443
+ },
+ "104.17.70.206:8443:vless": {
+  "verdict": "alive",
+  "latency": 121,
+  "speed": 1620.3,
+  "via": "kernel",
+  "at": "2026-11-12 00:52:14",
+  "proto": "vless",
+  "server": "104.17.70.206",
+  "port": 8443
+ },
+ "s8747.xxti.top:443:vless": {
+  "verdict": "alive",
+  "latency": 135,
+  "speed": 499.7,
+  "via": "kernel",
+  "at": "2026-11-12 00:52:29",
+  "proto": "vless",
+  "server": "s8747.xxti.top",
+  "port": 443
+ },
+ "api.meituan88.com:27561:ssr": {
+  "verdict": "alive",
+  "latency": 137,
+  "speed": 1811.9,
+  "via": "kernel",
+  "at": "2026-11-12 00:52:38",
+  "proto": "ssr",
+  "server": "api.meituan88.com",
+  "port": 27561
+ }
+}

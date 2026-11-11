@@ -163,11 +163,27 @@ ARCHIVE_SOURCES = [
 DATED_SOURCES = [
     ("xinshoucun", "https://xinshoucun.net/sub/clash-{ymd}.yaml", 3),
     ("oneclash", "https://oss.oneclash.cc/{y}/{m}/{ymd}.yaml", 2),
+    # clashnode: 2026-11-11 深夜挖出来的。形态比前两个好得多 ——
+    #   https://node.clashnode.cc/uploads/{y}/{m}/{n}-{ymd}.yaml   n = 0..3
+    # 每天 4 份、按日归档、实测能往回取到 3 个月前(2026-08 的文件仍有 200)。
+    # 这才是"URL 完全可预测 + 有历史存量"的印钞机形态, 前两个站每天只有一份。
+    #
+    # 首日实测: 4 份去重 1286 条, 其中 791 条是现池没有的;
+    #   http 252 条 → 实测 5 个可用(3 个 140~234KB/s, 全是 fan.*.xyz 家族);
+    #   内核类 534 条 → 串行测速中(见 verify.py)。
+    # 姊妹站 freeclashnode.com / freeclash.xyz / nodefree.cc 用的是**同一个后端**
+    # (四个域名下同一文件字节数完全相同), 所以只收这一个, 别重复加。
+    ("clashnode", "https://node.clashnode.cc/uploads/{y}/{m}/{n}-{ymd}.yaml",
+     3, (0, 1, 2, 3)),
 ]
 
 
-def dated_urls(template: str, days: int, today: datetime.date | None = None) -> list[str]:
+def dated_urls(template: str, days: int, today: datetime.date | None = None,
+               seq: tuple[int, ...] | None = None) -> list[str]:
     """把 URL 模板按"今天, 昨天, 前天…"展开。缺的那天会 404, 由调用方计 miss。
+
+    `seq` 用于"同一天有多份文件、按序号命名"的站点 —— clashnode 那种
+    `{n}-{ymd}.yaml` (n=0..3) 的形态。给 None 时行为与旧版完全一致。
 
     `today` 只为测试注入, 生产走系统时间。
     """
@@ -175,8 +191,12 @@ def dated_urls(template: str, days: int, today: datetime.date | None = None) -> 
     out = []
     for i in range(max(1, days)):
         d = base - datetime.timedelta(days=i)
-        out.append(template.format(ymd=d.strftime("%Y%m%d"),
-                                   y=d.strftime("%Y"), m=d.strftime("%m")))
+        kw = {"ymd": d.strftime("%Y%m%d"),
+              "y": d.strftime("%Y"), "m": d.strftime("%m")}
+        for n in (seq or (None,)):
+            if n is not None:
+                kw["n"] = n
+            out.append(template.format(**kw))
     return out
 
 # 博客型源 —— 节点不在 TG 帖子里, 在频道主自己的站上。
@@ -724,8 +744,10 @@ def main():
             got += ingest(body.decode("utf-8", "ignore"), name, quiet=True)
         print(f"  * {name}: 取 {len(urls)} 份 (缺 {miss}), 共抽出 {got} 条")
 
-    for name, tpl, days in DATED_SOURCES:
-        urls = dated_urls(tpl, days)
+    for entry in DATED_SOURCES:
+        name, tpl, days = entry[0], entry[1], entry[2]
+        seq = entry[3] if len(entry) > 3 else None      # 同日多份的站点才有
+        urls = dated_urls(tpl, days, seq=seq)
         got = miss = 0
         for url in urls:
             body = fetch(url, opener, timeout=20, retries=1)
