@@ -1,0 +1,75 @@
+{
+ "generated_at": "2026-11-11T17:06:54+08:00",
+ "total_nodes": 609,
+ "by_source": {
+  "NoMoreWalls": 425,
+  "ermaozi": 111,
+  "tg:@oneclickvpnkeys": 41,
+  "tg:@vpnfail_v2ray": 18,
+  "freefq": 14
+ },
+ "raw_hits": {
+  "w1770946466/Auto_proxy": 560,
+  "ermaozi": 502,
+  "NoMoreWalls": 443,
+  "mahdibland/Aggregator": 200,
+  "tg:@oneclickvpnkeys": 72,
+  "ripaojiedian": 20,
+  "tg:@vpnfail_v2ray": 20,
+  "Pawdroid/Free-servers": 20,
+  "freefq": 15,
+  "tg:@ssrsub": 1,
+  "tg:@ripaojiedian": 0,
+  "tg:@freefq": 0,
+  "tg:@v2ray_configs_pool": 0,
+  "tg:@clashnodes": 0,
+  "tg:@nodefree": 0,
+  "tg:@freev2rayconfig": 0,
+  "tg:@getfreev2ray": 0,
+  "tg:@Jsnzkpg": 0,
+  "tg:@proxy_config": 0,
+  "anaer/Sub": 0
+ },
+ "candidates": {
+  "aiboboxx/v2rayfree": {
+   "ok": false,
+   "raw": 0,
+   "new": 0
+  },
+  "aiboboxx/clashfree": {
+   "ok": false,
+   "raw": 0,
+   "new": 0
+  },
+  "mfuu/v2ray": {
+   "ok": false,
+   "raw": 0,
+   "new": 0
+  },
+  "Pawdroid/Free-servers": {
+   "ok": true,
+   "raw": 20,
+   "new": 12
+  },
+  "Barabama/FreeNodes": {
+   "ok": false,
+   "raw": 0,
+   "new": 0
+  },
+  "anaer/Sub": {
+   "ok": true,
+   "raw": 0,
+   "new": 0
+  },
+  "w1770946466/Auto_proxy": {
+   "ok": true,
+   "raw": 560,
+   "new": 470
+  },
+  "mahdibland/Aggregator": {
+   "ok": true,
+   "raw": 200,
+   "new": 118
+  }
+ }
+}
