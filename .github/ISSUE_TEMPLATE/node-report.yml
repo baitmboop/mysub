@@ -1,0 +1,32 @@
+name: 报告节点问题
+description: 手机上发现某些节点连不上/很慢时用这个。云端会自动摘掉并重建订阅。
+title: "节点反馈"
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        客户端里每个节点都显示成「序号 + IP」的形式，比如排第五的那个，
+        名字就是「N05」后面跟一串地址。**只写序号也行，只写 IP 也行。**
+
+        提交后约 1 分钟，云端会把这些节点标记为不可用并重新生成订阅。
+        你在客户端点一次「更新订阅」就生效，全程不需要电脑开机。
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: 范围
+      description: 只是个别节点不行，还是整体都不行？
+      options:
+        - 某几个节点（在下面写）
+        - 全部都不行 / 整体都很慢（重新筛选一批）
+    validations:
+      required: true
+
+  - type: textarea
+    id: nodes
+    attributes:
+      label: 哪些节点
+      description: 写序号（N05）或 IP 都行，多个用空格或逗号分开。整体都不行时可以留空。
+      placeholder: N05 N07
+      render: text

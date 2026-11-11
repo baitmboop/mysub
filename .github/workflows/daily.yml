@@ -27,6 +27,7 @@ on:
 permissions:
   contents: write            # 需要把产物 commit 回仓库
   actions: write             # 反馈处理完后要手动触发一次重建
+  issues: write              # 处理完在 issue 里回复结果(手机上看得到)
 
 concurrency:
   group: daily-sub
@@ -187,8 +188,9 @@ jobs:
           retention-days: 14
 
   # --------------------------------------------------------------------
-  # 手机端反馈: 提 issue 说"哪几个节点连不上", 这里把它们标成不可用,
-  # 然后触发一次重建。全程在云端完成, 不需要用户电脑开机。
+  # 手机端反馈: 提一个 issue 说"哪几个节点不行", 这里把它们标记为不可用,
+  # 然后触发一次重建。全程在云端完成, 不需要用户电脑开机, 也不需要我在场。
+  # 处理结果会直接回复在这条 issue 下面, 手机上一眼就能看到。
   # --------------------------------------------------------------------
   report:
     if: github.event_name == 'issues'
@@ -204,7 +206,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: 解析反馈并记录
+      - name: 解析反馈
         id: mark
         # 用环境变量传 issue 内容, 不直接拼进 shell —— 正文里带引号或反引号
         # 会被当成命令执行。
@@ -218,43 +220,47 @@ jobs:
           echo "--- 反馈内容 ---"
           cat /tmp/body.txt
           echo "----------------"
-
-          set +e
-          python3 mark.py --text "@/tmp/body.txt"
-          rc=$?
-          set -e
+          # mark.py 自己往 $GITHUB_OUTPUT 写 marked / rebuild, 不靠退出码传状态。
+          # 退出码 2 只表示"没认出任何节点", 不算故障。
+          rc=0
+          python3 mark.py --text "@/tmp/body.txt" || rc=$?
           if [ "$rc" = "2" ]; then
-            echo "::notice::反馈里没有识别到节点名或 IP, 不做处理"
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            exit 0
+            echo "::notice::反馈里没有识别到节点, 不做处理"
           elif [ "$rc" != "0" ]; then
             echo "::error::处理反馈时出错 (退出码 $rc)"
             exit "$rc"
           fi
+          echo "--- 解析结果 ---"
+          cat /tmp/mark_summary.txt 2>/dev/null || true
 
+      - name: 提交标记
+        id: push
+        if: steps.mark.outputs.marked != '0' && steps.mark.outputs.marked != ''
+        run: |
+          set -uo pipefail
           git config user.name  "nodepool-bot"
           git config user.email "bot@users.noreply.github.com"
           git add data/cn_pref.json
           if git diff --staged --quiet; then
-            echo "没有新增标记"
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            git commit -q -m "chore: 按反馈标记节点不可用 (#${{ github.event.issue.number }})"
-            pushed=0
-            for i in 1 2 3; do
-              if git push; then pushed=1; break; fi
-              echo "::warning::推送被拒(第 $i 次), 重试"
-              git pull --rebase -X theirs origin main || git rebase --abort 2>/dev/null || true
-              sleep 3
-            done
-            [ "$pushed" = "1" ] || { echo "::error::推送失败"; exit 1; }
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "这些节点之前已被标记过, 无需重复提交"
+            exit 0
           fi
+          git commit -q -m "chore: 按反馈标记节点不可用 (#${{ github.event.issue.number }})"
+          for i in 1 2 3; do
+            if git push; then exit 0; fi
+            echo "::warning::推送被拒(第 $i 次), 重试"
+            git pull --rebase -X theirs origin main || git rebase --abort 2>/dev/null || true
+            sleep 3
+          done
+          echo "::error::推送失败"
+          exit 1
 
       - name: 触发重建
-        if: steps.mark.outputs.changed == 'true'
-        # 这次提交只动了 data/, 而 paths-ignore 里排除了 data/**, 所以不会
-        # 自动触发 build。这里显式 dispatch 一次, 让订阅立刻反映反馈。
+        id: dispatch
+        if: steps.mark.outputs.rebuild == 'true'
+        # 这次提交只动了 data/, 而 paths-ignore 里排除了 data/**，不会自动触发
+        # build。这里显式 dispatch 一次。workflow_dispatch 那轮会跑采集步骤，
+        # 所以"整体都不行"也能拿到一批新的候选节点。
         run: |
           set -uo pipefail
           code=$(curl -sS -o /tmp/resp.json -w "%{http_code}" -X POST \
@@ -264,3 +270,45 @@ jobs:
             -d '{"ref":"main"}')
           echo "dispatch HTTP $code"
           [ "$code" = "204" ] || { cat /tmp/resp.json; exit 1; }
+
+      - name: 在 issue 里回复结果
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NO: ${{ github.event.issue.number }}
+          MARKED: ${{ steps.mark.outputs.marked }}
+          REBUILD: ${{ steps.mark.outputs.rebuild }}
+          MARK_OUTCOME: ${{ steps.mark.outcome }}
+          PUSH_OUTCOME: ${{ steps.push.outcome }}
+          DISPATCH_OUTCOME: ${{ steps.dispatch.outcome }}
+        run: |
+          set -uo pipefail
+          {
+            if [ "$MARK_OUTCOME" != "success" ]; then
+              echo "⚠️ 处理反馈时出错了，把这条 issue 的内容再发一次，或者直接找我说一声。"
+            elif [ "$MARKED" = "0" ] && [ "$REBUILD" != "true" ]; then
+              echo "没认出是哪个节点。写序号（N05 / 第5个 / 5号）或者 IP 都行。"
+            else
+              echo "✅ 收到，云端已处理完。"
+              echo ""
+              cat /tmp/mark_summary.txt 2>/dev/null || true
+              echo ""
+              if [ "$REBUILD" = "true" ] && [ "$DISPATCH_OUTCOME" = "success" ]; then
+                echo "订阅重建已触发，约 1~2 分钟后在客户端点一次「更新订阅」即可。"
+              elif [ "$MARKED" != "0" ] && [ "$PUSH_OUTCOME" != "success" ]; then
+                echo "标记写好了但提交失败，下一次定时任务（最多 3 小时）会自动带上。"
+              elif [ "$REBUILD" = "true" ]; then
+                echo "重建触发失败，但标记已保存，下一次定时任务（最多 3 小时）会自动带上。"
+              fi
+              echo ""
+              echo "标记 7 天后自动失效 —— 如果只是临时抽风，到时会自己回到候选池。"
+            fi
+          } > /tmp/comment.md
+          jq -n --rawfile b /tmp/comment.md '{body: $b}' > /tmp/payload.json
+          code=$(curl -sS -o /tmp/c.json -w "%{http_code}" -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/issues/$ISSUE_NO/comments" \
+            -d @/tmp/payload.json)
+          echo "comment HTTP $code"
+          if [ "$code" != "201" ]; then cat /tmp/c.json; fi

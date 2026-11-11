@@ -287,6 +287,76 @@ def t_mark_empty_text():
     assert not t
 
 
+def t_mark_ordinal_forms():
+    """「第5个」「5号」和「N05」要等价, 手机上没人会写 N05。"""
+    import mark
+    m = {"N05": "1.1.1.1", "N12": "2.2.2.2"}
+    for txt in ("第5个不行", "5号不行", "第 5 个不行", "N5 不行", "n05 不行"):
+        t, _ = mark.resolve(txt, m)
+        assert t == {"1.1.1.1"}, f"{txt!r} → {t}"
+
+
+def t_mark_ordinal_no_false_positive():
+    """IP 里的数字不能被当成序号: 202.0.0.5 不该命中 N05。"""
+    import mark
+    t, missed = mark.resolve("202.0.0.5 打不开", {"N05": "1.1.1.1"})
+    assert t == {"202.0.0.5"}, t
+    assert missed == [], missed
+
+
+def t_mark_form_preamble_ignored():
+    """issue 表单会把模板说明写进正文, 里面的举例不能被当成真实反馈。"""
+    import mark
+    body = ("客户端里每个节点都显示成「序号 + IP」的形式，比如排第五的那个，\n"
+            "名字就是「N05」后面跟一串地址。\n\n"
+            "### 范围\n\n某几个节点（在下面写）\n\n"
+            "### 哪些节点\n\nN07 连不上\n")
+    t, _ = mark.resolve(body, {"N05": "1.1.1.1", "N07": "2.2.2.2"})
+    assert t == {"2.2.2.2"}, f"模板里的 N05 被误解析: {t}"
+    assert not mark.wants_full_rebuild(body)
+
+
+def t_mark_all_keyword():
+    """「全部都不行」这类整体性描述要触发重新筛选, 而不是逐个点名。"""
+    import mark
+    for txt in ("全部都不行", "全都连不上", "整体都很慢", "重测一下", "换一批吧"):
+        assert mark.wants_full_rebuild(txt), txt
+    assert not mark.wants_full_rebuild("N05 不行")
+
+
+def t_mark_form_all_option():
+    """表单里选「全部都不行」时, 正文要能被识别成整体重筛。"""
+    import mark
+    body = "### 范围\n\n全部都不行 / 整体都很慢（重新筛选一批）\n\n### 哪些节点\n\n"
+    assert mark.wants_full_rebuild(body)
+
+
+def t_issue_template_shape():
+    """issue 表单的字段名和选项必须齐, 否则 GitHub 上点进去是空白页。"""
+    import yaml
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                     ".github", "ISSUE_TEMPLATE", "node-report.yml")
+    d = yaml.safe_load(open(p, encoding="utf-8"))
+    assert d.get("name") and d.get("description"), "缺少 name/description"
+    body = d.get("body") or []
+    kinds = [b.get("type") for b in body]
+    assert "dropdown" in kinds and "textarea" in kinds, kinds
+    for b in body:
+        if b["type"] in ("dropdown", "textarea"):
+            assert b.get("id"), f"{b['type']} 缺 id"
+            assert (b.get("attributes") or {}).get("label"), f"{b['type']} 缺 label"
+    # 选项文字会原样进正文, 不能出现会被解析成节点的字样, 否则每次提交都误标
+    import re as _re
+    for b in body:
+        if b["type"] != "dropdown":
+            continue
+        for opt in (b.get("attributes") or {}).get("options") or []:
+            assert not _re.search(r"N\s?\d", str(opt)), f"选项里出现节点序号: {opt}"
+    # 模板顶部的说明文字也会进正文, 但它永远排在第一行, mark 会整体忽略;
+    # 这里只保证「说明在选项之前」这个前提成立。
+    assert body[0]["type"] == "markdown", "示例文字必须放在最前面, 才能被整体跳过"
+
+
 TESTS = [(k[2:], v) for k, v in sorted(globals().items()) if k.startswith("t_")]
 
 if __name__ == "__main__":
