@@ -31,16 +31,28 @@ VG_REGEX = re.compile(
     r'(?:vmess|vless|trojan|ss|ssr|hysteria2|hy2|tuic)://[^\s"\'<>\\]+', re.I)
 
 TG_CHANNELS = [
-    "oneclickvpnkeys", "ripaojiedian", "freefq", "v2ray_configs_pool",
-    "clashnodes", "nodefree", "freev2rayconfig", "getfreev2ray",
-    "Jsnzkpg", "proxy_config", "vpnfail_v2ray", "ssrsub",
-    # 下面两个是 2026-11 实测补进来的。它们和上面 12 个不是一类:
-    # 上面发"直出节点"(贴出来即死), 这两个发"机场免费试用订阅"。
-    #   freeVPNjd  —— 每 1-2 小时一条新订阅, 单次可用率 16%, 但供给不断,
-    #                 是目前最稳定的新增来源。token 一次性, 必须当轮用掉。
-    #   go4sharing —— 频道本身已停更(最后帖 4 天前), 抓它主要是为了捞它
-    #                 放在页面里的 GitHub 订阅(见 SUB_SOURCES)。
+    # 还在更新的。
+    "oneclickvpnkeys",   # 最新帖 2h, 87 个直出节点
+    "vpnfail_v2ray",     # 最新帖 0.1h, 20 个
+    "ssrsub",            # 最新帖 8h, 30 个
+    "ripaojiedian",      # 最新帖 1.5h, 帖内是订阅地址
+    "freefq",            # 频道停更但页面里挂的订阅地址仍在
+    # 这两个和上面不是一类: 上面发"直出节点"(贴出来即死), 这两个发"机场免费试用订阅"。
+    #   freeVPNjd  —— 每 1-2 小时一条新订阅, 供给不断, 是最稳定的新增来源。
+    #                 token 一次性, 必须当轮用掉(实测十分钟后同一地址就 403)。
+    #   go4sharing —— 频道已停更, 抓它主要是为了捞页面里的 GitHub 仓库(见 SUB_SOURCES)。
     "freeVPNjd", "go4sharing",
+]
+
+# 已停更的频道, 不再请求。2026-11-11 逐个看了 t.me/s/ 页面里最新帖子的时间:
+#   v2ray_configs_pool 792h / freev2rayconfig 28388h / getfreev2ray 27968h
+#   proxy_config 35106h / clashnodes、nodefree、Jsnzkpg 连帖子块都抓不到
+# 这 7 个每天仍被请求一次、每次返回"无直出节点", 纯噪音还拖慢整轮采集。
+# 名单留着是因为频道可能复活 —— 一两个月后复查一次, 活着就挪回 TG_CHANNELS。
+# 复查方法: t.me/s/<频道> 最新 datetime 距今 < 720h。
+DEAD_CHANNELS = [
+    "v2ray_configs_pool", "clashnodes", "nodefree", "freev2rayconfig",
+    "getfreev2ray", "Jsnzkpg", "proxy_config",
 ]
 
 # 频道里贴的"订阅地址"没有统一特征: `/sub`、`token=` 是常见形态, 但 `/s/xxx`、
@@ -110,6 +122,23 @@ SUB_SOURCES = [
     ("go4sharing/sub", "https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml"),
 ]
 
+# 归档型源 —— 仓库按天存一份, 旧的也还在。
+#
+# 为什么值得翻旧账: 这类源发的是**静态** http 代理(机场把出口用 http 反代出来),
+# 不像 ss/vless 那样一天一换 IP。2026-11-11 实测: 只取最近 40 天归档, 得 155 个
+# 不重复 http + 3 个 socks5; 把其中的 http 全测一遍, 45 个当场连通、8 个能传数据,
+# 最快的 192.227.176.234 跑到 1221KB/s —— 比当时订阅里第一名(1130KB/s)还快。
+# 只抓"今天那一份文件"等于每天扔掉 95% 的存量, 所以这里按天回补。
+#
+# {year}/{mm}/{dd} 由日期填, 路径不存在就 404, 当天空着不影响其它天。
+#
+# 注意这个仓库**不是每天都有文件**: 实测 2026 年 168 份 / 330 天, 而且有连续空缺。
+# 所以不能只按"最近 N 天"回补(21 天只命中 5 份), 先问 GitHub 目录接口拿真实文件名,
+# 拿到就按文件名取最近 take 份; 拿不到(限流/网络)才退回按日期猜。
+ARCHIVE_SOURCES = [
+    ("go4sharing/arch", "go4sharing/sub", "2026", 40),
+]
+
 # 候选源 —— 每轮都会采, 但只用来"体检", 决定要不要转成正式源。
 # 判据是**独立贡献**(new): 抽到多少条节点里, 有多少是现有源没有的。
 #   new ≈ 0  → 它和现有源高度重合, 或者只是同一个聚合器的镜像, 删掉;
@@ -132,7 +161,11 @@ CANDIDATE_SOURCES = [
 
 def build_opener(proxy: str | None):
     if not proxy:
-        return urllib.request.build_opener()
+        # 必须显式传空 ProxyHandler: urllib 默认会读环境变量里的 http_proxy /
+        # HTTPS_PROXY, 而这类环境变量常指向一个只在某种网络下有效的本地端口。
+        # 踩过: 环境里 http_proxy=127.0.0.1:62694 失效, 所有抓取都变成
+        # "Tunnel connection failed: 502", 看起来像源站挂了, 实际一个字节都没出去。
+        return urllib.request.build_opener(urllib.request.ProxyHandler({}))
     handler = urllib.request.ProxyHandler({"http": proxy, "https": proxy})
     return urllib.request.build_opener(handler)
 
@@ -467,6 +500,35 @@ def fingerprint(n: dict) -> str:
     return hashlib.sha1(key.encode()).hexdigest()[:16]
 
 
+def archive_urls(repo: str, subdir: str, take: int, opener) -> list[str]:
+    """列出归档目录里的文件, 返回最近 take 个的下载地址。
+
+    优先用 GitHub 目录接口: 一次请求就能拿到真实文件名, 而按日期猜要发几十次
+    404 —— 这个仓库一年只有 168 份文件, 空缺比文件还多。
+    接口失败(限流/被墙)就退回按日期逐天猜, 效果差些但不至于整段失效。
+    """
+    base = f"https://raw.githubusercontent.com/{repo}/main"
+    api = f"https://api.github.com/repos/{repo}/contents/{subdir}"
+    body = fetch(api, opener, timeout=20, retries=1)
+    names: list[str] = []
+    if body:
+        try:
+            items = json.loads(body.decode("utf-8", "ignore"))
+            if isinstance(items, list):
+                names = sorted(x["name"] for x in items
+                               if str(x.get("name", "")).endswith((".yaml", ".yml", ".txt")))
+        except (ValueError, KeyError, TypeError):
+            names = []
+    if names:
+        return [f"{base}/{subdir}/{n}" for n in names[-take:]]
+
+    out = []
+    for d in range(take * 2):          # 空缺多, 多猜几天才凑得够
+        day = datetime.date.today() - datetime.timedelta(days=d)
+        out.append(f"{base}/{day.year}/{day.month:02d}-{day.day:02d}.yaml")
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--proxy", default=os.environ.get("HTTPS_PROXY") or None)
@@ -501,7 +563,7 @@ def main():
             _put(n, source, tgt)
         return len(items)
 
-    def ingest(text: str, source: str, target: dict | None = None):
+    def ingest(text: str, source: str, target: dict | None = None, quiet: bool = False):
         # target 给候选源体检用: 传一份临时池进去, 节点只参与"是不是新的"这个判断,
         # 不会真的混进正式池 —— 否则每多一个候选源, 当天要测速的节点就多一批,
         # 而候选源里绝大多数是重复的。
@@ -514,10 +576,11 @@ def main():
         # 有 URI 就不试 YAML: 那种文本跑 safe_load 又慢又必然不是 dict。
         extra = _ingest_yaml(text, source, tgt) if not found else 0
         stats[source] = stats.get(source, 0) + len(found) + extra
-        print(f"    → 抽出 {len(found) + extra:4d} 条, 去重后累计 {len(tgt)}")
+        if not quiet:
+            print(f"    → 抽出 {len(found) + extra:4d} 条, 去重后累计 {len(tgt)}")
         return len(found) + extra
 
-    print("[1/4] 公开订阅源")
+    print("[1/5] 公开订阅源")
     for name, url in RAW_SOURCES:
         print(f"  * {name}: {url}")
         body = fetch(url, opener)
@@ -529,7 +592,7 @@ def main():
                     if sub:
                         ingest(sub.decode("utf-8", "ignore"), f"{name}→child")
 
-    print("[2/4] 整份订阅 (含 Clash YAML)")
+    print("[2/5] 整份订阅 (含 Clash YAML)")
     # 外部清单: 用户随时追加, 不用改代码。
     extra_subs = []
     for u in load_extra_list(EXTRA_SUBS):
@@ -546,7 +609,19 @@ def main():
             continue
         ingest(body.decode("utf-8", "ignore"), name)
 
-    print("[3/4] Telegram 频道 (t.me/s/ 网页预览)")
+    print("[3/5] 归档型源 (按天回补, 旧的静态代理照样活着)")
+    for name, repo, subdir, take in ARCHIVE_SOURCES:
+        urls = archive_urls(repo, subdir, take, opener)
+        got = miss = 0
+        for url in urls:
+            body = fetch(url, opener, timeout=12, retries=1)
+            if not body:
+                miss += 1
+                continue
+            got += ingest(body.decode("utf-8", "ignore"), name, quiet=True)
+        print(f"  * {name}: 取 {len(urls)} 份 (缺 {miss}), 共抽出 {got} 条")
+
+    print("[4/5] Telegram 频道 (t.me/s/ 网页预览)")
     channels = list(dict.fromkeys(TG_CHANNELS + load_extra_list(EXTRA_CHANNELS)))
     for ch in channels:
         body = fetch(f"https://t.me/s/{ch}", opener)
@@ -588,7 +663,7 @@ def main():
         if links:
             print(f"    · 帖内链接 {len(links)} 个, 其中 {hit} 份是有效订阅")
 
-    print("[4/4] 候选源体检 (只看独立贡献, 不看抽出条数)")
+    print("[5/5] 候选源体检 (只看独立贡献, 不看抽出条数)")
     cand: dict[str, dict] = {}
     for name, url in CANDIDATE_SOURCES:
         # 浅拷贝一份池子做沙盘: 新节点的 fp 只在沙盘里累积, 正式池不受影响。

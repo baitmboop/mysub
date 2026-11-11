@@ -1,6 +1,43 @@
 [
  {
   "proto": "http",
+  "server": "118.184.140.90",
+  "port": 58764,
+  "name": "美国 - 亚特兰大 - 2",
+  "source": "go4sharing/sub",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "sources": [
+   "go4sharing/sub"
+  ],
+  "fp": "118.184.140.90:58764:http",
+  "cn_ok": 1,
+  "cn_by": "auto",
+  "cn_latency": 1185,
+  "cn_speed": 2.1621
+ },
+ {
+  "proto": "http",
+  "server": "192.227.176.234",
+  "port": 443,
+  "name": "美国 - 水牛城 - 2",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "192.227.176.234:443:http",
+  "cn_ok": 1,
+  "cn_by": "auto",
+  "cn_latency": 1184,
+  "cn_speed": 1.1922
+ },
+ {
+  "proto": "http",
   "server": "158.173.154.5",
   "port": 9002,
   "name": "n0003",
@@ -28,6 +65,58 @@
   "cn_by": "auto",
   "cn_latency": 1032,
   "cn_speed": 1.1033
+ },
+ {
+  "proto": "vless",
+  "server": "3.169.9.125",
+  "port": 443,
+  "uuid": "67cd3349-f789-4cbb-8b91-4b6b1654ce7c",
+  "tls": true,
+  "sni": "d14jyezfrcyf60.cloudfront.net",
+  "network": "ws",
+  "path": "/",
+  "host": "d14jyezfrcyf60.cloudfront.net",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "fp": "812f079f71221536",
+  "reality": false,
+  "name": "n0348",
+  "source": "ermaozi",
+  "sources": [
+   "ermaozi"
+  ],
+  "latency": 385,
+  "jitter": 0,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9287,
+  "speed": 0.0,
+  "cn_ok": 1,
+  "cn_by": "auto",
+  "cn_latency": 2667,
+  "cn_speed": 1.0937
+ },
+ {
+  "proto": "http",
+  "server": "158.173.154.2",
+  "port": 9002,
+  "name": "德国 - 法兰克福 - 2",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "158.173.154.2:9002:http",
+  "cn_ok": 1,
+  "cn_by": "auto",
+  "cn_latency": 3965,
+  "cn_speed": 1.0325
  },
  {
   "proto": "ss",
@@ -116,6 +205,23 @@
   "cn_speed": 0.5197
  },
  {
+  "proto": "http",
+  "server": "34.249.214.108",
+  "port": 443,
+  "name": "爱尔兰 - 都柏林 - 1",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "34.249.214.108:443:http",
+  "cn_ok": 1,
+  "cn_by": "auto",
+  "cn_latency": 1128,
+  "cn_speed": 0.3797
+ },
+ {
   "proto": "ss",
   "server": "202.50.253.45",
   "port": 19999,
@@ -143,6 +249,57 @@
   "cn_by": "auto",
   "cn_latency": 1193,
   "cn_speed": 0.3624
+ },
+ {
+  "proto": "http",
+  "server": "fan.226278.xyz",
+  "port": 443,
+  "name": "美国 - Los Angeles - 16",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "fan.226278.xyz:443:http",
+  "cn_ok": 1,
+  "cn_by": "auto",
+  "cn_latency": 1353,
+  "cn_speed": 0.2951
+ },
+ {
+  "proto": "http",
+  "server": "fan.365747.xyz",
+  "port": 443,
+  "name": "美国 - San Jose - 5",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "fan.365747.xyz:443:http",
+  "cn_ok": 1,
+  "cn_by": "auto",
+  "cn_latency": 4685,
+  "cn_speed": 0.2795
+ },
+ {
+  "proto": "http",
+  "server": "38.28.193.188",
+  "port": 443,
+  "name": "美国 - Los Angeles - 3",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "38.28.193.188:443:http",
+  "cn_ok": 1,
+  "cn_by": "auto",
+  "cn_latency": 2342,
+  "cn_speed": 0.2561
  },
  {
   "proto": "ss",
@@ -289,6 +446,26 @@
   "cn_speed": 0.1811
  },
  {
+  "proto": "http",
+  "server": "185.219.159.15",
+  "port": 443,
+  "name": "拉脱维亚 - 里加 - 1",
+  "source": "go4sharing/sub",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "sources": [
+   "go4sharing/sub"
+  ],
+  "fp": "185.219.159.15:443:http",
+  "cn_ok": 1,
+  "cn_by": "auto",
+  "cn_latency": 1591,
+  "cn_speed": 0.1348
+ },
+ {
   "proto": "trojan",
   "server": "191.44.112.170.sslip.io",
   "port": 443,
@@ -320,6 +497,23 @@
   "cn_speed": 0.1327
  },
  {
+  "proto": "http",
+  "server": "185.219.159.16",
+  "port": 443,
+  "name": "拉脱维亚 - 里加 - 2",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "185.219.159.16:443:http",
+  "cn_ok": 1,
+  "cn_by": "auto",
+  "cn_latency": 3363,
+  "cn_speed": 0.1128
+ },
+ {
   "proto": "ss",
   "server": "202.50.253.18",
   "port": 19999,
@@ -347,6 +541,23 @@
   "cn_by": "auto",
   "cn_latency": 2004,
   "cn_speed": 0.0937
+ },
+ {
+  "proto": "http",
+  "server": "83.206.1.225",
+  "port": 8090,
+  "name": "法国 - 里昂 - 1",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "83.206.1.225:8090:http",
+  "cn_ok": 1,
+  "cn_by": "auto",
+  "cn_latency": 1290,
+  "cn_speed": 0.0575
  },
  {
   "proto": "ss",
@@ -468,6 +679,30 @@
   ],
   "latency": 145,
   "jitter": 4,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "ss",
+  "server": "217.30.10.70",
+  "port": 9018,
+  "cipher": "aes-256-cfb",
+  "password": "fG2artUmHfNT2cX7",
+  "name": "n0228",
+  "source": "mahdibland",
+  "fp": "a5863263d72b070d",
+  "sources": [
+   "mahdibland"
+  ],
+  "latency": 120,
+  "jitter": 3,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",

@@ -56,6 +56,26 @@ python3 gateway.py           # 前台起网关（Ctrl+C 退出）
 > 默认走 `http://127.0.0.1:7897`（可用 `NODEPOOL_PROXY` 覆盖）。
 > 代理不在线时 `refresh.sh` 会**跳过采集但仍然重测**，不会整轮报废。
 
+## 加一个新源（三步，不用改代码）
+
+```bash
+# 1) 先体检：抽出多少 / 本池有没有 / 真能传数据几个
+python3 audit_source.py <源地址> --sample 30 --workers 5
+
+# 2) 纯 ip:port 列表要指定协议；auto 会把 http 和 socks5 各试一遍
+python3 audit_source.py <源地址> --kind http --sample 40
+
+# 3) 体检通过就收编（只收真跑出过下载速度的）
+python3 audit_source.py <源地址> --sample 40 --save
+```
+
+体检器支持的形态：URI 列表 / 整份 base64 订阅 / Clash YAML / `ip:port` 列表 / tg 频道名。
+它只读源，不加 `--save` 不会动 `data/` 下任何文件。
+
+> 判断一个源值不值得加，看 **new（本池没有的）** 和 **能传数据**，不看 raw。
+> 实测教训：某聚合仓抽得出 1802 条，中国网络存活 0 条；另一份归档只抽出 155 条 http，
+> 却有 8 个能跑 50KB/s 以上、最快的 1.2MB/s。
+
 ## 目录结构
 
 ```

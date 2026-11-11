@@ -619,6 +619,84 @@ def t_looks_like_sub():
     assert not collect.looks_like_sub("")
 
 
+def t_archive_urls_from_api():
+    """归档源: 目录接口能列出来时, 按文件名取最近的几份。"""
+    import collect
+    listing = json.dumps([
+        {"name": "01-01.yaml"}, {"name": "README.md"},
+        {"name": "08-09.yaml"}, {"name": "11-08.yaml"},
+    ]).encode()
+
+    class FakeOpener:
+        def open(self, req, timeout=0):
+            raise AssertionError("这个用例不该发网络请求")
+
+    urls = collect.archive_urls  # 只验证纯逻辑那部分
+    # 用 monkeypatch 替换 fetch, 避免自检依赖网络
+    old = collect.fetch
+    collect.fetch = lambda *a, **k: listing
+    try:
+        got = collect.archive_urls("a/b", "2026", 2, None)
+    finally:
+        collect.fetch = old
+    assert got == ["https://raw.githubusercontent.com/a/b/main/2026/08-09.yaml",
+                   "https://raw.githubusercontent.com/a/b/main/2026/11-08.yaml"], got
+
+
+def t_archive_urls_fallback():
+    """目录接口拿不到就按日期猜, 且不能因为文件缺失就返回空。"""
+    import collect
+    old = collect.fetch
+    collect.fetch = lambda *a, **k: None
+    try:
+        got = collect.archive_urls("a/b", "2026", 3, None)
+    finally:
+        collect.fetch = old
+    assert len(got) == 6, len(got)          # take*2: 空缺多, 多猜几天
+    assert all(u.endswith(".yaml") for u in got)
+    assert "/main/" in got[0]
+
+
+def t_history_truncate_keeps_cn_alive():
+    """池子满了要砍, 但绝不能砍掉国内实测能通的 —— 那是唯一真有用的证据。"""
+    old_max, old_cn = gateway.MAX_POOL, gateway.load_cn_pref
+    gateway.MAX_POOL = 2
+    gateway.load_cn_pref = lambda: {
+        "9.9.9.9:443": {"ok": 1, "speed": 9.5, "latency": 100}}
+    try:
+        hist = {}
+        for i, srv in enumerate(["1.1.1.1", "2.2.2.2", "9.9.9.9"]):
+            n = node(server=srv, port=443, proto="ss", cipher="aes-128-gcm",
+                     password="p")
+            n["score"] = 0.9 if srv != "9.9.9.9" else 0.0   # 实测那个云端评分最低
+            hist[gateway.fp_key(n)] = {"node": n, "score": n["score"], "last_ok": time.time()}
+        out = gateway.merge_history(hist, [])
+        kept = {v["node"]["server"] for v in out.values()}
+        assert "9.9.9.9" in kept, kept
+        assert len(out) == 2, len(out)
+    finally:
+        gateway.MAX_POOL, gateway.load_cn_pref = old_max, old_cn
+
+
+def t_dead_channels_not_active():
+    """停更频道不能还挂在抓取名单里, 否则每天白请求一次。"""
+    import collect
+    assert not (set(collect.TG_CHANNELS) & set(collect.DEAD_CHANNELS))
+    assert len(collect.TG_CHANNELS) >= 4
+
+
+def t_opener_ignores_env_proxy():
+    """没指定代理时必须真的直连 —— 环境变量里的 http_proxy 常指向失效端口。"""
+    import collect
+    os.environ["http_proxy"] = "http://127.0.0.1:9"
+    try:
+        op = collect.build_opener(None)
+        assert not [h for h in op.handlers if h.__class__.__name__ == "ProxyHandler"
+                    and getattr(h, "proxies", {})]
+    finally:
+        os.environ.pop("http_proxy", None)
+
+
 TESTS = [(k[2:], v) for k, v in sorted(globals().items()) if k.startswith("t_")]
 
 if __name__ == "__main__":

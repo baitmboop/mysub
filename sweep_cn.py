@@ -125,9 +125,12 @@ def measure(proxy: dict):
             if code in THROTTLED:
                 bad += 1          # 测速站限流, 不是节点的问题
                 continue
+            if spd > 0:
+                # 拿到真实速度就够了, 不必再试别的源。
+                # 只有"被限流/报错"才需要换源重来; 慢节点(10~40KB/s)如果也跑三个源,
+                # 每个节点要多花 20 秒, 一批 150 个就是 10 分钟纯等待 —— 实测踩过。
+                return {"ok": 1, "latency": lat, "speed": round(spd / 1024, 4)}
             best = max(best, spd)
-            if spd >= 50:
-                break
         if best == 0 and bad >= len(SPEED_URLS):
             return None
         return {"ok": 1, "latency": lat, "speed": round(best / 1024, 4)}

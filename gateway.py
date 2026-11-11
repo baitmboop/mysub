@@ -143,9 +143,21 @@ def merge_history(history: dict, best: list, keep_days: int = KEEP_DAYS) -> dict
     for k in stale:
         history.pop(k, None)
 
-    # 数量上限: 按分数截断
+    # 数量上限: 截断要保住"真的能用"的节点。
+    #
+    # 原来只按 score 排, 而 score 来自云端复检 —— 于是"中国实测 2214KB/s、但云端连不上"
+    # 的节点 score=0, 池子一满第一个被砍, 留下的是云端复检漂亮、国内打不开的那些。
+    # 现在按 (国内实测能通?, 实测速度, score) 排, 实测证据永远优先于云端观感。
     if len(history) > MAX_POOL:
-        ranked = sorted(history.items(), key=lambda kv: kv[1].get("score", 0), reverse=True)
+        cn = load_cn_pref()
+
+        def weight(kv) -> tuple:
+            node = kv[1].get("node") or {}
+            p = cn.get(f"{node.get('server')}:{node.get('port')}") or {}
+            return (int(bool(p.get("ok"))), p.get("speed") or 0.0,
+                    kv[1].get("score") or 0)
+
+        ranked = sorted(history.items(), key=weight, reverse=True)
         history = dict(ranked[:MAX_POOL])
     return history
 

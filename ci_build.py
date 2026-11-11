@@ -110,9 +110,12 @@ def write_outputs(pool: list, private: list, fallback: list, *,
         rank = gateway._cn_rank(n)
         cn = {3: "✓ 能传数据", 2: "连得上", 1: "传不动", 0: "未测", -1: "不通"}[rank]
         sp = f"{n['cn_speed'] * 1024:.0f} KB/s" if n.get("cn_speed") else "-"
+        # 延迟优先用国内实测的: 免筛放行的 http 代理在云端测不出延迟, 那一列会空一片,
+        # 而它恰恰是国内实测有数的 —— 显示国内数字才和"能不能用"对得上。
+        lat = n.get("cn_latency") or n.get("latency")
         lines.append(
             f"| {i} | {n.get('proto')} | {n.get('server')}:{n.get('port')} | "
-            f"{n.get('latency') or '-'}ms | {cn} | {sp} | {n.get('source') or '-'} |")
+            f"{lat or '-'}ms | {cn} | {sp} | {n.get('source') or '-'} |")
     lines += ["", "> 排序依据是中国网络实测下载速度; 手机端的 url-test 会在当场再择优一次。"]
     with open(os.path.join(OUT, "report.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
@@ -191,6 +194,7 @@ def main() -> int:
         log(f"延迟测试 {len(name_map)} 个 ({args.workers} 并发)...")
         t0 = time.time()
         cand = []
+        geo: list = []                    # http/socks5, 不受云端结论约束
         tested: dict[str, bool] = {}      # fp -> 本轮连不连得上, 给 pool_nodes 用
         with ThreadPoolExecutor(max_workers=args.workers) as ex:
             futs = {ex.submit(probe.delay_test, nm): nm for nm in name_map}
@@ -202,16 +206,27 @@ def main() -> int:
                     med, jitter = f.result()
                 except Exception:
                     med, jitter = None, None
-                if med and med <= args.delay_limit:
+                live = bool(med) and med <= args.delay_limit
+                if live:
                     n = dict(kn)
                     n.update(name=nm, latency=med, jitter=jitter)
                     cand.append(n)
                     tested[key] = True
+                elif str(kn.get("proto")) in ("http", "socks5"):
+                    # 普通 http 代理常常**认 IP/地区**: 同一个代理在国内秒开, 从
+                    # Azure runner 连过去直接被拒。2026-11-11 实测对照: 云端粗筛
+                    # 扔掉的 152 个 http/socks5 里, 45 个在国内当场连通、8 个能传
+                    # 数据, 其中 192.227.176.234 跑到 1221KB/s —— 比当时订阅第一名
+                    # 还快。所以这类节点一律放行, 云端测不通不算死亡证据。
+                    n = dict(kn)
+                    n.update(name=nm, latency=med, jitter=None)
+                    geo.append(n)
                 else:
                     tested[key] = False
-        log(f"✓ 存活 {len(cand)} 个 (≤{args.delay_limit}ms), 耗时 {time.time()-t0:.0f}s")
+        log(f"✓ 存活 {len(cand)} 个 (≤{args.delay_limit}ms), "
+            f"另有 {len(geo)} 个 http/socks5 免筛放行, 耗时 {time.time()-t0:.0f}s")
 
-        if not cand:
+        if not cand and not geo:
             # 免费节点池全灭是正常业务状态, 不是"脚本坏了"。
             # 每 3 小时跑一次, 如果按失败退出, 一天可能收到好几封失败邮件,
             # 真正的故障反而被淹没。保留上一轮产物 + 打警告就够了。
@@ -248,16 +263,31 @@ def main() -> int:
             cand = good
             log(f"✓ 复检后 {len(cand)} 个, 耗时 {time.time()-t0:.0f}s")
 
+        # 放行的 http/socks5 不参与云端复检(同样会因地区被拒), 直接补回候选。
+        if geo:
+            cand = cand + geo
+            log(f"✓ 并入免筛的 http/socks5 {len(geo)} 个 → 候选 {len(cand)} 个")
+
         # ---------- 4. 排序 + 评分 ----------
-        mx = max((n["latency"] for n in cand), default=1) or 1
+        mx = max((n["latency"] for n in cand if n.get("latency")), default=1) or 1
         for n in cand:
             v = n.get("verify_ok") or 0
+            # 免筛的 http/socks5 可能压根没测出延迟(云端连不上), 用最长延迟兜底,
+            # 不让 None 混进算术 —— 它们真正的名次由国内实测(cn_pref)决定。
+            lat = n.get("latency") or mx
             n["score"] = round(v / len(probe.VERIFY_SITES) * 0.8
-                               + (1 - n["latency"] / mx) * 0.2, 4)
+                               + (1 - lat / mx) * 0.2, 4)
             n["speed"] = 0.0  # 云端不测速, 占位保持字段一致
 
         cand.sort(key=lambda n: (-(n.get("verify_ok") or 0), n.get("score") or 0))
         picked = cand[: args.keep]
+        if geo:
+            # 免筛的 http/socks5 不占 keep 配额: 它们的评分天然吃亏(云端测不出延迟),
+            # 按分数排永远进不了前 keep 名, 而它们恰恰是国内最快的一类。
+            have = {gateway.fp_key(n) for n in picked}
+            extra = [n for n in geo if gateway.fp_key(n) not in have]
+            picked += extra
+            log(f"✓ 免筛 http/socks5 额外保留 {len(extra)} 个")
 
         # ---------- 5. 并入历史池 ----------
         history = gateway.load_json(HISTORY, {})
