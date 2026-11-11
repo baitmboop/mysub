@@ -184,12 +184,24 @@
   "proto": "ss",
   "server": "3.16.78.3",
   "port": 443,
-  "name": "[SS] 超级快 7 3",
-  "source": "tg:@wxdy666",
+  "name": "n0588",
+  "source": "tg:@wxdy666→sub",
   "cipher": "aes-256-cfb",
   "password": "amazonskr05",
-  "_src": "wxdy666",
-  "fp": "3.16.78.3:443:ss",
+  "fp": "4fde0716d9b3a394",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ],
+  "latency": 63,
+  "jitter": 12,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8031,
+  "speed": 0.0,
   "cn_ok": 1,
   "cn_by": "auto",
   "cn_latency": 1530,
@@ -199,12 +211,24 @@
   "proto": "ss",
   "server": "18.117.92.138",
   "port": 443,
-  "name": "[SS] 超级快 6 2",
-  "source": "tg:@wxdy666",
+  "name": "n0443",
+  "source": "tg:@wxdy666→sub",
   "cipher": "aes-256-cfb",
   "password": "amazonskr05",
-  "_src": "wxdy666",
-  "fp": "18.117.92.138:443:ss",
+  "fp": "44ec6492e345749d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ],
+  "latency": 64,
+  "jitter": 8,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8,
+  "speed": 0.0,
   "cn_ok": 1,
   "cn_by": "auto",
   "cn_latency": 2037,
@@ -615,37 +639,6 @@
   "cn_speed": 0.1348
  },
  {
-  "proto": "trojan",
-  "server": "191.44.112.170.sslip.io",
-  "port": 443,
-  "password": "46d221fa-e9b4-748c-4eae-019a88e42991",
-  "sni": "orbylume.my.to",
-  "network": "ws",
-  "path": "/tvpn-trojan/bg",
-  "host": "orbylume.my.to",
-  "skipCertVerify": false,
-  "name": "n0145",
-  "source": "ermaozi",
-  "fp": "91ddb20f63a2ebeb",
-  "sources": [
-   "ermaozi"
-  ],
-  "latency": 1080,
-  "jitter": 639,
-  "verify_ok": 2,
-  "verify": {
-   "gstatic": "x",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.5333,
-  "speed": 0.0,
-  "cn_ok": 1,
-  "cn_by": "auto",
-  "cn_latency": 2716,
-  "cn_speed": 0.1327
- },
- {
   "proto": "http",
   "server": "185.219.159.16",
   "port": 443,
@@ -730,6 +723,119 @@
   "cn_by": "auto",
   "cn_latency": 1290,
   "cn_speed": 0.0575
+ },
+ {
+  "proto": "trojan",
+  "server": "66.163.112.76",
+  "port": 443,
+  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+  "sni": "api.unlockyourfuturefindyourperfectcareer.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "n1175",
+  "source": "tg:@byxiaoxi→blog",
+  "fp": "230a0c3c2ecaa051",
+  "sources": [
+   "tg:@byxiaoxi→blog"
+  ],
+  "latency": 27,
+  "jitter": 2,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9156,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "trojan",
+  "server": "216.106.186.66",
+  "port": 443,
+  "password": "242a3d8eee5e4ed1a6bfa4141d549a25",
+  "sni": "www.findlocaljobnetworkandbuildcommunityconnections.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "n1112",
+  "source": "tg:@byxiaoxi→blog",
+  "fp": "53c7b641c4f01fa4",
+  "sources": [
+   "tg:@byxiaoxi→blog"
+  ],
+  "latency": 28,
+  "jitter": 8,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9125,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "trojan",
+  "server": "66.163.112.121",
+  "port": 443,
+  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+  "sni": "www.unlockyourfuturefindyourperfectcareer.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "n1168",
+  "source": "mahdibland",
+  "fp": "63203ff88f5e6cab",
+  "sources": [
+   "mahdibland",
+   "tg:@byxiaoxi→blog"
+  ],
+  "latency": 28,
+  "jitter": 3,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9125,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "trojan",
+  "server": "66.163.112.171",
+  "port": 443,
+  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+  "sni": "learn.unlockyourfuturefindyourperfectcareer.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "n1172",
+  "source": "tg:@byxiaoxi→blog",
+  "fp": "082a22e0b9a8fea4",
+  "sources": [
+   "tg:@byxiaoxi→blog"
+  ],
+  "latency": 31,
+  "jitter": 3,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9031,
+  "speed": 0.0,
+  "cn_ok": null
  },
  {
   "proto": "ss",
@@ -872,108 +978,6 @@
    "cf-trace": "ok"
   },
   "score": 0.8973,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "ss",
-  "server": "172.111.38.72",
-  "port": 19999,
-  "cipher": "aes-256-gcm",
-  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-  "name": "n0328",
-  "source": "mahdibland",
-  "fp": "05fa9cf135b67194",
-  "sources": [
-   "mahdibland"
-  ],
-  "latency": 77,
-  "jitter": 3,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8945,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "trojan",
-  "server": "66.163.122.81",
-  "port": 443,
-  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-  "sni": "courses.searchnationwidecareerchangehelperandguidancetoday.com",
-  "network": "tcp",
-  "path": "",
-  "host": "",
-  "skipCertVerify": true,
-  "name": "n0810",
-  "source": "tg:@oneclickvpnkeys",
-  "fp": "3b1635148392f245",
-  "sources": [
-   "tg:@oneclickvpnkeys"
-  ],
-  "latency": 78,
-  "jitter": 2,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8932,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "ss",
-  "server": "137.184.174.93",
-  "port": 8080,
-  "cipher": "rc4-md5",
-  "password": "14fFPrbezE3HDZzsMOr6",
-  "name": "n0258",
-  "source": "mahdibland",
-  "fp": "a8e48e022bed908b",
-  "sources": [
-   "mahdibland"
-  ],
-  "latency": 79,
-  "jitter": 3,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8918,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "ss",
-  "server": "156.146.38.169",
-  "port": 443,
-  "cipher": "aes-128-gcm",
-  "password": "shadowsocks",
-  "name": "n0400",
-  "source": "mahdibland",
-  "fp": "0241ea9939f4637e",
-  "sources": [
-   "mahdibland",
-   "tg:@wxdy666→sub",
-   "tg:@byxiaoxi→blog"
-  ],
-  "latency": 25,
-  "jitter": 2,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8889,
   "speed": 0.0,
   "cn_ok": null
  }
