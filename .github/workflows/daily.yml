@@ -12,7 +12,8 @@ on:
     paths-ignore:
       - "out/**"
       - "data/**"
-      - "**.md"
+      - "*.md"
+      - "**/*.md"
 
 permissions:
   contents: write            # 需要把产物 commit 回仓库
@@ -70,6 +71,19 @@ jobs:
             git commit -m "chore: 更新订阅 $(date -u +%Y-%m-%d)"
             git push
           fi
+
+      - name: 刷新 CDN 缓存
+        # 订阅走 jsDelivr(国内可直连)，但它会把文件缓存最长 12 小时。
+        # 每次跑完主动清一次，保证你拿到的是刚生成的。
+        run: |
+          set -uo pipefail
+          for f in out/sub.yaml out/sub-base64.txt; do
+            echo "purge $f"
+            curl -s --max-time 20 \
+              "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/${f}" \
+              | head -c 200 || echo "  (刷新失败，忽略)"
+            echo
+          done
 
       - name: 保存产物(便于在 Actions 页面直接下载)
         uses: actions/upload-artifact@v4

@@ -1,123 +1,97 @@
-# 三步搭好：让云端每天自动给你出订阅
+# 已部署完成 —— 你只需要填一个订阅地址
 
-目标：**电脑关机也不影响，手机和电脑填同一个地址。**
-
-整套逻辑跑在 GitHub 的免费机器上，每天北京时间凌晨 4 点自动跑一次，
-把筛好的订阅提交回仓库。你只需要做下面三步。
+**状态：云端已跑通。** 仓库 `baitmboop/mysub`，Actions 每天北京时间 04:00 自动运行，
+结果提交回仓库。你的电脑和手机填同一个地址即可，跟本机开不开机无关。
 
 ---
 
-## 第 1 步：建仓库并推上去（3 分钟）
+## 你的订阅地址（复制这条）
 
-### 1.1 在 GitHub 建仓库
+**Clash / mihomo / Clash Verge / Stash / 小火箭（Clash 模式）**
 
-打开 https://github.com/new
-
-- **Repository name**：随便起，比如 `mysub`
-- **Private** ← 一定选这个（里面有你的节点密码）
-- **不要**勾 "Add a README file"（会和推送冲突）
-
-点 Create repository，页面会给你一段命令，先别管。
-
-### 1.2 在本机终端跑这几行
-
-```bash
-cd /Users/ty-yc/WorkBuddy/2026-11-11-11-17-09/nodepool
-
-git init
-git add .
-git commit -m "初始版本"
-git branch -M main
-git remote add origin https://github.com/你的用户名/mysub.git
-git push -u origin main
+```
+https://cdn.jsdelivr.net/gh/baitmboop/mysub@main/out/sub.yaml
 ```
 
-把 `你的用户名` 换成你的 GitHub 用户名。
+**v2rayN / v2rayNG / Shadowrocket（Base64 通用格式）**
 
-> **push 要密码时**：密码框里填的是 **Personal Access Token**，不是登录密码。
-> 建法见第 3 步，也可以先用它。
+```
+https://cdn.jsdelivr.net/gh/baitmboop/mysub@main/out/sub-base64.txt
+```
 
-> `bin/mihomo`（54MB 的内核）和临时文件已经被 `.gitignore` 排除了，
-> 云端会自己下载 Linux 版，不会冲突。
+两个地址内容一样，只是格式不同。**按你的客户端挑一个，所有设备都填它。**
+
+> **为什么不用 github 的原始地址？**
+> `raw.githubusercontent.com` 在国内直连实测 12 秒超时（被墙）。
+> 而 `cdn.jsdelivr.net` 直连 1.8 秒返回 200，内容完全相同。
+> 拉订阅这一步本身不能依赖代理——否则就是死锁，所以必须用国内能通的地址。
+
+**如果你在有代理的环境里，也可以用原始地址**（内容完全一致，无 CDN 缓存）：
+
+```
+https://raw.githubusercontent.com/baitmboop/mysub/main/out/sub.yaml
+```
 
 ---
 
-## 第 2 步：给 Actions 写入权限（1 分钟）
+## 填进客户端
 
-私有仓库默认禁止 Actions 改文件，要开一下：
+**电脑（Clash Verge / ClashX / mihomo 系）**
 
-1. 进入你的仓库 → **Settings**
-2. 左侧 **Actions** → **General**
-3. 拉到最下面 **Workflow permissions**
-4. 选 **Read and write permissions** → 点 **Save**
+配置 → 新建 / 导入 → 粘贴上面的 URL → 下载 → 启用
 
-### 手动跑一次验证
+**手机（Shadowrocket / Clash for Android / Stash）**
 
-1. 仓库顶部 **Actions** 标签
-2. 左侧点「每日更新节点订阅」→ 右侧 **Run workflow** → 绿色按钮
-3. 等 2~3 分钟，看是不是绿勾
+添加订阅 → 粘贴同一个 URL → 更新
 
-绿了之后，仓库里的 `out/sub.yaml` 会变成新内容。
+导入后你会看到这几组：
 
-> 第一次跑如果报错，多半是第 2 步的权限没开，或者仓库没推送成功（`.github/workflows/daily.yml` 没上去）。
+| 组名 | 作用 |
+|---|---|
+| 总出口 | 实际生效的组，按 ①→②→③ 顺序自动降级 |
+| ① 自建 | 现在是空的（你没填 VPS） |
+| ② 免费额度 | 现在是空的（没填 WARP） |
+| ③ 免费池 | 当前 55 个免费节点，按云端实测排序 |
 
----
-
-## 第 3 步：建一个令牌，拿到订阅地址（2 分钟）
-
-仓库是私有的，直接访问文件需要凭证。
-
-1. 打开 https://github.com/settings/tokens?type=beta
-2. **Generate new token**
-   - Token name：`sub-read`
-   - Expiration：建议 90 天或 No expiration
-   - **Repository access**：选 `Only select repositories` → 勾上你刚建的仓库
-   - **Permissions** → 展开 `Repository permissions` → 找到 **Contents** → 改成 **Read-only**
-3. 点 Generate，**复制那串 `github_pat_...`**（只显示一次）
-
-### 你的订阅地址
-
-Clash / mihomo / Stash：
-
-```
-https://你的GitHub用户名:github_pat_拿到的令牌@raw.githubusercontent.com/你的用户名/mysub/main/out/sub.yaml
-```
-
-v2rayN / Shadowrocket / v2rayNG（Base64 格式）：
-
-```
-https://你的GitHub用户名:github_pat_拿到的令牌@raw.githubusercontent.com/你的用户名/mysub/main/out/sub-base64.txt
-```
-
-把这两处占位符替换掉，然后：
-
-- **电脑**：Clash 系客户端 → 配置 → 添加订阅 → 粘贴
-- **手机**：同样粘贴这一个地址
-
-**所有设备填同一个地址。** 以后换手机、出差、重装系统，还是填它。
+**客户端自己会在 ③ 组里测速切换**，你不用手动挑。
 
 ---
 
 ## 之后每天会发生什么
 
 ```
-北京时间 04:00   GitHub 自动启动一台 Linux 机器
+北京时间 04:00   GitHub 启动一台 Linux 机器（你电脑关着也照跑）
       ↓
   采集 500~800 个公开节点（境外机房直连，不用翻墙）
       ↓
-  延迟粗筛 + 三站点复检（gstatic / github / cloudflare）
+  延迟粗筛 + 三站复检（gstatic / github / cloudflare）
       ↓
   与历史池合并（7 天内可用过的都留着，防某天全灭）
       ↓
-  提交 out/sub.yaml 回仓库
+  提交 out/sub.yaml 回仓库 + 刷新 CDN 缓存
       ↓
-  你的手机、电脑下次刷新订阅时自动拿到新节点
+  你的设备下次刷新订阅时自动拿到新节点
 ```
 
-耗时约 **2 分钟**。免费额度每月 2000 分钟，够跑 600 多次。
+一次约 **2 分钟**。公开仓库的 Actions 额度**完全免费不限量**（私有仓库才有 2000 分钟/月限制，
+这也是选公开的一个原因）。
 
-> GitHub 的定时任务**不保证准点**，高峰期可能晚几十分钟。这不影响使用——
-> 客户端一般每 6~24 小时才拉一次订阅。
+> GitHub 的定时任务不保证准点，高峰期可能晚几十分钟。不影响使用——客户端一般几小时才拉一次订阅。
+
+---
+
+## 首次实测记录（2026-11-11）
+
+| 项目 | 结果 |
+|---|---|
+| Actions 运行 | Run #1，**success**，耗时约 2 分钟 |
+| 产出节点 | **55 个**（本机同时段只测出 12 个） |
+| 配置校验 | `mihomo -t` 通过 |
+| 端到端 | gstatic 204 / GitHub 200 / YouTube 200 / Wikipedia 301 |
+| 出口 IP | 80.174.118.151 |
+
+**为什么云端比本机多出 4 倍节点？** 因为 Actions 机器在美国机房，能直连的节点远多于国内网络。
+"筛掉死的"这一项，机房环境比本机更准——这也是当初决定"云端只筛活、不测速"的另一个理由。
 
 ---
 
@@ -125,37 +99,53 @@ https://你的GitHub用户名:github_pat_拿到的令牌@raw.githubusercontent.c
 
 | 想做什么 | 怎么做 |
 |---|---|
-| 改运行时间 | `.github/workflows/daily.yml` 里的 `cron: "0 20 * * *"`，注意是 **UTC**（北京 = UTC+8） |
-| 多留些节点 | 改 `ci_build.py --keep 40` 的 40，比如 60 |
-| 加自建 VPS 节点 | 把节点写进 `data/private.yaml`（参考同目录 `.example`），它优先级最高 |
-| 加 WARP / 机场 | 写进 `data/fallback.yaml` |
-| 立刻更新一次 | Actions 页面点 Run workflow |
+| 改运行时间 | `.github/workflows/daily.yml` 里 `cron: "0 20 * * *"`，注意是 **UTC**（北京 = UTC+8） |
+| 多留节点 | 改工作流里 `ci_build.py --keep 40` 的 40，比如 60 |
+| 加自建 VPS 节点 | 写进 `data/private.yaml`（参考 `data/private.yaml.example`），优先级最高 |
+| 加 WARP / 机场 | 写进 `data/fallback.yaml`（参考 `data/fallback.yaml.example`） |
+| 立刻更新一次 | Actions 页面 →「每日更新节点订阅」→ Run workflow |
+| 只改文档不想跑构建 | `out/`、`data/`、`*.md` 的改动不会触发构建 |
+
+改代码 push 后会自动跑一次（工作流里有 `push` 触发，但排除了产物路径，防止机器人提交导致无限循环）。
 
 ---
 
 ## 常见问题
 
-**Q：客户端不认带令牌的地址怎么办？**
+**Q：拉不到订阅 / 地址打不开？**
 
-改用 Secret Gist：地址更干净（`https://gist.githubusercontent.com/...`），
-但要以 gist 方式上传。告诉 WorkBuddy「改成 gist 模式」，会给你改好的方案。
+先用浏览器打开那个 jsDelivr 地址。打不开就换 4G 网络再试，确认是本地 DNS 问题还是 CDN 节点问题。
+真打不开就改用 raw 地址（需要代理）。
 
-**Q：为什么不测速了？**
+**Q：节点为什么老变？**
 
-云端机器在美国，它测出来的 1.5MB/s 对你在国内不作数。
-**筛掉死的**由云端做（这一项云端比本机还准），**选最快的**交给你手机上的客户端
-——它就在你本地，测的才是真实速度。这叫各干各的擅长的事。
+免费节点的本质。实测存活率 2~3%，每天换一批。订阅里的 55 个是"云端复检过、至少能通 2 个常用站"的，
+但仍会持续死亡。客户端会自动切，切完就等明天更新。
 
-**Q：节点还是不稳定的？**
+**Q：什么时候能稳定？**
 
-这是免费节点的本质，不是配置问题。免费池实测存活率 2~3%，每天换一批。
-要稳定就买台 ¥10~15/月的 VPS 写进 `data/private.yaml`，免费池自动退化成第三道保险。
+买一台 ¥10~15/月的 VPS，写进 `data/private.yaml`。之后总出口永远优先走它，免费池退化成第三道保险。
+这是唯一真正的解法——免费节点的稳定性天花板就在这。
 
-**Q：令牌过期了怎么办？**
+**Q：订阅里为什么没有端口 / 分流规则？**
 
-订阅拉不下来时重新生成一个，换掉地址里的令牌即可。建议设 90 天并记个提醒。
+订阅只提供节点和分组，端口、分流规则由你的客户端自己管理。这是标准做法，不是缺配置。
 
-**Q：能把仓库改成公开的吗？**
+**Q：CDN 缓存会不会让我拿到旧节点？**
 
-可以，但 `out/sub.yaml` 里是节点密码，公开等于送人。真要公开，把令牌那套去掉、
-改用随机文件名（`out/a7f3d9e2.yaml`）当"地址即密钥"，安全性靠不可猜。
+工作流每天跑完会主动调 jsDelivr 的清除接口（已实测有效）。即使清除失败，最长 12 小时也自然过期。
+按天更新的场景够用。
+
+**Q：仓库是公开的，安全吗？**
+
+订阅里全是公开免费节点，本来就在 GitHub 上人人可见。仓库里只有脚本，没有你的任何账号信息。
+但如果以后要把自己 VPS 的节点加进 `data/private.yaml`，那就该改成私有仓库 + 令牌访问——
+那时候告诉我，我给你换方案。
+
+---
+
+## 你需要保管的东西
+
+- 仓库地址：`https://github.com/baitmboop/mysub`
+- 订阅地址：`https://cdn.jsdelivr.net/gh/baitmboop/mysub@main/out/sub.yaml`
+- 本机推送用的 SSH 私钥：`nodepool/.ssh/id_ed25519`（已 gitignore，**别删**，删了要重新配）
