@@ -4916,28 +4916,6 @@
  },
  {
   "proto": "vless",
-  "server": "169.40.34.41",
-  "port": 443,
-  "uuid": "622654a4-b666-000b-9260-fb717e05154f",
-  "tls": true,
-  "sni": "key-master-saver.com",
-  "network": "tcp",
-  "path": "",
-  "host": "",
-  "flow": "xtls-rprx-vision",
-  "pbk": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
-  "sid": "1c3e8241a8743df9",
-  "utls": "ios",
-  "reality": true,
-  "name": "filembad-275",
-  "source": "tg:@vpnfail_v2ray",
-  "fp": "226b139dc0cddf4d",
-  "sources": [
-   "tg:@vpnfail_v2ray"
-  ]
- },
- {
-  "proto": "vless",
   "server": "172.104.120.92",
   "port": 443,
   "uuid": "5b28a0c9-eda3-4c78-b07b-48cbd1670771",
@@ -11274,6 +11252,28 @@
   "fp": "da38b967bf127d85",
   "sources": [
    "ermaozi"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "uvgl4cjd0475.vtret.com",
+  "port": 32567,
+  "uuid": "c34c6869-e454-4413-a7b2-052ba4a42fd5",
+  "tls": true,
+  "sni": "uvgl4cjd0475.vtret.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "canfingV2rayNG-379",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c21d8722e29312bc",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
