@@ -1,6 +1,7 @@
-# nodepool  生成于 2026-11-11 13:51:19 (北京时间)
+# nodepool  生成于 2026-11-11 14:09:29 (北京时间)
 # 节点数 22  (自建 0 / 免费额度 0 / 免费池 22)
-# 总出口 = fallback, 按 ①→②→③ 顺序自动降级
+# 节点选择 = select, 下设"自动选择"(fallback, 每 120s 复检)
+# 自动选择按 ① 自建 → ② 免费额度 → ③ 免费池 的顺序降级
 proxies:
   - name: N01
     type: ss
@@ -176,12 +177,60 @@ proxies:
     udp: true
     skipCertVerify: true
 proxy-groups:
-  - name: 总出口
+  - name: 节点选择
+    type: select
+    proxies:
+      - 自动选择
+      - ③ 免费池
+      - N01
+      - N02
+      - N03
+      - N04
+      - N05
+      - N06
+      - N07
+      - N08
+      - N09
+      - N10
+      - N11
+      - N12
+      - N13
+      - N14
+      - N15
+      - N16
+      - N17
+      - N18
+      - N19
+      - N20
+      - N21
+      - N22
+  - name: 自动选择
     type: fallback
     url: "https://www.gstatic.com/generate_204"
-    interval: 300
+    interval: 120
     proxies:
-      - ③ 免费池
+      - N01
+      - N02
+      - N03
+      - N04
+      - N05
+      - N06
+      - N07
+      - N08
+      - N09
+      - N10
+      - N11
+      - N12
+      - N13
+      - N14
+      - N15
+      - N16
+      - N17
+      - N18
+      - N19
+      - N20
+      - N21
+      - N22
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -210,4 +259,4 @@ proxy-groups:
       - N21
       - N22
 rules:
-  - "MATCH,总出口"
+  - "MATCH,节点选择"

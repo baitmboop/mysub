@@ -60,6 +60,9 @@ STATE = os.path.join(DATA, "gateway.json")
 CN_PREF = os.path.join(DATA, "cn_pref.json")      # 中国网络实测结果
 
 TEST_URL = "https://www.gstatic.com/generate_204"
+# 自动选择组的健康检查间隔(秒)。云端一天只测一次, 客户端才是真正的实时测速,
+# 所以这个值宁小勿大 —— 120 秒重探一轮, 挂了 2 分钟内就能换走。
+AUTO_INTERVAL = 120
 KEEP_DAYS = 7          # 历史池保留天数
 MAX_POOL = 300         # 历史池上限, 防文件无限膨胀
 MIN_KEEP = 5           # 剔除"中国实测不通"后至少要剩这么多个, 否则全留
@@ -437,14 +440,25 @@ def build_config(pool: list, private: list, fallback: list,
     if not proxies:
         # 一个节点都没有: 至少给个能上网的 DIRECT, 避免客户端导入即报错
         cfg = {
-            "proxy-groups": [{"name": "总出口", "type": "select", "proxies": ["DIRECT"]}],
-            "rules": ["MATCH,总出口"],
+            "proxy-groups": [{"name": "节点选择", "type": "select",
+                              "proxies": ["DIRECT"]}],
+            "rules": ["MATCH,节点选择"],
         }
         return "# 池内暂无可用节点\n" + emit(cfg) + "\n"
 
+    # 层级顺序展平成一维: 自建 → 额度 → 免费池。fallback 从列表第一个开始试,
+    # 所以"列表顺序"本身就是优先级, 不需要再套一层组去表达降级。
+    flat = [p["name"] for p in proxies]
     groups.insert(0, {
-        "name": "总出口", "type": "fallback", "url": TEST_URL,
-        "interval": 300, "proxies": tier_names,
+        "name": "自动选择", "type": "fallback", "url": TEST_URL,
+        "interval": AUTO_INTERVAL, "proxies": flat,
+    })
+    # 顶层必须是 select。Clash Verge 的"当前节点"卡片只认 select 组里选中的东西,
+    # 出口本身若是 fallback(尤其是指向另一个组的 fallback), 它解析不出具体节点,
+    # 就会显示"暂无激活的代理节点" —— 机场订阅有"自动切换"效果就是靠这层 select。
+    groups.insert(0, {
+        "name": "节点选择", "type": "select",
+        "proxies": ["自动选择"] + tier_names + flat,
     })
     if runtime:
         cfg = {
@@ -456,13 +470,13 @@ def build_config(pool: list, private: list, fallback: list,
             "tcp-concurrent": True,
             "proxies": proxies,
             "proxy-groups": groups,
-            "rules": ["MATCH,总出口"],
+            "rules": ["MATCH,节点选择"],
         }
     else:
         cfg = {
             "proxies": proxies,
             "proxy-groups": groups,
-            "rules": ["MATCH,总出口"],
+            "rules": ["MATCH,节点选择"],
         }
     # 云端 runner 是 UTC，直接打本地时间会让人看糊涂（显示 20:05 而北京是次日 04:05）。
     # 统一按北京时间标注。
@@ -471,7 +485,8 @@ def build_config(pool: list, private: list, fallback: list,
         f"# nodepool  生成于 {bj} (北京时间)\n"
         f"# 节点数 {len(proxies)}  "
         f"(自建 {len(private)} / 免费额度 {len(fallback)} / 免费池 {len(pool)})\n"
-        f"# 总出口 = fallback, 按 ①→②→③ 顺序自动降级\n"
+        f"# 节点选择 = select, 下设\"自动选择\"(fallback, 每 {AUTO_INTERVAL}s 复检)\n"
+        f"# 自动选择按 ① 自建 → ② 免费额度 → ③ 免费池 的顺序降级\n"
     )
     return header + emit(cfg) + "\n"
 
@@ -650,7 +665,7 @@ class Handler(BaseHTTPRequestHandler):
 <p>Clash / mihomo:<br><code>http://127.0.0.1:8899/sub/clash?token={t}</code></p>
 <p>v2rayN / Shadowrocket:<br><code>http://127.0.0.1:8899/sub/base64?token={t}</code></p>
 <table>{rows}</table>
-<p class="k">总出口组按 ① 自建 → ② 免费额度 → ③ 免费池 自动降级。</p>
+<p class="k">"节点选择"下设"自动选择"组, 按 ① 自建 → ② 免费额度 → ③ 免费池 自动降级。</p>
 """
 
 
