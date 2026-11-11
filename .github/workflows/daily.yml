@@ -1,0 +1,75 @@
+name: 每日更新节点订阅
+
+on:
+  schedule:
+    # UTC 20:00 = 北京时间 04:00。改时间改这里（注意是 UTC）。
+    - cron: "0 20 * * *"
+  workflow_dispatch: {}      # 支持手动点一下立即跑
+
+permissions:
+  contents: write            # 需要把产物 commit 回仓库
+
+concurrency:
+  group: daily-sub
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+
+    steps:
+      - name: 拉取仓库
+        uses: actions/checkout@v4
+
+      - name: 准备 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 下载 mihomo 内核
+        run: |
+          set -euo pipefail
+          mkdir -p bin data out
+          URL=$(curl -sL https://api.github.com/repos/MetaCubeX/mihomo/releases/latest \
+            | jq -r '.assets[] | select(.name | test("linux-amd64.*\\.gz$"))
+                     | select(.name | test("compatible") | not)
+                     | .browser_download_url' | head -1)
+          echo "下载: $URL"
+          curl -sL -o /tmp/m.gz "$URL"
+          gunzip -c /tmp/m.gz > bin/mihomo
+          chmod +x bin/mihomo
+          ./bin/mihomo -v
+
+      - name: 采集节点
+        run: |
+          set -uo pipefail
+          # 云端直连, 不需要代理。失败了也继续 —— 用仓库里上一次的 nodes.json 重测。
+          python3 collect.py --max-age 72 || echo "::warning::采集失败, 沿用上一次的节点列表"
+
+      - name: 筛选并生成订阅
+        run: python3 ci_build.py --keep 40 --delay-limit 3000
+
+      - name: 提交结果
+        run: |
+          set -uo pipefail
+          git config user.name  "nodepool-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A out data/pool_history.json data/nodes.json
+          if git diff --staged --quiet; then
+            echo "没有变化"
+          else
+            git commit -m "chore: 更新订阅 $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: 保存产物(便于在 Actions 页面直接下载)
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: subscription-${{ github.run_number }}
+          path: |
+            out/sub.yaml
+            out/sub-base64.txt
+            out/report.md
+          retention-days: 14

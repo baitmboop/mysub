@@ -1,0 +1,29 @@
+# ① 自建层 —— 优先级最高
+#
+# 把你自己的 VPS 节点写在这里。网关会原样放进订阅的「① 自建」组,
+# 总出口用 fallback 组, 只要这里有一个通, 就永远不会用到免费池。
+#
+# 格式就是标准 mihomo proxies 片段。两种写法都支持:
+#
+#   写法 A (推荐, 直接写 dict):
+#     - {name: my-vps, type: vless, server: 1.2.3.4, port: 443,
+#        uuid: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx, tls: true,
+#        servername: www.microsoft.com, client-fingerprint: chrome,
+#        reality-opts: {public-key: XXXX, short-id: ""}, network: tcp, udp: true}
+#
+#   写法 B (带 proxies: 头, 方便从别处整段粘贴):
+#     proxies:
+#       - {name: my-vps, type: trojan, server: 1.2.3.4, port: 443,
+#          password: xxx, sni: www.bing.com, skip-cert-verify: true, udp: true}
+#
+# 复制本文件为 private.yaml 后编辑即可, 例如:
+#   cp data/private.yaml.example data/private.yaml
+#
+# 自建节点的典型来源:
+#   - 自己 VPS 上跑的 sing-box / xray, 用 reality 或 trojan
+#   - 机场给的"独享中转"落地(如果有)
+#   - 公司/学校的合规出口(注意合规边界)
+#
+# 留空或文件不存在都可以, 网关只是少一个最高优先级组。
+
+proxies: []

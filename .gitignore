@@ -1,0 +1,16 @@
+# 内核二进制 —— Actions 每次自己下载，不要提交（54MB，而且 mac/linux 不通用）
+bin/*
+!bin/.gitkeep
+
+# 临时文件
+__pycache__/
+*.pyc
+data/generated.yaml
+logs/
+
+# 上一轮快照（保留节点列表和历史池就够了）
+data/nodes.prev.json
+out/nodes_best.prev.json
+
+# 本地 SSH 密钥(仅用于推送，绝不提交)
+.ssh/

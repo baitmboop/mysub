@@ -1,0 +1,39 @@
+# ② 免费额度层 —— 优先于免费池
+#
+# 放"正规免费额度"的出口, 比如 Cloudflare WARP、你自己的机场账号。
+# 这一层存在的意义: 自建挂了的时候, 先用这个, 而不是掉到 1MB/s 的免费池。
+#
+# ------------------------------------------------------------------
+# Cloudflare WARP (免费, 不限流量, 但部分地区限速)
+# ------------------------------------------------------------------
+# 1) 先拿到 WARP 凭证, 任选其一:
+#      - 用 wgcf 生成:   wgcf register && wgcf generate
+#        文件 wgcf-profile.conf 里就是 PrivateKey / Address / Reserved
+#      - 或从 https://www.cloudflare.com/cdn-cgi/trace 之外的官方客户端导出
+# 2) 填进下面, 并把 private-key / public-key 换成你自己的
+#
+# proxies:
+#   - name: warp
+#     type: wireguard
+#     server: engage.cloudflareclient.com
+#     port: 2408
+#     ip: 172.16.0.2
+#     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+#     private-key: "你的 PrivateKey"
+#     udp: true
+#     mtu: 1280
+#     reserved: [0, 0, 0]
+#
+# ------------------------------------------------------------------
+# 你付费/试用中的机场节点也可以放这里 (它们是"额度明确"的, 不是公共免费池)
+# ------------------------------------------------------------------
+# proxies:
+#   - {name: my-airport-hk, type: trojan, server: hk.example.com, port: 443,
+#      password: xxx, sni: hk.example.com, skip-cert-verify: true, udp: true}
+#
+# 复制本文件为 fallback.yaml 后编辑:
+#   cp data/fallback.yaml.example data/fallback.yaml
+#
+# 留空也可以 —— 没有这一层, 总出口就是「自建 → 免费池」两级降级。
+
+proxies: []

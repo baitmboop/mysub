@@ -1,0 +1,169 @@
+# nodepool  生成于 2026-11-11 12:27:04
+# 节点数 15  (自建 0 / 免费额度 0 / 免费池 15)
+# 总出口 = fallback, 按 ①→②→③ 顺序自动降级
+proxies:
+  - name: N01
+    type: ss
+    server: 202.50.253.27
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N02
+    type: ss
+    server: 202.50.253.45
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N03
+    type: ss
+    server: 202.50.253.90
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N04
+    type: ss
+    server: 202.50.253.81
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N05
+    type: ss
+    server: 202.50.253.63
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N06
+    type: ss
+    server: 202.50.253.18
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N07
+    type: vless
+    server: 3.169.9.125
+    port: 443
+    uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+    udp: true
+    skipCertVerify: true
+    tls: true
+    servername: d14jyezfrcyf60.cloudfront.net
+    ws-opts:
+      path: /
+      headers:
+        Host: d14jyezfrcyf60.cloudfront.net
+    network: ws
+  - name: N08
+    type: ss
+    server: 202.50.253.36
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N09
+    type: ss
+    server: 202.50.253.54
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N10
+    type: ss
+    server: 202.50.253.99
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N11
+    type: ss
+    server: 202.50.253.72
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N12
+    type: trojan
+    server: 191.44.112.170.sslip.io
+    port: 443
+    password: 46d221fa-e9b4-748c-4eae-019a88e42991
+    udp: true
+    skipCertVerify: true
+    sni: orbylume.my.to
+    ws-opts:
+      path: /tvpn-trojan/bg
+      headers:
+        Host: orbylume.my.to
+    network: ws
+  - name: N13
+    type: vless
+    server: 191.44.112.170
+    port: 443
+    uuid: 46d221fa-e9b4-748c-4eae-019a88e42991
+    udp: true
+    skipCertVerify: true
+    tls: true
+    servername: orbylume.my.to
+    ws-opts:
+      path: /tvpn-tor/is
+      headers:
+        Host: orbylume.my.to
+    network: ws
+  - name: N14
+    type: vmess
+    server: 39.108.113.127
+    port: 10086
+    uuid: b0253c6c-0b96-4950-bde1-669f13bc1a01
+    alterId: 0
+    cipher: auto
+    udp: true
+    ws-opts:
+      path: /
+    network: ws
+  - name: N15
+    type: vless
+    server: 95.163.232.240
+    port: 443
+    uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
+    udp: true
+    skipCertVerify: true
+    tls: true
+    servername: files.neurixai.app
+    ws-opts:
+      path: /api/generate
+      headers:
+        Host: files.neurixai.app
+    network: ws
+proxy-groups:
+  - name: 总出口
+    type: fallback
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    proxies:
+      - ③ 免费池
+  - name: ③ 免费池
+    type: fallback
+    url: "https://www.gstatic.com/generate_204"
+    interval: 600
+    proxies:
+      - N01
+      - N02
+      - N03
+      - N04
+      - N05
+      - N06
+      - N07
+      - N08
+      - N09
+      - N10
+      - N11
+      - N12
+      - N13
+      - N14
+      - N15
+rules:
+  - "MATCH,总出口"
