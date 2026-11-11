@@ -105,14 +105,24 @@ jobs:
           fi
 
           echo "· 请求清除缓存（每文件 1 次）"
+          throttled=0
           for f in out/sub.yaml out/sub-base64.txt; do
             r="$(curl -s --max-time 20 "https://purge.jsdelivr.net/gh/${REPO}@main/${f}" || true)"
             if echo "$r" | grep -q '"throttled": true'; then
               echo "::warning::$f 被限流（1 小时内已清过），等自然过期"
+              throttled=1
             else
               echo "  已清除 $f"
             fi
           done
+
+          # 被限流就别白等 5 分钟了，反正清不掉。
+          # 主用地址是实时回源的 gh-proxy/ghfast，不依赖这里。
+          if [ "$throttled" = "1" ]; then
+            echo "跳过 CDN 轮询：本次未能清除缓存，jsDelivr 最迟 12 小时自然过期。"
+            echo "（订阅主用地址是实时回源的，不受影响）"
+            exit 0
+          fi
 
           echo "· 轮询校验 CDN 内容"
           for i in $(seq 1 20); do
