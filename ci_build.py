@@ -71,6 +71,23 @@ def main() -> int:
     nodes = json.load(open(args.nodes))
     log(f"载入 {len(nodes)} 个节点")
 
+    # 把历史池里"本轮采集没抓到"的节点也拉进来一起复测。
+    # 不这么做的话它们永远不会被验证：只有被 collect 重新采到时才轮得到测活，
+    # 否则就在池子里躺满 keep_days 天。实测过这种代价 —— 池内 102 个节点
+    # 距上次构建 5 小时就只剩 13 个能连，其余 89 个全是"采集没抓到、也没人复测"的僵尸。
+    hist_snapshot = gateway.load_json(HISTORY, {})
+    seen = {(n.get("fp") or f"{n.get('server')}:{n.get('port')}") for n in nodes}
+    extra = 0
+    for fp, rec in hist_snapshot.items():
+        n = dict(rec.get("node") or {})
+        if not n.get("server") or fp in seen:
+            continue
+        n["fp"] = fp
+        nodes.append(n)
+        seen.add(fp)
+        extra += 1
+    log(f"并入历史池未收录节点 {extra} 个, 合计 {len(nodes)} 个待测")
+
     # ---------- 1. 生成内核配置(会自动剔除非法节点) ----------
     log("生成内核配置...")
     name_map, n_ok = probe.build_config(nodes)
@@ -91,18 +108,24 @@ def main() -> int:
         log(f"延迟测试 {len(name_map)} 个 ({args.workers} 并发)...")
         t0 = time.time()
         cand = []
+        tested: dict[str, bool] = {}      # fp -> 本轮连不连得上, 给 pool_nodes 用
         with ThreadPoolExecutor(max_workers=args.workers) as ex:
             futs = {ex.submit(probe.delay_test, nm): nm for nm in name_map}
             for f in futs:
                 nm = futs[f]
+                kn = name_map[nm]
+                key = kn.get("fp") or f"{kn.get('server')}:{kn.get('port')}"
                 try:
                     med, jitter = f.result()
                 except Exception:
                     med, jitter = None, None
                 if med and med <= args.delay_limit:
-                    n = dict(name_map[nm])
+                    n = dict(kn)
                     n.update(name=nm, latency=med, jitter=jitter)
                     cand.append(n)
+                    tested[key] = True
+                else:
+                    tested[key] = False
         log(f"✓ 存活 {len(cand)} 个 (≤{args.delay_limit}ms), 耗时 {time.time()-t0:.0f}s")
 
         if not cand:
@@ -156,7 +179,21 @@ def main() -> int:
         gateway.save_json(HISTORY, history)
         log(f"历史池 {before} → {len(history)}")
 
-        pool = gateway.pool_nodes(history)
+        # 本轮明确连不上的, 立刻从订阅里摘掉, 不再等 keep_days 天。
+        # 判断是否"测量异常"只看池内节点, 不看全部候选: 候选里绝大多数是
+        # 本轮新采到的陌生节点, 存活率本来就只有 2-3%, 拿它当基准永远会误判。
+        pool_fps = set(history.keys())
+        pool_tested = {k: v for k, v in tested.items() if k in pool_fps}
+        pool_live = sum(1 for v in pool_tested.values() if v)
+        if pool_tested and pool_live == 0:
+            log(f"! 池内 {len(pool_tested)} 个节点本轮全灭, 更像网络异常, 不据此剔除")
+            alive_map = None
+        else:
+            log(f"池内 {len(pool_tested)} 个本轮复测: 活 {pool_live} 个, "
+                f"死 {len(pool_tested) - pool_live} 个 → 死的摘掉")
+            alive_map = tested
+
+        pool = gateway.pool_nodes(history, alive=alive_map)
         private = gateway.parse_private(PRIVATE)
         fallback = gateway.parse_private(FALLBACK)
         log(f"订阅池 {len(pool)} 个 (自建 {len(private)} / 额度 {len(fallback)})")
