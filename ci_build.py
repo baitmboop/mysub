@@ -66,9 +66,10 @@ def trim_unmeasured(pool: list, cap: int) -> list:
     "一百行里点十个, 九个转圈"。
 
     所以按实测分档: 测过能用的全留, 没测过的只留 cap 个当后备, 排在后面。
+    实测不通的(rank=-1)一个都不留 —— 那是已验证的废节点, 塞进来只是让人多点几次。
     """
     measured = [n for n in pool if gateway._cn_rank(n) >= 2]
-    backup = [n for n in pool if gateway._cn_rank(n) <= 0][:cap]
+    backup = [n for n in pool if gateway._cn_rank(n) == 0][:cap]
     return measured + backup
 
 
@@ -127,7 +128,7 @@ def main() -> int:
     ap.add_argument("--verify-min", type=int, default=2)
     ap.add_argument("--no-verify", action="store_true")
     ap.add_argument("--keep-days", type=float, default=7, help="历史池保留天数")
-    ap.add_argument("--max-unmeasured", type=int, default=25,
+    ap.add_argument("--max-unmeasured", type=int, default=10,
                     help="没在国内实测过的节点最多留几个当后备")
     ap.add_argument("--emit-only", action="store_true",
                     help="不探测, 只用现有历史池 + 中国实测记录重建产物")

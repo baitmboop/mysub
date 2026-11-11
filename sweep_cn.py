@@ -108,7 +108,10 @@ def with_kernel(proxy: dict, fn):
 def measure(proxy: dict):
     """返回 {ok, latency, speed}; 目标限流导致测不出结论时返回 None。"""
     def fn(port):
-        ping = curl_via(port, PING_URL, 5)
+        # 5 秒对 CloudFront 前置的节点太紧: 冷启动要 TLS + ws 握手, 实测一个
+        # 59ms 的 vless(ws) 首包要 6~8 秒才回来, 5 秒一刀切会把它误判成死的。
+        # 所以先等 8 秒, 失败再用 12 秒复一次, 两次都不通才算死。
+        ping = curl_via(port, PING_URL, 8) or curl_via(port, PING_URL, 12)
         if not ping or ping[2] not in ("204", "200"):
             return {"ok": 0, "latency": None, "speed": None}
         lat = int(ping[1])
@@ -137,13 +140,30 @@ def main() -> int:
     ap.add_argument("--workers", type=int, default=5)
     ap.add_argument("--apply", action="store_true", help="并入 data/cn_pref.json")
     ap.add_argument("--redo", action="store_true", help="忽略上次结果, 全部重测")
+    ap.add_argument("--retest-dead", action="store_true",
+                    help="只复测上一轮被自己判死的节点(超时门槛放宽后再验一遍)")
     args = ap.parse_args()
 
     history = gateway.load_json(gateway.HISTORY, {})
-    pool = gateway.pool_nodes(history)
-    prev = {} if args.redo else gateway.load_json(WORK, {})
-    todo = [n for n in pool if f"{n['server']}:{n['port']}" not in prev]
-    log(f"池内 {len(pool)} 个 / 待测 {len(todo)} 个 / 并发 {args.workers}")
+    if args.retest_dead:
+        pref_now = gateway.load_json(gateway.CN_PREF, {})
+        dead = {k for k, v in pref_now.items()
+                if v.get("ok") == 0 and v.get("by") == "auto"}
+        todo, seen = [], set()
+        for fp, rec in history.items():
+            n = dict(rec.get("node") or {})
+            key = f"{n.get('server')}:{n.get('port')}"
+            if not n.get("server") or key not in dead or key in seen:
+                continue
+            n["fp"] = fp
+            todo.append(n)
+            seen.add(key)
+        prev = {}
+    else:
+        pool = gateway.pool_nodes(history)
+        prev = {} if args.redo else gateway.load_json(WORK, {})
+        todo = [n for n in pool if f"{n['server']}:{n['port']}" not in prev]
+    log(f"待测 {len(todo)} 个 / 并发 {args.workers}")
 
     res = dict(prev)
     now, stat, unknown = int(time.time()), {}, []
@@ -180,9 +200,26 @@ def main() -> int:
 
     if args.apply:
         pref = gateway.load_json(gateway.CN_PREF, {})
-        pref.update(res)
+        now = int(time.time())
+        kept = 0
+        for k, v in res.items():
+            old = pref.get(k) or {}
+            # 一次没测通就推翻"能用"的结论太脆: 免费节点本来就时好时坏,
+            # 同一个节点前后两次能差到 20 倍(实测 11KB/s <-> 854KB/s)。
+            # 所以只要历史结论是"能用", 这次没测通就不写, 下次再失败也还有机会。
+            if old.get("ok") == 1 and v.get("ok") == 0:
+                kept += 1
+                continue
+            if old.get("ok") == 1 and v.get("ok") == 1 and old.get("at", 0) > now - 86400:
+                # 两边都能用: 速度取 24 小时内见过的最好值, 延迟取最低值。
+                # 排序本来就是给"哪台更值得先试"用的, 手机端的 url-test 会当场
+                # 再校准一次; 拿某一次的抖动值当结论, 会把 854KB/s 的节点排到末尾。
+                v["speed"] = max(old.get("speed") or 0, v.get("speed") or 0)
+                lats = [x for x in (old.get("latency"), v.get("latency")) if x]
+                v["latency"] = min(lats) if lats else None
+            pref[k] = v
         gateway.save_json(gateway.CN_PREF, pref)
-        log(f"\n已并入 data/cn_pref.json, 共 {len(pref)} 条")
+        log(f"\n已并入 data/cn_pref.json, 共 {len(pref)} 条 (保留原判 {kept} 条)")
     else:
         log(f"\n结果在 {WORK} (加 --apply 才写进 cn_pref)")
     return 0
