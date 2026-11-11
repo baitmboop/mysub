@@ -514,12 +514,20 @@ def t_surge_http_no_auth():
     p = {"type": "http", "server": "51.159.225.196", "port": 23856,
          "tls": True, "skip-cert-verify": True}
     line = gateway._surge_line(p, "N22")
-    assert line == "N22 = https, 51.159.225.196, 23856, skip-cert-verify=true", line
-    # 无认证时绝不能留下空位参数 ", ," —— 客户端会把后面全部字段读错
+    assert line == ("N22 = https, 51.159.225.196, 23856, "
+                    "nodepool, nodepool, skip-cert-verify=true"), line
+    # 绝不能留下空位参数 ", ," —— 客户端会把后面全部字段读错
     assert ", ," not in line, line
-
+    # 占位账号密码是有意的: 小火箭对"账号密码为空的 http/https 代理"会打黄色
+    # 警告三角, 用户看到以为节点坏了。这些开放代理会忽略 Proxy-Authorization
+    # (实测带 nodepool/nodepool 依然 204、1.37MB/s), 所以填占位值不影响连通。
     p2 = {"type": "http", "server": "q.example.com", "port": 8080}
-    assert gateway._surge_line(p2, "N01") == "N01 = http, q.example.com, 8080"
+    assert (gateway._surge_line(p2, "N01")
+            == "N01 = http, q.example.com, 8080, nodepool, nodepool")
+    # 真有账号密码时必须用真的, 不能被占位值顶掉
+    p3 = {"type": "http", "server": "q.example.com", "port": 8080,
+          "username": "u1", "password": "p1"}
+    assert gateway._surge_line(p3, "N02") == "N02 = http, q.example.com, 8080, u1, p1"
 
 
 def t_surge_comma_guard():

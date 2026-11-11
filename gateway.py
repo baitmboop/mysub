@@ -525,13 +525,17 @@ def _surge_line(p: dict, name: str) -> str | None:
 
     if t in ("http", "socks5"):
         # 关键点: Surge 里 https 代理靠 "https" 这个类型名表达, 不是靠 tls=true。
-        # 没认证时直接省掉 username/password 两个位置参数。
+        #
+        # 为什么无认证也要写占位账号密码: 小火箭对"http/https 类型 + 用户名密码为空"
+        # 的节点会打一个黄色警告三角(列表里那个"!"), 用户看到以为节点坏了。实测
+        # 这些开放代理会直接忽略 Proxy-Authorization 头(带 nodepool/nodepool 依然
+        # 204, 速度 1.37MB/s), 所以填占位值既能消掉警告, 又不会影响连通。
         kind = t
         if t == "http" and p.get("tls"):
             kind = "https"
-        cred = ""
-        if p.get("username") or p.get("password"):
-            cred = f", {p.get('username') or ''}, {p.get('password') or ''}"
+        user = p.get("username") or "nodepool"
+        pw = p.get("password") or "nodepool"
+        cred = f", {user}, {pw}"
         opts = ""
         if p.get("skip-cert-verify") and kind == "https":
             opts = ", skip-cert-verify=true"
@@ -562,8 +566,9 @@ def build_surge(pool: list, private: list, fallback: list, namer=None) -> str:
     lines_proxy: list[str] = ["DIRECT = direct"]
     legend: list[str] = []
     names: list[str] = []
+    proven: list[str] = []   # 国内实测能传数据的, 只有这些进"自动选择"
 
-    def add(mihomo_proxy: dict, nm: str, info: str) -> None:
+    def add(mihomo_proxy: dict, nm: str, info: str, good: bool = True) -> None:
         if nm in names:      # 重名会让客户端只认后者, 前面那个凭空消失
             return
         line = _surge_line(mihomo_proxy, nm)
@@ -571,6 +576,8 @@ def build_surge(pool: list, private: list, fallback: list, namer=None) -> str:
             return
         lines_proxy.append(line)
         names.append(nm)
+        if good:
+            proven.append(nm)
         legend.append(f"# {nm:<5} {info}")
 
     # 私有层通常是 mihomo 原样结构, 直接转
@@ -582,7 +589,8 @@ def build_surge(pool: list, private: list, fallback: list, namer=None) -> str:
         p = to_mihomo(n, namer(n, i))
         if not p:
             continue
-        add(p, p["name"], f"{n.get('proto')} {n.get('server')}:{n.get('port')}")
+        add(p, p["name"], f"{n.get('proto')} {n.get('server')}:{n.get('port')}",
+            good=_cn_rank(n) >= 2)
 
     if not names:
         names = ["DIRECT"]
@@ -590,11 +598,19 @@ def build_surge(pool: list, private: list, fallback: list, namer=None) -> str:
     members = ", ".join(names)
     group_lines = []
     if names != ["DIRECT"]:
+        # 「自动选择」只放国内实测真能传数据的节点。实测过 94 个"没在国内测过"
+        # 的候选, 能连上的是 0 个 —— 让 url-test 在彩票里挑, 挑出来的还是不通,
+        # 于是"自动选择"等于随机。没实测的放在「备用节点」里, 手动想试才点。
+        auto = ", ".join(proven) if proven else members
         group_lines.append(
-            f"自动选择 = url-test, {members}, "
+            f"自动选择 = url-test, {auto}, "
             f"url = {TEST_URL}, interval = 300, tolerance = {AUTO_TOLERANCE}"
         )
-        group_lines.append(f"节点选择 = select, 自动选择, {members}")
+        if proven and len(proven) < len(names):
+            group_lines.append(f"备用节点 = select, {members}")
+            group_lines.append("节点选择 = select, 自动选择, 备用节点, DIRECT")
+        else:
+            group_lines.append(f"节点选择 = select, 自动选择, {members}, DIRECT")
         final = "节点选择"
     else:
         group_lines.append("节点选择 = select, DIRECT")

@@ -58,6 +58,65 @@ def cloud_namer(n: dict, i: int) -> str:
     return f"N{i:02d} {srv}" if srv else f"N{i:02d}"
 
 
+def trim_unmeasured(pool: list, cap: int) -> list:
+    """未在国内实测过的节点只当后备, 且限量。
+
+    它们是纯彩票: 云端复检 3/3 也照样到国内就不通。实测过一次 —— 订阅池里 94
+    个"没在国内测过"的节点, 真能连上的 0 个。全塞进订阅, 用户看到的就是
+    "一百行里点十个, 九个转圈"。
+
+    所以按实测分档: 测过能用的全留, 没测过的只留 cap 个当后备, 排在后面。
+    """
+    measured = [n for n in pool if gateway._cn_rank(n) >= 2]
+    backup = [n for n in pool if gateway._cn_rank(n) <= 0][:cap]
+    return measured + backup
+
+
+def write_outputs(pool: list, private: list, fallback: list, *,
+                  n_collected: int, n_cand: int, n_picked: int,
+                  n_history: int) -> None:
+    os.makedirs(OUT, exist_ok=True)
+    sub_yaml = gateway.build_config(pool, private, fallback,
+                                    namer=cloud_namer, runtime=False)
+    sub_b64 = gateway.build_base64(pool, private, fallback, namer=cloud_namer)
+    sub_conf = gateway.build_surge(pool, private, fallback)
+    with open(os.path.join(OUT, "sub.yaml"), "w", encoding="utf-8") as f:
+        f.write(sub_yaml)
+    with open(os.path.join(OUT, "sub-base64.txt"), "w", encoding="utf-8") as f:
+        f.write(sub_b64)
+    # iOS/Shadowrocket 走这份: base64 表达不了 http 代理, 只有 conf 能
+    with open(os.path.join(OUT, "sub.conf"), "w", encoding="utf-8") as f:
+        f.write(sub_conf)
+    with open(os.path.join(OUT, "nodes_best.json"), "w", encoding="utf-8") as f:
+        json.dump(pool, f, ensure_ascii=False, indent=1)
+
+    # 报告
+    def num(v: int) -> str:
+        return str(v) if v else "-"
+
+    lines = [
+        "# 节点池日报", "",
+        f"- 生成时间: {time.strftime('%Y-%m-%d %H:%M:%S')} (UTC)",
+        f"- 采集去重: **{num(n_collected)}** 个",
+        f"- 延迟存活: **{num(n_cand)}** 个",
+        f"- 复检合格: **{num(n_picked)}** 个",
+        f"- 历史池: **{n_history}** 个 (含 7 天内可用过的)",
+        f"- 最终订阅: **{len(pool)}** 个节点", "",
+        "| # | 协议 | 服务器 | 延迟 | 中国实测 | 速度 | 来源 |",
+        "|---|------|--------|------|----------|------|------|",
+    ]
+    for i, n in enumerate(pool[:60], 1):
+        rank = gateway._cn_rank(n)
+        cn = {3: "✓ 能传数据", 2: "连得上", 1: "传不动", 0: "未测", -1: "不通"}[rank]
+        sp = f"{n['cn_speed'] * 1024:.0f} KB/s" if n.get("cn_speed") else "-"
+        lines.append(
+            f"| {i} | {n.get('proto')} | {n.get('server')}:{n.get('port')} | "
+            f"{n.get('latency') or '-'}ms | {cn} | {sp} | {n.get('source') or '-'} |")
+    lines += ["", "> 排序依据是中国网络实测下载速度; 手机端的 url-test 会在当场再择优一次。"]
+    with open(os.path.join(OUT, "report.md"), "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="云端构建节点订阅")
     ap.add_argument("--nodes", default=os.path.join(DATA, "nodes.json"))
@@ -68,7 +127,24 @@ def main() -> int:
     ap.add_argument("--verify-min", type=int, default=2)
     ap.add_argument("--no-verify", action="store_true")
     ap.add_argument("--keep-days", type=float, default=7, help="历史池保留天数")
+    ap.add_argument("--max-unmeasured", type=int, default=25,
+                    help="没在国内实测过的节点最多留几个当后备")
+    ap.add_argument("--emit-only", action="store_true",
+                    help="不探测, 只用现有历史池 + 中国实测记录重建产物")
     args = ap.parse_args()
+
+    if args.emit_only:
+        # 本机跑完整探测会用一个内核测所有节点(互相干扰), 结论不可信;
+        # 所以国内侧只负责"按已有证据重排", 探测交给云端和 sweep_cn.py。
+        history = gateway.load_json(HISTORY, {})
+        pool = trim_unmeasured(gateway.pool_nodes(history), args.max_unmeasured)
+        private = gateway.parse_private(PRIVATE)
+        fallback = gateway.parse_private(FALLBACK)
+        log(f"仅重建产物: 订阅池 {len(pool)} 个 (自建 {len(private)} / 额度 {len(fallback)})")
+        write_outputs(pool, private, fallback, n_collected=0, n_cand=0,
+                      n_picked=0, n_history=len(history))
+        log(f"✅ 完成: {len(pool)} 个节点")
+        return 0
 
     if not os.path.exists(args.nodes):
         log(f"✗ 找不到 {args.nodes}, 先跑 collect.py")
@@ -204,48 +280,15 @@ def main() -> int:
             alive_map = tested
 
         pool = gateway.pool_nodes(history, alive=alive_map)
+        pool = trim_unmeasured(pool, args.max_unmeasured)
         private = gateway.parse_private(PRIVATE)
         fallback = gateway.parse_private(FALLBACK)
         log(f"订阅池 {len(pool)} 个 (自建 {len(private)} / 额度 {len(fallback)})")
 
         # ---------- 6. 产出 ----------
-        os.makedirs(OUT, exist_ok=True)
-        sub_yaml = gateway.build_config(pool, private, fallback,
-                                       namer=cloud_namer, runtime=False)
-        sub_b64 = gateway.build_base64(pool, private, fallback, namer=cloud_namer)
-        sub_conf = gateway.build_surge(pool, private, fallback)
-        with open(os.path.join(OUT, "sub.yaml"), "w", encoding="utf-8") as f:
-            f.write(sub_yaml)
-        with open(os.path.join(OUT, "sub-base64.txt"), "w", encoding="utf-8") as f:
-            f.write(sub_b64)
-        # iOS/Shadowrocket 走这份: base64 表达不了 http 代理, 只有 conf 能
-        with open(os.path.join(OUT, "sub.conf"), "w", encoding="utf-8") as f:
-            f.write(sub_conf)
-        with open(os.path.join(OUT, "nodes_best.json"), "w", encoding="utf-8") as f:
-            json.dump(picked, f, ensure_ascii=False, indent=1)
-
-        # 报告
-        lines = [
-            "# 节点池日报", "",
-            f"- 生成时间: {time.strftime('%Y-%m-%d %H:%M:%S')} (UTC)",
-            f"- 采集去重: **{len(nodes)}** 个",
-            f"- 延迟存活: **{len([n for n in cand])}** 个 (≤{args.delay_limit}ms)",
-            f"- 复检合格: **{len(picked)}** 个",
-            f"- 历史池: **{len(history)}** 个 (含 7 天内可用过的)",
-            f"- 最终订阅: **{len(pool)}** 个节点", "",
-            "| # | 协议 | 服务器 | 延迟 | 复检 | 评分 | 来源 |",
-            "|---|------|--------|------|------|------|------|",
-        ]
-        for i, n in enumerate(pool[:60], 1):
-            v = n.get("verify_ok")
-            vs = f"{v}/{len(probe.VERIFY_SITES)}" if v is not None else "-"
-            lines.append(
-                f"| {i} | {n.get('proto')} | {n.get('server')}:{n.get('port')} | "
-                f"{n.get('latency') or '-'}ms | {vs} | {n.get('score') or 0:.3f} | "
-                f"{n.get('source') or '-'} |")
-        lines += ["", "> 速度未在本机测 —— 客户端会自动选最快的，不用我替你判断。"]
-        with open(os.path.join(OUT, "report.md"), "w", encoding="utf-8") as f:
-            f.write("\n".join(lines) + "\n")
+        write_outputs(pool, private, fallback, n_collected=len(nodes),
+                      n_cand=len(cand), n_picked=len(picked),
+                      n_history=len(history))
 
         log(f"✅ 完成: sub.yaml / sub-base64.txt / sub.conf / report.md ({len(pool)} 个节点)")
         return 0

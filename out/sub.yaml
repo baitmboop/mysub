@@ -1,447 +1,107 @@
-# nodepool  生成于 2026-11-11 18:17:31 (北京时间)
-# 节点数 110  (自建 0 / 免费额度 0 / 免费池 110)
+# nodepool  生成于 2026-11-11 19:10:13 (北京时间)
+# 节点数 36  (自建 0 / 免费额度 0 / 免费池 36)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
 proxies:
-  - name: N01 202.50.253.72
-    type: ss
-    server: 202.50.253.72
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N02 202.50.253.18
-    type: ss
-    server: 202.50.253.18
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N03 202.50.253.27
-    type: ss
-    server: 202.50.253.27
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N04 202.50.253.63
-    type: ss
-    server: 202.50.253.63
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N05 202.50.253.54
-    type: ss
-    server: 202.50.253.54
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N06 202.50.253.36
-    type: ss
-    server: 202.50.253.36
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N07 202.50.253.90
-    type: ss
-    server: 202.50.253.90
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N08 202.50.253.81
-    type: ss
-    server: 202.50.253.81
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N09 202.50.253.45
-    type: ss
-    server: 202.50.253.45
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N10 202.50.253.99
-    type: ss
-    server: 202.50.253.99
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N11 70.34.207.14
-    type: trojan
-    server: 70.34.207.14
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
-  - name: N12 2.29.138.56
-    type: ss
-    server: 2.29.138.56
-    port: 26412
-    cipher: 2022-blake3-aes-256-gcm
-    password: "L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U="
-    udp: true
-  - name: N13 195.206.235.202
-    type: vless
-    server: 195.206.235.202
-    port: 443
-    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: 4935e4t.de25.h1clayd.click
-    reality-opts:
-      public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
-      short-id: 6976d670818644cc
-    client-fingerprint: chrome
-  - name: N14 141.227.160.61
-    type: vless
-    server: 141.227.160.61
-    port: 8443
-    uuid: f59fdac3-5842-449b-8c8d-d5ebcdbf1768
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: apple.com
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: 6ba85179e30d4fc2
-    client-fingerprint: chrome
-  - name: N15 167.17.64.67
-    type: vless
-    server: 167.17.64.67
-    port: 10303
-    uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: www.apple.com
-    reality-opts:
-      public-key: RCm8x1FrSdaJ2NY9k5deQQZilwbubeK-4bcH_6E31wk
-      short-id: 14f18ef16e7c32cc
-    client-fingerprint: chrome
-  - name: N16 216.106.191.201
-    type: vless
-    server: 216.106.191.201
-    port: 10303
-    uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: www.apple.com
-    reality-opts:
-      public-key: suK-MYTtZhJ9IJgsxPLTHLQadNotDqYslQcd5BNV_EQ
-      short-id: 6aa50b0cc8d23464
-    client-fingerprint: chrome
-  - name: N17 89.105.218.148
-    type: vless
-    server: 89.105.218.148
-    port: 443
-    uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: golos.mail.ru
-    reality-opts:
-      public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-      short-id: 428ef87fd47a3a32
-    client-fingerprint: chrome
-  - name: N18 169.40.34.41
-    type: vless
-    server: 169.40.34.41
-    port: 443
-    uuid: 622654a4-b666-000b-9260-fb717e05154f
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: key-master-saver.com
-    reality-opts:
-      public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-      short-id: 1c3e8241a8743df9
-    client-fingerprint: ios
-  - name: N19 72.35.246.39
-    type: vless
-    server: 72.35.246.39
-    port: 2053
-    uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: vk.ru
-    reality-opts:
-      public-key: TSOm7XIZvGzYoCbh_lFFA9PTQJqI-JU5kKIAffGmUWg
-      short-id: 5e39e518bfac6392
-    client-fingerprint: chrome
-  - name: N20 47.244.120.197
-    type: vmess
-    server: 47.244.120.197
-    port: 44867
-    uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-    alterId: 0
-    cipher: auto
-    udp: true
-    ws-opts:
-      path: /arki
-    network: ws
-  - name: N21 51.159.225.197
-    type: http
-    server: 51.159.225.197
-    port: 19362
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N22 161.97.66.16
-    type: vless
-    server: 161.97.66.16
-    port: 443
-    uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: www.cloudflare.com
-    reality-opts:
-      public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-      short-id: 086bf957
-    client-fingerprint: chrome
-  - name: N23 193.108.119.193
-    type: trojan
-    server: 193.108.119.193
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: resources.iloverussia2026.com
-  - name: N24 193.108.119.3
-    type: ss
-    server: 193.108.119.3
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N25 154.44.24.25
-    type: vless
-    server: 154.44.24.25
-    port: 51279
-    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: www.tesla.com
-    reality-opts:
-      public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
-      short-id: bb82c8
-    client-fingerprint: firefox
-  - name: N26 84.17.47.124
-    type: http
-    server: 84.17.47.124
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N27 172.99.189.142
-    type: ss
-    server: 172.99.189.142
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N28 5.188.181.201
-    type: ss
-    server: 5.188.181.201
-    port: 9037
-    cipher: aes-256-cfb
-    password: TN2YqghxeFDKZfLU
-    udp: true
-  - name: N29 193.108.119.15
-    type: trojan
-    server: 193.108.119.15
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: courses.iloverussia2026.com
-  - name: N30 51.159.225.196
-    type: http
-    server: 51.159.225.196
-    port: 23856
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N31 193.108.119.29
-    type: trojan
-    server: 193.108.119.29
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: blog.iloverussia2026.com
-  - name: N32 51.222.155.32
-    type: ss
-    server: 51.222.155.32
-    port: 5003
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-    udp: true
-  - name: N33 158.173.154.5
+  - name: N01 158.173.154.5
     type: http
     server: 158.173.154.5
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N34 5.188.181.201
+  - name: N02 202.50.253.90
+    type: ss
+    server: 202.50.253.90
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N03 202.50.253.63
+    type: ss
+    server: 202.50.253.63
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N04 202.50.253.99
+    type: ss
+    server: 202.50.253.99
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N05 202.50.253.36
+    type: ss
+    server: 202.50.253.36
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N06 202.50.253.72
+    type: ss
+    server: 202.50.253.72
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N07 202.50.253.81
+    type: ss
+    server: 202.50.253.81
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N08 202.50.253.18
+    type: ss
+    server: 202.50.253.18
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N09 202.50.253.27
+    type: ss
+    server: 202.50.253.27
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N10 202.50.253.54
+    type: ss
+    server: 202.50.253.54
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N11 202.50.253.45
+    type: ss
+    server: 202.50.253.45
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N12 5.188.181.201
+    type: ss
+    server: 5.188.181.201
+    port: 9037
+    cipher: aes-256-cfb
+    password: TN2YqghxeFDKZfLU
+    udp: true
+  - name: N13 5.188.181.201
     type: ss
     server: 5.188.181.201
     port: 9005
     cipher: aes-256-cfb
     password: ZET59LF6DvCC8KVt
     udp: true
-  - name: N35 193.108.119.96
-    type: trojan
-    server: 193.108.119.96
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: learn.iloverussia2026.com
-  - name: N36 193.108.119.2
-    type: ss
-    server: 193.108.119.2
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N37 84.17.47.125
-    type: http
-    server: 84.17.47.125
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N38 172.213.24.16
-    type: vless
-    server: 172.213.24.16
-    port: 2083
-    uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: www.apple.com
-    reality-opts:
-      public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-      short-id: 0123456789abcdef
-    client-fingerprint: chrome
-  - name: N39 141.98.101.179
+  - name: N14 141.98.101.179
     type: ss
     server: 141.98.101.179
     port: 443
     cipher: aes-128-gcm
     password: shadowsocks
     udp: true
-  - name: N40 82.38.31.212
-    type: ss
-    server: 82.38.31.212
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N41 45.95.96.211
-    type: vless
-    server: 45.95.96.211
-    port: 443
-    uuid: fb390da4-00c5-54f1-a1b4-c8e2bb6378c2
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: deepl.com
-    reality-opts:
-      public-key: 8RfEuI1RxxW1dqq2nbt6ssKwx7UdmgKW1nKL9OuilGs
-      short-id: 0492eabdb9
-    client-fingerprint: chrome
-  - name: N42 193.108.119.134
-    type: trojan
-    server: 193.108.119.134
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: api.iloverussia2026.com
-  - name: N43 167.17.64.22
-    type: ss
-    server: 167.17.64.22
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N44 84.17.47.148
-    type: http
-    server: 84.17.47.148
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N45 154.36.158.197
-    type: ss
-    server: 154.36.158.197
-    port: 8388
-    cipher: aes-256-gcm
-    password: BeaUf9c0AEWH40Pu
-    udp: true
-  - name: N46 23.157.88.43
-    type: ss
-    server: 23.157.88.43
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N47 87.199.205.28
-    type: vless
-    server: 87.199.205.28
-    port: 443
-    uuid: 501a2da5-cb22-4a3f-915e-e3b821d1d62d
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: vkvd754.okcdn.ru
-    reality-opts:
-      public-key: W-9zyiOq287RtXVTZlTFbSDJ0Mx8joyBLJoA7ZE7eBw
-      short-id: b7cd177731793b1e
-    client-fingerprint: chrome
-  - name: N48 base.hosamobenl.co.uk
-    type: vless
-    server: base.hosamobenl.co.uk
-    port: 443
-    uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: base.hosamobenl.co.uk
-  - name: N49 142.202.51.22
-    type: ss
-    server: 142.202.51.22
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N50 91.107.179.0
+  - name: N15 91.107.179.0
     type: vless
     server: 91.107.179.0
     port: 10105
@@ -455,56 +115,7 @@ proxies:
       public-key: PFC3JN1er1JE2vAemwRhNjewz8I4NUWP4XHf2Dza4Es
       short-id: 12e321badd07906e
     client-fingerprint: chrome
-  - name: N51 5.188.181.201
-    type: ss
-    server: 5.188.181.201
-    port: 9054
-    cipher: aes-256-cfb
-    password: VcFuyXvND2yQWSFY
-    udp: true
-  - name: N52 82.38.31.162
-    type: ss
-    server: 82.38.31.162
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    udp: true
-  - name: N53 82.38.31.62
-    type: ss
-    server: 82.38.31.62
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    udp: true
-  - name: N54 195.72.166.251
-    type: vless
-    server: 195.72.166.251
-    port: 443
-    uuid: 64c05afc-ce81-4ba0-b697-afa04da1427e
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: www.lloydsbankinggroup.com
-    reality-opts:
-      public-key: RKDT6fVgcZS8Qfzhv5rbeHRIflA3UTKD_HNLJyOoUwk
-      short-id: 25349b36802f
-    client-fingerprint: chrome
-  - name: N55 193.29.139.147
-    type: ss
-    server: 193.29.139.147
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N56 82.38.31.217
-    type: ss
-    server: 82.38.31.217
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N57 94.183.164.142
+  - name: N16 94.183.164.142
     type: vless
     server: 94.183.164.142
     port: 443
@@ -516,736 +127,291 @@ proxies:
     ws-opts:
       path: /static/js/vendor.cc1645b6.js
     network: ws
-  - name: N58 38.114.120.221
-    type: ss
-    server: 38.114.120.221
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N59 82.38.31.35
-    type: ss
-    server: 82.38.31.35
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    udp: true
-  - name: N60 23.162.152.22
-    type: ss
-    server: 23.162.152.22
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N61 82.38.31.210
-    type: ss
-    server: 82.38.31.210
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N62 82.38.31.66
-    type: ss
-    server: 82.38.31.66
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    udp: true
-  - name: N63 193.29.139.168
-    type: ss
-    server: 193.29.139.168
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: QCXDxuDlTTMD7jtgHUjIoj
-    udp: true
-  - name: N64 82.38.31.205
-    type: ss
-    server: 82.38.31.205
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N65 82.38.31.216
-    type: ss
-    server: 82.38.31.216
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N66 82.38.31.48
-    type: ss
-    server: 82.38.31.48
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    udp: true
-  - name: N67 82.38.31.181
-    type: ss
-    server: 82.38.31.181
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N68 208.69.78.33
-    type: trojan
-    server: 208.69.78.33
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: courses.yourultimateprofessionalcareerhub.com
-  - name: N69 38.58.108.84
-    type: vless
-    server: 38.58.108.84
-    port: 443
-    uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: fs.qicai99.com
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: fs.qicai99.com
-    network: ws
-  - name: N70 82.38.31.187
-    type: ss
-    server: 82.38.31.187
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N71 213.109.163.119
+  - name: N17 213.109.163.119
     type: http
     server: 213.109.163.119
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N72 82.38.31.171
-    type: ss
-    server: 82.38.31.171
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    udp: true
-  - name: N73 82.38.31.171
-    type: ss
-    server: 82.38.31.171
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    udp: true
-  - name: N74 82.38.31.179
-    type: ss
-    server: 82.38.31.179
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N75 ov-france1.09vpn.com
-    type: vless
-    server: ov-france1.09vpn.com
-    port: 80
-    uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
-    udp: true
-    skipCertVerify: true
-    ws-opts:
-      path: /vless/
-      headers:
-        Host: OV-France1.09vpn.com
-    network: ws
-  - name: N76 217.30.10.70
-    type: ss
-    server: 217.30.10.70
-    port: 9084
-    cipher: aes-256-cfb
-    password: c3NtHJ5ujV2tGDfj
-    udp: true
-  - name: N77 82.38.31.170
-    type: ss
-    server: 82.38.31.170
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    udp: true
-  - name: N78 5.188.181.201
-    type: ss
-    server: 5.188.181.201
-    port: 9027
-    cipher: aes-256-cfb
-    password: EXN3S3eQpjE7EJu8
-    udp: true
-  - name: N79 82.38.31.49
-    type: ss
-    server: 82.38.31.49
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    udp: true
-  - name: N80 178.83.185.156
-    type: ss
-    server: 178.83.185.156
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    udp: true
-  - name: N81 193.29.139.223
-    type: ss
-    server: 193.29.139.223
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N82 82.38.31.186
-    type: ss
-    server: 82.38.31.186
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N83 82.38.31.207
-    type: ss
-    server: 82.38.31.207
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N84 38.109.228.110
-    type: ss
-    server: 38.109.228.110
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N85 82.38.31.202
-    type: ss
-    server: 82.38.31.202
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N86 82.38.31.199
-    type: ss
-    server: 82.38.31.199
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N87 82.38.31.47
-    type: ss
-    server: 82.38.31.47
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    udp: true
-  - name: N88 82.38.31.203
-    type: ss
-    server: 82.38.31.203
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N89 82.38.31.214
+  - name: N18 82.38.31.214
     type: ss
     server: 82.38.31.214
     port: 8080
     cipher: chacha20-ietf-poly1305
     password: k1dBOmOB4oqi7Ump37a1bQ
     udp: true
-  - name: N90 217.30.10.70
-    type: ss
-    server: 217.30.10.70
-    port: 9088
-    cipher: aes-256-cfb
-    password: f8npKgNzdkss2ytn
-    udp: true
-  - name: N91 185.176.206.9
-    type: ss
-    server: 185.176.206.9
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N92 217.30.10.70
-    type: ss
-    server: 217.30.10.70
-    port: 9057
-    cipher: aes-256-cfb
-    password: wjTugX3ZtHMB9c3Z
-    udp: true
-  - name: N93 102.37.156.224
-    type: ss
-    server: 102.37.156.224
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: aduB9HGxQHjA2SBMRjkHX6
-    udp: true
-  - name: N94 51.79.49.116
-    type: ss
-    server: 51.79.49.116
-    port: 8882
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-    udp: true
-  - name: N95 5.188.181.201
-    type: ss
-    server: 5.188.181.201
-    port: 9011
-    cipher: aes-256-cfb
-    password: M3t2ZEQcMGRWBjRa
-    udp: true
-  - name: N96 82.38.31.180
-    type: ss
-    server: 82.38.31.180
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N97 82.38.31.192
-    type: ss
-    server: 82.38.31.192
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N98 82.38.31.194
-    type: ss
-    server: 82.38.31.194
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N99 82.38.31.206
-    type: ss
-    server: 82.38.31.206
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N100 82.38.31.208
-    type: ss
-    server: 82.38.31.208
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N101 82.38.31.46
-    type: ss
-    server: 82.38.31.46
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    udp: true
-  - name: N102 82.38.31.191
-    type: ss
-    server: 82.38.31.191
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N103 57.129.83.85
-    type: ss
-    server: 57.129.83.85
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N104 82.38.31.189
-    type: ss
-    server: 82.38.31.189
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N105 217.30.10.70
-    type: ss
-    server: 217.30.10.70
-    port: 9020
-    cipher: aes-256-cfb
-    password: BNmAXXxAHYpTRdzu
-    udp: true
-  - name: N106 82.38.31.176
-    type: ss
-    server: 82.38.31.176
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: N107 217.30.10.70
-    type: ss
-    server: 217.30.10.70
-    port: 9059
-    cipher: aes-256-cfb
-    password: 9XwYyZsK8SNzQDtY
-    udp: true
-  - name: N108 82.38.31.61
-    type: ss
-    server: 82.38.31.61
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    udp: true
-  - name: N109 82.38.31.190
+  - name: N19 82.38.31.190
     type: ss
     server: 82.38.31.190
     port: 8080
     cipher: chacha20-ietf-poly1305
     password: k1dBOmOB4oqi7Ump37a1bQ
     udp: true
-  - name: N110 82.38.31.193
+  - name: N20 82.38.31.193
     type: ss
     server: 82.38.31.193
     port: 8080
     cipher: chacha20-ietf-poly1305
     password: k1dBOmOB4oqi7Ump37a1bQ
     udp: true
+  - name: N21 3.169.9.125
+    type: vless
+    server: 3.169.9.125
+    port: 443
+    uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+    udp: true
+    skipCertVerify: true
+    tls: true
+    servername: d14jyezfrcyf60.cloudfront.net
+    ws-opts:
+      path: /
+      headers:
+        Host: d14jyezfrcyf60.cloudfront.net
+    network: ws
+  - name: N22 51.222.155.113
+    type: ss
+    server: 51.222.155.113
+    port: 5601
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+    udp: true
+  - name: N23 13.143.189.146
+    type: hysteria2
+    server: 13.143.189.146
+    port: 4444
+    password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+    skipCertVerify: true
+    sni: pl3.nexfile.net
+  - name: N24 70.34.207.14
+    type: trojan
+    server: 70.34.207.14
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  - name: N25 62.182.193.228
+    type: ss
+    server: 62.182.193.228
+    port: 8388
+    cipher: chacha20-ietf-poly1305
+    password: 2e555e46dbc421452416834962fd014f
+    udp: true
+  - name: N26 bogging-eyeteeth-fly.freesocks.work
+    type: ss
+    server: bogging-eyeteeth-fly.freesocks.work
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: QFWzCw2uX9B9i6qAYeFBIE
+    udp: true
+  - name: N27 51.222.141.125
+    type: ss
+    server: 51.222.141.125
+    port: 445
+    cipher: aes-256-gcm
+    password: zDNVedRFPQexG9v
+    udp: true
+  - name: N28 13.143.189.142
+    type: hysteria2
+    server: 13.143.189.142
+    port: 4444
+    password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+    skipCertVerify: true
+    sni: pl3.nexfile.net
+  - name: N29 2.29.138.56
+    type: ss
+    server: 2.29.138.56
+    port: 26412
+    cipher: 2022-blake3-aes-256-gcm
+    password: "L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U="
+    udp: true
+  - name: N30 195.206.235.202
+    type: vless
+    server: 195.206.235.202
+    port: 443
+    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+    udp: true
+    skipCertVerify: true
+    flow: xtls-rprx-vision
+    tls: true
+    servername: 4935e4t.de25.h1clayd.click
+    reality-opts:
+      public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
+      short-id: 6976d670818644cc
+    client-fingerprint: chrome
+  - name: N31 66.163.118.103
+    type: ss
+    server: 66.163.118.103
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N32 64.176.163.182
+    type: trojan
+    server: 64.176.163.182
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
+  - name: N33 13.143.189.149
+    type: hysteria2
+    server: 13.143.189.149
+    port: 4444
+    password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+    skipCertVerify: true
+    sni: pl2.nexfile.net
+  - name: N34 185.213.23.63
+    type: ss
+    server: 185.213.23.63
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+    udp: true
+  - name: N35 152.53.1.57
+    type: ss
+    server: 152.53.1.57
+    port: 8388
+    cipher: chacha20-ietf-poly1305
+    password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
+    udp: true
+  - name: N36 45.144.234.157
+    type: vless
+    server: 45.144.234.157
+    port: 14430
+    uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+    udp: true
+    skipCertVerify: true
+    ws-opts:
+      path: /vless
+      headers:
+        Host: 45.144.234.157
+    network: ws
 proxy-groups:
   - name: 节点选择
     type: select
     proxies:
       - 自动选择
       - ③ 免费池
-      - N01 202.50.253.72
-      - N02 202.50.253.18
-      - N03 202.50.253.27
-      - N04 202.50.253.63
-      - N05 202.50.253.54
-      - N06 202.50.253.36
-      - N07 202.50.253.90
-      - N08 202.50.253.81
-      - N09 202.50.253.45
-      - N10 202.50.253.99
-      - N11 70.34.207.14
-      - N12 2.29.138.56
-      - N13 195.206.235.202
-      - N14 141.227.160.61
-      - N15 167.17.64.67
-      - N16 216.106.191.201
-      - N17 89.105.218.148
-      - N18 169.40.34.41
-      - N19 72.35.246.39
-      - N20 47.244.120.197
-      - N21 51.159.225.197
-      - N22 161.97.66.16
-      - N23 193.108.119.193
-      - N24 193.108.119.3
-      - N25 154.44.24.25
-      - N26 84.17.47.124
-      - N27 172.99.189.142
-      - N28 5.188.181.201
-      - N29 193.108.119.15
-      - N30 51.159.225.196
-      - N31 193.108.119.29
-      - N32 51.222.155.32
-      - N33 158.173.154.5
-      - N34 5.188.181.201
-      - N35 193.108.119.96
-      - N36 193.108.119.2
-      - N37 84.17.47.125
-      - N38 172.213.24.16
-      - N39 141.98.101.179
-      - N40 82.38.31.212
-      - N41 45.95.96.211
-      - N42 193.108.119.134
-      - N43 167.17.64.22
-      - N44 84.17.47.148
-      - N45 154.36.158.197
-      - N46 23.157.88.43
-      - N47 87.199.205.28
-      - N48 base.hosamobenl.co.uk
-      - N49 142.202.51.22
-      - N50 91.107.179.0
-      - N51 5.188.181.201
-      - N52 82.38.31.162
-      - N53 82.38.31.62
-      - N54 195.72.166.251
-      - N55 193.29.139.147
-      - N56 82.38.31.217
-      - N57 94.183.164.142
-      - N58 38.114.120.221
-      - N59 82.38.31.35
-      - N60 23.162.152.22
-      - N61 82.38.31.210
-      - N62 82.38.31.66
-      - N63 193.29.139.168
-      - N64 82.38.31.205
-      - N65 82.38.31.216
-      - N66 82.38.31.48
-      - N67 82.38.31.181
-      - N68 208.69.78.33
-      - N69 38.58.108.84
-      - N70 82.38.31.187
-      - N71 213.109.163.119
-      - N72 82.38.31.171
-      - N73 82.38.31.171
-      - N74 82.38.31.179
-      - N75 ov-france1.09vpn.com
-      - N76 217.30.10.70
-      - N77 82.38.31.170
-      - N78 5.188.181.201
-      - N79 82.38.31.49
-      - N80 178.83.185.156
-      - N81 193.29.139.223
-      - N82 82.38.31.186
-      - N83 82.38.31.207
-      - N84 38.109.228.110
-      - N85 82.38.31.202
-      - N86 82.38.31.199
-      - N87 82.38.31.47
-      - N88 82.38.31.203
-      - N89 82.38.31.214
-      - N90 217.30.10.70
-      - N91 185.176.206.9
-      - N92 217.30.10.70
-      - N93 102.37.156.224
-      - N94 51.79.49.116
-      - N95 5.188.181.201
-      - N96 82.38.31.180
-      - N97 82.38.31.192
-      - N98 82.38.31.194
-      - N99 82.38.31.206
-      - N100 82.38.31.208
-      - N101 82.38.31.46
-      - N102 82.38.31.191
-      - N103 57.129.83.85
-      - N104 82.38.31.189
-      - N105 217.30.10.70
-      - N106 82.38.31.176
-      - N107 217.30.10.70
-      - N108 82.38.31.61
-      - N109 82.38.31.190
-      - N110 82.38.31.193
+      - N01 158.173.154.5
+      - N02 202.50.253.90
+      - N03 202.50.253.63
+      - N04 202.50.253.99
+      - N05 202.50.253.36
+      - N06 202.50.253.72
+      - N07 202.50.253.81
+      - N08 202.50.253.18
+      - N09 202.50.253.27
+      - N10 202.50.253.54
+      - N11 202.50.253.45
+      - N12 5.188.181.201
+      - N13 5.188.181.201
+      - N14 141.98.101.179
+      - N15 91.107.179.0
+      - N16 94.183.164.142
+      - N17 213.109.163.119
+      - N18 82.38.31.214
+      - N19 82.38.31.190
+      - N20 82.38.31.193
+      - N21 3.169.9.125
+      - N22 51.222.155.113
+      - N23 13.143.189.146
+      - N24 70.34.207.14
+      - N25 62.182.193.228
+      - N26 bogging-eyeteeth-fly.freesocks.work
+      - N27 51.222.141.125
+      - N28 13.143.189.142
+      - N29 2.29.138.56
+      - N30 195.206.235.202
+      - N31 66.163.118.103
+      - N32 64.176.163.182
+      - N33 13.143.189.149
+      - N34 185.213.23.63
+      - N35 152.53.1.57
+      - N36 45.144.234.157
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 120
     tolerance: 100
     proxies:
-      - N01 202.50.253.72
-      - N02 202.50.253.18
-      - N03 202.50.253.27
-      - N04 202.50.253.63
-      - N05 202.50.253.54
-      - N06 202.50.253.36
-      - N07 202.50.253.90
-      - N08 202.50.253.81
-      - N09 202.50.253.45
-      - N10 202.50.253.99
-      - N11 70.34.207.14
-      - N12 2.29.138.56
-      - N13 195.206.235.202
-      - N14 141.227.160.61
-      - N15 167.17.64.67
-      - N16 216.106.191.201
-      - N17 89.105.218.148
-      - N18 169.40.34.41
-      - N19 72.35.246.39
-      - N20 47.244.120.197
-      - N21 51.159.225.197
-      - N22 161.97.66.16
-      - N23 193.108.119.193
-      - N24 193.108.119.3
-      - N25 154.44.24.25
-      - N26 84.17.47.124
-      - N27 172.99.189.142
-      - N28 5.188.181.201
-      - N29 193.108.119.15
-      - N30 51.159.225.196
-      - N31 193.108.119.29
-      - N32 51.222.155.32
-      - N33 158.173.154.5
-      - N34 5.188.181.201
-      - N35 193.108.119.96
-      - N36 193.108.119.2
-      - N37 84.17.47.125
-      - N38 172.213.24.16
-      - N39 141.98.101.179
-      - N40 82.38.31.212
-      - N41 45.95.96.211
-      - N42 193.108.119.134
-      - N43 167.17.64.22
-      - N44 84.17.47.148
-      - N45 154.36.158.197
-      - N46 23.157.88.43
-      - N47 87.199.205.28
-      - N48 base.hosamobenl.co.uk
-      - N49 142.202.51.22
-      - N50 91.107.179.0
-      - N51 5.188.181.201
-      - N52 82.38.31.162
-      - N53 82.38.31.62
-      - N54 195.72.166.251
-      - N55 193.29.139.147
-      - N56 82.38.31.217
-      - N57 94.183.164.142
-      - N58 38.114.120.221
-      - N59 82.38.31.35
-      - N60 23.162.152.22
-      - N61 82.38.31.210
-      - N62 82.38.31.66
-      - N63 193.29.139.168
-      - N64 82.38.31.205
-      - N65 82.38.31.216
-      - N66 82.38.31.48
-      - N67 82.38.31.181
-      - N68 208.69.78.33
-      - N69 38.58.108.84
-      - N70 82.38.31.187
-      - N71 213.109.163.119
-      - N72 82.38.31.171
-      - N73 82.38.31.171
-      - N74 82.38.31.179
-      - N75 ov-france1.09vpn.com
-      - N76 217.30.10.70
-      - N77 82.38.31.170
-      - N78 5.188.181.201
-      - N79 82.38.31.49
-      - N80 178.83.185.156
-      - N81 193.29.139.223
-      - N82 82.38.31.186
-      - N83 82.38.31.207
-      - N84 38.109.228.110
-      - N85 82.38.31.202
-      - N86 82.38.31.199
-      - N87 82.38.31.47
-      - N88 82.38.31.203
-      - N89 82.38.31.214
-      - N90 217.30.10.70
-      - N91 185.176.206.9
-      - N92 217.30.10.70
-      - N93 102.37.156.224
-      - N94 51.79.49.116
-      - N95 5.188.181.201
-      - N96 82.38.31.180
-      - N97 82.38.31.192
-      - N98 82.38.31.194
-      - N99 82.38.31.206
-      - N100 82.38.31.208
-      - N101 82.38.31.46
-      - N102 82.38.31.191
-      - N103 57.129.83.85
-      - N104 82.38.31.189
-      - N105 217.30.10.70
-      - N106 82.38.31.176
-      - N107 217.30.10.70
-      - N108 82.38.31.61
-      - N109 82.38.31.190
-      - N110 82.38.31.193
+      - N01 158.173.154.5
+      - N02 202.50.253.90
+      - N03 202.50.253.63
+      - N04 202.50.253.99
+      - N05 202.50.253.36
+      - N06 202.50.253.72
+      - N07 202.50.253.81
+      - N08 202.50.253.18
+      - N09 202.50.253.27
+      - N10 202.50.253.54
+      - N11 202.50.253.45
+      - N12 5.188.181.201
+      - N13 5.188.181.201
+      - N14 141.98.101.179
+      - N15 91.107.179.0
+      - N16 94.183.164.142
+      - N17 213.109.163.119
+      - N18 82.38.31.214
+      - N19 82.38.31.190
+      - N20 82.38.31.193
+      - N21 3.169.9.125
+      - N22 51.222.155.113
+      - N23 13.143.189.146
+      - N24 70.34.207.14
+      - N25 62.182.193.228
+      - N26 bogging-eyeteeth-fly.freesocks.work
+      - N27 51.222.141.125
+      - N28 13.143.189.142
+      - N29 2.29.138.56
+      - N30 195.206.235.202
+      - N31 66.163.118.103
+      - N32 64.176.163.182
+      - N33 13.143.189.149
+      - N34 185.213.23.63
+      - N35 152.53.1.57
+      - N36 45.144.234.157
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
     interval: 600
     proxies:
-      - N01 202.50.253.72
-      - N02 202.50.253.18
-      - N03 202.50.253.27
-      - N04 202.50.253.63
-      - N05 202.50.253.54
-      - N06 202.50.253.36
-      - N07 202.50.253.90
-      - N08 202.50.253.81
-      - N09 202.50.253.45
-      - N10 202.50.253.99
-      - N11 70.34.207.14
-      - N12 2.29.138.56
-      - N13 195.206.235.202
-      - N14 141.227.160.61
-      - N15 167.17.64.67
-      - N16 216.106.191.201
-      - N17 89.105.218.148
-      - N18 169.40.34.41
-      - N19 72.35.246.39
-      - N20 47.244.120.197
-      - N21 51.159.225.197
-      - N22 161.97.66.16
-      - N23 193.108.119.193
-      - N24 193.108.119.3
-      - N25 154.44.24.25
-      - N26 84.17.47.124
-      - N27 172.99.189.142
-      - N28 5.188.181.201
-      - N29 193.108.119.15
-      - N30 51.159.225.196
-      - N31 193.108.119.29
-      - N32 51.222.155.32
-      - N33 158.173.154.5
-      - N34 5.188.181.201
-      - N35 193.108.119.96
-      - N36 193.108.119.2
-      - N37 84.17.47.125
-      - N38 172.213.24.16
-      - N39 141.98.101.179
-      - N40 82.38.31.212
-      - N41 45.95.96.211
-      - N42 193.108.119.134
-      - N43 167.17.64.22
-      - N44 84.17.47.148
-      - N45 154.36.158.197
-      - N46 23.157.88.43
-      - N47 87.199.205.28
-      - N48 base.hosamobenl.co.uk
-      - N49 142.202.51.22
-      - N50 91.107.179.0
-      - N51 5.188.181.201
-      - N52 82.38.31.162
-      - N53 82.38.31.62
-      - N54 195.72.166.251
-      - N55 193.29.139.147
-      - N56 82.38.31.217
-      - N57 94.183.164.142
-      - N58 38.114.120.221
-      - N59 82.38.31.35
-      - N60 23.162.152.22
-      - N61 82.38.31.210
-      - N62 82.38.31.66
-      - N63 193.29.139.168
-      - N64 82.38.31.205
-      - N65 82.38.31.216
-      - N66 82.38.31.48
-      - N67 82.38.31.181
-      - N68 208.69.78.33
-      - N69 38.58.108.84
-      - N70 82.38.31.187
-      - N71 213.109.163.119
-      - N72 82.38.31.171
-      - N73 82.38.31.171
-      - N74 82.38.31.179
-      - N75 ov-france1.09vpn.com
-      - N76 217.30.10.70
-      - N77 82.38.31.170
-      - N78 5.188.181.201
-      - N79 82.38.31.49
-      - N80 178.83.185.156
-      - N81 193.29.139.223
-      - N82 82.38.31.186
-      - N83 82.38.31.207
-      - N84 38.109.228.110
-      - N85 82.38.31.202
-      - N86 82.38.31.199
-      - N87 82.38.31.47
-      - N88 82.38.31.203
-      - N89 82.38.31.214
-      - N90 217.30.10.70
-      - N91 185.176.206.9
-      - N92 217.30.10.70
-      - N93 102.37.156.224
-      - N94 51.79.49.116
-      - N95 5.188.181.201
-      - N96 82.38.31.180
-      - N97 82.38.31.192
-      - N98 82.38.31.194
-      - N99 82.38.31.206
-      - N100 82.38.31.208
-      - N101 82.38.31.46
-      - N102 82.38.31.191
-      - N103 57.129.83.85
-      - N104 82.38.31.189
-      - N105 217.30.10.70
-      - N106 82.38.31.176
-      - N107 217.30.10.70
-      - N108 82.38.31.61
-      - N109 82.38.31.190
-      - N110 82.38.31.193
+      - N01 158.173.154.5
+      - N02 202.50.253.90
+      - N03 202.50.253.63
+      - N04 202.50.253.99
+      - N05 202.50.253.36
+      - N06 202.50.253.72
+      - N07 202.50.253.81
+      - N08 202.50.253.18
+      - N09 202.50.253.27
+      - N10 202.50.253.54
+      - N11 202.50.253.45
+      - N12 5.188.181.201
+      - N13 5.188.181.201
+      - N14 141.98.101.179
+      - N15 91.107.179.0
+      - N16 94.183.164.142
+      - N17 213.109.163.119
+      - N18 82.38.31.214
+      - N19 82.38.31.190
+      - N20 82.38.31.193
+      - N21 3.169.9.125
+      - N22 51.222.155.113
+      - N23 13.143.189.146
+      - N24 70.34.207.14
+      - N25 62.182.193.228
+      - N26 bogging-eyeteeth-fly.freesocks.work
+      - N27 51.222.141.125
+      - N28 13.143.189.142
+      - N29 2.29.138.56
+      - N30 195.206.235.202
+      - N31 66.163.118.103
+      - N32 64.176.163.182
+      - N33 13.143.189.149
+      - N34 185.213.23.63
+      - N35 152.53.1.57
+      - N36 45.144.234.157
 rules:
   - "MATCH,节点选择"

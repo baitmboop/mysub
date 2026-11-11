@@ -251,8 +251,7 @@
   "fp": "1ae02fa00a58df69",
   "sources": [
    "NoMoreWalls",
-   "ermaozi",
-   "Pawdroid/Free-servers"
+   "ermaozi"
   ]
  },
  {
@@ -2816,7 +2815,8 @@
    "NoMoreWalls",
    "ermaozi",
    "ripaojiedian",
-   "mahdibland"
+   "mahdibland",
+   "Pawdroid/Free-servers"
   ]
  },
  {
@@ -2909,8 +2909,7 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "mahdibland",
-   "Pawdroid/Free-servers"
+   "mahdibland"
   ]
  },
  {
@@ -10560,7 +10559,8 @@
   "fp": "d4f92df2a531a259",
   "sources": [
    "NoMoreWalls",
-   "ermaozi"
+   "ermaozi",
+   "Pawdroid/Free-servers"
   ]
  },
  {
@@ -11007,7 +11007,8 @@
   "fp": "e3c729b534b9cac2",
   "sources": [
    "NoMoreWalls",
-   "ermaozi"
+   "ermaozi",
+   "Pawdroid/Free-servers"
   ]
  },
  {
@@ -12371,28 +12372,6 @@
   "fp": "29e1cc6ef21a6674",
   "sources": [
    "NoMoreWalls"
-  ]
- },
- {
-  "proto": "vless",
-  "server": "199.232.78.120",
-  "port": 443,
-  "uuid": "921b248d-f094-4a59-a794-cdbab080c26a",
-  "tls": true,
-  "sni": "cdn.akamai.steamstatic.com",
-  "network": "ws",
-  "path": "/",
-  "host": "finalnsdger.global.ssl.fastly.net.",
-  "flow": "",
-  "pbk": "",
-  "sid": "",
-  "utls": "chrome",
-  "reality": false,
-  "name": "canfingV2rayNG-317",
-  "source": "tg:@vpnfail_v2ray",
-  "fp": "8e6e5623c9bbac68",
-  "sources": [
-   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -18740,6 +18719,28 @@
  },
  {
   "proto": "vless",
+  "server": "love.ns.cloudflare.com",
+  "port": 80,
+  "uuid": "22c15b3f-e205-48e2-9b30-1a2c3480e7b2",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "",
+  "host": "sRv80.hAMiIbaR.CoM",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-117",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "8b64e2076044a6fc",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "lv3.nexfile.net",
   "port": 4443,
   "uuid": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
@@ -19349,13 +19350,13 @@
   "port": 9443,
   "uuid": "14c36bd3-d631-4618-99aa-5f6c1c9f4abc",
   "tls": true,
-  "sni": "staticview.microsoft.com",
+  "sni": "wwwqa.microsoft.com",
   "network": "tcp",
   "path": "",
   "host": "",
   "flow": "xtls-rprx-vision",
   "pbk": "rgtOiCdN6uMCpk9LhOTEIm4LVjLlkH-9LYbcf6AXBg4",
-  "sid": "965f",
+  "sid": "5a935ef1ea",
   "utls": "chrome",
   "reality": true,
   "name": "SGP-VLESS-Reality-FERR",
