@@ -1444,6 +1444,19 @@
  },
  {
   "proto": "ss",
+  "server": "37.152.180.223",
+  "port": 914716030100280101,
+  "cipher": "aes-256-gcm",
+  "password": "NDUwOWZkOWFhY2FiZGJiMzM5Y2FhNzRlNmI2YTg2",
+  "name": "filembad-45",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "51f37b956099a6d2",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "38.109.228.110",
   "port": 19999,
   "cipher": "aes-256-gcm",
@@ -2232,8 +2245,7 @@
   "fp": "dcbd048075ea3c6f",
   "sources": [
    "NoMoreWalls",
-   "ermaozi",
-   "tg:@vpnfail_v2ray"
+   "ermaozi"
   ]
  },
  {
