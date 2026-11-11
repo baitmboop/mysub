@@ -1,18 +1,20 @@
 {
- "generated_at": "2026-11-11T17:06:54+08:00",
- "total_nodes": 609,
+ "generated_at": "2026-11-11T17:15:39+08:00",
+ "total_nodes": 1191,
  "by_source": {
+  "Auto_proxy": 470,
   "NoMoreWalls": 425,
+  "mahdibland": 112,
   "ermaozi": 111,
   "tg:@oneclickvpnkeys": 41,
   "tg:@vpnfail_v2ray": 18,
   "freefq": 14
  },
  "raw_hits": {
-  "w1770946466/Auto_proxy": 560,
+  "Auto_proxy": 560,
   "ermaozi": 502,
   "NoMoreWalls": 443,
-  "mahdibland/Aggregator": 200,
+  "mahdibland": 200,
   "tg:@oneclickvpnkeys": 72,
   "ripaojiedian": 20,
   "tg:@vpnfail_v2ray": 20,
@@ -49,7 +51,7 @@
   "Pawdroid/Free-servers": {
    "ok": true,
    "raw": 20,
-   "new": 12
+   "new": 11
   },
   "Barabama/FreeNodes": {
    "ok": false,
@@ -60,16 +62,6 @@
    "ok": true,
    "raw": 0,
    "new": 0
-  },
-  "w1770946466/Auto_proxy": {
-   "ok": true,
-   "raw": 560,
-   "new": 470
-  },
-  "mahdibland/Aggregator": {
-   "ok": true,
-   "raw": 200,
-   "new": 118
   }
  }
 }
