@@ -1,5 +1,5 @@
-# nodepool  生成于 2026-11-11 15:43:28 (北京时间)
-# 节点数 19  (自建 0 / 免费额度 0 / 免费池 19)
+# nodepool  生成于 2026-11-11 15:53:11 (北京时间)
+# 节点数 21  (自建 0 / 免费额度 0 / 免费池 21)
 # 节点选择 = select, 下设"自动选择"(fallback, 每 120s 复检)
 # 自动选择按 ① 自建 → ② 免费额度 → ③ 免费池 的顺序降级
 proxies:
@@ -81,27 +81,22 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
-  - name: N12 167.233.129.126
+  - name: N12 140.235.11.243
+    type: vless
+    server: 140.235.11.243
+    port: 56984
+    uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+    udp: true
+    skipCertVerify: true
+    tls: true
+    servername: sg1.zestapp778.com
+  - name: N13 167.233.129.126
     type: vless
     server: 167.233.129.126
     port: 2474
     uuid: 287db857-de04-4212-bd69-5d14083e340e
     udp: true
     skipCertVerify: true
-  - name: N13 141.227.160.61
-    type: vless
-    server: 141.227.160.61
-    port: 8443
-    uuid: f59fdac3-5842-449b-8c8d-d5ebcdbf1768
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: apple.com
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: 6ba85179e30d4fc2
-    client-fingerprint: chrome
   - name: N14 72.35.246.39
     type: vless
     server: 72.35.246.39
@@ -130,7 +125,18 @@ proxies:
       public-key: RCm8x1FrSdaJ2NY9k5deQQZilwbubeK-4bcH_6E31wk
       short-id: 14f18ef16e7c32cc
     client-fingerprint: chrome
-  - name: N16 156.252.229.77
+  - name: N16 47.244.120.197
+    type: vmess
+    server: 47.244.120.197
+    port: 44867
+    uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    ws-opts:
+      path: /arki
+    network: ws
+  - name: N17 156.252.229.77
     type: vless
     server: 156.252.229.77
     port: 8443
@@ -143,7 +149,21 @@ proxies:
       public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
       short-id: 974f7f8f
     client-fingerprint: chrome
-  - name: N17 208.69.78.33
+  - name: N18 141.227.160.61
+    type: vless
+    server: 141.227.160.61
+    port: 8443
+    uuid: f59fdac3-5842-449b-8c8d-d5ebcdbf1768
+    udp: true
+    skipCertVerify: true
+    flow: xtls-rprx-vision
+    tls: true
+    servername: apple.com
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: N19 208.69.78.33
     type: trojan
     server: 208.69.78.33
     port: 443
@@ -151,7 +171,7 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: courses.yourultimateprofessionalcareerhub.com
-  - name: N18 216.106.191.201
+  - name: N20 216.106.191.201
     type: vless
     server: 216.106.191.201
     port: 10303
@@ -165,7 +185,7 @@ proxies:
       public-key: suK-MYTtZhJ9IJgsxPLTHLQadNotDqYslQcd5BNV_EQ
       short-id: 6aa50b0cc8d23464
     client-fingerprint: chrome
-  - name: N19 102.37.156.224
+  - name: N21 102.37.156.224
     type: ss
     server: 102.37.156.224
     port: 443
@@ -189,14 +209,16 @@ proxy-groups:
       - N09 202.50.253.45
       - N10 202.50.253.99
       - N11 70.34.207.14
-      - N12 167.233.129.126
-      - N13 141.227.160.61
+      - N12 140.235.11.243
+      - N13 167.233.129.126
       - N14 72.35.246.39
       - N15 167.17.64.67
-      - N16 156.252.229.77
-      - N17 208.69.78.33
-      - N18 216.106.191.201
-      - N19 102.37.156.224
+      - N16 47.244.120.197
+      - N17 156.252.229.77
+      - N18 141.227.160.61
+      - N19 208.69.78.33
+      - N20 216.106.191.201
+      - N21 102.37.156.224
   - name: 自动选择
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -213,14 +235,16 @@ proxy-groups:
       - N09 202.50.253.45
       - N10 202.50.253.99
       - N11 70.34.207.14
-      - N12 167.233.129.126
-      - N13 141.227.160.61
+      - N12 140.235.11.243
+      - N13 167.233.129.126
       - N14 72.35.246.39
       - N15 167.17.64.67
-      - N16 156.252.229.77
-      - N17 208.69.78.33
-      - N18 216.106.191.201
-      - N19 102.37.156.224
+      - N16 47.244.120.197
+      - N17 156.252.229.77
+      - N18 141.227.160.61
+      - N19 208.69.78.33
+      - N20 216.106.191.201
+      - N21 102.37.156.224
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -237,13 +261,15 @@ proxy-groups:
       - N09 202.50.253.45
       - N10 202.50.253.99
       - N11 70.34.207.14
-      - N12 167.233.129.126
-      - N13 141.227.160.61
+      - N12 140.235.11.243
+      - N13 167.233.129.126
       - N14 72.35.246.39
       - N15 167.17.64.67
-      - N16 156.252.229.77
-      - N17 208.69.78.33
-      - N18 216.106.191.201
-      - N19 102.37.156.224
+      - N16 47.244.120.197
+      - N17 156.252.229.77
+      - N18 141.227.160.61
+      - N19 208.69.78.33
+      - N20 216.106.191.201
+      - N21 102.37.156.224
 rules:
   - "MATCH,节点选择"
