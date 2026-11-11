@@ -57,6 +57,7 @@ BEST = os.path.join(OUT, "nodes_best.json")
 PRIVATE = os.path.join(DATA, "private.yaml")      # 自建节点, 原样 mihomo proxies 片段
 FALLBACK = os.path.join(DATA, "fallback.yaml")    # 正规免费额度/WARP, 同上
 STATE = os.path.join(DATA, "gateway.json")
+CN_PREF = os.path.join(DATA, "cn_pref.json")      # 中国网络实测结果
 
 TEST_URL = "https://www.gstatic.com/generate_204"
 KEEP_DAYS = 7          # 历史池保留天数
@@ -137,13 +138,42 @@ def prune_history(history: dict, keep_days: int = KEEP_DAYS) -> dict:
     return {k: v for k, v in history.items() if v.get("last_ok", 0) >= cutoff}
 
 
-def pool_nodes(history: dict, alive: dict | None = None) -> list:
-    """取出当前可用节点, 按 (复检通过数, 评分) 降序。
+def load_cn_pref(keep_days: int = 7) -> dict:
+    """中国网络实测过的节点: {"server:port": {"ok": 1|0, "latency": ms, "at": ts}}。
+
+    为什么需要这个文件: 云端 runner 在美国, 它测出的延迟和"国内能不能连上"
+    相关度很低 —— 实测云端判活 40 个, 到国内只剩 13 个能连。免费节点的生死
+    很大程度取决于链路, 而链路只有从国内出发才测得准。
+
+    由 live_test.py --save 写入, 只在国内的机器上跑才会更新。超过 keep_days
+    自动失效, 避免拿半年前的结论指导今天的排序。
+    """
+    raw = load_json(CN_PREF, {})
+    cutoff = time.time() - keep_days * 86400
+    return {k: v for k, v in raw.items()
+            if isinstance(v, dict) and v.get("at", 0) >= cutoff}
+
+
+def _cn_rank(n: dict) -> int:
+    """中国实测优先级: 通过过 +1 / 没测过 0 / 测过但不通 -1。"""
+    v = n.get("cn_ok")
+    if v is None:
+        return 0
+    return 1 if v else -1
+
+
+def pool_nodes(history: dict, alive: dict | None = None,
+               cn: dict | None = None) -> list:
+    """取出当前可用节点, 按 (中国实测, 复检通过数, 评分) 降序。
 
     排序把 verify_ok 放在 score 前面: 复检 3/3 的永远排在只有 1/3 的前面。
     历史遗留节点没有 verify_ok 字段, 视为 0 排到最后 —— 它们还留着是为了
     防止新数据全灭, 但轮不到它们被优先使用。
+
+    cn 是来自中国网络的实测证据, 权重最高: 云端复检 3/3 但国内连不上的节点,
+    对使用者毫无价值, 必须排在"国内实测能通"的后面。
     """
+    cn = load_cn_pref() if cn is None else cn
     out = []
     for fp, rec in history.items():
         if alive is not None and alive.get(fp) is False:
@@ -155,8 +185,16 @@ def pool_nodes(history: dict, alive: dict | None = None) -> list:
         if n.get("verify_ok") is not None and n["verify_ok"] < 2:
             continue
         n["fp"] = fp
+        pref = cn.get(f"{n['server']}:{n['port']}")
+        n["cn_ok"] = None if pref is None else int(bool(pref.get("ok")))
+        if pref and pref.get("latency"):
+            n["cn_latency"] = pref["latency"]
         out.append(n)
-    out.sort(key=lambda n: (n.get("verify_ok") or 0, n.get("score") or 0), reverse=True)
+    # 中国实测通过的里面, 再按中国实测延迟从快到慢排 —— 那才是你实际感受到的数字。
+    out.sort(key=lambda n: (-_cn_rank(n),
+                            n.get("cn_latency") or 99999,
+                            -(n.get("verify_ok") or 0),
+                            -(n.get("score") or 0)))
     return out
 
 
