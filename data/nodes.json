@@ -1848,19 +1848,6 @@
  },
  {
   "proto": "ss",
-  "server": "82.38.31.149",
-  "port": 8080,
-  "cipher": "chacha20-ietf-poly1305",
-  "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-  "name": "canfingV2rayNG-36",
-  "source": "tg:@vpnfail_v2ray",
-  "fp": "d298647ba1f55785",
-  "sources": [
-   "tg:@vpnfail_v2ray"
-  ]
- },
- {
-  "proto": "ss",
   "server": "84.247.155.196",
   "port": 443,
   "cipher": "aes-256-gcm",
@@ -3578,6 +3565,27 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "136.148.77.93",
+  "port": 31892,
+  "uuid": "13b7e5d4-40e4-4137-8afe-b6d0d881a06a",
+  "tls": true,
+  "sni": "www.thesivulichs.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "i5rHE4mPA5tdqNj7SgOLBYYgM-tbwz0s8FEF0MwXgjE",
+  "sid": "4994a3ebb255ebc9",
+  "fp": "44a42daa40cb4b47",
+  "reality": true,
+  "name": "filembad-91",
+  "source": "tg:@vpnfail_v2ray",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -9537,20 +9545,20 @@
  },
  {
   "proto": "vless",
-  "server": "alaFI.marzban-locations.com",
-  "port": 6300,
-  "uuid": "8f6ccdb2-2b4e-4834-a90b-344bff490402",
-  "tls": true,
-  "sni": "play.google.com",
+  "server": "SUPmci.Deev-Guard.ir",
+  "port": 3036,
+  "uuid": "06965a0b-3617-4dec-9044-08e446c35732",
+  "tls": false,
+  "sni": "",
   "network": "tcp",
   "path": "",
   "host": "",
   "flow": "",
-  "pbk": "lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo",
+  "pbk": "",
   "sid": "",
-  "fp": "40efeacea8508d60",
-  "reality": true,
-  "name": "canfingV2rayNG-317",
+  "fp": "ce8e3cfac9d45662",
+  "reality": false,
+  "name": "filembad-79",
   "source": "tg:@vpnfail_v2ray",
   "sources": [
    "tg:@vpnfail_v2ray"
