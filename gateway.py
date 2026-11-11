@@ -552,7 +552,12 @@ def build_surge(pool: list, private: list, fallback: list, namer=None) -> str:
     节点名在这里用 N01/N02 这种纯 ASCII 短名: Surge 的 [Proxy Group] 是逗号分隔,
     名字里带空格和点虽然多数版本能认, 但一旦解析器抠字眼就会整组失效, 不值得赌。
     """
-    namer = namer or (lambda n, i: f"N{i:02d}")
+    # 名字里带上 IP: 客户端列表里只显示名字, 如果这里只有 N22, 用户报"N22 不通"
+    # 谁也说不清是哪个服务器 —— 而编号每轮重建都会变(按测速重排)。带上 IP 之后,
+    # 一个名字就是唯一标识, 不需要再回查任何对照表。
+    # 用 "-" 而不是空格分隔: Surge 的组是逗号分隔的裸文本, 名字里带空格多数版本
+    # 能认, 但一旦解析器抠字眼整组就失效, 不值得赌。
+    namer = namer or (lambda n, i: f"N{i:02d}-{n.get('server')}")
 
     lines_proxy: list[str] = ["DIRECT = direct"]
     legend: list[str] = []
