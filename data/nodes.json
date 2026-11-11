@@ -7525,27 +7525,6 @@
  },
  {
   "proto": "vless",
-  "server": "51.158.206.86",
-  "port": 23576,
-  "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-  "tls": true,
-  "sni": "fuck.rkn",
-  "network": "tcp",
-  "path": "",
-  "host": "",
-  "flow": "xtls-rprx-vision",
-  "pbk": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-  "sid": "01",
-  "fp": "e8bd95827283e53c",
-  "reality": true,
-  "name": "filembad-199",
-  "source": "tg:@vpnfail_v2ray",
-  "sources": [
-   "tg:@vpnfail_v2ray"
-  ]
- },
- {
-  "proto": "vless",
   "server": "51.77.217.70",
   "port": 2053,
   "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
@@ -10705,6 +10684,25 @@
   "fp": "185f9b5d0d639100",
   "sources": [
    "ermaozi"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "dashboard.amirdata.top",
+  "port": 5382,
+  "uuid": "44893e16-63b1-40ff-984e-88bc93507892",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "filembad-478",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "e9b02647b2034cbc",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
