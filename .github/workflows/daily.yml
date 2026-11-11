@@ -76,31 +76,55 @@ jobs:
           fi
 
       - name: 刷新 CDN 缓存
-        # 订阅走 jsDelivr(国内可直连)，但它会把 branch 引用缓存最长 12 小时。
-        # 注意: 清缓存不是立刻生效，实测要几十秒。所以清完必须回来校验，
-        # 直到 CDN 吐出的第一行和仓库里的文件一致，才算真的同步了。
+        # 订阅走 jsDelivr(国内可直连)，但它把 branch 引用缓存最长 12 小时。
+        # 两个坑，都踩过：
+        #   1) 清缓存不能早于 GitHub 自身分发 —— 否则 jsDelivr 回源拿到旧文件，
+        #      结果是"新文件要等 12 小时"，比不清更糟。所以先轮询 raw 确认已分发。
+        #   2) jsDelivr 对同一文件约 1 小时只放 1 次清除，连清会被 throttled。
+        #      所以只清一次，之后只做轮询校验，不再重复清。
         if: steps.commit.outputs.changed == 'true'
         run: |
           set -uo pipefail
-          BASE="https://cdn.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main"
-          EXPECT="$(head -1 out/sub.yaml)"      # 仓库里这份的真实时间戳
-          echo "期望: $EXPECT"
-          sleep 10                              # 等 github 自身的内容分发落定
-          for attempt in 1 2 3 4 5; do
-            for f in out/sub.yaml out/sub-base64.txt; do
-              curl -s --max-time 20 \
-                "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/${f}" >/dev/null \
-                || echo "  purge $f 请求失败(忽略)"
-            done
+          REPO="${GITHUB_REPOSITORY}"
+          EXPECT="$(head -1 out/sub.yaml)"     # 仓库里这份的真实时间戳
+          echo "目标版本: $EXPECT"
+
+          echo "· 等待 GitHub 分发新文件…"
+          distributed=0
+          for i in $(seq 1 18); do
+            got="$(curl -s --max-time 15 "https://raw.githubusercontent.com/${REPO}/main/out/sub.yaml" | head -1 || true)"
+            if [ "$got" = "$EXPECT" ]; then
+              echo "  ✓ 已分发（约 ${i}0 秒）"
+              distributed=1
+              break
+            fi
+            sleep 10
+          done
+          if [ "$distributed" != "1" ]; then
+            echo "::warning::GitHub 分发超时，仍尝试清缓存（可能失败）"
+          fi
+
+          echo "· 请求清除缓存（每文件 1 次）"
+          for f in out/sub.yaml out/sub-base64.txt; do
+            r="$(curl -s --max-time 20 "https://purge.jsdelivr.net/gh/${REPO}@main/${f}" || true)"
+            if echo "$r" | grep -q '"throttled": true'; then
+              echo "::warning::$f 被限流（1 小时内已清过），等自然过期"
+            else
+              echo "  已清除 $f"
+            fi
+          done
+
+          echo "· 轮询校验 CDN 内容"
+          for i in $(seq 1 20); do
             sleep 15
-            HEAD="$(curl -s --max-time 20 "${BASE}/out/sub.yaml" | head -1 || true)"
-            echo "第 ${attempt} 次校验: ${HEAD}"
-            if [ "$HEAD" = "$EXPECT" ]; then
+            got="$(curl -s --max-time 15 "https://cdn.jsdelivr.net/gh/${REPO}@main/out/sub.yaml" | head -1 || true)"
+            echo "  第 ${i} 次: ${got}"
+            if [ "$got" = "$EXPECT" ]; then
               echo "✅ CDN 已同步到最新"
               exit 0
             fi
           done
-          echo "::warning::CDN 刷新 5 次仍未同步，最迟 12 小时后自动过期"
+          echo "::warning::CDN 仍未同步，最迟 12 小时后自动过期"
 
       - name: 保存产物(便于在 Actions 页面直接下载)
         uses: actions/upload-artifact@v4

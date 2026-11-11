@@ -400,8 +400,11 @@ def build_config(pool: list, private: list, fallback: list,
             "proxy-groups": groups,
             "rules": ["MATCH,总出口"],
         }
+    # 云端 runner 是 UTC，直接打本地时间会让人看糊涂（显示 20:05 而北京是次日 04:05）。
+    # 统一按北京时间标注。
+    bj = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(time.time() + 8 * 3600))
     header = (
-        f"# nodepool  生成于 {time.strftime('%Y-%m-%d %H:%M:%S')}\n"
+        f"# nodepool  生成于 {bj} (北京时间)\n"
         f"# 节点数 {len(proxies)}  "
         f"(自建 {len(private)} / 免费额度 {len(fallback)} / 免费池 {len(pool)})\n"
         f"# 总出口 = fallback, 按 ①→②→③ 顺序自动降级\n"

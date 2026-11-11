@@ -10,27 +10,37 @@
 **Clash / mihomo / Clash Verge / Stash / 小火箭（Clash 模式）**
 
 ```
-https://cdn.jsdelivr.net/gh/baitmboop/mysub@main/out/sub.yaml
+https://gh-proxy.com/https://raw.githubusercontent.com/baitmboop/mysub/main/out/sub.yaml
 ```
 
 **v2rayN / v2rayNG / Shadowrocket（Base64 通用格式）**
 
 ```
-https://cdn.jsdelivr.net/gh/baitmboop/mysub@main/out/sub-base64.txt
+https://gh-proxy.com/https://raw.githubusercontent.com/baitmboop/mysub/main/out/sub-base64.txt
 ```
 
 两个地址内容一样，只是格式不同。**按你的客户端挑一个，所有设备都填它。**
 
-> **为什么不用 github 的原始地址？**
-> `raw.githubusercontent.com` 在国内直连实测 12 秒超时（被墙）。
-> 而 `cdn.jsdelivr.net` 直连 1.8 秒返回 200，内容完全相同。
-> 拉订阅这一步本身不能依赖代理——否则就是死锁，所以必须用国内能通的地址。
+### 万一上面这个打不开，换这几个（实测都可直连）
 
-**如果你在有代理的环境里，也可以用原始地址**（内容完全一致，无 CDN 缓存）：
+| 顺序 | 地址前缀 | 实测 | 新鲜度 |
+|---|---|---|---|
+| ① 主用 | `https://gh-proxy.com/https://raw.githubusercontent.com/baitmboop/mysub/main/` | 1.0s / 200 | **实时** |
+| ② 备用 | `https://ghfast.top/https://raw.githubusercontent.com/baitmboop/mysub/main/` | 1.7s / 200 | **实时** |
+| ③ 备用 | `https://cdn.jsdelivr.net/gh/baitmboop/mysub@main/` | 1.8s / 200 | 可能滞后 ≤12h |
+| ④ 有代理时 | `https://raw.githubusercontent.com/baitmboop/mysub/main/` | 直连超时 | 实时 |
 
-```
-https://raw.githubusercontent.com/baitmboop/mysub/main/out/sub.yaml
-```
+用的时候把前缀接上 `out/sub.yaml`（Clash）或 `out/sub-base64.txt`（Base64）。
+比如备用 ② 就是 `https://ghfast.top/https://raw.githubusercontent.com/baitmboop/mysub/main/out/sub.yaml`。
+
+> **为什么不用 github 原始地址？** `raw.githubusercontent.com` 在国内直连实测 **12 秒超时**
+> （被墙）。而拉订阅这一步本身不能依赖代理——否则就是死锁（没订阅就连不上，连不上就拉不到订阅）。
+> 所以必须走一个国内能通的转发。
+>
+> **为什么不主用 jsDelivr？** 它是正规 CDN、最稳定，但它把 `@main` 缓存最长 12 小时，
+> 而且清缓存接口对同一文件约 1 小时只放 1 次（实测返回 `throttled`）。
+> 主用它的后果是：**你可能拿到昨天那份**。上面 ①② 是实时回源的 GitHub 反代，
+> 每次拉都是最新，代价是它们是社区服务、理论上可能失效——所以备着 4 个地址。
 
 ---
 
@@ -80,17 +90,17 @@ https://raw.githubusercontent.com/baitmboop/mysub/main/out/sub.yaml
 
 ---
 
-## 首次实测记录（2026-11-11）
+## 首次部署实测记录（2026-11-11）
 
 | 项目 | 结果 |
 |---|---|
-| Actions 运行 | Run #1，**success**，耗时约 2 分钟 |
-| 产出节点 | **55 个**（本机同时段只测出 12 个） |
+| Actions 运行 | Run #1 / #2 / #3 全部 **success**，每次约 2 分钟 |
+| 节点数量 | 55 → 65 → **74 个**（历史池逐轮累积，本机同时段只测出 12 个） |
 | 配置校验 | `mihomo -t` 通过 |
-| 端到端 | gstatic 204 / GitHub 200 / YouTube 200 / Wikipedia 301 |
+| 端到端 | gstatic 204 / GitHub 200 / YouTube 200 / x.com 200 |
 | 出口 IP | 80.174.118.151 |
 
-**为什么云端比本机多出 4 倍节点？** 因为 Actions 机器在美国机房，能直连的节点远多于国内网络。
+**为什么云端比本机多出 6 倍节点？** 因为 Actions 机器在美国机房，能直连的节点远多于国内网络。
 "筛掉死的"这一项，机房环境比本机更准——这也是当初决定"云端只筛活、不测速"的另一个理由。
 
 ---
@@ -131,10 +141,22 @@ https://raw.githubusercontent.com/baitmboop/mysub/main/out/sub.yaml
 
 订阅只提供节点和分组，端口、分流规则由你的客户端自己管理。这是标准做法，不是缺配置。
 
-**Q：CDN 缓存会不会让我拿到旧节点？**
+**Q：订阅会不会拿到旧的？**
 
-工作流每天跑完会主动调 jsDelivr 的清除接口（已实测有效）。即使清除失败，最长 12 小时也自然过期。
-按天更新的场景够用。
+主用的 gh-proxy / ghfast 是实时回源，拉到的一定是仓库里最新那份。
+如果你换成了 jsDelivr，它有最长 12 小时缓存——工作流里已经加了"清缓存 + 回验"步骤，
+但 jsDelivr 对同一文件约 1 小时只允许清 1 次，偶尔会滞后，属于兜底选项。
+
+**Q：怎么确认拿到的是最新版？**
+
+打开订阅地址，第一行就是生成时间（北京时间）：
+
+```
+# nodepool  生成于 2026-11-11 12:52:31 (北京时间)
+```
+
+定时任务是每天北京 04:00 跑，所以正常情况下这里应该是**今天凌晨 4 点左右**。
+如果还是前一天的，说明 CDN 滞后或者任务没跑成。
 
 **Q：仓库是公开的，安全吗？**
 
@@ -147,5 +169,8 @@ https://raw.githubusercontent.com/baitmboop/mysub/main/out/sub.yaml
 ## 你需要保管的东西
 
 - 仓库地址：`https://github.com/baitmboop/mysub`
-- 订阅地址：`https://cdn.jsdelivr.net/gh/baitmboop/mysub@main/out/sub.yaml`
+- 订阅地址（主用）：
+  `https://gh-proxy.com/https://raw.githubusercontent.com/baitmboop/mysub/main/out/sub.yaml`
+- 订阅地址（备用）：
+  `https://ghfast.top/https://raw.githubusercontent.com/baitmboop/mysub/main/out/sub.yaml`
 - 本机推送用的 SSH 私钥：`nodepool/.ssh/id_ed25519`（已 gitignore，**别删**，删了要重新配）
