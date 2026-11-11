@@ -27,16 +27,19 @@
   "proto": "http",
   "server": "192.227.176.234",
   "port": 443,
-  "name": "n1628",
+  "name": "n0045",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
   "tls": true,
   "sni": "",
   "skipCertVerify": true,
-  "fp": "192.227.176.234:443:http",
+  "fp": "646ebce06ed531e4",
+  "sources": [
+   "go4sharing/arch"
+  ],
   "latency": 84,
-  "jitter": 21,
+  "jitter": 8,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
@@ -188,23 +191,21 @@
   "proto": "ss",
   "server": "3.16.78.3",
   "port": 443,
-  "name": "n0588",
-  "source": "tg:@wxdy666→sub",
+  "name": "n2358",
+  "source": "tg:@wxdy666",
   "cipher": "aes-256-cfb",
   "password": "amazonskr05",
-  "fp": "4fde0716d9b3a394",
-  "sources": [
-   "tg:@wxdy666→sub"
-  ],
-  "latency": 63,
-  "jitter": 12,
+  "_src": "wxdy666",
+  "fp": "3.16.78.3:443:ss",
+  "latency": 64,
+  "jitter": 8,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8031,
+  "score": 0.8,
   "speed": 0.0,
   "cn_ok": 1,
   "cn_by": "auto",
@@ -577,6 +578,29 @@
   "cn_speed": 0.1811
  },
  {
+  "proto": "vless",
+  "server": "185.255.95.131",
+  "port": 11738,
+  "uuid": "e38111aa-f62a-46ad-a538-6f3003f2f43d",
+  "tls": true,
+  "sni": "www.asus.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "DqPCXKIPN4NDurylwyVdPsaW9V1uYktHSon4n2Kb1y8",
+  "sid": "7815104c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "🇹🇷TR_1|1.6MB/s | 福利姬: https://t.me/fuliji_Arrest",
+  "source": "tg:@byxiaoxi",
+  "fp": "185.255.95.131:11738:vless",
+  "cn_ok": 1,
+  "cn_by": "auto",
+  "cn_latency": 1192,
+  "cn_speed": 0.1348
+ },
+ {
   "proto": "http",
   "server": "185.219.159.15",
   "port": 443,
@@ -798,39 +822,6 @@
   "cn_ok": null
  },
  {
-  "proto": "vless",
-  "server": "195.123.240.65",
-  "port": 443,
-  "uuid": "ce18d0eb-5c71-41f9-96e5-1632e22456e4",
-  "tls": true,
-  "sni": "www.cloudflare.com",
-  "network": "tcp",
-  "path": "",
-  "host": "",
-  "flow": "xtls-rprx-vision",
-  "pbk": "StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE",
-  "sid": "19296c9f1bf9c7b1",
-  "utls": "chrome",
-  "reality": true,
-  "name": "n1564",
-  "source": "tg:@byxiaoxi→blog",
-  "fp": "d39b59d7a23ea25b",
-  "sources": [
-   "tg:@byxiaoxi→blog"
-  ],
-  "latency": 29,
-  "jitter": 12,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9094,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
   "proto": "trojan",
   "server": "66.163.112.121",
   "port": 443,
@@ -849,34 +840,6 @@
   ],
   "latency": 31,
   "jitter": 14,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9031,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "trojan",
-  "server": "66.163.112.171",
-  "port": 443,
-  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-  "sni": "learn.unlockyourfuturefindyourperfectcareer.com",
-  "network": "tcp",
-  "path": "",
-  "host": "",
-  "skipCertVerify": false,
-  "name": "n1172",
-  "source": "tg:@byxiaoxi→blog",
-  "fp": "082a22e0b9a8fea4",
-  "sources": [
-   "tg:@byxiaoxi→blog"
-  ],
-  "latency": 31,
-  "jitter": 3,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
@@ -984,6 +947,54 @@
    "cf-trace": "ok"
   },
   "score": 0.8986,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "ss",
+  "server": "15.156.192.45",
+  "port": 443,
+  "cipher": "aes-256-cfb",
+  "password": "amazonskr05",
+  "name": "n0279",
+  "source": "mahdibland",
+  "fp": "e2079e7dcd5659e9",
+  "sources": [
+   "mahdibland"
+  ],
+  "latency": 75,
+  "jitter": 3,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8973,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "ss",
+  "server": "185.230.230.18",
+  "port": 19999,
+  "cipher": "aes-256-gcm",
+  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+  "name": "n0354",
+  "source": "mahdibland",
+  "fp": "e16af0cbdacd8a68",
+  "sources": [
+   "mahdibland"
+  ],
+  "latency": 75,
+  "jitter": 1,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8973,
   "speed": 0.0,
   "cn_ok": null
  }
