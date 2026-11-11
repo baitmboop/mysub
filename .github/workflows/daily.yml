@@ -86,7 +86,21 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "chore: 更新订阅 $(date -u +%Y-%m-%d)"
-            git push
+            # fetch 窗口里如果有人也在推(手动改代码、另一个 run 刚提交),
+            # 裸 git push 会被拒, 整个 run 变红但产物没提交 —— 跑过 #12 就是这样。
+            # 现在每 3 小时一次, 撞上的机会比以前多 8 倍, 所以带重试。
+            pushed=0
+            for i in 1 2 3; do
+              if git push; then pushed=1; break; fi
+              echo "::warning::推送被拒(第 $i 次), 拉取最新后重试"
+              git pull --rebase -X theirs origin main \
+                || git rebase --abort 2>/dev/null || true
+              sleep 3
+            done
+            if [ "$pushed" != "1" ]; then
+              echo "::error::连续 3 次推送失败, 本轮产物未提交(下一轮会重来)"
+              exit 1
+            fi
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
