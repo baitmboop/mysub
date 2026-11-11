@@ -91,7 +91,7 @@ jobs:
 
           echo "· 等待 GitHub 分发新文件…"
           distributed=0
-          for i in $(seq 1 18); do
+          for i in $(seq 1 6); do
             got="$(curl -s --max-time 15 "https://raw.githubusercontent.com/${REPO}/main/out/sub.yaml" | head -1 || true)"
             if [ "$got" = "$EXPECT" ]; then
               echo "  ✓ 已分发（约 ${i}0 秒）"
@@ -100,8 +100,12 @@ jobs:
             fi
             sleep 10
           done
+          # 没分发完就绝对不要清缓存：jsDelivr 会回源到旧文件并缓存 12 小时，
+          # 比不清更糟。宁可让它自然过期。
           if [ "$distributed" != "1" ]; then
-            echo "::warning::GitHub 分发超时，仍尝试清缓存（可能失败）"
+            echo "::warning::GitHub 60 秒内未分发完，跳过清缓存（jsDelivr 最迟 12 小时自然过期）"
+            echo "主用地址是实时回源的，不受影响。"
+            exit 0
           fi
 
           echo "· 请求清除缓存（每文件 1 次）"
