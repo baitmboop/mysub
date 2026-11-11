@@ -1,77 +1,5 @@
 [
  {
-  "proto": "ss",
-  "server": "15.235.164.133",
-  "port": 19999,
-  "cipher": "aes-256-gcm",
-  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-  "name": "n0059",
-  "source": "NoMoreWalls",
-  "fp": "b3b1118b9e613e19",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 203,
-  "jitter": 0,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8,
-  "speed": 0.0
- },
- {
-  "proto": "ss",
-  "server": "15.235.182.183",
-  "port": 19999,
-  "cipher": "aes-256-gcm",
-  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-  "name": "n0060",
-  "source": "NoMoreWalls",
-  "fp": "edc3772085b4453b",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 203,
-  "jitter": 1,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8,
-  "speed": 0.0
- },
- {
-  "proto": "ss",
-  "server": "51.79.228.131",
-  "port": 19999,
-  "cipher": "aes-256-gcm",
-  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-  "name": "n0112",
-  "source": "NoMoreWalls",
-  "fp": "52e7609cad5144f3",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 203,
-  "jitter": 0,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8,
-  "speed": 0.0
- },
- {
   "proto": "trojan",
   "server": "158.247.253.243",
   "port": 443,
@@ -87,69 +15,7 @@
   "sources": [
    "NoMoreWalls"
   ],
-  "latency": 197,
-  "jitter": 4,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8059,
-  "speed": 0.0
- },
- {
-  "proto": "vless",
-  "server": "89.187.7.4",
-  "port": 2166,
-  "uuid": "e1862eef-e3f2-4e27-b0a5-ddf8df384af9",
-  "tls": false,
-  "sni": "",
-  "network": "ws",
-  "path": "/Telegram=@AmyraxVPN",
-  "host": "89.187.7.4",
-  "flow": "",
-  "pbk": "",
-  "sid": "",
-  "fp": "4c1bc5c5e2ca8c58",
-  "reality": false,
-  "name": "n0496",
-  "source": "ermaozi",
-  "sources": [
-   "ermaozi"
-  ],
-  "latency": 195,
-  "jitter": 0,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8079,
-  "speed": 0.0
- },
- {
-  "proto": "vless",
-  "server": "germ.onlineai.pro",
-  "port": 14443,
-  "uuid": "010be6fa-ab5f-404a-9edf-ab2db1f09f0c",
-  "tls": true,
-  "sni": "germ.onlineai.pro",
-  "network": "ws",
-  "path": "/api/generate",
-  "host": "germ.onlineai.pro",
-  "flow": "",
-  "pbk": "",
-  "sid": "",
-  "fp": "4b305fdcd756d867",
-  "reality": false,
-  "name": "n0544",
-  "source": "ermaozi",
-  "sources": [
-   "ermaozi"
-  ],
-  "latency": 194,
+  "latency": 209,
   "jitter": 5,
   "verify_ok": 3,
   "verify": {
@@ -157,102 +23,7 @@
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8089,
-  "speed": 0.0
- },
- {
-  "proto": "vless",
-  "server": "5.42.107.38",
-  "port": 14443,
-  "uuid": "010be6fa-ab5f-404a-9edf-ab2db1f09f0c",
-  "tls": true,
-  "sni": "germ.onlineai.pro",
-  "network": "ws",
-  "path": "/api/generate",
-  "host": "germ.onlineai.pro",
-  "flow": "",
-  "pbk": "",
-  "sid": "",
-  "fp": "0caff21f7e65963e",
-  "reality": false,
-  "name": "n0431",
-  "source": "ermaozi",
-  "sources": [
-   "ermaozi"
-  ],
-  "latency": 193,
-  "jitter": 5,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8099,
-  "speed": 0.0
- },
- {
-  "proto": "vless",
-  "server": "95.174.68.188",
-  "port": 14430,
-  "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
-  "tls": false,
-  "sni": "",
-  "network": "ws",
-  "path": "/vless",
-  "host": "95.174.68.188",
-  "flow": "",
-  "pbk": "",
-  "sid": "",
-  "fp": "5379aef0473f1d66",
-  "reality": false,
-  "name": "n0508",
-  "source": "NoMoreWalls",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 189,
-  "jitter": 20,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8138,
-  "speed": 0.0
- },
- {
-  "proto": "vless",
-  "server": "138.124.49.108",
-  "port": 8443,
-  "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e",
-  "tls": true,
-  "sni": "fs.qicai99.com",
-  "network": "ws",
-  "path": "/fp=chrome",
-  "host": "fs.qicai99.com",
-  "flow": "",
-  "pbk": "",
-  "sid": "",
-  "fp": "4f71b219e8ab5819",
-  "reality": false,
-  "name": "n0229",
-  "source": "NoMoreWalls",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 188,
-  "jitter": 12,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8148,
+  "score": 0.8,
   "speed": 0.0
  },
  {
@@ -270,21 +41,51 @@
   "sid": "",
   "fp": "8060be589afe47bb",
   "reality": false,
-  "name": "n0465",
+  "name": "n0457",
   "source": "NoMoreWalls",
   "sources": [
    "NoMoreWalls",
    "ermaozi"
   ],
-  "latency": 182,
-  "jitter": 2,
+  "latency": 208,
+  "jitter": 58,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8207,
+  "score": 0.801,
+  "speed": 0.0
+ },
+ {
+  "proto": "vmess",
+  "server": "47.244.120.197",
+  "port": 23026,
+  "uuid": "b9de1bc9-baa7-41ac-86f7-ccd59695cb21",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "47.244.120.197",
+  "network": "ws",
+  "path": "/arki",
+  "host": "47.244.120.197",
+  "name": "n0598",
+  "source": "NoMoreWalls",
+  "fp": "32df304db850c865",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 203,
+  "jitter": 4,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8057,
   "speed": 0.0
  },
  {
@@ -304,86 +105,7 @@
    "NoMoreWalls",
    "ermaozi"
   ],
-  "latency": 181,
-  "jitter": 3,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8217,
-  "speed": 0.0
- },
- {
-  "proto": "ss",
-  "server": "38.60.223.125",
-  "port": 13108,
-  "cipher": "aes-128-gcm",
-  "password": "8722de56b6c0b3f6a4d01cf91c07e6aa",
-  "name": "n0102",
-  "source": "NoMoreWalls",
-  "fp": "47767087fc59cdce",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 172,
-  "jitter": 10,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8305,
-  "speed": 0.0
- },
- {
-  "proto": "vless",
-  "server": "15.236.109.186",
-  "port": 2053,
-  "uuid": "fbda2834-b1e7-4148-afb9-deda31036a30",
-  "tls": true,
-  "sni": "w.geogame.ir",
-  "network": "tcp",
-  "path": "",
-  "host": "",
-  "flow": "",
-  "pbk": "",
-  "sid": "",
-  "fp": "a37be7544b1bf091",
-  "reality": false,
-  "name": "n0254",
-  "source": "ermaozi",
-  "sources": [
-   "ermaozi"
-  ],
-  "latency": 163,
-  "jitter": 75,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8394,
-  "speed": 0.0
- },
- {
-  "proto": "ss",
-  "server": "194.68.44.42",
-  "port": 64546,
-  "cipher": "chacha20-ietf-poly1305",
-  "password": "U83u9OGpvSatIUW7LsWffr",
-  "name": "n0082",
-  "source": "NoMoreWalls",
-  "fp": "dbbabd839973551f",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 159,
+  "latency": 191,
   "jitter": 6,
   "verify_ok": 3,
   "verify": {
@@ -391,31 +113,126 @@
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8433,
+  "score": 0.8172,
   "speed": 0.0
  },
  {
   "proto": "vless",
-  "server": "178.172.227.228",
-  "port": 14430,
-  "uuid": "b6e5dc56-836f-48c1-9163-b0b0b43b647d",
-  "tls": false,
-  "sni": "178.172.227.228",
+  "server": "138.124.124.157",
+  "port": 443,
+  "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e",
+  "tls": true,
+  "sni": "fs.qicai99.com",
   "network": "ws",
-  "path": "/vless",
-  "host": "178.172.227.228",
+  "path": "/fp=chrome",
+  "host": "fs.qicai99.com",
   "flow": "",
   "pbk": "",
   "sid": "",
-  "fp": "a0f03aff393c314e",
+  "fp": "f4d8aa14bf50f13f",
   "reality": false,
-  "name": "n0295",
+  "name": "n0227",
+  "source": "NoMoreWalls",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi",
+   "tg:@oneclickvpnkeys"
+  ],
+  "latency": 190,
+  "jitter": 10,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8182,
+  "speed": 0.0
+ },
+ {
+  "proto": "vless",
+  "server": "5.42.107.38",
+  "port": 14443,
+  "uuid": "010be6fa-ab5f-404a-9edf-ab2db1f09f0c",
+  "tls": true,
+  "sni": "germ.onlineai.pro",
+  "network": "ws",
+  "path": "/api/generate",
+  "host": "germ.onlineai.pro",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "fp": "0caff21f7e65963e",
+  "reality": false,
+  "name": "n0424",
+  "source": "ermaozi",
+  "sources": [
+   "ermaozi"
+  ],
+  "latency": 182,
+  "jitter": 3,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8258,
+  "speed": 0.0
+ },
+ {
+  "proto": "vless",
+  "server": "germ.onlineai.pro",
+  "port": 14443,
+  "uuid": "010be6fa-ab5f-404a-9edf-ab2db1f09f0c",
+  "tls": true,
+  "sni": "germ.onlineai.pro",
+  "network": "ws",
+  "path": "/api/generate",
+  "host": "germ.onlineai.pro",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "fp": "4b305fdcd756d867",
+  "reality": false,
+  "name": "n0533",
+  "source": "ermaozi",
+  "sources": [
+   "ermaozi"
+  ],
+  "latency": 182,
+  "jitter": 3,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8258,
+  "speed": 0.0
+ },
+ {
+  "proto": "vless",
+  "server": "95.174.68.188",
+  "port": 14430,
+  "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/vless",
+  "host": "95.174.68.188",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "fp": "5379aef0473f1d66",
+  "reality": false,
+  "name": "n0499",
   "source": "NoMoreWalls",
   "sources": [
    "NoMoreWalls",
    "ermaozi"
   ],
-  "latency": 155,
+  "latency": 175,
   "jitter": 17,
   "verify_ok": 3,
   "verify": {
@@ -423,32 +240,72 @@
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8473,
+  "score": 0.8325,
   "speed": 0.0
  },
  {
-  "proto": "hysteria2",
-  "server": "31.76.62.148",
-  "port": 4444,
-  "password": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
-  "sni": "lv2.nexfile.net",
-  "skipCertVerify": false,
-  "name": "n0032",
+  "proto": "vless",
+  "server": "138.124.49.108",
+  "port": 8443,
+  "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e",
+  "tls": true,
+  "sni": "fs.qicai99.com",
+  "network": "ws",
+  "path": "/fp=chrome",
+  "host": "fs.qicai99.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "fp": "4f71b219e8ab5819",
+  "reality": false,
+  "name": "n0228",
   "source": "NoMoreWalls",
-  "fp": "ead8412a405c695d",
   "sources": [
    "NoMoreWalls",
    "ermaozi"
   ],
-  "latency": 150,
-  "jitter": 9,
+  "latency": 173,
+  "jitter": 5,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8522,
+  "score": 0.8344,
+  "speed": 0.0
+ },
+ {
+  "proto": "vless",
+  "server": "109.120.134.181",
+  "port": 443,
+  "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e",
+  "tls": true,
+  "sni": "fs.qicai99.com",
+  "network": "ws",
+  "path": "/fp=chrome",
+  "host": "fs.qicai99.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "fp": "99a70124d221c288",
+  "reality": false,
+  "name": "n0210",
+  "source": "NoMoreWalls",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi",
+   "tg:@oneclickvpnkeys"
+  ],
+  "latency": 172,
+  "jitter": 5,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8354,
   "speed": 0.0
  },
  {
@@ -466,45 +323,138 @@
   "sid": "",
   "fp": "e5592e13a1ad70bb",
   "reality": false,
-  "name": "n0269",
+  "name": "n0268",
   "source": "ermaozi",
   "sources": [
    "ermaozi"
   ],
-  "latency": 148,
-  "jitter": 1,
+  "latency": 161,
+  "jitter": 9,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8542,
+  "score": 0.8459,
   "speed": 0.0
  },
  {
-  "proto": "hysteria2",
-  "server": "104.165.205.42",
-  "port": 8443,
-  "password": "54d2f622-fd71-4f5f-8813-832b68f4ca3b",
-  "sni": "speedtestmark.com",
-  "skipCertVerify": false,
-  "name": "n0000",
+  "proto": "ss",
+  "server": "38.60.223.125",
+  "port": 13108,
+  "cipher": "aes-128-gcm",
+  "password": "8722de56b6c0b3f6a4d01cf91c07e6aa",
+  "name": "n0102",
   "source": "NoMoreWalls",
-  "fp": "1ae02fa00a58df69",
+  "fp": "47767087fc59cdce",
   "sources": [
    "NoMoreWalls",
    "ermaozi"
   ],
-  "latency": 143,
-  "jitter": 21,
+  "latency": 156,
+  "jitter": 0,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8591,
+  "score": 0.8507,
+  "speed": 0.0
+ },
+ {
+  "proto": "vless",
+  "server": "w.geogame.ir",
+  "port": 2053,
+  "uuid": "fbda2834-b1e7-4148-afb9-deda31036a30",
+  "tls": true,
+  "sni": "w.geogame.ir",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "fp": "8a15d5bd989ba297",
+  "reality": false,
+  "name": "n0573",
+  "source": "NoMoreWalls",
+  "sources": [
+   "NoMoreWalls"
+  ],
+  "latency": 156,
+  "jitter": 129,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8507,
+  "speed": 0.0
+ },
+ {
+  "proto": "vless",
+  "server": "178.172.227.124",
+  "port": 14430,
+  "uuid": "1af36694-b548-4b18-89a0-bc076eab4ed7",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/vless",
+  "host": "178.172.227.124",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "fp": "d28dbc34f0cbe211",
+  "reality": false,
+  "name": "n0292",
+  "source": "NoMoreWalls",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 155,
+  "jitter": 17,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8517,
+  "speed": 0.0
+ },
+ {
+  "proto": "vless",
+  "server": "15.236.109.186",
+  "port": 2053,
+  "uuid": "fbda2834-b1e7-4148-afb9-deda31036a30",
+  "tls": true,
+  "sni": "w.geogame.ir",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "fp": "a37be7544b1bf091",
+  "reality": false,
+  "name": "n0253",
+  "source": "ermaozi",
+  "sources": [
+   "ermaozi"
+  ],
+  "latency": 154,
+  "jitter": 71,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8526,
   "speed": 0.0
  },
  {
@@ -522,12 +472,61 @@
   "sid": "",
   "fp": "40c19c9d37d5a2fc",
   "reality": false,
-  "name": "n0572",
+  "name": "n0561",
   "source": "NoMoreWalls",
   "sources": [
    "NoMoreWalls"
   ],
-  "latency": 142,
+  "latency": 153,
+  "jitter": 1,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8536,
+  "speed": 0.0
+ },
+ {
+  "proto": "hysteria2",
+  "server": "104.165.205.42",
+  "port": 8443,
+  "password": "54d2f622-fd71-4f5f-8813-832b68f4ca3b",
+  "sni": "speedtestmark.com",
+  "skipCertVerify": false,
+  "name": "n0000",
+  "source": "NoMoreWalls",
+  "fp": "1ae02fa00a58df69",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 151,
+  "jitter": 22,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8555,
+  "speed": 0.0
+ },
+ {
+  "proto": "ss",
+  "server": "130.49.189.158",
+  "port": 43558,
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=",
+  "name": "n0050",
+  "source": "NoMoreWalls",
+  "fp": "9f06248bc09cb482",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 148,
   "jitter": 2,
   "verify_ok": 3,
   "verify": {
@@ -535,67 +534,112 @@
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8601,
+  "score": 0.8584,
   "speed": 0.0
  },
  {
-  "proto": "trojan",
-  "server": "216.238.104.154",
-  "port": 443,
-  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-  "sni": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
-  "network": "tcp",
-  "path": "",
-  "host": "",
-  "skipCertVerify": false,
-  "name": "n0170",
+  "proto": "ss",
+  "server": "194.68.44.42",
+  "port": 64546,
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "U83u9OGpvSatIUW7LsWffr",
+  "name": "n0082",
   "source": "NoMoreWalls",
-  "fp": "7f5be192b849d8ea",
+  "fp": "dbbabd839973551f",
   "sources": [
    "NoMoreWalls",
    "ermaozi"
   ],
-  "latency": 137,
-  "jitter": 3,
+  "latency": 148,
+  "jitter": 2,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.865,
+  "score": 0.8584,
   "speed": 0.0
  },
  {
   "proto": "vless",
-  "server": "45.144.234.157",
-  "port": 14430,
-  "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+  "server": "45.86.60.174",
+  "port": 16443,
+  "uuid": "13e541f3-d09d-4633-89df-8513db0ced20",
   "tls": false,
-  "sni": "45.144.234.157",
-  "network": "ws",
-  "path": "/vless",
-  "host": "45.144.234.157",
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
   "flow": "",
   "pbk": "",
   "sid": "",
-  "fp": "7ac30717bef2e7b5",
+  "fp": "d1a78835093e9b3e",
   "reality": false,
-  "name": "n0402",
+  "name": "n0409",
   "source": "NoMoreWalls",
   "sources": [
    "NoMoreWalls",
    "ermaozi"
   ],
-  "latency": 137,
-  "jitter": 14,
+  "latency": 142,
+  "jitter": 12,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.865,
+  "score": 0.8641,
+  "speed": 0.0
+ },
+ {
+  "proto": "ss",
+  "server": "bogging-eyeteeth-fly.freesocks.work",
+  "port": 443,
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "QFWzCw2uX9B9i6qAYeFBIE",
+  "name": "n0133",
+  "source": "NoMoreWalls",
+  "fp": "da44064fe455a6fc",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 134,
+  "jitter": 1,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8718,
+  "speed": 0.0
+ },
+ {
+  "proto": "hysteria2",
+  "server": "31.76.62.148",
+  "port": 4444,
+  "password": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
+  "sni": "lv2.nexfile.net",
+  "skipCertVerify": false,
+  "name": "n0032",
+  "source": "NoMoreWalls",
+  "fp": "ead8412a405c695d",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 130,
+  "jitter": 6,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8756,
   "speed": 0.0
  },
  {
@@ -615,7 +659,7 @@
    "NoMoreWalls",
    "ermaozi"
   ],
-  "latency": 136,
+  "latency": 130,
   "jitter": 1,
   "verify_ok": 3,
   "verify": {
@@ -623,292 +667,39 @@
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.866,
+  "score": 0.8756,
   "speed": 0.0
  },
  {
   "proto": "vless",
-  "server": "193.219.97.198",
-  "port": 443,
-  "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e",
-  "tls": true,
-  "sni": "fs.qicai99.com",
-  "network": "ws",
-  "path": "/fp=chrome",
-  "host": "fs.qicai99.com",
-  "flow": "",
-  "pbk": "",
-  "sid": "",
-  "fp": "b61b3c3ada233a61",
-  "reality": false,
-  "name": "n0326",
-  "source": "NoMoreWalls",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi",
-   "tg:@oneclickvpnkeys"
-  ],
-  "latency": 135,
-  "jitter": 18,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.867,
-  "speed": 0.0
- },
- {
-  "proto": "ss",
-  "server": "167.17.71.167",
-  "port": 19999,
-  "cipher": "aes-256-gcm",
-  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-  "name": "n0070",
-  "source": "NoMoreWalls",
-  "fp": "f2ba5593b8d4defb",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 133,
-  "jitter": 4,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.869,
-  "speed": 0.0
- },
- {
-  "proto": "ss",
-  "server": "66.163.118.103",
-  "port": 19999,
-  "cipher": "aes-256-gcm",
-  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-  "name": "n0122",
-  "source": "NoMoreWalls",
-  "fp": "81eb30449a267916",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 133,
-  "jitter": 5,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.869,
-  "speed": 0.0
- },
- {
-  "proto": "hysteria2",
-  "server": "13.143.189.105",
-  "port": 4444,
-  "password": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
-  "sni": "pl2.nexfile.net",
-  "skipCertVerify": false,
-  "name": "n0006",
-  "source": "NoMoreWalls",
-  "fp": "e60d7254419eab14",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 131,
-  "jitter": 1,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8709,
-  "speed": 0.0
- },
- {
-  "proto": "hysteria2",
-  "server": "13.143.189.106",
-  "port": 4444,
-  "password": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
-  "sni": "pl2.nexfile.net",
-  "skipCertVerify": false,
-  "name": "n0007",
-  "source": "NoMoreWalls",
-  "fp": "44cd3ca7d96b9e4a",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 129,
-  "jitter": 2,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8729,
-  "speed": 0.0
- },
- {
-  "proto": "ss",
-  "server": "152.53.1.57",
-  "port": 8388,
-  "cipher": "chacha20-ietf-poly1305",
-  "password": "AdawffFMHymlasRb0VOP3HFf7sTG5sJx",
-  "name": "n0063",
-  "source": "NoMoreWalls",
-  "fp": "4c6072b701f239da",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 129,
-  "jitter": 2,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8729,
-  "speed": 0.0
- },
- {
-  "proto": "ss",
-  "server": "oztq9osla2ad.dop15.com",
-  "port": 26412,
-  "cipher": "2022-blake3-aes-256-gcm",
-  "password": "L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U=",
-  "name": "n0135",
-  "source": "NoMoreWalls",
-  "fp": "11f21bc24ef267c3",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 129,
-  "jitter": 13,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8729,
-  "speed": 0.0
- },
- {
-  "proto": "ss",
-  "server": "70.34.212.124",
-  "port": 8388,
-  "cipher": "aes-256-gcm",
-  "password": "AxIYWtskJWIIaefW",
-  "name": "n0123",
-  "source": "NoMoreWalls",
-  "fp": "7aecc316034973a0",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 128,
-  "jitter": 16,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8739,
-  "speed": 0.0
- },
- {
-  "proto": "hysteria2",
-  "server": "13.143.189.147",
-  "port": 4444,
-  "password": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
-  "sni": "pl2.nexfile.net",
-  "skipCertVerify": false,
-  "name": "n0010",
-  "source": "NoMoreWalls",
-  "fp": "9d1691d62f628c80",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 127,
-  "jitter": 2,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8749,
-  "speed": 0.0
- },
- {
-  "proto": "vless",
-  "server": "5.178.109.174",
+  "server": "178.172.227.228",
   "port": 14430,
-  "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+  "uuid": "b6e5dc56-836f-48c1-9163-b0b0b43b647d",
   "tls": false,
-  "sni": "",
+  "sni": "178.172.227.228",
   "network": "ws",
   "path": "/vless",
-  "host": "5.178.109.174",
+  "host": "178.172.227.228",
   "flow": "",
   "pbk": "",
   "sid": "",
-  "fp": "a3cc329a56bbb76e",
+  "fp": "a0f03aff393c314e",
   "reality": false,
-  "name": "n0428",
+  "name": "n0293",
   "source": "NoMoreWalls",
   "sources": [
    "NoMoreWalls",
    "ermaozi"
   ],
-  "latency": 126,
-  "jitter": 24,
+  "latency": 129,
+  "jitter": 17,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8759,
-  "speed": 0.0
- },
- {
-  "proto": "hysteria2",
-  "server": "13.143.189.149",
-  "port": 4444,
-  "password": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
-  "sni": "pl2.nexfile.net",
-  "skipCertVerify": false,
-  "name": "n0011",
-  "source": "NoMoreWalls",
-  "fp": "1a6a22af3689590e",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 125,
-  "jitter": 4,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8768,
+  "score": 0.8766,
   "speed": 0.0
  },
  {
@@ -926,54 +717,6 @@
    "ermaozi"
   ],
   "latency": 124,
-  "jitter": 10,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8778,
-  "speed": 0.0
- },
- {
-  "proto": "ss",
-  "server": "51.79.64.198",
-  "port": 8119,
-  "cipher": "aes-256-gcm",
-  "password": "cdBIDV42DCwnfIN",
-  "name": "n0114",
-  "source": "NoMoreWalls",
-  "fp": "dc32219a924be32e",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 124,
-  "jitter": 173,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8778,
-  "speed": 0.0
- },
- {
-  "proto": "ss",
-  "server": "82.110.60.9",
-  "port": 19999,
-  "cipher": "aes-256-gcm",
-  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-  "name": "n0128",
-  "source": "NoMoreWalls",
-  "fp": "289a0e0ae0dd5c16",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 124,
   "jitter": 1,
   "verify_ok": 3,
   "verify": {
@@ -981,55 +724,7 @@
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8778,
-  "speed": 0.0
- },
- {
-  "proto": "ss",
-  "server": "193.148.19.214",
-  "port": 12798,
-  "cipher": "aes-128-gcm",
-  "password": "cd706a104284a70f9cffe6ac1df63c18",
-  "name": "n0080",
-  "source": "NoMoreWalls",
-  "fp": "07ced6a70735e5dc",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 123,
-  "jitter": 5,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8788,
-  "speed": 0.0
- },
- {
-  "proto": "ss",
-  "server": "138.199.55.243",
-  "port": 19999,
-  "cipher": "aes-256-gcm",
-  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-  "name": "n0051",
-  "source": "NoMoreWalls",
-  "fp": "f28a671904c7577b",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi"
-  ],
-  "latency": 122,
-  "jitter": 11,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8798,
+  "score": 0.8813,
   "speed": 0.0
  },
  {
@@ -1047,36 +742,222 @@
   "sid": "",
   "fp": "b53826aac2fd31e3",
   "reality": false,
-  "name": "n0485",
+  "name": "n0477",
   "source": "tg:@oneclickvpnkeys",
   "sources": [
    "tg:@oneclickvpnkeys"
   ],
-  "latency": 122,
-  "jitter": 6,
+  "latency": 124,
+  "jitter": 13,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8798,
+  "score": 0.8813,
   "speed": 0.0
  },
  {
   "proto": "ss",
-  "server": "202.50.253.81",
-  "port": 19999,
-  "cipher": "aes-256-gcm",
-  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-  "name": "n0092",
+  "server": "oztq9osla2ad.dop15.com",
+  "port": 26412,
+  "cipher": "2022-blake3-aes-256-gcm",
+  "password": "L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U=",
+  "name": "n0135",
   "source": "NoMoreWalls",
-  "fp": "303e5a2070ad53b2",
+  "fp": "11f21bc24ef267c3",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 123,
+  "jitter": 2,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8823,
+  "speed": 0.0
+ },
+ {
+  "proto": "hysteria2",
+  "server": "13.143.189.105",
+  "port": 4444,
+  "password": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
+  "sni": "pl2.nexfile.net",
+  "skipCertVerify": false,
+  "name": "n0006",
+  "source": "NoMoreWalls",
+  "fp": "e60d7254419eab14",
   "sources": [
    "NoMoreWalls",
    "ermaozi"
   ],
   "latency": 121,
+  "jitter": 19,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8842,
+  "speed": 0.0
+ },
+ {
+  "proto": "hysteria2",
+  "server": "13.143.189.106",
+  "port": 4444,
+  "password": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
+  "sni": "pl2.nexfile.net",
+  "skipCertVerify": false,
+  "name": "n0007",
+  "source": "NoMoreWalls",
+  "fp": "44cd3ca7d96b9e4a",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 121,
+  "jitter": 4,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8842,
+  "speed": 0.0
+ },
+ {
+  "proto": "vless",
+  "server": "172.67.110.86",
+  "port": 8443,
+  "uuid": "9443badf-414f-4b12-b19a-7cc2c7431163",
+  "tls": true,
+  "sni": "moz.ar-marz.fun",
+  "network": "ws",
+  "path": "/man",
+  "host": "moz.ar-marz.fun",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "fp": "c967667b44e414f5",
+  "reality": false,
+  "name": "n0287",
+  "source": "ermaozi",
+  "sources": [
+   "ermaozi"
+  ],
+  "latency": 120,
+  "jitter": 72,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8852,
+  "speed": 0.0
+ },
+ {
+  "proto": "ss",
+  "server": "66.163.118.103",
+  "port": 19999,
+  "cipher": "aes-256-gcm",
+  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+  "name": "n0122",
+  "source": "NoMoreWalls",
+  "fp": "81eb30449a267916",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 119,
+  "jitter": 3,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8861,
+  "speed": 0.0
+ },
+ {
+  "proto": "ss",
+  "server": "167.17.64.175",
+  "port": 19999,
+  "cipher": "aes-256-gcm",
+  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+  "name": "n0067",
+  "source": "NoMoreWalls",
+  "fp": "4378901f3ee031bb",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 118,
+  "jitter": 9,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8871,
+  "speed": 0.0
+ },
+ {
+  "proto": "ss",
+  "server": "167.17.71.167",
+  "port": 19999,
+  "cipher": "aes-256-gcm",
+  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+  "name": "n0070",
+  "source": "NoMoreWalls",
+  "fp": "f2ba5593b8d4defb",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 118,
+  "jitter": 1,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8871,
+  "speed": 0.0
+ },
+ {
+  "proto": "vless",
+  "server": "193.219.97.198",
+  "port": 443,
+  "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e",
+  "tls": true,
+  "sni": "fs.qicai99.com",
+  "network": "ws",
+  "path": "/fp=chrome",
+  "host": "fs.qicai99.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "fp": "b61b3c3ada233a61",
+  "reality": false,
+  "name": "n0324",
+  "source": "NoMoreWalls",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi",
+   "tg:@oneclickvpnkeys"
+  ],
+  "latency": 118,
   "jitter": 5,
   "verify_ok": 3,
   "verify": {
@@ -1084,7 +965,165 @@
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8808,
+  "score": 0.8871,
+  "speed": 0.0
+ },
+ {
+  "proto": "hysteria2",
+  "server": "13.143.189.147",
+  "port": 4444,
+  "password": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
+  "sni": "pl2.nexfile.net",
+  "skipCertVerify": false,
+  "name": "n0010",
+  "source": "NoMoreWalls",
+  "fp": "9d1691d62f628c80",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 116,
+  "jitter": 5,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.889,
+  "speed": 0.0
+ },
+ {
+  "proto": "hysteria2",
+  "server": "13.143.189.149",
+  "port": 4444,
+  "password": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
+  "sni": "pl2.nexfile.net",
+  "skipCertVerify": false,
+  "name": "n0011",
+  "source": "NoMoreWalls",
+  "fp": "1a6a22af3689590e",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 116,
+  "jitter": 5,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.889,
+  "speed": 0.0
+ },
+ {
+  "proto": "ss",
+  "server": "152.53.1.57",
+  "port": 8388,
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "AdawffFMHymlasRb0VOP3HFf7sTG5sJx",
+  "name": "n0063",
+  "source": "NoMoreWalls",
+  "fp": "4c6072b701f239da",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 115,
+  "jitter": 5,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.89,
+  "speed": 0.0
+ },
+ {
+  "proto": "ss",
+  "server": "51.222.155.113",
+  "port": 5601,
+  "cipher": "aes-256-gcm",
+  "password": "Y6R9pAtvxxzmGC",
+  "name": "n0108",
+  "source": "NoMoreWalls",
+  "fp": "ca368f9b71792dca",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 114,
+  "jitter": 122,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8909,
+  "speed": 0.0
+ },
+ {
+  "proto": "trojan",
+  "server": "216.238.104.154",
+  "port": 443,
+  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+  "sni": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "n0170",
+  "source": "NoMoreWalls",
+  "fp": "7f5be192b849d8ea",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 114,
+  "jitter": 3,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8909,
+  "speed": 0.0
+ },
+ {
+  "proto": "vless",
+  "server": "45.144.234.157",
+  "port": 14430,
+  "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+  "tls": false,
+  "sni": "45.144.234.157",
+  "network": "ws",
+  "path": "/vless",
+  "host": "45.144.234.157",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "fp": "7ac30717bef2e7b5",
+  "reality": false,
+  "name": "n0397",
+  "source": "NoMoreWalls",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi"
+  ],
+  "latency": 114,
+  "jitter": 18,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8909,
   "speed": 0.0
  }
 ]
