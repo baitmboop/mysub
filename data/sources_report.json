@@ -1,21 +1,26 @@
 {
- "generated_at": "2026-11-11T17:15:39+08:00",
- "total_nodes": 1191,
+ "generated_at": "2026-11-11T17:50:53+08:00",
+ "total_nodes": 1259,
  "by_source": {
   "Auto_proxy": 470,
   "NoMoreWalls": 425,
   "mahdibland": 112,
   "ermaozi": 111,
+  "tg:@freeVPNjd→sub": 51,
   "tg:@oneclickvpnkeys": 41,
-  "tg:@vpnfail_v2ray": 18,
+  "go4sharing/sub": 18,
+  "tg:@vpnfail_v2ray": 17,
   "freefq": 14
  },
  "raw_hits": {
+  "anaer/Sub": 1802,
   "Auto_proxy": 560,
   "ermaozi": 502,
   "NoMoreWalls": 443,
   "mahdibland": 200,
+  "tg:@freeVPNjd→sub": 100,
   "tg:@oneclickvpnkeys": 72,
+  "go4sharing/sub": 22,
   "ripaojiedian": 20,
   "tg:@vpnfail_v2ray": 20,
   "Pawdroid/Free-servers": 20,
@@ -30,7 +35,8 @@
   "tg:@getfreev2ray": 0,
   "tg:@Jsnzkpg": 0,
   "tg:@proxy_config": 0,
-  "anaer/Sub": 0
+  "tg:@freeVPNjd": 0,
+  "tg:@go4sharing": 0
  },
  "candidates": {
   "aiboboxx/v2rayfree": {
@@ -60,8 +66,8 @@
   },
   "anaer/Sub": {
    "ok": true,
-   "raw": 0,
-   "new": 0
+   "raw": 1802,
+   "new": 1755
   }
  }
 }
