@@ -398,6 +398,151 @@ def t_base64_names_match_yaml():
     assert ys == bs, f"yaml={ys} base64={bs}"
 
 
+# ---------------------------------------------------------------- YAML 订阅 & 普通代理
+def t_yaml_sub_extracts_nodes():
+    """Clash YAML 订阅必须能解析 —— 只认 URI 的正则会把它整份算成 0 条。"""
+    import collect
+    doc = """
+proxies:
+  - name: "A"
+    type: ss
+    server: 1.2.3.4
+    port: 8388
+    cipher: aes-256-gcm
+    password: pw
+  - name: "B"
+    type: http
+    server: 5.6.7.8
+    port: 9002
+"""
+    ns = collect.nodes_from_yaml(doc, "test")
+    assert len(ns) == 2, ns
+    assert {n["proto"] for n in ns} == {"ss", "http"}, ns
+
+
+def t_yaml_http_proxy_fields():
+    """http 代理的关键字段不能丢: 用户名/密码/tls 少一个就连不上。"""
+    import collect
+    doc = """
+proxies:
+  - {name: H, type: http, server: h.example.com, port: 443,
+     username: u, password: p, tls: true}
+"""
+    n = collect.nodes_from_yaml(doc, "t")[0]
+    assert n["proto"] == "http", n
+    assert n["server"] == "h.example.com" and n["port"] == 443, n
+    assert n["username"] == "u" and n["password"] == "p", n
+    assert n["tls"] is True, n
+
+
+def t_yaml_broken_input():
+    """畸形 / 空 / 非订阅内容只能返回空列表, 不能抛异常拖垮整轮采集。"""
+    import collect
+    for bad in ["", "{", "proxies: [", "hello world",
+                "proxies:\n  - 1\n  - 2", "proxies: notalist", "[]", "null"]:
+        assert collect.nodes_from_yaml(bad, "t") == [], repr(bad)
+
+
+def t_yaml_unknown_type_dropped():
+    """不认识的协议要丢掉, 不能带着 type 进池子让测速环节崩。"""
+    import collect
+    doc = """
+proxies:
+  - {name: X, type: wireguard, server: 1.1.1.1, port: 1}
+  - {name: Y, type: vless, server: 2.2.2.2, port: 443, uuid: abc}
+"""
+    ns = collect.nodes_from_yaml(doc, "t")
+    assert [n["proto"] for n in ns] == ["vless"], ns
+
+
+def t_yaml_ws_opts_restored():
+    """ws 的 path/host 在 YAML 里是嵌套结构, 不还原就连不上。"""
+    import collect
+    doc = """
+proxies:
+  - name: W
+    type: vless
+    server: w.example.com
+    port: 443
+    uuid: 11111111-2222-3333-4444-555555555555
+    tls: true
+    servername: w.example.com
+    network: ws
+    ws-opts:
+      path: /ray
+      headers:
+        Host: w.example.com
+"""
+    n = collect.nodes_from_yaml(doc, "t")[0]
+    assert n["network"] == "ws" and n["path"] == "/ray", n
+    assert n["host"] == "w.example.com", n
+    assert n["sni"] == "w.example.com", n
+
+
+def t_http_proxy_roundtrip():
+    """http 节点: 内部结构 → mihomo 配置, 字段一个都不能丢。"""
+    n = {"proto": "http", "server": "p.example.com", "port": 8443,
+         "username": "u", "password": "p", "tls": True, "name": "H1"}
+    p = probe.to_mihomo(n, "H1")
+    assert p and p["type"] == "http" and p["tls"] is True, p
+    assert p["username"] == "u" and p["password"] == "p", p
+    assert p["udp"] is False, "http 代理必须显式关掉 udp"
+
+
+def t_http_proxy_to_uri():
+    """base64 订阅里要能表达普通代理, 否则手机端一条都看不到。"""
+    n = {"proto": "http", "server": "p.example.com", "port": 8443,
+         "username": "u", "password": "p", "name": "H1"}
+    uri = gateway.to_uri(n)
+    assert uri and uri.startswith("http://u:p@p.example.com:8443"), uri
+    # 带 tls 的必须走 https, 否则明文连到 TLS 端口直接被拒
+    n["tls"] = True
+    uri_tls = gateway.to_uri(n)
+    assert uri_tls and uri_tls.startswith("https://u:p@p.example.com:8443"), uri_tls
+    n2 = {"proto": "http", "server": "q.example.com", "port": 8080, "name": "H2"}
+    uri2 = gateway.to_uri(n2)
+    assert uri2 and uri2.startswith("http://q.example.com:8080"), uri2
+
+
+def t_yaml_null_literals():
+    """订阅里用字符串 'null' 表示"无认证"(go4sharing 那份就是这么写的)。
+    不清掉会生成 https://null:null@host —— 每次连接都被拒, 但测速阶段看不出来。"""
+    import collect
+    doc = """
+proxies:
+  - {name: A, type: http, server: 1.1.1.1, port: 443, username: 'null', password: 'null', tls: true}
+  - {name: B, type: vless, server: 2.2.2.2, port: 443, uuid: 'null', sni: 'none'}
+"""
+    a, b = collect.nodes_from_yaml(doc, "t")
+    assert a["username"] == "" and a["password"] == "", a
+    assert b["uuid"] == "" and b["sni"] == "", b
+    uri = gateway.to_uri(a)
+    assert uri and "null" not in uri.split("#")[0], uri
+    # uuid 被清洗成空之后, 测速环节必须把它丢掉, 而不是生成一个连不上的配置
+    assert probe.to_mihomo(b, "B") is None
+
+
+def t_sub_link_filter():
+    """频道里的推广页/图片/站内链接不该占用抓取配额。"""
+    import collect
+    assert collect.is_sub_candidate("https://jikun.zmxoo.xyz/subapi?token=free_x")
+    assert collect.is_sub_candidate("https://proxy.hongx.sbs/ip/3468e3a3")
+    assert collect.is_sub_candidate("https://apirule.fastfly.qzz.io/s/f8e623")
+    for bad in ["https://t.me/wxgqlfx", "https://github.com/a/b",
+                "https://www.google.com/x", "https://a.com/x.png",
+                "ftp://a.com/x", "not-a-url"]:
+        assert not collect.is_sub_candidate(bad), bad
+
+
+def t_looks_like_sub():
+    """抓回来先验内容, 推广页不能被当成订阅灌进解析器刷日志。"""
+    import collect
+    assert collect.looks_like_sub("vmess://eyJhZGQiOiIxLjIuMy40In0=")
+    assert collect.looks_like_sub("proxies:\n  - {server: 1.1.1.1, port: 1}")
+    assert not collect.looks_like_sub("<html>注册送10G</html>")
+    assert not collect.looks_like_sub("")
+
+
 TESTS = [(k[2:], v) for k, v in sorted(globals().items()) if k.startswith("t_")]
 
 if __name__ == "__main__":

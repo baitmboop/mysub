@@ -402,6 +402,22 @@ def to_uri(n: dict) -> str | None:
             q.append("allow_insecure=1")
         tail = f"?{'&'.join(q)}" if q else ""
         return f"tuic://{n['uuid']}:{n['password']}@{srv}:{port}{tail}#{name}"
+
+    if proto in ("http", "socks5"):
+        # base64 订阅只装得下 URI。普通代理用标准 userinfo 形式表达:
+        #   http://user:pass@host:port#name
+        # 客户端认就认, 不认会跳过这一条 —— 但 Clash 那份(sub.yaml)一定可用,
+        # 因为 YAML 能直接表达 type: http。
+        cred = ""
+        if n.get("username") or n.get("password"):
+            cred = urllib.parse.quote(str(n.get("username") or ""), safe="")
+            cred += ":" + urllib.parse.quote(str(n.get("password") or ""), safe="")
+            cred += "@"
+        if proto == "socks5":
+            scheme = "socks5"
+        else:
+            scheme = "https" if n.get("tls") else "http"
+        return f"{scheme}://{cred}{srv}:{port}#{name}"
     return None
 
 
@@ -561,6 +577,7 @@ def _proxy_to_uri(p: dict) -> str | None:
         "proto": t, "server": p.get("server"), "port": p.get("port"),
         "name": p.get("name"), "cipher": p.get("cipher"),
         "password": p.get("password"), "uuid": p.get("uuid"),
+        "username": p.get("username"), "tls": p.get("tls"),
         "sni": p.get("servername") or p.get("sni"),
         "network": p.get("network"), "host": p.get("servername"),
         "path": (p.get("ws-opts") or {}).get("path"),
@@ -574,7 +591,9 @@ def _proxy_to_uri(p: dict) -> str | None:
     }
     if n["reality"] and n["pbk"]:
         n["tls"] = True
-    return to_uri(n) if t in ("ss", "vmess", "vless", "trojan", "hysteria2", "tuic") else None
+    # http / socks5 是后加的: 从"机场试用订阅"里挖出来的类型, 现网其它节点都没有。
+    return to_uri(n) if t in ("ss", "vmess", "vless", "trojan", "hysteria2",
+                              "tuic", "http", "socks5") else None
 
 
 # ---------------------------------------------------------------- 构建 & 缓存

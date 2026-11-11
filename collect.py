@@ -17,6 +17,13 @@ import time
 import urllib.parse
 import urllib.request
 
+# YAML 订阅解析用。做成软依赖: 缺 pyyaml 时该分支直接跳过,
+# 不让整个采集器因为一个可选格式而崩掉。
+try:
+    import yaml
+except ImportError:  # pragma: no cover
+    yaml = None
+
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
 
@@ -27,7 +34,58 @@ TG_CHANNELS = [
     "oneclickvpnkeys", "ripaojiedian", "freefq", "v2ray_configs_pool",
     "clashnodes", "nodefree", "freev2rayconfig", "getfreev2ray",
     "Jsnzkpg", "proxy_config", "vpnfail_v2ray", "ssrsub",
+    # 下面两个是 2026-11 实测补进来的。它们和上面 12 个不是一类:
+    # 上面发"直出节点"(贴出来即死), 这两个发"机场免费试用订阅"。
+    #   freeVPNjd  —— 每 1-2 小时一条新订阅, 单次可用率 16%, 但供给不断,
+    #                 是目前最稳定的新增来源。token 一次性, 必须当轮用掉。
+    #   go4sharing —— 频道本身已停更(最后帖 4 天前), 抓它主要是为了捞它
+    #                 放在页面里的 GitHub 订阅(见 SUB_SOURCES)。
+    "freeVPNjd", "go4sharing",
 ]
+
+# 频道里贴的"订阅地址"没有统一特征: `/sub`、`token=` 是常见形态, 但 `/s/xxx`、
+# `/ip/xxx`、`:8001/xxx/yyy`、`?url=xxx` 同样指向整份订阅。
+# 原来按关键词白名单过滤, freeVPNjd 里 16 个链接有 7 个就是这么被漏掉的。
+# 改成"排除明显不是订阅的 + 抓回来验内容", 判断交给 looks_like_sub。
+_NOT_SUB = (
+    "t.me/", "telegram.me", "telegram.org", "telesco.pe",
+    "github.com/", "githubusercontent", "gist.github",
+    "youtube.com", "youtu.be", "twitter.com", "//x.com/", "facebook.com",
+    "cdnjs", "jsdelivr", "unpkg.com", "bootcdn", "npmjs",
+    "google.com", "gstatic", "googleapis", "cloudflare.com/ajax",
+    ".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".css", ".js", ".ico",
+)
+
+
+def is_sub_candidate(u: str) -> bool:
+    """这条链接值不值得抓一次。真正的判断在内容上, 见 looks_like_sub。"""
+    if not u.lower().startswith("http"):
+        return False
+    return not any(k in u.lower() for k in _NOT_SUB)
+
+
+# 外部追加清单。加源不用改代码 —— 用户随口报一个频道名或订阅地址,
+# 往文件里追加一行, 下一轮采集就带上了, 也不会因为手误改坏主逻辑。
+# 路径基于本文件定位, 不依赖运行时的工作目录。
+_ROOT = os.path.dirname(os.path.abspath(__file__))
+EXTRA_CHANNELS = os.path.join(_ROOT, "data", "extra_channels.txt")
+EXTRA_SUBS = os.path.join(_ROOT, "data", "extra_subs.txt")
+
+
+def load_extra_list(path: str) -> list[str]:
+    """一行一个, # 开头是注释。文件不存在就返回空, 不报错。"""
+    try:
+        with open(path, encoding="utf-8") as f:
+            return [ln.strip() for ln in f
+                    if ln.strip() and not ln.strip().startswith("#")]
+    except OSError:
+        return []
+
+
+def looks_like_sub(text: str) -> bool:
+    """抓回来先验一眼, 免得把一堆推广页灌进解析器刷满日志。"""
+    t = maybe_b64(text)
+    return bool(VG_REGEX.search(t)) or ("proxies" in t and "server" in t)
 
 RAW_SOURCES = [
     ("NoMoreWalls", "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"),
@@ -42,6 +100,14 @@ RAW_SOURCES = [
      "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num"),
     ("mahdibland",
      "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity"),
+]
+
+# 整份订阅型源 —— 一份地址背后是几十个节点, 而不是一条条 URI。
+# 和 RAW_SOURCES 没有本质区别, 只是内容形态可能是 Clash YAML, 走 from_mihomo 转换。
+SUB_SOURCES = [
+    # 实测 23 个节点、国内 17 个能通(74%), 其中 14 个是现网没有的 http 代理类型。
+    # 注意仓库最后更新停在 3 天前, 所以只当补充, 不当主力 —— 它哪天停了也不影响别人。
+    ("go4sharing/sub", "https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml"),
 ]
 
 # 候选源 —— 每轮都会采, 但只用来"体检", 决定要不要转成正式源。
@@ -274,6 +340,128 @@ def parse_uri(uri: str, source: str) -> dict | None:
     return None
 
 
+# 订阅作者常用字符串 'null' / 'none' 表示"没这个字段"(实测 go4sharing 那份就是
+# username: 'null')。不清掉的话, 生成的链接会变成 https://null:null@host:port,
+# 认证必然失败 —— 而且节点在测速时会"能用", 只是每次连接都被拒, 很难查。
+_NULLISH = {"", "null", "none", "nil", "undefined", "-"}
+
+
+def _clean(v) -> str:
+    s = str(v if v is not None else "").strip()
+    return "" if s.lower() in _NULLISH else s
+
+
+def from_mihomo(p: dict, source: str) -> dict | None:
+    """Clash / mihomo 的 proxy 条目 → 内部统一结构。
+
+    免费订阅有一半是 YAML(`proxies:` 列表)而不是 URI 列表, 只认 `vmess://` 的
+    正则会把整份订阅算成 0 条。go4sharing 那份实测 23 个节点、国内 17 个能通,
+    在旧逻辑下就是这么被整份漏掉的。这里做反向转换, 让两种格式共用同一条
+    去重 / 测速流水线 —— 谁上线只看测速名次, 跟来自哪种格式无关。
+    """
+    if not isinstance(p, dict):
+        return None
+    t = str(p.get("type") or "").lower()
+    if t == "hy2":
+        t = "hysteria2"
+    server = str(p.get("server") or "").strip()
+    try:
+        port = int(p.get("port") or 0)
+    except (TypeError, ValueError):
+        return None
+    if not server or not port:
+        return None
+
+    n: dict = {"proto": t, "server": server, "port": port,
+               "name": str(p.get("name") or ""), "source": source}
+
+    if t == "ss":
+        n.update(cipher=_clean(p.get("cipher")).lower(),
+                 password=_clean(p.get("password")))
+    elif t == "vmess":
+        n.update(uuid=_clean(p.get("uuid")),
+                 alterId=int(p.get("alterId") or 0),
+                 cipher=_clean(p.get("cipher")) or "auto",
+                 tls=bool(p.get("tls")),
+                 sni=_clean(p.get("servername")) or _clean(p.get("sni")),
+                 network=_clean(p.get("network")) or "tcp")
+    elif t == "vless":
+        n.update(uuid=_clean(p.get("uuid")),
+                 tls=bool(p.get("tls")),
+                 sni=_clean(p.get("servername")) or _clean(p.get("sni")),
+                 network=_clean(p.get("network")) or "tcp",
+                 flow=_clean(p.get("flow")),
+                 # 同 parse_uri: 这里是 uTLS 指纹, 不是节点指纹, 字段名不能叫 fp。
+                 utls=_clean(p.get("client-fingerprint")))
+        ro = p.get("reality-opts")
+        if isinstance(ro, dict) and ro.get("public-key"):
+            n["reality"] = True
+            n["pbk"] = ro["public-key"]
+            n["sid"] = ro.get("short-id") or ""
+    elif t == "trojan":
+        n.update(password=_clean(p.get("password")),
+                 sni=_clean(p.get("sni")),
+                 network=_clean(p.get("network")) or "tcp")
+    elif t == "hysteria2":
+        n.update(password=_clean(p.get("password")),
+                 sni=_clean(p.get("sni")),
+                 skipCertVerify=bool(p.get("skip-cert-verify")))
+    elif t == "tuic":
+        n.update(uuid=_clean(p.get("uuid")),
+                 password=_clean(p.get("password")),
+                 sni=_clean(p.get("sni")),
+                 alpn=p.get("alpn") or [])
+    elif t in ("http", "socks5"):
+        # 普通代理。允许无认证, 所以这里不校验 username/password。
+        n.update(username=_clean(p.get("username")),
+                 password=_clean(p.get("password")),
+                 tls=bool(p.get("tls")),
+                 sni=_clean(p.get("sni")),
+                 skipCertVerify=bool(p.get("skip-cert-verify")))
+    else:
+        return None
+
+    # 传输层参数。只对 ws / grpc 还原, 其余靠 network 默认值。
+    ws = p.get("ws-opts")
+    if isinstance(ws, dict):
+        n["path"] = _clean(ws.get("path"))
+        hdr = ws.get("headers")
+        if isinstance(hdr, dict):
+            n["host"] = _clean(hdr.get("Host") or hdr.get("host"))
+    gr = p.get("grpc-opts")
+    if isinstance(gr, dict) and gr.get("grpc-service-name"):
+        n["network"] = "grpc"
+        n["path"] = gr["grpc-service-name"]
+    return n
+
+
+def nodes_from_yaml(text: str, source: str) -> list[dict]:
+    """把 Clash YAML 订阅解析成节点列表(未去重)。
+
+    单独成函数而不是塞进 ingest 的闭包里 —— 这样自检可以直接喂畸形输入,
+    验证格式错乱时是"返回空列表"而不是抛异常。自动流程里宁可少一批节点,
+    不能整个采集任务挂掉。
+    """
+    # 先做廉价排除, 否则每份几千行的 base64 文本都要跑一遍 safe_load。
+    if yaml is None or "proxies" not in text or "server" not in text:
+        return []
+    try:
+        doc = yaml.safe_load(text)
+    except Exception:
+        return []
+    if not isinstance(doc, dict):
+        return []
+    items = doc.get("proxies")
+    if not isinstance(items, list):
+        return []
+    out = []
+    for p in items:
+        n = from_mihomo(p, source)
+        if n:
+            out.append(n)
+    return out
+
+
 def fingerprint(n: dict) -> str:
     key = f"{n['proto']}|{n['server']}|{n['port']}|{n.get('uuid') or n.get('password') or ''}"
     return hashlib.sha1(key.encode()).hexdigest()[:16]
@@ -291,6 +479,28 @@ def main():
     pool: dict[str, dict] = {}
     stats: dict[str, int] = {}
 
+    def _put(n: dict, source: str, tgt: dict) -> bool:
+        """入池或补记来源。返回是否算新节点。"""
+        if not n or not n.get("server") or not n.get("port"):
+            return False
+        fp = fingerprint(n)
+        if fp in tgt:
+            srcs = tgt[fp]["sources"]
+            if source not in srcs:
+                srcs.append(source)
+            return False
+        n["fp"] = fp
+        n["sources"] = [source]
+        tgt[fp] = n
+        return True
+
+    def _ingest_yaml(text: str, source: str, tgt: dict) -> int:
+        """YAML 订阅分支: proxies: [...] → 内部结构。"""
+        items = nodes_from_yaml(text, source)
+        for n in items:
+            _put(n, source, tgt)
+        return len(items)
+
     def ingest(text: str, source: str, target: dict | None = None):
         # target 给候选源体检用: 传一份临时池进去, 节点只参与"是不是新的"这个判断,
         # 不会真的混进正式池 —— 否则每多一个候选源, 当天要测速的节点就多一批,
@@ -299,23 +509,15 @@ def main():
         text = maybe_b64(text)
         found = VG_REGEX.findall(text)
         for uri in found:
-            n = parse_uri(uri, source)
-            if not n or not n.get("server") or not n.get("port"):
-                continue
-            fp = fingerprint(n)
-            if fp in tgt:
-                srcs = tgt[fp]["sources"]
-                if source not in srcs:
-                    srcs.append(source)
-                continue
-            n["fp"] = fp
-            n["sources"] = [source]
-            tgt[fp] = n
-        stats[source] = stats.get(source, 0) + len(found)
-        print(f"    → 抽出 {len(found):4d} 条, 去重后累计 {len(tgt)}")
-        return len(found)
+            _put(parse_uri(uri, source), source, tgt)
+        # 一条 URI 都没有 → 可能是 Clash YAML 订阅。
+        # 有 URI 就不试 YAML: 那种文本跑 safe_load 又慢又必然不是 dict。
+        extra = _ingest_yaml(text, source, tgt) if not found else 0
+        stats[source] = stats.get(source, 0) + len(found) + extra
+        print(f"    → 抽出 {len(found) + extra:4d} 条, 去重后累计 {len(tgt)}")
+        return len(found) + extra
 
-    print("[1/2] 公开订阅源")
+    print("[1/4] 公开订阅源")
     for name, url in RAW_SOURCES:
         print(f"  * {name}: {url}")
         body = fetch(url, opener)
@@ -327,8 +529,26 @@ def main():
                     if sub:
                         ingest(sub.decode("utf-8", "ignore"), f"{name}→child")
 
-    print("[2/2] Telegram 频道 (t.me/s/ 网页预览)")
-    for ch in TG_CHANNELS:
+    print("[2/4] 整份订阅 (含 Clash YAML)")
+    # 外部清单: 用户随时追加, 不用改代码。
+    extra_subs = []
+    for u in load_extra_list(EXTRA_SUBS):
+        try:
+            tag = u.split("//", 1)[1].split("/", 1)[0]
+        except IndexError:
+            continue
+        extra_subs.append((f"extra:{tag}", u))
+    for name, url in SUB_SOURCES + extra_subs:
+        print(f"  * {name}: {url}")
+        body = fetch(url, opener, timeout=25, retries=2)
+        if not body:
+            print("    × 无响应")
+            continue
+        ingest(body.decode("utf-8", "ignore"), name)
+
+    print("[3/4] Telegram 频道 (t.me/s/ 网页预览)")
+    channels = list(dict.fromkeys(TG_CHANNELS + load_extra_list(EXTRA_CHANNELS)))
+    for ch in channels:
         body = fetch(f"https://t.me/s/{ch}", opener)
         if not body:
             print(f"  * @{ch}: 无响应")
@@ -350,14 +570,25 @@ def main():
         else:
             print(f"  * @{ch}: 页面 {len(body)//1024}KB ({tag})")
         ingest(joined, f"tg:@{ch}")
-        # 频道里贴的订阅链接也抓
-        for u in set(re.findall(r"https?://[^\s\"'<>]+", joined)):
-            if any(k in u for k in ("/sub", "token=", "/api/v1/client/subscribe")) and "t.me" not in u:
-                sub = fetch(u, opener)
-                if sub:
-                    ingest(sub.decode("utf-8", "ignore"), f"tg:@{ch}→sub")
+        # 频道里贴的订阅链接也抓。机场试用订阅的 token 是一次性的 ——
+        # 实测同一批 443 个节点的订阅, 十分钟后再抓就 403, 所以必须当轮用掉,
+        # 不能存下来"以后再说"。
+        links = [u for u in dict.fromkeys(re.findall(r"https?://[^\s\"'<>]+", joined))
+                 if is_sub_candidate(u)][:12]
+        hit = 0
+        for u in links:
+            sub = fetch(u, opener, timeout=15, retries=1)
+            if not sub:
+                continue
+            body = sub.decode("utf-8", "ignore")
+            if not looks_like_sub(body):
+                continue
+            hit += 1
+            ingest(body, f"tg:@{ch}→sub")
+        if links:
+            print(f"    · 帖内链接 {len(links)} 个, 其中 {hit} 份是有效订阅")
 
-    print("[3/3] 候选源体检 (只看独立贡献, 不看抽出条数)")
+    print("[4/4] 候选源体检 (只看独立贡献, 不看抽出条数)")
     cand: dict[str, dict] = {}
     for name, url in CANDIDATE_SOURCES:
         # 浅拷贝一份池子做沙盘: 新节点的 fp 只在沙盘里累积, 正式池不受影响。

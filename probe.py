@@ -81,6 +81,11 @@ REQUIRED_FIELDS = {
     "trojan": ("password",),
     "hysteria2": ("password",),
     "tuic": ("uuid", "password"),
+    # http / socks5 代理: 允许无认证, 所以不强制任何字段。
+    # 这两类是从"机场试用订阅"里挖出来的 —— 现网 66 个节点里一个都没有,
+    # 没人抢, 所以国内存活率明显高于公开的 vmess/vless 节点。
+    "http": (),
+    "socks5": (),
 }
 
 
@@ -138,6 +143,20 @@ def to_mihomo(n: dict, name: str) -> dict | None:
             p["sni"] = n["sni"]
         if n.get("alpn"):
             p["alpn"] = n["alpn"]
+
+    elif proto in ("http", "socks5"):
+        # 普通代理。udp 必须显式关掉: 内核默认会尝试转发 UDP, 而这俩协议
+        # 基本不支持, 留着只会让部分站点的 DNS 走 UDP 时超时。
+        p["udp"] = False
+        if n.get("username"):
+            p["username"] = n["username"]
+        if n.get("password"):
+            p["password"] = n["password"]
+        if n.get("tls"):
+            p["tls"] = True
+            p["skip-cert-verify"] = True
+            if n.get("sni"):
+                p["sni"] = n["sni"]
     else:
         return None
 
