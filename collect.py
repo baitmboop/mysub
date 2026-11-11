@@ -36,6 +36,12 @@ RAW_SOURCES = [
     ("ermaozi_trojan", "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/trojan.txt"),
     ("ripaojiedian", "https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub"),
     ("freefq", "https://raw.githubusercontent.com/freefq/free/master/v2"),
+    # 下面两个是体检转正的: 实测独立贡献 470 / 118, 和上面几个几乎不重合。
+    # 原来的 18 个源全挤在同一个生态圈里互相转贴, 加多少都只是复制粘贴。
+    ("Auto_proxy",
+     "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num"),
+    ("mahdibland",
+     "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity"),
 ]
 
 # 候选源 —— 每轮都会采, 但只用来"体检", 决定要不要转成正式源。
@@ -52,11 +58,9 @@ CANDIDATE_SOURCES = [
     ("mfuu/v2ray", "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray"),
     ("Pawdroid/Free-servers", "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub"),
     ("Barabama/FreeNodes", "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes.txt"),
+    # 这个源是 Clash YAML, 不是 URI 列表, 所以体检时"可达但抽出 0"。
+    # 要吃到它得先给 ingest 加一条 YAML 解析分支, 光靠 VG_REGEX 抓不到。
     ("anaer/Sub", "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml"),
-    ("w1770946466/Auto_proxy",
-     "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num"),
-    ("mahdibland/Aggregator",
-     "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity"),
 ]
 
 
