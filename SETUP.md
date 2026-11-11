@@ -177,3 +177,25 @@ https://gh-proxy.com/https://raw.githubusercontent.com/baitmboop/mysub/main/out/
 - 订阅地址（备用）：
   `https://ghfast.top/https://raw.githubusercontent.com/baitmboop/mysub/main/out/sub.yaml`
 - 本机推送用的 SSH 私钥：`nodepool/.ssh/id_ed25519`（已 gitignore，**别删**，删了要重新配）
+
+---
+
+## 让测速变准：把本机实测同步回仓库
+
+云端 runner 在美国，它测的延迟只能用来"判活"，判断不了"你这边快不快"。
+想让它准，只能让**你机器上的 Clash** 去测——它本来就跑在你家网络里。
+
+前提：Clash Verge 正在运行，且已导入本订阅。然后：
+
+```sh
+./sync.sh
+```
+
+它通过 Clash 的本地控制器（Unix socket）让客户端逐个节点测一遍，把结果写进
+`data/cn_pref.json` 并推送。下一次云端构建会自动优先录用这些节点。
+
+- 不额外耗流量：只拉 204 空响应，一轮约 6 秒
+- 不改你的设置：只发起测速请求，不动你当前选的节点
+- 数据 7 天过期：不会拿上周的结论指导今天
+
+手动跑也可以：`python3 sync.py`（只测不推）、`python3 sync.py --push`（测完推）。
