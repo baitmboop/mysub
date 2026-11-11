@@ -6451,6 +6451,28 @@
  },
  {
   "proto": "vless",
+  "server": "2.27.175.229",
+  "port": 446,
+  "uuid": "a3583bf4-ec07-4fe8-bca3-6881353ca2c5",
+  "tls": true,
+  "sni": "deepl.com",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "1_4w5OxAZZeAoT_m1LNMcKmk7yvNrJjf6P7QDHF15VE",
+  "sid": "17b6feb4481539d2",
+  "utls": "qq",
+  "reality": true,
+  "name": "filembad-346",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "e92ae3993dbe8ccc",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "2.59.183.167",
   "port": 443,
   "uuid": "301d514e-4aa0-47b0-ba44-a0cb891cd52f",
@@ -9862,28 +9884,6 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi"
-  ]
- },
- {
-  "proto": "vless",
-  "server": "95.182.93.43",
-  "port": 443,
-  "uuid": "b2a6fb02-d9fa-43d6-b220-10dcacc36512",
-  "tls": true,
-  "sni": "docs.google.com",
-  "network": "tcp",
-  "path": "",
-  "host": "/?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI",
-  "flow": "xtls-rprx-vision",
-  "pbk": "nCiIB8BmrCGzwms7sf0CBcz6VTzhXemuChdO5V_SnD4",
-  "sid": "1901f7857cb99487",
-  "utls": "chrome",
-  "reality": true,
-  "name": "filembad-369",
-  "source": "tg:@vpnfail_v2ray",
-  "fp": "ec72f3c5338c1f0e",
-  "sources": [
-   "tg:@vpnfail_v2ray"
   ]
  },
  {

@@ -1,5 +1,5 @@
-# nodepool  生成于 2026-11-11 16:18:10 (北京时间)
-# 节点数 23  (自建 0 / 免费额度 0 / 免费池 23)
+# nodepool  生成于 2026-11-11 16:25:13 (北京时间)
+# 节点数 27  (自建 0 / 免费额度 0 / 免费池 27)
 # 节点选择 = select, 下设"自动选择"(fallback, 每 120s 复检)
 # 自动选择按 ① 自建 → ② 免费额度 → ③ 免费池 的顺序降级
 proxies:
@@ -94,6 +94,20 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  - name: N12 216.106.191.201
+    type: vless
+    server: 216.106.191.201
+    port: 10303
+    uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
+    udp: true
+    skipCertVerify: true
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: suK-MYTtZhJ9IJgsxPLTHLQadNotDqYslQcd5BNV_EQ
+      short-id: 6aa50b0cc8d23464
+    client-fingerprint: chrome
   - name: N13 87.199.205.28
     type: vless
     server: 87.199.205.28
@@ -108,27 +122,34 @@ proxies:
       public-key: W-9zyiOq287RtXVTZlTFbSDJ0Mx8joyBLJoA7ZE7eBw
       short-id: b7cd177731793b1e
     client-fingerprint: chrome
-  - name: N14 167.17.64.67
+  - name: N14 89.105.218.148
     type: vless
-    server: 167.17.64.67
-    port: 10303
-    uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
+    server: 89.105.218.148
+    port: 443
+    uuid: 90157e25-cee1-4217-921e-91f300bc1a24
     udp: true
     skipCertVerify: true
     flow: xtls-rprx-vision
     tls: true
-    servername: www.apple.com
+    servername: golos.mail.ru
     reality-opts:
-      public-key: RCm8x1FrSdaJ2NY9k5deQQZilwbubeK-4bcH_6E31wk
-      short-id: 14f18ef16e7c32cc
+      public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+      short-id: 428ef87fd47a3a32
     client-fingerprint: chrome
-  - name: N15 2.29.138.56
-    type: ss
-    server: 2.29.138.56
-    port: 26412
-    cipher: 2022-blake3-aes-256-gcm
-    password: "L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U="
+  - name: N15 169.40.34.41
+    type: vless
+    server: 169.40.34.41
+    port: 443
+    uuid: 622654a4-b666-000b-9260-fb717e05154f
     udp: true
+    skipCertVerify: true
+    flow: xtls-rprx-vision
+    tls: true
+    servername: key-master-saver.com
+    reality-opts:
+      public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+      short-id: 1c3e8241a8743df9
+    client-fingerprint: ios
   - name: N16 141.227.160.61
     type: vless
     server: 141.227.160.61
@@ -143,9 +164,9 @@ proxies:
       public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
       short-id: 6ba85179e30d4fc2
     client-fingerprint: chrome
-  - name: N17 216.106.191.201
+  - name: N17 167.17.64.67
     type: vless
-    server: 216.106.191.201
+    server: 167.17.64.67
     port: 10303
     uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
     udp: true
@@ -154,24 +175,37 @@ proxies:
     tls: true
     servername: www.apple.com
     reality-opts:
-      public-key: suK-MYTtZhJ9IJgsxPLTHLQadNotDqYslQcd5BNV_EQ
-      short-id: 6aa50b0cc8d23464
+      public-key: RCm8x1FrSdaJ2NY9k5deQQZilwbubeK-4bcH_6E31wk
+      short-id: 14f18ef16e7c32cc
     client-fingerprint: chrome
-  - name: N18 38.58.108.84
+  - name: N18 156.252.229.77
     type: vless
-    server: 38.58.108.84
-    port: 443
-    uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+    server: 156.252.229.77
+    port: 8443
+    uuid: 585a421d-d782-4420-912e-dd58ff5966d7
     udp: true
     skipCertVerify: true
     tls: true
-    servername: fs.qicai99.com
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: fs.qicai99.com
-    network: ws
-  - name: N19 72.35.246.39
+    servername: play.googleapis.com
+    reality-opts:
+      public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
+      short-id: 974f7f8f
+    client-fingerprint: chrome
+  - name: N19 195.206.235.202
+    type: vless
+    server: 195.206.235.202
+    port: 443
+    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+    udp: true
+    skipCertVerify: true
+    flow: xtls-rprx-vision
+    tls: true
+    servername: 4935e4t.de25.h1clayd.click
+    reality-opts:
+      public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
+      short-id: 6976d670818644cc
+    client-fingerprint: chrome
+  - name: N20 72.35.246.39
     type: vless
     server: 72.35.246.39
     port: 2053
@@ -185,7 +219,7 @@ proxies:
       public-key: TSOm7XIZvGzYoCbh_lFFA9PTQJqI-JU5kKIAffGmUWg
       short-id: 5e39e518bfac6392
     client-fingerprint: chrome
-  - name: N20 47.244.120.197
+  - name: N21 47.244.120.197
     type: vmess
     server: 47.244.120.197
     port: 44867
@@ -196,29 +230,61 @@ proxies:
     ws-opts:
       path: /arki
     network: ws
-  - name: N21 57.129.132.223
+  - name: N22 154.44.24.25
+    type: vless
+    server: 154.44.24.25
+    port: 51279
+    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+    udp: true
+    skipCertVerify: true
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.tesla.com
+    reality-opts:
+      public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
+      short-id: bb82c8
+    client-fingerprint: firefox
+  - name: N23 161.97.66.16
     type: vless
     server: 57.129.132.223
     port: 80
     uuid: dbb78c94-9f87-4d7d-b945-2000b60352fd
     udp: true
     skipCertVerify: true
-    ws-opts:
-      path: /vless/
-    network: ws
-  - name: N22 51.222.155.32
+    tls: true
+    servername: www.cloudflare.com
+    reality-opts:
+      public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+      short-id: 086bf957
+    client-fingerprint: chrome
+  - name: N24 51.222.155.32
     type: ss
     server: 51.222.155.32
     port: 5003
     cipher: aes-256-gcm
     password: g5MeD6Ft3CWlJId
     udp: true
-  - name: N23 102.37.156.224
+  - name: N25 208.69.78.33
+    type: trojan
+    server: 208.69.78.33
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: courses.yourultimateprofessionalcareerhub.com
+  - name: N26 102.37.156.224
     type: ss
     server: 102.37.156.224
     port: 443
     cipher: chacha20-ietf-poly1305
     password: aduB9HGxQHjA2SBMRjkHX6
+    udp: true
+  - name: N27 51.79.49.116
+    type: ss
+    server: 51.79.49.116
+    port: 8882
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
     udp: true
 proxy-groups:
   - name: 节点选择
@@ -236,19 +302,23 @@ proxy-groups:
       - N08 202.50.253.81
       - N09 202.50.253.45
       - N10 202.50.253.99
-      - N11 156.252.229.77
-      - N12 70.34.207.14
+      - N11 70.34.207.14
+      - N12 216.106.191.201
       - N13 87.199.205.28
-      - N14 167.17.64.67
-      - N15 2.29.138.56
+      - N14 89.105.218.148
+      - N15 169.40.34.41
       - N16 141.227.160.61
-      - N17 216.106.191.201
-      - N18 38.58.108.84
-      - N19 72.35.246.39
-      - N20 47.244.120.197
-      - N21 57.129.132.223
-      - N22 51.222.155.32
-      - N23 102.37.156.224
+      - N17 167.17.64.67
+      - N18 156.252.229.77
+      - N19 195.206.235.202
+      - N20 72.35.246.39
+      - N21 47.244.120.197
+      - N22 154.44.24.25
+      - N23 161.97.66.16
+      - N24 51.222.155.32
+      - N25 208.69.78.33
+      - N26 102.37.156.224
+      - N27 51.79.49.116
   - name: 自动选择
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -264,19 +334,23 @@ proxy-groups:
       - N08 202.50.253.81
       - N09 202.50.253.45
       - N10 202.50.253.99
-      - N11 156.252.229.77
-      - N12 70.34.207.14
+      - N11 70.34.207.14
+      - N12 216.106.191.201
       - N13 87.199.205.28
-      - N14 167.17.64.67
-      - N15 2.29.138.56
+      - N14 89.105.218.148
+      - N15 169.40.34.41
       - N16 141.227.160.61
-      - N17 216.106.191.201
-      - N18 38.58.108.84
-      - N19 72.35.246.39
-      - N20 47.244.120.197
-      - N21 57.129.132.223
-      - N22 51.222.155.32
-      - N23 102.37.156.224
+      - N17 167.17.64.67
+      - N18 156.252.229.77
+      - N19 195.206.235.202
+      - N20 72.35.246.39
+      - N21 47.244.120.197
+      - N22 154.44.24.25
+      - N23 161.97.66.16
+      - N24 51.222.155.32
+      - N25 208.69.78.33
+      - N26 102.37.156.224
+      - N27 51.79.49.116
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -292,18 +366,22 @@ proxy-groups:
       - N08 202.50.253.81
       - N09 202.50.253.45
       - N10 202.50.253.99
-      - N11 156.252.229.77
-      - N12 70.34.207.14
+      - N11 70.34.207.14
+      - N12 216.106.191.201
       - N13 87.199.205.28
-      - N14 167.17.64.67
-      - N15 2.29.138.56
+      - N14 89.105.218.148
+      - N15 169.40.34.41
       - N16 141.227.160.61
-      - N17 216.106.191.201
-      - N18 38.58.108.84
-      - N19 72.35.246.39
-      - N20 47.244.120.197
-      - N21 57.129.132.223
-      - N22 51.222.155.32
-      - N23 102.37.156.224
+      - N17 167.17.64.67
+      - N18 156.252.229.77
+      - N19 195.206.235.202
+      - N20 72.35.246.39
+      - N21 47.244.120.197
+      - N22 154.44.24.25
+      - N23 161.97.66.16
+      - N24 51.222.155.32
+      - N25 208.69.78.33
+      - N26 102.37.156.224
+      - N27 51.79.49.116
 rules:
   - "MATCH,节点选择"
