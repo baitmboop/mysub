@@ -1,5 +1,5 @@
-# nodepool  生成于 2026-11-11 14:18:11 (北京时间)
-# 节点数 13  (自建 0 / 免费额度 0 / 免费池 13)
+# nodepool  生成于 2026-11-11 14:27:05 (北京时间)
+# 节点数 15  (自建 0 / 免费额度 0 / 免费池 15)
 # 节点选择 = select, 下设"自动选择"(fallback, 每 120s 复检)
 # 自动选择按 ① 自建 → ② 免费额度 → ③ 免费池 的顺序降级
 proxies:
@@ -82,6 +82,13 @@ proxies:
     skipCertVerify: true
     sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   - name: N12
+    type: ss
+    server: 51.222.141.125
+    port: 445
+    cipher: aes-256-gcm
+    password: zDNVedRFPQexG9v
+    udp: true
+  - name: N13
     type: vless
     server: 178.128.199.136
     port: 443
@@ -95,7 +102,7 @@ proxies:
       headers:
         Host: fs.qicai99.com
     network: ws
-  - name: N13
+  - name: N14
     type: vless
     server: 140.235.11.243
     port: 56984
@@ -104,6 +111,13 @@ proxies:
     skipCertVerify: true
     tls: true
     servername: sg1.zestapp778.com
+  - name: N15
+    type: ss
+    server: 102.37.156.224
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: aduB9HGxQHjA2SBMRjkHX6
+    udp: true
 proxy-groups:
   - name: 节点选择
     type: select
@@ -123,6 +137,8 @@ proxy-groups:
       - N11
       - N12
       - N13
+      - N14
+      - N15
   - name: 自动选择
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -141,6 +157,8 @@ proxy-groups:
       - N11
       - N12
       - N13
+      - N14
+      - N15
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -159,5 +177,7 @@ proxy-groups:
       - N11
       - N12
       - N13
+      - N14
+      - N15
 rules:
   - "MATCH,节点选择"
