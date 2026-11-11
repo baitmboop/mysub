@@ -23257,13 +23257,13 @@
   "port": 9443,
   "uuid": "14c36bd3-d631-4618-99aa-5f6c1c9f4abc",
   "tls": true,
-  "sni": "privacy.microsoft.com",
+  "sni": "i.s-microsoft.com",
   "network": "tcp",
   "path": "",
   "host": "",
   "flow": "xtls-rprx-vision",
   "pbk": "rgtOiCdN6uMCpk9LhOTEIm4LVjLlkH-9LYbcf6AXBg4",
-  "sid": "437fd1dfbadbc6e0",
+  "sid": "6d",
   "utls": "chrome",
   "reality": true,
   "name": "SGP-VLESS-Reality-FERR",
@@ -23379,28 +23379,6 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi"
-  ]
- },
- {
-  "proto": "vless",
-  "server": "tunell2027.crackerbinam.org",
-  "port": 48312,
-  "uuid": "f47057d5-120d-4b42-b6d6-30469aef6813",
-  "tls": true,
-  "sni": "www.cloudflare.com",
-  "network": "tcp",
-  "path": "",
-  "host": "technolife.com",
-  "flow": "",
-  "pbk": "d9eM_jy8ztZrOf3DMq1m55VQSo7bnKcG1dRnO9ktJ2Y",
-  "sid": "902c315efc",
-  "utls": "chrome",
-  "reality": true,
-  "name": "canfingV2rayNG-418",
-  "source": "tg:@vpnfail_v2ray",
-  "fp": "f0bfb3275b2cf1bc",
-  "sources": [
-   "tg:@vpnfail_v2ray"
   ]
  },
  {
