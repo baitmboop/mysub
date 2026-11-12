@@ -74,8 +74,8 @@ def trim_unmeasured(pool: list, cap: int) -> list:
 
 
 def write_outputs(pool: list, private: list, fallback: list, *,
-                  n_collected: int, n_cand: int, n_picked: int,
-                  n_history: int) -> None:
+                  n_collected: int, n_delay: int, n_geo: int,
+                  n_verified: int, n_picked: int, n_history: int) -> None:
     os.makedirs(OUT, exist_ok=True)
     sub_yaml = gateway.build_config(pool, private, fallback,
                                     namer=cloud_namer, runtime=False)
@@ -92,17 +92,31 @@ def write_outputs(pool: list, private: list, fallback: list, *,
         json.dump(pool, f, ensure_ascii=False, indent=1)
 
     # 报告
+    #
+    # 这几个数字以前是错的, 而且错得很有欺骗性: "延迟存活"其实是候选+免筛的
+    # 合计, "复检合格"其实是最终候选数(含 557 个根本没送检的免筛节点)。
+    # 2026-11-12 的复审里, 我和第三方都照着这两个标签读, 各自算错一轮 ——
+    # 标签和它统计的东西对不上, 比数字本身错更难发现。
     def num(v: int) -> str:
         return str(v) if v else "-"
+
+    ranks = [gateway._cn_rank(n) for n in pool]
+    n_fast = sum(1 for r in ranks if r == 3)
+    n_unmeasured = sum(1 for r in ranks if r == 0)
+    rate = (n_fast / len(pool) * 100) if pool else 0.0
 
     lines = [
         "# 节点池日报", "",
         f"- 生成时间: {time.strftime('%Y-%m-%d %H:%M:%S')} (UTC)",
         f"- 采集去重: **{num(n_collected)}** 个",
-        f"- 延迟存活: **{num(n_cand)}** 个",
-        f"- 复检合格: **{num(n_picked)}** 个",
+        f"- 云端延迟存活: **{num(n_delay)}** 个 (本轮送多站点复检的)",
+        f"- 免筛放行: **{num(n_geo)}** 个 (http/socks5 + 国内实测已知, 不送云端复检)",
+        f"- 复检通过: **{num(n_verified)}** 个 (送检 {num(n_delay)})",
+        f"- 进候选: **{num(n_picked)}** 个 ({num(n_verified)} 复检 + {num(n_geo)} 免筛)",
         f"- 历史池: **{n_history}** 个 (含 7 天内可用过的)",
-        f"- 最终订阅: **{len(pool)}** 个节点", "",
+        f"- 最终订阅: **{len(pool)}** 个节点",
+        f"- 订阅内可用率: **{rate:.1f}%** "
+        f"(能传数据 {n_fast} / 未测后备 {n_unmeasured} / 共 {len(pool)})", "",
         "| # | 协议 | 服务器 | 延迟 | 中国实测 | 速度 | 来源 |",
         "|---|------|--------|------|----------|------|------|",
     ]
@@ -145,8 +159,8 @@ def main() -> int:
         private = gateway.parse_private(PRIVATE)
         fallback = gateway.parse_private(FALLBACK)
         log(f"仅重建产物: 订阅池 {len(pool)} 个 (自建 {len(private)} / 额度 {len(fallback)})")
-        write_outputs(pool, private, fallback, n_collected=0, n_cand=0,
-                      n_picked=0, n_history=len(history))
+        write_outputs(pool, private, fallback, n_collected=0, n_delay=0,
+                      n_geo=0, n_verified=0, n_picked=0, n_history=len(history))
         log(f"✅ 完成: {len(pool)} 个节点")
         return 0
 
@@ -240,6 +254,9 @@ def main() -> int:
                     tested[key] = False
         log(f"✓ 存活 {len(cand)} 个 (≤{args.delay_limit}ms), "
             f"另有 {len(geo)} 个 http/socks5 免筛放行, 耗时 {time.time()-t0:.0f}s")
+        # 报告要用: 这两个数被"合并"过好几次, 每次合并都让标签失真
+        n_delay, n_geo = len(cand), len(geo)
+        n_verified = 0
 
         if not cand and not geo:
             # 免费节点池全灭是正常业务状态, 不是"脚本坏了"。
@@ -276,6 +293,7 @@ def main() -> int:
                 log(f"! 严格标准仅 {len(good)} 个, 放宽到 ≥1 站 → {len(relax)} 个")
                 good = relax or cand
             cand = good
+            n_verified = len(cand)
             log(f"✓ 复检后 {len(cand)} 个, 耗时 {time.time()-t0:.0f}s")
 
         # 放行的 http/socks5 不参与云端复检(同样会因地区被拒), 直接补回候选。
@@ -333,8 +351,8 @@ def main() -> int:
 
         # ---------- 6. 产出 ----------
         write_outputs(pool, private, fallback, n_collected=len(nodes),
-                      n_cand=len(cand), n_picked=len(picked),
-                      n_history=len(history))
+                      n_delay=n_delay, n_geo=n_geo, n_verified=n_verified,
+                      n_picked=len(picked), n_history=len(history))
 
         log(f"✅ 完成: sub.yaml / sub-base64.txt / sub.conf / report.md ({len(pool)} 个节点)")
         return 0

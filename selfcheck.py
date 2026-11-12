@@ -270,6 +270,36 @@ def t_select_priority_http_before_ss():
     assert out[-1]["proto"] == "ss", out[-1]["proto"]
 
 
+def t_report_labels_match_what_they_count():
+    """日报的标签必须和它统计的东西对得上。
+
+    2026-11-12 复盘: 旧报表写"延迟存活 656 / 复检合格 597", 实际前者是
+    候选+免筛的合计, 后者是最终候选数(含 557 个根本没送复检的免筛节点)。
+    我和第三方复审都照着标签读, 各自算错一轮 —— 标签错比数字错更难发现,
+    因为它看起来总是合理的。
+    """
+    import ci_build
+    tmp = tempfile.mkdtemp()
+    old = ci_build.OUT
+    try:
+        ci_build.OUT = tmp
+        fast = node(server="8.8.8.8", port=443, proto="vless", uuid="u")
+        fast.update(cn_ok=1, cn_speed=0.5, verify_ok=3)
+        back = node(server="9.9.9.9", port=443, proto="vless", uuid="u")
+        back.update(cn_ok=None)
+        ci_build.write_outputs([fast, back], [], [],
+                               n_collected=100, n_delay=7, n_geo=93,
+                               n_verified=7, n_picked=100, n_history=200)
+        with open(os.path.join(tmp, "report.md"), encoding="utf-8") as f:
+            txt = f.read()
+        assert "订阅内可用率" in txt, "缺可用率"
+        assert "50.0%" in txt, f"1/2 能传数据, 可用率应是 50.0%\n{txt[:400]}"
+        assert "云端延迟存活" in txt and "免筛放行" in txt, txt[:400]
+        assert "复检合格" not in txt, "旧标签还在 —— 它统计的是最终候选数"
+    finally:
+        ci_build.OUT = old
+
+
 def t_kernel_proxy_keeps_ws_opts():
     """ws 节点的 path/host 必须还原成 ws-opts, 否则内核拿不到 Host 头。
 
