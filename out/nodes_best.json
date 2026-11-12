@@ -219,7 +219,7 @@
  {
   "server": "121.169.46.116",
   "port": 1090,
-  "name": "n7294",
+  "name": "n7295",
   "source": "go4sharing/arch",
   "username": "Og%3D%3D",
   "password": "",
@@ -340,7 +340,7 @@
  {
   "server": "fan.596189.xyz",
   "port": 443,
-  "name": "n7298",
+  "name": "n7300",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -452,7 +452,7 @@
   "server": "149.88.21.129",
   "port": 443,
   "tls": true,
-  "name": "n7334",
+  "name": "n7305",
   "source": "ermaozi",
   "fp": "149.88.21.129:443:http",
   "latency": null,
@@ -529,7 +529,7 @@
   "server": "31.171.155.210",
   "port": 9443,
   "tls": true,
-  "name": "n7333",
+  "name": "n7309",
   "source": "ermaozi",
   "fp": "31.171.155.210:9443:http",
   "latency": null,
@@ -574,7 +574,7 @@
   "server": "159.195.110.240",
   "port": 8080,
   "tls": false,
-  "name": "n7336",
+  "name": "n7312",
   "source": "ermaozi",
   "fp": "159.195.110.240:8080:http",
   "latency": null,
@@ -686,33 +686,6 @@
    "cf-trace": "ok"
   },
   "score": 0.8685,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "http",
-  "server": "38.247.141.135",
-  "port": 443,
-  "name": "n0065",
-  "source": "go4sharing/arch",
-  "username": "",
-  "password": "",
-  "tls": true,
-  "sni": "",
-  "skipCertVerify": true,
-  "fp": "59307f80d83eab20",
-  "sources": [
-   "go4sharing/arch"
-  ],
-  "latency": 43,
-  "jitter": 2,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8656,
   "speed": 0.0,
   "cn_ok": null
  },
@@ -884,6 +857,33 @@
    "cf-trace": "ok"
   },
   "score": 0.8581,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "ss",
+  "server": "202.50.253.63",
+  "port": 19999,
+  "cipher": "aes-256-gcm",
+  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+  "name": "n0091",
+  "source": "NoMoreWalls",
+  "fp": "14e932ab7cf1a319",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi",
+   "ripaojiedian",
+   "mahdibland/Aggregator"
+  ],
+  "latency": 146,
+  "jitter": 64,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8562,
   "speed": 0.0,
   "cn_ok": null
  }
