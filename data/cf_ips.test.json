@@ -1,0 +1,56 @@
+{
+ "at": 1794442983,
+ "host": "cloudflare.com",
+ "sampled": 120,
+ "tcp_ok": 63,
+ "results": [
+  {
+   "ip": "104.25.238.55",
+   "tls_ms": 323,
+   "ttfb_ms": 487,
+   "speed_kbps": 796
+  },
+  {
+   "ip": "104.24.167.192",
+   "tls_ms": 320,
+   "ttfb_ms": 481,
+   "speed_kbps": 683
+  },
+  {
+   "ip": "104.17.169.194",
+   "tls_ms": 375,
+   "ttfb_ms": 564,
+   "speed_kbps": 545
+  },
+  {
+   "ip": "104.24.201.39",
+   "tls_ms": 314,
+   "ttfb_ms": 473,
+   "speed_kbps": 534
+  },
+  {
+   "ip": "104.25.92.246",
+   "tls_ms": 317,
+   "ttfb_ms": 480,
+   "speed_kbps": 482
+  },
+  {
+   "ip": "104.25.158.115",
+   "tls_ms": 314,
+   "ttfb_ms": 473,
+   "speed_kbps": 341
+  },
+  {
+   "ip": "104.25.74.82",
+   "tls_ms": 313,
+   "ttfb_ms": 468,
+   "speed_kbps": 339
+  },
+  {
+   "ip": "104.18.168.198",
+   "tls_ms": 381,
+   "ttfb_ms": 573,
+   "speed_kbps": 251
+  }
+ ]
+}

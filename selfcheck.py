@@ -961,6 +961,57 @@ def t_opener_ignores_env_proxy():
         os.environ.pop("http_proxy", None)
 
 
+# ---------------------------------------------------------------- 自建 CF 节点
+def t_cf_sample_ips_stay_inside_blocks():
+    """优选 IP 的采样必须落在 CF 段内, 否则扫的是别人的 IP。"""
+    import cf_scan
+    ips = cf_scan.sample_ips(200, seed=7)
+    assert len(ips) == 200, len(ips)
+    assert len(set(ips)) == 200, "有重复 IP"
+    ranges = [(cf_scan._ip_to_int(b), 32 - p) for b, p in cf_scan.CF_BLOCKS]
+    for ip in ips:
+        v = cf_scan._ip_to_int(ip)
+        assert any(base <= v < base + 2 ** bits for base, bits in ranges), f"{ip} 不在 CF 段内"
+
+
+def t_cf_node_keeps_ws_opts():
+    """CF 只能出 ws, 节点必须带 ws-opts。
+
+    这条是给 2026-11-11 那个 bug 上锁: 当时探测丢掉了 ws-opts, 导致所有
+    CF 前置节点的 ws 握手拿不到 Host 头, 整类被判死(命中率 0.7% vs 同批 http 8.2%)。
+    """
+    import cf_sub
+    cfg = {"uuid": "11111111-2222-3333-4444-555555555555",
+           "domain": "n.example.com", "path": "/abc123"}
+    n = cf_sub.build_node(cfg, "104.16.1.1", 1)
+    assert n["network"] == "ws"
+    assert n["ws-opts"]["path"] == "/abc123", n["ws-opts"]
+    assert n["ws-opts"]["headers"]["Host"] == "n.example.com", n["ws-opts"]
+    assert n["servername"] == "n.example.com" and n["tls"] is True
+    assert n["port"] == 443, "CF 免费版只放行标准端口"
+
+
+def t_cf_vless_url_complete():
+    """vless:// 链接缺一个参数, 客户端就是连不上, 而且不报错。"""
+    import cf_sub
+    cfg = {"uuid": "11111111-2222-3333-4444-555555555555",
+           "domain": "n.example.com", "path": "/abc123"}
+    url = cf_sub.vless_url(cfg, "104.16.1.1")
+    for must in ("security=tls", "type=ws", "sni=n.example.com",
+                 "host=n.example.com", "path=%2Fabc123", "encryption=none"):
+        assert must in url, f"缺 {must}: {url}"
+
+
+def t_cf_emit_refuses_without_domain():
+    """没域名就要报错, 不能生成一堆连不上的节点 —— 那种半成品最难查。"""
+    import cf_sub
+    try:
+        cf_sub.emit({"uuid": "x", "domain": "", "path": "/p", "ips": ["1.1.1.1"]}, 1, False)
+    except SystemExit:
+        return
+    raise AssertionError("没有域名却生成了订阅")
+
+
 TESTS = [(k[2:], v) for k, v in sorted(globals().items()) if k.startswith("t_")]
 
 if __name__ == "__main__":

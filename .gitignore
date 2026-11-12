@@ -20,3 +20,11 @@ data/kernel_cache/
 out.bak.*
 data/nodes.prev-run.json
 data/nodes_fresh*.json
+
+# 自建节点的凭据(UUID/path), 等于密码, 绝不进库
+data/cf_self.json
+data/cf_ips.json
+logs/cf_scan.log
+
+# 自建订阅产物含 UUID, 不进库
+out/sub_self*
