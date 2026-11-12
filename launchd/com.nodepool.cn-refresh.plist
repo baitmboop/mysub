@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  每 7 天跑一次国内普查(cn_refresh.sh)。
+
+  为什么用 launchd 而不是 cron: cron 在 macOS 上错过就错过 —— 机器关机/睡眠
+  期间到点的任务不会补跑。launchd 的 StartCalendarInterval 会在开机或唤醒后
+  补跑错过的这一次, 正是这里需要的行为。
+
+  Weekday 4 = 星期四, 04:30。装法:
+    cp launchd/com.nodepool.cn-refresh.plist ~/Library/LaunchAgents/
+    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.nodepool.cn-refresh.plist
+  卸载:
+    launchctl bootout gui/$(id -u)/com.nodepool.cn-refresh
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.nodepool.cn-refresh</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>/Users/ty-yc/WorkBuddy/2026-11-11-11-17-09/nodepool/cn_refresh.sh</string>
+    </array>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Weekday</key>
+        <integer>4</integer>
+        <key>Hour</key>
+        <integer>4</integer>
+        <key>Minute</key>
+        <integer>30</integer>
+    </dict>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>ProcessType</key>
+    <string>Background</string>
+    <key>Nice</key>
+    <integer>5</integer>
+    <key>StandardOutPath</key>
+    <string>/Users/ty-yc/WorkBuddy/2026-11-11-11-17-09/nodepool/logs/cn-refresh.launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/ty-yc/WorkBuddy/2026-11-11-11-17-09/nodepool/logs/cn-refresh.launchd.log</string>
+</dict>
+</plist>
