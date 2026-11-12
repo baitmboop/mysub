@@ -11,7 +11,7 @@
   "network": "ws",
   "path": "/",
   "host": "",
-  "name": "n6403",
+  "name": "n6327",
   "source": "ermaozi",
   "fp": "62bb3b5e3a0e121a",
   "sources": [
@@ -199,7 +199,7 @@
  {
   "server": "91.107.179.68",
   "port": 10809,
-  "name": "🇩🇪DE_107|1.9MB/s|R002-260618 [15e34f11142a]",
+  "name": "n7213",
   "source": "clashnode",
   "username": "",
   "password": "",
@@ -212,6 +212,10 @@
   ],
   "type": "socks5",
   "proto": "socks5",
+  "latency": null,
+  "jitter": null,
+  "score": 0.0,
+  "speed": 0.0,
   "cn_ok": 1,
   "cn_by": "verify",
   "cn_speed": 0.669
@@ -663,11 +667,15 @@
   "server": "142.252.37.58",
   "port": 6182,
   "tls": false,
-  "name": "",
+  "name": "n7235",
   "source": "ermaozi",
   "username": "hommkiti",
   "password": "0wcmn0va70ra",
   "fp": "142.252.37.58:6182:http",
+  "latency": null,
+  "jitter": null,
+  "score": 0.0,
+  "speed": 0.0,
   "cn_ok": 1,
   "cn_by": "auto",
   "cn_latency": 1855,
@@ -846,40 +854,6 @@
   "cn_ok": null
  },
  {
-  "proto": "vless",
-  "server": "195.206.235.202",
-  "port": 443,
-  "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
-  "tls": true,
-  "sni": "4935e4t.de25.h1clayd.click",
-  "network": "tcp",
-  "path": "",
-  "host": "",
-  "flow": "xtls-rprx-vision",
-  "pbk": "MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw",
-  "sid": "6976d670818644cc",
-  "utls": "",
-  "reality": true,
-  "name": "n0335",
-  "source": "tg:@oneclickvpnkeys",
-  "fp": "68c240c0be99b412",
-  "sources": [
-   "tg:@oneclickvpnkeys"
-  ],
-  "latency": 141,
-  "jitter": 30,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8611,
-  "speed": 0.0,
-  "cn_ok": null,
-  "cn_by": "verify"
- },
- {
   "proto": "ss",
   "server": "202.50.253.99",
   "port": 19999,
@@ -1007,6 +981,32 @@
    "cf-trace": "ok"
   },
   "score": 0.8562,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "ss",
+  "server": "202.50.253.45",
+  "port": 19999,
+  "cipher": "aes-256-gcm",
+  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+  "name": "n0089",
+  "source": "NoMoreWalls",
+  "fp": "213439c516a1f278",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi",
+   "mahdibland/Aggregator"
+  ],
+  "latency": 149,
+  "jitter": 114,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8532,
   "speed": 0.0,
   "cn_ok": null
  }
