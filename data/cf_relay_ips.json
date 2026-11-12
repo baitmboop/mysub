@@ -1,0 +1,24 @@
+{
+ "at": 1794444718,
+ "source": null,
+ "results": [
+  {
+   "ip": "104.17.79.13",
+   "port": 2053,
+   "tls_ms": 599,
+   "ttfb_ms": 905,
+   "colo": "LAX",
+   "loc": "CN",
+   "speed_kbps": 227
+  },
+  {
+   "ip": "104.19.131.214",
+   "port": 8443,
+   "tls_ms": 506,
+   "ttfb_ms": 1096,
+   "colo": "LAX",
+   "loc": "CN",
+   "speed_kbps": 202
+  }
+ ]
+}

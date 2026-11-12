@@ -1012,6 +1012,63 @@ def t_cf_emit_refuses_without_domain():
     raise AssertionError("没有域名却生成了订阅")
 
 
+# ---------------------------------------------------------------- CF 中转
+def t_cf_relay_extract_ips():
+    """从频道原文里抠 IP:端口。要能容忍废话、版本号、日期。"""
+    import cf_relay
+    text = ("今日优选 104.16.1.1:443 104.17.2.2:2053\n"
+            "v2.1.5 发布于 2026.11.12 16:30\n"
+            "无效 999.1.1.1:443 和 104.18.3.3:99999\n"
+            "单写 104.19.4.4 也要认(默认 443)")
+    pairs = cf_relay.extract_ips(text)
+    assert (("104.16.1.1", 443) in pairs), pairs
+    assert (("104.17.2.2", 2053) in pairs), pairs
+    assert (("104.19.4.4", 443) in pairs), pairs
+    assert not any(ip.startswith(("999.", "2.1.", "2026.")) for ip, _ in pairs), pairs
+
+
+def t_cf_relay_swap_only_endpoint():
+    """换入口**只能**动 server/port。sni/host/path/uuid 动一个字节,
+    节点就会静默失效 —— 这是整套做法唯一的危险操作。"""
+    import cf_relay
+    n = node(server="old.example.com", port=443, proto="vless",
+             sni="backend.pages.dev", network="ws", path="/abc?ed=2048",
+             host="backend.pages.dev")
+    m = cf_relay.swap_endpoint(n, "104.16.1.1", 2053)
+    assert m["server"] == "104.16.1.1" and m["port"] == 2053
+    for k in ("sni", "host", "path", "uuid"):
+        assert m[k] == n[k], (k, m[k], n[k])
+    # 原节点不能被就地改掉
+    assert n["server"] == "old.example.com", "swap 修改了原节点"
+    assert n is not m
+
+
+def t_cf_relay_parse_link_keeps_ws():
+    """vless 链接解析要保住 ws 的 path/host —— 丢了就是 2026-11-11 那个坑。"""
+    import cf_relay
+    link = ("vless://11111111-2222-3333-4444-555555555555@old.example.com:443"
+            "?security=tls&type=ws&path=%2Ftv%2Fis&sni=backend.pages.dev"
+            "&host=backend.pages.dev#demo")
+    n = cf_relay.node_from_link(link)
+    assert n["proto"] == "vless" and n["server"] == "old.example.com"
+    assert n["network"] == "ws", n
+    assert n["path"] == "/tv/is", n["path"]
+    assert n["host"] == "backend.pages.dev", n
+    assert n["sni"] == "backend.pages.dev", n
+    assert n["tls"] is True
+
+
+def t_cf_relay_rejects_bad_link():
+    import cf_relay
+    assert cf_relay.node_from_link("http://a/b") is None
+    assert cf_relay.node_from_link("ss://xxx") is None
+
+
+def t_cf_relay_pool_lookup_missing():
+    import cf_relay
+    assert cf_relay.node_from_pool("no-such-host.invalid:443") is None
+
+
 TESTS = [(k[2:], v) for k, v in sorted(globals().items()) if k.startswith("t_")]
 
 if __name__ == "__main__":
