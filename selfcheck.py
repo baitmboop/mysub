@@ -1204,6 +1204,147 @@ def t_looks_like_sub_ignores_web_links():
     assert collect.looks_like_sub("\n".join(f"{i}.{i}.{i}.{i}:8080" for i in range(2, 15)))
 
 
+def t_derive_template_roundtrip_and_month_boundary():
+    """反推的模板必须能原样渲染回去, 且月份/日期段是真变量。
+
+    跨月是这类工具最典型的静默错误: 把 /2026/11/ 这段当成常量, 到了 12 月
+    拼出来的还是 /2026/11/, 每天 404, 日志里看着像"源挂了"。
+    """
+    import datetime
+    import discover_dated as dd
+    t = dd.derive_template("https://node.clashnode.cc/uploads/2026/11/1-20261112.yaml")
+    assert t, "带日期的 URL 必须能反推出模板"
+    assert t["url"] == "https://node.clashnode.cc/uploads/{y}/{m}/{n}-{ymd}.yaml", t["url"]
+    got = dd.render(t, datetime.date(2026, 10, 1), 1)
+    assert got == "https://node.clashnode.cc/uploads/2026/10/1-20261001.yaml", got
+    got = dd.render(t, datetime.date(2026, 3, 5), 0)
+    assert got == "https://node.clashnode.cc/uploads/2026/03/0-20260305.yaml", got
+
+
+def t_derive_template_keeps_width_and_ignores_query():
+    """非补零的日期照抄宽度, query 里的日期不当变量。
+
+    有的站是 /2026/9/1/, 补成 09 就连不上; 而 ?v=20261112 是缓存参数,
+    把它当日期会让整条 URL 每天都变, 反补必定全 404。
+    """
+    import datetime
+    import discover_dated as dd
+    t = dd.derive_template("https://x.example.com/2026/9/1/nodes.yaml")
+    assert t and t["width"]["m"] == 1 and t["width"]["d"] == 1, t
+    assert dd.render(t, datetime.date(2026, 3, 5)) == "https://x.example.com/2026/3/5/nodes.yaml"
+
+    q = dd.derive_template("https://x.example.com/a/20261112.txt?v=20261112")
+    assert q and q["url"].endswith("?v=20261112"), q
+    assert dd.render(q, datetime.date(2026, 1, 2)).endswith("a/20260102.txt?v=20261112")
+
+
+def t_derive_template_rejects_what_it_cannot_replay():
+    """没有日期、或日期只在域名里, 一律返回 None —— 不猜。"""
+    import discover_dated as dd
+    assert dd.derive_template("https://x.example.com/post/hello") is None
+    assert dd.derive_template("https://2026.example.com/x") is None
+    # 110 不是"11 号", 不能被 /{y}/{m}/{d} 吃掉
+    t = dd.derive_template("https://x.example.com/2026/11/110/nodes.yaml")
+    assert t and "{d}" not in t["url"], t
+
+
+def t_derive_template_collapses_seq_variants():
+    """同一天的多份文件必须收敛到同一个模板, 否则会被当成 N 个源各测一遍。"""
+    import discover_dated as dd
+    a = dd.derive_template("https://node.clashnode.cc/uploads/2026/11/0-20261112.yaml")
+    b = dd.derive_template("https://node.clashnode.cc/uploads/2026/11/3-20261112.yaml")
+    assert a and b and a["url"] == b["url"], (a, b)
+
+
+def t_discover_verdict_gates():
+    """闸门: 取不到 > 镜像 > 进管线。这三档决定了要不要写进 JSON。"""
+    import discover_dated as dd
+    assert dd.verdict({"files": 1, "raw": 500, "ratio": 0.9}) == "no"
+    assert dd.verdict({"files": 3, "raw": 500, "ratio": 0.05}) == "mirror"
+    assert dd.verdict({"files": 3, "raw": 500, "ratio": 0.50}) == "active"
+
+
+def t_known_templates_covers_hardcoded():
+    """硬编码的三条必须被认成"已在管线"。
+
+    这条是防一个具体的误判: 一个源只要在采, 它的节点就在池子里, new/raw 必然
+    接近 0, 光看闸门会判成"镜像"。把"已在管线"和"镜像"混为一谈, 结论就是
+    建议删掉一个每天稳定供货的源。
+    """
+    import datetime
+    import collect
+    import discover_dated as dd
+    known = dd.known_templates(datetime.date(2026, 11, 12))
+    assert "https://xinshoucun.net/sub/clash-{ymd}.yaml" in known, known
+    assert "https://node.clashnode.cc/uploads/{y}/{m}/{n}-{ymd}.yaml" in known, known
+
+
+def t_load_dated_sources_merges_and_dedupes():
+    """JSON 里只收 active 的; 与硬编码重复的模板不重复加; 硬编码排在最前。"""
+    import collect
+    d = tempfile.mkdtemp()
+    p = os.path.join(d, "dated.json")
+    old = collect.DATED_JSON
+    try:
+        with open(p, "w", encoding="utf-8") as f:
+            json.dump({"sources": [
+                {"name": "new1", "template": "https://a.example/x-{ymd}.yaml",
+                 "days": 2, "status": "active", "seq": [0, 1]},
+                {"name": "mirror", "template": "https://b.example/y-{ymd}.yaml",
+                 "days": 3, "status": "mirror"},
+                {"name": "dup", "template": collect.DATED_SOURCES[0][1],
+                 "days": 5, "status": "active"},
+                {"name": "bad", "template": "", "days": 3, "status": "active"},
+            ]}, f)
+        collect.DATED_JSON = p
+        got = collect.load_dated_sources()
+        heads = [e[1] for e in got[:len(collect.DATED_SOURCES)]]
+        assert heads == [e[1] for e in collect.DATED_SOURCES], heads
+        tpls = [e[1] for e in got]
+        assert len(tpls) == len(set(tpls)), f"模板重复: {tpls}"
+        assert "https://a.example/x-{ymd}.yaml" in tpls
+        assert not any("b.example" in t for t in tpls), "mirror 不该进管线"
+        entry = [e for e in got if e[1].startswith("https://a.example")][0]
+        assert entry[2] == 2 and entry[3] == (0, 1), entry
+    finally:
+        collect.DATED_JSON = old
+
+
+def t_load_dated_sources_survives_broken_json():
+    """JSON 写坏/不存在时退回只用硬编码, 不能抛异常 —— 否则整轮采集全挂。"""
+    import collect
+    d = tempfile.mkdtemp()
+    p = os.path.join(d, "bad.json")
+    old = collect.DATED_JSON
+    try:
+        with open(p, "w", encoding="utf-8") as f:
+            f.write("{ not json ")
+        collect.DATED_JSON = p
+        assert len(collect.load_dated_sources()) == len(collect.DATED_SOURCES)
+        collect.DATED_JSON = os.path.join(d, "nope.json")
+        assert len(collect.load_dated_sources()) == len(collect.DATED_SOURCES)
+    finally:
+        collect.DATED_JSON = old
+
+
+def t_discover_filters_media_and_slug():
+    """媒体文件和 slug 页必须挡在实测之前。
+
+    这不是洁癖: 名额只有 10 个, 而一个 WordPress 站的首页能贡献 400 多条
+    /2026/11/xxx.jpg。不挡的话名额全被头像吃掉, 真正像订阅的那条挤不进去 ——
+    实测时就发生过, 前 10 个全是头像和裁剪图。
+    """
+    import discover_dated as dd
+    assert dd.is_noise("https://b.example/wp-content/uploads/{y}/{m}/头像.jpg")
+    assert dd.is_noise("https://b.example/{y}/{m}/{d}/2026-11-11%e8%8a%82%e7%82%b9-150%e4%b8%aa/")
+    # 日期目录 + 纯数字文章 ID 也是永久链接, 回补只有当天那篇能取到
+    assert dd.is_noise("https://b.example/{y}/{m}/{d}/1466/")
+    assert not dd.is_noise("https://node.clashnode.cc/uploads/{y}/{m}/{n}-{ymd}.yaml")
+    good = dd.score("https://x.example/sub/clash-{ymd}.yaml")
+    bad = dd.score("https://x.example/wp-content/uploads/{y}/{m}/a.jpg")
+    assert good > bad, (good, bad)
+
+
 TESTS = [(k[2:], v) for k, v in sorted(globals().items()) if k.startswith("t_")]
 if __name__ == "__main__":
     print(f"边界自检: {len(TESTS)} 项\n")

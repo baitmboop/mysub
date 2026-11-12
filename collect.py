@@ -204,6 +204,49 @@ def is_sub_candidate(u: str) -> bool:
 _ROOT = os.path.dirname(os.path.abspath(__file__))
 EXTRA_CHANNELS = os.path.join(_ROOT, "data", "extra_channels.txt")
 EXTRA_SUBS = os.path.join(_ROOT, "data", "extra_subs.txt")
+DATED_JSON = os.path.join(_ROOT, "data", "dated_sources.json")
+
+
+def load_dated_sources() -> list[tuple]:
+    """DATED_SOURCES 的完整清单 = 硬编码 + data/dated_sources.json 里 active 的。
+
+    为什么分两层: 硬编码那三条是人肉挖出来、带依据和注释的, 不能因为某个文件
+    丢了就整段失效, 所以永远排在最前; JSON 是 discover_dated.py 自动挖出来的,
+    有失效风险, 只放 status=active 的进来。
+
+    模板去重 —— 同一个模板写两遍, 每轮就多抓一遍, 还让报表里两个同名源互相
+    分票, 看着像"两个源都产出很少"。
+    """
+    out: list[tuple] = []
+    seen: set[str] = set()
+    for e in DATED_SOURCES:
+        out.append(tuple(e))
+        seen.add(e[1])
+
+    try:
+        with open(DATED_JSON, encoding="utf-8") as f:
+            doc = json.load(f)
+        items = doc.get("sources") if isinstance(doc, dict) else None
+    except (OSError, ValueError):
+        items = None          # 文件不存在/写坏了 → 只用硬编码, 不报错
+
+    for s in items or []:
+        if not isinstance(s, dict) or s.get("status") != "active":
+            continue
+        tpl = s.get("template")
+        if not isinstance(tpl, str) or not tpl or tpl in seen:
+            continue
+        seen.add(tpl)
+        try:
+            days = max(1, int(s.get("days") or 3))
+        except (TypeError, ValueError):
+            days = 3
+        entry: tuple = (str(s.get("name") or tpl), tpl, days)
+        seq = s.get("seq")
+        if isinstance(seq, list) and seq:
+            entry += (tuple(int(x) for x in seq if str(x).isdigit()),)
+        out.append(entry)
+    return out
 
 
 def load_extra_list(path: str) -> list[str]:
@@ -898,7 +941,7 @@ def main():
             got += ingest(body.decode("utf-8", "ignore"), name, quiet=True)
         print(f"  * {name}: 取 {len(urls)} 份 (缺 {miss}), 共抽出 {got} 条")
 
-    for entry in DATED_SOURCES:
+    for entry in load_dated_sources():
         name, tpl, days = entry[0], entry[1], entry[2]
         seq = entry[3] if len(entry) > 3 else None      # 同日多份的站点才有
         urls = dated_urls(tpl, days, seq=seq)

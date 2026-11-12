@@ -8,3 +8,8 @@
 # 或者有订阅地址(机场免费试用)。只发图片和推广的抓不到东西。
 #
 # 已转正的频道写在 collect.py 的 TG_CHANNELS 里, 不用在这里重复。
+#
+# 2026-11-12 从 blog.banyunxiaoxi.icu 的文章正文里抠出来的 (discover_dated 的
+# 副产品)。本机 t.me 不通, 加进来但**未经实测**, 看下一轮 CI 的报表:
+# 抽不出节点就删掉, 别留在清单里占每轮一次请求。
+xiaoxibanyun

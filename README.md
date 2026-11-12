@@ -76,6 +76,31 @@ python3 audit_source.py <源地址> --sample 40 --save
 > 实测教训：某聚合仓抽得出 1802 条，中国网络存活 0 条；另一份归档只抽出 155 条 http，
 > 却有 8 个能跑 50KB/s 以上、最快的 1.2MB/s。
 
+### 按日归档的站点（URL 带日期）
+
+有的站每天一个文件（`/uploads/2026/11/1-20261112.yaml`），拿到一条就能推前面所有天。
+`discover_dated.py` 从一条 URL 反推模板、回补实测、通过闸门才写进
+`data/dated_sources.json`，`collect.py` 每轮自动读它。
+
+```bash
+# 已知一条带日期的 URL，反推模板并回补
+python3 discover_dated.py --probe-template "https://site/uploads/2026/11/1-20261112.yaml" --days 3
+
+# 从帖子正文里找（TG 导出 / X 帖子都行）
+python3 discover_dated.py --posts data/tg_posts.txt --days 3
+
+# 站内结构性嗅探（首页 + sitemap + 一层跟跳）
+python3 discover_dated.py --host example.com --days 3
+
+# 想进管线就加 --write
+```
+
+> **盲扫域名基本挖不到东西。** 实测两个真站 437 条带日期 URL，435 条是媒体文件
+> 和文章永久链接，可用模板 0 个。指纹只活在帖子正文里 —— 用 `--posts`。
+>
+> 判据是 `new/raw ≥ 10%`：姊妹站共用后端时四个域名给同一份文件，`raw` 很好看、
+> `new` 是 0，加进去一个节点都不多。已经在采的源会被标 "已在管线"，不算镜像。
+
 ## 目录结构
 
 ```
@@ -85,6 +110,7 @@ nodepool/
 ├── ci_build.py         # 云端构建: 只筛可用性, 不测带宽
 ├── gateway.py          # 本机统一出口: 历史池 / 健康探测 / 订阅生成 / HTTP 服务
 ├── collect.py          # 采集与解析 (TG 频道 + 6 个公开源)
+├── discover_dated.py   # 按日归档站点: 反推模板 → 回补实测 → 闸门
 ├── probe.py            # 用 mihomo 内核实测延迟/抖动/带宽 + 多站点复检
 ├── attribute.py        # 供应链溯源: 扩散广度、归属聚合、垃圾地址
 ├── refresh.sh          # 每日刷新: 采集 → 测速 → 并池 → 通知重载
