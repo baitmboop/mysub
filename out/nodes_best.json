@@ -81,7 +81,7 @@
  {
   "server": "69.55.49.177",
   "port": 38182,
-  "name": "n7448",
+  "name": "n2581",
   "source": "clashnode",
   "username": "",
   "password": "",
@@ -201,7 +201,7 @@
  {
   "server": "121.169.46.116",
   "port": 1090,
-  "name": "n7433",
+  "name": "n2566",
   "source": "go4sharing/arch",
   "username": "Og%3D%3D",
   "password": "",
@@ -292,7 +292,7 @@
  {
   "server": "fan.596189.xyz",
   "port": 443,
-  "name": "n7432",
+  "name": "n2565",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -368,9 +368,8 @@
   "sid": "",
   "utls": "",
   "reality": false,
-  "name": "n4944",
-  "source": "NoMoreWalls",
-  "fp": "fd314bfaa919fbd2",
+  "name": "n2383",
+  "source": "ermaozi",
   "sources": [
    "NoMoreWalls",
    "ermaozi",
@@ -379,8 +378,8 @@
   ],
   "latency": null,
   "jitter": null,
-  "score": 0.0,
   "speed": 0.0,
+  "score": 0.0,
   "cn_ok": 1,
   "cn_by": "verify",
   "cn_latency": 1983,
@@ -467,39 +466,6 @@
   "cn_by": "verify",
   "cn_latency": 2671,
   "cn_speed": 0.0664
- },
- {
-  "proto": "vless",
-  "server": "3.169.9.125",
-  "port": 443,
-  "uuid": "67cd3349-f789-4cbb-8b91-4b6b1654ce7c",
-  "tls": true,
-  "sni": "d14jyezfrcyf60.cloudfront.net",
-  "network": "ws",
-  "path": "/",
-  "host": "d14jyezfrcyf60.cloudfront.net",
-  "flow": "",
-  "pbk": "",
-  "sid": "",
-  "fp": "812f079f71221536",
-  "reality": false,
-  "name": "n0348",
-  "source": "ermaozi",
-  "sources": [
-   "ermaozi"
-  ],
-  "latency": 385,
-  "jitter": 0,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9287,
-  "speed": 0.0,
-  "cn_ok": null,
-  "cn_by": "verify"
  },
  {
   "proto": "http",
@@ -751,6 +717,32 @@
    "cf-trace": "ok"
   },
   "score": 0.8591,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "ss",
+  "server": "202.50.253.72",
+  "port": 19999,
+  "cipher": "aes-256-gcm",
+  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+  "name": "n0092",
+  "source": "NoMoreWalls",
+  "fp": "99349787b26df3e9",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi",
+   "mahdibland/Aggregator"
+  ],
+  "latency": 144,
+  "jitter": 26,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8581,
   "speed": 0.0,
   "cn_ok": null
  }
