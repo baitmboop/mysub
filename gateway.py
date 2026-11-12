@@ -464,17 +464,21 @@ def to_uri(n: dict) -> str | None:
     if proto in ("http", "socks5"):
         # base64 订阅只装得下 URI。普通代理用标准 userinfo 形式表达:
         #   http://user:pass@host:port#name
-        # 客户端认就认, 不认会跳过这一条 —— 但 Clash 那份(sub.yaml)一定可用,
-        # 因为 YAML 能直接表达 type: http。
+        #
+        # 但**带 TLS 的 http 代理不能进 base64**: 它没有公认的分享格式。
+        # 曾经写成 https://host:port, 结果是客户端当成网页地址 —— 小火箭里
+        # 显示成一个标着 ⚠️ 的 HTTPS 条目(AUTO 分组里), 看着有, 其实连不上。
+        # 这种"假装存在"比缺席更坏: 用户会以为节点坏了, 实际是订阅写错了。
+        # 这类节点只走 sub.conf 的 Surge 写法(https, host, port), 那是 iOS
+        # 端唯一有明确定义的表达。
+        if n.get("tls"):
+            return None
         cred = ""
         if n.get("username") or n.get("password"):
             cred = urllib.parse.quote(str(n.get("username") or ""), safe="")
             cred += ":" + urllib.parse.quote(str(n.get("password") or ""), safe="")
             cred += "@"
-        if proto == "socks5":
-            scheme = "socks5"
-        else:
-            scheme = "https" if n.get("tls") else "http"
+        scheme = "socks5" if proto == "socks5" else "http"
         return f"{scheme}://{cred}{srv}:{port}#{name}"
     return None
 

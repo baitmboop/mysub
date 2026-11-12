@@ -615,18 +615,37 @@ def t_http_proxy_roundtrip():
 
 
 def t_http_proxy_to_uri():
-    """base64 订阅里要能表达普通代理, 否则手机端一条都看不到。"""
+    """base64 订阅里要能表达普通代理, 但**不能**表达带 TLS 的那种。
+
+    https://host:port 没有公认的代理语义, 客户端会当成网页地址 —— 小火箭里
+    就是一个带 ⚠️ 的 HTTPS 条目, 看着在, 点不通。宁可缺席, 也不要假装存在:
+    缺席用户知道"少一个", 假存在用户会以为"节点全坏了"。
+    """
     n = {"proto": "http", "server": "p.example.com", "port": 8443,
          "username": "u", "password": "p", "name": "H1"}
     uri = gateway.to_uri(n)
     assert uri and uri.startswith("http://u:p@p.example.com:8443"), uri
-    # 带 tls 的必须走 https, 否则明文连到 TLS 端口直接被拒
+    # 带 TLS 的: base64 里没有合法写法, 必须返回 None 交给 sub.conf
     n["tls"] = True
-    uri_tls = gateway.to_uri(n)
-    assert uri_tls and uri_tls.startswith("https://u:p@p.example.com:8443"), uri_tls
+    assert gateway.to_uri(n) is None, gateway.to_uri(n)
     n2 = {"proto": "http", "server": "q.example.com", "port": 8080, "name": "H2"}
     uri2 = gateway.to_uri(n2)
     assert uri2 and uri2.startswith("http://q.example.com:8080"), uri2
+
+
+def t_base64_never_emits_https():
+    """整个 base64 产物里一条 https:// 都不许有 —— 这是手机端 ⚠️ 的来源。"""
+    pool = [
+        {"proto": "http", "server": "a.example.com", "port": 443, "tls": True, "name": "H1"},
+        {"proto": "http", "server": "b.example.com", "port": 8080, "name": "H2"},
+        {"proto": "socks5", "server": "c.example.com", "port": 1080, "name": "S1"},
+    ]
+    import base64 as b64
+    txt = b64.b64decode(gateway.build_base64(pool, [], [])).decode()
+    assert "https://" not in txt, txt
+    assert "http://b.example.com:8080" in txt
+    assert "socks5://c.example.com:1080" in txt
+    assert "a.example.com" not in txt, "带 TLS 的 http 代理不该出现在 base64 里"
 
 
 def t_surge_http_no_auth():
@@ -711,7 +730,7 @@ def t_yaml_null_literals():
     import collect
     doc = """
 proxies:
-  - {name: A, type: http, server: 1.1.1.1, port: 443, username: 'null', password: 'null', tls: true}
+  - {name: A, type: http, server: 1.1.1.1, port: 8080, username: 'null', password: 'null'}
   - {name: B, type: vless, server: 2.2.2.2, port: 443, uuid: 'null', sni: 'none'}
 """
     a, b = collect.nodes_from_yaml(doc, "t")
