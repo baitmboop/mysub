@@ -844,11 +844,21 @@ def build_base64(pool: list, private: list, fallback: list, namer=None) -> str:
         u = _proxy_to_uri(p)
         if u:
             uris.append(u)
-    for i, n in enumerate(pool, 1):
-        item = n
-        if namer is not None:
-            item = dict(n)
-            item["name"] = namer(n, i)
+    # 编号只在"真的进了列表"时才前进。
+    # 带 TLS 的 http 代理没有公认的分享链接格式(to_uri 返回 None), 如果照旧
+    # 按 pool 下标编号, 手机端就会看到 N01..N10 之后直接跳到 N16 —— 中间十
+    # 一个空号, 用户以为订阅缺了一截。实测 30 个池子出 19 条, 空号正好是
+    # 那 11 个带 TLS 的 http 代理。
+    # 代价: yaml/conf 是完整订阅, 编号仍是池内排名(1..30), 这里按 base64
+    # 自己的输出位置重编(1..19), 两边编号会不同。所以名字里都带 server ——
+    # 报"某个节点不通"时按 IP 对号, 不依赖编号。
+    seq = 0
+    for n in pool:
+        # 能否转出 URI 与名字无关, 先用占位名判一次, 免得白占一个编号
+        if not to_uri(dict(n, name="-")):
+            continue
+        seq += 1
+        item = dict(n) if namer is None else dict(n, name=namer(n, seq))
         u = to_uri(item)
         if u:
             uris.append(u)

@@ -316,6 +316,34 @@ def t_build_base64_empty():
     assert isinstance(s, str)
 
 
+def t_build_base64_numbering_contiguous():
+    """转不出 URI 的节点不许在编号里留空号。
+
+    带 TLS 的 http 代理没有公认分享格式, to_uri 返回 None。如果编号按 pool
+    下标走, 手机端就会看到 N01..N10 之后跳到 N16 —— 30 个池子出 19 条, 空号
+    正好 11 个, 用户以为订阅缺了一截。编号必须跟着实际输出位置走。
+    """
+    import base64 as _b64
+    import re as _re
+
+    pool = [
+        node("1.1.1.1", proto="vless"),
+        {"server": "2.2.2.2", "port": 443, "proto": "http",
+         "username": "u", "password": "p", "tls": True},
+        node("3.3.3.3", proto="ss", cipher="aes-256-gcm", password="p"),
+        {"server": "4.4.4.4", "port": 443, "proto": "http",
+         "username": "u", "password": "p", "tls": True},
+        {"server": "5.5.5.5", "port": 8080, "proto": "http",
+         "username": "u", "password": "p"},
+    ]
+    s = gateway.build_base64(pool, [], [],
+                             namer=lambda n, i: f"N{i:02d} {n['server']}")
+    raw = _b64.b64decode(s).decode()
+    nums = [int(m.group(1)) for m in _re.finditer(r"#N(\d{2})", raw)]
+    assert nums == [1, 2, 3], f"编号必须 1..3 连续, 实际 {nums}"
+    assert "2.2.2.2" not in raw and "4.4.4.4" not in raw, "带 TLS 的 http 不该出现在 base64"
+
+
 def t_build_handles_missing_fields():
     """节点字段残缺时不应该抛异常, 顶多这一条生成不出来。"""
     n = {"server": "1.2.3.4", "port": 443, "proto": "vless", "fp": "a"}
