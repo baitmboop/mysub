@@ -1,5 +1,5 @@
-# nodepool  生成于 2026-11-12 07:42:24 (北京时间)
-# 节点数 39  (自建 0 / 免费额度 0 / 免费池 39)
+# nodepool  生成于 2026-11-12 10:43:00 (北京时间)
+# 节点数 38  (自建 0 / 免费额度 0 / 免费池 38)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
 proxies:
@@ -171,28 +171,14 @@ proxies:
     password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
     skipCertVerify: true
     sni: shorts.blog-forme.ru
-  - name: N23 185.255.95.131
-    type: vless
-    server: 185.255.95.131
-    port: 11738
-    uuid: e38111aa-f62a-46ad-a538-6f3003f2f43d
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: www.asus.com
-    reality-opts:
-      public-key: DqPCXKIPN4NDurylwyVdPsaW9V1uYktHSon4n2Kb1y8
-      short-id: 7815104c
-    client-fingerprint: chrome
-  - name: N24 185.219.159.15
+  - name: N23 185.219.159.15
     type: http
     server: 185.219.159.15
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N25 191.44.112.170.sslip.io
+  - name: N24 191.44.112.170.sslip.io
     type: trojan
     server: 191.44.112.170.sslip.io
     port: 443
@@ -205,21 +191,21 @@ proxies:
       headers:
         Host: orbylume.my.to
     network: ws
-  - name: N26 185.219.159.16
+  - name: N25 185.219.159.16
     type: http
     server: 185.219.159.16
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N27 202.50.253.18
+  - name: N26 202.50.253.18
     type: ss
     server: 202.50.253.18
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N28 hk3.wawojk.dpdns.org
+  - name: N27 hk3.wawojk.dpdns.org
     type: vless
     server: hk3.wawojk.dpdns.org
     port: 51314
@@ -233,14 +219,14 @@ proxies:
       public-key: VWY3lvh8l3OoKnhln5nIzmxAG0Imp9arXMK6nbsGVB4
       short-id: 0ee643ab
     client-fingerprint: chrome
-  - name: N29 83.206.1.225
+  - name: N28 83.206.1.225
     type: http
     server: 83.206.1.225
     port: 8090
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N30 66.163.112.76
+  - name: N29 66.163.112.76
     type: trojan
     server: 66.163.112.76
     port: 443
@@ -248,7 +234,7 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: api.unlockyourfuturefindyourperfectcareer.com
-  - name: N31 216.106.186.66
+  - name: N30 216.106.186.66
     type: trojan
     server: 216.106.186.66
     port: 443
@@ -256,61 +242,65 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: www.findlocaljobnetworkandbuildcommunityconnections.com
-  - name: N32 216.106.186.33
-    type: trojan
-    server: 216.106.186.33
+  - name: N31 195.123.240.65
+    type: vless
+    server: 195.123.240.65
     port: 443
-    password: f0eb8c92ce8946aaba856569cff1a16b
+    uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
     udp: true
     skipCertVerify: true
-    sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  - name: N33 66.163.112.121
-    type: trojan
-    server: 66.163.112.121
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: www.unlockyourfuturefindyourperfectcareer.com
-  - name: N34 138.197.89.234
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.cloudflare.com
+    reality-opts:
+      public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
+      short-id: 19296c9f1bf9c7b1
+    client-fingerprint: chrome
+  - name: N32 138.197.89.234
     type: ss
     server: 138.197.89.234
     port: 28960
     cipher: chacha20-ietf-poly1305
     password: DZRy4Q3QH0jUGfKFl2jDCZ
     udp: true
-  - name: N35 216.106.186.46
-    type: trojan
-    server: 216.106.186.46
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: cdn.findlocaljobnetworkandbuildcommunityconnections.com
-  - name: N36 35.182.245.215
+  - name: N33 35.182.245.215
     type: ss
     server: 35.182.245.215
     port: 443
     cipher: aes-256-cfb
     password: amazonskr05
     udp: true
-  - name: N37 35.182.250.103
+  - name: N34 35.182.250.103
     type: ss
     server: 35.182.250.103
     port: 443
     cipher: aes-256-cfb
     password: amazonskr05
     udp: true
-  - name: N38 15.156.192.45
+  - name: N35 15.156.192.45
     type: ss
     server: 15.156.192.45
     port: 443
     cipher: aes-256-cfb
     password: amazonskr05
     udp: true
-  - name: N39 185.230.230.18
+  - name: N36 185.230.230.18
     type: ss
     server: 185.230.230.18
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N37 45.86.51.18
+    type: ss
+    server: 45.86.51.18
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N38 172.111.38.72
+    type: ss
+    server: 172.111.38.72
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -343,23 +333,22 @@ proxy-groups:
       - N20 202.50.253.90
       - N21 202.50.253.81
       - N22 212.34.137.105
-      - N23 185.255.95.131
-      - N24 185.219.159.15
-      - N25 191.44.112.170.sslip.io
-      - N26 185.219.159.16
-      - N27 202.50.253.18
-      - N28 hk3.wawojk.dpdns.org
-      - N29 83.206.1.225
-      - N30 66.163.112.76
-      - N31 216.106.186.66
-      - N32 216.106.186.33
-      - N33 66.163.112.121
-      - N34 138.197.89.234
-      - N35 216.106.186.46
-      - N36 35.182.245.215
-      - N37 35.182.250.103
-      - N38 15.156.192.45
-      - N39 185.230.230.18
+      - N23 185.219.159.15
+      - N24 191.44.112.170.sslip.io
+      - N25 185.219.159.16
+      - N26 202.50.253.18
+      - N27 hk3.wawojk.dpdns.org
+      - N28 83.206.1.225
+      - N29 66.163.112.76
+      - N30 216.106.186.66
+      - N31 195.123.240.65
+      - N32 138.197.89.234
+      - N33 35.182.245.215
+      - N34 35.182.250.103
+      - N35 15.156.192.45
+      - N36 185.230.230.18
+      - N37 45.86.51.18
+      - N38 172.111.38.72
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -388,23 +377,22 @@ proxy-groups:
       - N20 202.50.253.90
       - N21 202.50.253.81
       - N22 212.34.137.105
-      - N23 185.255.95.131
-      - N24 185.219.159.15
-      - N25 191.44.112.170.sslip.io
-      - N26 185.219.159.16
-      - N27 202.50.253.18
-      - N28 hk3.wawojk.dpdns.org
-      - N29 83.206.1.225
-      - N30 66.163.112.76
-      - N31 216.106.186.66
-      - N32 216.106.186.33
-      - N33 66.163.112.121
-      - N34 138.197.89.234
-      - N35 216.106.186.46
-      - N36 35.182.245.215
-      - N37 35.182.250.103
-      - N38 15.156.192.45
-      - N39 185.230.230.18
+      - N23 185.219.159.15
+      - N24 191.44.112.170.sslip.io
+      - N25 185.219.159.16
+      - N26 202.50.253.18
+      - N27 hk3.wawojk.dpdns.org
+      - N28 83.206.1.225
+      - N29 66.163.112.76
+      - N30 216.106.186.66
+      - N31 195.123.240.65
+      - N32 138.197.89.234
+      - N33 35.182.245.215
+      - N34 35.182.250.103
+      - N35 15.156.192.45
+      - N36 185.230.230.18
+      - N37 45.86.51.18
+      - N38 172.111.38.72
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -432,22 +420,21 @@ proxy-groups:
       - N20 202.50.253.90
       - N21 202.50.253.81
       - N22 212.34.137.105
-      - N23 185.255.95.131
-      - N24 185.219.159.15
-      - N25 191.44.112.170.sslip.io
-      - N26 185.219.159.16
-      - N27 202.50.253.18
-      - N28 hk3.wawojk.dpdns.org
-      - N29 83.206.1.225
-      - N30 66.163.112.76
-      - N31 216.106.186.66
-      - N32 216.106.186.33
-      - N33 66.163.112.121
-      - N34 138.197.89.234
-      - N35 216.106.186.46
-      - N36 35.182.245.215
-      - N37 35.182.250.103
-      - N38 15.156.192.45
-      - N39 185.230.230.18
+      - N23 185.219.159.15
+      - N24 191.44.112.170.sslip.io
+      - N25 185.219.159.16
+      - N26 202.50.253.18
+      - N27 hk3.wawojk.dpdns.org
+      - N28 83.206.1.225
+      - N29 66.163.112.76
+      - N30 216.106.186.66
+      - N31 195.123.240.65
+      - N32 138.197.89.234
+      - N33 35.182.245.215
+      - N34 35.182.250.103
+      - N35 15.156.192.45
+      - N36 185.230.230.18
+      - N37 45.86.51.18
+      - N38 172.111.38.72
 rules:
   - "MATCH,节点选择"
