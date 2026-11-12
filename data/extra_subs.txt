@@ -1,7 +1,15 @@
 # 额外抓取的整份订阅, 一行一个 URL。
-# 支持两种内容: base64 的节点列表, 或 Clash YAML(带 proxies: 字段)。
+# 支持三种内容: base64 的节点列表 / Clash YAML(带 proxies: 字段) /
+#               纯代理清单(整篇 http://host:port 或 host:port)。
 #
 # 注意: 本仓库是公开的, 把带 token 的机场订阅写进这里等于公开。
 # 只放那种本来就在公开频道里贴着的地址。
 #
 # 已转正的订阅写在 collect.py 的 SUB_SOURCES 里, 不用在这里重复。
+
+# 公共 HTTP 代理清单。2026-11-12 实测(200 个抽样, 走的是真实管线顺序):
+#   TCP 通 25.5% → 能中继 HTTPS 的 5.5% → 过 50KB/s 的只有 1.0%
+# 也就是 400 条里大约出 4 个能用的, 而且都慢(75~270KB/s)。
+# 加它的理由是"边际成本低": 直连协议不走内核, 400 条约 25 秒 TCP + 100 次直测。
+# 如果两轮之后它在订阅里贡献不到 2 个节点, 直接删掉这一行。
+https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt

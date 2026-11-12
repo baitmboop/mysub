@@ -30,6 +30,124 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
 VG_REGEX = re.compile(
     r'(?:vmess|vless|trojan|ss|ssr|hysteria2|hy2|tuic)://[^\s"\'<>\\]+', re.I)
 
+# ---------------------------------------------------------------- 普通代理
+# 为什么不把 http/socks5 塞进 VG_REGEX:
+# 那个正则在整篇文本里 search, 加上 http 会把 Telegram 帖子里每一条普通
+# 网页链接都当成节点。这里的规矩是"整行必须恰好是一个代理"——网页链接
+# 一定带路径或查询串, 代理链接不会有。
+#
+# 两种形态:
+#   ① 带 scheme: http://user:pass@1.2.3.4:8080    (人工整理的清单常见)
+#   ② 裸地址:    1.2.3.4:8080                      (TheSpeedX 那种自动列表,
+#      量最大, 但单看一行和配置片段长得一样, 所以只在"整篇都是这个"时才认)
+
+_HOST = r"(?:\[[0-9a-fA-F:]+\]|(?:\d{1,3}\.){3}\d{1,3}|[A-Za-z0-9][A-Za-z0-9.\-]{1,252})"
+_CRED = r"(?:(?P<user>[^:@/\s]{1,64}):(?P<pw>[^@/\s]{0,64})@)?"
+
+# 整行锚定, 结尾最多一个斜杠: 有路径就不是代理行。
+PROXY_URI_RE = re.compile(
+    r"^[ \t>•*\-]*(?P<scheme>https?|socks5h?|socks4a?)://"
+    + _CRED + r"(?P<host>" + _HOST + r"):(?P<port>\d{1,5})/?[ \t]*$",
+    re.I | re.M)
+
+# 裸地址: 只用于"整篇是清单"的判定, 不参与正文扫描。
+BARE_PROXY_RE = re.compile(
+    r"^[ \t]*(?P<host>" + _HOST + r"):(?P<port>\d{1,5})[ \t]*$")
+
+
+def _private_host(host: str) -> bool:
+    """本机/内网/保留地址一律丢。公共代理清单里混这些很常见,
+    它们永远连不通, 白占测速名额。"""
+    h = host.strip("[]").lower()
+    if h in ("localhost", "ip6-localhost"):
+        return True
+    m = re.match(r"^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$", h)
+    if not m:
+        return False
+    octets = [int(x) for x in m.groups()]
+    if any(o > 255 for o in octets):
+        return True                       # 999.1.1.1 这种, 是写错的不是地址
+    a, b = octets[0], octets[1]
+    if a == 0 or a == 127 or a >= 224:
+        return True                       # 本机 / 保留 / 组播
+    if a == 10 or (a == 172 and 16 <= b <= 31) or (a == 192 and b == 168):
+        return True
+    if (a == 169 and b == 254) or (a == 100 and 64 <= b <= 127):
+        return True                       # 链路本地 / 运营商 NAT
+    return False
+
+
+def _proxy_node(host: str, port: str, scheme: str, user: str | None,
+                pw: str | None, source: str) -> dict | None:
+    try:
+        p = int(port)
+    except ValueError:
+        return None
+    if not 1 <= p <= 65535:
+        return None
+    host = host.strip()
+    if not host or _private_host(host):
+        return None
+    s = scheme.lower()
+    proto = "socks5" if s.startswith("socks5") else (
+        "socks4" if s.startswith("socks4") else "http")
+    n = {"proto": proto, "server": host.strip("[]"), "port": p,
+         "tls": s == "https", "name": "", "source": source}
+    if user:
+        n["username"] = urllib.parse.unquote(user)
+        n["password"] = urllib.parse.unquote(pw or "")
+    return n
+
+
+def proxy_uri_nodes(text: str, source: str) -> list[dict]:
+    """整行形式的代理链接。少于 3 条就不认 ——
+
+    帖子正文里出现一条 `http://1.2.3.4:8080` 是可能的, 出现三条同形态的
+    才是"这是一份代理清单"的证据。单条误判的代价是给测速阶段塞垃圾。
+    """
+    out = []
+    for m in PROXY_URI_RE.finditer(text or ""):
+        n = _proxy_node(m.group("host"), m.group("port"), m.group("scheme"),
+                        m.group("user"), m.group("pw"), source)
+        if n:
+            out.append(n)
+    return out if len(out) >= 3 else []
+
+
+PROXY_LIST_MAX = 400   # 每份公共清单最多收这么多条, 理由见 proxy_list_nodes
+
+
+def proxy_list_nodes(text: str, source: str) -> list[dict]:
+    """整篇都是 host:port 的纯代理清单。
+
+    闸门是"整篇都是", 不是"有几行像": 所以 Telegram 帖子里偶尔出现的
+    `1.2.3.4:8080`、配置文件里的端口、日志里的地址, 都不会误触发。
+    容忍 10% 的杂质行(表头、注释、空行后的说明), 超过就整份不要。
+    """
+    lines = [l.strip() for l in (text or "").splitlines()]
+    lines = [l for l in lines if l and not l.startswith(("#", "//", ";"))]
+    if len(lines) < 10:
+        return []
+    out, bad = [], 0
+    for line in lines:
+        m = BARE_PROXY_RE.match(line)
+        if not m:
+            bad += 1
+            continue
+        n = _proxy_node(m.group("host"), m.group("port"), "http", None, None, source)
+        if n:
+            out.append(n)
+        else:
+            bad += 1                          # 私网 / 坏端口也算杂质
+    if len(out) < 10 or bad > len(lines) // 10:
+        return []
+    # 控量: 这类清单动辄三五千条, 全量送进测速会把 40 分钟的 job 撑爆。
+    # 等距切而不是随机抽 —— 随机的话同一份文件每轮抽到不同样本,
+    # "今天比昨天多几个"就没法判断了。
+    if len(out) > PROXY_LIST_MAX:
+        step = len(out) / PROXY_LIST_MAX
+        out = [out[int(i * step)] for i in range(PROXY_LIST_MAX)]
+    return out
 TG_CHANNELS = [
     # 还在更新的。
     "oneclickvpnkeys",   # 最新帖 2h, 87 个直出节点
@@ -101,7 +219,10 @@ def load_extra_list(path: str) -> list[str]:
 def looks_like_sub(text: str) -> bool:
     """抓回来先验一眼, 免得把一堆推广页灌进解析器刷满日志。"""
     t = maybe_b64(text)
-    return bool(VG_REGEX.search(t)) or ("proxies" in t and "server" in t)
+    if VG_REGEX.search(t) or ("proxies" in t and "server" in t):
+        return True
+    # 普通代理清单: 整行链接要够 3 条, 裸地址要走"整篇都是"那道闸。
+    return bool(proxy_uri_nodes(t, "")) or bool(proxy_list_nodes(t, ""))
 
 RAW_SOURCES = [
     ("NoMoreWalls", "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"),
@@ -656,6 +777,8 @@ def main():
     ap.add_argument("--out", default="data/nodes.json")
     ap.add_argument("--openai-only", action="store_true", help="仅采集 AI 友好来源(默认全采)")
     ap.add_argument("--max-age", type=float, default=72, help="只采最近 N 小时内的 TG 帖子")
+    ap.add_argument("--only-url", default=None,
+                    help="只抓这一个地址、打印解析结果后退出, 用于验证新格式的产出")
     args = ap.parse_args()
 
     opener = build_opener(args.proxy)
@@ -695,13 +818,39 @@ def main():
         found = VG_REGEX.findall(text)
         for uri in found:
             _put(parse_uri(uri, source), source, tgt)
+        # 普通代理两路: 整行链接(带 scheme) 优先; 一条都没有时, 才按
+        # "整篇裸地址清单"再判一次。两者互斥 —— 真清单不会两种形态混排,
+        # 混排的基本是帖子, 放过它比吃进来安全。
+        px = proxy_uri_nodes(text, source)
+        if not px and not found:
+            px = proxy_list_nodes(text, source)
+        for n in px:
+            _put(n, source, tgt)
         # 一条 URI 都没有 → 可能是 Clash YAML 订阅。
         # 有 URI 就不试 YAML: 那种文本跑 safe_load 又慢又必然不是 dict。
         extra = _ingest_yaml(text, source, tgt) if not found else 0
-        stats[source] = stats.get(source, 0) + len(found) + extra
+        got = len(found) + len(px) + extra
+        stats[source] = stats.get(source, 0) + got
         if not quiet:
-            print(f"    → 抽出 {len(found) + extra:4d} 条, 去重后累计 {len(tgt)}")
-        return len(found) + extra
+            print(f"    → 抽出 {got:4d} 条, 去重后累计 {len(tgt)}")
+        return got
+
+    # 单源试跑: 只抓这一个地址, 打印解析结果就退出。用来验证"新增一种格式
+    # 到底能吃到多少条", 不用等整轮采集跑完。
+    if args.only_url:
+        body = fetch(args.only_url, opener, timeout=25, retries=1)
+        if not body:
+            print("× 无响应")
+            return 1
+        text = body.decode("utf-8", "ignore")
+        ingest(text, args.only_url.split("/")[-1] or "only-url")
+        items = list(pool.values())
+        print(f"共 {len(items)} 个节点, 按协议: "
+              + ", ".join(f"{k}={v}" for k, v in
+                          sorted(((p, sum(1 for n in items if n["proto"] == p))
+                                  for p in {n["proto"] for n in items}),
+                                 key=lambda x: -x[1])))
+        return 0
 
     print("[1/6] 公开订阅源")
     for name, url in RAW_SOURCES:
@@ -720,9 +869,14 @@ def main():
     extra_subs = []
     for u in load_extra_list(EXTRA_SUBS):
         try:
-            tag = u.split("//", 1)[1].split("/", 1)[0]
+            rest = u.split("//", 1)[1]
         except IndexError:
             continue
+        host = rest.split("/", 1)[0]
+        # 带上文件名, 否则同一个站上的两份清单在报表里挤成一个名字,
+        # 到时候看不出是哪一份在出新节点。
+        tail = rest.split("/", 1)[1].rstrip("/").rsplit("/", 1)[-1] if "/" in rest else ""
+        tag = f"{host}/{tail}" if tail else host
         extra_subs.append((f"extra:{tag}", u))
     for name, url in SUB_SOURCES + extra_subs:
         print(f"  * {name}: {url}")

@@ -1144,6 +1144,66 @@ def t_cf_worker_header_parser():
     assert r.returncode == 0, (r.stdout or "")[-500:] + (r.stderr or "")[-300:]
 
 
+# ---------------------------------------------------------- 普通代理(HTTP/SOCKS)
+def t_proxy_uri_needs_three():
+    """单条 http://x:port 不收 —— 帖子正文里出现一条太正常了。"""
+    import collect
+    one = "http://1.2.3.4:8080"
+    assert collect.proxy_uri_nodes(one, "t") == [], "单条不该收"
+    three = "http://1.2.3.4:8080\nhttp://5.6.7.8:3128\nsocks5://9.9.9.9:1080"
+    got = collect.proxy_uri_nodes(three, "t")
+    assert len(got) == 3, got
+    assert {n["proto"] for n in got} == {"http", "socks5"}, got
+
+
+def t_proxy_uri_rejects_paths():
+    """网页链接一定带路径; 带路径的绝不能被当成代理。"""
+    import collect
+    txt = ("https://a.com/path/1\nhttps://b.com/x?y=1\nhttp://c.com:8080/a\n"
+           "http://1.2.3.4:8080")
+    assert collect.proxy_uri_nodes(txt, "t") == [], collect.proxy_uri_nodes(txt, "t")
+
+
+def t_proxy_list_needs_whole_document():
+    """整篇都是地址才算清单; 一半正文一半地址的, 一条都不收。"""
+    import collect
+    good = "\n".join(f"{i}.{i}.{i}.{i}:8080" for i in range(2, 20))
+    assert len(collect.proxy_list_nodes(good, "t")) >= 10
+    mixed = "1.1.1.1:80\n2.2.2.2:80\n3.3.3.3:80\n以下是广告\n" * 3
+    assert collect.proxy_list_nodes(mixed, "t") == [], "混排版式被误认成清单"
+
+
+def t_proxy_list_drops_private_and_bad():
+    """私网/保留地址/999.1.1.1 这些永远连不通, 不许进池。"""
+    import collect
+    bad = ["10.0.0.5:8080", "192.168.1.1:8080", "127.0.0.1:8080",
+           "172.20.0.1:8080", "169.254.1.1:8080", "999.1.1.1:8080"]
+    txt = "\n".join(bad)
+    assert collect.proxy_list_nodes(txt, "t") == [], collect.proxy_list_nodes(txt, "t")
+    n = collect._proxy_node("8.8.8.8", "99999", "http", None, None, "t")
+    assert n is None, "端口越界还在"
+    n = collect._proxy_node("8.8.8.8", "0", "http", None, None, "t")
+    assert n is None, "端口 0 还在"
+
+
+def t_proxy_list_cap_is_deterministic():
+    """量大要控住, 但必须可复现 —— 随机抽的话今天涨了还是跌了说不清。"""
+    import collect
+    txt = "\n".join(f"{(i % 200) + 1}.{((i // 200) % 200) + 1}.{((i // 40000) % 200) + 1}."
+                    f"{(i % 250) + 1}:{8000 + i % 1000}" for i in range(3000))
+    a = [n["server"] + ":" + str(n["port"]) for n in collect.proxy_list_nodes(txt, "t")]
+    b = [n["server"] + ":" + str(n["port"]) for n in collect.proxy_list_nodes(txt, "t")]
+    assert len(a) == collect.PROXY_LIST_MAX, len(a)
+    assert a == b, "两次调用结果不一致"
+
+
+def t_looks_like_sub_ignores_web_links():
+    """网页链接不该让采集器以为抓到了订阅。"""
+    import collect
+    assert not collect.looks_like_sub("https://t.me/abc/1\nhttps://example.com/a/b")
+    assert collect.looks_like_sub("\n".join(f"{i}.{i}.{i}.{i}:8080" for i in range(2, 15)))
+
+
 TESTS = [(k[2:], v) for k, v in sorted(globals().items()) if k.startswith("t_")]
 if __name__ == "__main__":
     print(f"边界自检: {len(TESTS)} 项\n")
