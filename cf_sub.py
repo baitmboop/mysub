@@ -14,9 +14,14 @@ UUID 和 path 是凭据, 等于密码。写进 .py 会被 git 记住, 一旦推�
 用法
 ----
     python3 cf_sub.py --init          # 生成 UUID / path 的模板, 之后手填 domain
+    python3 cf_sub.py --worker        # 把 UUID/path 灌进 worker.js, 出可直接粘贴的副本
     python3 cf_sub.py --emit          # 生成 out/sub_self.yaml (需要先有 domain)
     python3 cf_sub.py --emit --top 5  # 只取最快的 5 个 IP
     python3 cf_sub.py --emit --probe  # 生成后立刻用 verify 实跑一遍
+
+domain 不需要自己买: 注册 CF 免费账号后 xxx.workers.dev 就是白送的子域,
+免绑卡免备案。TLS 握手必须带 SNI, 而 SNI 只能是域名 —— 所以"零域名"不存在,
+但"零成本域名"存在。
 
 注意: CF 免费版只放行标准端口, 443 之外的端口一律不通。所以所有节点
 固定 443, 不要试 8080/2053 之类, 那是付费版的待遇。
@@ -37,6 +42,8 @@ ROOT = Path(__file__).parent
 CFG = ROOT / "data" / "cf_self.json"
 IPS = ROOT / "data" / "cf_ips.json"
 OUT = ROOT / "out" / "sub_self.yaml"
+WORKER_TPL = ROOT / "worker" / "worker.js"
+WORKER_OUT = ROOT / "out" / "worker.js"
 MIHOMO = ROOT / "bin" / "mihomo"
 
 DEFAULT_PORT = 443
@@ -93,7 +100,9 @@ def build_node(cfg: dict, ip: str, idx: int) -> dict:
         "server": ip,
         "port": DEFAULT_PORT,
         "uuid": cfg["uuid"],
-        "udp": True,
+        # Worker 只能出站 TCP(cloudflare:sockets 没有 UDP), 写 true 会让
+        # DNS 走 cmd=2 被后端拒掉, 表现为"节点通但网页打不开"。
+        "udp": False,
         "tls": True,
         "servername": domain,
         "network": "ws",
@@ -172,6 +181,26 @@ def emit(cfg: dict, top: int, probe: bool) -> int:
     return 0
 
 
+def emit_worker(cfg: dict) -> int:
+    """把 UUID / path 灌进模板。省得手改 —— 手改最容易多一个空格或少一个斜杠,
+    而这两种错都只表现为"握手失败", 看不出原因。"""
+    if not WORKER_TPL.exists():
+        raise SystemExit(f"模板不存在: {WORKER_TPL}")
+    src = WORKER_TPL.read_text()
+    if "__UUID__" not in src or "__PATH__" not in src:
+        raise SystemExit("模板里的占位符被人改过了, 检查 worker/worker.js")
+    out = src.replace("__UUID__", cfg["uuid"]).replace("__PATH__", cfg["path"])
+    WORKER_OUT.parent.mkdir(parents=True, exist_ok=True)
+    WORKER_OUT.write_text(out)
+    log(f"已写入 {WORKER_OUT}")
+    log("  接下来: CF 控制台 → Workers & Pages → Create → Worker → Deploy")
+    log("          → Edit code → 整份粘贴 → Deploy")
+    log("          → 访问 https://<名字>.<账号>.workers.dev 看到 ok")
+    log(f"          → 把该域名填进 {CFG} 的 domain 字段")
+    log(f"  然后: python3 cf_sub.py --emit --probe")
+    return 0
+
+
 def _dump_yaml(doc: dict) -> str:
     try:
         import yaml                                        # noqa: PLC0415
@@ -183,6 +212,7 @@ def _dump_yaml(doc: dict) -> str:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--init", action="store_true", help="生成 UUID / path 模板")
+    ap.add_argument("--worker", action="store_true", help="生成填好凭据的 Worker 代码")
     ap.add_argument("--emit", action="store_true", help="生成订阅")
     ap.add_argument("--top", type=int, default=5, help="用最快的几个 IP")
     ap.add_argument("--probe", action="store_true", help="生成后用 verify 实跑")
@@ -190,6 +220,8 @@ def main() -> int:
 
     if args.init:
         return init_cfg()
+    if args.worker:
+        return emit_worker(load_cfg())
     if args.emit:
         return emit(load_cfg(), args.top, args.probe)
     ap.print_help()

@@ -29,3 +29,5 @@ logs/cf_scan.log
 # 自建订阅产物含 UUID, 不进库
 out/sub_self*
 out/cf_relay.yaml
+out/worker.js
+worker/.test_worker.mjs

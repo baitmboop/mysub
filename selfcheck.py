@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import os
+import subprocess
 import sys
 import tempfile
 import time
@@ -1069,8 +1070,62 @@ def t_cf_relay_pool_lookup_missing():
     assert cf_relay.node_from_pool("no-such-host.invalid:443") is None
 
 
-TESTS = [(k[2:], v) for k, v in sorted(globals().items()) if k.startswith("t_")]
+# ------------------------------------------------------------ CF 自建后端
+def t_cf_worker_render_fills_credentials():
+    """--worker 不该要求人手改代码。凭据要原样灌进去, 占位符一个不剩。"""
+    import cf_sub
+    cfg = {"uuid": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+           "path": "/p%26q", "domain": "", "ips": []}
+    old_tpl, old_out = cf_sub.WORKER_TPL, cf_sub.WORKER_OUT
+    with tempfile.TemporaryDirectory() as d:
+        try:
+            cf_sub.WORKER_OUT = cf_sub.Path(d) / "worker.js"
+            assert cf_sub.emit_worker(cfg) == 0
+            out = cf_sub.WORKER_OUT.read_text()
+        finally:
+            cf_sub.WORKER_TPL, cf_sub.WORKER_OUT = old_tpl, old_out
+    assert cfg["uuid"] in out, "UUID 没灌进去"
+    assert "'/p%26q'" in out, "path 没灌进去"
+    assert "__UUID__" not in out and "__PATH__" not in out, "还有占位符没替换"
 
+
+def t_cf_worker_path_matches_node():
+    """Worker 里的 PATH 和节点里的 ws-opts.path 必须逐字节相同。
+    差一个斜杠就握手失败, 而失败信息里不会告诉你是哪边错了。"""
+    import cf_sub
+    cfg = {"uuid": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+           "path": "/abc123", "domain": "x.workers.dev", "ips": []}
+    n = cf_sub.build_node(cfg, "1.2.3.4", 1)
+    assert n["ws-opts"]["path"] == cfg["path"]
+    assert n["ws-opts"]["headers"]["Host"] == cfg["domain"]
+    assert n["servername"] == cfg["domain"], "SNI 必须走后端域名, 不能是 IP"
+    assert n["server"] == "1.2.3.4", "入口才是 IP"
+
+
+def t_cf_worker_node_udp_off():
+    """Worker 只能出站 TCP, 节点写 udp:true 会让 DNS 卡死到超时。"""
+    import cf_sub
+    n = cf_sub.build_node({"uuid": "u", "path": "/p", "domain": "x.workers.dev"}, "1.1.1.1", 1)
+    assert n["udp"] is False, "udp 必须是 False"
+
+
+def t_cf_worker_js_syntax():
+    """node --check 有分辨力(故意写错会返回 1), 所以它通过是有意义的。"""
+    here = os.path.dirname(os.path.abspath(__file__))
+    r = subprocess.run(["node", "--check", os.path.join(here, "worker", "worker.js")],
+                       capture_output=True, text=True)
+    assert r.returncode == 0, (r.stderr or "")[-300:]
+
+
+def t_cf_worker_header_parser():
+    """vless 头的字节偏移错一位, 线上表现是「连上了就是不通」。本地先钉死。"""
+    here = os.path.dirname(os.path.abspath(__file__))
+    r = subprocess.run(["node", os.path.join(here, "worker", "test_worker.mjs")],
+                       capture_output=True, text=True, timeout=60)
+    assert r.returncode == 0, (r.stdout or "")[-500:] + (r.stderr or "")[-300:]
+
+
+TESTS = [(k[2:], v) for k, v in sorted(globals().items()) if k.startswith("t_")]
 if __name__ == "__main__":
     print(f"边界自检: {len(TESTS)} 项\n")
     for name, fn in TESTS:
