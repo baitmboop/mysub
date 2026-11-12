@@ -1,43 +1,52 @@
 {
- "generated_at": "2026-11-11T21:34:54+08:00",
- "total_nodes": 2355,
+ "generated_at": "2026-11-12T13:37:15+08:00",
+ "total_nodes": 7223,
  "by_source": {
-  "tg:@byxiaoxi→blog": 547,
+  "go4sharing/arch": 3952,
+  "clashnode": 1155,
   "Auto_proxy": 470,
-  "NoMoreWalls": 425,
-  "go4sharing/arch": 421,
-  "tg:@wxdy666→sub": 202,
-  "mahdibland": 114,
-  "tg:@freeVPNjd→sub": 55,
-  "tg:@oneclickvpnkeys": 50,
-  "ermaozi": 37,
-  "tg:@vpnfail_v2ray": 16,
+  "NoMoreWalls": 463,
+  "extra:raw.githubusercontent.com/http.txt": 400,
+  "tg:@byxiaoxi→blog": 367,
+  "tg:@freeVPNjd→sub": 126,
+  "mahdibland": 125,
+  "ermaozi": 48,
+  "tg:@oneclickvpnkeys": 42,
+  "xinshoucun": 38,
   "freefq": 14,
-  "tg:@wxdy666": 3,
+  "tg:@vpnfail_v2ray": 14,
+  "tg:@wxdy666→sub": 5,
+  "tg:@wxdy666": 2,
+  "oneclash": 1,
   "go4sharing/sub": 1
  },
  "raw_hits": {
-  "tg:@byxiaoxi→blog": 1896,
-  "anaer/Sub": 1802,
-  "go4sharing/arch": 925,
+  "go4sharing/arch": 9443,
+  "clashnode": 4707,
+  "anaer/Sub": 2125,
+  "tg:@byxiaoxi→blog": 1894,
+  "tg:@freeVPNjd→sub": 595,
+  "xinshoucun": 577,
+  "ermaozi": 562,
   "Auto_proxy": 560,
-  "ermaozi": 516,
-  "NoMoreWalls": 443,
-  "tg:@wxdy666→sub": 291,
+  "NoMoreWalls": 479,
+  "extra:raw.githubusercontent.com/http.txt": 400,
   "mahdibland": 200,
-  "tg:@freeVPNjd→sub": 100,
-  "tg:@oneclickvpnkeys": 87,
+  "tg:@oneclickvpnkeys": 112,
+  "tg:@wxdy666→sub": 38,
+  "oneclash": 28,
   "ripaojiedian": 20,
   "Pawdroid/Free-servers": 20,
   "tg:@vpnfail_v2ray": 19,
   "freefq": 15,
   "go4sharing/sub": 14,
-  "tg:@wxdy666": 5,
+  "tg:@wxdy666": 4,
   "tg:@ssrsub": 1,
   "tg:@ripaojiedian": 0,
   "tg:@freefq": 0,
   "tg:@freeVPNjd": 0,
-  "tg:@go4sharing": 0
+  "tg:@go4sharing": 0,
+  "tg:@xiaoxibanyun": 0
  },
  "candidates": {
   "aiboboxx/v2rayfree": {
@@ -58,7 +67,7 @@
   "Pawdroid/Free-servers": {
    "ok": true,
    "raw": 20,
-   "new": 17
+   "new": 6
   },
   "Barabama/FreeNodes": {
    "ok": false,
@@ -67,8 +76,8 @@
   },
   "anaer/Sub": {
    "ok": true,
-   "raw": 1802,
-   "new": 1741
+   "raw": 2125,
+   "new": 1828
   }
  }
 }

@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-12 13:33:02 (北京时间)
+# nodepool  生成于 2026-11-12 13:48:06 (北京时间)
 # 节点数 30  (自建 0 / 免费额度 0 / 免费池 30)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -143,7 +143,7 @@ proxies:
     tls: true
     servername: orbylume.my.to
     ws-opts:
-      path: /tvpn-tor/is
+      path: /tvpn-tor/isfp=chrome
       headers:
         Host: orbylume.my.to
     network: ws
@@ -233,14 +233,7 @@ proxies:
       headers:
         Host: fs.qicai99.com
     network: ws
-  - name: N27 2.29.138.56
-    type: ss
-    server: 2.29.138.56
-    port: 26412
-    cipher: 2022-blake3-aes-256-gcm
-    password: "L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U="
-    udp: true
-  - name: N28 195.206.235.202
+  - name: N27 195.206.235.202
     type: vless
     server: 195.206.235.202
     port: 443
@@ -254,16 +247,23 @@ proxies:
       public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
       short-id: 6976d670818644cc
     client-fingerprint: chrome
-  - name: N29 202.50.253.99
+  - name: N28 202.50.253.99
     type: ss
     server: 202.50.253.99
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N30 202.50.253.90
+  - name: N29 202.50.253.90
     type: ss
     server: 202.50.253.90
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N30 202.50.253.18
+    type: ss
+    server: 202.50.253.18
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -300,10 +300,10 @@ proxy-groups:
       - N24 38.28.193.188
       - N25 38.247.141.135
       - N26 38.58.108.84
-      - N27 2.29.138.56
-      - N28 195.206.235.202
-      - N29 202.50.253.99
-      - N30 202.50.253.90
+      - N27 195.206.235.202
+      - N28 202.50.253.99
+      - N29 202.50.253.90
+      - N30 202.50.253.18
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -336,10 +336,10 @@ proxy-groups:
       - N24 38.28.193.188
       - N25 38.247.141.135
       - N26 38.58.108.84
-      - N27 2.29.138.56
-      - N28 195.206.235.202
-      - N29 202.50.253.99
-      - N30 202.50.253.90
+      - N27 195.206.235.202
+      - N28 202.50.253.99
+      - N29 202.50.253.90
+      - N30 202.50.253.18
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -371,9 +371,9 @@ proxy-groups:
       - N24 38.28.193.188
       - N25 38.247.141.135
       - N26 38.58.108.84
-      - N27 2.29.138.56
-      - N28 195.206.235.202
-      - N29 202.50.253.99
-      - N30 202.50.253.90
+      - N27 195.206.235.202
+      - N28 202.50.253.99
+      - N29 202.50.253.90
+      - N30 202.50.253.18
 rules:
   - "MATCH,节点选择"

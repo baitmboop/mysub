@@ -81,7 +81,7 @@
  {
   "server": "69.55.49.177",
   "port": 38182,
-  "name": "🇺🇸US_457|337KB/s|P002-260618 [c0b3b312046c]",
+  "name": "n7448",
   "source": "clashnode",
   "username": "",
   "password": "",
@@ -94,6 +94,10 @@
   ],
   "type": "socks5",
   "proto": "socks5",
+  "latency": null,
+  "jitter": null,
+  "score": 0.0,
+  "speed": 0.0,
   "cn_ok": 1,
   "cn_by": "verify",
   "cn_speed": 0.9647
@@ -147,7 +151,7 @@
   "proto": "ss",
   "server": "18.117.92.138",
   "port": 443,
-  "name": "n0443",
+  "name": "n7227",
   "source": "tg:@wxdy666→sub",
   "cipher": "aes-256-cfb",
   "password": "amazonskr05",
@@ -155,15 +159,15 @@
   "sources": [
    "tg:@wxdy666→sub"
   ],
-  "latency": 42,
-  "jitter": 13,
+  "latency": null,
+  "jitter": null,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8174,
+  "score": 0.8,
   "speed": 0.0,
   "cn_ok": 1,
   "cn_by": "verify",
@@ -197,7 +201,7 @@
  {
   "server": "121.169.46.116",
   "port": 1090,
-  "name": "韩国 - 烏山市 - Korea Telecom - 2",
+  "name": "n7433",
   "source": "go4sharing/arch",
   "username": "Og%3D%3D",
   "password": "",
@@ -210,6 +214,10 @@
   ],
   "type": "socks5",
   "proto": "socks5",
+  "latency": null,
+  "jitter": null,
+  "score": 0.0,
+  "speed": 0.0,
   "cn_ok": 1,
   "cn_by": "verify",
   "cn_speed": 0.4561
@@ -284,7 +292,7 @@
  {
   "server": "fan.596189.xyz",
   "port": 443,
-  "name": "美国 - San Jose - 1",
+  "name": "n7432",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -297,6 +305,10 @@
   ],
   "type": "http",
   "proto": "http",
+  "latency": null,
+  "jitter": null,
+  "score": 0.0,
+  "speed": 0.0,
   "cn_ok": 1,
   "cn_by": "verify",
   "cn_speed": 0.341
@@ -349,22 +361,26 @@
   "tls": true,
   "sni": "orbylume.my.to",
   "network": "ws",
-  "path": "/tvpn-tor/is",
+  "path": "/tvpn-tor/isfp=chrome",
   "host": "orbylume.my.to",
   "flow": "",
   "pbk": "",
   "sid": "",
-  "fp": "fd314bfaa919fbd2",
+  "utls": "",
   "reality": false,
-  "name": "n0297",
-  "source": "ermaozi",
+  "name": "n4944",
+  "source": "NoMoreWalls",
+  "fp": "fd314bfaa919fbd2",
   "sources": [
-   "ermaozi"
+   "NoMoreWalls",
+   "ermaozi",
+   "clashnode",
+   "anaer/Sub"
   ],
-  "latency": 469,
-  "jitter": 77,
-  "speed": 1.53,
-  "score": 0.7254,
+  "latency": null,
+  "jitter": null,
+  "score": 0.0,
+  "speed": 0.0,
   "cn_ok": 1,
   "cn_by": "verify",
   "cn_latency": 1983,
@@ -627,30 +643,6 @@
   "cn_ok": null
  },
  {
-  "proto": "ss",
-  "server": "2.29.138.56",
-  "port": 26412,
-  "cipher": "2022-blake3-aes-256-gcm",
-  "password": "L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U=",
-  "name": "n0085",
-  "source": "tg:@vpnfail_v2ray",
-  "fp": "b2c1a672fd02bee3",
-  "sources": [
-   "tg:@vpnfail_v2ray"
-  ],
-  "latency": 141,
-  "jitter": 4,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8611,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
   "proto": "vless",
   "server": "195.206.235.202",
   "port": 443,
@@ -733,6 +725,32 @@
    "cf-trace": "ok"
   },
   "score": 0.8601,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "ss",
+  "server": "202.50.253.18",
+  "port": 19999,
+  "cipher": "aes-256-gcm",
+  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+  "name": "n0086",
+  "source": "NoMoreWalls",
+  "fp": "ce4095ceb5eb3258",
+  "sources": [
+   "NoMoreWalls",
+   "ermaozi",
+   "mahdibland/Aggregator"
+  ],
+  "latency": 143,
+  "jitter": 17,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8591,
   "speed": 0.0,
   "cn_ok": null
  }
