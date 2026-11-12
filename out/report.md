@@ -1,51 +1,43 @@
 # 节点池日报
 
-- 生成时间: 2026-11-12 02:43:00 (UTC)
-- 采集去重: **2383** 个
-- 延迟存活: **205** 个
-- 复检合格: **127** 个
-- 历史池: **300** 个 (含 7 天内可用过的)
-- 最终订阅: **38** 个节点
+- 生成时间: 2026-11-12 13:33:02 (UTC)
+- 采集去重: **-** 个
+- 延迟存活: **-** 个
+- 复检合格: **-** 个
+- 历史池: **611** 个 (含 7 天内可用过的)
+- 最终订阅: **30** 个节点
 
 | # | 协议 | 服务器 | 延迟 | 中国实测 | 速度 | 来源 |
 |---|------|--------|------|----------|------|------|
-| 1 | http | 118.184.140.90:58764 | 1185ms | ✓ 能传数据 | 2214 KB/s | go4sharing/sub |
-| 2 | http | 192.227.176.234:443 | 1184ms | ✓ 能传数据 | 1221 KB/s | go4sharing/arch |
-| 3 | http | 158.173.154.5:9002 | 1032ms | ✓ 能传数据 | 1130 KB/s | go4sharing/sub |
-| 4 | http | 158.173.154.2:9002 | 3965ms | ✓ 能传数据 | 1057 KB/s | go4sharing/arch |
-| 5 | ss | 202.50.253.72:19999 | 1029ms | ✓ 能传数据 | 937 KB/s | NoMoreWalls |
-| 6 | ss | 202.50.253.36:19999 | 1224ms | ✓ 能传数据 | 701 KB/s | NoMoreWalls |
-| 7 | ss | 202.50.253.27:19999 | 1225ms | ✓ 能传数据 | 532 KB/s | NoMoreWalls |
-| 8 | ss | 3.16.78.3:443 | 1530ms | ✓ 能传数据 | 489 KB/s | tg:@wxdy666 |
-| 9 | ss | 18.117.92.138:443 | 2037ms | ✓ 能传数据 | 483 KB/s | tg:@wxdy666→sub |
-| 10 | http | 34.249.214.108:443 | 1128ms | ✓ 能传数据 | 389 KB/s | go4sharing/arch |
-| 11 | ss | 202.50.253.45:19999 | 1193ms | ✓ 能传数据 | 371 KB/s | NoMoreWalls |
-| 12 | http | fan.226278.xyz:443 | 1353ms | ✓ 能传数据 | 302 KB/s | go4sharing/arch |
-| 13 | http | fan.365747.xyz:443 | 4685ms | ✓ 能传数据 | 286 KB/s | go4sharing/arch |
-| 14 | vless | 168.110.45.41:23444 | 1513ms | ✓ 能传数据 | 277 KB/s | tg:@byxiaoxi |
-| 15 | http | 38.28.193.188:443 | 2342ms | ✓ 能传数据 | 262 KB/s | go4sharing/arch |
-| 16 | ss | 202.50.253.63:19999 | 1250ms | ✓ 能传数据 | 232 KB/s | NoMoreWalls |
-| 17 | vless | 7aa271t.es1.h1clayd.click:443 | 5008ms | ✓ 能传数据 | 225 KB/s | tg:@wxdy666 |
-| 18 | ss | 202.50.253.54:19999 | 1137ms | ✓ 能传数据 | 217 KB/s | NoMoreWalls |
-| 19 | ss | 202.50.253.99:19999 | 2229ms | ✓ 能传数据 | 192 KB/s | NoMoreWalls |
-| 20 | ss | 202.50.253.90:19999 | 1581ms | ✓ 能传数据 | 189 KB/s | NoMoreWalls |
-| 21 | ss | 202.50.253.81:19999 | 2080ms | ✓ 能传数据 | 185 KB/s | NoMoreWalls |
-| 22 | hysteria2 | 212.34.137.105:443 | 7595ms | ✓ 能传数据 | 185 KB/s | tg:@wxdy666 |
-| 23 | http | 185.219.159.15:443 | 1591ms | ✓ 能传数据 | 138 KB/s | go4sharing/sub |
-| 24 | trojan | 191.44.112.170.sslip.io:443 | 2716ms | ✓ 能传数据 | 136 KB/s | ermaozi |
-| 25 | http | 185.219.159.16:443 | 3363ms | ✓ 能传数据 | 116 KB/s | go4sharing/arch |
-| 26 | ss | 202.50.253.18:19999 | 2004ms | ✓ 能传数据 | 96 KB/s | NoMoreWalls |
-| 27 | vless | hk3.wawojk.dpdns.org:51314 | 1399ms | ✓ 能传数据 | 66 KB/s | tg:@byxiaoxi |
-| 28 | http | 83.206.1.225:8090 | 1290ms | ✓ 能传数据 | 59 KB/s | go4sharing/arch |
-| 29 | trojan | 66.163.112.76:443 | 27ms | 未测 | - | tg:@byxiaoxi→blog |
-| 30 | trojan | 216.106.186.66:443 | 28ms | 未测 | - | tg:@byxiaoxi→blog |
-| 31 | vless | 195.123.240.65:443 | 29ms | 未测 | - | tg:@byxiaoxi→blog |
-| 32 | ss | 138.197.89.234:28960 | 72ms | 未测 | - | mahdibland |
-| 33 | ss | 35.182.245.215:443 | 74ms | 未测 | - | mahdibland |
-| 34 | ss | 35.182.250.103:443 | 74ms | 未测 | - | mahdibland |
-| 35 | ss | 15.156.192.45:443 | 75ms | 未测 | - | mahdibland |
-| 36 | ss | 185.230.230.18:19999 | 75ms | 未测 | - | mahdibland |
-| 37 | ss | 45.86.51.18:19999 | 75ms | 未测 | - | mahdibland |
-| 38 | ss | 172.111.38.72:19999 | 77ms | 未测 | - | mahdibland |
+| 1 | vmess | 39.108.113.127:10086 | 331ms | ✓ 能传数据 | 2585 KB/s | ermaozi |
+| 2 | vless | hk3.wawojk.dpdns.org:51314 | 1375ms | ✓ 能传数据 | 1486 KB/s | tg:@byxiaoxi |
+| 3 | ss | 202.50.253.27:19999 | 2027ms | ✓ 能传数据 | 993 KB/s | NoMoreWalls |
+| 4 | socks5 | 69.55.49.177:38182 | -ms | ✓ 能传数据 | 988 KB/s | clashnode |
+| 5 | vless | edge.bookmai.com:443 | 745ms | ✓ 能传数据 | 820 KB/s | clashnode |
+| 6 | socks5 | 91.107.179.68:10809 | -ms | ✓ 能传数据 | 685 KB/s | clashnode |
+| 7 | ss | 18.117.92.138:443 | 772ms | ✓ 能传数据 | 515 KB/s | tg:@wxdy666→sub |
+| 8 | vmess | guanwang.awsno.com:443 | 2467ms | ✓ 能传数据 | 483 KB/s | xinshoucun |
+| 9 | socks5 | 121.169.46.116:1090 | -ms | ✓ 能传数据 | 467 KB/s | go4sharing/arch |
+| 10 | trojan | sclass-b1.catcat321.com:20028 | 2051ms | ✓ 能传数据 | 451 KB/s | NoMoreWalls |
+| 11 | http | fan.365747.xyz:443 | -ms | ✓ 能传数据 | 365 KB/s | go4sharing/arch |
+| 12 | http | fan.226278.xyz:443 | 97ms | ✓ 能传数据 | 363 KB/s | go4sharing/arch |
+| 13 | http | fan.596189.xyz:443 | -ms | ✓ 能传数据 | 349 KB/s | go4sharing/arch |
+| 14 | http | fan.973511.xyz:443 | -ms | ✓ 能传数据 | 284 KB/s | clashnode |
+| 15 | http | fan.587475.xyz:443 | -ms | ✓ 能传数据 | 237 KB/s | clashnode |
+| 16 | vless | 191.44.112.170:443 | 1983ms | ✓ 能传数据 | 237 KB/s | ermaozi |
+| 17 | http | fan.240104.xyz:443 | -ms | ✓ 能传数据 | 186 KB/s | clashnode |
+| 18 | http | 154.26.192.123:10988 | -ms | ✓ 能传数据 | 180 KB/s | go4sharing/arch |
+| 19 | http | fan.571589.xyz:443 | -ms | ✓ 能传数据 | 167 KB/s | clashnode |
+| 20 | vless | jp.sofast.live:52683 | 2671ms | ✓ 能传数据 | 68 KB/s | clashnode |
+| 21 | vless | 3.169.9.125:443 | 385ms | 未测 | - | ermaozi |
+| 22 | http | 44.248.167.117:8443 | 33ms | 未测 | - | go4sharing/arch |
+| 23 | http | 192.227.176.234:443 | 84ms | 未测 | - | go4sharing/arch |
+| 24 | http | 38.28.193.188:443 | 96ms | 未测 | - | go4sharing/arch |
+| 25 | http | 38.247.141.135:443 | 43ms | 未测 | - | go4sharing/arch |
+| 26 | vless | 38.58.108.84:443 | 43ms | 未测 | - | ermaozi |
+| 27 | ss | 2.29.138.56:26412 | 141ms | 未测 | - | tg:@vpnfail_v2ray |
+| 28 | vless | 195.206.235.202:443 | 141ms | 未测 | - | tg:@oneclickvpnkeys |
+| 29 | ss | 202.50.253.99:19999 | 142ms | 未测 | - | NoMoreWalls |
+| 30 | ss | 202.50.253.90:19999 | 142ms | 未测 | - | NoMoreWalls |
 
 > 排序依据是中国网络实测下载速度; 手机端的 url-test 会在当场再择优一次。

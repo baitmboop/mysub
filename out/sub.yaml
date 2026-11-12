@@ -1,211 +1,20 @@
-# nodepool  生成于 2026-11-12 10:43:00 (北京时间)
-# 节点数 38  (自建 0 / 免费额度 0 / 免费池 38)
+# nodepool  生成于 2026-11-12 13:33:02 (北京时间)
+# 节点数 30  (自建 0 / 免费额度 0 / 免费池 30)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
 proxies:
-  - name: N01 118.184.140.90
-    type: http
-    server: 118.184.140.90
-    port: 58764
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N02 192.227.176.234
-    type: http
-    server: 192.227.176.234
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N03 158.173.154.5
-    type: http
-    server: 158.173.154.5
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N04 158.173.154.2
-    type: http
-    server: 158.173.154.2
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N05 202.50.253.72
-    type: ss
-    server: 202.50.253.72
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: N01 39.108.113.127
+    type: vmess
+    server: 39.108.113.127
+    port: 10086
+    uuid: b0253c6c-0b96-4950-bde1-669f13bc1a01
+    alterId: 0
+    cipher: auto
     udp: true
-  - name: N06 202.50.253.36
-    type: ss
-    server: 202.50.253.36
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N07 202.50.253.27
-    type: ss
-    server: 202.50.253.27
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N08 3.16.78.3
-    type: ss
-    server: 3.16.78.3
-    port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
-    udp: true
-  - name: N09 18.117.92.138
-    type: ss
-    server: 18.117.92.138
-    port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
-    udp: true
-  - name: N10 34.249.214.108
-    type: http
-    server: 34.249.214.108
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N11 202.50.253.45
-    type: ss
-    server: 202.50.253.45
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N12 fan.226278.xyz
-    type: http
-    server: fan.226278.xyz
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N13 fan.365747.xyz
-    type: http
-    server: fan.365747.xyz
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N14 168.110.45.41
-    type: vless
-    server: 168.110.45.41
-    port: 23444
-    uuid: ee2112e4-1e58-4f77-b162-5ef869358df9
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: www.microsoft.com
-    reality-opts:
-      public-key: zfxKuH7gDFZ2EMjdt8zMfnsZFpeckMhM5q5XZ3ATe2c
-      short-id: 119c9e68498f5900
-    client-fingerprint: chrome
-  - name: N15 38.28.193.188
-    type: http
-    server: 38.28.193.188
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N16 202.50.253.63
-    type: ss
-    server: 202.50.253.63
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N17 7aa271t.es1.h1clayd.click
-    type: vless
-    server: 7aa271t.es1.h1clayd.click
-    port: 443
-    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: 7aa271t.es1.h1clayd.click
-    reality-opts:
-      public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
-      short-id: 42426c882c5fcd41
-    client-fingerprint: firefox
-  - name: N18 202.50.253.54
-    type: ss
-    server: 202.50.253.54
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N19 202.50.253.99
-    type: ss
-    server: 202.50.253.99
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N20 202.50.253.90
-    type: ss
-    server: 202.50.253.90
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N21 202.50.253.81
-    type: ss
-    server: 202.50.253.81
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N22 212.34.137.105
-    type: hysteria2
-    server: 212.34.137.105
-    port: 443
-    password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-    skipCertVerify: true
-    sni: shorts.blog-forme.ru
-  - name: N23 185.219.159.15
-    type: http
-    server: 185.219.159.15
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N24 191.44.112.170.sslip.io
-    type: trojan
-    server: 191.44.112.170.sslip.io
-    port: 443
-    password: 46d221fa-e9b4-748c-4eae-019a88e42991
-    udp: true
-    skipCertVerify: true
-    sni: orbylume.my.to
     ws-opts:
-      path: /tvpn-trojan/bg
-      headers:
-        Host: orbylume.my.to
+      path: /
     network: ws
-  - name: N25 185.219.159.16
-    type: http
-    server: 185.219.159.16
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N26 202.50.253.18
-    type: ss
-    server: 202.50.253.18
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N27 hk3.wawojk.dpdns.org
+  - name: N02 hk3.wawojk.dpdns.org
     type: vless
     server: hk3.wawojk.dpdns.org
     port: 51314
@@ -219,88 +28,242 @@ proxies:
       public-key: VWY3lvh8l3OoKnhln5nIzmxAG0Imp9arXMK6nbsGVB4
       short-id: 0ee643ab
     client-fingerprint: chrome
-  - name: N28 83.206.1.225
-    type: http
-    server: 83.206.1.225
-    port: 8090
+  - name: N03 202.50.253.27
+    type: ss
+    server: 202.50.253.27
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N04 69.55.49.177
+    type: socks5
+    server: 69.55.49.177
+    port: 38182
     udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N29 66.163.112.76
-    type: trojan
-    server: 66.163.112.76
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: api.unlockyourfuturefindyourperfectcareer.com
-  - name: N30 216.106.186.66
-    type: trojan
-    server: 216.106.186.66
-    port: 443
-    password: 242a3d8eee5e4ed1a6bfa4141d549a25
-    udp: true
-    skipCertVerify: true
-    sni: www.findlocaljobnetworkandbuildcommunityconnections.com
-  - name: N31 195.123.240.65
+  - name: N05 edge.bookmai.com
     type: vless
-    server: 195.123.240.65
+    server: edge.bookmai.com
     port: 443
-    uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
+    uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
     udp: true
     skipCertVerify: true
     flow: xtls-rprx-vision
     tls: true
-    servername: www.cloudflare.com
+    servername: mother-earth.fyi
     reality-opts:
-      public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
-      short-id: 19296c9f1bf9c7b1
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: ""
     client-fingerprint: chrome
-  - name: N32 138.197.89.234
+  - name: N06 91.107.179.68
+    type: socks5
+    server: 91.107.179.68
+    port: 10809
+    udp: false
+  - name: N07 18.117.92.138
     type: ss
-    server: 138.197.89.234
-    port: 28960
-    cipher: chacha20-ietf-poly1305
-    password: DZRy4Q3QH0jUGfKFl2jDCZ
-    udp: true
-  - name: N33 35.182.245.215
-    type: ss
-    server: 35.182.245.215
+    server: 18.117.92.138
     port: 443
     cipher: aes-256-cfb
     password: amazonskr05
     udp: true
-  - name: N34 35.182.250.103
-    type: ss
-    server: 35.182.250.103
+  - name: N08 guanwang.awsno.com
+    type: vmess
+    server: guanwang.awsno.com
     port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
+    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+    alterId: 0
+    cipher: auto
     udp: true
-  - name: N35 15.156.192.45
-    type: ss
-    server: 15.156.192.45
+    tls: true
+    servername: guanwang.awsno.com
+    skipCertVerify: true
+    ws-opts:
+      path: /hls/cctv5phd.m3u8
+      headers:
+        Host: guanwang.awsno.com
+    network: ws
+  - name: N09 121.169.46.116
+    type: socks5
+    server: 121.169.46.116
+    port: 1090
+    udp: false
+    username: "Og%3D%3D"
+  - name: N10 sclass-b1.catcat321.com
+    type: trojan
+    server: sclass-b1.catcat321.com
+    port: 20028
+    password: d7563108-615c-4338-a7bd-77f359869a4a
+    udp: true
+    skipCertVerify: true
+    sni: hk.catxstar.com
+  - name: N11 fan.365747.xyz
+    type: http
+    server: fan.365747.xyz
     port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N12 fan.226278.xyz
+    type: http
+    server: fan.226278.xyz
+    port: 443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N13 fan.596189.xyz
+    type: http
+    server: fan.596189.xyz
+    port: 443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N14 fan.973511.xyz
+    type: http
+    server: fan.973511.xyz
+    port: 443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+    sni: fan.973511.xyz
+  - name: N15 fan.587475.xyz
+    type: http
+    server: fan.587475.xyz
+    port: 443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+    sni: fan.587475.xyz
+  - name: N16 191.44.112.170
+    type: vless
+    server: 191.44.112.170
+    port: 443
+    uuid: 46d221fa-e9b4-748c-4eae-019a88e42991
     udp: true
-  - name: N36 185.230.230.18
+    skipCertVerify: true
+    tls: true
+    servername: orbylume.my.to
+    ws-opts:
+      path: /tvpn-tor/is
+      headers:
+        Host: orbylume.my.to
+    network: ws
+  - name: N17 fan.240104.xyz
+    type: http
+    server: fan.240104.xyz
+    port: 443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+    sni: fan.240104.xyz
+  - name: N18 154.26.192.123
+    type: http
+    server: 154.26.192.123
+    port: 10988
+    udp: false
+    username: fQ67Dpe5dU
+    password: gs4BXwT6SW
+  - name: N19 fan.571589.xyz
+    type: http
+    server: fan.571589.xyz
+    port: 443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+    sni: fan.571589.xyz
+  - name: N20 jp.sofast.live
+    type: vless
+    server: jp.sofast.live
+    port: 52683
+    uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
+    udp: true
+    skipCertVerify: true
+  - name: N21 3.169.9.125
+    type: vless
+    server: 3.169.9.125
+    port: 443
+    uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+    udp: true
+    skipCertVerify: true
+    tls: true
+    servername: d14jyezfrcyf60.cloudfront.net
+    ws-opts:
+      path: /
+      headers:
+        Host: d14jyezfrcyf60.cloudfront.net
+    network: ws
+  - name: N22 44.248.167.117
+    type: http
+    server: 44.248.167.117
+    port: 8443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N23 192.227.176.234
+    type: http
+    server: 192.227.176.234
+    port: 443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N24 38.28.193.188
+    type: http
+    server: 38.28.193.188
+    port: 443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N25 38.247.141.135
+    type: http
+    server: 38.247.141.135
+    port: 443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N26 38.58.108.84
+    type: vless
+    server: 38.58.108.84
+    port: 443
+    uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+    udp: true
+    skipCertVerify: true
+    tls: true
+    servername: fs.qicai99.com
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: fs.qicai99.com
+    network: ws
+  - name: N27 2.29.138.56
     type: ss
-    server: 185.230.230.18
+    server: 2.29.138.56
+    port: 26412
+    cipher: 2022-blake3-aes-256-gcm
+    password: "L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U="
+    udp: true
+  - name: N28 195.206.235.202
+    type: vless
+    server: 195.206.235.202
+    port: 443
+    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+    udp: true
+    skipCertVerify: true
+    flow: xtls-rprx-vision
+    tls: true
+    servername: 4935e4t.de25.h1clayd.click
+    reality-opts:
+      public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
+      short-id: 6976d670818644cc
+    client-fingerprint: chrome
+  - name: N29 202.50.253.99
+    type: ss
+    server: 202.50.253.99
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N37 45.86.51.18
+  - name: N30 202.50.253.90
     type: ss
-    server: 45.86.51.18
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N38 172.111.38.72
-    type: ss
-    server: 172.111.38.72
+    server: 202.50.253.90
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -311,130 +274,106 @@ proxy-groups:
     proxies:
       - 自动选择
       - ③ 免费池
-      - N01 118.184.140.90
-      - N02 192.227.176.234
-      - N03 158.173.154.5
-      - N04 158.173.154.2
-      - N05 202.50.253.72
-      - N06 202.50.253.36
-      - N07 202.50.253.27
-      - N08 3.16.78.3
-      - N09 18.117.92.138
-      - N10 34.249.214.108
-      - N11 202.50.253.45
+      - N01 39.108.113.127
+      - N02 hk3.wawojk.dpdns.org
+      - N03 202.50.253.27
+      - N04 69.55.49.177
+      - N05 edge.bookmai.com
+      - N06 91.107.179.68
+      - N07 18.117.92.138
+      - N08 guanwang.awsno.com
+      - N09 121.169.46.116
+      - N10 sclass-b1.catcat321.com
+      - N11 fan.365747.xyz
       - N12 fan.226278.xyz
-      - N13 fan.365747.xyz
-      - N14 168.110.45.41
-      - N15 38.28.193.188
-      - N16 202.50.253.63
-      - N17 7aa271t.es1.h1clayd.click
-      - N18 202.50.253.54
-      - N19 202.50.253.99
-      - N20 202.50.253.90
-      - N21 202.50.253.81
-      - N22 212.34.137.105
-      - N23 185.219.159.15
-      - N24 191.44.112.170.sslip.io
-      - N25 185.219.159.16
-      - N26 202.50.253.18
-      - N27 hk3.wawojk.dpdns.org
-      - N28 83.206.1.225
-      - N29 66.163.112.76
-      - N30 216.106.186.66
-      - N31 195.123.240.65
-      - N32 138.197.89.234
-      - N33 35.182.245.215
-      - N34 35.182.250.103
-      - N35 15.156.192.45
-      - N36 185.230.230.18
-      - N37 45.86.51.18
-      - N38 172.111.38.72
+      - N13 fan.596189.xyz
+      - N14 fan.973511.xyz
+      - N15 fan.587475.xyz
+      - N16 191.44.112.170
+      - N17 fan.240104.xyz
+      - N18 154.26.192.123
+      - N19 fan.571589.xyz
+      - N20 jp.sofast.live
+      - N21 3.169.9.125
+      - N22 44.248.167.117
+      - N23 192.227.176.234
+      - N24 38.28.193.188
+      - N25 38.247.141.135
+      - N26 38.58.108.84
+      - N27 2.29.138.56
+      - N28 195.206.235.202
+      - N29 202.50.253.99
+      - N30 202.50.253.90
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 120
     tolerance: 100
     proxies:
-      - N01 118.184.140.90
-      - N02 192.227.176.234
-      - N03 158.173.154.5
-      - N04 158.173.154.2
-      - N05 202.50.253.72
-      - N06 202.50.253.36
-      - N07 202.50.253.27
-      - N08 3.16.78.3
-      - N09 18.117.92.138
-      - N10 34.249.214.108
-      - N11 202.50.253.45
+      - N01 39.108.113.127
+      - N02 hk3.wawojk.dpdns.org
+      - N03 202.50.253.27
+      - N04 69.55.49.177
+      - N05 edge.bookmai.com
+      - N06 91.107.179.68
+      - N07 18.117.92.138
+      - N08 guanwang.awsno.com
+      - N09 121.169.46.116
+      - N10 sclass-b1.catcat321.com
+      - N11 fan.365747.xyz
       - N12 fan.226278.xyz
-      - N13 fan.365747.xyz
-      - N14 168.110.45.41
-      - N15 38.28.193.188
-      - N16 202.50.253.63
-      - N17 7aa271t.es1.h1clayd.click
-      - N18 202.50.253.54
-      - N19 202.50.253.99
-      - N20 202.50.253.90
-      - N21 202.50.253.81
-      - N22 212.34.137.105
-      - N23 185.219.159.15
-      - N24 191.44.112.170.sslip.io
-      - N25 185.219.159.16
-      - N26 202.50.253.18
-      - N27 hk3.wawojk.dpdns.org
-      - N28 83.206.1.225
-      - N29 66.163.112.76
-      - N30 216.106.186.66
-      - N31 195.123.240.65
-      - N32 138.197.89.234
-      - N33 35.182.245.215
-      - N34 35.182.250.103
-      - N35 15.156.192.45
-      - N36 185.230.230.18
-      - N37 45.86.51.18
-      - N38 172.111.38.72
+      - N13 fan.596189.xyz
+      - N14 fan.973511.xyz
+      - N15 fan.587475.xyz
+      - N16 191.44.112.170
+      - N17 fan.240104.xyz
+      - N18 154.26.192.123
+      - N19 fan.571589.xyz
+      - N20 jp.sofast.live
+      - N21 3.169.9.125
+      - N22 44.248.167.117
+      - N23 192.227.176.234
+      - N24 38.28.193.188
+      - N25 38.247.141.135
+      - N26 38.58.108.84
+      - N27 2.29.138.56
+      - N28 195.206.235.202
+      - N29 202.50.253.99
+      - N30 202.50.253.90
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
     interval: 600
     proxies:
-      - N01 118.184.140.90
-      - N02 192.227.176.234
-      - N03 158.173.154.5
-      - N04 158.173.154.2
-      - N05 202.50.253.72
-      - N06 202.50.253.36
-      - N07 202.50.253.27
-      - N08 3.16.78.3
-      - N09 18.117.92.138
-      - N10 34.249.214.108
-      - N11 202.50.253.45
+      - N01 39.108.113.127
+      - N02 hk3.wawojk.dpdns.org
+      - N03 202.50.253.27
+      - N04 69.55.49.177
+      - N05 edge.bookmai.com
+      - N06 91.107.179.68
+      - N07 18.117.92.138
+      - N08 guanwang.awsno.com
+      - N09 121.169.46.116
+      - N10 sclass-b1.catcat321.com
+      - N11 fan.365747.xyz
       - N12 fan.226278.xyz
-      - N13 fan.365747.xyz
-      - N14 168.110.45.41
-      - N15 38.28.193.188
-      - N16 202.50.253.63
-      - N17 7aa271t.es1.h1clayd.click
-      - N18 202.50.253.54
-      - N19 202.50.253.99
-      - N20 202.50.253.90
-      - N21 202.50.253.81
-      - N22 212.34.137.105
-      - N23 185.219.159.15
-      - N24 191.44.112.170.sslip.io
-      - N25 185.219.159.16
-      - N26 202.50.253.18
-      - N27 hk3.wawojk.dpdns.org
-      - N28 83.206.1.225
-      - N29 66.163.112.76
-      - N30 216.106.186.66
-      - N31 195.123.240.65
-      - N32 138.197.89.234
-      - N33 35.182.245.215
-      - N34 35.182.250.103
-      - N35 15.156.192.45
-      - N36 185.230.230.18
-      - N37 45.86.51.18
-      - N38 172.111.38.72
+      - N13 fan.596189.xyz
+      - N14 fan.973511.xyz
+      - N15 fan.587475.xyz
+      - N16 191.44.112.170
+      - N17 fan.240104.xyz
+      - N18 154.26.192.123
+      - N19 fan.571589.xyz
+      - N20 jp.sofast.live
+      - N21 3.169.9.125
+      - N22 44.248.167.117
+      - N23 192.227.176.234
+      - N24 38.28.193.188
+      - N25 38.247.141.135
+      - N26 38.58.108.84
+      - N27 2.29.138.56
+      - N28 195.206.235.202
+      - N29 202.50.253.99
+      - N30 202.50.253.90
 rules:
   - "MATCH,节点选择"
