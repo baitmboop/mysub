@@ -11,19 +11,27 @@
 
 ## 你的订阅地址（复制这条）
 
-**Clash / mihomo / Clash Verge / Stash / 小火箭（Clash 模式）**
+**优先用这条（完整，节点最多）**
 
 ```
 https://gh-proxy.com/https://raw.githubusercontent.com/baitmboop/mysub/main/out/sub.yaml
 ```
 
-**v2rayN / v2rayNG / Shadowrocket（Base64 通用格式）**
+适用于：Clash / mihomo / Clash Verge / Stash / **小火箭（类型选「Clash」，别选 Base64）**
+
+**只有客户端不支持 Clash 配置时才用这条（少几个节点）**
 
 ```
 https://gh-proxy.com/https://raw.githubusercontent.com/baitmboop/mysub/main/out/sub-base64.txt
 ```
 
-两个地址内容一样，只是格式不同。**按你的客户端挑一个，所有设备都填它。**
+适用于：v2rayN / v2rayNG 这类只能吃 Base64 节点列表的客户端。
+
+> **两份的差别，一句话**：Base64 格式没有"带 TLS 的 HTTP 代理"的写法，
+> 这类节点只能出现在 Clash 那份里。所以 Base64 会比 Clash 少几个
+> ——**少的是格式表达不了的，不是筛掉的**。客户端能读 Clash 配置就用第一条。
+
+**同一个客户端只填一个地址，不要两个都加**，否则同一批节点会重复出现两遍。
 
 ### 万一上面这个打不开，换这几个（实测都可直连）
 
@@ -65,7 +73,7 @@ https://gh-proxy.com/https://raw.githubusercontent.com/baitmboop/mysub/main/out/
 | 总出口 | 实际生效的组，按 ①→②→③ 顺序自动降级 |
 | ① 自建 | 现在是空的（你没填 VPS） |
 | ② 免费额度 | 现在是空的（没填 WARP） |
-| ③ 免费池 | 当前 55 个免费节点，按云端实测排序 |
+| ③ 免费池 | 当前这批免费节点，按云端实测排序（数量每轮浮动，看订阅里的实际条数） |
 
 **客户端自己会在 ③ 组里测速切换**，你不用手动挑。
 
@@ -209,10 +217,12 @@ https://github.com/baitmboop/mysub/issues/new?template=node-report.yml&title=节
 一分钟内云端会：把这些节点标记为不可用 → 重新生成订阅 → **在这条 issue 下面
 回一条结果**（手机通知里直接能看到）。你在客户端点一次「更新订阅」即可。
 
-> **节点名在两端是一样的**：Clash 订阅和 base64 订阅现在都显示
-> `N01 202.50.253.72` 这种「序号 + IP」。如果你手机里还看到 `n0158` 这样的
-> 四位编号，那是旧版订阅，点一次「更新订阅」就统一了。
-> （旧编号也仍然认得，报 `n0158` 同样能定位到对应节点。）
+> **报问题请报 IP，不要报序号。** 节点名是 `N16 202.50.253.72` 这种「序号 + IP」，
+> 但两份订阅的序号**不一定相同**：Base64 那份少几个节点，序号是按它自己的列表重新排的，
+> 同一个节点在 Clash 里是 N16、在 Base64 里可能是 N11。IP:port 两端一定一致。
+> （序号本身每轮也会随实测速度重排，所以它本来就不适合用来指认节点。）
+> 如果你手机里还看到 `n0158` 这样的四位编号，那是旧版订阅，点一次「更新订阅」就统一了，
+> 旧编号也仍然认得。
 
 ### 能写什么
 
