@@ -197,7 +197,7 @@
  {
   "server": "91.107.179.68",
   "port": 10809,
-  "name": "n7213",
+  "name": "n7347",
   "source": "clashnode",
   "username": "",
   "password": "",
@@ -241,21 +241,26 @@
   "proto": "ss",
   "server": "18.117.92.138",
   "port": 443,
-  "name": "n7349",
-  "source": "tg:@wxdy666",
   "cipher": "aes-256-cfb",
   "password": "amazonskr05",
-  "_src": "wxdy666",
-  "fp": "18.117.92.138:443:ss",
-  "latency": null,
-  "jitter": null,
+  "name": "n1852",
+  "source": "ermaozi",
+  "fp": "44ec6492e345749d",
+  "sources": [
+   "ermaozi",
+   "mahdibland",
+   "tg:@freeVPNjd→sub",
+   "tg:@byxiaoxi→blog"
+  ],
+  "latency": 23,
+  "jitter": 4,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8,
+  "score": 0.8414,
   "speed": 0.0,
   "cn_ok": 1,
   "cn_by": "verify",
@@ -627,13 +632,17 @@
   "server": "111.192.28.24",
   "port": 8888,
   "tls": false,
-  "name": "",
+  "name": "n7366",
   "source": "extra:raw.githubusercontent.com/http.txt",
   "fp": "111.192.28.24:8888:http",
   "sources": [
    "extra:raw.githubusercontent.com/http.txt"
   ],
   "type": "http",
+  "latency": null,
+  "jitter": null,
+  "score": 0.0,
+  "speed": 0.0,
   "cn_ok": 1,
   "cn_by": "verify",
   "cn_speed": 0.1236
@@ -692,7 +701,7 @@
   "server": "159.195.110.240",
   "port": 8080,
   "tls": false,
-  "name": "n7236",
+  "name": "n7371",
   "source": "ermaozi",
   "fp": "159.195.110.240:8080:http",
   "latency": null,
@@ -797,6 +806,33 @@
   "speed": 0.0,
   "cn_ok": null,
   "cn_by": "verify"
+ },
+ {
+  "proto": "http",
+  "server": "142.44.210.129",
+  "port": 443,
+  "name": "n0240",
+  "source": "clashnode",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "afb903fbfd8ab7ef",
+  "sources": [
+   "clashnode"
+  ],
+  "latency": 17,
+  "jitter": 1,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8828,
+  "speed": 0.0,
+  "cn_ok": null
  },
  {
   "proto": "http",
@@ -994,33 +1030,6 @@
    "cf-trace": "ok"
   },
   "score": 0.8581,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "ss",
-  "server": "202.50.253.63",
-  "port": 19999,
-  "cipher": "aes-256-gcm",
-  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-  "name": "n0091",
-  "source": "NoMoreWalls",
-  "fp": "14e932ab7cf1a319",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi",
-   "ripaojiedian",
-   "mahdibland/Aggregator"
-  ],
-  "latency": 146,
-  "jitter": 64,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8562,
   "speed": 0.0,
   "cn_ok": null
  }
