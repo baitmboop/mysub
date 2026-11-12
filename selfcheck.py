@@ -208,6 +208,68 @@ def t_cull_keeps_old_fields_when_noting():
     assert a == "note" and rec["ok"] == 1 and rec["speed"] == 1.5, (a, rec)
 
 
+def t_select_skips_tested_and_dedups_endpoint():
+    """已经测过的端点不再测; 同一端点上的第二个协议也不重复测。
+
+    不这么做的话, 一轮普查要重扫 5177 个, 其中 5096 个的结论还在 7 天效期
+    内 —— 真正没测过的只有新采到的那批, 而重扫要多花几小时。
+    """
+    nodes = [
+        node(server="1.1.1.1", port=443, proto="http"),
+        node(server="1.1.1.1", port=443, proto="vless", uuid="u"),
+        node(server="2.2.2.2", port=8443, proto="http"),
+    ]
+    out, skip_old, skip_ss = verify.select_targets(nodes, {"2.2.2.2:8443"}, 1.0)
+    assert len(out) == 1, [n["server"] for n in out]
+    assert out[0]["server"] == "1.1.1.1", out[0]
+    assert skip_old == 1 and skip_ss == 0, (skip_old, skip_ss)
+
+
+def t_select_dup_endpoint_keeps_http():
+    """同一端点有多个协议时, 留命中最高的那个。
+
+    cn_pref 只按 server:port 记账, 测哪个协议都不会多出一条结论, 但 kernel
+    组要串行跑 10 秒。所以顺序必须是"先按协议排, 再去重" —— 反过来就会
+    留下列表里第一个碰到的 vless, 把 http 丢掉。
+    """
+    nodes = [
+        node(server="3.3.3.3", port=443, proto="vless", uuid="u"),
+        node(server="3.3.3.3", port=443, proto="http"),
+    ]
+    out, _, _ = verify.select_targets(nodes, set(), 1.0)
+    assert len(out) == 1, len(out)
+    assert out[0]["proto"] == "http", out[0]["proto"]
+
+
+def t_select_ss_sample_is_stable():
+    """ss 抽样必须是稳定的: 同一端点每轮结论一致, 否则测了哪些不可复现。"""
+    nodes = [node(server=f"10.0.{i // 250}.{i % 250}", port=443, proto="ss",
+                  cipher="aes-256-gcm", password="p") for i in range(400)]
+    a, _, skip_a = verify.select_targets(nodes, set(), 0.1)
+    b, _, skip_b = verify.select_targets(nodes, set(), 0.1)
+    eps_a = [verify.ep_of(n) for n in a]
+    eps_b = [verify.ep_of(n) for n in b]
+    assert eps_a == eps_b, "两次抽样结果不同, 抽样不稳定"
+    assert skip_a == skip_b == 400 - len(a)
+    assert 20 <= len(a) <= 70, f"10% 抽样应落在 40 上下, 实际 {len(a)}"
+    # 0 和 1 是边界, 必须精确
+    assert len(verify.select_targets(nodes, set(), 0.0)[0]) == 0
+    assert len(verify.select_targets(nodes, set(), 1.0)[0]) == 400
+
+
+def t_select_priority_http_before_ss():
+    """http/socks5 排最前, ss 排最后 —— 时间不够时先测命中率高的。"""
+    nodes = [
+        node(server="9.9.9.1", port=1, proto="ss", cipher="aes-256-gcm", password="p"),
+        node(server="9.9.9.2", port=2, proto="vless", uuid="u"),
+        node(server="9.9.9.3", port=3, proto="socks5"),
+        node(server="9.9.9.4", port=4, proto="http"),
+    ]
+    out, _, _ = verify.select_targets(nodes, set(), 1.0)
+    assert {n["proto"] for n in out[:2]} == {"http", "socks5"}, [n["proto"] for n in out]
+    assert out[-1]["proto"] == "ss", out[-1]["proto"]
+
+
 def t_kernel_proxy_keeps_ws_opts():
     """ws 节点的 path/host 必须还原成 ws-opts, 否则内核拿不到 Host 头。
 

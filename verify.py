@@ -38,6 +38,7 @@ L3 speed 只对 L2 通过的做, 下 2MB, 回答「快不快」。
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import shutil
@@ -389,6 +390,73 @@ def classify(n: dict) -> dict:
     return r
 
 
+# --------------------------------------------------------------------------- 选靶
+
+# 普查的时间永远不够, 先测命中最高的那类。
+# 依据(2026-11-12, 全池 5177 条实测): http 5.65% / socks5 46% /
+# vless 0.73% / vmess 0.21% / trojan 0.17% / ss 0.06% / hysteria2 0。
+PROTO_ORDER = {"http": 0, "socks5": 0, "vless": 1, "vmess": 1, "trojan": 1,
+               "hysteria2": 2, "tuic": 2, "ss": 3, "ssr": 3}
+SS_PROTOS = {"ss", "ssr"}
+
+
+def ep_of(n: dict) -> str:
+    return f"{n.get('server')}:{n.get('port')}"
+
+
+def ss_kept(ep: str, ratio: float) -> bool:
+    """按端点做稳定抽样。
+
+    用 sha1 而不是 random: 同一端点每轮结论必须一致, 否则"这轮到底测了哪些
+    ss"不可复现, 抽样带来的收益也无从核算。sha1 只用来分桶, 不涉及安全。
+    """
+    if ratio >= 1.0:
+        return True
+    if ratio <= 0.0:
+        return False
+    h = hashlib.sha1(ep.encode()).digest()
+    return int.from_bytes(h[:4], "big") / 2 ** 32 < ratio
+
+
+def select_targets(nodes: list, tested: set | None = None,
+                   ss_ratio: float = 1.0) -> tuple[list, int, int]:
+    """挑本轮要测的节点。返回 (要测的, 跳过已测的, 被 ss 抽样跳过的)。
+
+    三件事, 每一件都对应一次真实的浪费:
+
+      1. 同一端点只测一次。cn_pref 按 server:port 记账, 测同一端口的第二个
+         协议不会改变结论, 但 kernel 组要串行跑一遍(约 10 秒/个)。
+      2. 已有新鲜记录的端点跳过。全池重扫 5177 个要几小时, 而其中 5096 个的
+         结论还在 7 天有效期内 —— 真正没测过的只有新采到的那批。
+      3. ss 只抽一部分。1781 个 ss 实测只出 1 个可用(0.06%), 却占掉三分之
+         一的时间, 而 http 只用 5% 的时间就贡献了 35% 的可用节点。
+
+    排序必须放在去重之前: 同一端点同时有 http 和 vless 两份时, 留下 http。
+    """
+    tested = tested or set()
+    ordered = sorted(nodes, key=lambda n: PROTO_ORDER.get(
+        (n.get("proto") or n.get("type") or "").lower(), 4))
+    out: list = []
+    seen: set = set()
+    skip_old = skip_ss = 0
+    for n in ordered:
+        if not n.get("server") or not n.get("port"):
+            continue
+        ep = ep_of(n)
+        if ep in seen:
+            continue
+        seen.add(ep)
+        if ep in tested:
+            skip_old += 1
+            continue
+        if (n.get("proto") or n.get("type") or "").lower() in SS_PROTOS \
+                and not ss_kept(ep, ss_ratio):
+            skip_ss += 1
+            continue
+        out.append(n)
+    return out, skip_old, skip_ss
+
+
 # --------------------------------------------------------------------------- 输入
 
 def load_nodes(args) -> list[dict]:
@@ -423,6 +491,15 @@ def main() -> int:
     ap.add_argument("--direct-workers", type=int, default=8,
                     help="http/socks5 直测并发。走 curl 无内核, 不受上面的限制")
     ap.add_argument("--resume", action="store_true", help="跳过已有结论的节点")
+    ap.add_argument("--only-new", action="store_true",
+                    help="跳过 cn_pref 里已有新鲜记录的端点。全池重扫要几小时, "
+                         "但 7 天内的结论仍然有效 —— 日常补测只用新端点")
+    ap.add_argument("--ss-sample", type=float, default=1.0, metavar="RATIO",
+                    help="ss/ssr 只抽这个比例来测(0~1)。实测 1781 个 ss 只出 "
+                         "1 个可用(0.06%), 却占掉三分之一时间。默认 1.0 不抽样")
+    ap.add_argument("--refresh", action="store_true",
+                    help="日常补测的推荐组合: --only-new --ss-sample 0.1 "
+                         "--workers 20 --direct-workers 16")
     ap.add_argument("--no-canary", action="store_true",
                     help="跳过入口自检。只在明确知道自己在干什么时用 —— "
                          "自检不过说明整套测量是假的")
@@ -437,6 +514,13 @@ def main() -> int:
                          "timeout 要连续两轮")
     args = ap.parse_args()
 
+    if args.refresh:
+        args.only_new = True
+        if args.ss_sample >= 1.0:        # 用户显式给了就听用户的
+            args.ss_sample = 0.1
+        args.workers = max(args.workers, 20)
+        args.direct_workers = max(args.direct_workers, 16)
+
     done: dict = gateway.load_json(Path(args.out), {})
     if args.report:
         summarize(done)
@@ -450,6 +534,17 @@ def main() -> int:
     if not nodes:
         log("没有节点可验")
         return 1
+
+    # --sub 是验"现在订阅里的这些", 它们必然都在 cn_pref 里, 跳过就等于一个都不测
+    tested = set(gateway.load_cn_pref()) if (args.only_new and not args.sub) else set()
+    nodes, skip_old, skip_ss = select_targets(nodes, tested, args.ss_sample)
+    if skip_old or skip_ss:
+        log(f"选靶: 跳过已测 {skip_old} 个端点, ss 抽样跳过 {skip_ss} 个 "
+            f"→ 待测 {len(nodes)} 个")
+    if not nodes:
+        log("没有新节点需要验(全部已有 7 天内的结论)")
+        return 0
+
     if args.resume:
         nodes = [n for n in nodes if key_of(n) not in done]
     if args.limit:
