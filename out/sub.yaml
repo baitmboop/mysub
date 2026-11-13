@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-13 08:44:52 (北京时间)
+# nodepool  生成于 2026-11-13 08:58:53 (北京时间)
 # 节点数 52  (自建 0 / 免费额度 0 / 免费池 52)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -338,49 +338,42 @@ proxies:
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N46 142.44.210.129
-    type: http
-    server: 142.44.210.129
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N47 138.199.35.195
+  - name: N46 138.199.35.195
     type: http
     server: 138.199.35.195
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N48 138.199.35.196
+  - name: N47 138.199.35.196
     type: http
     server: 138.199.35.196
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N49 138.199.35.203
+  - name: N48 138.199.35.203
     type: http
     server: 138.199.35.203
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N50 138.199.35.205
+  - name: N49 138.199.35.205
     type: http
     server: 138.199.35.205
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N51 138.199.35.207
+  - name: N50 138.199.35.207
     type: http
     server: 138.199.35.207
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N52 138.199.35.214
+  - name: N51 138.199.35.214
     type: http
     server: 138.199.35.214
     port: 9002
@@ -389,6 +382,20 @@ proxies:
     password: null
     tls: true
     skip-cert-verify: true
+  - name: N52 172.67.79.160
+    type: vless
+    server: 172.67.79.160
+    port: 2087
+    uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+    udp: true
+    skipCertVerify: true
+    tls: true
+    servername: cvhpyn.pages.dev
+    ws-opts:
+      path: /
+      headers:
+        Host: cvhpyn.pages.dev
+    network: ws
 proxy-groups:
   - name: 节点选择
     type: select
@@ -440,13 +447,13 @@ proxy-groups:
       - N43 44.248.167.117
       - N44 138.199.35.197
       - N45 138.199.35.200
-      - N46 142.44.210.129
-      - N47 138.199.35.195
-      - N48 138.199.35.196
-      - N49 138.199.35.203
-      - N50 138.199.35.205
-      - N51 138.199.35.207
-      - N52 138.199.35.214
+      - N46 138.199.35.195
+      - N47 138.199.35.196
+      - N48 138.199.35.203
+      - N49 138.199.35.205
+      - N50 138.199.35.207
+      - N51 138.199.35.214
+      - N52 172.67.79.160
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -498,13 +505,13 @@ proxy-groups:
       - N43 44.248.167.117
       - N44 138.199.35.197
       - N45 138.199.35.200
-      - N46 142.44.210.129
-      - N47 138.199.35.195
-      - N48 138.199.35.196
-      - N49 138.199.35.203
-      - N50 138.199.35.205
-      - N51 138.199.35.207
-      - N52 138.199.35.214
+      - N46 138.199.35.195
+      - N47 138.199.35.196
+      - N48 138.199.35.203
+      - N49 138.199.35.205
+      - N50 138.199.35.207
+      - N51 138.199.35.214
+      - N52 172.67.79.160
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -555,12 +562,12 @@ proxy-groups:
       - N43 44.248.167.117
       - N44 138.199.35.197
       - N45 138.199.35.200
-      - N46 142.44.210.129
-      - N47 138.199.35.195
-      - N48 138.199.35.196
-      - N49 138.199.35.203
-      - N50 138.199.35.205
-      - N51 138.199.35.207
-      - N52 138.199.35.214
+      - N46 138.199.35.195
+      - N47 138.199.35.196
+      - N48 138.199.35.203
+      - N49 138.199.35.205
+      - N50 138.199.35.207
+      - N51 138.199.35.214
+      - N52 172.67.79.160
 rules:
   - "MATCH,节点选择"
