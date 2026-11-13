@@ -3,7 +3,7 @@
   "proto": "vmess",
   "server": "39.108.113.127",
   "port": 10086,
-  "name": "n6450",
+  "name": "n6475",
   "source": "go4sharing/sub",
   "uuid": "b0253c6c-0b96-4950-bde1-669f13bc1a01",
   "alterId": 0,
@@ -44,7 +44,7 @@
   "sid": "",
   "utls": "ios",
   "reality": false,
-  "name": "n7333",
+  "name": "n7358",
   "source": "NoMoreWalls",
   "fp": "zfapi.zalolink.com:35460:vless",
   "sources": [
@@ -104,7 +104,7 @@
   "sid": "0ee643ab",
   "utls": "chrome",
   "reality": true,
-  "name": "n7335",
+  "name": "n7360",
   "source": "tg:@byxiaoxi",
   "fp": "hk3.wawojk.dpdns.org:51314:vless",
   "latency": null,
@@ -121,7 +121,7 @@
   "server": "111.192.52.56",
   "port": 8888,
   "tls": false,
-  "name": "n7336",
+  "name": "n7361",
   "source": "extra:raw.githubusercontent.com/http.txt",
   "fp": "111.192.52.56:8888:http",
   "sources": [
@@ -141,7 +141,7 @@
   "server": "123.119.195.145",
   "port": 8888,
   "tls": false,
-  "name": "n7337",
+  "name": "n7362",
   "source": "extra:raw.githubusercontent.com/http.txt",
   "fp": "123.119.195.145:8888:http",
   "sources": [
@@ -220,7 +220,7 @@
  {
   "server": "69.55.49.177",
   "port": 38182,
-  "name": "n7341",
+  "name": "n7366",
   "source": "clashnode",
   "username": "",
   "password": "",
@@ -327,7 +327,7 @@
   "server": "c8f40e6a-tjrog0-tobupp-1rvjz.sg2.oshuawei.com",
   "port": 5228,
   "tls": true,
-  "name": "n7346",
+  "name": "n7371",
   "source": "ermaozi",
   "username": "5e8bc530-3a90-11ef-bd5b-f23c913c8d2b",
   "password": "5e8bc530-3a90-11ef-bd5b-f23c913c8d2b",
@@ -475,7 +475,7 @@
   "proto": "http",
   "server": "fan.365747.xyz",
   "port": 443,
-  "name": "美国 - San Jose - 5",
+  "name": "n7378",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -483,6 +483,16 @@
   "sni": "",
   "skipCertVerify": true,
   "fp": "fan.365747.xyz:443:http",
+  "latency": 11,
+  "jitter": 24,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8533,
+  "speed": 0.0,
   "cn_ok": 1,
   "cn_by": "verify",
   "cn_speed": 0.3564
@@ -519,7 +529,7 @@
  {
   "server": "fan.596189.xyz",
   "port": 443,
-  "name": "n7355",
+  "name": "n7380",
   "source": "go4sharing/arch",
   "username": "",
   "password": "",
@@ -631,7 +641,7 @@
   "sid": "",
   "utls": "",
   "reality": false,
-  "name": "n5065",
+  "name": "n5083",
   "source": "NoMoreWalls",
   "fp": "fd314bfaa919fbd2",
   "sources": [
@@ -654,7 +664,7 @@
   "proto": "http",
   "server": "twmoon1-cdn-route.couldflare-cdn.com",
   "port": 1443,
-  "name": "n7361",
+  "name": "n7386",
   "source": "go4sharing/arch",
   "username": "mrwdfNTD8M79LCukCieldrqZWqs=",
   "password": "mrwdfNTD8M79LCukCieldrqZWqs=",
@@ -679,7 +689,7 @@
   "server": "149.88.21.129",
   "port": 443,
   "tls": true,
-  "name": "n7362",
+  "name": "n7387",
   "source": "ermaozi",
   "fp": "149.88.21.129:443:http",
   "latency": null,
@@ -786,7 +796,7 @@
   "server": "111.192.50.81",
   "port": 8888,
   "tls": false,
-  "name": "n7367",
+  "name": "n7392",
   "source": "extra:raw.githubusercontent.com/http.txt",
   "fp": "111.192.50.81:8888:http",
   "sources": [
@@ -806,7 +816,7 @@
   "server": "31.171.155.210",
   "port": 9443,
   "tls": true,
-  "name": "n7368",
+  "name": "n7393",
   "source": "ermaozi",
   "fp": "31.171.155.210:9443:http",
   "latency": null,
@@ -836,7 +846,7 @@
   "server": "142.252.37.58",
   "port": 6182,
   "tls": false,
-  "name": "n7370",
+  "name": "n7395",
   "source": "ermaozi",
   "username": "hommkiti",
   "password": "0wcmn0va70ra",
@@ -926,6 +936,39 @@
   "cn_speed": 0.0599
  },
  {
+  "proto": "vless",
+  "server": "3.169.9.125",
+  "port": 443,
+  "uuid": "67cd3349-f789-4cbb-8b91-4b6b1654ce7c",
+  "tls": true,
+  "sni": "d14jyezfrcyf60.cloudfront.net",
+  "network": "ws",
+  "path": "/",
+  "host": "d14jyezfrcyf60.cloudfront.net",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "fp": "812f079f71221536",
+  "reality": false,
+  "name": "n0348",
+  "source": "ermaozi",
+  "sources": [
+   "ermaozi"
+  ],
+  "latency": 385,
+  "jitter": 0,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9287,
+  "speed": 0.0,
+  "cn_ok": null,
+  "cn_by": "verify"
+ },
+ {
   "proto": "http",
   "server": "44.248.167.117",
   "port": 8443,
@@ -952,115 +995,6 @@
   "speed": 0.0,
   "cn_ok": null,
   "cn_by": "verify"
- },
- {
-  "proto": "http",
-  "server": "138.199.35.197",
-  "port": 9002,
-  "name": "n0234",
-  "source": "go4sharing/arch",
-  "username": "",
-  "password": "",
-  "tls": true,
-  "sni": "",
-  "skipCertVerify": true,
-  "fp": "b7518fe9de103d43",
-  "sources": [
-   "go4sharing/arch",
-   "clashnode"
-  ],
-  "latency": 11,
-  "jitter": 8,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8842,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "http",
-  "server": "138.199.35.200",
-  "port": 9002,
-  "tls": true,
-  "name": "n0238",
-  "source": "NoMoreWalls",
-  "fp": "6f5856dcc416dcaf",
-  "sources": [
-   "NoMoreWalls",
-   "ermaozi",
-   "clashnode"
-  ],
-  "latency": 11,
-  "jitter": 1,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8842,
-  "speed": 0.0,
-  "cn_ok": null,
-  "cn_by": "verify"
- },
- {
-  "proto": "http",
-  "server": "138.199.35.195",
-  "port": 9002,
-  "name": "n0232",
-  "source": "go4sharing/arch",
-  "username": "",
-  "password": "",
-  "tls": true,
-  "sni": "",
-  "skipCertVerify": true,
-  "fp": "7bd88986991b1694",
-  "sources": [
-   "go4sharing/arch",
-   "clashnode"
-  ],
-  "latency": 12,
-  "jitter": 9,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8737,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "http",
-  "server": "138.199.35.196",
-  "port": 9002,
-  "name": "n0233",
-  "source": "clashnode",
-  "username": "",
-  "password": "",
-  "tls": true,
-  "sni": "",
-  "skipCertVerify": true,
-  "fp": "ddafc8b56580f248",
-  "sources": [
-   "clashnode"
-  ],
-  "latency": 12,
-  "jitter": 3,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8737,
-  "speed": 0.0,
-  "cn_ok": null
  },
  {
   "proto": "http",
@@ -1091,6 +1025,34 @@
  },
  {
   "proto": "http",
+  "server": "138.199.35.197",
+  "port": 9002,
+  "name": "n0234",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "b7518fe9de103d43",
+  "sources": [
+   "go4sharing/arch",
+   "clashnode"
+  ],
+  "latency": 10,
+  "jitter": 6,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8667,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "http",
   "server": "138.199.35.205",
   "port": 9002,
   "name": "n0244",
@@ -1105,7 +1067,7 @@
    "go4sharing/arch",
    "clashnode"
   ],
-  "latency": 12,
+  "latency": 10,
   "jitter": 9,
   "verify_ok": 3,
   "verify": {
@@ -1113,7 +1075,7 @@
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8737,
+  "score": 0.8667,
   "speed": 0.0,
   "cn_ok": null
  },
@@ -1131,15 +1093,43 @@
    "go4sharing/arch",
    "clashnode"
   ],
-  "latency": 12,
-  "jitter": 11,
+  "latency": 10,
+  "jitter": 2,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8737,
+  "score": 0.8667,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "http",
+  "server": "138.199.35.204",
+  "port": 9002,
+  "name": "n0243",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "81359b1902b2035f",
+  "sources": [
+   "go4sharing/arch",
+   "clashnode"
+  ],
+  "latency": 10,
+  "jitter": 1,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8667,
   "speed": 0.0,
   "cn_ok": null
  },
@@ -1147,54 +1137,93 @@
   "proto": "http",
   "server": "138.199.35.214",
   "port": 9002,
+  "name": "n0254",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
   "tls": true,
-  "name": "n0255",
-  "source": "tg:@freeVPNjd→sub",
-  "username": "null",
-  "password": "null",
-  "fp": "f4b9e27259b58354",
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "00d1f7083ccb212b",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "go4sharing/arch",
+   "clashnode"
   ],
-  "latency": 12,
-  "jitter": 10,
+  "latency": 10,
+  "jitter": 2,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8737,
+  "score": 0.8667,
   "speed": 0.0,
   "cn_ok": null
  },
  {
   "proto": "vless",
-  "server": "172.67.79.160",
-  "port": 2087,
-  "name": "n4978",
-  "source": "clashnode",
-  "uuid": "a4a951b9-901d-4db8-8a7d-6df82c4b5c23",
+  "server": "38.58.108.84",
+  "port": 443,
+  "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e",
   "tls": true,
-  "sni": "cvhpyn.pages.dev",
+  "sni": "fs.qicai99.com",
   "network": "ws",
+  "path": "/fp=chrome",
+  "host": "fs.qicai99.com",
   "flow": "",
-  "utls": "chrome",
-  "path": "/",
-  "host": "cvhpyn.pages.dev",
-  "fp": "4af71a03351a963b",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "n2381",
+  "source": "ermaozi",
+  "fp": "04a9a7206f38bfff",
   "sources": [
-   "clashnode"
+   "ermaozi"
   ],
-  "latency": 12,
-  "jitter": 8,
+  "latency": 43,
+  "jitter": 52,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8737,
+  "score": 0.8656,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "vless",
+  "server": "143.246.60.254",
+  "port": 443,
+  "uuid": "fa895069-bfe5-42c9-9f30-f918e1e442c1",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "path": "/",
+  "host": "www.cloudflare.com",
+  "flow": "xtls-rprx-vision",
+  "pbk": "ccJ6xUaUhUxN6GEj6a1vqsQDNDTJJX1KYSURY5pJpBE",
+  "sid": "eb68848e2575a1f4",
+  "utls": "firefox",
+  "reality": true,
+  "name": "n7392",
+  "source": "ermaozi",
+  "fp": "64af797b8e616735",
+  "sources": [
+   "ermaozi"
+  ],
+  "latency": 13,
+  "jitter": 3,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8632,
   "speed": 0.0,
   "cn_ok": null
  }
