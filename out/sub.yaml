@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-13 13:57:24 (北京时间)
+# nodepool  生成于 2026-11-13 16:58:49 (北京时间)
 # 节点数 52  (自建 0 / 免费额度 0 / 免费池 52)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -317,72 +317,9 @@ proxies:
     server: 176.111.37.5
     port: 39811
     udp: false
-  - name: N43 3.169.9.125
+  - name: N43 188.114.98.0
     type: vless
-    server: 3.169.9.125
-    port: 443
-    uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: d14jyezfrcyf60.cloudfront.net
-    ws-opts:
-      path: /
-      headers:
-        Host: d14jyezfrcyf60.cloudfront.net
-    network: ws
-  - name: N44 44.248.167.117
-    type: http
-    server: 44.248.167.117
-    port: 8443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N45 138.199.35.203
-    type: http
-    server: 138.199.35.203
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N46 138.199.35.197
-    type: http
-    server: 138.199.35.197
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N47 138.199.35.205
-    type: http
-    server: 138.199.35.205
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N48 138.199.35.207
-    type: http
-    server: 138.199.35.207
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N49 138.199.35.204
-    type: http
-    server: 138.199.35.204
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N50 138.199.35.214
-    type: http
-    server: 138.199.35.214
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N51 38.58.108.84
-    type: vless
-    server: 38.58.108.84
+    server: 188.114.98.0
     port: 443
     uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
     udp: true
@@ -390,24 +327,80 @@ proxies:
     tls: true
     servername: fs.qicai99.com
     ws-opts:
-      path: /fp=chrome
+      path: /
       headers:
         Host: fs.qicai99.com
     network: ws
-  - name: N52 143.246.60.254
+  - name: N44 104.17.167.134
     type: vless
-    server: 143.246.60.254
+    server: 104.17.167.134
     port: 443
-    uuid: fa895069-bfe5-42c9-9f30-f918e1e442c1
+    uuid: 21468d3e-8bd6-4a53-b6e6-2d351b6fa1c8
     udp: true
     skipCertVerify: true
-    flow: xtls-rprx-vision
     tls: true
-    servername: www.cloudflare.com
-    reality-opts:
-      public-key: ccJ6xUaUhUxN6GEj6a1vqsQDNDTJJX1KYSURY5pJpBE
-      short-id: eb68848e2575a1f4
-    client-fingerprint: firefox
+    servername: node.plutocore.vip
+    ws-opts:
+      path: /f/212/10a329ebf07dae84d7ce684c
+      headers:
+        Host: node.plutocore.vip
+    network: ws
+  - name: N45 44.248.167.117
+    type: http
+    server: 44.248.167.117
+    port: 8443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N46 162.217.114.50
+    type: http
+    server: 162.217.114.50
+    port: 443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N47 15.235.57.6
+    type: ss
+    server: 15.235.57.6
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: kxhnt5jtykd328cg
+    udp: true
+  - name: N48 138.199.35.203
+    type: http
+    server: 138.199.35.203
+    port: 9002
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N49 138.199.35.197
+    type: http
+    server: 138.199.35.197
+    port: 9002
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N50 138.199.35.205
+    type: http
+    server: 138.199.35.205
+    port: 9002
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N51 138.199.35.207
+    type: http
+    server: 138.199.35.207
+    port: 9002
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N52 138.199.35.204
+    type: http
+    server: 138.199.35.204
+    port: 9002
+    udp: false
+    tls: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 节点选择
     type: select
@@ -456,16 +449,16 @@ proxy-groups:
       - N40 jp.sofast.live
       - N41 103.158.210.80
       - N42 176.111.37.5
-      - N43 3.169.9.125
-      - N44 44.248.167.117
-      - N45 138.199.35.203
-      - N46 138.199.35.197
-      - N47 138.199.35.205
-      - N48 138.199.35.207
-      - N49 138.199.35.204
-      - N50 138.199.35.214
-      - N51 38.58.108.84
-      - N52 143.246.60.254
+      - N43 188.114.98.0
+      - N44 104.17.167.134
+      - N45 44.248.167.117
+      - N46 162.217.114.50
+      - N47 15.235.57.6
+      - N48 138.199.35.203
+      - N49 138.199.35.197
+      - N50 138.199.35.205
+      - N51 138.199.35.207
+      - N52 138.199.35.204
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -514,16 +507,16 @@ proxy-groups:
       - N40 jp.sofast.live
       - N41 103.158.210.80
       - N42 176.111.37.5
-      - N43 3.169.9.125
-      - N44 44.248.167.117
-      - N45 138.199.35.203
-      - N46 138.199.35.197
-      - N47 138.199.35.205
-      - N48 138.199.35.207
-      - N49 138.199.35.204
-      - N50 138.199.35.214
-      - N51 38.58.108.84
-      - N52 143.246.60.254
+      - N43 188.114.98.0
+      - N44 104.17.167.134
+      - N45 44.248.167.117
+      - N46 162.217.114.50
+      - N47 15.235.57.6
+      - N48 138.199.35.203
+      - N49 138.199.35.197
+      - N50 138.199.35.205
+      - N51 138.199.35.207
+      - N52 138.199.35.204
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -571,15 +564,15 @@ proxy-groups:
       - N40 jp.sofast.live
       - N41 103.158.210.80
       - N42 176.111.37.5
-      - N43 3.169.9.125
-      - N44 44.248.167.117
-      - N45 138.199.35.203
-      - N46 138.199.35.197
-      - N47 138.199.35.205
-      - N48 138.199.35.207
-      - N49 138.199.35.204
-      - N50 138.199.35.214
-      - N51 38.58.108.84
-      - N52 143.246.60.254
+      - N43 188.114.98.0
+      - N44 104.17.167.134
+      - N45 44.248.167.117
+      - N46 162.217.114.50
+      - N47 15.235.57.6
+      - N48 138.199.35.203
+      - N49 138.199.35.197
+      - N50 138.199.35.205
+      - N51 138.199.35.207
+      - N52 138.199.35.204
 rules:
   - "MATCH,节点选择"
