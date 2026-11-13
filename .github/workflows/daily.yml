@@ -2,13 +2,18 @@ name: 更新节点订阅
 
 on:
   schedule:
-    # 拆成两种节奏: 源站不会几小时就更新一批新节点, 但节点本身几小时就会死。
-    # 所以"采集"每天一次就够, "复测"要跟着节点的寿命走。
+    # 三种节奏, 按"源多久变一次"和"节点多久死一次"分开, 不要互相拖累:
     #
-    # ① UTC 20:00 = 北京 04:00 —— 全量: 采集源站 + 复测 + 重建订阅
+    # ① UTC 20:00 = 北京 04:00 —— 全量: 采集所有源 + 复测 + 重建订阅
     - cron: "0 20 * * *"
-    # ② 其余时段每 3 小时 —— 只复测池内节点 + 重建订阅, 不打扰源站
+    # ② 其余时段每 3 小时 —— 只复测池内节点 + 重建订阅, 不碰源站
     - cron: "0 2,5,8,11,14,17,23 * * *"
+    # ③ 每 2 小时, 错开 30 分 —— 只采"小时级更新"的几个频道, 增量并入
+    #    nodes.json, 不重建订阅。这一轮存在的理由: freeVPNjd 这类频道每 1-2
+    #    小时就发一条新试用订阅(token 十分钟后失效), 一天只采一次等于 24 条
+    #    里只拿 1 条。静态列表和归档源不参加这一轮 —— 它们几小时内不会变,
+    #    重复抓只是给源站添堵。
+    - cron: "30 1,3,5,7,9,11,13,15,17,19,21,23 * * *"
   workflow_dispatch: {}      # 支持手动点一下立即跑
   # 手机端反馈通道: 提一个 issue 写下"哪几个节点连不上", 云端据此把它们
   # 摘掉并重建订阅。人在外面、电脑关着也能用 —— 不需要任何本机参与。
@@ -30,12 +35,19 @@ permissions:
   issues: write              # 处理完在 issue 里回复结果(手机上看得到)
 
 concurrency:
-  group: daily-sub
+  # 高频采集轮单独一把锁。共用一个 group 会被串行化: build 正在跑 19 分钟时,
+  # 到点的 hot run 只能 pending, 而同一 group 只留一个 pending, 下一个到点的
+  # 又把它顶掉 —— 结果就是"配置了每 2 小时, 实际跳着跑", 还不报错。
+  group: ${{ github.event.schedule == '30 1,3,5,7,9,11,13,15,17,19,21,23 * * *' && 'hot-collect' || 'daily-sub' }}
   cancel-in-progress: false
 
 jobs:
   build:
-    if: github.event_name != 'issues'
+    # 排除两种: issues 走下面的 report job; 高频采集轮只抓节点不重建,
+    # 否则每 2 小时白跑一次 19 分钟的内核复测, 还会多出 12 个产物提交。
+    if: |
+      github.event_name != 'issues' &&
+      github.event.schedule != '30 1,3,5,7,9,11,13,15,17,19,21,23 * * *'
     runs-on: ubuntu-latest
     timeout-minutes: 40
 
@@ -188,6 +200,78 @@ jobs:
             out/sub-base64.txt
             out/report.md
           retention-days: 14
+
+  # --------------------------------------------------------------------
+  # 高频采集(每 2 小时): 只跑 collect.py --only-hot, 增量并入 nodes.json。
+  #
+  # 为什么单独一个 job 而不是塞进上面的 build: build 要下内核 + 复测 + 重建,
+  # 一轮 15-19 分钟; 每 2 小时来一次纯属浪费, 还会不停产生产物提交。这一轮
+  # 只做一件事 —— 趁免费试用订阅的 token 还没过期把它抓下来。
+  #
+  # 采完不重建订阅, 交给下一轮(每 3 小时)的 build 去探测重排。中间最多等
+  # 3 小时, 而一次性的 token 十分钟就失效, 所以"抓到"比"马上用上"更紧急。
+  # --------------------------------------------------------------------
+  hot-collect:
+    if: github.event_name == 'schedule' && github.event.schedule == '30 1,3,5,7,9,11,13,15,17,19,21,23 * * *'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 拉取仓库
+        uses: actions/checkout@v4
+
+      - name: 准备 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 代码自检
+        # 这一轮会直接改写 nodes.json。自检不过就别动它 —— 高频轮写坏文件,
+        # 下一轮复测会拿一份残缺的候选列表去跑, 表面上看不出问题。
+        run: |
+          pip install --quiet pyyaml
+          python3 selfcheck.py
+
+      - name: 高频采集(增量)
+        run: |
+          set -uo pipefail
+          # max-age 5 小时 = 2 小时一轮的两倍多, 允许漏掉一轮也不至于断档。
+          # 同一帖子在窗口内会被重复访问(去重后无新增), 无害, 只是多点请求。
+          python3 collect.py --only-hot --max-age 5 \
+            || echo "::warning::高频采集失败, 沿用现有 nodes.json"
+
+      - name: 有新节点才提交
+        run: |
+          set -uo pipefail
+          RP=data/sources_report_hot.json
+          NEW=$(python3 -c "import json;print(json.load(open('$RP')).get('new_nodes',0))" 2>/dev/null || echo 0)
+          TOTAL=$(python3 -c "import json;print(json.load(open('$RP')).get('total_nodes',0))" 2>/dev/null || echo 0)
+          BASE=$(python3 -c "import json;print(json.load(open('$RP')).get('base_nodes',0))" 2>/dev/null || echo 0)
+          {
+            echo "### 高频采集（每 2 小时）"
+            echo ""
+            echo "| 底池 | 合并后 | 本轮新增 |"
+            echo "|---|---|---|"
+            echo "| $BASE | $TOTAL | **$NEW** |"
+          } >> "$GITHUB_STEP_SUMMARY"
+          if [ "$NEW" -le 0 ]; then
+            echo "本轮无新节点, 不提交 —— 否则一天多出 12 个空提交"
+            exit 0
+          fi
+          git config user.name  "nodepool-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/nodes.json "$RP"
+          git commit -m "chore: 高频采集 +${NEW} 个节点"
+          # 和 build job 抢同一个分支, 撞上就会 push 被拒, 变基后重试。
+          for i in 1 2 3; do
+            if git push -q origin HEAD:main 2>/dev/null; then
+              echo "已推送"
+              exit 0
+            fi
+            echo "第 $i 次推送被拒, 变基后重试"
+            git pull --rebase -q origin main || break
+          done
+          echo "::warning::推送失败, 本轮节点没进仓库(下轮会重新采到)"
 
   # --------------------------------------------------------------------
   # 手机端反馈: 提一个 issue 说"哪几个节点不行", 这里把它们标记为不可用,

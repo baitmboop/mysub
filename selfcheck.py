@@ -1465,6 +1465,83 @@ def t_discover_filters_media_and_slug():
     assert good > bad, (good, bad)
 
 
+def t_hot_channels_subset_of_tg():
+    """高频轮只跑 HOT_CHANNELS, 写错一个频道名就等于那一轮白跑且不报错。"""
+    import collect
+    hot, tg = set(collect.HOT_CHANNELS), set(collect.TG_CHANNELS)
+    assert hot, "HOT_CHANNELS 空表 = 高频轮什么都不采"
+    assert hot <= tg, f"HOT 里有不在 TG_CHANNELS 的: {hot - tg}"
+    assert not (hot & set(collect.DEAD_CHANNELS)), "别把停更频道放进高频轮"
+
+
+def t_merge_base_pool_handles_bad_input():
+    """底池读不出来时返回 0, 不能抛。
+
+    守的是一个具体的坑: 高频轮只采 5 个频道, 产出几百个。如果读不到现有
+    nodes.json 却照写不误, 七千多个节点会被几百个覆盖 —— 订阅掉一大截,
+    全流程不报任何错。
+    """
+    import collect
+    d = tempfile.mkdtemp()
+    pool: dict = {}
+    assert collect.merge_base_pool(os.path.join(d, "nope.json"), pool) == 0
+    assert pool == {}
+
+    bad = os.path.join(d, "bad.json")
+    with open(bad, "w", encoding="utf-8") as f:
+        f.write("{ not json ")
+    assert collect.merge_base_pool(bad, pool) == 0, "坏文件必须当作空池"
+    assert pool == {}
+
+    obj = os.path.join(d, "obj.json")
+    with open(obj, "w", encoding="utf-8") as f:
+        json.dump({"proxies": []}, f)          # 是 dict 不是 list
+    assert collect.merge_base_pool(obj, pool) == 0
+    assert pool == {}
+
+
+def t_merge_base_pool_keeps_nodes_and_fills_fp():
+    """正常列表要全部留住, 缺 fp 的补上, 已有 fp 的不重算。"""
+    import collect
+    d = tempfile.mkdtemp()
+    p = os.path.join(d, "nodes.json")
+    with open(p, "w", encoding="utf-8") as f:
+        json.dump([
+            {"server": "1.2.3.4", "port": 8080, "proto": "http"},
+            {"server": "9.9.9.9", "port": 443, "proto": "vless", "fp": "FIXED"},
+        ], f)
+    pool: dict = {}
+    assert collect.merge_base_pool(p, pool) == 2
+    fps = set()
+    for n in pool.values():
+        assert n.get("fp"), "没 fp 的节点后续去重会失效, 同一节点会被反复计数"
+        assert n.get("sources"), "缺 sources 会让这个源在报表里消失"
+        fps.add(n["fp"])
+    assert len(fps) == 2
+    assert "FIXED" in fps, "已有 fp 不能被重算覆盖(会打乱历史指纹)"
+
+
+def t_merge_base_pool_skips_junk():
+    """空条目 / 缺 server 或 proto 的条目不能进池。
+
+    缺 proto 尤其致命: fingerprint() 直接取 n['proto'], 会在载入底池这一步
+    抛 KeyError, 表现像是网络故障, 排查方向全错。
+    """
+    import collect
+    d = tempfile.mkdtemp()
+    p = os.path.join(d, "nodes.json")
+    with open(p, "w", encoding="utf-8") as f:
+        json.dump([
+            {}, {"server": ""}, {"port": 1}, "x", None,
+            {"server": "5.6.7.8", "port": 80},                       # 缺 proto
+            {"server": "5.6.7.9", "port": 80, "proto": "http"},      # 唯一好的
+        ], f)
+    pool: dict = {}
+    assert collect.merge_base_pool(p, pool) == 1
+    only = list(pool.values())[0]
+    assert only["server"] == "5.6.7.9", only
+
+
 TESTS = [(k[2:], v) for k, v in sorted(globals().items()) if k.startswith("t_")]
 if __name__ == "__main__":
     print(f"边界自检: {len(TESTS)} 项\n")

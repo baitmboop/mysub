@@ -166,6 +166,24 @@ TG_CHANNELS = [
     "wxdy666",
 ]
 
+# 高频源: 更新周期在 1-5 小时内的频道, 只靠每天 04:00 那一轮会漏掉大部分。
+#
+# 为什么单列一张表: daily.yml 原来给的理由是"源站不会几小时就更新一批新节点",
+# 这在这几个频道上不成立 —— freeVPNjd 每 1-2 小时就发一条新试用订阅, token 还
+# 是一次性的(见下面的注释)。一天只采一次 = 24 条里只拿 1 条。
+#
+# 反过来, 静态列表(GitHub 上的 daily 仓库、归档型源)一天采 3 次和采 1 次拿到
+# 的内容完全一样, 多请求只是给源站添堵。所以"高频轮"只跑这张表, 不跑全量。
+#
+# 括号里是 2026-11-11 实测的最新帖距今时间, 判断依据写在这里, 便于以后复查:
+HOT_CHANNELS = [
+    "freeVPNjd",         # 1-2h   机场试用订阅, 供给最稳, token 一次性
+    "vpnfail_v2ray",     # 0.1h   直出节点
+    "ripaojiedian",      # 1.5h   帖内是订阅地址
+    "oneclickvpnkeys",   # 2h     直出节点, 约 87 个/帖
+    "wxdy666",           # 4.7h   直出 + 订阅都发, 单轮能贡献 200+ 新节点
+]
+
 # 已停更的频道, 不再请求。2026-11-11 逐个看了 t.me/s/ 页面里最新帖子的时间:
 #   v2ray_configs_pool 792h / freev2rayconfig 28388h / getfreev2ray 27968h
 #   proxy_config 35106h / clashnodes、nodefree、Jsnzkpg 连帖子块都抓不到
@@ -814,6 +832,37 @@ def archive_urls(repo: str, subdir: str, take: int, opener) -> list[str]:
     return out
 
 
+def merge_base_pool(path: str, pool: dict) -> int:
+    """把已有节点列表并进 pool 当底池, 返回底池条数。
+
+    高频轮(--only-hot)只跑 5 个频道, 产出通常几百个; 如果直接写回 nodes.json,
+    会把全量轮采到的七千多个冲掉, 下一轮复测就只剩这几百个在池里 —— 订阅会
+    莫名其妙掉一大截, 而且不报错。所以高频轮必须先载入现有列表再增量追加。
+
+    读不出来时返回 0 而不是抛异常: 宁可这一轮从空池起步(结果偏少, 一眼看得出),
+    也不要因为文件半截损坏就让整个采集白跑。
+    """
+    if not os.path.exists(path):
+        return 0
+    try:
+        old = json.load(open(path))
+    except Exception:                                        # noqa: BLE001
+        return 0
+    if not isinstance(old, list):
+        return 0
+    for n in old:
+        # proto 也必须有: fingerprint() 直接取 n['proto'], 缺了会 KeyError,
+        # 整个采集当场崩(而且是在"载入底池"这一步, 看起来像是网络问题)。
+        if (not isinstance(n, dict) or not n.get("server")
+                or not n.get("port") or not n.get("proto")):
+            continue
+        fp = n.get("fp") or fingerprint(n)
+        n["fp"] = fp
+        n.setdefault("sources", [n.get("source") or "carry"])
+        pool[fp] = n
+    return len(pool)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--proxy", default=os.environ.get("HTTPS_PROXY") or None)
@@ -822,11 +871,24 @@ def main():
     ap.add_argument("--max-age", type=float, default=72, help="只采最近 N 小时内的 TG 帖子")
     ap.add_argument("--only-url", default=None,
                     help="只抓这一个地址、打印解析结果后退出, 用于验证新格式的产出")
+    ap.add_argument("--only-hot", action="store_true",
+                    help="只采 HOT_CHANNELS(更新周期 1-5 小时的频道), 并合并进"
+                         " 已有 --out 而不是覆盖。用于两小时一次的增量轮。")
     args = ap.parse_args()
 
     opener = build_opener(args.proxy)
     pool: dict[str, dict] = {}
     stats: dict[str, int] = {}
+    base = 0
+
+    # 高频轮是增量, 绝不能覆盖: 它只跑 5 个频道, 产出通常几百个, 直接写会把
+    # 全量轮采到的七千多个节点冲掉 —— 下一轮复测就只剩这几百个在池里。
+    if args.only_hot:
+        base = merge_base_pool(args.out, pool)
+        if base:
+            print(f"底池 {base} 个节点(来自现有 {args.out}), 本轮只做增量")
+        else:
+            print(f"底池为空({args.out} 不存在或读不出来), 高频轮从零起步")
 
     def _put(n: dict, source: str, tgt: dict) -> bool:
         """入池或补记来源。返回是否算新节点。"""
@@ -895,8 +957,9 @@ def main():
                                  key=lambda x: -x[1])))
         return 0
 
-    print("[1/6] 公开订阅源")
-    for name, url in RAW_SOURCES:
+    # 高频轮跳过 1-3: 静态列表和归档源几小时内不会变, 重复抓只是添堵。
+    print("[1/6] 公开订阅源" + ("  (高频轮跳过)" if args.only_hot else ""))
+    for name, url in ([] if args.only_hot else RAW_SOURCES):
         print(f"  * {name}: {url}")
         body = fetch(url, opener)
         if body:
@@ -907,7 +970,7 @@ def main():
                     if sub:
                         ingest(sub.decode("utf-8", "ignore"), f"{name}→child")
 
-    print("[2/6] 整份订阅 (含 Clash YAML)")
+    print("[2/6] 整份订阅 (含 Clash YAML)" + ("  (高频轮跳过)" if args.only_hot else ""))
     # 外部清单: 用户随时追加, 不用改代码。
     extra_subs = []
     for u in load_extra_list(EXTRA_SUBS):
@@ -921,7 +984,7 @@ def main():
         tail = rest.split("/", 1)[1].rstrip("/").rsplit("/", 1)[-1] if "/" in rest else ""
         tag = f"{host}/{tail}" if tail else host
         extra_subs.append((f"extra:{tag}", u))
-    for name, url in SUB_SOURCES + extra_subs:
+    for name, url in ([] if args.only_hot else SUB_SOURCES + extra_subs):
         print(f"  * {name}: {url}")
         body = fetch(url, opener, timeout=25, retries=2)
         if not body:
@@ -929,8 +992,8 @@ def main():
             continue
         ingest(body.decode("utf-8", "ignore"), name)
 
-    print("[3/6] 归档型源 (按天回补, 旧的静态代理照样活着)")
-    for name, repo, subdir, take in ARCHIVE_SOURCES:
+    print("[3/6] 归档型源 (按天回补, 旧的静态代理照样活着)" + ("  (高频轮跳过)" if args.only_hot else ""))
+    for name, repo, subdir, take in ([] if args.only_hot else ARCHIVE_SOURCES):
         urls = archive_urls(repo, subdir, take, opener)
         got = miss = 0
         for url in urls:
@@ -941,7 +1004,7 @@ def main():
             got += ingest(body.decode("utf-8", "ignore"), name, quiet=True)
         print(f"  * {name}: 取 {len(urls)} 份 (缺 {miss}), 共抽出 {got} 条")
 
-    for entry in load_dated_sources():
+    for entry in ([] if args.only_hot else load_dated_sources()):
         name, tpl, days = entry[0], entry[1], entry[2]
         seq = entry[3] if len(entry) > 3 else None      # 同日多份的站点才有
         urls = dated_urls(tpl, days, seq=seq)
@@ -954,8 +1017,14 @@ def main():
             got += ingest(body.decode("utf-8", "ignore"), name, quiet=True)
         print(f"  * {name}: 取 {len(urls)} 份 (缺 {miss}), 共抽出 {got} 条")
 
-    print("[4/6] Telegram 频道 (t.me/s/ 网页预览)")
-    channels = list(dict.fromkeys(TG_CHANNELS + load_extra_list(EXTRA_CHANNELS)))
+    print("[4/6] Telegram 频道 (t.me/s/ 网页预览)"
+          + ("  (高频轮: 只跑 HOT_CHANNELS)" if args.only_hot else ""))
+    if args.only_hot:
+        # 高频轮只跑"小时级更新"的那几个, 且不读 extra_channels —— 外部追加的
+        # 频道更新频率未知, 两小时抓一次可能纯属浪费。
+        channels = list(HOT_CHANNELS)
+    else:
+        channels = list(dict.fromkeys(TG_CHANNELS + load_extra_list(EXTRA_CHANNELS)))
     for ch in channels:
         body = fetch(f"https://t.me/s/{ch}", opener)
         if not body:
@@ -996,8 +1065,8 @@ def main():
         if links:
             print(f"    · 帖内链接 {len(links)} 个, 其中 {hit} 份是有效订阅")
 
-    print("[5/6] 博客型源 (帖子里只有链接, 节点在频道主自己的站上)")
-    for tag, home, pat, take in BLOG_SOURCES:
+    print("[5/6] 博客型源 (帖子里只有链接, 节点在频道主自己的站上)" + ("  (高频轮跳过)" if args.only_hot else ""))
+    for tag, home, pat, take in ([] if args.only_hot else BLOG_SOURCES):
         urls = blog_urls(home, pat, take, opener)
         got = miss = 0
         for url in urls:
@@ -1008,9 +1077,9 @@ def main():
             got += ingest(body.decode("utf-8", "ignore"), tag, quiet=True)
         print(f"  * {tag}: {len(urls)} 篇 (缺 {miss}), 共抽出 {got} 条")
 
-    print("[6/6] 候选源体检 (只看独立贡献, 不看抽出条数)")
+    print("[6/6] 候选源体检 (只看独立贡献, 不看抽出条数)" + ("  (高频轮跳过)" if args.only_hot else ""))
     cand: dict[str, dict] = {}
-    for name, url in CANDIDATE_SOURCES:
+    for name, url in ([] if args.only_hot else CANDIDATE_SOURCES):
         # 浅拷贝一份池子做沙盘: 新节点的 fp 只在沙盘里累积, 正式池不受影响。
         tmp = dict(pool)
         before = len(tmp)
@@ -1036,6 +1105,11 @@ def main():
         by_proto[n["proto"]] = by_proto.get(n["proto"], 0) + 1
         by_src[n["source"]] = by_src.get(n["source"], 0) + 1
     print(f"\n✅ 去重后 {len(nodes)} 个节点 → {args.out}")
+    fresh_cnt = max(0, len(nodes) - base)
+    if args.only_hot:
+        # 这个数就是 A3 实验的读数: 高频轮到底有没有真的带来新节点。
+        # 如果连跑几轮都是 0, 说明这几个频道其实一天只更新一批, 两小时一次白搭。
+        print(f"   本轮新增(相对底池 {base}): {fresh_cnt} 个")
     print("   协议:", by_proto)
     print("   来源:", dict(sorted(by_src.items(), key=lambda x: -x[1])[:8]))
 
@@ -1044,12 +1118,19 @@ def main():
     report = {
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S+08:00",
                                       time.gmtime(time.time() + 8 * 3600)),
+        "mode": "only-hot" if args.only_hot else "full",
         "total_nodes": len(nodes),
+        "base_nodes": base,
+        "new_nodes": fresh_cnt,
         "by_source": dict(sorted(by_src.items(), key=lambda x: -x[1])),
         "raw_hits": dict(sorted(stats.items(), key=lambda x: -x[1])),
         "candidates": cand,
     }
-    rp = os.path.join(os.path.dirname(args.out) or ".", "sources_report.json")
+    # 高频轮单独一个文件名: 它只采了 5 个频道, 覆盖式写全量报告会把
+    # by_source 里其它源的数据全抹掉, 之后就没法回答"哪个源值得留"。
+    rp = os.path.join(os.path.dirname(args.out) or ".",
+                      "sources_report_hot.json" if args.only_hot
+                      else "sources_report.json")
     with open(rp, "w") as f:
         json.dump(report, f, ensure_ascii=False, indent=1)
     print(f"   源体检 → {rp}")
