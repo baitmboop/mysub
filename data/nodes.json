@@ -26291,6 +26291,19 @@
  },
  {
   "proto": "ss",
+  "server": "18.171.57.116",
+  "port": 443,
+  "cipher": "2022-blake3-chacha20-poly1305",
+  "password": "Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=",
+  "name": "filembad-1",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "4979af8210ea80a1",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "18.175.227.220",
   "port": 443,
   "name": "英国 - London - 2",
@@ -66296,6 +66309,50 @@
  },
  {
   "proto": "vless",
+  "server": "104.16.105.166",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 08",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "8c7d6054d704da07",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.16.12.16",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 10",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "4bbf83e38950e96a",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.16.126.167",
   "port": 443,
   "name": "美国 - 东洛杉矶 - Cloudflare, Inc. - 2",
@@ -66311,6 +66368,28 @@
   "fp": "583565bd82e62dd4",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.16.136.245",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 04",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "3945c6fab2a57a97",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -66349,6 +66428,28 @@
   "fp": "433c4a86d5688409",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.16.253.99",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 03",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "2073b9b87e540ce7",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -66413,6 +66514,50 @@
  },
  {
   "proto": "vless",
+  "server": "104.16.78.68",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 09",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "c447ba998465775f",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.16.92.202",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 11",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "576fec087ed785c7",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.17.102.95",
   "port": 2096,
   "name": "美国 - 聖荷西 - Cloudflare, Inc. - 6",
@@ -66470,6 +66615,50 @@
  },
  {
   "proto": "vless",
+  "server": "104.17.139.37",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 14",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "25ed45d80bfc6c58",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.17.140.83",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 02",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "5deb53070356c05b",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.17.144.29",
   "port": 8880,
   "name": "🇰🇷KR韩國丨yoyapai.com",
@@ -66489,6 +66678,50 @@
  },
  {
   "proto": "vless",
+  "server": "104.17.162.3",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 16",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "7f7331758ce1c449",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.17.167.134",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 13",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "bb5d7f41f6c01bf2",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.17.191.15",
   "port": 8880,
   "name": "🇸🇬SG新加坡丨yoyapai.com (7)",
@@ -66504,6 +66737,28 @@
   "fp": "5d18d72ef9c8148c",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.17.193.40",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 01",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "035cbb29c2c0c7eb",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -66599,6 +66854,50 @@
   "fp": "bab04b45fd77db37",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.17.69.244",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 17",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "8fafc40d89cc1af9",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.17.70.171",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 15",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "8738dc430f64442b",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -66833,6 +67132,28 @@
  },
  {
   "proto": "vless",
+  "server": "104.18.151.172",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 12",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "188c4cc22cd652a1",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.18.185.26",
   "port": 443,
   "name": "美国 - 聖荷西 - Cloudflare, Inc. - 6",
@@ -66848,6 +67169,28 @@
   "fp": "e9ad1d6243dcb906",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.18.255.167",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 18",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "8c6c40f568a1fcbc",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -67023,6 +67366,28 @@
   "fp": "8f05c24ce0744a30",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.19.177.216",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 05",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "261a523dd3edf14a",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -74283,6 +74648,28 @@
  },
  {
   "proto": "vless",
+  "server": "185.215.184.86",
+  "port": 443,
+  "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+  "tls": true,
+  "sni": "dvizhok.su",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+  "sid": "428ef87fd47a3a32",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-270",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "cc4f8f7a926f5d27",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "185.227.70.162",
   "port": 8082,
   "name": "❓未知丨yoyapai.com (39)",
@@ -76627,6 +77014,28 @@
   "fp": "35f88bf26092d550",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "199.232.78.159",
+  "port": 443,
+  "uuid": "921b248d-f094-4a59-a794-cdbab080c26a",
+  "tls": true,
+  "sni": "community.fastly.steamstatic.com",
+  "network": "ws",
+  "path": "/",
+  "host": "canoijji.global.ssl.fastly.net.",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-293",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "f34ff5924de8390d",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -83603,7 +84012,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "c79e2d67c63d66e0",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -83713,7 +84123,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "e8bd95827283e53c",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -83801,7 +84212,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "1ef2c8ea615c72bf",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -83910,6 +84322,28 @@
   "fp": "9fa591babcf5e2a1",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "51.44.137.10",
+  "port": 22222,
+  "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-404",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "8f9932d59ebde71b",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -86133,6 +86567,28 @@
   "fp": "924ec7bda29adfd3",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "87.120.106.95",
+  "port": 443,
+  "uuid": "e1933dbc-764f-42f0-8fb7-2932429ece52",
+  "tls": true,
+  "sni": "worldoftanks.com",
+  "network": "xhttp",
+  "path": "/",
+  "host": "worldoftanks.com",
+  "flow": "",
+  "pbk": "iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM",
+  "sid": "",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-398",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "d380e42c1f23ddf3",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -91720,6 +92176,28 @@
  },
  {
   "proto": "vless",
+  "server": "nl6.soshelper.space",
+  "port": 443,
+  "uuid": "3a7849e7-8ef6-492f-860d-54dd6aae400a",
+  "tls": true,
+  "sni": "nl6.soshelper.space",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9UG9zvrDpiPgY_J0dvB-n10ygEw3FzJ2qT8PFtITUBE",
+  "sid": "e06e30590f288e0f",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-124",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "75d56a56fb0c8c1e",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "no.gacvpn.site",
   "port": 443,
   "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
@@ -93955,6 +94433,28 @@
  },
  {
   "proto": "vless",
+  "server": "visa.com.sg",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 06",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "577555e79274d5a8",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "vps2.nemnogogo.com",
   "port": 443,
   "uuid": "95f85937-7b95-45c4-8d69-95da6a978569",
@@ -94490,6 +94990,28 @@
   "fp": "a2f8d129474ca78f",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "www.visa.com.sg",
+  "port": 443,
+  "uuid": "8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2",
+  "tls": true,
+  "sni": "node.plutocore.vip",
+  "network": "ws",
+  "path": "/f/210/cb6ed1769e6a2b352f3ea419",
+  "host": "node.plutocore.vip",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⚡ 轻享线路 07",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "6d7c5b6a1ac4ae7d",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -97361,6 +97883,25 @@
   "sources": [
    "Auto_proxy",
    "anaer/Sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "109.70.74.201",
+  "port": 28382,
+  "uuid": "60e16949-8396-4fa8-ad8f-cb34f5873d66",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "filembad-455",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "06b1e25fbed63f0a",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
