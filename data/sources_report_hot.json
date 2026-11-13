@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-13T18:28:52+08:00",
+ "generated_at": "2026-11-13T20:23:41+08:00",
  "mode": "only-hot",
- "total_nodes": 7501,
- "base_nodes": 7472,
- "new_nodes": 29,
+ "total_nodes": 7542,
+ "base_nodes": 7501,
+ "new_nodes": 41,
  "by_source": {
   "go4sharing/arch": 3950,
   "clashnode": 1149,
@@ -11,11 +11,11 @@
   "Auto_proxy": 470,
   "extra:raw.githubusercontent.com/http.txt": 400,
   "tg:@byxiaoxi→blog": 374,
+  "tg:@wxdy666→sub": 206,
   "tg:@freeVPNjd→sub": 196,
-  "tg:@wxdy666→sub": 178,
   "mahdibland": 121,
-  "tg:@oneclickvpnkeys": 59,
-  "tg:@vpnfail_v2ray": 42,
+  "tg:@oneclickvpnkeys": 69,
+  "tg:@vpnfail_v2ray": 45,
   "ermaozi": 30,
   "xinshoucun": 24,
   "freefq": 14,
@@ -24,12 +24,11 @@
   "oneclash": 1
  },
  "raw_hits": {
-  "tg:@wxdy666→sub": 40,
-  "tg:@vpnfail_v2ray": 20,
-  "tg:@freeVPNjd→sub": 17,
+  "tg:@wxdy666→sub": 38,
+  "tg:@vpnfail_v2ray": 19,
+  "tg:@oneclickvpnkeys": 15,
   "tg:@freeVPNjd": 0,
   "tg:@ripaojiedian": 0,
-  "tg:@oneclickvpnkeys": 0,
   "tg:@wxdy666": 0
  },
  "candidates": {}
