@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-14T02:16:48+08:00",
+ "generated_at": "2026-11-14T04:22:20+08:00",
  "mode": "only-hot",
- "total_nodes": 8568,
- "base_nodes": 8560,
- "new_nodes": 8,
+ "total_nodes": 8574,
+ "base_nodes": 8568,
+ "new_nodes": 6,
  "by_source": {
   "go4sharing/arch": 3950,
   "tg:@wxdy666→sub": 1207,
@@ -15,7 +15,7 @@
   "tg:@freeVPNjd→sub": 196,
   "mahdibland": 121,
   "tg:@oneclickvpnkeys": 73,
-  "tg:@vpnfail_v2ray": 66,
+  "tg:@vpnfail_v2ray": 72,
   "ermaozi": 30,
   "xinshoucun": 24,
   "freefq": 14,
@@ -24,11 +24,10 @@
   "oneclash": 1
  },
  "raw_hits": {
-  "tg:@wxdy666→sub": 2219,
-  "tg:@vpnfail_v2ray": 19,
-  "tg:@oneclickvpnkeys": 16,
+  "tg:@vpnfail_v2ray": 18,
   "tg:@freeVPNjd": 0,
   "tg:@ripaojiedian": 0,
+  "tg:@oneclickvpnkeys": 0,
   "tg:@wxdy666": 0
  },
  "candidates": {}
