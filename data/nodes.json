@@ -39891,6 +39891,19 @@
  },
  {
   "proto": "ss",
+  "server": "dns3.m3hrzd.ir",
+  "port": 8044,
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "mMW32SXVMX8oitnKyHXbXBUxcoIwfyJe",
+  "name": "filembad-27",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c977e75301a37d01",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "download.riferoser.icu",
   "port": 56594,
   "name": "中国 - 臺北市 - 2",
@@ -66384,7 +66397,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "49d58ad882261c60",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -66633,7 +66647,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "96ea7b6e8736b92e",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67030,7 +67045,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "843a5b274d070777",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67165,7 +67181,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "eb9be75cc4e42e61",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67297,7 +67314,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "b41265c34a040ddb",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67410,7 +67428,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "d83b2a6d25bfbc21",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67572,7 +67591,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "858aa83e0ee7727f",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67704,7 +67724,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "7748b9e31f65f601",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68069,7 +68090,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "4d4b61ccec59d754",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68133,7 +68155,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "3546876d0ca370d8",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68387,7 +68410,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "d03cd273dcce4ba8",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68451,7 +68475,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "239e7e13443f7337",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68624,7 +68649,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "5ccace197a4b54b5",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68669,7 +68695,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "4d1f9d550afc97a9",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -69028,7 +69055,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "b261fc6a146218ef",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -69925,6 +69953,28 @@
    "ermaozi",
    "tg:@freeVPNjd→sub",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "109.70.74.20",
+  "port": 50540,
+  "uuid": "af482a1c-8b12-4f61-af77-a9e5fe5336bc",
+  "tls": true,
+  "sni": "eventadm.semiconductor.samsung.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "e1k9SFW-FuDzb8X72L9dQQtuyLnQmoWdN8NXyVqVp2k",
+  "sid": "cbe1db1dd92820",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-360",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "e0679dbdbca47ee4",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -72442,7 +72492,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "dd4aeb8fb578c2c4",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -78375,7 +78426,8 @@
   "sid": "42426c882c5fcd41",
   "fp": "3dac32d97ee6cebc",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -84283,6 +84335,28 @@
  },
  {
   "proto": "vless",
+  "server": "45.61.186.3",
+  "port": 443,
+  "uuid": "140d6fc9-2c6d-41bd-a487-182b52c0184f",
+  "tls": true,
+  "sni": "caissuers.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "rA1BaV8FUcTMs25jXCZkUV3DG0-NQEFmvVHdPlUXAHI",
+  "sid": "d898752d58acbfe0",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-74",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "d82b78241d78c2b4",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "45.66.128.216",
   "port": 2000,
   "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
@@ -87598,7 +87672,8 @@
   "source": "tg:@oneclickvpnkeys",
   "fp": "262d67878dfe9195",
   "sources": [
-   "tg:@oneclickvpnkeys"
+   "tg:@oneclickvpnkeys",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -93382,6 +93457,28 @@
  },
  {
   "proto": "vless",
+  "server": "gembeforeshoping.space",
+  "port": 443,
+  "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+  "tls": true,
+  "sni": "gembeforeshoping.space",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+  "flow": "xtls-rprx-vision",
+  "pbk": "lY9sPrXzj3Dlsj6JTP5UolK1RmIAlstuAy3dBJ97ag0",
+  "sid": "",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-209",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "bc64b75c922ac29a",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "gemsubbgem.world",
   "port": 443,
   "name": "DE德国(mibei77.com 米贝节点分享) (8)",
@@ -94017,6 +94114,28 @@
   "fp": "899f25bc64569cdf",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "midjourney.com",
+  "port": 443,
+  "uuid": "5988b269-9ed5-4061-97b0-9123a9062876",
+  "tls": true,
+  "sni": "googoosh.subgift.cyou",
+  "network": "ws",
+  "path": "/t.me-SubGift",
+  "host": "googoosh.subgift.cyou",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "unsafe",
+  "reality": false,
+  "name": "canfingV2rayNG-224",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "0f572dc1482208f1",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -94710,6 +94829,28 @@
   "name": "filembad-337",
   "source": "tg:@vpnfail_v2ray",
   "fp": "4475e774d1864d70",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "p1real4.greewebservices.ir",
+  "port": 1260,
+  "uuid": "ade238d6-637e-4f6c-b1fc-268579b262f5",
+  "tls": true,
+  "sni": "play.googleapis.com",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP",
+  "flow": "",
+  "pbk": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
+  "sid": "9b60d3",
+  "utls": "ios",
+  "reality": true,
+  "name": "filembad-355",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "43672ddb72022089",
   "sources": [
    "tg:@vpnfail_v2ray"
   ]
@@ -96901,7 +97042,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "144a0141a7ff7c67",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -97553,7 +97695,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "093812ce8a403656",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -111102,6 +111245,150 @@
  },
  {
   "proto": "vmess",
+  "server": "JP032001.ssgreen.org",
+  "port": 443,
+  "name": "[学术节点（高速）]日本04",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "c4a9defa-278d-4684-84dc-ce0bcad73ebb",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "28b51b9092e39d45",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "JP032005.ssgreen.org",
+  "port": 443,
+  "name": "[学术节点]日本04",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "97170024-29ad-4bf7-9bcf-f5ec1e498a75",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "f8cf74cfcc1834b5",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "JP032006.ssgreen.org",
+  "port": 443,
+  "name": "[学术节点]日本05",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "2c09bda4-8e93-45ca-951b-56807db96a4f",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "3774e875e0abd6a0",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "JP032007.ssgreen.org",
+  "port": 443,
+  "name": "[学术节点]日本06",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "b2089ccf-3ffa-4edc-867e-fbfb5c759619",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "b878c63197709b78",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "JP032008.ssgreen.org",
+  "port": 443,
+  "name": "[日本]日本03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5e92e0e1-d2af-49d5-a6ab-4e59c800d907",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "2a61518f3d6fb813",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "JP032009.ssgreen.org",
+  "port": 443,
+  "name": "[日本]日本01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "9c9c2396-3f87-40a6-927a-71fe895b7f98",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "51e1c93c9eeec8da",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "JP032010.ssgreen.org",
+  "port": 443,
+  "name": "[日本]日本02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "0bb0e44b-56af-4a53-aa3b-1b4c07750482",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "e159641e41a6faec",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "JP032012.ssgreen.org",
+  "port": 443,
+  "name": "[学术节点（高速）]日本03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "0f4287eb-82de-46e2-817f-1330b85af38c",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "b86b569d7c1af6f5",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
   "server": "SL2.bnm.uw.to",
   "port": 443,
   "name": "意大利 - Pomezia - 1",
@@ -111117,6 +111404,276 @@
   "fp": "ca0a32666aae633e",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "US032013.ssgreen.org",
+  "port": 443,
+  "name": "[学术节点（高速）]美国04",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "70e6304e-0b2a-4654-8934-b09f7d9a279e",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "f88d5691e324390f",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "US032014.ssgreen.org",
+  "port": 443,
+  "name": "[学术节点（高速）]美国05",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "be7043a1-1280-47b7-8625-e32d0456b2ca",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "87edd21be78f5192",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "US032017.ssgreen.org",
+  "port": 443,
+  "name": "[美国]美国03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "7b89d788-64a0-4baa-8f25-152247143af8",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "bee8ab4a1b932156",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "US032018.ssgreen.org",
+  "port": 443,
+  "name": "[美国]美国04",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "1d4bdfa2-d0f6-4c4b-af2e-45628c720958",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "9db511df48a0a94e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "US032019.ssgreen.org",
+  "port": 443,
+  "name": "[美国]美国05",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5b158cea-cb60-4aa2-a730-4f94834775aa",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "7bf84414147bf236",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "US032020.ssgreen.org",
+  "port": 443,
+  "name": "[美国]美国06",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "4a09248b-76ff-49e2-ac82-b7ed8a8a9da9",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "8a722acc2ce103c2",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "US032021.ssgreen.org",
+  "port": 443,
+  "name": "[美国]美国07",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "91c6fadc-e86e-4a26-9fbd-792ddec90ad3",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "1ff7318dcff0593d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "US032022.ssgreen.org",
+  "port": 443,
+  "name": "[美国]美国08",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "65b12cb3-0dee-4142-9204-54af43a16570",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "80a06274d0b6ee1f",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "US032023.ssgreen.org",
+  "port": 443,
+  "name": "[美国]美国09",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "f079fe22-906e-480c-a053-e2d6dfc388f2",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "5a814ec273c27171",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "US032024.ssgreen.org",
+  "port": 443,
+  "name": "[美国]美国10",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "d9578b98-c26f-4343-8d6a-f1873193b8e0",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "5ed3a96c51a0d56c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "US122201.ssgreen.org",
+  "port": 443,
+  "name": "[学术节点]美国01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "07f42bcc-3165-4be0-9c4d-c1d4c6947eb8",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "18e4920f089bcbdb",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "US122202.ssgreen.org",
+  "port": 443,
+  "name": "[学术节点]美国02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "cc307b72-3a21-4adf-96b1-dd5b2d0f5bb4",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "4502c26c84b5b79e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "US122204.ssgreen.org",
+  "port": 443,
+  "name": "[学术节点]美国04",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5ceda202-d364-4e22-8cef-00a6a8926547",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "85f427b63ce681b5",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "US122206.ssgreen.org",
+  "port": 443,
+  "name": "[学术节点]美国06",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "8142cd27-dd37-4263-bf89-7e7c4eaa8176",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "0232b0448d25b819",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "US122207.ssgreen.org",
+  "port": 443,
+  "name": "[学术节点]美国07",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "460e00b9-26ed-4e98-bf42-4ab295c62959",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "ws",
+  "path": "/wes",
+  "fp": "674f0035c0a0ea19",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
