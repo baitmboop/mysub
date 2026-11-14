@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-15 01:36:55 (北京时间)
+# nodepool  生成于 2026-11-15 04:41:08 (北京时间)
 # 节点数 52  (自建 0 / 免费额度 0 / 免费池 52)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -223,9 +223,7 @@ proxies:
     tls: true
     servername: orbylume.my.to
     ws-opts:
-      path: /tvpn-tor/isfp=chrome
-      headers:
-        Host: orbylume.my.to
+      path: /tvpn-tor/is
     network: ws
   - name: N29 twmoon1-cdn-route.couldflare-cdn.com
     type: http
@@ -319,56 +317,63 @@ proxies:
     server: 176.111.37.5
     port: 39811
     udp: false
-  - name: N43 44.248.167.117
-    type: http
-    server: 44.248.167.117
-    port: 8443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N44 162.217.114.50
+  - name: N43 162.217.114.50
     type: http
     server: 162.217.114.50
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N45 137.175.22.52
+  - name: N44 209.148.53.153
+    type: http
+    server: 209.148.53.153
+    port: 8090
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N45 44.248.167.117
+    type: http
+    server: 44.248.167.117
+    port: 8443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N46 137.175.22.52
     type: http
     server: 137.175.22.52
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N46 137.175.22.88
+  - name: N47 137.175.22.88
     type: http
     server: 137.175.22.88
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N47 138.199.35.203
+  - name: N48 138.199.35.203
     type: http
     server: 138.199.35.203
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N48 137.175.22.72
+  - name: N49 137.175.22.72
     type: http
     server: 137.175.22.72
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N49 137.175.22.85
+  - name: N50 137.175.22.85
     type: http
     server: 137.175.22.85
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N50 162.243.146.243
+  - name: N51 162.243.146.243
     type: http
     server: 162.243.146.243
     port: 443
@@ -378,20 +383,13 @@ proxies:
     tls: true
     skip-cert-verify: true
     sni: a2f392f3.acsnet.co
-  - name: N51 138.199.35.205
+  - name: N52 138.199.35.205
     type: http
     server: 138.199.35.205
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N52 198.100.154.175
-    type: ss
-    server: 198.100.154.175
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: 3h3hb2gptqz6suyt
-    udp: true
 proxy-groups:
   - name: 节点选择
     type: select
@@ -440,16 +438,16 @@ proxy-groups:
       - N40 jp.sofast.live
       - N41 103.158.210.80
       - N42 176.111.37.5
-      - N43 44.248.167.117
-      - N44 162.217.114.50
-      - N45 137.175.22.52
-      - N46 137.175.22.88
-      - N47 138.199.35.203
-      - N48 137.175.22.72
-      - N49 137.175.22.85
-      - N50 162.243.146.243
-      - N51 138.199.35.205
-      - N52 198.100.154.175
+      - N43 162.217.114.50
+      - N44 209.148.53.153
+      - N45 44.248.167.117
+      - N46 137.175.22.52
+      - N47 137.175.22.88
+      - N48 138.199.35.203
+      - N49 137.175.22.72
+      - N50 137.175.22.85
+      - N51 162.243.146.243
+      - N52 138.199.35.205
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -498,16 +496,16 @@ proxy-groups:
       - N40 jp.sofast.live
       - N41 103.158.210.80
       - N42 176.111.37.5
-      - N43 44.248.167.117
-      - N44 162.217.114.50
-      - N45 137.175.22.52
-      - N46 137.175.22.88
-      - N47 138.199.35.203
-      - N48 137.175.22.72
-      - N49 137.175.22.85
-      - N50 162.243.146.243
-      - N51 138.199.35.205
-      - N52 198.100.154.175
+      - N43 162.217.114.50
+      - N44 209.148.53.153
+      - N45 44.248.167.117
+      - N46 137.175.22.52
+      - N47 137.175.22.88
+      - N48 138.199.35.203
+      - N49 137.175.22.72
+      - N50 137.175.22.85
+      - N51 162.243.146.243
+      - N52 138.199.35.205
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -555,15 +553,15 @@ proxy-groups:
       - N40 jp.sofast.live
       - N41 103.158.210.80
       - N42 176.111.37.5
-      - N43 44.248.167.117
-      - N44 162.217.114.50
-      - N45 137.175.22.52
-      - N46 137.175.22.88
-      - N47 138.199.35.203
-      - N48 137.175.22.72
-      - N49 137.175.22.85
-      - N50 162.243.146.243
-      - N51 138.199.35.205
-      - N52 198.100.154.175
+      - N43 162.217.114.50
+      - N44 209.148.53.153
+      - N45 44.248.167.117
+      - N46 137.175.22.52
+      - N47 137.175.22.88
+      - N48 138.199.35.203
+      - N49 137.175.22.72
+      - N50 137.175.22.85
+      - N51 162.243.146.243
+      - N52 138.199.35.205
 rules:
   - "MATCH,节点选择"

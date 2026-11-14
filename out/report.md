@@ -1,11 +1,11 @@
 # 节点池日报
 
-- 生成时间: 2026-11-14 17:36:55 (UTC)
-- 采集去重: **8397** 个
-- 云端延迟存活: **1035** 个 (本轮送多站点复检的)
-- 免筛放行: **598** 个 (http/socks5 + 国内实测已知, 不送云端复检)
-- 复检通过: **111** 个 (送检 1035)
-- 进候选: **637** 个 (111 复检 + 598 免筛)
+- 生成时间: 2026-11-14 20:41:08 (UTC)
+- 采集去重: **8464** 个
+- 云端延迟存活: **1060** 个 (本轮送多站点复检的)
+- 免筛放行: **607** 个 (http/socks5 + 国内实测已知, 不送云端复检)
+- 复检通过: **107** 个 (送检 1060)
+- 进候选: **646** 个 (107 复检 + 607 免筛)
 - 历史池: **300** 个 (含 7 天内可用过的)
 - 最终订阅: **52** 个节点
 - 订阅内可用率: **80.8%** (能传数据 42 / 未测后备 10 / 共 52)
@@ -39,7 +39,7 @@
 | 25 | http | fan.973511.xyz:443 | -ms | ✓ 能传数据 | 284 KB/s | clashnode |
 | 26 | trojan | sclass-b1.catcat321.com:20027 | 4368ms | ✓ 能传数据 | 268 KB/s | NoMoreWalls |
 | 27 | http | fan.587475.xyz:443 | -ms | ✓ 能传数据 | 237 KB/s | clashnode |
-| 28 | vless | 191.44.112.170:443 | 1983ms | ✓ 能传数据 | 237 KB/s | ermaozi |
+| 28 | vless | 191.44.112.170:443 | 1983ms | ✓ 能传数据 | 237 KB/s | clashnode |
 | 29 | http | twmoon1-cdn-route.couldflare-cdn.com:1443 | -ms | ✓ 能传数据 | 233 KB/s | go4sharing/arch |
 | 30 | http | 149.88.21.129:443 | 3393ms | ✓ 能传数据 | 224 KB/s | ermaozi |
 | 31 | http | fan.240104.xyz:443 | -ms | ✓ 能传数据 | 186 KB/s | clashnode |
@@ -54,15 +54,15 @@
 | 40 | vless | jp.sofast.live:52683 | 2671ms | ✓ 能传数据 | 68 KB/s | clashnode |
 | 41 | http | 103.158.210.80:8082 | -ms | ✓ 能传数据 | 68 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 42 | http | 176.111.37.5:39811 | -ms | ✓ 能传数据 | 61 KB/s | extra:raw.githubusercontent.com/http.txt |
-| 43 | http | 44.248.167.117:8443 | 33ms | 未测 | - | go4sharing/arch |
-| 44 | http | 162.217.114.50:443 | 15ms | 未测 | - | clashnode |
-| 45 | http | 137.175.22.52:443 | 17ms | 未测 | - | clashnode |
-| 46 | http | 137.175.22.88:443 | 18ms | 未测 | - | clashnode |
-| 47 | http | 138.199.35.203:9002 | 12ms | 未测 | - | clashnode |
-| 48 | http | 137.175.22.72:443 | 18ms | 未测 | - | clashnode |
-| 49 | http | 137.175.22.85:443 | 18ms | 未测 | - | clashnode |
-| 50 | http | 162.243.146.243:443 | 18ms | 未测 | - | clashnode |
-| 51 | http | 138.199.35.205:9002 | 10ms | 未测 | - | go4sharing/arch |
-| 52 | ss | 198.100.154.175:8080 | 19ms | 未测 | - | tg:@byxiaoxi→blog |
+| 43 | http | 162.217.114.50:443 | 23ms | 未测 | - | clashnode |
+| 44 | http | 209.148.53.153:8090 | 28ms | 未测 | - | clashnode |
+| 45 | http | 44.248.167.117:8443 | 33ms | 未测 | - | go4sharing/arch |
+| 46 | http | 137.175.22.52:443 | 17ms | 未测 | - | clashnode |
+| 47 | http | 137.175.22.88:443 | 18ms | 未测 | - | clashnode |
+| 48 | http | 138.199.35.203:9002 | 12ms | 未测 | - | clashnode |
+| 49 | http | 137.175.22.72:443 | 18ms | 未测 | - | clashnode |
+| 50 | http | 137.175.22.85:443 | 18ms | 未测 | - | clashnode |
+| 51 | http | 162.243.146.243:443 | 18ms | 未测 | - | clashnode |
+| 52 | http | 138.199.35.205:9002 | 10ms | 未测 | - | go4sharing/arch |
 
 > 排序依据是中国网络实测下载速度; 手机端的 url-test 会在当场再择优一次。
