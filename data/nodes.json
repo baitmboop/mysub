@@ -35759,6 +35759,19 @@
  },
  {
   "proto": "ss",
+  "server": "47.254.143.251",
+  "port": 443,
+  "cipher": "2022-blake3-chacha20-poly1305",
+  "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=",
+  "name": "filembad-5",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "41f5cd7b2f9ab0c2",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "47.57.182.141",
   "port": 443,
   "name": "中国 - 香港 - 5",
@@ -40790,7 +40803,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "639f727ec0fef5fe",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -40803,7 +40817,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "da7fea059211d4f7",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -40816,7 +40831,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "9b855227e12b9fbb",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -40829,7 +40845,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "a9f96563edf9ab69",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -40842,7 +40859,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "c99ee1749da7417e",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -40855,7 +40873,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "12c80776b98b9b27",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -40868,7 +40887,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "d318d0b34698642f",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -40881,7 +40901,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "f5b3a76678accd22",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -40894,7 +40915,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "cffee8efde6ce96c",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -40907,7 +40929,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "7a7ed65238339201",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -40920,7 +40943,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "d5d1d27aa5cbfa22",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -40933,7 +40957,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "fbf9fd44c8c23157",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -40946,7 +40971,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "a176f27ebf55bcd2",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -40959,7 +40985,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "8feb44430f18d2c2",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -40972,7 +40999,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "d3e76fe1ef60c6e4",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -40985,7 +41013,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "ebffe70c0712b53b",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -40998,7 +41027,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "31e35af4d4882137",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41011,7 +41041,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "b946d7036c8e61a4",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41024,7 +41055,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "448fe89910267207",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41037,7 +41069,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "54028b686601cc58",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41050,7 +41083,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "479da6b723edb896",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41063,7 +41097,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "d3d73ec38a98c564",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41076,7 +41111,307 @@
   "source": "tg:@wxdy666→sub",
   "fp": "c3595c75d5422bf3",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11066,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-美国03-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "4deee7e6d6ee3ca3",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11056,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-美国04-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "b3e3dc624c709786",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11053,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-美国05-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "2e06a4bba83bb7da",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11054,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-台湾01-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e13ee036c596150c",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11067,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-日本01-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "bdf748974e00448c",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11058,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-日本02-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e117915c553ec973",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11078,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-日本03-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "2a6feaf34fd20592",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11064,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-日本04-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "35b02e737f74d770",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11059,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-日本05-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "9fcd42be6c0b3603",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11071,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-日本06-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "8f4e8952936397ed",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11061,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-香港01-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "03d930d0a0ed91ea",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11057,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-香港02-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e006f55e606430ce",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11052,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-香港04-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "c92b6373aaa69347",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11072,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-香港05-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "314e6502442f686b",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11065,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-美国01-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "6addaa3f284e53be",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11055,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-美国02-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "84d245f03ea71e44",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11077,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-美国06-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "3cfff80479114906",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11060,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-澳门02油管无广告-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "d4631fbba0a25cb4",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11068,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-香港03-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "b2bd0fb76edbf5a7",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11075,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-香港06-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "711e7ffe01b1ea2f",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11073,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-德国01-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "8b3fa98f66690e8e",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11074,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-保加利亚01-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "1cfc645ebf55e5f1",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-bei.200913.xyz",
+  "port": 11070,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "备用-土耳其02-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "1ec5914aac0522b1",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41089,7 +41424,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "0ed30f08bec82cfa",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41102,7 +41438,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "3d1da8ceb6a2edb8",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41115,7 +41452,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "d2386ce0a7ff3b2d",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41128,7 +41466,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "5ec55f1f3581f764",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41141,7 +41480,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "5b2e8dc73742e752",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41154,7 +41494,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "a99b73548cc8bcb6",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41167,7 +41508,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "9801d93ab679c6fc",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41180,7 +41522,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "47553d947d80893c",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41193,7 +41536,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "e97babc864051a85",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41206,7 +41550,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "ac94689005ba81cd",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41219,7 +41564,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "60756714505309c2",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41232,7 +41578,164 @@
   "source": "tg:@wxdy666→sub",
   "fp": "bb1ccf6c85c6dba4",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix.jiasu.one",
+  "port": 11066,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线1-美国03-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "94c62339087ed05e",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix.jiasu.one",
+  "port": 11054,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线1-台湾01-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "66c4044f1346a469",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix.jiasu.one",
+  "port": 11058,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线1-日本02-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "b216580557915078",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix.jiasu.one",
+  "port": 11064,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线1-日本04-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "3cb1a7ec8f38c915",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix.jiasu.one",
+  "port": 11057,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线1-香港02-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e4aa32dec2a23077",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix.jiasu.one",
+  "port": 11072,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线1-香港05-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e1147d5f55aeadeb",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix.jiasu.one",
+  "port": 11055,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线1-美国02-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "240046a3b741d418",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix.jiasu.one",
+  "port": 11077,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线1-美国06-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "3713542d7dac4047",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix.jiasu.one",
+  "port": 11060,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线1-澳门02油管无广告-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "25abea923591104f",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix.jiasu.one",
+  "port": 11068,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线1-香港03-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "237ab08eff4f8f1f",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix.jiasu.one",
+  "port": 11073,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线1-德国01-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "c398bf3e94f4b492",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix.jiasu.one",
+  "port": 11074,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线1-保加利亚01-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "60fe10d84e92d46f",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41245,7 +41748,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "f02150f99e15ad1f",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41258,7 +41762,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "96b697e8a4cafaf5",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41271,7 +41776,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "d05c36a0fa90b881",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41284,7 +41790,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "f7c0aa6c34a8d813",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41297,7 +41804,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "4c4dffd26a3f609f",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41310,7 +41818,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "beca42affcb8da1f",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41323,7 +41832,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "dce0a3b9118a2446",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41336,7 +41846,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "6c131ae5d3fa26af",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41349,7 +41860,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "9cdffe8c21f0ed78",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41362,7 +41874,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "19c7212e188d765d",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -41375,7 +41888,151 @@
   "source": "tg:@wxdy666→sub",
   "fp": "a0cf29185b7a7c29",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix2.jiasu.one",
+  "port": 11056,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线2-美国04-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "666acd3e5a84818f",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix2.jiasu.one",
+  "port": 11053,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线2-美国05-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "171fda5e98f01abd",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix2.jiasu.one",
+  "port": 11067,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线2-日本01-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "666d51e4ccaf6027",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix2.jiasu.one",
+  "port": 11078,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线2-日本03-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "33488dd0514c3bde",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix2.jiasu.one",
+  "port": 11059,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线2-日本05-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "f81d0e7bdef055ca",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix2.jiasu.one",
+  "port": 11071,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线2-日本06-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "c77f7dc527241381",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix2.jiasu.one",
+  "port": 11061,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线2-香港01-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "53a30b3feada0dc7",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix2.jiasu.one",
+  "port": 11052,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线2-香港04-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e544a322b9f7bae7",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix2.jiasu.one",
+  "port": 11065,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线2-美国01-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "aa198874251e787e",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix2.jiasu.one",
+  "port": 11075,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线2-香港06-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "2b73d96beaadf1b2",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "d-ix2.jiasu.one",
+  "port": 11070,
+  "cipher": "aes-256-gcm",
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "name": "D云线2-土耳其02-S",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "1fe6c662bf35a1d2",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -52626,7 +53283,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "7df74e9a42126f27",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -60276,7 +60934,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "4fc5879961a040a4",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60293,7 +60952,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "6f388e47d562dce3",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60310,7 +60970,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "b1248575373eb1cb",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60327,7 +60988,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "b3023b0bcab6b174",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60344,7 +61006,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "748004aae220381d",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60361,7 +61024,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "cac5e49d23c5b355",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60378,7 +61042,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "d2b23cb89fc10828",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60395,7 +61060,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "ad53bf08ab19f986",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60412,7 +61078,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "994d05dcfff78427",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60429,7 +61096,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "62fff02a6ec4ccb2",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60446,7 +61114,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "dd71a04e086ff5b8",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60463,7 +61132,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "5d48a610a3dde11c",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60480,7 +61150,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "8f1bd755a1559ae1",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60497,7 +61168,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "845129786f6eb336",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60514,7 +61186,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "e7e154b2e5c29c9c",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60531,7 +61204,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "96f47010e13171bc",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60548,7 +61222,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "2f018e54812fb8e5",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60565,7 +61240,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "c0c7d3171320717b",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60582,7 +61258,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "e23ae1759782abc8",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60599,7 +61276,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "4b2df88e75cffbdc",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60616,7 +61294,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "9a6410f7e51d9a2e",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60633,7 +61312,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "f7cbd35960740dcd",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60650,7 +61330,399 @@
   "source": "tg:@wxdy666→sub",
   "fp": "a5cb4e3f21dca444",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 14525,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "us03.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-美国03-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "a1e9fb762ad0ce5d",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 59087,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "us04.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-美国04-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "724e23ad64e7db80",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 49939,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "us05.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-美国05-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "8f80b088a5b510b7",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 26919,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "twby.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-台湾01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "d229a0c23d654ffb",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 12888,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jpdj-vir1.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-日本01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "f99ab25391df3ea3",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 47478,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jpdj-vir2.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-日本02-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "afd4167775609689",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 17926,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jpdj-by750.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-日本03-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "ecf75e7304ab3f60",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 47072,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jp04.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-日本04-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e184e1bb94921041",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 37414,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jp05.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-日本05-东京-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "086da1bf827ce653",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 54892,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jp06.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-日本06-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "b601cee2a5e784d0",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 16985,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hk01.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-香港01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "a0db03e2548f0ea6",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 32770,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hkhy.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-香港02-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "7b6525ef79cf7d44",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 54735,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hk04.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-香港04-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "309b3d1d2b63f7b5",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 52023,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hk05.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-香港05-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "ce9063d119fe1319",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 18534,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "us3tcone.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-美国01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "f3b80ce1d3b14332",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 19972,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "6track.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-美国02-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "78f09805f4a8b307",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 16978,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "us06.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-美国06-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "1db48bd0989027bb",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 35073,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "mo02.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-澳门02油管无广告-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "a018ba9819c8e1ba",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 48684,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hk03.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-香港03-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "d231163b66d34051",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 56262,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hk06.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-香港06-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "b553e1f2ec5ad57d",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 51479,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "de01.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-德国01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "a1f5d8697a09969c",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 16979,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "bg01.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-保加利亚01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "7e8819679c658f39",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "a-cm.jiasu.one",
+  "port": 20305,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "tr02.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "A移动-土耳其02-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "32ec735855d7c97b",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60978,7 +62050,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "5d5b7a2f3bfc456d",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -60995,7 +62068,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "3fa064c34bd9b69c",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61012,7 +62086,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "32ee430b085bc7bf",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61029,7 +62104,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "b4683a2dc85f1e62",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61046,7 +62122,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "cdfdfe158eb0b359",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61063,7 +62140,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "e383d7a358cef8c4",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61080,7 +62158,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "8acd4ed1f054b2cf",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61097,7 +62176,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "64f905d15aaac732",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61114,7 +62194,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "02342771c900a3af",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61131,7 +62212,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "f78eb1ced953d744",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61148,7 +62230,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "c63bad04a333b530",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61165,7 +62248,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "3252241d0d759948",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61182,7 +62266,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "1932249661d992de",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61199,7 +62284,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "e30a140b60975b9a",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61216,7 +62302,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "6308ab2686e6a62a",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61233,7 +62320,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "b12904adc2987f5a",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61250,7 +62338,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "31550e6d51767f23",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61267,7 +62356,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "893a3de2bd873451",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61284,7 +62374,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "edad681639586feb",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61301,7 +62392,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "746aa1d10f1c28d6",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61318,7 +62410,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "aa8eb0eb89279a2f",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61335,7 +62428,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "f9b336eca1fb3532",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61352,7 +62446,399 @@
   "source": "tg:@wxdy666→sub",
   "fp": "6963ee4cbff9d6aa",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 14525,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "us03.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-美国03-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "febbdc95f91e4fd2",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 59087,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "us04.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-美国04-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "b90019be691906df",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 49939,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "us05.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-美国05-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "eec152f1e1a003ce",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 26919,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "twby.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-台湾01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "5c6d9d26668e7862",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 12888,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jpdj-vir1.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-日本01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "7523a57fec6ec455",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 47478,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jpdj-vir2.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-日本02-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "c3c55dd2f07a9cee",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 17926,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jpdj-by750.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-日本03-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "72eaec1fe3650b46",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 47072,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jp04.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-日本04-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "caeb21e5c0bcb324",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 37414,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jp05.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-日本05-东京-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "2f5459f57ef90c42",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 54892,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jp06.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-日本06-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "3aa42ece564f77f0",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 16985,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hk01.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-香港01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "9a3101e2d49e597b",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 32770,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hkhy.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-香港02-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "aec729a49149f8df",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 54735,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hk04.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-香港04-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "ef3811c62cbcf5e8",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 52023,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hk05.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-香港05-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "78049317714f1846",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 18534,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "us3tcone.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-美国01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "84afa301a4d75b57",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 19972,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "6track.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-美国02-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "6e2297941b4ace07",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 16978,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "us06.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-美国06-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "90752d87a3b02071",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 35073,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "mo02.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-澳门02油管无广告-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "b9aaad570271fe87",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 48684,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hk03.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-香港03-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "ec03f9e3357f8e88",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 56262,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hk06.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-香港06-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "cf06857950b1b90c",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 51479,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "de01.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-德国01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "6639b354c7e73712",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 16979,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "bg01.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-保加利亚01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "babaa388b35d3249",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "b-cm.jiasu.one",
+  "port": 20305,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "tr02.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "B电信-土耳其02-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "07f6635a057ea287",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61499,7 +62985,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "89fc3b614295d9fc",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61516,7 +63003,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "1126f09dd36a137e",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61533,7 +63021,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "54a5b324df38e408",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61550,7 +63039,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "6443fc1cbb3b57f3",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61567,7 +63057,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "574c71a1c5b46911",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61584,7 +63075,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "faa463605677d598",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61601,7 +63093,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "bb363a5f187b6cf3",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61618,7 +63111,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "911fbb3b7cdb9758",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61635,7 +63129,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "aeb7d7a857ba1696",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61652,7 +63147,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "ec6e53747da96db2",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61669,7 +63165,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "173394da6cad2fe9",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61686,7 +63183,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "c867983b83291091",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61703,7 +63201,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "7f304ead02bcd192",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61720,7 +63219,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "67f7562f44d97afc",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61737,7 +63237,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "e979f55ffde7e68b",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61754,7 +63255,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "27e91eab4883eda0",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61771,7 +63273,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "0fcb354bba6d1342",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61788,7 +63291,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "9ad5a0b3461da8fb",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61805,7 +63309,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "7ea208bd517144a9",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61822,7 +63327,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "a745579f32f977ec",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61839,7 +63345,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "4dc377f2625e3947",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61856,7 +63363,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "0f558e98c9a50e52",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61873,7 +63381,399 @@
   "source": "tg:@wxdy666→sub",
   "fp": "9d0036fb6514fd2d",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 14525,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "us03.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-美国03-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e254d2ef53ae00dd",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 59087,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "us04.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-美国04-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "b40dc876a612b201",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 49939,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "us05.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-美国05-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "b80130fde40a8633",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 26919,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "twby.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-台湾01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "d5a82a04945a81d1",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 12888,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jpdj-vir1.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-日本01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "01263ee238e0e5ab",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 47478,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jpdj-vir2.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-日本02-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "d82228f1be987857",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 17926,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jpdj-by750.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-日本03-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "81f47426ef753ae1",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 47072,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jp04.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-日本04-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "61b97a60b4d1d6b0",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 37414,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jp05.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-日本05-东京-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "9cf30f531e2e618a",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 54892,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "jp06.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-日本06-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "ed94a1b1bba3a9f7",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 16985,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hk01.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-香港01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "0af88130a3aa4cfe",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 32770,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hkhy.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-香港02-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e8a568ee9baae769",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 54735,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hk04.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-香港04-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "a8af032567e55abb",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 52023,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hk05.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-香港05-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "2cbbd51c86870043",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 18534,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "us3tcone.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-美国01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "a7698f1107c3e4ea",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 19972,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "6track.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-美国02-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "577de9f0ee4d8f77",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 16978,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "us06.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-美国06-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "f7ca50252c28f9a6",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 35073,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "mo02.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-澳门02油管无广告-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "bac82399417ca9be",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 48684,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hk03.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-香港03-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "a617c79ce7575ec4",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 56262,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "hk06.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-香港06-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "ab3f56275e647e3a",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 51479,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "de01.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-德国01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "44bcffe4c9ff56cf",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 16979,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "bg01.200913.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-保加利亚01-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "fb92e9b9247628b2",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "c-cm.jiasu.one",
+  "port": 20305,
+  "password": "5398a62d-6fae-465d-8ffe-19418a8b561e",
+  "sni": "tr02.jiasu.one",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "C联通-土耳其02-T",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "78bf21e3ff40e123",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -86452,6 +88352,28 @@
  },
  {
   "proto": "vless",
+  "server": "2.27.23.223",
+  "port": 8443,
+  "uuid": "e50e6851-a29a-45a1-811d-1e9230c1512a",
+  "tls": true,
+  "sni": "se1.slowframe.org",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "lQn0k9GCrG7Hh34b8ezAyVjc9KBCxQm3oP0xdxKGy0U",
+  "sid": "35cb85e41b041622",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-393",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "dc89b8ec9a5ab324",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "2.27.27.64",
   "port": 443,
   "name": "🇯🇵JP日本丨yoyapai.com (4)",
@@ -89671,6 +91593,28 @@
   "fp": "0519b82698287539",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "31.220.86.213",
+  "port": 443,
+  "uuid": "74ed8b25-5ff1-40bf-bcd7-3db03be19f53",
+  "tls": true,
+  "sni": "status.play.google.com",
+  "network": "xhttp",
+  "path": "/",
+  "host": "status.play.google.com",
+  "flow": "",
+  "pbk": "VHidBoU58xA5kEh8pmXf0gQYzvz-KVH9-XAuM4TrMUs",
+  "sid": "49bcf0de6392f0",
+  "utls": "ios",
+  "reality": true,
+  "name": "canfingV2rayNG-257",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "0fba216e319fd5a6",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -97320,7 +99264,8 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -100500,6 +102445,28 @@
   "fp": "864d483cfbda016f",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "94.242.55.42",
+  "port": 443,
+  "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922",
+  "tls": true,
+  "sni": "enterprisekitten.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+  "sid": "6ba85179e30d4fc2",
+  "utls": "firefox",
+  "reality": true,
+  "name": "canfingV2rayNG-275",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "4178ef8024f9c959",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -105715,7 +107682,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "18b9d62052e7d2ff",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -106101,7 +108069,8 @@
   "fp": "86fa4e2163343c28",
   "sources": [
    "clashnode",
-   "anaer/Sub"
+   "anaer/Sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -106730,6 +108699,28 @@
   "fp": "b8ad1f672dae5726",
   "sources": [
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "sundaylanzgem.site",
+  "port": 443,
+  "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+  "tls": true,
+  "sni": "sundaylanzgem.site",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "-BN9yCN0ECqxOPoJOan1-CIMEYc5e7wdJwaeDxsUM20",
+  "sid": "",
+  "utls": "safari",
+  "reality": true,
+  "name": "filembad-212",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "4ae0a0a2f4fa041a",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -108841,7 +110832,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "6c3f5b5eb431c250",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -111625,6 +113617,25 @@
  },
  {
   "proto": "vmess",
+  "server": "109.70.74.217",
+  "port": 19829,
+  "uuid": "7705e406-f31a-470b-bc5c-d04b56fbcd53",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "filembad-442",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "4229033a06a18671",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vmess",
   "server": "10aa877c-t9hb40-tarsld-1gevg.hkt.gotochinatown.net",
   "port": 80,
   "name": "中国 - 香港 - 15",
@@ -113949,7 +115960,8 @@
   "sources": [
    "clashnode",
    "tg:@wxdy666→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -120041,6 +122053,82 @@
   "fp": "187ea562c38ddbea",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "66bei.owwoedu.com",
+  "port": 59501,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "备用临时香港，X6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "26b5ea3ae2f13cf2",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "66bei.owwoedu.com",
+  "port": 29502,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "备用临时台湾，X6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "7e6d1a3e629a7e27",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "66bei.owwoedu.com",
+  "port": 59503,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "备用临时日本，X6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "f99d06f7b9807c94",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "66bei.owwoedu.com",
+  "port": 59510,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "备用临时新加坡，X6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "79d32e30c696738e",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -127474,6 +129562,272 @@
  },
  {
   "proto": "vmess",
+  "server": "ff003.owwoedu.com",
+  "port": 59509,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "剩余流量：76.5 GB",
+  "source": "tg:@wxdy666→sub",
+  "fp": "f8c8c35740ed159e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff003.owwoedu.com",
+  "port": 29502,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "(客服TG:@qiaomimi139)台湾GPT",
+  "source": "tg:@wxdy666→sub",
+  "fp": "96e4632a7f655dac",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff003.owwoedu.com",
+  "port": 59501,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "香港01 【IEPL】",
+  "source": "tg:@wxdy666→sub",
+  "fp": "98f5d9297a819bdd",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff003.owwoedu.com",
+  "port": 59503,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "日本丨解GPT",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1cc815ec27ba8eb6",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff003.owwoedu.com",
+  "port": 59510,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "新加坡丨解GPT",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1ab4c4ecf0263eff",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff003.owwoedu.com",
+  "port": 59504,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "美国 01【IEPL】",
+  "source": "tg:@wxdy666→sub",
+  "fp": "4a58e4d2828cf935",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff003.owwoedu.com",
+  "port": 29512,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "美国 02【IEPL】",
+  "source": "tg:@wxdy666→sub",
+  "fp": "8f8ac9c6d4af8c03",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff003.owwoedu.com",
+  "port": 59519,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "泰国丨快速",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a56803b8aceb431e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff003.owwoedu.com",
+  "port": 59507,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "加拿大丨快速",
+  "source": "tg:@wxdy666→sub",
+  "fp": "879d809969a2feee",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff003.owwoedu.com",
+  "port": 59518,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "越南丨解GPT",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a7925d6abbceb734",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff003.owwoedu.com",
+  "port": 59517,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "马来西亚丨GPT",
+  "source": "tg:@wxdy666→sub",
+  "fp": "4439aa76e1be3cbe",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff003.owwoedu.com",
+  "port": 59511,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "韩国原生ip",
+  "source": "tg:@wxdy666→sub",
+  "fp": "e3cbeed80c8696fd",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff003.owwoedu.com",
+  "port": 59514,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "澳大利亚原生ip",
+  "source": "tg:@wxdy666→sub",
+  "fp": "cfd8e702c9ee95ac",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff003.owwoedu.com",
+  "port": 59508,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "印度原生ip",
+  "source": "tg:@wxdy666→sub",
+  "fp": "eb618d4ef0a7ac1c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
   "server": "ff6e157a-t9xz40-tc9wl2-py5w.hkt.gotochinatown.net",
   "port": 80,
   "name": "中国 - 香港 - 2",
@@ -134168,6 +136522,82 @@
   "fp": "b152f996aa12331b",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "x5x5.owwoedu.com",
+  "port": 59501,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "备用临时香港，X5",
+  "source": "tg:@wxdy666→sub",
+  "fp": "0905f0f63827c3d6",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "x5x5.owwoedu.com",
+  "port": 29502,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "备用临时台湾，X5",
+  "source": "tg:@wxdy666→sub",
+  "fp": "93cac4f0837c2b74",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "x5x5.owwoedu.com",
+  "port": 59503,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "备用临时日本，X5",
+  "source": "tg:@wxdy666→sub",
+  "fp": "2a38cdf91a008d61",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "x5x5.owwoedu.com",
+  "port": 59510,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "备用临时新加坡，X5",
+  "source": "tg:@wxdy666→sub",
+  "fp": "bcd66e29ab6f0f36",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
