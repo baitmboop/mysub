@@ -25199,6 +25199,19 @@
  },
  {
   "proto": "ss",
+  "server": "15.204.247.124",
+  "port": 2375,
+  "cipher": "aes-256-gcm",
+  "password": "faBAoD54k87UJG7",
+  "name": "filembad-52",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "7b05940b6c1b440d",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "15.204.247.175",
   "port": 8008,
   "name": "🇺🇸US_466|220KB/s|B007-260618 [7ac86dd8cd10]",
@@ -30216,6 +30229,19 @@
   "fp": "937ac546bef4eb1e",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "206.1.103.120",
+  "port": 43994,
+  "cipher": "2022-blake3-aes-256-gcm",
+  "password": "9AJwpBu/u8O/cUgi2mJvrd3ocNsFXtwl8ZGU/LCZVW8=:9DtF4XEyckXGkIUaorxzia9o7Zh4N1ExA0N1XQGflRM=",
+  "name": "ProxyMtpVPN-13",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "54227f16bb706740",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -38173,6 +38199,19 @@
   "fp": "f4a4739402063a98",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.211.38.49",
+  "port": 443,
+  "cipher": "2022-blake3-chacha20-poly1305",
+  "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=",
+  "name": "filembad-3",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "e352bb7e2fd6c1cf",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -81016,6 +81055,28 @@
  },
  {
   "proto": "vless",
+  "server": "153.56.229.207",
+  "port": 443,
+  "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
+  "tls": true,
+  "sni": "4935e4t.de25.h1clayd.click",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw",
+  "sid": "6976d670818644cc",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-150",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "17112579e3fb35a6",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "153.56.229.218",
   "port": 443,
   "uuid": "ba0dbd83-3569-46dc-bc3d-ef6e58ffc97b",
@@ -96826,7 +96887,8 @@
   "sources": [
    "NoMoreWalls",
    "tg:@wxdy666→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -99682,6 +99744,28 @@
    "ermaozi",
    "tg:@freeVPNjd→sub",
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "78.141.219.108",
+  "port": 4083,
+  "uuid": "0f856f56-822f-49f6-b059-1dfb17466755",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-80",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "86c58a422a1c0795",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -104513,6 +104597,28 @@
  },
  {
   "proto": "vless",
+  "server": "de-apix.locallynet.org",
+  "port": 4443,
+  "uuid": "68a67906-5b37-4779-a6cc-58a1655f18b4",
+  "tls": true,
+  "sni": "de-apix.locallynet.org",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-236",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "ec57efeb2be321b8",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "de15.h1cloud.net",
   "port": 25362,
   "name": "🇩🇪DE德国丨yoyapai.com (32)",
@@ -105496,6 +105602,28 @@
  },
  {
   "proto": "vless",
+  "server": "fsxhh.fastshop1.com",
+  "port": 443,
+  "uuid": "a08af6fb-21af-4c99-99d6-a3361e7a8456",
+  "tls": true,
+  "sni": "ssl.fastly.com",
+  "network": "xhttp",
+  "path": "/mammadalifsx",
+  "host": "mmdaliakbarali.global.ssl.fastly.net",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-292",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "4f48f967a6343431",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "fu.baiproxy.us.ci",
   "port": 2087,
   "name": "NL荷兰(mibei77.com 米贝节点分享) (5)",
@@ -105966,6 +106094,28 @@
   "fp": "154641b93794a7e3",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "homestead-walloping.sports-streams.org",
+  "port": 443,
+  "uuid": "3de06bd1-d888-47b9-86fb-67e4da09a6c9",
+  "tls": true,
+  "sni": "rss.worldoftanks.com",
+  "network": "xhttp",
+  "path": "/",
+  "host": "rss.worldoftanks.com",
+  "flow": "",
+  "pbk": "iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM",
+  "sid": "",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-142",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "abd7217198fc7b65",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -109277,6 +109427,28 @@
  },
  {
   "proto": "vless",
+  "server": "tsaujxjdj.zefmul.ir",
+  "port": 8021,
+  "uuid": "e61bb397-dfc2-4d58-b40f-63932846976b",
+  "tls": true,
+  "sni": "play.google.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "ILnZwALWgpb1HZ2eE58jgNCbUt8ul73tSNXmr05SNgU",
+  "sid": "05d15772f3cb403a",
+  "utls": "qq",
+  "reality": true,
+  "name": "filembad-387",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "94ac1dc50772cdff",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "tunell2027.crackerbinam.org",
   "port": 48312,
   "name": "❓未知丨yoyapai.com (83)",
@@ -111148,7 +111320,8 @@
   "fp": "1b0226ac70ee7a48",
   "sources": [
    "tg:@wxdy666→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -113831,6 +114004,25 @@
   "name": "filembad-442",
   "source": "tg:@vpnfail_v2ray",
   "fp": "4229033a06a18671",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "109.70.74.217",
+  "port": 19829,
+  "uuid": "a83f3700-e75b-47c1-aff8-808ea793f23d",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "filembad-419",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "8e8067778c6e59c5",
   "sources": [
    "tg:@vpnfail_v2ray"
   ]
@@ -130043,6 +130235,286 @@
   "sources": [
    "tg:@wxdy666→sub",
    "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff004.owwoedu.com",
+  "port": 59509,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "剩余流量：13.01 GB",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "db790b8f4d408f10",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff004.owwoedu.com",
+  "port": 29502,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "(客服TG:@qiaomimi139)台湾GPT",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "34902880ea72bd1f",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff004.owwoedu.com",
+  "port": 59501,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "香港01 【IEPL】",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "316be20aaaf28e35",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff004.owwoedu.com",
+  "port": 59503,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "日本丨解GPT",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "1ded8d592ed69757",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff004.owwoedu.com",
+  "port": 59510,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "新加坡丨解GPT",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "596a76325c7d3102",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff004.owwoedu.com",
+  "port": 59504,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "美国 01【IEPL】",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "dc5045a12b3877bc",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff004.owwoedu.com",
+  "port": 29512,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "美国 02【IEPL】",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "c17d937c04be38e4",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff004.owwoedu.com",
+  "port": 59519,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "泰国丨快速",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "99d976366197e99e",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff004.owwoedu.com",
+  "port": 59507,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "加拿大丨快速",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "2b85e2c86c91f4ad",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff004.owwoedu.com",
+  "port": 59518,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "越南丨解GPT",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e91d7ccac5d7d29c",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff004.owwoedu.com",
+  "port": 59517,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "马来西亚丨GPT",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "7947900bf22ba1f0",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff004.owwoedu.com",
+  "port": 59511,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "韩国原生ip",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "8a10f0ff3d8db5a5",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff004.owwoedu.com",
+  "port": 59514,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "澳大利亚原生ip",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "a762c66143372a73",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "ff004.owwoedu.com",
+  "port": 59508,
+  "uuid": "464b32ca-1365-49db-a531-31568b602065",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "印度原生ip",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "5ad6723860b6f6d2",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
