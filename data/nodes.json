@@ -35388,6 +35388,19 @@
  },
  {
   "proto": "ss",
+  "server": "47.254.175.2",
+  "port": 443,
+  "cipher": "2022-blake3-chacha20-poly1305",
+  "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=",
+  "name": "filembad-4",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "36ffdbb7c47ca6f8",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "47.57.182.141",
   "port": 443,
   "name": "中国 - 香港 - 5",
@@ -36942,7 +36955,8 @@
    "ermaozi",
    "mahdibland",
    "xinshoucun",
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -78062,7 +78076,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "5ec39aff59ee77b2",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -80827,7 +80842,8 @@
   "fp": "b7cfc5156e08d0ee",
   "sources": [
    "tg:@wxdy666→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -80918,7 +80934,8 @@
   "fp": "fccab4909ddf458b",
   "sources": [
    "tg:@wxdy666→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -93424,7 +93441,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "09194ff45f8f57ac",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -101974,6 +101992,28 @@
  },
  {
   "proto": "vless",
+  "server": "barbered-mattocks.video-streams.org",
+  "port": 443,
+  "uuid": "941f0975-5bf3-41ca-b548-c51cd6837889",
+  "tls": true,
+  "sni": "barbered-mattocks.video-streams.org",
+  "network": "ws",
+  "path": "/ws",
+  "host": "barbered-mattocks.video-streams.org",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "Kansas City via CDN 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "47832947e07c3e71",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "base.hosamobenl.co.uk",
   "port": 443,
   "name": "🇳🇱NL_276|628KB/s|B007-260618 [3ca90ed87dbb]",
@@ -104370,6 +104410,28 @@
  },
  {
   "proto": "vless",
+  "server": "fearfully-tilt.cdn-content.com",
+  "port": 443,
+  "uuid": "753b3c09-1fe1-47b8-989d-8aaa81a6b5a2",
+  "tls": true,
+  "sni": "fearfully-tilt.cdn-content.com",
+  "network": "ws",
+  "path": "/ws",
+  "host": "fearfully-tilt.cdn-content.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "Kansas City via CDN 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "1ff7ffa9f91cb19b",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "fetch.mediacorphub.org",
   "port": 443,
   "name": "🇳🇱NL_295|432KB/s|K001-260618 [9e5781104174]",
@@ -104876,6 +104938,28 @@
   "fp": "bb02935484837447",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "guessable-turnpikes.cdn-content.com",
+  "port": 443,
+  "uuid": "753b3c09-1fe1-47b8-989d-8aaa81a6b5a2",
+  "tls": true,
+  "sni": "guessable-turnpikes.cdn-content.com",
+  "network": "ws",
+  "path": "/ws",
+  "host": "guessable-turnpikes.cdn-content.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "Kansas City via CDN 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "2e9c72f3d20261f1",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -107610,6 +107694,28 @@
  },
  {
   "proto": "vless",
+  "server": "sparkling-gadabout.quick-cdn.net",
+  "port": 443,
+  "uuid": "941f0975-5bf3-41ca-b548-c51cd6837889",
+  "tls": true,
+  "sni": "sparkling-gadabout.quick-cdn.net",
+  "network": "ws",
+  "path": "/ws",
+  "host": "sparkling-gadabout.quick-cdn.net",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "Kansas City via CDN 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "c3148053cd8821af",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "speedjappro2.xyy123.win",
   "port": 443,
   "uuid": "2682517a-4863-48d1-92ec-b74ec322fe7e",
@@ -108588,7 +108694,8 @@
   "utls": "",
   "fp": "5755367bec67c6a1",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
