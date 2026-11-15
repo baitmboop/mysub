@@ -25638,7 +25638,8 @@
   "sources": [
    "mahdibland",
    "xinshoucun",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -74574,6 +74575,28 @@
  },
  {
   "proto": "vless",
+  "server": "104.253.74.39",
+  "port": 8080,
+  "uuid": "deb79775-35dc-4376-adf0-5b4fd26c691c",
+  "tls": true,
+  "sni": "yahoo.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "NJrlB9wz9ctlwMOIK8Jp7Ml25j77QlFOjpha1lEktkg",
+  "sid": "4a9acf81b8773e1e",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-386",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "093140a0660d7b3a",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.254.140.30",
   "port": 8880,
   "name": "🇺🇸US美国丨yoyapai.com (19)",
@@ -77000,6 +77023,26 @@
   "sources": [
    "tg:@oneclickvpnkeys",
    "anaer/Sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "143.246.43.153",
+  "port": 443,
+  "name": "BG-01 modest-summit",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "7151beb5-43d8-47e0-b9c9-34a9f58c4fbb",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "flow": "xtls-rprx-vision",
+  "utls": "chrome",
+  "reality": true,
+  "pbk": "LSMlI5kxYWEmgw-6T9u2wOzTLYORgQUSjIeVvfUHBRU",
+  "sid": "44fc6601a52588f6",
+  "fp": "5d43194eed362015",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -82638,6 +82681,26 @@
  },
  {
   "proto": "vless",
+  "server": "179.255.146.196",
+  "port": 443,
+  "name": "US-01 suave-mantis",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "a5a68b76-dabc-4414-a590-8f9b63a04f19",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "flow": "xtls-rprx-vision",
+  "utls": "chrome",
+  "reality": true,
+  "pbk": "0CmIpyE1eVA7ewWAa5_4k21D3qn4k_l8v_cqPcdhuEE",
+  "sid": "20763aa53f7fc58e",
+  "fp": "b9f0f5e4e47c36e3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "179.255.190.21",
   "port": 443,
   "name": "🇮🇹IT_40|1.3MB/s|M003-260806 [71b6c321251e]",
@@ -82923,7 +82986,8 @@
   "fp": "c5b157ea7f0790c0",
   "sources": [
    "ermaozi",
-   "anaer/Sub"
+   "anaer/Sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -83952,6 +84016,26 @@
   "fp": "69f652b4b4cd9302",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "188.245.27.90",
+  "port": 443,
+  "name": "DE-04 gleeful-thistle",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "7f07e018-de12-402f-b851-7aefaf538bf9",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "flow": "xtls-rprx-vision",
+  "utls": "chrome",
+  "reality": true,
+  "pbk": "3zqXL0qQ5Hrr4rM3uk1vhtgbGvQ5tXwu0yWV4Mx5pjE",
+  "sid": "ed8250f5c5cd633b",
+  "fp": "01cc47798f03ba6a",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -86518,6 +86602,66 @@
  },
  {
   "proto": "vless",
+  "server": "2.28.194.230",
+  "port": 443,
+  "name": "DE-06 nimble-comet",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "72818014-723d-47d3-8cbe-0e4a2f6844c0",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "flow": "xtls-rprx-vision",
+  "utls": "chrome",
+  "reality": true,
+  "pbk": "ox449fU0Iesgm3CxBlGNSU5PrnEBYeAtOqym6DMeyzI",
+  "sid": "0c199b5b6842a2b0",
+  "fp": "c6634b9d083d54bd",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "2.28.70.17",
+  "port": 443,
+  "name": "DE-07 shiny-crane",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "695b0c69-f6af-43fd-adbc-617963cc6941",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "flow": "xtls-rprx-vision",
+  "utls": "chrome",
+  "reality": true,
+  "pbk": "QWgT5AYPcIAhDU9EOENbdY_cFr5QdxaJEWjEnfAWVgY",
+  "sid": "1f1100072426aa2b",
+  "fp": "d027845b9e060d07",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "2.29.113.205",
+  "port": 443,
+  "name": "FI-01 silly-oriole",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "ccbafd15-2628-4012-ae24-10710c3136ef",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "flow": "xtls-rprx-vision",
+  "utls": "chrome",
+  "reality": true,
+  "pbk": "MdgMHOkXm_YWW66AxD1R_uaxyDUkRNat5SDnHV1KYGg",
+  "sid": "25b28986fdffdb86",
+  "fp": "fd4807e69149a3eb",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "2.31.100.78",
   "port": 13060,
   "uuid": "679d0fcc-4c72-4073-8f1d-311b69ef72b5",
@@ -88474,6 +88618,26 @@
  },
  {
   "proto": "vless",
+  "server": "216.144.226.224",
+  "port": 443,
+  "name": "US-02 warm-cricket",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "b565a8ba-ae51-4e4e-b5e5-5bce635badf6",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "flow": "xtls-rprx-vision",
+  "utls": "chrome",
+  "reality": true,
+  "pbk": "zRmEeZmk8WTmlHfFsvZU2QH_uI8DOp2Tlo2-tVbjSFA",
+  "sid": "dec7229a568928b1",
+  "fp": "012bf47397ae219b",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "216.152.155.189",
   "port": 443,
   "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
@@ -89056,6 +89220,26 @@
  },
  {
   "proto": "vless",
+  "server": "23.88.47.215",
+  "port": 443,
+  "name": "DE-09 noble-stingray",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "88754146-e9e1-42bc-8e1f-1c090897a235",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "flow": "xtls-rprx-vision",
+  "utls": "chrome",
+  "reality": true,
+  "pbk": "6QRRPkpuwCloUBUPs5wm1kFuiliai-QezHoTtQEdYG4",
+  "sid": "1868f9389255a3a8",
+  "fp": "67a00c8faefecb49",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "23.95.112.78",
   "port": 33607,
   "uuid": "52080382-bc5e-4712-81a8-f9da66e3f444",
@@ -89603,6 +89787,26 @@
   "fp": "7dfbc5acffb3752c",
   "sources": [
    "NoMoreWalls"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "3.25.216.38",
+  "port": 443,
+  "name": "AU-01 cosmic-pelican",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "07268046-452e-4b31-b118-d9328ed7e1b9",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "flow": "xtls-rprx-vision",
+  "utls": "chrome",
+  "reality": true,
+  "pbk": "493Uab3KLeQRjd7iTXRYva-mAABOel_BY7FQ8GP9plg",
+  "sid": "8f5e5552a0b3244d",
+  "fp": "26cfac91f3e966a4",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -96041,6 +96245,86 @@
  },
  {
   "proto": "vless",
+  "server": "62.83.76.104",
+  "port": 443,
+  "name": "DE-02 balmy-dingo",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "4f4187c1-001f-4717-9aaa-238e69b3f61d",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "flow": "xtls-rprx-vision",
+  "utls": "chrome",
+  "reality": true,
+  "pbk": "z6vtcUIBgy-8bSm0PfwtQQ5EojD0mHuCU9_M7oBvE1M",
+  "sid": "5ebec8c20e5df049",
+  "fp": "ccc29e3bbe2c2d93",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "62.83.81.80",
+  "port": 443,
+  "name": "DE-05 arctic-swan",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "fdeabd5e-6045-4b52-8413-486e34bf15bc",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "flow": "xtls-rprx-vision",
+  "utls": "chrome",
+  "reality": true,
+  "pbk": "aJ73BjI2rUD1I5XwFAoGzBPGEtW5n7S2Z7OXUTH29gc",
+  "sid": "fe9a02c273ae870d",
+  "fp": "38cad7cf50172039",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "62.83.88.110",
+  "port": 443,
+  "name": "DE-03 lucky-hawk",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "ca5a5f60-3e51-487d-8b29-bab8c5369a98",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "flow": "xtls-rprx-vision",
+  "utls": "chrome",
+  "reality": true,
+  "pbk": "b88O7OuFPpRraTiZUp2yDpJf0fnmI1HUhjfd8BLc9U4",
+  "sid": "dbaeb1c76be8a712",
+  "fp": "c87c1fb6cbf1f605",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "62.83.95.178",
+  "port": 443,
+  "name": "DE-01 misty-hedgehog",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "cb2985ca-be7d-40c7-b3dc-99e2e36416a3",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "flow": "xtls-rprx-vision",
+  "utls": "chrome",
+  "reality": true,
+  "pbk": "DJkCpB76XrCvviggedo7PQAjpoyzEzDynZP3YYEPym0",
+  "sid": "499f41c7dd761836",
+  "fp": "caa62435cc072a79",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "63.141.128.30",
   "port": 8880,
   "name": "🇺🇸US美国丨yoyapai.com (12)",
@@ -96708,6 +96992,28 @@
    "ermaozi",
    "ripaojiedian",
    "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "66.bmi.ir.asopardaz.ir",
+  "port": 8443,
+  "uuid": "581cab3e-5641-46f4-b460-3dd3cd254146",
+  "tls": true,
+  "sni": "hostgator.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
+  "sid": "e915",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-204",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "4e015fb15325f63f",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -97663,6 +97969,28 @@
   "sources": [
    "ermaozi",
    "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "72.56.247.153",
+  "port": 8080,
+  "uuid": "FastKey_277376",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/api",
+  "host": "google.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "filembad-288",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "7af09e679cc59a34",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -99294,6 +99622,26 @@
  },
  {
   "proto": "vless",
+  "server": "88.198.149.218",
+  "port": 443,
+  "name": "DE-08 cuddly-eagle",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "557da1f2-6481-40e5-9139-f8feeaef7320",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "flow": "xtls-rprx-vision",
+  "utls": "chrome",
+  "reality": true,
+  "pbk": "AwPacLU9UVTeFUcj94J3_VqcoR8L5fGt7fS5UjhN9B4",
+  "sid": "b4a2e74d44d8b16b",
+  "fp": "df0c0adf9d1a2084",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "88.210.37.174",
   "port": 10103,
   "name": "US美国(mibei77.com 米贝节点分享) (41)",
@@ -99883,6 +100231,28 @@
   "fp": "c93315eb2028d946",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "89.248.65.152",
+  "port": 443,
+  "uuid": "555b35c4-30f9-40c6-a61a-7f53ab1bea45",
+  "tls": true,
+  "sni": "images.porsche.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
+  "sid": "1a2b3c4d",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-200",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "b64e3ddaa10f8348",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -101642,7 +102012,8 @@
   "source": "ermaozi",
   "fp": "d07ae6f4addd0fe9",
   "sources": [
-   "ermaozi"
+   "ermaozi",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -107836,7 +108207,8 @@
   "sid": "902c315efc",
   "fp": "f0bfb3275b2cf1bc",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -113342,7 +113714,8 @@
    "clashnode",
    "tg:@wxdy666→sub",
    "tg:@byxiaoxi→blog",
-   "anaer/Sub"
+   "anaer/Sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
