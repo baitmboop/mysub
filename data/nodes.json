@@ -34352,6 +34352,19 @@
  },
  {
   "proto": "ss",
+  "server": "40.123.240.228",
+  "port": 443,
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "SF2qoMGrmVYQTj2P",
+  "name": "filembad-19",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "4d944cb086ec0653",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "403880e.h4.gladns.com",
   "port": 2377,
   "name": "美国 - 旧金山 - 3",
@@ -75419,6 +75432,28 @@
  },
  {
   "proto": "vless",
+  "server": "13.143.172.78",
+  "port": 8443,
+  "uuid": "e50e6851-a29a-45a1-811d-1e9230c1512a",
+  "tls": true,
+  "sni": "nl1.slowframe.org",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24//",
+  "flow": "xtls-rprx-vision",
+  "pbk": "lQn0k9GCrG7Hh34b8ezAyVjc9KBCxQm3oP0xdxKGy0U",
+  "sid": "35cb85e41b041622",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-426",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "75749b0408c97b3d",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "13.143.180.50",
   "port": 443,
   "name": "❓未知丨yoyapai.com (88)",
@@ -75607,7 +75642,8 @@
    "NoMoreWalls",
    "ermaozi",
    "tg:@freeVPNjd→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -77127,6 +77163,28 @@
   "fp": "6031dda18fc9e5bc",
   "sources": [
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "145.79.187.52",
+  "port": 443,
+  "uuid": "20d56ff9-359e-4983-9b04-6402e9ebce08",
+  "tls": true,
+  "sni": "edge.savesafe.info",
+  "network": "xhttp",
+  "path": "/",
+  "host": "edge.savesafe.info",
+  "flow": "",
+  "pbk": "Zz_n3cpItqh107oNUK15eu-3Ac4TpS5gB_6plrRrZj8",
+  "sid": "9f3df965329a8e8f",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-123",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "e09fbed6ac343311",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -80711,7 +80769,8 @@
   "fp": "d435c7fcbd92d04d",
   "sources": [
    "tg:@wxdy666→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -86583,6 +86642,28 @@
  },
  {
   "proto": "vless",
+  "server": "200.102.180.37",
+  "port": 8443,
+  "uuid": "664f65f4-33b3-43a3-b9e5-68192d1d428e",
+  "tls": true,
+  "sni": "juniper-canyon.cdn.cachefleet.com",
+  "network": "tcp",
+  "path": "",
+  "host": "/?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI",
+  "flow": "xtls-rprx-vision",
+  "pbk": "bGwVs-Re6vNB1tuKqZZ209x7l361FxZdtPHg0yZLa2Q",
+  "sid": "63c4425dacae86cb",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-255",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "8ef9dcd3266562c7",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "200.102.183.104",
   "port": 443,
   "uuid": "664f65f4-33b3-43a3-b9e5-68192d1d428e",
@@ -91685,6 +91766,28 @@
  },
  {
   "proto": "vless",
+  "server": "45.198.0.56",
+  "port": 443,
+  "uuid": "ccb8ff48-3934-4250-b4ec-bb76b95d154f",
+  "tls": true,
+  "sni": "pl3.fox-lisa.ru",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs",
+  "sid": "027af64166562b09",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-364",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "9b7e30d2999b772e",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "45.205.0.77",
   "port": 443,
   "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
@@ -95202,7 +95305,8 @@
   "fp": "802eb8e7685bb917",
   "sources": [
    "tg:@wxdy666→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -97391,7 +97495,8 @@
   "fp": "bf990b34ab22c6bc",
   "sources": [
    "tg:@wxdy666→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -106450,6 +106555,28 @@
   "fp": "3c6ad084a0f9d010",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "rvg-production-8249.up.railway.app",
+  "port": 443,
+  "uuid": "f1f47653-d57b-5917-fa47-c80823a8b7f3",
+  "tls": true,
+  "sni": "rvg-production-8249.up.railway.app",
+  "network": "ws",
+  "path": "/ws/f1f47653-d57b-5917-fa47-c80823a8b7f3",
+  "host": "rvg-production-8249.up.railway.app",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "canfingV2rayNG-435",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "b3e17fc02f8dc991",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -136636,6 +136763,25 @@
   "fp": "3c8186359458da73",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "rma2.rmaaccshop.ir",
+  "port": 12146,
+  "uuid": "83c21735-22a2-4b90-8457-365a6e7fef15",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "rma4.rmaaccshop.ir",
+  "network": "ws",
+  "path": "/rma",
+  "host": "rma4.rmaaccshop.ir",
+  "name": "filembad-492",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "6fa7ee5c8d163c82",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
