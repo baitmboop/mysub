@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-15 10:51:09 (北京时间)
+# nodepool  生成于 2026-11-15 13:52:29 (北京时间)
 # 节点数 52  (自建 0 / 免费额度 0 / 免费池 52)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -352,37 +352,37 @@ proxies:
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N48 198.100.154.175
-    type: ss
-    server: 198.100.154.175
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: 3h3hb2gptqz6suyt
-    udp: true
-  - name: N49 138.199.35.197
+  - name: N48 138.199.35.197
     type: http
     server: 138.199.35.197
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N50 138.199.35.196
+  - name: N49 138.199.35.196
     type: http
     server: 138.199.35.196
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N51 138.199.35.198
+  - name: N50 138.199.35.198
     type: http
     server: 138.199.35.198
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N52 202.50.253.99
+  - name: N51 202.50.253.99
     type: ss
     server: 202.50.253.99
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N52 202.50.253.90
+    type: ss
+    server: 202.50.253.90
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -440,11 +440,11 @@ proxy-groups:
       - N45 44.248.167.117
       - N46 138.199.35.203
       - N47 138.199.35.205
-      - N48 198.100.154.175
-      - N49 138.199.35.197
-      - N50 138.199.35.196
-      - N51 138.199.35.198
-      - N52 202.50.253.99
+      - N48 138.199.35.197
+      - N49 138.199.35.196
+      - N50 138.199.35.198
+      - N51 202.50.253.99
+      - N52 202.50.253.90
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -498,11 +498,11 @@ proxy-groups:
       - N45 44.248.167.117
       - N46 138.199.35.203
       - N47 138.199.35.205
-      - N48 198.100.154.175
-      - N49 138.199.35.197
-      - N50 138.199.35.196
-      - N51 138.199.35.198
-      - N52 202.50.253.99
+      - N48 138.199.35.197
+      - N49 138.199.35.196
+      - N50 138.199.35.198
+      - N51 202.50.253.99
+      - N52 202.50.253.90
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -555,10 +555,10 @@ proxy-groups:
       - N45 44.248.167.117
       - N46 138.199.35.203
       - N47 138.199.35.205
-      - N48 198.100.154.175
-      - N49 138.199.35.197
-      - N50 138.199.35.196
-      - N51 138.199.35.198
-      - N52 202.50.253.99
+      - N48 138.199.35.197
+      - N49 138.199.35.196
+      - N50 138.199.35.198
+      - N51 202.50.253.99
+      - N52 202.50.253.90
 rules:
   - "MATCH,节点选择"
