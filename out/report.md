@@ -1,18 +1,18 @@
 # 节点池日报
 
-- 生成时间: 2026-11-15 17:38:53 (UTC)
-- 采集去重: **8564** 个
-- 云端延迟存活: **1000** 个 (本轮送多站点复检的)
-- 免筛放行: **609** 个 (http/socks5 + 国内实测已知, 不送云端复检)
-- 复检通过: **111** 个 (送检 1000)
-- 进候选: **647** 个 (111 复检 + 609 免筛)
+- 生成时间: 2026-11-15 20:42:00 (UTC)
+- 采集去重: **7176** 个
+- 云端延迟存活: **838** 个 (本轮送多站点复检的)
+- 免筛放行: **572** 个 (http/socks5 + 国内实测已知, 不送云端复检)
+- 复检通过: **113** 个 (送检 838)
+- 进候选: **610** 个 (113 复检 + 572 免筛)
 - 历史池: **300** 个 (含 7 天内可用过的)
 - 最终订阅: **52** 个节点
 - 订阅内可用率: **80.8%** (能传数据 42 / 未测后备 10 / 共 52)
 
 | # | 协议 | 服务器 | 延迟 | 中国实测 | 速度 | 来源 |
 |---|------|--------|------|----------|------|------|
-| 1 | vmess | 39.108.113.127:10086 | 331ms | ✓ 能传数据 | 2585 KB/s | go4sharing/sub |
+| 1 | vmess | 39.108.113.127:10086 | 331ms | ✓ 能传数据 | 2585 KB/s | go4sharing/arch |
 | 2 | vless | zfapi.zalolink.com:35460 | 1381ms | ✓ 能传数据 | 1626 KB/s | NoMoreWalls |
 | 3 | ss | 202.50.253.81:19999 | 824ms | ✓ 能传数据 | 1617 KB/s | NoMoreWalls |
 | 4 | vless | hk3.wawojk.dpdns.org:51314 | 1375ms | ✓ 能传数据 | 1486 KB/s | tg:@byxiaoxi |
@@ -21,7 +21,7 @@
 | 7 | http | 176.111.37.216:39811 | -ms | ✓ 能传数据 | 1084 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 8 | http | 123.121.73.146:8888 | -ms | ✓ 能传数据 | 1006 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 9 | ss | 202.50.253.27:19999 | 2027ms | ✓ 能传数据 | 993 KB/s | NoMoreWalls |
-| 10 | socks5 | 69.55.49.177:38182 | -ms | ✓ 能传数据 | 988 KB/s | clashnode |
+| 10 | socks5 | 69.55.49.177:38182 | 37ms | ✓ 能传数据 | 988 KB/s | clashnode |
 | 11 | vless | edge.bookmai.com:443 | 745ms | ✓ 能传数据 | 820 KB/s | clashnode |
 | 12 | http | 123.121.122.125:8888 | -ms | ✓ 能传数据 | 788 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 13 | http | 114.244.223.68:8888 | -ms | ✓ 能传数据 | 699 KB/s | extra:raw.githubusercontent.com/http.txt |
@@ -54,15 +54,15 @@
 | 40 | vless | jp.sofast.live:52683 | 2671ms | ✓ 能传数据 | 68 KB/s | clashnode |
 | 41 | http | 103.158.210.80:8082 | -ms | ✓ 能传数据 | 68 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 42 | http | 176.111.37.5:39811 | -ms | ✓ 能传数据 | 61 KB/s | extra:raw.githubusercontent.com/http.txt |
-| 43 | http | 162.217.114.50:443 | 23ms | 未测 | - | clashnode |
-| 44 | http | 209.148.53.153:8090 | 28ms | 未测 | - | clashnode |
-| 45 | http | 44.248.167.117:8443 | 33ms | 未测 | - | go4sharing/arch |
-| 46 | http | 162.243.146.243:443 | 17ms | 未测 | - | clashnode |
-| 47 | ss | 202.50.253.99:19999 | 142ms | 未测 | - | NoMoreWalls |
-| 48 | ss | 202.50.253.90:19999 | 142ms | 未测 | - | NoMoreWalls |
-| 49 | ss | 202.50.253.18:19999 | 143ms | 未测 | - | NoMoreWalls |
-| 50 | http | 138.199.35.214:9002 | 31ms | 未测 | - | tg:@freeVPNjd→sub |
-| 51 | http | 138.199.35.219:9002 | 31ms | 未测 | - | clashnode |
-| 52 | http | 138.199.35.220:9002 | 31ms | 未测 | - | go4sharing/arch |
+| 43 | http | 44.248.167.117:8443 | 33ms | 未测 | - | go4sharing/arch |
+| 44 | vless | 195.206.235.202:443 | 141ms | 未测 | - | tg:@oneclickvpnkeys |
+| 45 | ss | 202.50.253.99:19999 | 142ms | 未测 | - | NoMoreWalls |
+| 46 | ss | 202.50.253.90:19999 | 142ms | 未测 | - | NoMoreWalls |
+| 47 | ss | 202.50.253.18:19999 | 143ms | 未测 | - | NoMoreWalls |
+| 48 | http | 138.199.35.214:9002 | 31ms | 未测 | - | tg:@freeVPNjd→sub |
+| 49 | http | 138.199.35.220:9002 | 31ms | 未测 | - | go4sharing/arch |
+| 50 | ss | 202.50.253.72:19999 | 144ms | 未测 | - | NoMoreWalls |
+| 51 | ss | 202.50.253.63:19999 | 146ms | 未测 | - | NoMoreWalls |
+| 52 | http | 137.175.22.120:443 | 21ms | 未测 | - | clashnode |
 
 > 排序依据是中国网络实测下载速度; 手机端的 url-test 会在当场再择优一次。
