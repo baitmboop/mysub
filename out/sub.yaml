@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-15 22:43:39 (北京时间)
+# nodepool  生成于 2026-11-16 01:38:53 (北京时间)
 # 节点数 52  (自建 0 / 免费额度 0 / 免费池 52)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -348,49 +348,46 @@ proxies:
     tls: true
     skip-cert-verify: true
     sni: a2f392f3.acsnet.co
-  - name: N47 www.hcaptcha.com
-    type: vless
-    server: www.hcaptcha.com
-    port: 80
-    uuid: 42c5efc2-9479-49c3-8f4a-88855427cb0c
+  - name: N47 202.50.253.99
+    type: ss
+    server: 202.50.253.99
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-    skipCertVerify: true
-    ws-opts:
-      path: /LOGZPldfDGZEtuMh
-      headers:
-        Host: worker3.cipek2755.workers.dev
-    network: ws
-  - name: N48 138.199.35.203
+  - name: N48 202.50.253.90
+    type: ss
+    server: 202.50.253.90
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N49 202.50.253.18
+    type: ss
+    server: 202.50.253.18
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N50 138.199.35.214
     type: http
-    server: 138.199.35.203
+    server: 138.199.35.214
+    port: 9002
+    udp: false
+    username: null
+    password: null
+    tls: true
+    skip-cert-verify: true
+  - name: N51 138.199.35.219
+    type: http
+    server: 138.199.35.219
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N49 138.199.35.205
+  - name: N52 138.199.35.220
     type: http
-    server: 138.199.35.205
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N50 138.199.35.197
-    type: http
-    server: 138.199.35.197
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N51 138.199.35.196
-    type: http
-    server: 138.199.35.196
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N52 138.199.35.198
-    type: http
-    server: 138.199.35.198
+    server: 138.199.35.220
     port: 9002
     udp: false
     tls: true
@@ -447,12 +444,12 @@ proxy-groups:
       - N44 209.148.53.153
       - N45 44.248.167.117
       - N46 162.243.146.243
-      - N47 www.hcaptcha.com
-      - N48 138.199.35.203
-      - N49 138.199.35.205
-      - N50 138.199.35.197
-      - N51 138.199.35.196
-      - N52 138.199.35.198
+      - N47 202.50.253.99
+      - N48 202.50.253.90
+      - N49 202.50.253.18
+      - N50 138.199.35.214
+      - N51 138.199.35.219
+      - N52 138.199.35.220
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -505,12 +502,12 @@ proxy-groups:
       - N44 209.148.53.153
       - N45 44.248.167.117
       - N46 162.243.146.243
-      - N47 www.hcaptcha.com
-      - N48 138.199.35.203
-      - N49 138.199.35.205
-      - N50 138.199.35.197
-      - N51 138.199.35.196
-      - N52 138.199.35.198
+      - N47 202.50.253.99
+      - N48 202.50.253.90
+      - N49 202.50.253.18
+      - N50 138.199.35.214
+      - N51 138.199.35.219
+      - N52 138.199.35.220
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -562,11 +559,11 @@ proxy-groups:
       - N44 209.148.53.153
       - N45 44.248.167.117
       - N46 162.243.146.243
-      - N47 www.hcaptcha.com
-      - N48 138.199.35.203
-      - N49 138.199.35.205
-      - N50 138.199.35.197
-      - N51 138.199.35.196
-      - N52 138.199.35.198
+      - N47 202.50.253.99
+      - N48 202.50.253.90
+      - N49 202.50.253.18
+      - N50 138.199.35.214
+      - N51 138.199.35.219
+      - N52 138.199.35.220
 rules:
   - "MATCH,节点选择"
