@@ -61268,6 +61268,28 @@
  },
  {
   "proto": "vless",
+  "server": "103.204.174.165",
+  "port": 443,
+  "uuid": "45def141-cf19-4de8-8cca-c135d0c59403",
+  "tls": true,
+  "sni": "gorugoru.top",
+  "network": "ws",
+  "path": "/",
+  "host": "gorugoru.top",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "J​P​ ​T​G​:​@​M​i​a​C​h​a​t​C​h​a​n​n​e​l",
+  "source": "tg:@wxdy666→sub",
+  "fp": "61d36b4923f08aaf",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "103.219.195.65",
   "port": 443,
   "name": "HK香港(mibei77.com 米贝节点分享) (2)",
@@ -61324,6 +61346,28 @@
   "fp": "28eaf12f00ad8478",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "103.27.187.196",
+  "port": 443,
+  "uuid": "45def141-cf19-4de8-8cca-c135d0c59403",
+  "tls": true,
+  "sni": "gorugoru.top",
+  "network": "ws",
+  "path": "/",
+  "host": "gorugoru.top",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "J​P​ ​T​G​:​@​M​i​a​C​h​a​t​C​h​a​n​n​e​l",
+  "source": "tg:@wxdy666→sub",
+  "fp": "319629e173ffec82",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -63340,6 +63384,28 @@
  },
  {
   "proto": "vless",
+  "server": "121.158.182.66",
+  "port": 12228,
+  "uuid": "45def141-cf19-4de8-8cca-c135d0c59403",
+  "tls": true,
+  "sni": "gorugoru.top",
+  "network": "ws",
+  "path": "/",
+  "host": "gorugoru.top",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "K​R​ ​T​G​:​@​M​i​a​C​h​a​t​C​h​a​n​n​e​l",
+  "source": "tg:@wxdy666→sub",
+  "fp": "9e79fdb1b2bbf050",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "121.170.249.21",
   "port": 12435,
   "name": "韩国 - Yeongdong-gun - Cloudflare, Inc. - 2",
@@ -63814,6 +63880,72 @@
    "NoMoreWalls",
    "ermaozi",
    "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "131.143.180.153",
+  "port": 443,
+  "uuid": "45def141-cf19-4de8-8cca-c135d0c59403",
+  "tls": true,
+  "sni": "gorugoru.top",
+  "network": "ws",
+  "path": "/",
+  "host": "gorugoru.top",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "U​S​ ​T​G​:​@​M​i​a​C​h​a​t​C​h​a​n​n​e​l",
+  "source": "tg:@wxdy666→sub",
+  "fp": "9e4b32754efd813e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "131.143.181.73",
+  "port": 443,
+  "uuid": "45def141-cf19-4de8-8cca-c135d0c59403",
+  "tls": true,
+  "sni": "gorugoru.top",
+  "network": "ws",
+  "path": "/",
+  "host": "gorugoru.top",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "U​S​ ​T​G​:​@​M​i​a​C​h​a​t​C​h​a​n​n​e​l",
+  "source": "tg:@wxdy666→sub",
+  "fp": "0bba1e6b8e1d8bd9",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "131.143.181.80",
+  "port": 443,
+  "uuid": "45def141-cf19-4de8-8cca-c135d0c59403",
+  "tls": true,
+  "sni": "gorugoru.top",
+  "network": "ws",
+  "path": "/",
+  "host": "gorugoru.top",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "U​S​ ​T​G​:​@​M​i​a​C​h​a​t​C​h​a​n​n​e​l",
+  "source": "tg:@wxdy666→sub",
+  "fp": "b6c2cf90b134fb76",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -64458,6 +64590,50 @@
  },
  {
   "proto": "vless",
+  "server": "139.180.146.87",
+  "port": 443,
+  "uuid": "45def141-cf19-4de8-8cca-c135d0c59403",
+  "tls": true,
+  "sni": "gorugoru.top",
+  "network": "ws",
+  "path": "/",
+  "host": "gorugoru.top",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "S​G​ ​T​G​:​@​M​i​a​C​h​a​t​C​h​a​n​n​e​l",
+  "source": "tg:@wxdy666→sub",
+  "fp": "488b0a37bd673578",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "139.180.187.152",
+  "port": 443,
+  "uuid": "45def141-cf19-4de8-8cca-c135d0c59403",
+  "tls": true,
+  "sni": "gorugoru.top",
+  "network": "ws",
+  "path": "/",
+  "host": "gorugoru.top",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "S​G​ ​T​G​:​@​M​i​a​C​h​a​t​C​h​a​n​n​e​l",
+  "source": "tg:@wxdy666→sub",
+  "fp": "98ecf4a47353b611",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "14.52.249.135",
   "port": 10082,
   "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
@@ -64476,6 +64652,28 @@
   "fp": "2dadd7a9dd4bdd56",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "140.115.53.51",
+  "port": 443,
+  "uuid": "45def141-cf19-4de8-8cca-c135d0c59403",
+  "tls": true,
+  "sni": "gorugoru.top",
+  "network": "ws",
+  "path": "/",
+  "host": "gorugoru.top",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "T​W​ ​T​G​:​@​M​i​a​C​h​a​t​C​h​a​n​n​e​l",
+  "source": "tg:@wxdy666→sub",
+  "fp": "bafe61384c423f32",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -65537,6 +65735,28 @@
   "fp": "53cad1aa56e55e37",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "15.197.71.78",
+  "port": 443,
+  "uuid": "45def141-cf19-4de8-8cca-c135d0c59403",
+  "tls": true,
+  "sni": "gorugoru.top",
+  "network": "ws",
+  "path": "/",
+  "host": "gorugoru.top",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "U​S​ ​T​G​:​@​M​i​a​C​h​a​t​C​h​a​n​n​e​l",
+  "source": "tg:@wxdy666→sub",
+  "fp": "cded071cf6c348ed",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -69130,6 +69350,28 @@
  },
  {
   "proto": "vless",
+  "server": "179.255.133.39",
+  "port": 443,
+  "uuid": "45def141-cf19-4de8-8cca-c135d0c59403",
+  "tls": true,
+  "sni": "gorugoru.top",
+  "network": "ws",
+  "path": "/",
+  "host": "gorugoru.top",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "U​S​ ​T​G​:​@​M​i​a​C​h​a​t​C​h​a​n​n​e​l",
+  "source": "tg:@wxdy666→sub",
+  "fp": "e27dbc76544ee72c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "179.255.146.196",
   "port": 443,
   "name": "US-02 suave-mantis",
@@ -71991,6 +72233,28 @@
   "fp": "545e7851e6e27f7d",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "198.41.223.119",
+  "port": 443,
+  "uuid": "9f2ecebe-3a52-460e-80ac-74a21fffdaf7",
+  "tls": true,
+  "sni": "licfgytggv.esmalkjj.workers.dev",
+  "network": "ws",
+  "path": "/V2ngNet-V2ngNet-V2ngNet-V2ngNet-V2ngNet-V2ngNet-V2ngNet-V2ngNet-V2ngNet-V2ngNet",
+  "host": "licfgytggv.esmalkjj.workers.dev",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "canfingV2rayNG-307",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "bc6f1a89710a7b87",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -75222,6 +75486,28 @@
  },
  {
   "proto": "vless",
+  "server": "345739t.de15.h1clayd.click",
+  "port": 443,
+  "uuid": "95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f",
+  "tls": true,
+  "sni": "345739t.de15.h1clayd.click",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA",
+  "sid": "23732d14a527990d",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-296",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c846cedc7c290dbd",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "35.228.61.63",
   "port": 443,
   "name": "🇫🇮FI荷兰丨yoyapai.com",
@@ -76550,6 +76836,28 @@
   "fp": "7df9726e7ad98f6d",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "45.198.0.56",
+  "port": 443,
+  "uuid": "ccb8ff48-3934-4250-b4ec-bb76b95d154f",
+  "tls": true,
+  "sni": "pl3.fox-lisa.ru",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+  "flow": "xtls-rprx-vision",
+  "pbk": "NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs",
+  "sid": "027af64166562b09",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-361",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "9b7e30d2999b772e",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -78760,6 +79068,28 @@
  },
  {
   "proto": "vless",
+  "server": "54.150.234.193",
+  "port": 443,
+  "uuid": "45def141-cf19-4de8-8cca-c135d0c59403",
+  "tls": true,
+  "sni": "gorugoru.top",
+  "network": "ws",
+  "path": "/",
+  "host": "gorugoru.top",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "J​P​ ​T​G​:​@​M​i​a​C​h​a​t​C​h​a​n​n​e​l",
+  "source": "tg:@wxdy666→sub",
+  "fp": "4223202f4fcae8e2",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "54.254.3.195",
   "port": 443,
   "uuid": "7e68e32f-8015-4f37-9082-70e8b0b58043",
@@ -78844,6 +79174,28 @@
   "fp": "a1075885cb06fe6c",
   "sources": [
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "59.28.29.100",
+  "port": 17000,
+  "uuid": "45def141-cf19-4de8-8cca-c135d0c59403",
+  "tls": true,
+  "sni": "gorugoru.top",
+  "network": "ws",
+  "path": "/",
+  "host": "gorugoru.top",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "K​R​ ​T​G​:​@​M​i​a​C​h​a​t​C​h​a​n​n​e​l",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1e4ea50ecb5fcb5f",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -81487,6 +81839,28 @@
   "sources": [
    "tg:@oneclickvpnkeys",
    "anaer/Sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "91.107.160.130",
+  "port": 33819,
+  "uuid": "73eed38e-09ea-4c07-aa95-c53684400d68",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-262",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "3f45ba3a51b806a5",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -85216,6 +85590,28 @@
  },
  {
   "proto": "vless",
+  "server": "gorugoru.top",
+  "port": 443,
+  "uuid": "45def141-cf19-4de8-8cca-c135d0c59403",
+  "tls": true,
+  "sni": "gorugoru.top",
+  "network": "ws",
+  "path": "/",
+  "host": "gorugoru.top",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "gorugoru.top",
+  "source": "tg:@wxdy666",
+  "fp": "b30501cfc4355cab",
+  "sources": [
+   "tg:@wxdy666"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "gr1.originmesh.online",
   "port": 443,
   "name": "🇩🇪DE德国丨yoyapai.com (21)",
@@ -85645,6 +86041,28 @@
   "fp": "154641b93794a7e3",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "html.iranpood.com",
+  "port": 2086,
+  "uuid": "3b715892-8610-4fdc-9086-647b36af5443",
+  "tls": false,
+  "sni": "",
+  "network": "xhttp",
+  "path": "/?ed=2082",
+  "host": "h.cafearen.ir",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-146",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "18ea026f105d3c6d",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -87394,6 +87812,28 @@
  },
  {
   "proto": "vless",
+  "server": "sosk.sorix-home.ir",
+  "port": 60231,
+  "uuid": "4d7d1add-0a51-4887-b10a-07c68df24f7e",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-204",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "ac4f39f530c117cf",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "srv21.buddygpt.ru",
   "port": 443,
   "name": "❓未知丨yoyapai.com (103)",
@@ -87410,6 +87850,28 @@
   "fp": "3125e96cf66dd340",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "static.182.97.98.91.clients.your-server.de",
+  "port": 31490,
+  "uuid": "e94eba10-81fa-4c01-ad97-c3eca2bf753e",
+  "tls": true,
+  "sni": "static.76.181.107.91.clients.your-server.de",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "R8G73gGd1wdOLtu4BmalY5dgMG3EIlOLq6a-hSFSRwE",
+  "sid": "75e17b28b6697d90",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-404",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "2091f248128d39c0",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
