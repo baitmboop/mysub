@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-17 04:54:39 (北京时间)
+# nodepool  生成于 2026-11-17 07:42:13 (北京时间)
 # 节点数 52  (自建 0 / 免费额度 0 / 免费池 52)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -317,82 +317,77 @@ proxies:
     server: 176.111.37.5
     port: 39811
     udp: false
-  - name: N43 137.175.22.40
+  - name: N43 198.100.154.175
+    type: ss
+    server: 198.100.154.175
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: 3h3hb2gptqz6suyt
+    udp: true
+  - name: N44 142.44.210.129
+    type: http
+    server: 142.44.210.129
+    port: 443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N45 66.163.122.30
+    type: trojan
+    server: 66.163.122.30
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: resources.searchnationwidecareerchangehelperandguidancetoday.com
+  - name: N46 15.235.121.109
+    type: ss
+    server: 15.235.121.109
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: 575hiopq2h28yao6
+    udp: true
+  - name: N47 209.148.53.153
+    type: http
+    server: 209.148.53.153
+    port: 8090
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N48 54.39.96.233
+    type: ss
+    server: 54.39.96.233
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: 2cvhpvdg4x7mvbps
+    udp: true
+  - name: N49 15.235.57.6
+    type: ss
+    server: 15.235.57.6
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: kxhnt5jtykd328cg
+    udp: true
+  - name: N50 162.244.227.36
+    type: http
+    server: 162.244.227.36
+    port: 443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N51 137.175.22.40
     type: http
     server: 137.175.22.40
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N44 137.175.22.98
+  - name: N52 137.175.22.98
     type: http
     server: 137.175.22.98
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N45 137.175.22.96
-    type: http
-    server: 137.175.22.96
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N46 138.199.35.195
-    type: http
-    server: 138.199.35.195
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N47 138.199.35.199
-    type: http
-    server: 138.199.35.199
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N48 147.224.54.25
-    type: vless
-    server: 147.224.54.25
-    port: 2053
-    uuid: cdb7fa1d-6e7a-467c-da9c-da363c7bf779
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: www.cloudflare.com
-    reality-opts:
-      public-key: DEFJSLdILrvauMpwtpvFZddadpt3rNtv03Dui2EkmRk
-      short-id: 68
-    client-fingerprint: chrome
-  - name: N49 137.175.22.116
-    type: http
-    server: 137.175.22.116
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N50 202.50.253.99
-    type: ss
-    server: 202.50.253.99
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N51 202.50.253.90
-    type: ss
-    server: 202.50.253.90
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N52 202.50.253.18
-    type: ss
-    server: 202.50.253.18
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
 proxy-groups:
   - name: 节点选择
     type: select
@@ -441,16 +436,16 @@ proxy-groups:
       - N40 jp.sofast.live
       - N41 103.158.210.80
       - N42 176.111.37.5
-      - N43 137.175.22.40
-      - N44 137.175.22.98
-      - N45 137.175.22.96
-      - N46 138.199.35.195
-      - N47 138.199.35.199
-      - N48 147.224.54.25
-      - N49 137.175.22.116
-      - N50 202.50.253.99
-      - N51 202.50.253.90
-      - N52 202.50.253.18
+      - N43 198.100.154.175
+      - N44 142.44.210.129
+      - N45 66.163.122.30
+      - N46 15.235.121.109
+      - N47 209.148.53.153
+      - N48 54.39.96.233
+      - N49 15.235.57.6
+      - N50 162.244.227.36
+      - N51 137.175.22.40
+      - N52 137.175.22.98
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -499,16 +494,16 @@ proxy-groups:
       - N40 jp.sofast.live
       - N41 103.158.210.80
       - N42 176.111.37.5
-      - N43 137.175.22.40
-      - N44 137.175.22.98
-      - N45 137.175.22.96
-      - N46 138.199.35.195
-      - N47 138.199.35.199
-      - N48 147.224.54.25
-      - N49 137.175.22.116
-      - N50 202.50.253.99
-      - N51 202.50.253.90
-      - N52 202.50.253.18
+      - N43 198.100.154.175
+      - N44 142.44.210.129
+      - N45 66.163.122.30
+      - N46 15.235.121.109
+      - N47 209.148.53.153
+      - N48 54.39.96.233
+      - N49 15.235.57.6
+      - N50 162.244.227.36
+      - N51 137.175.22.40
+      - N52 137.175.22.98
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -556,15 +551,15 @@ proxy-groups:
       - N40 jp.sofast.live
       - N41 103.158.210.80
       - N42 176.111.37.5
-      - N43 137.175.22.40
-      - N44 137.175.22.98
-      - N45 137.175.22.96
-      - N46 138.199.35.195
-      - N47 138.199.35.199
-      - N48 147.224.54.25
-      - N49 137.175.22.116
-      - N50 202.50.253.99
-      - N51 202.50.253.90
-      - N52 202.50.253.18
+      - N43 198.100.154.175
+      - N44 142.44.210.129
+      - N45 66.163.122.30
+      - N46 15.235.121.109
+      - N47 209.148.53.153
+      - N48 54.39.96.233
+      - N49 15.235.57.6
+      - N50 162.244.227.36
+      - N51 137.175.22.40
+      - N52 137.175.22.98
 rules:
   - "MATCH,节点选择"
