@@ -71076,7 +71076,8 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "tg:@oneclickvpnkeys"
+   "tg:@oneclickvpnkeys",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -75483,6 +75484,28 @@
  },
  {
   "proto": "vless",
+  "server": "3ef61eg.fi7.h1clayd.click",
+  "port": 443,
+  "uuid": "2208b003-78b1-453c-b5ca-ce847ff0efd6",
+  "tls": true,
+  "sni": "3ef61eg.fi7.h1clayd.click",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "5XRqrYKB46rrbaIvft_sKTGCeC4iapfBdc3Ki1FdWA4",
+  "sid": "bcf535b386052fba",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-111",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "053e0f6cc6bc5465",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "3fb2b6t.se1.h1clayd.click",
   "port": 443,
   "uuid": "632cd343-1e8f-4bf6-a9a2-20ada1f6970f",
@@ -76095,7 +76118,8 @@
   "source": "tg:@oneclickvpnkeys",
   "fp": "11bb27c4a55e9be7",
   "sources": [
-   "tg:@oneclickvpnkeys"
+   "tg:@oneclickvpnkeys",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -77917,6 +77941,28 @@
   "fp": "5dd5899ecc045834",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "5.75.207.247",
+  "port": 2886,
+  "uuid": "a1d262a9-6d57-4ff0-99e4-594782c2ca7c",
+  "tls": true,
+  "sni": "www.oracle.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "cKOOhuCGj6qHK3znJDGnoG9DTJOJK_GZ_r7A68xi_DM",
+  "sid": "e19da077d7",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-313",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "8add6146a5403669",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -81623,6 +81669,28 @@
  },
  {
   "proto": "vless",
+  "server": "91.98.202.214",
+  "port": 1373,
+  "uuid": "1972d7cb-00d8-423e-91db-62f01b2289a6",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "play.google.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-98",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "f91fa641588b3dd2",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "91.98.221.107",
   "port": 42275,
   "uuid": "54bbcea5-44b1-44c9-83db-47b1562f678d",
@@ -82750,6 +82818,182 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "biy11.chy11.cc",
+  "port": 63901,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.caltech.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "1mdyGZ4VSv5Ob8YvIxu_dr_lPdGqJ97UaSXLSJzkqQ8",
+  "sid": "87b3",
+  "utls": "chrome",
+  "reality": true,
+  "name": "香港01（专线2x)",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "cd101b4411476190",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "biy11.chy11.cc",
+  "port": 13577,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.berkeley.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "LdnkwHvkfEa-wPMkym21dfdhnFp09nz83NrkAN-KPl8",
+  "sid": "2f047b545826a4",
+  "utls": "chrome",
+  "reality": true,
+  "name": "香港02（专线2x)",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "f1ac86f0ccfc8d33",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "biy11.chy11.cc",
+  "port": 51631,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.columbia.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "Dp9Te5gc-yKrdlFS55RstSbAGNPC5tRmPK96RaRkFhU",
+  "sid": "61f8ba",
+  "utls": "chrome",
+  "reality": true,
+  "name": "新加坡01（优化）",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "d33ad8647a1b4bab",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "biy11.chy11.cc",
+  "port": 7606,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.berkeley.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "DUvAWFkE5fbbil00LeoYwBDN_Y4ZVse8QPIA0A4VSmM",
+  "sid": "f3",
+  "utls": "chrome",
+  "reality": true,
+  "name": "新加坡02（优化）",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "002473d5545ac115",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "biy11.chy11.cc",
+  "port": 15723,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.java.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "8H7HW5vucpPL24HrsfEWnd2UV_CrpAZrXluh6RSKCh0",
+  "sid": "f6e449f3b47a",
+  "utls": "chrome",
+  "reality": true,
+  "name": "新加坡03（优化）",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "13e409f63fd9a686",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "biy11.chy11.cc",
+  "port": 34315,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.ucla.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "Ftff61vDl0phl_j60i4VIZbf9r5cEx3A5dEtk7T5RxA",
+  "sid": "710a6e80b12f80",
+  "utls": "chrome",
+  "reality": true,
+  "name": "新加坡04（优化）",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "a8e37906b50b5f96",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "biy11.chy11.cc",
+  "port": 25269,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.u-can.co.jp",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "eDlvsZdeVEW06uvnCR1NMDmbHEWMJzek9LeOMSre4gc",
+  "sid": "12905973b4",
+  "utls": "chrome",
+  "reality": true,
+  "name": "韩国01",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "2c7c9fb8c9f63fdf",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "biy11.chy11.cc",
+  "port": 19058,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.umcg.nl",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "p55xGGSAIrM-31RCnv_ZDoIbKiveq-2_rkGKGftSAFU",
+  "sid": "25ade2f29eeb",
+  "utls": "chrome",
+  "reality": true,
+  "name": "韩国03",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "d367c4b547595f3c",
+  "sources": [
    "tg:@freeVPNjd→sub"
   ]
  },
@@ -83891,6 +84135,28 @@
  },
  {
   "proto": "vless",
+  "server": "dl2.gooniforoshi.fun",
+  "port": 443,
+  "uuid": "73e08fcb-a0c7-45d0-b55d-f78c903c64a6",
+  "tls": true,
+  "sni": "dl2.gooniforoshi.fun",
+  "network": "ws",
+  "path": "/download.php",
+  "host": "dl2.gooniforoshi.fun",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-259",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "48fcd9a58b1d1165",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "dnld.chaqalli.com",
   "port": 8180,
   "name": "❓未知丨yoyapai.com (77)",
@@ -84356,6 +84622,28 @@
   "fp": "23853f47aee1516e",
   "sources": [
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "f3b21at.de18.h1clayd.click",
+  "port": 443,
+  "uuid": "4618cebd-e1e9-45c3-be98-d9d6e3ee8bef",
+  "tls": true,
+  "sni": "f3b21at.de18.h1clayd.click",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "lneTk9CP66okHF_VgXVaSj_QNpRzEmvrAmRxmux5JVU",
+  "sid": "08485ad122fafbd5",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-165",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c227e15a27b42d2c",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -84829,6 +85117,28 @@
  },
  {
   "proto": "vless",
+  "server": "hk.chy11.cc",
+  "port": 179,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.caltech.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "g9xCS1gmt3dPBLckzUOw4MmAjUR2fZEouhHky6kX7g4",
+  "sid": "4b8a98",
+  "utls": "chrome",
+  "reality": true,
+  "name": "剩余流量：0",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "599c1e0fede5b33f",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "hk3.wawojk.dpdns.org",
   "port": 51314,
   "uuid": "affd72c9-0870-4c92-b6e5-af7d0e06313e",
@@ -84847,6 +85157,314 @@
   "fp": "0c23d6d1301c0971",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "hkohko11.chy11.cc",
+  "port": 17939,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.caltech.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "NQADOphfsZLf1Fmr-IOtiH0th6Fixtbar7QQyAlrX2Y",
+  "sid": "c8",
+  "utls": "chrome",
+  "reality": true,
+  "name": "香港01",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "c55c4b0a5a6246f5",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "hkohko11.chy11.cc",
+  "port": 51646,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.stanford.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "WgZ_2-wOlN08rcOj2JlTbopp6D5drnpRyp2FgrU3pxg",
+  "sid": "a6b171340eef52",
+  "utls": "chrome",
+  "reality": true,
+  "name": "香港02",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "ad2992b8bc50d580",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "hkohko11.chy11.cc",
+  "port": 18251,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "react.dev",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "joLLMRXHfPtv_kx1yeRzPi4OoBI7UlIgXTfkTt-rKkE",
+  "sid": "68",
+  "utls": "chrome",
+  "reality": true,
+  "name": "香港03",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "1ce82b023c84694c",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "hkohko11.chy11.cc",
+  "port": 54558,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.lovelive-anime.jp",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "_MC1yQNia4iHW5P8pR0wghDp-kwHT64BFOzPIeBAZHw",
+  "sid": "3c47",
+  "utls": "chrome",
+  "reality": true,
+  "name": "香港04",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e43068c849a36225",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "hkohko11.chy11.cc",
+  "port": 20721,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.suffolk.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "tWyo5o0LXZIp89z4VVinAz8squ3QGhe6zZ2AFOea3UQ",
+  "sid": "3d25a2b0c4ce",
+  "utls": "chrome",
+  "reality": true,
+  "name": "TW-1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "8876b7b55f01e56c",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "hkohko11.chy11.cc",
+  "port": 15028,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.suny.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9T7-R0nAdz7qjjVFzIlCSZ7qxZNeWN8olonsVfVITDI",
+  "sid": "95f6ceaff7",
+  "utls": "chrome",
+  "reality": true,
+  "name": "TW-2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "cfee2796edc0c770",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "hkohko11.chy11.cc",
+  "port": 26932,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.calstatela.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "6s9UCfrtii1yiWZOL_aD7iNiYJII7mu7fUmNw54fmXc",
+  "sid": "e856",
+  "utls": "chrome",
+  "reality": true,
+  "name": "马来01",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "df330a3e8fb94e86",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "hkohko11.chy11.cc",
+  "port": 40583,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.duke.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "lT6kIyxnyqAvo3Z8-XTQvUu8dAqM7Q3Dy0d3J4SENwY",
+  "sid": "fcfe74",
+  "utls": "chrome",
+  "reality": true,
+  "name": "马来02",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "b9b02ffabe2f38b3",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "hkohko11.chy11.cc",
+  "port": 57861,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.upenn.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "OLBiNODuSLTrj4Q6LNn2kNvIZMxZZqiGZFnZm5SDbUg",
+  "sid": "04",
+  "utls": "chrome",
+  "reality": true,
+  "name": "美国01",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "0e855e7e0a9e99cd",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "hkohko11.chy11.cc",
+  "port": 53314,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.berkeley.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "K95ktzULpkjgv3wZfJYAK2r6ax-Cyyt7kJ9v22a0phU",
+  "sid": "21f0664457324721",
+  "utls": "chrome",
+  "reality": true,
+  "name": "美国02",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "4225f5f137741e9d",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "hkohko11.chy11.cc",
+  "port": 62688,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.berkeley.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "UGc-zydvoHGJ9MXYJVLaG0iYcUivhd5YcvyNPnqCelc",
+  "sid": "da3287",
+  "utls": "chrome",
+  "reality": true,
+  "name": "德国01",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "3374bf0f2a718cdd",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "hkohko11.chy11.cc",
+  "port": 64751,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.berkeley.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "rbL-ikWRP59hT46T7TtnnwXArwZ8Gb95jyb9WFBiZHY",
+  "sid": "b24dea",
+  "utls": "chrome",
+  "reality": true,
+  "name": "德国02",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "f97ca80da335551f",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "hkohko11.chy11.cc",
+  "port": 15041,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.swift.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "FXOnrbtsGSalS_Uq5Pw3fdkFC7dbBEbJJjsFVKlzT1Y",
+  "sid": "fb",
+  "utls": "chrome",
+  "reality": true,
+  "name": "英国01",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "398f359a57056d0d",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "hkohko11.chy11.cc",
+  "port": 11237,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.cisco.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "KTPYNXsBTquZ-CNRALV8sodSX5dQC5K5s9izpDsoOjw",
+  "sid": "675118e461",
+  "utls": "chrome",
+  "reality": true,
+  "name": "英国02",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "904e5cc37cd1b351",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -84979,6 +85597,28 @@
  },
  {
   "proto": "vless",
+  "server": "jp.chy11.cc",
+  "port": 32174,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.asus.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "RJXA3M-fO6Vc1EJ4FmIU-Te2PAGqHjXu5Dz8AqcWoRI",
+  "sid": "8cb516",
+  "utls": "chrome",
+  "reality": true,
+  "name": "波兰02",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "80fc542e15cd9691",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "jp.huahua.wiki",
   "port": 443,
   "name": "❓未知丨yoyapai.com (86)",
@@ -85069,6 +85709,28 @@
   "name": "canfingV2rayNG-403",
   "source": "tg:@vpnfail_v2ray",
   "fp": "aa8bcdf9d16f6e8a",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "kia.ipsafe2.site",
+  "port": 24329,
+  "uuid": "b96d18f1-eb38-47e9-ae79-42e78fcc0ff8",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "play.google.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-343",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "94a99ed2e29952b1",
   "sources": [
    "tg:@vpnfail_v2ray"
   ]
@@ -86026,6 +86688,160 @@
   "fp": "61760ae992f2ffea",
   "sources": [
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "rbw11.chy11.cc",
+  "port": 18170,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.stanford.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "QOkqTW_SVJMdFz6RKoGvnAium_wclIX1r6hw_NLjO0M",
+  "sid": "dd5792fd51ac6f53",
+  "utls": "chrome",
+  "reality": true,
+  "name": "日本01",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "1ce0088d3baaa4ca",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "rbw11.chy11.cc",
+  "port": 21862,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.harvard.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "afb5Uxj5rur3tHHVr2fJUs7qvbxF3k4qLAQ8fDClgx0",
+  "sid": "ed65",
+  "utls": "chrome",
+  "reality": true,
+  "name": "日本02",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e4bfc7ea276c0fe8",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "rbw11.chy11.cc",
+  "port": 29835,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.princeton.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "axw4iPXm1r6uO3OimnHgAKOms170VNc5bFufc3VrzzE",
+  "sid": "3bb1ce7e675f299d",
+  "utls": "chrome",
+  "reality": true,
+  "name": "日本03",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "7d78927f96fc6880",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "rbw11.chy11.cc",
+  "port": 3498,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.ucla.edu",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "fhg4ipd0R6vJ08dj3pdvIzIEedb2tJehB8-GfcW6FxI",
+  "sid": "b0",
+  "utls": "chrome",
+  "reality": true,
+  "name": "日本04",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "0edd9927463e20b2",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "rbw11.chy11.cc",
+  "port": 10028,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.fom-international.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9JEk9QpbCG63zQE9LyASnNwqZLRu-3jUE2UEdBOH3Xw",
+  "sid": "0488f95a6b5b50",
+  "utls": "chrome",
+  "reality": true,
+  "name": "法国01",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "138b07744fd190e7",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "rbw11.chy11.cc",
+  "port": 40811,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.lovelive-anime.jp",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "_RSRlPDO7fw0EIROEQ8w-rvX61_yEOoX2ms_4WiXbWM",
+  "sid": "800955834ebdcd3d",
+  "utls": "chrome",
+  "reality": true,
+  "name": "法国02",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "d3898fe7b9e57018",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "rbw11.chy11.cc",
+  "port": 51000,
+  "uuid": "13bc8eb1-f307-4c60-ab67-eca02a872317",
+  "tls": true,
+  "sni": "www.amd.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "61waq9V4RZYUt5sPzkAKIqsNggAy3dhu6ey5mtrFbgw",
+  "sid": "082a8f",
+  "utls": "chrome",
+  "reality": true,
+  "name": "波兰01",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e8fa30aac250ac1f",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -87127,6 +87943,28 @@
  },
  {
   "proto": "vless",
+  "server": "uvgl4cjd0475.vtret.com",
+  "port": 32567,
+  "uuid": "c34c6869-e454-4413-a7b2-052ba4a42fd5",
+  "tls": true,
+  "sni": "uvgl4cjd0475.vtret.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "canfingV2rayNG-351",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c21d8722e29312bc",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "uyt24-k2.miniseries.ir",
   "port": 49673,
   "uuid": "b86451af-4c98-4b7d-96e5-16f2e9df1d46",
@@ -88179,6 +89017,28 @@
  },
  {
   "proto": "vless",
+  "server": "x4g-production-ea42.up.railway.app",
+  "port": 443,
+  "uuid": "2650433b-4ee1-3c57-e3a7-43c678e8068c",
+  "tls": true,
+  "sni": "x4g-production-ea42.up.railway.app",
+  "network": "ws",
+  "path": "/ws/2650433b-4ee1-3c57-e3a7-43c678e8068c",
+  "host": "x4g-production-ea42.up.railway.app",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "firefox",
+  "reality": false,
+  "name": "canfingV2rayNG-118",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c61868fcfa9540d6",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "xray-piox09gf-calm-maple-6.cloady.io",
   "port": 443,
   "uuid": "5633d1c3-fa8e-cd74-5b6b-6c464f36472a",
@@ -88265,7 +89125,8 @@
   "fp": "d680dc53cab0c3f5",
   "sources": [
    "NoMoreWalls",
-   "ermaozi"
+   "ermaozi",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
