@@ -24962,6 +24962,19 @@
  },
  {
   "proto": "ss",
+  "server": "206.1.103.22",
+  "port": 44364,
+  "cipher": "2022-blake3-aes-256-gcm",
+  "password": "Bz8UfpIg1mfq1NKzWJHCqMJKnir+XnFlmg66uhQwadg=:13KBC7NuwCmf7qDN6H7ROavO9J1+2vsg6SZU8S0/rWs=",
+  "name": "filembad-7",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "9332e2b4e41b6e1e",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "207.2.120.46",
   "port": 3478,
   "name": "瑞典 - 斯德哥尔摩 - 1",
@@ -66740,7 +66753,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "0ee65b3826df6d4d",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -70514,6 +70528,28 @@
   "sources": [
    "tg:@freeVPNjd→sub",
    "anaer/Sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.90.62.112",
+  "port": 10000,
+  "uuid": "49fe1f7b-e6f6-43dc-a67d-caade85128ba",
+  "tls": true,
+  "sni": "amp-api-edge.apps.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24/",
+  "flow": "",
+  "pbk": "Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM",
+  "sid": "cd0a1986719e44c8",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-196",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "e723a2b747521601",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -76844,6 +76880,28 @@
  },
  {
   "proto": "vless",
+  "server": "45.139.27.15",
+  "port": 443,
+  "uuid": "a30903dc-1bf0-0001-8b1b-603a3a56211c",
+  "tls": true,
+  "sni": "svc-api-io.galioncc.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+  "sid": "6d2f8a41c9e705b3",
+  "utls": "firefox",
+  "reality": true,
+  "name": "🇷🇺 16@exclavevpn",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "5f0f94406f1706a3",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "45.142.120.30",
   "port": 8880,
   "name": "🇫🇷FR法国丨yoyapai.com (7)",
@@ -79540,6 +79598,28 @@
  },
  {
   "proto": "vless",
+  "server": "51.75.118.18",
+  "port": 20113,
+  "uuid": "00f1cd55-049c-492c-b15b-df360d8bcde3",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/vless-ws",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "filembad-49",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "d213cf077e68ddf8",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "51.77.217.70",
   "port": 2053,
   "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
@@ -80666,6 +80746,28 @@
   "fp": "048e59b104e8359e",
   "sources": [
    "NoMoreWalls"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "72.56.52.30",
+  "port": 443,
+  "uuid": "f61025f4-7973-4e3e-883c-a0fe85f0489c",
+  "tls": true,
+  "sni": "lv.rexten.cc",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ",
+  "sid": "",
+  "utls": "",
+  "reality": true,
+  "name": "canfingV2rayNG-410",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "430421666b601175",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -82467,6 +82569,28 @@
  },
  {
   "proto": "vless",
+  "server": "89.222.123.211",
+  "port": 16923,
+  "uuid": "c065e1bb-cb56-41e5-b043-9dfd15b67565",
+  "tls": true,
+  "sni": "api-maps.yandex.ru",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA",
+  "sid": "10ffb85da1c2d986",
+  "utls": "",
+  "reality": true,
+  "name": "canfingV2rayNG-346",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "302746fcf66fd139",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "89.35.14.34",
   "port": 443,
   "name": "🇲🇩MD摩尔多瓦丨yoyapai.com",
@@ -84130,6 +84254,28 @@
   "fp": "5599c0f1e4516473",
   "sources": [
    "ermaozi"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "bg.spirako.com",
+  "port": 8443,
+  "uuid": "081cd1d2-4a06-440b-b68a-1472a6aa69f1",
+  "tls": true,
+  "sni": "apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "0hH6R90pSxwm7nZPGtJJcJFhwCXU3Rvf-wcEHE7hczo",
+  "sid": "9ce04f63",
+  "utls": "ios",
+  "reality": true,
+  "name": "filembad-57",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "d3011031d7951f17",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -86024,6 +86170,28 @@
   "name": "filembad-165",
   "source": "tg:@vpnfail_v2ray",
   "fp": "c227e15a27b42d2c",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "faranse.duravex.net",
+  "port": 8443,
+  "uuid": "2860e569-4c06-4950-af3e-3b72d892cdf2",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/",
+  "host": "faranse.duravex.net",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-114",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c0a403c1dd170ecf",
   "sources": [
    "tg:@vpnfail_v2ray"
   ]
@@ -88010,6 +88178,28 @@
   "fp": "3c6b95e083188839",
   "sources": [
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "p11real2.greewebservices.ir",
+  "port": 1030,
+  "uuid": "1ca12389-0d86-4197-a79a-49d24539ce05",
+  "tls": true,
+  "sni": "play.googleapis.com",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+  "flow": "",
+  "pbk": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
+  "sid": "9b60d3",
+  "utls": "ios",
+  "reality": true,
+  "name": "canfingV2rayNG-88",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "6346eda6c0cb67be",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -90770,6 +90960,28 @@
   "name": "filembad-81",
   "source": "tg:@vpnfail_v2ray",
   "fp": "38460cca96d5389e",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "xray2-direct-mci1-fs-ce.freesocks.work",
+  "port": 443,
+  "uuid": "82ecfd16-42b8-4c35-9a68-065a6d17b471",
+  "tls": true,
+  "sni": "dl.google.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI",
+  "sid": "",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-267",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "7f7ac0e203feed10",
   "sources": [
    "tg:@vpnfail_v2ray"
   ]
