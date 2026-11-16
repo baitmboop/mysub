@@ -68343,6 +68343,28 @@
  },
  {
   "proto": "vless",
+  "server": "173.245.58.75",
+  "port": 443,
+  "uuid": "b2f6aa3a-2550-4a1c-b2c0-1c94b1207217",
+  "tls": true,
+  "sni": "terazhediii.info",
+  "network": "ws",
+  "path": "/hdgrbws",
+  "host": "terazhediii.info",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-343",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "b19cef0b81696cc6",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "173.255.242.56",
   "port": 39706,
   "uuid": "aab91459-f905-4164-adda-c4ec45578542",
@@ -77437,7 +77459,8 @@
   "source": "tg:@freeVPNjd→sub",
   "fp": "3ce2066f97c6cfe5",
   "sources": [
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -83696,6 +83719,28 @@
  },
  {
   "proto": "vless",
+  "server": "cd3.postshup.ir",
+  "port": 2086,
+  "uuid": "3b715892-8610-4fdc-9086-647b36af5443",
+  "tls": false,
+  "sni": "",
+  "network": "xhttp",
+  "path": "/?ed=8192",
+  "host": "B.cafearen.ir",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-151",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "f05f11eaed535f94",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "cdn-rum-keno-prsv.keno.su",
   "port": 443,
   "uuid": "dc95c1dd-2cd3-414c-8cf1-71ae86dad666",
@@ -84458,6 +84503,28 @@
   "name": "canfingV2rayNG-210",
   "source": "tg:@vpnfail_v2ray",
   "fp": "ec57efeb2be321b8",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "de-dp-01.com",
+  "port": 8443,
+  "uuid": "aa5b231c-4e18-4ae6-b83c-a293f51c0dfa",
+  "tls": true,
+  "sni": "storage.yandex.net",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo",
+  "sid": "8d3293f0066e129a",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-337",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "cdee039ae623b462",
   "sources": [
    "tg:@vpnfail_v2ray"
   ]
@@ -87048,6 +87115,28 @@
   "fp": "2cf624bb7ffb3c36",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "sc-thenetherlands1.09vpn.com",
+  "port": 80,
+  "uuid": "40cc9b52-25b8-4cd5-8b45-715ae26e6baf",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/vless/",
+  "host": "sc-thenetherlands1.09vpn.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-155",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "86fa4e2163343c28",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
