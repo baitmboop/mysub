@@ -63482,6 +63482,28 @@
  },
  {
   "proto": "vless",
+  "server": "138.124.76.103",
+  "port": 8080,
+  "uuid": "FastKey_160283",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/api",
+  "host": "google.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "filembad-310",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "268c8954d66f80d4",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "138.124.8.117",
   "port": 443,
   "uuid": "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8",
@@ -67744,6 +67766,28 @@
  },
  {
   "proto": "vless",
+  "server": "170.168.25.39",
+  "port": 443,
+  "uuid": "21c24d1c-d938-495a-b33f-957bc65d301f",
+  "tls": true,
+  "sni": "detectportal.firefox.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "ZwMEL1FEHRGDKBNqSLnpHwSiEUPvY7vTk_cUIczPnEQ",
+  "sid": "b21d9c9270653002",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-123",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "30961557e2256a04",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "170.168.97.3",
   "port": 993,
   "name": "土耳其丨yoyapai.com",
@@ -71059,6 +71103,28 @@
   "fp": "e1ec3c9311eaf37c",
   "sources": [
    "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "193.243.189.64",
+  "port": 443,
+  "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+  "tls": true,
+  "sni": "no1.gofizz.in",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+  "flow": "xtls-rprx-vision",
+  "pbk": "631qtx5_iiR8HBYdp3duf2SMqdN0URE1AWVb85I_FFg",
+  "sid": "b12c3119d219dc",
+  "utls": "ios",
+  "reality": true,
+  "name": "filembad-251",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "bee1b0f72649a6a7",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -76518,6 +76584,28 @@
  },
  {
   "proto": "vless",
+  "server": "45.130.125.76",
+  "port": 443,
+  "uuid": "1f9d104e-ca0e-4202-ba4b-a0afb969c747",
+  "tls": true,
+  "sni": "www.multiplydose.cc.cd",
+  "network": "xhttp",
+  "path": "/assignment",
+  "host": "www.multiplydose.cc.cd",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "canfingV2rayNG-120",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "06a068c4fb65aacf",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "45.130.254.10",
   "port": 443,
   "name": "🇷🇺RU俄罗斯丨yoyapai.com (12)",
@@ -81778,6 +81866,28 @@
  },
  {
   "proto": "vless",
+  "server": "88.218.120.60",
+  "port": 4443,
+  "uuid": "41b903e0-7d0a-45d0-9b29-83086024a88b",
+  "tls": true,
+  "sni": "sni4.streisand.lt",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "-psPIZaOXQOuX1O1BpZ0_zyXEvx1YwW6ouBIkYGb2Dg",
+  "sid": "612d8fa72c",
+  "utls": "qq",
+  "reality": true,
+  "name": "canfingV2rayNG-158",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "3b0c4206495b4267",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "88.218.44.4",
   "port": 993,
   "name": "🇬🇷 希腊丨yoyapai.com",
@@ -85503,6 +85613,28 @@
  },
  {
   "proto": "vless",
+  "server": "f0d7aft.nl13.h1clayd.click",
+  "port": 443,
+  "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+  "tls": true,
+  "sni": "f0d7aft.nl13.h1clayd.click",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI",
+  "sid": "8956c57cb4c4f8d2",
+  "utls": "",
+  "reality": true,
+  "name": "filembad-381",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "76fc486ec7011974",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "f3b21at.de18.h1clayd.click",
   "port": 443,
   "uuid": "4618cebd-e1e9-45c3-be98-d9d6e3ee8bef",
@@ -86848,6 +86980,28 @@
   "fp": "a8b4c6b035ce3763",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "k2.cloud--vpn.site",
+  "port": 443,
+  "uuid": "bdaf42dd-f75b-4594-d5f8-51c0feeb8406",
+  "tls": true,
+  "sni": "ssl.fastly.com",
+  "network": "ws",
+  "path": "/",
+  "host": "c12.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "firefox",
+  "reality": false,
+  "name": "canfingV2rayNG-366",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "4823b3c637c053b8",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
