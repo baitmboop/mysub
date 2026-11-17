@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-18 04:56:45 (北京时间)
+# nodepool  生成于 2026-11-18 07:50:20 (北京时间)
 # 节点数 52  (自建 0 / 免费额度 0 / 免费池 52)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -329,29 +329,21 @@ proxies:
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N45 66.163.122.30
-    type: trojan
-    server: 66.163.122.30
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: resources.searchnationwidecareerchangehelperandguidancetoday.com
-  - name: N46 54.39.96.233
+  - name: N45 54.39.96.233
     type: ss
     server: 54.39.96.233
     port: 8080
     cipher: chacha20-ietf-poly1305
     password: 2cvhpvdg4x7mvbps
     udp: true
-  - name: N47 15.235.57.6
+  - name: N46 15.235.57.6
     type: ss
     server: 15.235.57.6
     port: 8080
     cipher: chacha20-ietf-poly1305
     password: kxhnt5jtykd328cg
     udp: true
-  - name: N48 clash.ddm4.cn
+  - name: N47 clash.ddm4.cn
     type: vmess
     server: clash.ddm4.cn
     port: 443
@@ -367,30 +359,39 @@ proxies:
       headers:
         Host: clash.ddm4.cn
     network: ws
-  - name: N49 202.50.253.99
+  - name: N48 202.50.253.99
     type: ss
     server: 202.50.253.99
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N50 202.50.253.90
+  - name: N49 202.50.253.90
     type: ss
     server: 202.50.253.90
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N51 202.50.253.18
+  - name: N50 66.163.122.30
+    type: trojan
+    server: 66.163.122.30
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: resources.searchnationwidecareerchangehelperandguidancetoday.com
+  - name: N51 216.152.155.50
+    type: trojan
+    server: 216.152.155.50
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: cdn.nextjobopportunityandclaimyouridealrole.com
+  - name: N52 202.50.253.18
     type: ss
     server: 202.50.253.18
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N52 202.50.253.72
-    type: ss
-    server: 202.50.253.72
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -445,14 +446,14 @@ proxy-groups:
       - N42 176.111.37.5
       - N43 198.100.154.175
       - N44 142.44.210.129
-      - N45 66.163.122.30
-      - N46 54.39.96.233
-      - N47 15.235.57.6
-      - N48 clash.ddm4.cn
-      - N49 202.50.253.99
-      - N50 202.50.253.90
-      - N51 202.50.253.18
-      - N52 202.50.253.72
+      - N45 54.39.96.233
+      - N46 15.235.57.6
+      - N47 clash.ddm4.cn
+      - N48 202.50.253.99
+      - N49 202.50.253.90
+      - N50 66.163.122.30
+      - N51 216.152.155.50
+      - N52 202.50.253.18
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -503,14 +504,14 @@ proxy-groups:
       - N42 176.111.37.5
       - N43 198.100.154.175
       - N44 142.44.210.129
-      - N45 66.163.122.30
-      - N46 54.39.96.233
-      - N47 15.235.57.6
-      - N48 clash.ddm4.cn
-      - N49 202.50.253.99
-      - N50 202.50.253.90
-      - N51 202.50.253.18
-      - N52 202.50.253.72
+      - N45 54.39.96.233
+      - N46 15.235.57.6
+      - N47 clash.ddm4.cn
+      - N48 202.50.253.99
+      - N49 202.50.253.90
+      - N50 66.163.122.30
+      - N51 216.152.155.50
+      - N52 202.50.253.18
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -560,13 +561,13 @@ proxy-groups:
       - N42 176.111.37.5
       - N43 198.100.154.175
       - N44 142.44.210.129
-      - N45 66.163.122.30
-      - N46 54.39.96.233
-      - N47 15.235.57.6
-      - N48 clash.ddm4.cn
-      - N49 202.50.253.99
-      - N50 202.50.253.90
-      - N51 202.50.253.18
-      - N52 202.50.253.72
+      - N45 54.39.96.233
+      - N46 15.235.57.6
+      - N47 clash.ddm4.cn
+      - N48 202.50.253.99
+      - N49 202.50.253.90
+      - N50 66.163.122.30
+      - N51 216.152.155.50
+      - N52 202.50.253.18
 rules:
   - "MATCH,节点选择"
