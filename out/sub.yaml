@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-17 14:00:10 (北京时间)
+# nodepool  生成于 2026-11-17 16:57:57 (北京时间)
 # 节点数 52  (自建 0 / 免费额度 0 / 免费池 52)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -367,23 +367,29 @@ proxies:
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N50 137.175.22.40
+  - name: N50 147.224.54.25
+    type: vless
+    server: 147.224.54.25
+    port: 2053
+    uuid: cdb7fa1d-6e7a-467c-da9c-da363c7bf779
+    udp: true
+    skipCertVerify: true
+    tls: true
+    servername: www.cloudflare.com
+    reality-opts:
+      public-key: DEFJSLdILrvauMpwtpvFZddadpt3rNtv03Dui2EkmRk
+      short-id: 68
+    client-fingerprint: chrome
+  - name: N51 137.175.22.40
     type: http
     server: 137.175.22.40
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N51 137.175.22.98
+  - name: N52 137.175.22.98
     type: http
     server: 137.175.22.98
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N52 137.175.22.96
-    type: http
-    server: 137.175.22.96
     port: 443
     udp: false
     tls: true
@@ -443,9 +449,9 @@ proxy-groups:
       - N47 54.39.96.233
       - N48 15.235.57.6
       - N49 162.244.227.36
-      - N50 137.175.22.40
-      - N51 137.175.22.98
-      - N52 137.175.22.96
+      - N50 147.224.54.25
+      - N51 137.175.22.40
+      - N52 137.175.22.98
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -501,9 +507,9 @@ proxy-groups:
       - N47 54.39.96.233
       - N48 15.235.57.6
       - N49 162.244.227.36
-      - N50 137.175.22.40
-      - N51 137.175.22.98
-      - N52 137.175.22.96
+      - N50 147.224.54.25
+      - N51 137.175.22.40
+      - N52 137.175.22.98
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -558,8 +564,8 @@ proxy-groups:
       - N47 54.39.96.233
       - N48 15.235.57.6
       - N49 162.244.227.36
-      - N50 137.175.22.40
-      - N51 137.175.22.98
-      - N52 137.175.22.96
+      - N50 147.224.54.25
+      - N51 137.175.22.40
+      - N52 137.175.22.98
 rules:
   - "MATCH,节点选择"
