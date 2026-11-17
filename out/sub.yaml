@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-17 22:56:35 (北京时间)
+# nodepool  生成于 2026-11-18 02:02:21 (北京时间)
 # 节点数 52  (自建 0 / 免费额度 0 / 免费池 52)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -344,13 +344,19 @@ proxies:
     cipher: chacha20-ietf-poly1305
     password: 2cvhpvdg4x7mvbps
     udp: true
-  - name: N47 162.244.227.36
-    type: http
-    server: 162.244.227.36
-    port: 443
-    udp: false
+  - name: N47 147.224.54.25
+    type: vless
+    server: 147.224.54.25
+    port: 2053
+    uuid: cdb7fa1d-6e7a-467c-da9c-da363c7bf779
+    udp: true
+    skipCertVerify: true
     tls: true
-    skip-cert-verify: true
+    servername: www.cloudflare.com
+    reality-opts:
+      public-key: DEFJSLdILrvauMpwtpvFZddadpt3rNtv03Dui2EkmRk
+      short-id: 68
+    client-fingerprint: chrome
   - name: N48 137.175.22.40
     type: http
     server: 137.175.22.40
@@ -438,7 +444,7 @@ proxy-groups:
       - N44 142.44.210.129
       - N45 66.163.122.30
       - N46 54.39.96.233
-      - N47 162.244.227.36
+      - N47 147.224.54.25
       - N48 137.175.22.40
       - N49 137.175.22.98
       - N50 137.175.22.116
@@ -496,7 +502,7 @@ proxy-groups:
       - N44 142.44.210.129
       - N45 66.163.122.30
       - N46 54.39.96.233
-      - N47 162.244.227.36
+      - N47 147.224.54.25
       - N48 137.175.22.40
       - N49 137.175.22.98
       - N50 137.175.22.116
@@ -553,7 +559,7 @@ proxy-groups:
       - N44 142.44.210.129
       - N45 66.163.122.30
       - N46 54.39.96.233
-      - N47 162.244.227.36
+      - N47 147.224.54.25
       - N48 137.175.22.40
       - N49 137.175.22.98
       - N50 137.175.22.116
