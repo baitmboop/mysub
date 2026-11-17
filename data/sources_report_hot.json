@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-18T02:20:46+08:00",
+ "generated_at": "2026-11-18T04:23:08+08:00",
  "mode": "only-hot",
- "total_nodes": 7127,
- "base_nodes": 7108,
- "new_nodes": 19,
+ "total_nodes": 7138,
+ "base_nodes": 7127,
+ "new_nodes": 11,
  "by_source": {
   "go4sharing/arch": 3950,
   "clashnode": 651,
@@ -13,8 +13,8 @@
   "extra:raw.githubusercontent.com/http.txt": 400,
   "tg:@freeVPNjd→sub": 269,
   "mahdibland": 127,
-  "tg:@oneclickvpnkeys": 108,
-  "tg:@vpnfail_v2ray": 80,
+  "tg:@oneclickvpnkeys": 112,
+  "tg:@vpnfail_v2ray": 87,
   "xinshoucun": 26,
   "tg:@wxdy666→sub": 16,
   "freefq": 14,
@@ -24,11 +24,11 @@
   "oneclash": 1
  },
  "raw_hits": {
-  "tg:@vpnfail_v2ray": 19,
-  "tg:@oneclickvpnkeys": 15,
-  "tg:@wxdy666": 2,
+  "tg:@oneclickvpnkeys": 25,
+  "tg:@vpnfail_v2ray": 18,
   "tg:@freeVPNjd": 0,
-  "tg:@ripaojiedian": 0
+  "tg:@ripaojiedian": 0,
+  "tg:@wxdy666": 0
  },
  "candidates": {}
 }
