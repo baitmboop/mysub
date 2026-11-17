@@ -64507,7 +64507,8 @@
    "NoMoreWalls",
    "ermaozi",
    "tg:@freeVPNjd→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -65709,6 +65710,28 @@
   "fp": "c19e0f335c135ac2",
   "sources": [
    "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "152.233.41.30",
+  "port": 16923,
+  "uuid": "c065e1bb-cb56-41e5-b043-9dfd15b67565",
+  "tls": true,
+  "sni": "api-maps.yandex.ru",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA",
+  "sid": "10ffb85da1c2d986",
+  "utls": "",
+  "reality": true,
+  "name": "canfingV2rayNG-358",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "98df480a2173a2de",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -69583,6 +69606,28 @@
   "fp": "38833e08d08ae893",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.155.55.2",
+  "port": 8443,
+  "uuid": "5c09e56b-f97f-4360-8f01-eb4d39202095",
+  "tls": true,
+  "sni": "ee-nf.reddotcorp.org",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+  "flow": "xtls-rprx-vision",
+  "pbk": "ApMfbcEyBOve6DxXoBNVu3bCCzQ7XCEYB4ummsDtTBE",
+  "sid": "661766b2bcef440a",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-192",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "47d048a90c76c86b",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -77479,6 +77524,28 @@
  },
  {
   "proto": "vless",
+  "server": "45.192.12.92",
+  "port": 443,
+  "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
+  "tls": true,
+  "sni": "nltimes.nl",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "aUOP5gJGQ1QFhdZuREZ8yosfPavFiJ6f_EySIBZ2WCE",
+  "sid": "",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-137",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "28a7f435232d443e",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "45.192.2.51",
   "port": 443,
   "name": "塞舌爾丨yoyapai.com",
@@ -79899,6 +79966,28 @@
  },
  {
   "proto": "vless",
+  "server": "51.21.253.12",
+  "port": 61483,
+  "uuid": "6593f6ad-a7f2-41fa-9166-b3cc5587f7f8",
+  "tls": true,
+  "sni": "gateway-sr-china.icloud.com",
+  "network": "xhttp",
+  "path": "/t.me-SubGift",
+  "host": "51.21.253.12",
+  "flow": "xtls-rprx-vision",
+  "pbk": "VCVumwlIhEVFWJ5mfqa0dzCe89iUdZei2v3a4GzwfzY",
+  "sid": "fcac23caeed68f",
+  "utls": "safari",
+  "reality": true,
+  "name": "canfingV2rayNG-205",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "37b7accbca68bd4e",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "51.38.71.147",
   "port": 443,
   "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58",
@@ -80095,6 +80184,28 @@
   "name": "filembad-362",
   "source": "tg:@vpnfail_v2ray",
   "fp": "96e7812af6f53048",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "56.228.115.67",
+  "port": 2053,
+  "uuid": "bc8d600c-46e3-4327-b70f-0822f612be2d",
+  "tls": true,
+  "sni": "dl.google.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "HjBtew1EYyAA5EnDBuZu4GR2u0OvitC5xp2fvqiYOwQ",
+  "sid": "4c36b466",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-346",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "6e9de3b9c89e6a66",
   "sources": [
    "tg:@vpnfail_v2ray"
   ]
@@ -81289,7 +81400,8 @@
   "source": "tg:@oneclickvpnkeys",
   "fp": "54de4ba678b7a775",
   "sources": [
-   "tg:@oneclickvpnkeys"
+   "tg:@oneclickvpnkeys",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -90926,7 +91038,8 @@
    "NoMoreWalls",
    "ermaozi",
    "tg:@freeVPNjd→sub",
-   "anaer/Sub"
+   "anaer/Sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -91016,6 +91129,28 @@
   "name": "filembad-94",
   "source": "tg:@vpnfail_v2ray",
   "fp": "cb1665f6973657ee",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "xray2-direct-mci1-fs-ce.freesocks.work",
+  "port": 443,
+  "uuid": "33c12d52-1dc4-435c-bc27-dbe8aec2a3dc",
+  "tls": true,
+  "sni": "dl.google.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI",
+  "sid": "",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-133",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "f015066d939400c3",
   "sources": [
    "tg:@vpnfail_v2ray"
   ]
