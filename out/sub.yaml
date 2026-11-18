@@ -1,20 +1,9 @@
-# nodepool  生成于 2026-11-19 01:57:54 (北京时间)
-# 节点数 51  (自建 0 / 免费额度 0 / 免费池 51)
+# nodepool  生成于 2026-11-19 04:57:32 (北京时间)
+# 节点数 32  (自建 0 / 免费额度 0 / 免费池 32)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
 proxies:
-  - name: N01 39.108.113.127
-    type: vmess
-    server: 39.108.113.127
-    port: 10086
-    uuid: b0253c6c-0b96-4950-bde1-669f13bc1a01
-    alterId: 0
-    cipher: auto
-    udp: true
-    ws-opts:
-      path: /
-    network: ws
-  - name: N02 zfapi.zalolink.com
+  - name: N01 zfapi.zalolink.com
     type: vless
     server: zfapi.zalolink.com
     port: 35460
@@ -24,89 +13,44 @@ proxies:
     flow: xtls-rprx-vision-udp443
     tls: true
     servername: psstatic.cdn.bcebos.com
-  - name: N03 202.50.253.81
+  - name: N02 202.50.253.81
     type: ss
     server: 202.50.253.81
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N04 hk3.wawojk.dpdns.org
-    type: vless
-    server: hk3.wawojk.dpdns.org
-    port: 51314
-    uuid: affd72c9-0870-4c92-b6e5-af7d0e06313e
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: www.asus.com
-    reality-opts:
-      public-key: VWY3lvh8l3OoKnhln5nIzmxAG0Imp9arXMK6nbsGVB4
-      short-id: 0ee643ab
-    client-fingerprint: chrome
-  - name: N05 111.192.52.56
+  - name: N03 111.192.52.56
     type: http
     server: 111.192.52.56
     port: 8888
     udp: false
-  - name: N06 123.119.195.145
+  - name: N04 123.119.195.145
     type: http
     server: 123.119.195.145
     port: 8888
     udp: false
-  - name: N07 176.111.37.216
+  - name: N05 176.111.37.216
     type: http
     server: 176.111.37.216
     port: 39811
     udp: false
-  - name: N08 123.121.73.146
+  - name: N06 123.121.73.146
     type: http
     server: 123.121.73.146
     port: 8888
     udp: false
-  - name: N09 202.50.253.27
-    type: ss
-    server: 202.50.253.27
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N10 69.55.49.177
-    type: socks5
-    server: 69.55.49.177
-    port: 38182
-    udp: false
-  - name: N11 edge.bookmai.com
-    type: vless
-    server: edge.bookmai.com
-    port: 443
-    uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: mother-earth.fyi
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: ""
-    client-fingerprint: chrome
-  - name: N12 123.121.122.125
+  - name: N07 123.121.122.125
     type: http
     server: 123.121.122.125
     port: 8888
     udp: false
-  - name: N13 114.244.223.68
+  - name: N08 114.244.223.68
     type: http
     server: 114.244.223.68
     port: 8888
     udp: false
-  - name: N14 91.107.179.68
-    type: socks5
-    server: 91.107.179.68
-    port: 10809
-    udp: false
-  - name: N15 c8f40e6a-tjrog0-tobupp-1rvjz.sg2.oshuawei.com
+  - name: N09 c8f40e6a-tjrog0-tobupp-1rvjz.sg2.oshuawei.com
     type: http
     server: c8f40e6a-tjrog0-tobupp-1rvjz.sg2.oshuawei.com
     port: 5228
@@ -115,80 +59,21 @@ proxies:
     password: 5e8bc530-3a90-11ef-bd5b-f23c913c8d2b
     tls: true
     skip-cert-verify: true
-  - name: N16 guanwang.awsno.com
-    type: vmess
-    server: guanwang.awsno.com
-    port: 443
-    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: guanwang.awsno.com
-    skipCertVerify: true
-    ws-opts:
-      path: /hls/cctv5phd.m3u8
-      headers:
-        Host: guanwang.awsno.com
-    network: ws
-  - name: N17 121.169.46.116
-    type: socks5
-    server: 121.169.46.116
-    port: 1090
-    udp: false
-    username: "Og%3D%3D"
-  - name: N18 sclass-b1.catcat321.com
-    type: trojan
-    server: sclass-b1.catcat321.com
-    port: 20028
-    password: d7563108-615c-4338-a7bd-77f359869a4a
-    udp: true
-    skipCertVerify: true
-    sni: hk.catxstar.com
-  - name: N19 34.249.214.108
+  - name: N10 34.249.214.108
     type: http
     server: 34.249.214.108
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N20 fan.365747.xyz
-    type: http
-    server: fan.365747.xyz
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N21 fan.226278.xyz
-    type: http
-    server: fan.226278.xyz
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N22 fan.596189.xyz
-    type: http
-    server: fan.596189.xyz
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N23 172.64.69.89
+  - name: N11 172.64.69.89
     type: http
     server: 172.64.69.89
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N24 fan.973511.xyz
-    type: http
-    server: fan.973511.xyz
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-    sni: fan.973511.xyz
-  - name: N25 sclass-b1.catcat321.com
+  - name: N12 sclass-b1.catcat321.com
     type: trojan
     server: sclass-b1.catcat321.com
     port: 20027
@@ -196,27 +81,7 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: hk.catxstar.com
-  - name: N26 fan.587475.xyz
-    type: http
-    server: fan.587475.xyz
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-    sni: fan.587475.xyz
-  - name: N27 191.44.112.170
-    type: vless
-    server: 191.44.112.170
-    port: 443
-    uuid: 46d221fa-e9b4-748c-4eae-019a88e42991
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: orbylume.my.to
-    ws-opts:
-      path: /tvpn-tor/is
-    network: ws
-  - name: N28 twmoon1-cdn-route.couldflare-cdn.com
+  - name: N13 twmoon1-cdn-route.couldflare-cdn.com
     type: http
     server: twmoon1-cdn-route.couldflare-cdn.com
     port: 1443
@@ -225,338 +90,246 @@ proxies:
     password: mrwdfNTD8M79LCukCieldrqZWqs=
     tls: true
     skip-cert-verify: true
-  - name: N29 149.88.21.129
+  - name: N14 149.88.21.129
     type: http
     server: 149.88.21.129
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N30 fan.240104.xyz
-    type: http
-    server: fan.240104.xyz
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-    sni: fan.240104.xyz
-  - name: N31 154.26.192.123
-    type: http
-    server: 154.26.192.123
-    port: 10988
-    udp: false
-    username: fQ67Dpe5dU
-    password: gs4BXwT6SW
-  - name: N32 fan.571589.xyz
-    type: http
-    server: fan.571589.xyz
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-    sni: fan.571589.xyz
-  - name: N33 111.192.28.24
+  - name: N15 111.192.28.24
     type: http
     server: 111.192.28.24
     port: 8888
     udp: false
-  - name: N34 111.192.50.81
+  - name: N16 111.192.50.81
     type: http
     server: 111.192.50.81
     port: 8888
     udp: false
-  - name: N35 31.171.155.210
+  - name: N17 31.171.155.210
     type: http
     server: 31.171.155.210
     port: 9443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N36 83.206.1.225
+  - name: N18 83.206.1.225
     type: http
     server: 83.206.1.225
     port: 8090
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N37 142.252.37.58
+  - name: N19 142.252.37.58
     type: http
     server: 142.252.37.58
     port: 6182
     udp: false
     username: hommkiti
     password: 0wcmn0va70ra
-  - name: N38 159.195.110.240
+  - name: N20 159.195.110.240
     type: http
     server: 159.195.110.240
     port: 8080
     udp: false
-  - name: N39 jp.sofast.live
-    type: vless
-    server: jp.sofast.live
-    port: 52683
-    uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
-    udp: true
-    skipCertVerify: true
-  - name: N40 103.158.210.80
+  - name: N21 103.158.210.80
     type: http
     server: 103.158.210.80
     port: 8082
     udp: false
-  - name: N41 176.111.37.5
+  - name: N22 176.111.37.5
     type: http
     server: 176.111.37.5
     port: 39811
     udp: false
-  - name: N42 198.100.154.175
+  - name: N23 45.138.100.248
+    type: vless
+    server: 45.138.100.248
+    port: 10443
+    uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+    udp: true
+    skipCertVerify: true
+  - name: N24 172.111.38.246
+    type: vmess
+    server: 172.111.38.246
+    port: 1270
+    uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: xmfhlpy.com
+    skipCertVerify: true
+  - name: N25 66.163.122.113
+    type: trojan
+    server: 66.163.122.113
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: api.searchnationwidecareerchangehelperandguidancetoday.com
+  - name: N26 198.100.154.175
     type: ss
     server: 198.100.154.175
     port: 8080
     cipher: chacha20-ietf-poly1305
     password: 3h3hb2gptqz6suyt
     udp: true
-  - name: N43 142.44.210.129
+  - name: N27 142.44.210.129
     type: http
     server: 142.44.210.129
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N44 138.199.35.195
+  - name: N28 185.230.230.18
+    type: ss
+    server: 185.230.230.18
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N29 45.86.51.18
+    type: ss
+    server: 45.86.51.18
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N30 172.111.38.72
+    type: ss
+    server: 172.111.38.72
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N31 138.199.35.195
     type: http
     server: 138.199.35.195
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N45 129.153.93.183
-    type: http
-    server: 129.153.93.183
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N46 138.199.35.217
-    type: http
-    server: 138.199.35.217
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N47 66.253.2.69
+  - name: N32 66.253.2.69
     type: socks5
     server: 66.253.2.69
     port: 62000
     udp: false
     username: u_rb1dba2
     password: l1tlrdx52v
-  - name: N48 15.204.246.111
-    type: ss
-    server: 15.204.246.111
-    port: 5498
-    cipher: aes-256-gcm
-    password: lGqs95QkFHo2NV
-    udp: true
-  - name: N49 216.132.114.194
-    type: socks5
-    server: 216.132.114.194
-    port: 62000
-    udp: false
-    username: utdr8wvs
-    password: 7i1dheg6
-  - name: N50 clash.ddm4.cn
-    type: vmess
-    server: clash.ddm4.cn
-    port: 443
-    uuid: d006ef4a-d235-4691-bf05-abbe0d14055c
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: clash.ddm4.cn
-    skipCertVerify: true
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: clash.ddm4.cn
-    network: ws
-  - name: N51 66.163.122.30
-    type: trojan
-    server: 66.163.122.30
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: resources.searchnationwidecareerchangehelperandguidancetoday.com
 proxy-groups:
   - name: 节点选择
     type: select
     proxies:
       - 自动选择
       - ③ 免费池
-      - N01 39.108.113.127
-      - N02 zfapi.zalolink.com
-      - N03 202.50.253.81
-      - N04 hk3.wawojk.dpdns.org
-      - N05 111.192.52.56
-      - N06 123.119.195.145
-      - N07 176.111.37.216
-      - N08 123.121.73.146
-      - N09 202.50.253.27
-      - N10 69.55.49.177
-      - N11 edge.bookmai.com
-      - N12 123.121.122.125
-      - N13 114.244.223.68
-      - N14 91.107.179.68
-      - N15 c8f40e6a-tjrog0-tobupp-1rvjz.sg2.oshuawei.com
-      - N16 guanwang.awsno.com
-      - N17 121.169.46.116
-      - N18 sclass-b1.catcat321.com
-      - N19 34.249.214.108
-      - N20 fan.365747.xyz
-      - N21 fan.226278.xyz
-      - N22 fan.596189.xyz
-      - N23 172.64.69.89
-      - N24 fan.973511.xyz
-      - N25 sclass-b1.catcat321.com
-      - N26 fan.587475.xyz
-      - N27 191.44.112.170
-      - N28 twmoon1-cdn-route.couldflare-cdn.com
-      - N29 149.88.21.129
-      - N30 fan.240104.xyz
-      - N31 154.26.192.123
-      - N32 fan.571589.xyz
-      - N33 111.192.28.24
-      - N34 111.192.50.81
-      - N35 31.171.155.210
-      - N36 83.206.1.225
-      - N37 142.252.37.58
-      - N38 159.195.110.240
-      - N39 jp.sofast.live
-      - N40 103.158.210.80
-      - N41 176.111.37.5
-      - N42 198.100.154.175
-      - N43 142.44.210.129
-      - N44 138.199.35.195
-      - N45 129.153.93.183
-      - N46 138.199.35.217
-      - N47 66.253.2.69
-      - N48 15.204.246.111
-      - N49 216.132.114.194
-      - N50 clash.ddm4.cn
-      - N51 66.163.122.30
+      - N01 zfapi.zalolink.com
+      - N02 202.50.253.81
+      - N03 111.192.52.56
+      - N04 123.119.195.145
+      - N05 176.111.37.216
+      - N06 123.121.73.146
+      - N07 123.121.122.125
+      - N08 114.244.223.68
+      - N09 c8f40e6a-tjrog0-tobupp-1rvjz.sg2.oshuawei.com
+      - N10 34.249.214.108
+      - N11 172.64.69.89
+      - N12 sclass-b1.catcat321.com
+      - N13 twmoon1-cdn-route.couldflare-cdn.com
+      - N14 149.88.21.129
+      - N15 111.192.28.24
+      - N16 111.192.50.81
+      - N17 31.171.155.210
+      - N18 83.206.1.225
+      - N19 142.252.37.58
+      - N20 159.195.110.240
+      - N21 103.158.210.80
+      - N22 176.111.37.5
+      - N23 45.138.100.248
+      - N24 172.111.38.246
+      - N25 66.163.122.113
+      - N26 198.100.154.175
+      - N27 142.44.210.129
+      - N28 185.230.230.18
+      - N29 45.86.51.18
+      - N30 172.111.38.72
+      - N31 138.199.35.195
+      - N32 66.253.2.69
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 120
     tolerance: 100
     proxies:
-      - N01 39.108.113.127
-      - N02 zfapi.zalolink.com
-      - N03 202.50.253.81
-      - N04 hk3.wawojk.dpdns.org
-      - N05 111.192.52.56
-      - N06 123.119.195.145
-      - N07 176.111.37.216
-      - N08 123.121.73.146
-      - N09 202.50.253.27
-      - N10 69.55.49.177
-      - N11 edge.bookmai.com
-      - N12 123.121.122.125
-      - N13 114.244.223.68
-      - N14 91.107.179.68
-      - N15 c8f40e6a-tjrog0-tobupp-1rvjz.sg2.oshuawei.com
-      - N16 guanwang.awsno.com
-      - N17 121.169.46.116
-      - N18 sclass-b1.catcat321.com
-      - N19 34.249.214.108
-      - N20 fan.365747.xyz
-      - N21 fan.226278.xyz
-      - N22 fan.596189.xyz
-      - N23 172.64.69.89
-      - N24 fan.973511.xyz
-      - N25 sclass-b1.catcat321.com
-      - N26 fan.587475.xyz
-      - N27 191.44.112.170
-      - N28 twmoon1-cdn-route.couldflare-cdn.com
-      - N29 149.88.21.129
-      - N30 fan.240104.xyz
-      - N31 154.26.192.123
-      - N32 fan.571589.xyz
-      - N33 111.192.28.24
-      - N34 111.192.50.81
-      - N35 31.171.155.210
-      - N36 83.206.1.225
-      - N37 142.252.37.58
-      - N38 159.195.110.240
-      - N39 jp.sofast.live
-      - N40 103.158.210.80
-      - N41 176.111.37.5
-      - N42 198.100.154.175
-      - N43 142.44.210.129
-      - N44 138.199.35.195
-      - N45 129.153.93.183
-      - N46 138.199.35.217
-      - N47 66.253.2.69
-      - N48 15.204.246.111
-      - N49 216.132.114.194
-      - N50 clash.ddm4.cn
-      - N51 66.163.122.30
+      - N01 zfapi.zalolink.com
+      - N02 202.50.253.81
+      - N03 111.192.52.56
+      - N04 123.119.195.145
+      - N05 176.111.37.216
+      - N06 123.121.73.146
+      - N07 123.121.122.125
+      - N08 114.244.223.68
+      - N09 c8f40e6a-tjrog0-tobupp-1rvjz.sg2.oshuawei.com
+      - N10 34.249.214.108
+      - N11 172.64.69.89
+      - N12 sclass-b1.catcat321.com
+      - N13 twmoon1-cdn-route.couldflare-cdn.com
+      - N14 149.88.21.129
+      - N15 111.192.28.24
+      - N16 111.192.50.81
+      - N17 31.171.155.210
+      - N18 83.206.1.225
+      - N19 142.252.37.58
+      - N20 159.195.110.240
+      - N21 103.158.210.80
+      - N22 176.111.37.5
+      - N23 45.138.100.248
+      - N24 172.111.38.246
+      - N25 66.163.122.113
+      - N26 198.100.154.175
+      - N27 142.44.210.129
+      - N28 185.230.230.18
+      - N29 45.86.51.18
+      - N30 172.111.38.72
+      - N31 138.199.35.195
+      - N32 66.253.2.69
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
     interval: 600
     proxies:
-      - N01 39.108.113.127
-      - N02 zfapi.zalolink.com
-      - N03 202.50.253.81
-      - N04 hk3.wawojk.dpdns.org
-      - N05 111.192.52.56
-      - N06 123.119.195.145
-      - N07 176.111.37.216
-      - N08 123.121.73.146
-      - N09 202.50.253.27
-      - N10 69.55.49.177
-      - N11 edge.bookmai.com
-      - N12 123.121.122.125
-      - N13 114.244.223.68
-      - N14 91.107.179.68
-      - N15 c8f40e6a-tjrog0-tobupp-1rvjz.sg2.oshuawei.com
-      - N16 guanwang.awsno.com
-      - N17 121.169.46.116
-      - N18 sclass-b1.catcat321.com
-      - N19 34.249.214.108
-      - N20 fan.365747.xyz
-      - N21 fan.226278.xyz
-      - N22 fan.596189.xyz
-      - N23 172.64.69.89
-      - N24 fan.973511.xyz
-      - N25 sclass-b1.catcat321.com
-      - N26 fan.587475.xyz
-      - N27 191.44.112.170
-      - N28 twmoon1-cdn-route.couldflare-cdn.com
-      - N29 149.88.21.129
-      - N30 fan.240104.xyz
-      - N31 154.26.192.123
-      - N32 fan.571589.xyz
-      - N33 111.192.28.24
-      - N34 111.192.50.81
-      - N35 31.171.155.210
-      - N36 83.206.1.225
-      - N37 142.252.37.58
-      - N38 159.195.110.240
-      - N39 jp.sofast.live
-      - N40 103.158.210.80
-      - N41 176.111.37.5
-      - N42 198.100.154.175
-      - N43 142.44.210.129
-      - N44 138.199.35.195
-      - N45 129.153.93.183
-      - N46 138.199.35.217
-      - N47 66.253.2.69
-      - N48 15.204.246.111
-      - N49 216.132.114.194
-      - N50 clash.ddm4.cn
-      - N51 66.163.122.30
+      - N01 zfapi.zalolink.com
+      - N02 202.50.253.81
+      - N03 111.192.52.56
+      - N04 123.119.195.145
+      - N05 176.111.37.216
+      - N06 123.121.73.146
+      - N07 123.121.122.125
+      - N08 114.244.223.68
+      - N09 c8f40e6a-tjrog0-tobupp-1rvjz.sg2.oshuawei.com
+      - N10 34.249.214.108
+      - N11 172.64.69.89
+      - N12 sclass-b1.catcat321.com
+      - N13 twmoon1-cdn-route.couldflare-cdn.com
+      - N14 149.88.21.129
+      - N15 111.192.28.24
+      - N16 111.192.50.81
+      - N17 31.171.155.210
+      - N18 83.206.1.225
+      - N19 142.252.37.58
+      - N20 159.195.110.240
+      - N21 103.158.210.80
+      - N22 176.111.37.5
+      - N23 45.138.100.248
+      - N24 172.111.38.246
+      - N25 66.163.122.113
+      - N26 198.100.154.175
+      - N27 142.44.210.129
+      - N28 185.230.230.18
+      - N29 45.86.51.18
+      - N30 172.111.38.72
+      - N31 138.199.35.195
+      - N32 66.253.2.69
 rules:
   - "MATCH,节点选择"
