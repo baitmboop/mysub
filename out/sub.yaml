@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-18 17:00:54 (北京时间)
+# nodepool  生成于 2026-11-18 22:53:08 (北京时间)
 # 节点数 52  (自建 0 / 免费额度 0 / 免费池 52)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -329,14 +329,21 @@ proxies:
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N45 15.235.57.6
+  - name: N45 15.204.246.111
     type: ss
-    server: 15.235.57.6
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: kxhnt5jtykd328cg
+    server: 15.204.246.111
+    port: 5498
+    cipher: aes-256-gcm
+    password: lGqs95QkFHo2NV
     udp: true
-  - name: N46 clash.ddm4.cn
+  - name: N46 216.132.114.194
+    type: socks5
+    server: 216.132.114.194
+    port: 62000
+    udp: false
+    username: utdr8wvs
+    password: 7i1dheg6
+  - name: N47 clash.ddm4.cn
     type: vmess
     server: clash.ddm4.cn
     port: 443
@@ -352,21 +359,7 @@ proxies:
       headers:
         Host: clash.ddm4.cn
     network: ws
-  - name: N47 202.50.253.99
-    type: ss
-    server: 202.50.253.99
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N48 202.50.253.90
-    type: ss
-    server: 202.50.253.90
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N49 66.163.122.30
+  - name: N48 66.163.122.30
     type: trojan
     server: 66.163.122.30
     port: 443
@@ -374,27 +367,35 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: resources.searchnationwidecareerchangehelperandguidancetoday.com
-  - name: N50 202.50.253.18
-    type: ss
-    server: 202.50.253.18
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: N49 216.152.155.50
+    type: trojan
+    server: 216.152.155.50
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
     udp: true
-  - name: N51 202.50.253.72
-    type: ss
-    server: 202.50.253.72
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N52 202.50.253.63
-    type: ss
-    server: 202.50.253.63
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
+    skipCertVerify: true
+    sni: cdn.nextjobopportunityandclaimyouridealrole.com
+  - name: N50 138.199.35.195
+    type: http
+    server: 138.199.35.195
+    port: 9002
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N51 138.199.35.201
+    type: http
+    server: 138.199.35.201
+    port: 9002
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N52 138.199.35.206
+    type: http
+    server: 138.199.35.206
+    port: 9002
+    udp: false
+    tls: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 节点选择
     type: select
@@ -445,14 +446,14 @@ proxy-groups:
       - N42 176.111.37.5
       - N43 198.100.154.175
       - N44 142.44.210.129
-      - N45 15.235.57.6
-      - N46 clash.ddm4.cn
-      - N47 202.50.253.99
-      - N48 202.50.253.90
-      - N49 66.163.122.30
-      - N50 202.50.253.18
-      - N51 202.50.253.72
-      - N52 202.50.253.63
+      - N45 15.204.246.111
+      - N46 216.132.114.194
+      - N47 clash.ddm4.cn
+      - N48 66.163.122.30
+      - N49 216.152.155.50
+      - N50 138.199.35.195
+      - N51 138.199.35.201
+      - N52 138.199.35.206
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -503,14 +504,14 @@ proxy-groups:
       - N42 176.111.37.5
       - N43 198.100.154.175
       - N44 142.44.210.129
-      - N45 15.235.57.6
-      - N46 clash.ddm4.cn
-      - N47 202.50.253.99
-      - N48 202.50.253.90
-      - N49 66.163.122.30
-      - N50 202.50.253.18
-      - N51 202.50.253.72
-      - N52 202.50.253.63
+      - N45 15.204.246.111
+      - N46 216.132.114.194
+      - N47 clash.ddm4.cn
+      - N48 66.163.122.30
+      - N49 216.152.155.50
+      - N50 138.199.35.195
+      - N51 138.199.35.201
+      - N52 138.199.35.206
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -560,13 +561,13 @@ proxy-groups:
       - N42 176.111.37.5
       - N43 198.100.154.175
       - N44 142.44.210.129
-      - N45 15.235.57.6
-      - N46 clash.ddm4.cn
-      - N47 202.50.253.99
-      - N48 202.50.253.90
-      - N49 66.163.122.30
-      - N50 202.50.253.18
-      - N51 202.50.253.72
-      - N52 202.50.253.63
+      - N45 15.204.246.111
+      - N46 216.132.114.194
+      - N47 clash.ddm4.cn
+      - N48 66.163.122.30
+      - N49 216.152.155.50
+      - N50 138.199.35.195
+      - N51 138.199.35.201
+      - N52 138.199.35.206
 rules:
   - "MATCH,节点选择"
