@@ -23822,7 +23822,8 @@
    "mahdibland",
    "xinshoucun",
    "clashnode",
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -28087,7 +28088,8 @@
    "clashnode",
    "tg:@freeVPNjd→sub",
    "tg:@byxiaoxi→blog",
-   "Pawdroid/Free-servers"
+   "Pawdroid/Free-servers",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -28107,7 +28109,8 @@
    "xinshoucun",
    "clashnode",
    "tg:@freeVPNjd→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -28129,7 +28132,8 @@
    "clashnode",
    "tg:@freeVPNjd→sub",
    "tg:@byxiaoxi→blog",
-   "Pawdroid/Free-servers"
+   "Pawdroid/Free-servers",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -28150,7 +28154,8 @@
    "oneclash",
    "clashnode",
    "tg:@freeVPNjd→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -28172,7 +28177,8 @@
    "oneclash",
    "clashnode",
    "tg:@freeVPNjd→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -28217,7 +28223,8 @@
    "clashnode",
    "tg:@freeVPNjd→sub",
    "tg:@byxiaoxi→blog",
-   "Pawdroid/Free-servers"
+   "Pawdroid/Free-servers",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -28239,7 +28246,8 @@
    "oneclash",
    "clashnode",
    "tg:@freeVPNjd→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -28262,7 +28270,8 @@
    "clashnode",
    "tg:@freeVPNjd→sub",
    "tg:@byxiaoxi→blog",
-   "Pawdroid/Free-servers"
+   "Pawdroid/Free-servers",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -33021,6 +33030,19 @@
   "fp": "75455fddb7c4d708",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "4.168.233.69",
+  "port": 443,
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "cdrSQWa9CwUAVdt3",
+  "name": "canfingV2rayNG-23",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "55de8cf5164f86a9",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -60120,7 +60142,8 @@
    "ermaozi",
    "mahdibland",
    "clashnode",
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -62035,7 +62058,8 @@
   "source": "NoMoreWalls",
   "fp": "abe865f1628c4eb3",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -62058,6 +62082,25 @@
   "fp": "e54dad3b61b820a9",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "103.107.53.42",
+  "port": 443,
+  "name": "@ffqidfx 🇹🇭泰国 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "6381f7f37f3e2973",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -62123,6 +62166,25 @@
  },
  {
   "proto": "vless",
+  "server": "103.179.44.78",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 09",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "9a6fb147797ec63c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "103.184.44.62",
   "port": 2053,
   "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
@@ -62141,6 +62203,44 @@
   "fp": "0adec1061b6417e6",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "103.193.172.196",
+  "port": 443,
+  "name": "@ffqidfx 🇭🇰香港 05",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "eb904c380a277d35",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "103.199.18.84",
+  "port": 443,
+  "name": "@ffqidfx 🇻🇳越南 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "dc15d8b32afdc274",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -62407,6 +62507,25 @@
  },
  {
   "proto": "vless",
+  "server": "104.168.144.213",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇸美国 08",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "8871e6613842f214",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.168.76.175",
   "port": 443,
   "uuid": "205d6869-02ca-3b36-b933-be2465250c7e",
@@ -62514,6 +62633,25 @@
  },
  {
   "proto": "vless",
+  "server": "104.17.125.98",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇦加拿大 14",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "00156866fe4b0021",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.17.144.29",
   "port": 8880,
   "name": "🇰🇷KR韩國丨yoyapai.com",
@@ -62529,6 +62667,25 @@
   "fp": "01ecb9471c246ddb",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.17.145.43",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇦加拿大 18",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "cb5656358d5b0324",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -62569,6 +62726,25 @@
  },
  {
   "proto": "vless",
+  "server": "104.17.187.57",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇦加拿大 16",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "a08fcceff8bed498",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.17.202.10",
   "port": 443,
   "name": "加拿大 - 多伦多 - Cloudflare, Inc. - 7",
@@ -62584,6 +62760,25 @@
   "fp": "695dd18f83320a74",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.17.22.231",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇦加拿大 13",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "e8ed097a92d2d6b2",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -62726,7 +62921,8 @@
   "sources": [
    "ermaozi",
    "clashnode",
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -63002,7 +63198,8 @@
   "source": "NoMoreWalls",
   "fp": "71c80ba34a8929ae",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -63116,7 +63313,8 @@
   "host": "jp3.yohototo.top",
   "fp": "c0324873a807ac93",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -63219,6 +63417,25 @@
  },
  {
   "proto": "vless",
+  "server": "104.19.149.171",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇦加拿大 17",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "fe6680d42e3b93ac",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.19.173.68",
   "port": 8080,
   "uuid": "2500e602-671c-4654-a602-c518b7282167",
@@ -63257,6 +63474,25 @@
   "fp": "d83b1e84f5999f33",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.19.34.37",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇦加拿大 15",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "64c7724cb3285a9b",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -63313,7 +63549,8 @@
   "host": "joeypg.ezbiz.dynv6.net",
   "fp": "9e46aa1fb716b4aa",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -63554,6 +63791,25 @@
  },
  {
   "proto": "vless",
+  "server": "104.238.129.180",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇸美国 07",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "6ecf685c2a5d7580",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.238.160.118",
   "port": 443,
   "uuid": "396266a6-5617-4f57-9f01-a168756ee553",
@@ -63615,6 +63871,25 @@
  },
  {
   "proto": "vless",
+  "server": "104.248.107.186",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇦加拿大 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "ddb3a991dc337590",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.253.74.39",
   "port": 8080,
   "uuid": "deb79775-35dc-4376-adf0-5b4fd26c691c",
@@ -63633,6 +63908,25 @@
   "fp": "093140a0660d7b3a",
   "sources": [
    "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.253.79.5",
+  "port": 443,
+  "name": "@ffqidfx 🇫🇷法国 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "ef44b1b2dfabb881",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -63700,6 +63994,25 @@
  },
  {
   "proto": "vless",
+  "server": "104.26.14.111",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇦加拿大 10",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "d4bc28e981606ff3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.26.6.109",
   "port": 2053,
   "name": "🇫🇷FR_84|2.2MB/s|C002-260622 [8cdc41863194]",
@@ -63758,6 +64071,25 @@
  },
  {
   "proto": "vless",
+  "server": "107.191.58.226",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇸美国 06",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "2ecc2c48b46c5723",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "107.191.58.86",
   "port": 443,
   "uuid": "4444e77e-3d2a-4dc9-bf31-936f038f5570",
@@ -63793,6 +64125,25 @@
   "fp": "6b268c91386bb8ea",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "108.160.136.71",
+  "port": 443,
+  "name": "@ffqidfx 🇯🇵日本 18",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "61f9c48784c1e033",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -63922,6 +64273,44 @@
  },
  {
   "proto": "vless",
+  "server": "109.120.176.4",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 31",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "abf55012a8aae776",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "109.122.196.98",
+  "port": 8443,
+  "name": "@ffqidfx 🇩🇪德国 26",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "33ce6cda1f60c915",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "109.172.54.235",
   "port": 443,
   "uuid": "3ede439b-410f-4eae-b449-4e15064c0706",
@@ -63940,6 +64329,25 @@
   "fp": "6b0b41997f9b2b2d",
   "sources": [
    "ermaozi"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "109.238.95.229",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇿捷克 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "c8984a1b25c28ea4",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -63969,6 +64377,25 @@
  },
  {
   "proto": "vless",
+  "server": "109.248.18.145",
+  "port": 443,
+  "name": "@ffqidfx 🇰🇿哈萨克斯坦 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "085e2523575ba445",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "109.248.18.169",
   "port": 443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -63986,7 +64413,8 @@
   "source": "NoMoreWalls",
   "fp": "d483ffd7e26bcd38",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -64098,6 +64526,25 @@
  },
  {
   "proto": "vless",
+  "server": "117.55.232.150",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇸美国 05",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "c420c940a48578ea",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "117.55.235.56",
   "port": 443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -64115,7 +64562,8 @@
   "source": "NoMoreWalls",
   "fp": "4673c0c0fd974917",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -64154,6 +64602,82 @@
   "fp": "04e3102042ee65c7",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "123.111.169.70",
+  "port": 443,
+  "name": "@ffqidfx 🇰🇷韩国 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "ec80126f6cd2a648",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "128.1.186.114",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 25",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "79b20612d7dc1bcb",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "128.1.186.180",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 32",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "123f55040c4d3545",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "128.1.186.181",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 31",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "2199640af475a361",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -64457,7 +64981,8 @@
   "source": "NoMoreWalls",
   "fp": "9262b6f74f2ad535",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -64530,6 +65055,25 @@
  },
  {
   "proto": "vless",
+  "server": "130.162.164.201",
+  "port": 2053,
+  "name": "@ffqidfx 🇬🇧英国 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "e3162b04193d38ca",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "130.78.30.147",
   "port": 443,
   "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
@@ -64596,6 +65140,25 @@
    "NoMoreWalls",
    "ermaozi",
    "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "130.94.29.155",
+  "port": 443,
+  "name": "@ffqidfx 🇰🇷韩国 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "94648729473e8c32",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -64690,6 +65253,25 @@
  },
  {
   "proto": "vless",
+  "server": "132.243.28.205",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇸美国 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "0b5f1424706d7c39",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "134.185.81.5",
   "port": 47881,
   "uuid": "59b203b2-b1bc-4e9c-a9e5-ccb8f691bf72",
@@ -64708,6 +65290,25 @@
   "fp": "2a1c8e22e73c8480",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "134.209.229.7",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 04",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "e562a772f91e6e1e",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -64831,6 +65432,25 @@
   "fp": "c4a8d632af8a0cd6",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "136.0.254.132",
+  "port": 443,
+  "name": "@ffqidfx 🇲🇾马来西亚 05",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "b0623690af598d4f",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -65040,7 +65660,27 @@
   "source": "NoMoreWalls",
   "fp": "809f6dd9f2db75eb",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "138.2.66.236",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 27",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "408064648fa08e2f",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -65095,6 +65735,25 @@
  },
  {
   "proto": "vless",
+  "server": "139.162.46.201",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 29",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "00bdf415692972a3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "139.162.91.239",
   "port": 443,
   "uuid": "b0dc852a-97ec-4d4e-9179-f0e5c2ef1489",
@@ -65116,6 +65775,63 @@
    "ermaozi",
    "ripaojiedian",
    "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "139.180.154.75",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 06",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "c1c597af9e9eaeb0",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "139.180.159.58",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 08",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "24d1de580fbf0887",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "139.180.187.152",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 07",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "5e1852bb455a7ae1",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -65142,6 +65858,25 @@
  },
  {
   "proto": "vless",
+  "server": "139.59.114.19",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 26",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "bea94dfcad0cca88",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "139.84.155.186",
   "port": 443,
   "uuid": "205d6869-02ca-3b36-b933-be2465250c7e",
@@ -65164,6 +65899,25 @@
  },
  {
   "proto": "vless",
+  "server": "139.99.155.180",
+  "port": 443,
+  "name": "@ffqidfx 🇦🇺澳大利亚 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "e1e6c39a76f3494f",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "14.52.249.135",
   "port": 10082,
   "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
@@ -65182,6 +65936,25 @@
   "fp": "2dadd7a9dd4bdd56",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "140.235.39.19",
+  "port": 443,
+  "name": "@ffqidfx 🇹🇼台湾 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "8de51960c5912605",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -65296,6 +66069,25 @@
  },
  {
   "proto": "vless",
+  "server": "141.11.149.89",
+  "port": 2053,
+  "name": "@ffqidfx 🇭🇰香港 04",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "9812206dcdce49cd",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "141.164.44.60",
   "port": 443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -65313,7 +66105,8 @@
   "source": "NoMoreWalls",
   "fp": "1ae8faae47e2d1d5",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -65389,6 +66182,25 @@
  },
  {
   "proto": "vless",
+  "server": "141.98.233.6",
+  "port": 443,
+  "name": "@ffqidfx 🇧🇪比利时",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "8f7f93c5c58365bc",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "141.98.41.104",
   "port": 443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -65406,7 +66218,8 @@
   "source": "NoMoreWalls",
   "fp": "8fd3249e6abc71b1",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -65429,6 +66242,25 @@
   "fp": "9db99fdc6a68c24e",
   "sources": [
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "142.248.83.184",
+  "port": 8443,
+  "name": "@ffqidfx 🇺🇸美国 11",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "effa4112e60831f6",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -65544,6 +66376,25 @@
  },
  {
   "proto": "vless",
+  "server": "144.172.115.141",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇸美国 18",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "e216062b17c6556b",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "144.31.228.110",
   "port": 8443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -65561,7 +66412,8 @@
   "source": "NoMoreWalls",
   "fp": "01bd9fc8992872a6",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -65632,6 +66484,25 @@
   "fp": "22e75d97424a1bf0",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "146.56.151.92",
+  "port": 443,
+  "name": "@ffqidfx 🇰🇷韩国 05",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "e0958ea7c559a993",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -65719,6 +66590,25 @@
   "fp": "343f55a44cc301d2",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "147.139.189.225",
+  "port": 443,
+  "name": "@ffqidfx 🇮🇩印度尼西亚 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "9a603094095da0ae",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -66018,6 +66908,25 @@
  },
  {
   "proto": "vless",
+  "server": "149.28.110.235",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇸美国 09",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "5bb10a37b1a4ade0",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "149.28.152.20",
   "port": 443,
   "uuid": "e17ca473-bd02-4fe6-873f-5866d729b0a3",
@@ -66036,6 +66945,44 @@
   "fp": "5cd2d4a46fbe1590",
   "sources": [
    "ermaozi"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "149.28.159.87",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 20",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "7900111710fcf412",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "149.33.16.9",
+  "port": 443,
+  "name": "@ffqidfx 🇧🇬保加利亚 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "d1fd7a4280d6e156",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -66422,6 +67369,44 @@
  },
  {
   "proto": "vless",
+  "server": "151.244.201.180",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 12",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "bd7b8296ccdd68bd",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "151.244.201.206",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 08",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "88df045f52f9329b",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "151.245.106.49",
   "port": 2053,
   "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
@@ -66507,7 +67492,8 @@
   "source": "NoMoreWalls",
   "fp": "3103eec530510831",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -66685,6 +67671,25 @@
   "fp": "7a2e79ed20b136f7",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "154.16.183.190",
+  "port": 443,
+  "name": "@ffqidfx 🇭🇰香港 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "d13403356bc1a47e",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -66904,6 +67909,25 @@
  },
  {
   "proto": "vless",
+  "server": "156.231.112.160",
+  "port": 443,
+  "name": "@ffqidfx 🇯🇵日本 10",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "580cde501602c6e5",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "156.252.229.203",
   "port": 8443,
   "uuid": "585a421d-d782-4420-912e-dd58ff5966d7",
@@ -66943,6 +67967,44 @@
   "sources": [
    "clashnode",
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "157.228.130.240",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 33",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "fe4009443bc36f51",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "157.230.110.242",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 28",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "549073139854eff6",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -66991,6 +68053,25 @@
  },
  {
   "proto": "vless",
+  "server": "158.69.199.251",
+  "port": 8443,
+  "name": "@ffqidfx 🇨🇦加拿大 05",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "6d7e01c60d75f197",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "159.112.235.14",
   "port": 8443,
   "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
@@ -67009,6 +68090,25 @@
   "fp": "01daf66fc514c89b",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "159.195.14.1",
+  "port": 2083,
+  "name": "@ffqidfx 🇺🇸美国 12",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "053e7c296e3a72fd",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67129,6 +68229,82 @@
  },
  {
   "proto": "vless",
+  "server": "160.187.1.101",
+  "port": 443,
+  "name": "@ffqidfx 🇻🇳越南 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "ap-south.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "ap-south.862400.xyz",
+  "fp": "135779b3d5ba23a6",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "160.251.204.134",
+  "port": 443,
+  "name": "@ffqidfx 🇯🇵日本 06",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "3d970c4c1b3ab28d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "160.30.50.48",
+  "port": 443,
+  "name": "@ffqidfx 🇻🇳越南 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "0c71ed9fafff360f",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "161.118.211.215",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 10",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "81a1936a7be9b0fb",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "161.118.219.55",
   "port": 443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -67146,7 +68322,27 @@
   "source": "NoMoreWalls",
   "fp": "425f486169b14a37",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "161.33.90.181",
+  "port": 443,
+  "name": "@ffqidfx 🇦🇺澳大利亚 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "d448c61d654f3660",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67169,6 +68365,25 @@
   "fp": "ecd4fff0115ca9e9",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "161.97.90.78",
+  "port": 8443,
+  "name": "@ffqidfx 🇫🇷法国 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "e8a3f54bf7267c4b",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67264,6 +68479,25 @@
   "fp": "eb398d464d4df94a",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "162.159.198.1",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇦加拿大 06",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "0b8912fdc6494ddb",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67490,6 +68724,25 @@
  },
  {
   "proto": "vless",
+  "server": "163.44.97.217",
+  "port": 443,
+  "name": "@ffqidfx 🇯🇵日本 14",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "5594cfaa09a5faa3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "163.61.182.194",
   "port": 34646,
   "uuid": "5407a1c6-fbbf-417a-864d-48563da8e454",
@@ -67508,6 +68761,63 @@
   "fp": "616ad45ad64d141f",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "164.90.166.120",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 07",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "ap-south.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "ap-south.862400.xyz",
+  "fp": "dbc009a129ee981d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "164.90.191.58",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 15",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "b3a11fa7739883de",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "165.22.106.244",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 15",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "fa87a9247ddb95bf",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67573,6 +68883,63 @@
  },
  {
   "proto": "vless",
+  "server": "167.172.75.2",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 13",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "8af6bfd8929cee9e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "167.179.77.74",
+  "port": 443,
+  "name": "@ffqidfx 🇯🇵日本 12",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "0b36d62958e8655d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "167.179.90.164",
+  "port": 443,
+  "name": "@ffqidfx 🇯🇵日本 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "b0a4204755946ed0",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "167.233.107.96",
   "port": 41590,
   "uuid": "935291c3-4317-4b2f-94aa-00468499735c",
@@ -67617,6 +68984,25 @@
  },
  {
   "proto": "vless",
+  "server": "167.235.69.166",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "d96a98195196c014",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "167.82.101.251",
   "port": 443,
   "name": "🇺🇸 US美國丨yoyapai.com (2)",
@@ -67649,6 +69035,25 @@
   "fp": "518dd4a60d63b94e",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "167.86.97.248",
+  "port": 8443,
+  "name": "@ffqidfx 🇫🇷法国 05",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "b3009bc10f36a0f9",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67766,6 +69171,25 @@
  },
  {
   "proto": "vless",
+  "server": "168.144.109.68",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 30",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "6a4fc945246d266f",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "168.144.132.93",
   "port": 443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -67783,7 +69207,27 @@
   "source": "NoMoreWalls",
   "fp": "91bfddbb5a25c770",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "168.222.13.72",
+  "port": 443,
+  "name": "@ffqidfx 🇬🇧英国 04",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "74967e9e947ee24b",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68166,7 +69610,8 @@
   "source": "NoMoreWalls",
   "fp": "1244546003de4e33",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68239,6 +69684,25 @@
    "ermaozi",
    "tg:@freeVPNjd→sub",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "172.233.116.56",
+  "port": 2053,
+  "name": "@ffqidfx 🇪🇸西班牙 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "090e9f0219372842",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68533,6 +69997,25 @@
  },
  {
   "proto": "vless",
+  "server": "172.236.140.241",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 12",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "5d105e064e23aa04",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "172.236.227.60",
   "port": 443,
   "uuid": "3c8a110d-f04d-4f0e-9579-fd00631b8830",
@@ -68602,6 +70085,25 @@
  },
  {
   "proto": "vless",
+  "server": "172.239.28.107",
+  "port": 2053,
+  "name": "@ffqidfx 🇫🇷法国 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "caf2fe7127643c80",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "172.239.67.142",
   "port": 443,
   "uuid": "b0d814b5-7232-4fe9-9ce9-e552c9abbae8",
@@ -68620,6 +70122,25 @@
   "fp": "fc2a9753fe927f66",
   "sources": [
    "ermaozi"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "172.255.210.136",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 23",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "aae14602dcaa087a",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68657,7 +70178,8 @@
   "host": "top-e4s.pages.dev",
   "fp": "eeba8f29c11dadaa",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68676,7 +70198,8 @@
   "host": "jp3.yohototo.top",
   "fp": "aa96c400a0ff9281",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68779,6 +70302,44 @@
   "sources": [
    "tg:@byxiaoxi→blog",
    "anaer/Sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "172.66.0.118",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇦加拿大 09",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "f803529a53e76a74",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "172.66.0.172",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇦加拿大 08",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "35f582eb191dfba8",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68960,7 +70521,103 @@
   "source": "NoMoreWalls",
   "fp": "d2d81b95e73e78d2",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "172.67.74.177",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇦加拿大 11",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "bb2fae80f47d355d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "172.86.77.145",
+  "port": 443,
+  "name": "@ffqidfx 🇦🇪阿联酋 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "e737bb66870bdeff",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "172.93.188.144",
+  "port": 443,
+  "name": "@ffqidfx 🇭🇰香港 09",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "09d3297f580c20ec",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "173.242.63.235",
+  "port": 8443,
+  "name": "@ffqidfx 🇺🇦乌克兰 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "cdc038cf4171b492",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "174.138.27.228",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 22",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "a568ce89764c7764",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -69045,6 +70702,28 @@
   "fp": "d1a63a91d7fc7af4",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "178.104.151.84",
+  "port": 19455,
+  "uuid": "2bea88e4-5108-418a-b984-a657ce14d9e2",
+  "tls": true,
+  "sni": "technolife.com",
+  "network": "xhttp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "aXD5D9IqVSV6-fJoeaSd2Ih_YpsUglMFmxeYAvzComE",
+  "sid": "f290bef421011549",
+  "utls": "safari",
+  "reality": true,
+  "name": "filembad-125",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "81bbcfc0416d7924",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -69244,7 +70923,8 @@
   "source": "NoMoreWalls",
   "fp": "842a3acec537000a",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -69286,6 +70966,25 @@
   "fp": "1d389cd0a7d34c9a",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "179.253.255.92",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇸美国 20",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "f411432d69a670e7",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -69563,6 +71262,63 @@
  },
  {
   "proto": "vless",
+  "server": "181.36.229.212",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇴多米尼加",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "483cefc1ce0d7443",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.103.252.76",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 23",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "b571dac0c76407e4",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.104.181.228",
+  "port": 443,
+  "name": "@ffqidfx 🇷🇴罗马尼亚 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "e22be3225aedc469",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "185.122.167.103",
   "port": 59130,
   "name": "GB英国(mibei77.com 米贝节点分享) (3)",
@@ -69600,7 +71356,8 @@
   "source": "NoMoreWalls",
   "fp": "6e7b3a337596a5be",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -69625,6 +71382,44 @@
  },
  {
   "proto": "vless",
+  "server": "185.141.219.232",
+  "port": 443,
+  "name": "@ffqidfx 🇯🇵日本 16",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "102c7e2653fa8f46",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.146.234.242",
+  "port": 443,
+  "name": "@ffqidfx 🇮🇸冰岛",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "5016e3bd838bbfed",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "185.148.106.44",
   "port": 2083,
   "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
@@ -69643,6 +71438,25 @@
   "fp": "e4b26163741e93c1",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.158.248.185",
+  "port": 2087,
+  "name": "@ffqidfx 🇷🇴罗马尼亚 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "e3c2448942611aa0",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -69754,6 +71568,25 @@
  },
  {
   "proto": "vless",
+  "server": "185.203.116.174",
+  "port": 443,
+  "name": "@ffqidfx 🇧🇬保加利亚 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "bb48687f67d67e9c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "185.231.101.94",
   "port": 443,
   "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
@@ -69772,6 +71605,63 @@
   "fp": "170753d52e1f6c74",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.232.205.100",
+  "port": 2053,
+  "name": "@ffqidfx 🇪🇸西班牙 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "cd8cdf21fd1a52c8",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.241.7.178",
+  "port": 443,
+  "name": "@ffqidfx 🇮🇱以色列",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "d3180edfd44580e5",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.245.35.64",
+  "port": 8443,
+  "name": "@ffqidfx 🇩🇪德国 22",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "1cc5204a1014575e",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -69819,6 +71709,44 @@
   "fp": "167e499ad62a3f00",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.249.152.176",
+  "port": 8443,
+  "name": "@ffqidfx 🇩🇪德国 20",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "633077e80d98f97d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.253.44.97",
+  "port": 443,
+  "name": "@ffqidfx 🇵🇱波兰 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "784651f5cf4d6487",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -69886,6 +71814,25 @@
   "fp": "3de1393e1824e518",
   "sources": [
    "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.36.142.55",
+  "port": 443,
+  "name": "@ffqidfx 🇪🇪爱沙尼亚 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "f6a95a6772143ed3",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -69967,6 +71914,25 @@
  },
  {
   "proto": "vless",
+  "server": "185.71.230.237",
+  "port": 443,
+  "name": "@ffqidfx 🇳🇿新西兰",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "2f3af40f94e467f0",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "185.79.19.8",
   "port": 443,
   "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
@@ -69989,6 +71955,25 @@
  },
  {
   "proto": "vless",
+  "server": "185.81.28.7",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "132c65ff25589c83",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "185.95.231.156",
   "port": 443,
   "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
@@ -70007,6 +71992,25 @@
   "fp": "6f6ecd90e58d9279",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "187.52.114.103",
+  "port": 8443,
+  "name": "@ffqidfx 🇲🇾马来西亚 04",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "614970cf7d521a09",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -70391,6 +72395,25 @@
  },
  {
   "proto": "vless",
+  "server": "188.164.248.143",
+  "port": 443,
+  "name": "@ffqidfx 🇳🇱荷兰 08",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "19deb60771b64967",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "188.164.248.18",
   "port": 443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -70408,7 +72431,8 @@
   "source": "NoMoreWalls",
   "fp": "4764be3318cba072",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -70428,6 +72452,25 @@
   "fp": "5e476bedb11cae22",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "188.226.185.55",
+  "port": 443,
+  "name": "@ffqidfx 🇳🇱荷兰 05",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "47f55254d1f63335",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -70471,6 +72514,25 @@
  },
  {
   "proto": "vless",
+  "server": "188.253.6.249",
+  "port": 443,
+  "name": "@ffqidfx 🇹🇼台湾 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "d9389f63640bb2e5",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "188.42.145.90",
   "port": 8443,
   "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
@@ -70489,6 +72551,25 @@
   "fp": "143ceb0143aece4e",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "188.68.42.216",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 18",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "ap-south.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "ap-south.862400.xyz",
+  "fp": "73fe2fe1f2b9e072",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -70689,6 +72770,63 @@
  },
  {
   "proto": "vless",
+  "server": "191.222.247.79",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇸美国 23",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "dcc117fc3731bc33",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "192.124.176.70",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 11",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "ap-south.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "ap-south.862400.xyz",
+  "fp": "76eec156d5ec7c5c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "192.124.189.90",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 14",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "db88dab623a6564c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "192.177.26.55",
   "port": 443,
   "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
@@ -70729,6 +72867,25 @@
   "fp": "e2d56ad8e7ec32f3",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "193.108.55.90",
+  "port": 8443,
+  "name": "@ffqidfx 🇨🇭瑞士 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "21857ee70046b1a4",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -70777,6 +72934,25 @@
  },
  {
   "proto": "vless",
+  "server": "193.123.74.174",
+  "port": 8443,
+  "name": "@ffqidfx 🇦🇪阿联酋 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "b5c052c091741e80",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "193.124.58.5",
   "port": 443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -70794,7 +72970,8 @@
   "source": "NoMoreWalls",
   "fp": "2b42855bb0d8f2b8",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -70864,7 +73041,8 @@
   "source": "NoMoreWalls",
   "fp": "394273fefbda09f6",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -70886,7 +73064,8 @@
   "source": "NoMoreWalls",
   "fp": "86d05a8d45a3cfe0",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -70916,6 +73095,25 @@
  },
  {
   "proto": "vless",
+  "server": "193.180.211.155",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇰丹麦 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "48aabc75ec514a58",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "193.181.210.205",
   "port": 443,
   "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
@@ -70934,6 +73132,25 @@
   "fp": "76028849017758a7",
   "sources": [
    "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "193.181.219.73",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇰丹麦 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "df17400897fe0f6e",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -71042,6 +73259,25 @@
  },
  {
   "proto": "vless",
+  "server": "194.180.191.200",
+  "port": 443,
+  "name": "@ffqidfx 🇲🇩摩尔多瓦",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "4532d715f5d7fee3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "194.226.169.66",
   "port": 443,
   "uuid": "232fa5fc-f8af-4c96-a6cf-f69d3c60fa33",
@@ -71060,6 +73296,25 @@
   "fp": "3035281c95f95acf",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "194.233.67.84",
+  "port": 2053,
+  "name": "@ffqidfx 🇸🇬新加坡 05",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "d94b0340b9201f6a",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -71104,6 +73359,44 @@
   "fp": "be29d36878af3ed5",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "194.55.164.118",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇾塞浦路斯 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "0b23a943b6d1ef00",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "194.55.166.65",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇾塞浦路斯 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "d1130f368a382af2",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -71178,6 +73471,101 @@
    "ermaozi",
    "tg:@freeVPNjd→sub",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "194.87.106.222",
+  "port": 8443,
+  "name": "@ffqidfx 🇱🇹立陶宛 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "0ba6b1e2ea803e79",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "194.87.47.165",
+  "port": 443,
+  "name": "@ffqidfx 🇮🇹意大利 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "027c1b9469ebd1f3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "194.87.85.5",
+  "port": 8443,
+  "name": "@ffqidfx 🇷🇸塞尔维亚",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "d8cf2c00611ca5ea",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "194.88.150.221",
+  "port": 443,
+  "name": "@ffqidfx 🇵🇱波兰 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "a6df011647b3b479",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "195.123.210.109",
+  "port": 443,
+  "name": "@ffqidfx 🇱🇻拉脱维亚 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "de86aacff5db2357",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -71268,6 +73656,25 @@
    "NoMoreWalls",
    "ermaozi",
    "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "195.133.92.228",
+  "port": 443,
+  "name": "@ffqidfx 🇵🇹葡萄牙",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "f925a53978ddf7df",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -71519,7 +73926,8 @@
   "fp": "87a13668c4cbfa76",
   "sources": [
    "clashnode",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -71738,7 +74146,8 @@
   "sid": "2d2598d60447a967",
   "fp": "2881f4e7b1784803",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -71758,7 +74167,8 @@
   "sid": "ba2a3dce62b99092",
   "fp": "8b33d466bdb8b3da",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -71800,7 +74210,8 @@
   "source": "NoMoreWalls",
   "fp": "7030a1dfff2fae6c",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -72315,7 +74726,8 @@
   "fp": "4f10f42f4590aba8",
   "sources": [
    "clashnode",
-   "Pawdroid/Free-servers"
+   "Pawdroid/Free-servers",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -72333,6 +74745,25 @@
   "fp": "53bf5ddec6033444",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "2.27.109.35",
+  "port": 443,
+  "name": "@ffqidfx 🇭🇰香港 07",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "dff8bb8db6ff7252",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -72540,7 +74971,8 @@
   "source": "NoMoreWalls",
   "fp": "4646eb115c95a47b",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -72794,6 +75226,25 @@
  },
  {
   "proto": "vless",
+  "server": "202.182.125.218",
+  "port": 443,
+  "name": "@ffqidfx 🇯🇵日本 17",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "98d855b485413bcb",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "202.27.229.7",
   "port": 443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -72811,7 +75262,27 @@
   "source": "NoMoreWalls",
   "fp": "3f74f8d6e27a9ef9",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "202.5.16.16",
+  "port": 8443,
+  "name": "@ffqidfx 🇺🇸美国 19",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "c41067c5bcda6e98",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -72924,6 +75395,25 @@
  },
  {
   "proto": "vless",
+  "server": "205.186.76.197",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇸美国 13",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "3f71ba7e07d2ca79",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "205.186.76.237",
   "port": 443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -72941,7 +75431,8 @@
   "source": "NoMoreWalls",
   "fp": "5f68d34181c92465",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -73056,6 +75547,44 @@
  },
  {
   "proto": "vless",
+  "server": "207.148.73.18",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 18",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "149901a4d12eeaf8",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "207.246.91.106",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇸美国 16",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "bfa998c06a225c11",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "207.65.189.9",
   "port": 443,
   "name": "JP日本(mibei77.com 米贝节点分享) (2)",
@@ -73099,6 +75628,25 @@
  },
  {
   "proto": "vless",
+  "server": "209.131.70.51",
+  "port": 443,
+  "name": "@ffqidfx 🇪🇪爱沙尼亚 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "40aa74cf409eea66",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "209.200.246.148",
   "port": 443,
   "uuid": "ca52e2b6-fb9f-4dac-b6dc-49da9923f251",
@@ -73120,6 +75668,82 @@
    "ermaozi",
    "tg:@freeVPNjd→sub",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "209.50.227.182",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇸美国 10",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "58f1c5083d72fdc7",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "209.97.132.10",
+  "port": 443,
+  "name": "@ffqidfx 🇬🇧英国 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "57358c418b2078e7",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "209.97.134.147",
+  "port": 443,
+  "name": "@ffqidfx 🇬🇧英国 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "99ddd4121536b218",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "209.97.163.209",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 24",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "ed3f6027edcfbe28",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -73283,6 +75907,25 @@
  },
  {
   "proto": "vless",
+  "server": "212.64.199.223",
+  "port": 8443,
+  "name": "@ffqidfx 🇹🇷土耳其 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "aa8f70c7e2f484b6",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "212.69.86.159",
   "port": 8447,
   "uuid": "52030136-eee3-4675-baae-a50f17b2bb8b",
@@ -73305,6 +75948,25 @@
  },
  {
   "proto": "vless",
+  "server": "213.111.148.137",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇦乌克兰 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "706cf0c1b075dc20",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "213.155.119.28",
   "port": 443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -73322,7 +75984,27 @@
   "source": "NoMoreWalls",
   "fp": "3bcfe4f9f8cfe415",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "213.155.20.177",
+  "port": 443,
+  "name": "@ffqidfx 🇰🇿哈萨克斯坦 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "395feacf34f2c810",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -73343,6 +76025,44 @@
   "sources": [
    "clashnode",
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "213.21.246.188",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇪瑞典 04",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "dd52ced32a18329f",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "213.255.209.61",
+  "port": 8443,
+  "name": "@ffqidfx 🇨🇦加拿大 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "8668f0976397c2d1",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -73458,6 +76178,63 @@
  },
  {
   "proto": "vless",
+  "server": "216.173.67.119",
+  "port": 443,
+  "name": "@ffqidfx 🇲🇾马来西亚 07",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "0bc3a61649facc1c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "216.173.67.159",
+  "port": 443,
+  "name": "@ffqidfx 🇲🇾马来西亚 06",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "45a94934004c4ca4",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "216.173.67.59",
+  "port": 443,
+  "name": "@ffqidfx 🇲🇾马来西亚 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "b0e219dfee095f3b",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "216.205.52.109",
   "port": 2083,
   "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
@@ -73499,6 +76276,25 @@
  },
  {
   "proto": "vless",
+  "server": "217.15.167.34",
+  "port": 2053,
+  "name": "@ffqidfx 🇸🇬新加坡 17",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "065fd9035a56ffa0",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "217.217.227.132",
   "port": 443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -73516,7 +76312,8 @@
   "source": "NoMoreWalls",
   "fp": "b96c8d435732160b",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -73575,7 +76372,8 @@
   "sid": "8424ce89ccd55f65",
   "fp": "efa21005eccbfe98",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -73773,6 +76571,25 @@
  },
  {
   "proto": "vless",
+  "server": "24.150.16.183",
+  "port": 8443,
+  "name": "@ffqidfx 🇨🇦加拿大 04",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "100cb25cf38d8214",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "25.129.197.138",
   "port": 2053,
   "name": "美国 - 聖荷西 - Cloudflare, Inc. - 8",
@@ -73914,6 +76731,25 @@
   "fp": "dcaf9f116285a834",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "3.112.67.101",
+  "port": 443,
+  "name": "@ffqidfx 🇯🇵日本 11",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "7e142d2fb89e79eb",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -74203,6 +77039,25 @@
  },
  {
   "proto": "vless",
+  "server": "31.56.229.26",
+  "port": 8443,
+  "name": "@ffqidfx 🇺🇸美国 15",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "44c293b5ea63bec8",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "31.58.213.31",
   "port": 443,
   "uuid": "2232d904-8e6a-4202-8240-6efd8aec02e9",
@@ -74464,7 +77319,8 @@
   "source": "NoMoreWalls",
   "fp": "51d9dc76bf076846",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -74644,6 +77500,44 @@
  },
  {
   "proto": "vless",
+  "server": "37.128.204.210",
+  "port": 443,
+  "name": "@ffqidfx 🇱🇻拉脱维亚 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "05ae3ca0e32cef08",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "37.139.23.46",
+  "port": 443,
+  "name": "@ffqidfx 🇳🇱荷兰 06",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "2d0d40970ec50c93",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "37.18.14.177",
   "port": 443,
   "uuid": "7955bf18-35c4-412d-aabd-c0b36c793063",
@@ -74794,7 +77688,27 @@
   "source": "NoMoreWalls",
   "fp": "00f744f64961c0c5",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "37.252.9.236",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇪瑞典 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "06d14a19019b2a00",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -74817,6 +77731,25 @@
   "fp": "d21a0e8e74159eb3",
   "sources": [
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "38.180.10.97",
+  "port": 443,
+  "name": "@ffqidfx 🇪🇪爱沙尼亚 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "1cfd7f259a5d86ea",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -74903,6 +77836,25 @@
   "sources": [
    "ermaozi",
    "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "38.242.154.88",
+  "port": 443,
+  "name": "@ffqidfx 🇫🇷法国 04",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "41ef8aa206dc9a5b",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -75103,6 +78055,25 @@
  },
  {
   "proto": "vless",
+  "server": "43.156.92.214",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 14",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "78f98b6ff39f3e0c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "43.161.253.137",
   "port": 443,
   "name": "HK香港(mibei77.com 米贝节点分享)",
@@ -75158,7 +78129,8 @@
   "source": "NoMoreWalls",
   "fp": "f9d9e3767869b538",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -75178,6 +78150,63 @@
   "fp": "e28fad40fcbd3d9a",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "43.173.1.153",
+  "port": 8443,
+  "name": "@ffqidfx 🇮🇩印度尼西亚 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "7baff39b0e88c376",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "43.174.193.1",
+  "port": 443,
+  "name": "@ffqidfx 🇧🇷巴西 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "ap-south.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "ap-south.862400.xyz",
+  "fp": "308c97b855824678",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "43.174.195.1",
+  "port": 443,
+  "name": "@ffqidfx 🇧🇷巴西 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "fea6427e3f7a0832",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -75222,6 +78251,44 @@
   "fp": "9dd715ae53196116",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "43.229.254.182",
+  "port": 443,
+  "name": "@ffqidfx 🇮🇩印度尼西亚 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "ap-south.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "ap-south.862400.xyz",
+  "fp": "c139c9479fd6eed7",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "43.229.254.71",
+  "port": 443,
+  "name": "@ffqidfx 🇮🇩印度尼西亚 04",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "fd4fd8803f20d69c",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -75405,7 +78472,8 @@
   "source": "NoMoreWalls",
   "fp": "d4db2542c088bd48",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -75665,6 +78733,28 @@
  },
  {
   "proto": "vless",
+  "server": "45.192.12.92",
+  "port": 443,
+  "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
+  "tls": true,
+  "sni": "nltimes.nl",
+  "network": "tcp",
+  "path": "",
+  "host": "/?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI",
+  "flow": "xtls-rprx-vision",
+  "pbk": "aUOP5gJGQ1QFhdZuREZ8yosfPavFiJ6f_EySIBZ2WCE",
+  "sid": "",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-117",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "28a7f435232d443e",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "45.194.10.217",
   "port": 8443,
   "name": "🇱🇹LT立陶宛丨yoyapai.com",
@@ -75814,6 +78904,44 @@
  },
  {
   "proto": "vless",
+  "server": "45.55.99.117",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇸美国 14",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "0261d6885fc12638",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "45.59.123.132",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇭瑞士 04",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "9e4df7ffd80dca99",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "45.61.186.3",
   "port": 443,
   "uuid": "140d6fc9-2c6d-41bd-a487-182b52c0184f",
@@ -75834,6 +78962,25 @@
    "NoMoreWalls",
    "ermaozi",
    "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "45.63.124.130",
+  "port": 443,
+  "name": "@ffqidfx 🇯🇵日本 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "a9fb6b0c314bee8f",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -76085,6 +79232,28 @@
  },
  {
   "proto": "vless",
+  "server": "45.86.61.133",
+  "port": 443,
+  "uuid": "e2f3ddd0-10f1-421f-b684-4c943986da65",
+  "tls": true,
+  "sni": "deepl.com",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+  "flow": "xtls-rprx-vision",
+  "pbk": "GwjzHvbNB5Wn6Jj7E3WSc5pc32bjeJCvv9yf0ibDnRs",
+  "sid": "15affa0af66dfc79",
+  "utls": "qq",
+  "reality": true,
+  "name": "filembad-389",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "01756bc0a9860817",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "45.88.176.223",
   "port": 443,
   "name": "🇷🇺RU_11|1.4MB/s|B006-260618 [b80dd2fe1e3a]",
@@ -76173,6 +79342,25 @@
  },
  {
   "proto": "vless",
+  "server": "46.101.145.137",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 05",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "a08078814e0a06a2",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "46.202.82.82",
   "port": 443,
   "uuid": "31bd80dd-b2fc-4f07-a5cd-ad24d533a5d1",
@@ -76208,6 +79396,25 @@
   "fp": "3f15d68935337f6e",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "46.224.158.20",
+  "port": 8443,
+  "name": "@ffqidfx 🇩🇪德国 29",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "4678abf116f4c446",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -76439,6 +79646,25 @@
  },
  {
   "proto": "vless",
+  "server": "46.8.71.249",
+  "port": 443,
+  "name": "@ffqidfx 🇱🇻拉脱维亚 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "f20da4672d6fa387",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "47.128.164.52",
   "port": 9999,
   "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
@@ -76523,6 +79749,25 @@
   "fp": "99deddeac95f2dc4",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "47.250.212.59",
+  "port": 443,
+  "name": "@ffqidfx 🇲🇾马来西亚 08",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "ac01d77706dfb730",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -76730,6 +79975,25 @@
  },
  {
   "proto": "vless",
+  "server": "49.13.3.51",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 10",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "058a6145f310db33",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "5.10.214.0",
   "port": 2096,
   "name": "德国 - 法兰克福 - Florian Kolb - 1",
@@ -76805,7 +80069,8 @@
   "source": "NoMoreWalls",
   "fp": "af6185ad7c1258c7",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -76827,7 +80092,8 @@
   "source": "NoMoreWalls",
   "fp": "1ebe31f8729c074c",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -76849,7 +80115,8 @@
   "source": "NoMoreWalls",
   "fp": "02227057fc5f18fd",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -76941,6 +80208,25 @@
  },
  {
   "proto": "vless",
+  "server": "5.181.77.132",
+  "port": 443,
+  "name": "@ffqidfx 🇭🇺匈牙利",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "4a0dcb818c041f35",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "5.22.222.157",
   "port": 443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -76958,7 +80244,8 @@
   "source": "NoMoreWalls",
   "fp": "9aa8d92b1f9e6dad",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -77134,6 +80421,25 @@
  },
  {
   "proto": "vless",
+  "server": "5.61.45.203",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 27",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "f034682e2d650871",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "5.75.207.247",
   "port": 2886,
   "uuid": "a1d262a9-6d57-4ff0-99e4-594782c2ca7c",
@@ -77259,7 +80565,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "7b01c8d8450fc276",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -77836,6 +81143,47 @@
  },
  {
   "proto": "vless",
+  "server": "57.131.137.241",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 21",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "94fbbe931332d851",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "57.131.21.102",
+  "port": 8443,
+  "uuid": "69ac162b-1643-4acb-9f49-09d8b0fad609",
+  "tls": true,
+  "sni": "milan.adaspoloandco.com",
+  "network": "ws",
+  "path": "/RoBeRt",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-229",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "8fea16136426149f",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "59.4.80.188",
   "port": 30040,
   "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
@@ -78016,6 +81364,44 @@
  },
  {
   "proto": "vless",
+  "server": "62.60.238.191",
+  "port": 443,
+  "name": "@ffqidfx 🇦🇹奥地利 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "ap-south.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "ap-south.862400.xyz",
+  "fp": "afa74a28feffae3d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "62.77.155.16",
+  "port": 443,
+  "name": "@ffqidfx 🇱🇹立陶宛 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "77e8acc6e213f90a",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "62.83.76.104",
   "port": 443,
   "name": "DE-02 balmy-dingo",
@@ -78119,6 +81505,25 @@
  },
  {
   "proto": "vless",
+  "server": "64.110.82.71",
+  "port": 443,
+  "name": "@ffqidfx 🇰🇷韩国 04",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "331e89dab106faaf",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "64.176.62.54",
   "port": 443,
   "name": "JP日本丨yoyapai.com",
@@ -78135,6 +81540,82 @@
   "fp": "eae71fb743237741",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "64.176.9.246",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇱智利",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "f7b81f773d79f6ef",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "64.188.97.205",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 25",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "ef70370bd32f9b33",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "65.20.105.75",
+  "port": 443,
+  "name": "@ffqidfx 🇪🇸西班牙 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "0ebf848d676be10b",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "65.20.87.219",
+  "port": 443,
+  "name": "@ffqidfx 🇮🇳印度",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "48651a91f327983c",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -78277,6 +81758,44 @@
  },
  {
   "proto": "vless",
+  "server": "68.183.180.221",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "1d347e1859ef1a1b",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "68.183.186.117",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 28",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "ap-south.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "ap-south.862400.xyz",
+  "fp": "2d4bc746b24d58f6",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "68.221.177.135",
   "port": 2083,
   "uuid": "52a5a29f-c162-411a-8a37-a3f11b0dc537",
@@ -78343,6 +81862,44 @@
  },
  {
   "proto": "vless",
+  "server": "69.8.131.28",
+  "port": 443,
+  "name": "@ffqidfx 🇯🇵日本 07",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "it-mil.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "it-mil.862400.xyz",
+  "fp": "95c21f9c12529b21",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "69.8.133.24",
+  "port": 443,
+  "name": "@ffqidfx 🇸🇬新加坡 19",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "3be8c9d5468e11dd",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "69.84.182.108",
   "port": 443,
   "name": "美国 - Ashburn - Oracle Corporation - 6",
@@ -78377,6 +81934,44 @@
   "fp": "1101bf6291899ccd",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "70.34.244.224",
+  "port": 443,
+  "name": "@ffqidfx 🇵🇱波兰 04",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "a322066b301a008d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "72.56.106.210",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 11",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "c681a45e0b7592f7",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -78493,6 +82088,25 @@
  },
  {
   "proto": "vless",
+  "server": "76.13.218.192",
+  "port": 8443,
+  "name": "@ffqidfx 🇲🇾马来西亚 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "7009753c72e46595",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "76.164.202.163",
   "port": 443,
   "uuid": "0ed9418b-e687-4c2d-8869-7e368c44887e",
@@ -78533,6 +82147,25 @@
   "fp": "b9669bef2ffe0aa9",
   "sources": [
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "77.239.104.60",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "8443ce40e3871e5a",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -78582,6 +82215,44 @@
  },
  {
   "proto": "vless",
+  "server": "78.47.150.18",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 13",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "ap-south.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "ap-south.862400.xyz",
+  "fp": "bd7ade7cef5210ed",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "79.132.141.219",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇭瑞士 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "7cb67cdd5863f479",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "79.182.39.131",
   "port": 443,
   "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
@@ -78602,7 +82273,8 @@
    "NoMoreWalls",
    "ermaozi",
    "clashnode",
-   "tg:@freeVPNjd→sub"
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -78735,6 +82407,25 @@
  },
  {
   "proto": "vless",
+  "server": "80.249.146.46",
+  "port": 2087,
+  "name": "@ffqidfx 🇷🇺俄罗斯 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "b0a541bfc3e44fc3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "80.47.10.106",
   "port": 443,
   "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
@@ -78818,6 +82509,25 @@
   "fp": "157b659a623019c3",
   "sources": [
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "81.181.166.197",
+  "port": 443,
+  "name": "@ffqidfx 🇷🇴罗马尼亚 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "0a7412320f7b9ba5",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -78936,6 +82646,25 @@
  },
  {
   "proto": "vless",
+  "server": "82.152.167.236",
+  "port": 443,
+  "name": "@ffqidfx 🇭🇰香港 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "ap-south.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "ap-south.862400.xyz",
+  "fp": "46a056230f8f795d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "82.153.135.54",
   "port": 443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -78953,7 +82682,27 @@
   "source": "NoMoreWalls",
   "fp": "01df0a740ad2630b",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "82.22.31.122",
+  "port": 443,
+  "name": "@ffqidfx 🇭🇰香港 08",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "73a64cd2fd6cd45b",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -79048,6 +82797,25 @@
  },
  {
   "proto": "vless",
+  "server": "83.147.14.62",
+  "port": 8443,
+  "name": "@ffqidfx 🇹🇼台湾 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "df9693000e688f58",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "83.147.18.3",
   "port": 443,
   "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
@@ -79071,6 +82839,25 @@
  },
  {
   "proto": "vless",
+  "server": "83.147.60.79",
+  "port": 443,
+  "name": "@ffqidfx 🇭🇰香港 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "a2d33b1b22c7d0c6",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "83.228.199.3",
   "port": 443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -79088,7 +82875,8 @@
   "source": "NoMoreWalls",
   "fp": "addecd38331a7e69",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -79266,6 +83054,25 @@
  },
  {
   "proto": "vless",
+  "server": "85.136.112.166",
+  "port": 443,
+  "name": "@ffqidfx 🇳🇱荷兰 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "878b9569b4311794",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "85.155.183.228",
   "port": 443,
   "uuid": "1157d3c2-58a6-4b34-8d8e-9a66b0a97379",
@@ -79284,6 +83091,25 @@
   "fp": "e6c631eafbebbe98",
   "sources": [
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "85.206.161.198",
+  "port": 443,
+  "name": "@ffqidfx 🇱🇹立陶宛 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "9e12c12d68909905",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -79311,6 +83137,25 @@
  },
  {
   "proto": "vless",
+  "server": "85.90.197.114",
+  "port": 443,
+  "name": "@ffqidfx 🇬🇷希腊 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "3b86144b396509b7",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "85.90.197.157",
   "port": 443,
   "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
@@ -79328,7 +83173,8 @@
   "source": "NoMoreWalls",
   "fp": "fbadbae4612e32df",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -79485,6 +83331,25 @@
  },
  {
   "proto": "vless",
+  "server": "87.251.79.39",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇸美国 21",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "4299f718bfe05283",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "87.58.205.88",
   "port": 443,
   "uuid": "d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02",
@@ -79507,6 +83372,25 @@
  },
  {
   "proto": "vless",
+  "server": "87.76.160.237",
+  "port": 8443,
+  "name": "@ffqidfx 🇲🇾马来西亚 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "ec8d064e6081d423",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "88.198.149.218",
   "port": 443,
   "name": "DE-01 cuddly-eagle",
@@ -79523,6 +83407,28 @@
   "fp": "1d03c1f7134e47ff",
   "sources": [
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "88.216.211.36",
+  "port": 443,
+  "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
+  "tls": true,
+  "sni": "de8.galioncc.com",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+  "flow": "",
+  "pbk": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+  "sid": "c4e7a1902b8d6f35",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-299",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "d1dd4d461d179329",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -79686,6 +83592,25 @@
  },
  {
   "proto": "vless",
+  "server": "88.218.92.205",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇦乌克兰 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "0478b053294e9c24",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "89.105.195.149",
   "port": 443,
   "uuid": "1653818d-532e-46be-b825-384107fb7c3a",
@@ -79725,7 +83650,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "d07daf61ddf74a98",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -79769,7 +83695,8 @@
   "source": "NoMoreWalls",
   "fp": "a66db0318924f376",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -79907,6 +83834,44 @@
  },
  {
   "proto": "vless",
+  "server": "89.125.139.115",
+  "port": 443,
+  "name": "@ffqidfx 🇦🇱阿尔巴尼亚",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "52af5ba45d0c0ed2",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "89.127.192.104",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 06",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "b5b54971a8ec1e33",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "89.127.210.244",
   "port": 443,
   "name": "🇩🇪DE_15|310KB/s|K001-260618 [77b692d4ee9f]",
@@ -79944,6 +83909,25 @@
   "fp": "ac7c3ca83f40f1ac",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "89.167.109.28",
+  "port": 443,
+  "name": "@ffqidfx 🇫🇮芬兰",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "867b45cfb416997c",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -80104,6 +84088,25 @@
  },
  {
   "proto": "vless",
+  "server": "91.107.155.211",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 17",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "7b5d97a3fe80dddf",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "91.107.247.173",
   "port": 2083,
   "name": "🇩🇪DE_103|1.4MB/s|M003-260806 [33fe6ec7aa02]",
@@ -80139,6 +84142,25 @@
    "clashnode",
    "tg:@oneclickvpnkeys",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "91.149.167.147",
+  "port": 8443,
+  "name": "@ffqidfx 🇧🇾白俄罗斯 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "faa1e9fc06144682",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -80334,7 +84356,8 @@
   "source": "NoMoreWalls",
   "fp": "a0303bae9ad224a5",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -80446,6 +84469,25 @@
  },
  {
   "proto": "vless",
+  "server": "92.243.66.201",
+  "port": 443,
+  "name": "@ffqidfx 🇷🇺俄罗斯 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "9d4cf2ce2a904add",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "92.255.58.59",
   "port": 443,
   "uuid": "a30903dc-1bf0-0001-8b1b-603a3a56211c",
@@ -80493,6 +84535,25 @@
  },
  {
   "proto": "vless",
+  "server": "93.115.240.120",
+  "port": 443,
+  "name": "@ffqidfx 🇦🇲亚美尼亚 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "da5ac768806fd275",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "93.188.184.150",
   "port": 443,
   "name": "🇷🇺RU俄罗斯丨yoyapai.com",
@@ -80528,6 +84589,25 @@
   "fp": "63f89c742d437f87",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "93.85.236.9",
+  "port": 443,
+  "name": "@ffqidfx 🇧🇾白俄罗斯 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "f36f2385e1b5352e",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -80568,6 +84648,25 @@
   "sources": [
    "ermaozi",
    "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "94.177.198.195",
+  "port": 443,
+  "name": "@ffqidfx 🇮🇹意大利 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "18ffe2a42471a154",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -80683,6 +84782,25 @@
    "ermaozi",
    "tg:@freeVPNjd→sub",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "94.20.154.66",
+  "port": 443,
+  "name": "@ffqidfx 🇦🇿阿塞拜疆",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "2f6ae65dae476509",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -80859,6 +84977,25 @@
  },
  {
   "proto": "vless",
+  "server": "94.249.198.201",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 19",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "se-sto.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "se-sto.862400.xyz",
+  "fp": "00c7987c14062a86",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "95.128.71.79",
   "port": 14430,
   "uuid": "8cef7621-c6f0-486e-b51d-59c30c5b0b25",
@@ -80880,6 +85017,25 @@
    "ermaozi",
    "clashnode",
    "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "95.130.84.36",
+  "port": 8443,
+  "name": "@ffqidfx 🇧🇾白俄罗斯 03",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "d27265c221083ddf",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -80919,7 +85075,27 @@
   "source": "NoMoreWalls",
   "fp": "e8444c201ea542d8",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "95.174.68.155",
+  "port": 2083,
+  "name": "@ffqidfx 🇦🇪阿联酋 02",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "20b7820c9c53a67c",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -80949,6 +85125,25 @@
  },
  {
   "proto": "vless",
+  "server": "95.182.95.237",
+  "port": 443,
+  "name": "@ffqidfx 🇭🇰香港 06",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "ap-south.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "ap-south.862400.xyz",
+  "fp": "ea798d6768e3cab2",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "95.216.27.15",
   "port": 2053,
   "uuid": "b79d736d-0f10-4169-b626-362059d18204",
@@ -80970,6 +85165,26 @@
    "ermaozi",
    "tg:@freeVPNjd→sub",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "95.85.232.83",
+  "port": 2087,
+  "name": "@ffqidfx 🇯🇵日本 19",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
+  "tls": true,
+  "sni": "trips.blog-forme.ru",
+  "network": "xhttp",
+  "flow": "",
+  "utls": "edge",
+  "reality": true,
+  "pbk": "mbi4BZAuiq_L6pfhG2xxWmtosq0Z1Pzf18fvNSWKMxY",
+  "sid": "3258252d44113e23",
+  "fp": "630b322e36f2eae6",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -81513,6 +85728,25 @@
   "fp": "ef3026848dfd8654",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "bestcf.030101.xyz",
+  "port": 443,
+  "name": "@ffqidfx 🇨🇦加拿大 20",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "nl-ams.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "nl-ams.862400.xyz",
+  "fp": "978e4a4803918949",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -82158,6 +86392,25 @@
  },
  {
   "proto": "vless",
+  "server": "ct.877774.xyz",
+  "port": 443,
+  "name": "@ffqidfx 🇩🇪德国 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "eu-central.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "eu-central.862400.xyz",
+  "fp": "663809c91d881f5b",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "cucc.cloudflare.seeck.cn",
   "port": 443,
   "name": "新加坡 - 新加坡 - Cloudflare, Inc. - 2",
@@ -82692,7 +86945,8 @@
   "sid": "1a083bf915dd9164",
   "fp": "f341bd78cd6419c4",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -83035,6 +87289,25 @@
    "NoMoreWalls",
    "ermaozi",
    "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "freev2.cloudflare.182682.xyz",
+  "port": 443,
+  "name": "@ffqidfx 🇺🇸美国 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "us-lax.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "us-lax.862400.xyz",
+  "fp": "17095ddcd0f67051",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -84617,7 +88890,8 @@
   "source": "NoMoreWalls",
   "fp": "ed9bf89f07d27bb7",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -84944,6 +89218,28 @@
   "fp": "4f7e6f9e7d1df1af",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "static.99.177.233.167.clients.your-server.de",
+  "port": 443,
+  "uuid": "89d096e6-6d55-4dff-bed7-0d8064665ee6",
+  "tls": true,
+  "sni": "static.132.5.245.188.clients.your-server.de",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "canfingV2rayNG-253",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "d4696c28a876a609",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -85315,6 +89611,28 @@
   "name": "filembad-148",
   "source": "tg:@vpnfail_v2ray",
   "fp": "6798a863ea48584c",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "tunir.helpower.ir",
+  "port": 8099,
+  "uuid": "9890272e-0c0b-401c-a345-f6128832b8c5",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "filembad-282",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "29ada5e4d5f66643",
   "sources": [
    "tg:@vpnfail_v2ray"
   ]
@@ -86559,6 +90877,25 @@
   "fp": "a2f8d129474ca78f",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "www.visa.com.hk",
+  "port": 443,
+  "name": "@ffqidfx 🇯🇵日本 01",
+  "source": "tg:@wxdy666→sub",
+  "uuid": "5bbbbf2c-9031-4511-8222-b6cecd5a5291",
+  "tls": true,
+  "sni": "jp-osa.862400.xyz",
+  "network": "ws",
+  "flow": "",
+  "utls": "random",
+  "path": "/announcement",
+  "host": "jp-osa.862400.xyz",
+  "fp": "7855ae82c9bed093",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
