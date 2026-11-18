@@ -64297,7 +64297,8 @@
    "NoMoreWalls",
    "ermaozi",
    "go4sharing/sub",
-   "clashnode"
+   "clashnode",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -69757,6 +69758,28 @@
   "fp": "b0623690af598d4f",
   "sources": [
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "136.148.208.221",
+  "port": 443,
+  "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
+  "tls": true,
+  "sni": "8a2e72t.nl20.h1clayd.shop",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA",
+  "sid": "8d0d0679f42ffd98",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-123",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "06b650f894f7c577",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -86618,6 +86641,28 @@
  },
  {
   "proto": "vless",
+  "server": "87.120.106.95",
+  "port": 443,
+  "uuid": "a18d0149-a511-4489-ad4f-4496d8d91ca3",
+  "tls": true,
+  "sni": "rss.worldoftanks.eu",
+  "network": "xhttp",
+  "path": "/",
+  "host": "rss.worldoftanks.eu",
+  "flow": "",
+  "pbk": "iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM",
+  "sid": "",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-287",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c50e3256ef27cf15",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "87.199.205.28",
   "port": 443,
   "uuid": "501a2da5-cb22-4a3f-915e-e3b821d1d62d",
@@ -88573,6 +88618,28 @@
  },
  {
   "proto": "vless",
+  "server": "ao7ntq71fb04.dop72.com",
+  "port": 8446,
+  "uuid": "921515e7-ea51-4aa5-a33f-77044e254281",
+  "tls": true,
+  "sni": "www.yfuhvgh.ir",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "-6fnen84aJdSgMSvK2zfXom5kgaqeQciRTRKh6ameg0",
+  "sid": "93cbc217b1a1a444",
+  "utls": "qq",
+  "reality": true,
+  "name": "filembad-254",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "702c88e13a161a5a",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "api.dark-coffe.com",
   "port": 2096,
   "name": "德国 - 法兰克福 - Florian Kolb - 5",
@@ -90041,6 +90108,28 @@
   "fp": "ae08ab9e12d4e523",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "estonia2.banovano.space",
+  "port": 17417,
+  "uuid": "6430ede6-3f43-4beb-95c0-0fb29e9ea76d",
+  "tls": true,
+  "sni": "yandex-cdn-mirror.ru",
+  "network": "xhttp",
+  "path": "/",
+  "host": "",
+  "flow": "",
+  "pbk": "yhOC-2sFjE59lY3n0IA0AAluzIpjoJiL0QH1SQ_ZZQ8",
+  "sid": "728f3f459ddf",
+  "utls": "edge",
+  "reality": true,
+  "name": "ProxyMtpVPN-208",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "4a485d1cfea796aa",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -93020,6 +93109,28 @@
  },
  {
   "proto": "vless",
+  "server": "uvgl4cjd0475.vtret.com",
+  "port": 32567,
+  "uuid": "c34c6869-e454-4413-a7b2-052ba4a42fd5",
+  "tls": true,
+  "sni": "uvgl4cjd0475.vtret.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "canfingV2rayNG-339",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c21d8722e29312bc",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "uyt24-k2.miniseries.ir",
   "port": 49673,
   "uuid": "b86451af-4c98-4b7d-96e5-16f2e9df1d46",
@@ -93980,6 +94091,28 @@
   "fp": "d58a5e3709fbbce1",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "xray2-direct-mci1-fs-ce.freesocks.work",
+  "port": 443,
+  "uuid": "e9a959e4-7ff6-43db-b6c8-beb233825e8a",
+  "tls": true,
+  "sni": "dl.google.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI",
+  "sid": "",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-405",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "6836817f9c1091b3",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -102885,7 +103018,8 @@
   "sources": [
    "clashnode",
    "tg:@byxiaoxi→blog",
-   "anaer/Sub"
+   "anaer/Sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
