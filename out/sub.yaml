@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-18 14:02:02 (北京时间)
+# nodepool  生成于 2026-11-18 17:00:54 (北京时间)
 # 节点数 52  (自建 0 / 免费额度 0 / 免费池 52)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -374,24 +374,23 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: resources.searchnationwidecareerchangehelperandguidancetoday.com
-  - name: N50 216.152.155.50
-    type: trojan
-    server: 216.152.155.50
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: cdn.nextjobopportunityandclaimyouridealrole.com
-  - name: N51 202.50.253.18
+  - name: N50 202.50.253.18
     type: ss
     server: 202.50.253.18
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N52 202.50.253.72
+  - name: N51 202.50.253.72
     type: ss
     server: 202.50.253.72
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N52 202.50.253.63
+    type: ss
+    server: 202.50.253.63
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -451,9 +450,9 @@ proxy-groups:
       - N47 202.50.253.99
       - N48 202.50.253.90
       - N49 66.163.122.30
-      - N50 216.152.155.50
-      - N51 202.50.253.18
-      - N52 202.50.253.72
+      - N50 202.50.253.18
+      - N51 202.50.253.72
+      - N52 202.50.253.63
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -509,9 +508,9 @@ proxy-groups:
       - N47 202.50.253.99
       - N48 202.50.253.90
       - N49 66.163.122.30
-      - N50 216.152.155.50
-      - N51 202.50.253.18
-      - N52 202.50.253.72
+      - N50 202.50.253.18
+      - N51 202.50.253.72
+      - N52 202.50.253.63
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -566,8 +565,8 @@ proxy-groups:
       - N47 202.50.253.99
       - N48 202.50.253.90
       - N49 66.163.122.30
-      - N50 216.152.155.50
-      - N51 202.50.253.18
-      - N52 202.50.253.72
+      - N50 202.50.253.18
+      - N51 202.50.253.72
+      - N52 202.50.253.63
 rules:
   - "MATCH,节点选择"
