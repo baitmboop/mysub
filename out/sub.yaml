@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-19 04:57:32 (北京时间)
+# nodepool  生成于 2026-11-19 07:50:25 (北京时间)
 # 节点数 32  (自建 0 / 免费额度 0 / 免费池 32)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -183,41 +183,43 @@ proxies:
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N28 185.230.230.18
+  - name: N28 170.101.101.131
+    type: trojan
+    server: 170.101.101.131
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: blog.explorecreativejobsandenhanceyourcareerportfolio.com
+  - name: N29 185.230.230.18
     type: ss
     server: 185.230.230.18
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N29 45.86.51.18
+  - name: N30 45.86.51.18
     type: ss
     server: 45.86.51.18
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N30 172.111.38.72
+  - name: N31 172.111.38.72
     type: ss
     server: 172.111.38.72
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N31 138.199.35.195
-    type: http
-    server: 138.199.35.195
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N32 66.253.2.69
-    type: socks5
-    server: 66.253.2.69
-    port: 62000
-    udp: false
-    username: u_rb1dba2
-    password: l1tlrdx52v
+  - name: N32 169.197.140.171
+    type: trojan
+    server: 169.197.140.171
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
 proxy-groups:
   - name: 节点选择
     type: select
@@ -251,11 +253,11 @@ proxy-groups:
       - N25 66.163.122.113
       - N26 198.100.154.175
       - N27 142.44.210.129
-      - N28 185.230.230.18
-      - N29 45.86.51.18
-      - N30 172.111.38.72
-      - N31 138.199.35.195
-      - N32 66.253.2.69
+      - N28 170.101.101.131
+      - N29 185.230.230.18
+      - N30 45.86.51.18
+      - N31 172.111.38.72
+      - N32 169.197.140.171
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -289,11 +291,11 @@ proxy-groups:
       - N25 66.163.122.113
       - N26 198.100.154.175
       - N27 142.44.210.129
-      - N28 185.230.230.18
-      - N29 45.86.51.18
-      - N30 172.111.38.72
-      - N31 138.199.35.195
-      - N32 66.253.2.69
+      - N28 170.101.101.131
+      - N29 185.230.230.18
+      - N30 45.86.51.18
+      - N31 172.111.38.72
+      - N32 169.197.140.171
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -326,10 +328,10 @@ proxy-groups:
       - N25 66.163.122.113
       - N26 198.100.154.175
       - N27 142.44.210.129
-      - N28 185.230.230.18
-      - N29 45.86.51.18
-      - N30 172.111.38.72
-      - N31 138.199.35.195
-      - N32 66.253.2.69
+      - N28 170.101.101.131
+      - N29 185.230.230.18
+      - N30 45.86.51.18
+      - N31 172.111.38.72
+      - N32 169.197.140.171
 rules:
   - "MATCH,节点选择"
