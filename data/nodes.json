@@ -22137,6 +22137,19 @@
  },
  {
   "proto": "ss",
+  "server": "13.140.83.153",
+  "port": 1080,
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "4IxReHOucKiwvosjoRXlLLpu20Pso-rZ",
+  "name": "canfingV2rayNG-8",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "92cfac6216d25c02",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "13.140.86.73",
   "port": 6079,
   "name": "芬兰 - 赫尔辛基 - 1",
@@ -66417,6 +66430,28 @@
  },
  {
   "proto": "vless",
+  "server": "143.246.195.46",
+  "port": 443,
+  "uuid": "5311859f-0b5d-4c26-a8bf-2648f113e4ea",
+  "tls": true,
+  "sni": "sweden13.clearorbitllc.com",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+  "flow": "xtls-rprx-vision",
+  "pbk": "453QgfqoHVVQ-M7xjfH-bUu0HXz1mdWGuR3vNoBoeCM",
+  "sid": "4e1682",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-189",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "76b031813fc56085",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "143.246.41.217",
   "port": 443,
   "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
@@ -72682,6 +72717,28 @@
  },
  {
   "proto": "vless",
+  "server": "188.130.208.210",
+  "port": 443,
+  "uuid": "08b6dd4b-08df-4aa2-9580-92a3360cf07c",
+  "tls": true,
+  "sni": "edge-cz1.lovely.ceo",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "x_sc52Wgwr7bsogvKRA5hHHS5PJpdocqZNW_Up1mty8",
+  "sid": "59ab2fc39ec55bc7",
+  "utls": "firefox",
+  "reality": true,
+  "name": "canfingV2rayNG-70",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "af40a2b5672e3fbb",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "188.137.153.12",
   "port": 443,
   "uuid": "6cb43560-a676-4187-8c94-3df74be5d706",
@@ -78823,6 +78880,28 @@
  },
  {
   "proto": "vless",
+  "server": "45.13.186.188",
+  "port": 443,
+  "uuid": "33030526-e805-430e-a6da-70b0d099f63b",
+  "tls": true,
+  "sni": "tg.tpbn.win",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "SiX_cW2H2zBmO4nJ2g1NJkzpRbRkKZgnIAjsNbRC0Bk",
+  "sid": "",
+  "utls": "qq",
+  "reality": true,
+  "name": "filembad-114",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "39228374c4456692",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "45.130.125.162",
   "port": 8443,
   "uuid": "f106648e-0644-40bc-974c-6edc966fe18d",
@@ -81699,7 +81778,8 @@
    "NoMoreWalls",
    "ermaozi",
    "tg:@freeVPNjd→sub",
-   "tg:@oneclickvpnkeys"
+   "tg:@oneclickvpnkeys",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -92478,6 +92558,28 @@
   "fp": "1b0226ac70ee7a48",
   "sources": [
    "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "zibanabz.jonsonvip.ir",
+  "port": 8080,
+  "uuid": "329c4c9a-f3c4-44b7-806e-e92c3b8793b0",
+  "tls": true,
+  "sni": "digikala.com",
+  "network": "tcp",
+  "path": "/@zibanabz@zibanabz@zibanabz",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "aiFPeLurQNAOYZhwdXsYwxCxBgw6qg8rt0UvdrdNPTY",
+  "sid": "ed516450fce897dd",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-106",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c22f1a95764f96f8",
+  "sources": [
    "tg:@vpnfail_v2ray"
   ]
  },
