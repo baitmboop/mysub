@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-19 22:53:50 (北京时间)
+# nodepool  生成于 2026-11-20 01:58:14 (北京时间)
 # 节点数 10  (自建 0 / 免费额度 0 / 免费池 10)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -18,74 +18,62 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-  - name: N03 137.184.89.151
-    type: ss
-    server: 137.184.89.151
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N04 172.64.69.89
+  - name: N03 138.199.35.201
     type: http
-    server: 172.64.69.89
-    port: 443
+    server: 138.199.35.201
+    port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N05 66.163.112.121
-    type: trojan
-    server: 66.163.112.121
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  - name: N04 69.17.68.66
+    type: socks5
+    server: 69.17.68.66
+    port: 62000
+    udp: false
+    username: u_rf917a7
+    password: 5l003o6mv3
+  - name: N05 107.151.182.253
+    type: ss
+    server: 107.151.182.253
+    port: 8080
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
     udp: true
-    skipCertVerify: true
-    sni: www.unlockyourfuturefindyourperfectcareer.com
-  - name: N06 167.88.61.20
-    type: trojan
-    server: 167.88.61.20
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  - name: N06 104.238.140.45
+    type: ss
+    server: 104.238.140.45
+    port: 11051
+    cipher: chacha20-ietf-poly1305
+    password: JUXsy78dSs6ROkasikmoaL
     udp: true
-    skipCertVerify: true
-    sni: api.browseseniorrolesandenhanceyourcareertoday.com
-  - name: N07 167.88.61.175
-    type: trojan
-    server: 167.88.61.175
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: blog.browseseniorrolesandenhanceyourcareertoday.com
-  - name: N08 172.111.36.123
-    type: vmess
-    server: 172.111.36.123
-    port: 1270
-    uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-    alterId: 0
-    cipher: auto
-    udp: true
+  - name: N07 138.199.35.204
+    type: http
+    server: 138.199.35.204
+    port: 9002
+    udp: false
     tls: true
-    servername: xmfhlpy.com
-    skipCertVerify: true
-  - name: N09 38.64.138.135
-    type: vmess
-    server: 38.64.138.135
-    port: 1270
-    uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-    alterId: 0
-    cipher: auto
-    udp: true
+    skip-cert-verify: true
+  - name: N08 138.199.35.203
+    type: http
+    server: 138.199.35.203
+    port: 9002
+    udp: false
     tls: true
-    servername: xmfhlpy.com
-    skipCertVerify: true
-  - name: N10 216.152.155.23
-    type: trojan
-    server: 216.152.155.23
+    skip-cert-verify: true
+  - name: N09 138.199.35.209
+    type: http
+    server: 138.199.35.209
+    port: 9002
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N10 173.244.56.9
+    type: ss
+    server: 173.244.56.9
     port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    cipher: aes-128-gcm
+    password: shadowsocks
     udp: true
-    skipCertVerify: true
-    sni: courses.nextjobopportunityandclaimyouridealrole.com
 proxy-groups:
   - name: 节点选择
     type: select
@@ -94,14 +82,14 @@ proxy-groups:
       - ③ 免费池
       - N01 172.111.38.72
       - N02 169.197.140.171
-      - N03 137.184.89.151
-      - N04 172.64.69.89
-      - N05 66.163.112.121
-      - N06 167.88.61.20
-      - N07 167.88.61.175
-      - N08 172.111.36.123
-      - N09 38.64.138.135
-      - N10 216.152.155.23
+      - N03 138.199.35.201
+      - N04 69.17.68.66
+      - N05 107.151.182.253
+      - N06 104.238.140.45
+      - N07 138.199.35.204
+      - N08 138.199.35.203
+      - N09 138.199.35.209
+      - N10 173.244.56.9
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -110,14 +98,14 @@ proxy-groups:
     proxies:
       - N01 172.111.38.72
       - N02 169.197.140.171
-      - N03 137.184.89.151
-      - N04 172.64.69.89
-      - N05 66.163.112.121
-      - N06 167.88.61.20
-      - N07 167.88.61.175
-      - N08 172.111.36.123
-      - N09 38.64.138.135
-      - N10 216.152.155.23
+      - N03 138.199.35.201
+      - N04 69.17.68.66
+      - N05 107.151.182.253
+      - N06 104.238.140.45
+      - N07 138.199.35.204
+      - N08 138.199.35.203
+      - N09 138.199.35.209
+      - N10 173.244.56.9
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -125,13 +113,13 @@ proxy-groups:
     proxies:
       - N01 172.111.38.72
       - N02 169.197.140.171
-      - N03 137.184.89.151
-      - N04 172.64.69.89
-      - N05 66.163.112.121
-      - N06 167.88.61.20
-      - N07 167.88.61.175
-      - N08 172.111.36.123
-      - N09 38.64.138.135
-      - N10 216.152.155.23
+      - N03 138.199.35.201
+      - N04 69.17.68.66
+      - N05 107.151.182.253
+      - N06 104.238.140.45
+      - N07 138.199.35.204
+      - N08 138.199.35.203
+      - N09 138.199.35.209
+      - N10 173.244.56.9
 rules:
   - "MATCH,节点选择"
