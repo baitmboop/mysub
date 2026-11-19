@@ -26947,7 +26947,8 @@
    "mahdibland",
    "xinshoucun",
    "clashnode",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -69595,7 +69596,8 @@
   "fp": "566ac73a037d3c5c",
   "sources": [
    "NoMoreWalls",
-   "ermaozi"
+   "ermaozi",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -76227,6 +76229,28 @@
   "fp": "784651f5cf4d6487",
   "sources": [
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.255.115.103",
+  "port": 443,
+  "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
+  "tls": true,
+  "sni": "4935e4t.de25.h1clayd.click",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw",
+  "sid": "6976d670818644cc",
+  "utls": "ios",
+  "reality": true,
+  "name": "canfingV2rayNG-147",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "9043062559916556",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -84908,7 +84932,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "c79e2d67c63d66e0",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -85155,6 +85180,28 @@
   "sources": [
    "ermaozi",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "51.21.253.12",
+  "port": 61483,
+  "uuid": "6593f6ad-a7f2-41fa-9166-b3cc5587f7f8",
+  "tls": true,
+  "sni": "gateway-sr-china.icloud.com",
+  "network": "xhttp",
+  "path": "/t.me-SubGift",
+  "host": "51.21.253.12",
+  "flow": "xtls-rprx-vision",
+  "pbk": "VCVumwlIhEVFWJ5mfqa0dzCe89iUdZei2v3a4GzwfzY",
+  "sid": "fcac23caeed68f",
+  "utls": "safari",
+  "reality": true,
+  "name": "canfingV2rayNG-236",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "37b7accbca68bd4e",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -86719,7 +86766,8 @@
   "fp": "40abdac69d615512",
   "sources": [
    "NoMoreWalls",
-   "ermaozi"
+   "ermaozi",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -87028,6 +87076,28 @@
   "fp": "57f3f72d3d96acce",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "84.32.51.135",
+  "port": 443,
+  "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
+  "tls": true,
+  "sni": "svc-io-mgr.galioncc.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+  "sid": "a7d309e4c16b825f",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-336",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "bfe636c4a5c1b046",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -92337,6 +92407,28 @@
  },
  {
   "proto": "vless",
+  "server": "k2.cloud--vpn.site",
+  "port": 443,
+  "uuid": "bdaf42dd-f75b-4594-d5f8-51c0feeb8406",
+  "tls": true,
+  "sni": "ssl.fastly.com",
+  "network": "ws",
+  "path": "/",
+  "host": "c12.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "firefox",
+  "reality": false,
+  "name": "canfingV2rayNG-371",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "4823b3c637c053b8",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "kklio.dddc.us.ci",
   "port": 443,
   "name": "美国 - 水牛城 - HostPapa - 20",
@@ -93214,6 +93306,28 @@
   "sources": [
    "tg:@oneclickvpnkeys",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "rial-fl2.torshikhoone.ir",
+  "port": 443,
+  "uuid": "91fee5d4-ebf5-40b3-80a9-d4927cf093e9",
+  "tls": true,
+  "sni": "www.hetzner.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "eCt1lJtFXHID16IAEA4nw3xFcMejrnauZqIE_Jf5qEw",
+  "sid": "b1c9c3d3cc3b662b",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-285",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "010cdd0383d25f3a",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
