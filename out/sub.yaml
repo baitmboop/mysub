@@ -1,86 +1,38 @@
-# nodepool  生成于 2026-11-19 19:56:10 (北京时间)
-# 节点数 19  (自建 0 / 免费额度 0 / 免费池 19)
+# nodepool  生成于 2026-11-19 22:53:50 (北京时间)
+# 节点数 10  (自建 0 / 免费额度 0 / 免费池 10)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
 proxies:
-  - name: N01 111.192.52.56
-    type: http
-    server: 111.192.52.56
-    port: 8888
-    udp: false
-  - name: N02 123.119.195.145
-    type: http
-    server: 123.119.195.145
-    port: 8888
-    udp: false
-  - name: N03 176.111.37.216
-    type: http
-    server: 176.111.37.216
-    port: 39811
-    udp: false
-  - name: N04 123.121.73.146
-    type: http
-    server: 123.121.73.146
-    port: 8888
-    udp: false
-  - name: N05 123.121.122.125
-    type: http
-    server: 123.121.122.125
-    port: 8888
-    udp: false
-  - name: N06 114.244.223.68
-    type: http
-    server: 114.244.223.68
-    port: 8888
-    udp: false
-  - name: N07 twmoon1-cdn-route.couldflare-cdn.com
-    type: http
-    server: twmoon1-cdn-route.couldflare-cdn.com
-    port: 1443
-    udp: false
-    username: mrwdfNTD8M79LCukCieldrqZWqs=
-    password: mrwdfNTD8M79LCukCieldrqZWqs=
-    tls: true
-    skip-cert-verify: true
-  - name: N08 111.192.50.81
-    type: http
-    server: 111.192.50.81
-    port: 8888
-    udp: false
-  - name: N09 103.158.210.80
-    type: http
-    server: 103.158.210.80
-    port: 8082
-    udp: false
-  - name: N10 45.138.100.248
-    type: vless
-    server: 45.138.100.248
-    port: 10443
-    uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-    udp: true
-    skipCertVerify: true
-  - name: N11 172.111.38.72
+  - name: N01 172.111.38.72
     type: ss
     server: 172.111.38.72
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N12 137.184.89.151
+  - name: N02 169.197.140.171
+    type: trojan
+    server: 169.197.140.171
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+  - name: N03 137.184.89.151
     type: ss
     server: 137.184.89.151
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N13 172.64.69.89
+  - name: N04 172.64.69.89
     type: http
     server: 172.64.69.89
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N14 66.163.112.121
+  - name: N05 66.163.112.121
     type: trojan
     server: 66.163.112.121
     port: 443
@@ -88,7 +40,7 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: www.unlockyourfuturefindyourperfectcareer.com
-  - name: N15 167.88.61.20
+  - name: N06 167.88.61.20
     type: trojan
     server: 167.88.61.20
     port: 443
@@ -96,7 +48,7 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: api.browseseniorrolesandenhanceyourcareertoday.com
-  - name: N16 167.88.61.175
+  - name: N07 167.88.61.175
     type: trojan
     server: 167.88.61.175
     port: 443
@@ -104,7 +56,7 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: blog.browseseniorrolesandenhanceyourcareertoday.com
-  - name: N17 172.111.36.123
+  - name: N08 172.111.36.123
     type: vmess
     server: 172.111.36.123
     port: 1270
@@ -115,7 +67,7 @@ proxies:
     tls: true
     servername: xmfhlpy.com
     skipCertVerify: true
-  - name: N18 38.64.138.135
+  - name: N09 38.64.138.135
     type: vmess
     server: 38.64.138.135
     port: 1270
@@ -126,7 +78,7 @@ proxies:
     tls: true
     servername: xmfhlpy.com
     skipCertVerify: true
-  - name: N19 216.152.155.23
+  - name: N10 216.152.155.23
     type: trojan
     server: 216.152.155.23
     port: 443
@@ -140,73 +92,46 @@ proxy-groups:
     proxies:
       - 自动选择
       - ③ 免费池
-      - N01 111.192.52.56
-      - N02 123.119.195.145
-      - N03 176.111.37.216
-      - N04 123.121.73.146
-      - N05 123.121.122.125
-      - N06 114.244.223.68
-      - N07 twmoon1-cdn-route.couldflare-cdn.com
-      - N08 111.192.50.81
-      - N09 103.158.210.80
-      - N10 45.138.100.248
-      - N11 172.111.38.72
-      - N12 137.184.89.151
-      - N13 172.64.69.89
-      - N14 66.163.112.121
-      - N15 167.88.61.20
-      - N16 167.88.61.175
-      - N17 172.111.36.123
-      - N18 38.64.138.135
-      - N19 216.152.155.23
+      - N01 172.111.38.72
+      - N02 169.197.140.171
+      - N03 137.184.89.151
+      - N04 172.64.69.89
+      - N05 66.163.112.121
+      - N06 167.88.61.20
+      - N07 167.88.61.175
+      - N08 172.111.36.123
+      - N09 38.64.138.135
+      - N10 216.152.155.23
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 120
     tolerance: 100
     proxies:
-      - N01 111.192.52.56
-      - N02 123.119.195.145
-      - N03 176.111.37.216
-      - N04 123.121.73.146
-      - N05 123.121.122.125
-      - N06 114.244.223.68
-      - N07 twmoon1-cdn-route.couldflare-cdn.com
-      - N08 111.192.50.81
-      - N09 103.158.210.80
-      - N10 45.138.100.248
-      - N11 172.111.38.72
-      - N12 137.184.89.151
-      - N13 172.64.69.89
-      - N14 66.163.112.121
-      - N15 167.88.61.20
-      - N16 167.88.61.175
-      - N17 172.111.36.123
-      - N18 38.64.138.135
-      - N19 216.152.155.23
+      - N01 172.111.38.72
+      - N02 169.197.140.171
+      - N03 137.184.89.151
+      - N04 172.64.69.89
+      - N05 66.163.112.121
+      - N06 167.88.61.20
+      - N07 167.88.61.175
+      - N08 172.111.36.123
+      - N09 38.64.138.135
+      - N10 216.152.155.23
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
     interval: 600
     proxies:
-      - N01 111.192.52.56
-      - N02 123.119.195.145
-      - N03 176.111.37.216
-      - N04 123.121.73.146
-      - N05 123.121.122.125
-      - N06 114.244.223.68
-      - N07 twmoon1-cdn-route.couldflare-cdn.com
-      - N08 111.192.50.81
-      - N09 103.158.210.80
-      - N10 45.138.100.248
-      - N11 172.111.38.72
-      - N12 137.184.89.151
-      - N13 172.64.69.89
-      - N14 66.163.112.121
-      - N15 167.88.61.20
-      - N16 167.88.61.175
-      - N17 172.111.36.123
-      - N18 38.64.138.135
-      - N19 216.152.155.23
+      - N01 172.111.38.72
+      - N02 169.197.140.171
+      - N03 137.184.89.151
+      - N04 172.64.69.89
+      - N05 66.163.112.121
+      - N06 167.88.61.20
+      - N07 167.88.61.175
+      - N08 172.111.36.123
+      - N09 38.64.138.135
+      - N10 216.152.155.23
 rules:
   - "MATCH,节点选择"

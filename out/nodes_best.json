@@ -1,218 +1,5 @@
 [
  {
-  "proto": "http",
-  "server": "111.192.52.56",
-  "port": 8888,
-  "tls": false,
-  "name": "n7420",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "111.192.52.56:8888:http",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ],
-  "type": "http",
-  "latency": null,
-  "jitter": null,
-  "score": 0.0,
-  "speed": 0.0,
-  "cn_ok": 1,
-  "cn_by": "verify",
-  "cn_speed": 1.3687
- },
- {
-  "proto": "http",
-  "server": "123.119.195.145",
-  "port": 8888,
-  "tls": false,
-  "name": "n7421",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "123.119.195.145:8888:http",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ],
-  "type": "http",
-  "latency": null,
-  "jitter": null,
-  "score": 0.0,
-  "speed": 0.0,
-  "cn_ok": 1,
-  "cn_by": "verify",
-  "cn_speed": 1.2854
- },
- {
-  "proto": "http",
-  "server": "176.111.37.216",
-  "port": 39811,
-  "tls": false,
-  "name": "n7423",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "176.111.37.216:39811:http",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ],
-  "type": "http",
-  "latency": null,
-  "jitter": null,
-  "score": 0.0,
-  "speed": 0.0,
-  "cn_ok": 1,
-  "cn_by": "verify",
-  "cn_speed": 1.0583
- },
- {
-  "proto": "http",
-  "server": "123.121.73.146",
-  "port": 8888,
-  "tls": false,
-  "name": "n7425",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "123.121.73.146:8888:http",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ],
-  "type": "http",
-  "latency": null,
-  "jitter": null,
-  "score": 0.0,
-  "speed": 0.0,
-  "cn_ok": 1,
-  "cn_by": "verify",
-  "cn_speed": 0.9822
- },
- {
-  "proto": "http",
-  "server": "123.121.122.125",
-  "port": 8888,
-  "tls": false,
-  "name": "n7427",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "123.121.122.125:8888:http",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ],
-  "type": "http",
-  "latency": null,
-  "jitter": null,
-  "score": 0.0,
-  "speed": 0.0,
-  "cn_ok": 1,
-  "cn_by": "verify",
-  "cn_speed": 0.7695
- },
- {
-  "proto": "http",
-  "server": "114.244.223.68",
-  "port": 8888,
-  "tls": false,
-  "name": "n7392",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "114.244.223.68:8888:http",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ],
-  "type": "http",
-  "latency": null,
-  "jitter": null,
-  "score": 0.0,
-  "speed": 0.0,
-  "cn_ok": 1,
-  "cn_by": "verify",
-  "cn_speed": 0.6823
- },
- {
-  "proto": "http",
-  "server": "twmoon1-cdn-route.couldflare-cdn.com",
-  "port": 1443,
-  "name": "n7430",
-  "source": "go4sharing/arch",
-  "username": "mrwdfNTD8M79LCukCieldrqZWqs=",
-  "password": "mrwdfNTD8M79LCukCieldrqZWqs=",
-  "tls": true,
-  "sni": "",
-  "skipCertVerify": true,
-  "fp": "twmoon1-cdn-route.couldflare-cdn.com:1443:http",
-  "sources": [
-   "go4sharing/arch"
-  ],
-  "type": "http",
-  "latency": null,
-  "jitter": null,
-  "score": 0.0,
-  "speed": 0.0,
-  "cn_ok": 1,
-  "cn_by": "verify",
-  "cn_speed": 0.2278
- },
- {
-  "proto": "http",
-  "server": "111.192.50.81",
-  "port": 8888,
-  "tls": false,
-  "name": "n7433",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "111.192.50.81:8888:http",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ],
-  "type": "http",
-  "latency": null,
-  "jitter": null,
-  "score": 0.0,
-  "speed": 0.0,
-  "cn_ok": 1,
-  "cn_by": "verify",
-  "cn_speed": 0.0977
- },
- {
-  "proto": "http",
-  "server": "103.158.210.80",
-  "port": 8082,
-  "tls": false,
-  "name": "n7434",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "103.158.210.80:8082:http",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ],
-  "type": "http",
-  "latency": null,
-  "jitter": null,
-  "score": 0.0,
-  "speed": 0.0,
-  "cn_ok": 1,
-  "cn_by": "verify",
-  "cn_speed": 0.0664
- },
- {
-  "proto": "vless",
-  "server": "45.138.100.248",
-  "port": 10443,
-  "name": "n5887",
-  "source": "clashnode",
-  "uuid": "ae908ff5-f749-402c-af25-e6e9aef4d6bb",
-  "tls": false,
-  "sni": "45.138.100.248",
-  "network": "tcp",
-  "flow": "",
-  "utls": "",
-  "fp": "8dd9b306678d4020",
-  "sources": [
-   "clashnode",
-   "tg:@byxiaoxi→blog"
-  ],
-  "latency": 24,
-  "jitter": 4,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9985,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
   "proto": "ss",
   "server": "172.111.38.72",
   "port": 19999,
@@ -227,6 +14,34 @@
   ],
   "latency": 34,
   "jitter": 73,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9979,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "trojan",
+  "server": "169.197.140.171",
+  "port": 443,
+  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+  "sni": "cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "n3148",
+  "source": "tg:@byxiaoxi→blog",
+  "fp": "e6e26dcb0db9a7d4",
+  "sources": [
+   "tg:@byxiaoxi→blog"
+  ],
+  "latency": 34,
+  "jitter": 18,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
