@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-19 10:53:22 (北京时间)
+# nodepool  生成于 2026-11-19 14:01:23 (北京时间)
 # 节点数 32  (自建 0 / 免费额度 0 / 免费池 32)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -150,61 +150,7 @@ proxies:
     uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
     udp: true
     skipCertVerify: true
-  - name: N24 172.111.38.246
-    type: vmess
-    server: 172.111.38.246
-    port: 1270
-    uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: xmfhlpy.com
-    skipCertVerify: true
-  - name: N25 66.163.122.113
-    type: trojan
-    server: 66.163.122.113
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: api.searchnationwidecareerchangehelperandguidancetoday.com
-  - name: N26 198.100.154.175
-    type: ss
-    server: 198.100.154.175
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: 3h3hb2gptqz6suyt
-    udp: true
-  - name: N27 142.44.210.129
-    type: http
-    server: 142.44.210.129
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N28 185.230.230.18
-    type: ss
-    server: 185.230.230.18
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N29 45.86.51.18
-    type: ss
-    server: 45.86.51.18
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N30 172.111.38.72
-    type: ss
-    server: 172.111.38.72
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N31 169.197.140.171
+  - name: N24 169.197.140.171
     type: trojan
     server: 169.197.140.171
     port: 443
@@ -212,10 +158,74 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-  - name: N32 138.199.35.195
+  - name: N25 138.199.35.195
     type: http
     server: 138.199.35.195
     port: 9002
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N26 66.253.2.69
+    type: socks5
+    server: 66.253.2.69
+    port: 62000
+    udp: false
+    username: u_rb1dba2
+    password: l1tlrdx52v
+  - name: N27 goedkoopgeluid.icu
+    type: http
+    server: goedkoopgeluid.icu
+    port: 443
+    udp: false
+    password: "sni=\"goedkoopgeluid.icu\""
+    tls: true
+    skip-cert-verify: true
+    sni: goedkoopgeluid.icu
+  - name: N28 129.153.71.28
+    type: vless
+    server: 129.153.71.28
+    port: 28863
+    uuid: b3a15df4-c8ad-4e98-b427-7a679aee2b18
+    udp: true
+    skipCertVerify: true
+    tls: true
+    servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+    network: ws
+  - name: N29 www.hcaptcha.com
+    type: vless
+    server: www.hcaptcha.com
+    port: 80
+    uuid: 42c5efc2-9479-49c3-8f4a-88855427cb0c
+    udp: true
+    skipCertVerify: true
+    ws-opts:
+      path: /LOGZPldfDGZEtuMh
+      headers:
+        Host: worker3.cipek2755.workers.dev
+    network: ws
+  - name: N30 137.184.89.151
+    type: ss
+    server: 137.184.89.151
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N31 66.163.112.121
+    type: trojan
+    server: 66.163.112.121
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: www.unlockyourfuturefindyourperfectcareer.com
+  - name: N32 jgwynphotoarts.pro
+    type: http
+    server: jgwynphotoarts.pro
+    port: 443
     udp: false
     tls: true
     skip-cert-verify: true
@@ -248,15 +258,15 @@ proxy-groups:
       - N21 103.158.210.80
       - N22 176.111.37.5
       - N23 45.138.100.248
-      - N24 172.111.38.246
-      - N25 66.163.122.113
-      - N26 198.100.154.175
-      - N27 142.44.210.129
-      - N28 185.230.230.18
-      - N29 45.86.51.18
-      - N30 172.111.38.72
-      - N31 169.197.140.171
-      - N32 138.199.35.195
+      - N24 169.197.140.171
+      - N25 138.199.35.195
+      - N26 66.253.2.69
+      - N27 goedkoopgeluid.icu
+      - N28 129.153.71.28
+      - N29 www.hcaptcha.com
+      - N30 137.184.89.151
+      - N31 66.163.112.121
+      - N32 jgwynphotoarts.pro
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -286,15 +296,15 @@ proxy-groups:
       - N21 103.158.210.80
       - N22 176.111.37.5
       - N23 45.138.100.248
-      - N24 172.111.38.246
-      - N25 66.163.122.113
-      - N26 198.100.154.175
-      - N27 142.44.210.129
-      - N28 185.230.230.18
-      - N29 45.86.51.18
-      - N30 172.111.38.72
-      - N31 169.197.140.171
-      - N32 138.199.35.195
+      - N24 169.197.140.171
+      - N25 138.199.35.195
+      - N26 66.253.2.69
+      - N27 goedkoopgeluid.icu
+      - N28 129.153.71.28
+      - N29 www.hcaptcha.com
+      - N30 137.184.89.151
+      - N31 66.163.112.121
+      - N32 jgwynphotoarts.pro
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -323,14 +333,14 @@ proxy-groups:
       - N21 103.158.210.80
       - N22 176.111.37.5
       - N23 45.138.100.248
-      - N24 172.111.38.246
-      - N25 66.163.122.113
-      - N26 198.100.154.175
-      - N27 142.44.210.129
-      - N28 185.230.230.18
-      - N29 45.86.51.18
-      - N30 172.111.38.72
-      - N31 169.197.140.171
-      - N32 138.199.35.195
+      - N24 169.197.140.171
+      - N25 138.199.35.195
+      - N26 66.253.2.69
+      - N27 goedkoopgeluid.icu
+      - N28 129.153.71.28
+      - N29 www.hcaptcha.com
+      - N30 137.184.89.151
+      - N31 66.163.112.121
+      - N32 jgwynphotoarts.pro
 rules:
   - "MATCH,节点选择"
