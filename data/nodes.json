@@ -31575,6 +31575,19 @@
  },
  {
   "proto": "ss",
+  "server": "37.19.198.160",
+  "port": 443,
+  "cipher": "aes-128-gcm",
+  "password": "shadowsocks",
+  "name": "filembad-40",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "35c95b4d0278a7f6",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "37.19.198.243",
   "port": 443,
   "cipher": "aes-128-gcm",
@@ -36382,6 +36395,19 @@
  },
  {
   "proto": "ss",
+  "server": "8.209.72.224",
+  "port": 443,
+  "cipher": "2022-blake3-chacha20-poly1305",
+  "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=",
+  "name": "filembad-3",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "60efa820708e3a19",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "8.211.57.86",
   "port": 443,
   "cipher": "2022-blake3-chacha20-poly1305",
@@ -38682,6 +38708,19 @@
   "fp": "9472f63b629521e0",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "dns22.m3hrzd.ir",
+  "port": 1348,
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "BR5N5pNQ43QeEjGrwwypsBMdUGsvSo6-",
+  "name": "filembad-19",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "e6a8ffcbf812e1d7",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -45565,6 +45604,23 @@
   "fp": "13b2f71149cfea46",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "151.101.56.101",
+  "port": 443,
+  "password": "MiTiVPN",
+  "sni": "ssl.fastly.com",
+  "network": "ws",
+  "path": "@mehrosaboran",
+  "host": "mitivpn---ss--s---mitivpn-5.global.ssl.fastly.net",
+  "skipCertVerify": false,
+  "name": "canfingV2rayNG-48",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "6a1f5167cf7b9aac",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -60791,6 +60847,23 @@
   "fp": "ec0e8822ed68fa35",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "fastly2.dunnexa.ir",
+  "port": 443,
+  "password": "jcTG9WSWMJAmR4rv10xpww",
+  "sni": "cdn.akamai.steamstatic.com",
+  "network": "ws",
+  "path": "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER",
+  "host": "copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.",
+  "skipCertVerify": false,
+  "name": "canfingV2rayNG-65",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "3032f74c302d9617",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -82397,6 +82470,28 @@
  },
  {
   "proto": "vless",
+  "server": "45.144.52.195",
+  "port": 443,
+  "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
+  "tls": true,
+  "sni": "fl-modx.nodexphere.net",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP",
+  "flow": "xtls-rprx-vision",
+  "pbk": "wpKYWqa_j7WXClXDdSL-llXhjH918G_U7jfpHAMSGWk",
+  "sid": "",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-291",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "3e9e4bfd84702207",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "45.151.71.145",
   "port": 443,
   "uuid": "04edf721-b2b7-4a80-9fbd-c949438c58c9",
@@ -82979,6 +83074,28 @@
    "ermaozi",
    "clashnode",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "45.86.61.133",
+  "port": 443,
+  "uuid": "e2f3ddd0-10f1-421f-b684-4c943986da65",
+  "tls": true,
+  "sni": "deepl.com",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP",
+  "flow": "xtls-rprx-vision",
+  "pbk": "GwjzHvbNB5Wn6Jj7E3WSc5pc32bjeJCvv9yf0ibDnRs",
+  "sid": "15affa0af66dfc79",
+  "utls": "qq",
+  "reality": true,
+  "name": "filembad-418",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "01756bc0a9860817",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -84597,7 +84714,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "1ef2c8ea615c72bf",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -88517,6 +88635,28 @@
  },
  {
   "proto": "vless",
+  "server": "Fol.zarqivo.ir",
+  "port": 31892,
+  "uuid": "74e9d5ba-ac77-4fca-96ec-1d91e2f511fc",
+  "tls": true,
+  "sni": "www.thesivulichs.com",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24/",
+  "flow": "",
+  "pbk": "i5rHE4mPA5tdqNj7SgOLBYYgM-tbwz0s8FEF0MwXgjE",
+  "sid": "4994a3ebb255ebc9",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-249",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "6501f537e02259f6",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "Ip3.ipspanel.ir",
   "port": 8443,
   "name": "🇩🇪DE_36|666KB/s|M003-260806 [5a04991f5ba3]",
@@ -89901,6 +90041,28 @@
   "sources": [
    "clashnode",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "digitalrepository.online",
+  "port": 443,
+  "uuid": "17c068a5-97cb-40a2-bf60-215b749c0508",
+  "tls": true,
+  "sni": "digitalrepository.online",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24/",
+  "flow": "xtls-rprx-vision",
+  "pbk": "bKTzJLYj74IilLkZPG0GO_WPkZdAllAFnetWRDqj5h8",
+  "sid": "8cf78b3eca7747f1",
+  "utls": "qq",
+  "reality": true,
+  "name": "filembad-97",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "9674bffd61ab4770",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -91952,7 +92114,8 @@
   "fp": "bb64263159b84cf0",
   "sources": [
    "clashnode",
-   "tg:@oneclickvpnkeys"
+   "tg:@oneclickvpnkeys",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -108429,6 +108592,40 @@
  },
  {
   "proto": "vmess",
+  "server": "a54jqts-g06.jp01-nn-vm0.entry.fr0528.art",
+  "port": 21586,
+  "name": "🇯🇵 免费-日本1-Ver.7",
+  "source": "tg:@freeVPNjd→sub",
+  "uuid": "72a52b12-fbd2-3fa3-9964-df23590dc0bb",
+  "alterId": 1,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "tcp",
+  "fp": "8938ee7d5725c281",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "a57j5tk-g06.jp04-1d-vm0.entry.fr0528.art",
+  "port": 449,
+  "name": "🇯🇵 免费-日本4-Ver.8",
+  "source": "tg:@freeVPNjd→sub",
+  "uuid": "72a52b12-fbd2-3fa3-9964-df23590dc0bb",
+  "alterId": 1,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "fp": "1b1f67c0f5285e77",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
   "server": "a6c282b7-t70f40-t8ivpf-z65w.hkt.gotochinatown.net",
   "port": 80,
   "name": "中国 - 香港 - PCCW IMS Limited - 106",
@@ -115225,6 +115422,23 @@
  },
  {
   "proto": "vmess",
+  "server": "i5zsnyk-g06.jp06-jz-vm0.entry.fr0528.art",
+  "port": 28788,
+  "name": "🇯🇵 免费-日本6-Ver.8",
+  "source": "tg:@freeVPNjd→sub",
+  "uuid": "72a52b12-fbd2-3fa3-9964-df23590dc0bb",
+  "alterId": 1,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "tcp",
+  "fp": "b33155a222eab6c3",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
   "server": "in.connfull.org",
   "port": 2053,
   "name": "印度 - 新德里 - 1",
@@ -116324,6 +116538,74 @@
   "fp": "e526726592c862bb",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "o6a15ts-g06.jp02-e3-vm0.entry.fr0528.art",
+  "port": 11778,
+  "name": "🇯🇵 免费-日本2-Ver.8",
+  "source": "tg:@freeVPNjd→sub",
+  "uuid": "72a52b12-fbd2-3fa3-9964-df23590dc0bb",
+  "alterId": 1,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "fp": "dd354511704fc610",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "o6zjbuk-g06.jp07-sh-vm0.entry.fr0528.art",
+  "port": 28788,
+  "name": "🇯🇵 免费-日本7-Ver.2",
+  "source": "tg:@freeVPNjd→sub",
+  "uuid": "72a52b12-fbd2-3fa3-9964-df23590dc0bb",
+  "alterId": 1,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "fp": "755b07de2f3b880c",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "os7s5yj-g06.jp05-h6-vm0.entry.fr0528.art",
+  "port": 46487,
+  "name": "🇯🇵 免费-日本5-Ver.9",
+  "source": "tg:@freeVPNjd→sub",
+  "uuid": "72a52b12-fbd2-3fa3-9964-df23590dc0bb",
+  "alterId": 1,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "fp": "42ed3aa215255ed2",
+  "sources": [
+   "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "osanbts-g06.jp03-j7-vm0.entry.fr0528.art",
+  "port": 21586,
+  "name": "🇯🇵 免费-日本3-Ver.7",
+  "source": "tg:@freeVPNjd→sub",
+  "uuid": "72a52b12-fbd2-3fa3-9964-df23590dc0bb",
+  "alterId": 1,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "",
+  "network": "tcp",
+  "fp": "74245b25a69e9a05",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
