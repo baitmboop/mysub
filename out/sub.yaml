@@ -1,16 +1,24 @@
-# nodepool  生成于 2026-11-20 01:58:14 (北京时间)
+# nodepool  生成于 2026-11-20 04:57:59 (北京时间)
 # 节点数 10  (自建 0 / 免费额度 0 / 免费池 10)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
 proxies:
-  - name: N01 172.111.38.72
+  - name: N01 216.152.155.176
+    type: trojan
+    server: 216.152.155.176
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: blog.nextjobopportunityandclaimyouridealrole.com
+  - name: N02 172.111.38.72
     type: ss
     server: 172.111.38.72
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N02 169.197.140.171
+  - name: N03 169.197.140.171
     type: trojan
     server: 169.197.140.171
     port: 443
@@ -18,20 +26,13 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-  - name: N03 138.199.35.201
+  - name: N04 138.199.35.201
     type: http
     server: 138.199.35.201
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N04 69.17.68.66
-    type: socks5
-    server: 69.17.68.66
-    port: 62000
-    udp: false
-    username: u_rf917a7
-    password: 5l003o6mv3
   - name: N05 107.151.182.253
     type: ss
     server: 107.151.182.253
@@ -80,10 +81,10 @@ proxy-groups:
     proxies:
       - 自动选择
       - ③ 免费池
-      - N01 172.111.38.72
-      - N02 169.197.140.171
-      - N03 138.199.35.201
-      - N04 69.17.68.66
+      - N01 216.152.155.176
+      - N02 172.111.38.72
+      - N03 169.197.140.171
+      - N04 138.199.35.201
       - N05 107.151.182.253
       - N06 104.238.140.45
       - N07 138.199.35.204
@@ -96,10 +97,10 @@ proxy-groups:
     interval: 120
     tolerance: 100
     proxies:
-      - N01 172.111.38.72
-      - N02 169.197.140.171
-      - N03 138.199.35.201
-      - N04 69.17.68.66
+      - N01 216.152.155.176
+      - N02 172.111.38.72
+      - N03 169.197.140.171
+      - N04 138.199.35.201
       - N05 107.151.182.253
       - N06 104.238.140.45
       - N07 138.199.35.204
@@ -111,10 +112,10 @@ proxy-groups:
     url: "https://www.gstatic.com/generate_204"
     interval: 600
     proxies:
-      - N01 172.111.38.72
-      - N02 169.197.140.171
-      - N03 138.199.35.201
-      - N04 69.17.68.66
+      - N01 216.152.155.176
+      - N02 172.111.38.72
+      - N03 169.197.140.171
+      - N04 138.199.35.201
       - N05 107.151.182.253
       - N06 104.238.140.45
       - N07 138.199.35.204
