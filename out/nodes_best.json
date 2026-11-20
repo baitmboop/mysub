@@ -1,59 +1,6 @@
 [
  {
   "proto": "trojan",
-  "server": "216.152.155.176",
-  "port": 443,
-  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-  "sni": "blog.nextjobopportunityandclaimyouridealrole.com",
-  "network": "tcp",
-  "path": "",
-  "host": "",
-  "skipCertVerify": false,
-  "name": "n3354",
-  "source": "tg:@byxiaoxi→blog",
-  "fp": "2505d0b897746ec2",
-  "sources": [
-   "tg:@byxiaoxi→blog"
-  ],
-  "latency": 31,
-  "jitter": 29,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9981,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "ss",
-  "server": "172.111.38.72",
-  "port": 19999,
-  "cipher": "aes-256-gcm",
-  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-  "name": "n1600",
-  "source": "mahdibland",
-  "fp": "05fa9cf135b67194",
-  "sources": [
-   "mahdibland",
-   "xinshoucun"
-  ],
-  "latency": 34,
-  "jitter": 73,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9979,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "trojan",
   "server": "169.197.140.171",
   "port": 443,
   "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -260,6 +207,61 @@
    "cf-trace": "ok"
   },
   "score": 0.9163,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "socks5",
+  "server": "216.132.114.182",
+  "port": 62000,
+  "name": "n1099",
+  "source": "clashnode",
+  "username": "u_rf6ba87",
+  "password": "r1703057as",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "a9b55fe5c9e63d1c",
+  "sources": [
+   "clashnode"
+  ],
+  "latency": 16,
+  "jitter": 10,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9135,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "http",
+  "server": "138.199.35.215",
+  "port": 9002,
+  "name": "n0238",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "7a4f7ef41ce5a58b",
+  "sources": [
+   "go4sharing/arch",
+   "clashnode"
+  ],
+  "latency": 19,
+  "jitter": 8,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9116,
   "speed": 0.0,
   "cn_ok": null
  }
