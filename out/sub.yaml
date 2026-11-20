@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-20 22:56:27 (北京时间)
+# nodepool  生成于 2026-11-21 01:57:25 (北京时间)
 # 节点数 10  (自建 0 / 免费额度 0 / 免费池 10)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -25,46 +25,14 @@ proxies:
     cipher: rc4-md5
     password: 14fFPrbezE3HDZzsMOr6
     udp: true
-  - name: N04 138.199.35.203
-    type: http
-    server: 138.199.35.203
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N05 173.244.56.9
-    type: ss
-    server: 173.244.56.9
-    port: 443
-    cipher: aes-128-gcm
-    password: shadowsocks
-    udp: true
-  - name: N06 23.150.152.65
-    type: vmess
-    server: 23.150.152.65
-    port: 1270
-    uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: xmfhlpy.com
-    skipCertVerify: true
-  - name: N07 173.244.56.6
-    type: ss
-    server: 173.244.56.6
-    port: 443
-    cipher: aes-128-gcm
-    password: shadowsocks
-    udp: true
-  - name: N08 38.143.66.146
+  - name: N04 38.143.66.146
     type: ss
     server: 38.143.66.146
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N09 162.243.146.243
+  - name: N05 162.243.146.243
     type: http
     server: 162.243.146.243
     port: 443
@@ -74,13 +42,53 @@ proxies:
     tls: true
     skip-cert-verify: true
     sni: a2f392f3.acsnet.co
-  - name: N10 137.175.22.84
-    type: http
-    server: 137.175.22.84
-    port: 443
-    udp: false
+  - name: N06 149.40.57.135
+    type: ss
+    server: 149.40.57.135
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N07 172.111.38.246
+    type: vmess
+    server: 172.111.38.246
+    port: 1270
+    uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+    alterId: 0
+    cipher: auto
+    udp: true
     tls: true
-    skip-cert-verify: true
+    servername: xmfhlpy.com
+    skipCertVerify: true
+  - name: N08 38.64.138.187
+    type: vmess
+    server: 38.64.138.187
+    port: 1270
+    uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: xmfhlpy.com
+    skipCertVerify: true
+  - name: N09 38.128.66.212
+    type: vmess
+    server: 38.128.66.212
+    port: 1270
+    uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: xmfhlpy.com
+    skipCertVerify: true
+  - name: N10 216.106.178.169
+    type: ss
+    server: 216.106.178.169
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
 proxy-groups:
   - name: 节点选择
     type: select
@@ -90,13 +98,13 @@ proxy-groups:
       - N01 169.197.140.171
       - N02 138.199.35.201
       - N03 107.151.182.253
-      - N04 138.199.35.203
-      - N05 173.244.56.9
-      - N06 23.150.152.65
-      - N07 173.244.56.6
-      - N08 38.143.66.146
-      - N09 162.243.146.243
-      - N10 137.175.22.84
+      - N04 38.143.66.146
+      - N05 162.243.146.243
+      - N06 149.40.57.135
+      - N07 172.111.38.246
+      - N08 38.64.138.187
+      - N09 38.128.66.212
+      - N10 216.106.178.169
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -106,13 +114,13 @@ proxy-groups:
       - N01 169.197.140.171
       - N02 138.199.35.201
       - N03 107.151.182.253
-      - N04 138.199.35.203
-      - N05 173.244.56.9
-      - N06 23.150.152.65
-      - N07 173.244.56.6
-      - N08 38.143.66.146
-      - N09 162.243.146.243
-      - N10 137.175.22.84
+      - N04 38.143.66.146
+      - N05 162.243.146.243
+      - N06 149.40.57.135
+      - N07 172.111.38.246
+      - N08 38.64.138.187
+      - N09 38.128.66.212
+      - N10 216.106.178.169
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -121,12 +129,12 @@ proxy-groups:
       - N01 169.197.140.171
       - N02 138.199.35.201
       - N03 107.151.182.253
-      - N04 138.199.35.203
-      - N05 173.244.56.9
-      - N06 23.150.152.65
-      - N07 173.244.56.6
-      - N08 38.143.66.146
-      - N09 162.243.146.243
-      - N10 137.175.22.84
+      - N04 38.143.66.146
+      - N05 162.243.146.243
+      - N06 149.40.57.135
+      - N07 172.111.38.246
+      - N08 38.64.138.187
+      - N09 38.128.66.212
+      - N10 216.106.178.169
 rules:
   - "MATCH,节点选择"

@@ -79,109 +79,6 @@
   "cn_ok": null
  },
  {
-  "proto": "http",
-  "server": "138.199.35.203",
-  "port": 9002,
-  "name": "n0226",
-  "source": "clashnode",
-  "username": "",
-  "password": "",
-  "tls": true,
-  "sni": "",
-  "skipCertVerify": true,
-  "fp": "8e698c69f27b4602",
-  "sources": [
-   "clashnode"
-  ],
-  "latency": 18,
-  "jitter": 8,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9163,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "ss",
-  "server": "173.244.56.9",
-  "port": 443,
-  "name": "n1813",
-  "source": "go4sharing/arch",
-  "cipher": "aes-128-gcm",
-  "password": "shadowsocks",
-  "fp": "f4e8233f5648880c",
-  "sources": [
-   "go4sharing/arch"
-  ],
-  "latency": 18,
-  "jitter": 1,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9163,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "vmess",
-  "server": "23.150.152.65",
-  "port": 1270,
-  "name": "n6451",
-  "source": "clashnode",
-  "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-  "alterId": 0,
-  "cipher": "auto",
-  "tls": true,
-  "sni": "xmfhlpy.com",
-  "network": "tcp",
-  "fp": "27160fbd84d7daed",
-  "sources": [
-   "clashnode"
-  ],
-  "latency": 19,
-  "jitter": 3,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9116,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "ss",
-  "server": "173.244.56.6",
-  "port": 443,
-  "name": "n1812",
-  "source": "go4sharing/arch",
-  "cipher": "aes-128-gcm",
-  "password": "shadowsocks",
-  "fp": "5e161dcffd2852f4",
-  "sources": [
-   "go4sharing/arch"
-  ],
-  "latency": 19,
-  "jitter": 1,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9116,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
   "proto": "ss",
   "server": "38.143.66.146",
   "port": 19999,
@@ -234,29 +131,140 @@
   "cn_ok": null
  },
  {
-  "proto": "http",
-  "server": "137.175.22.84",
-  "port": 443,
-  "name": "n0211",
+  "proto": "ss",
+  "server": "149.40.57.135",
+  "port": 19999,
+  "name": "n1797",
   "source": "clashnode",
-  "username": "",
-  "password": "",
-  "tls": true,
-  "sni": "",
-  "skipCertVerify": true,
-  "fp": "ed02fc62934aac3e",
+  "cipher": "aes-256-gcm",
+  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+  "fp": "48bc4612b940c29d",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@byxiaoxi→blog"
   ],
-  "latency": 20,
-  "jitter": 17,
+  "latency": 19,
+  "jitter": 1,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.907,
+  "score": 0.905,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "vmess",
+  "server": "172.111.38.246",
+  "port": 1270,
+  "name": "n9798",
+  "source": "clashnode",
+  "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "xmfhlpy.com",
+  "network": "tcp",
+  "fp": "3cc0c05c3c5b3701",
+  "sources": [
+   "clashnode",
+   "tg:@byxiaoxi→blog"
+  ],
+  "latency": 19,
+  "jitter": 9,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.905,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "vmess",
+  "server": "38.64.138.187",
+  "port": 1270,
+  "name": "n10087",
+  "source": "clashnode",
+  "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "xmfhlpy.com",
+  "network": "tcp",
+  "fp": "77c10034f7aa96aa",
+  "sources": [
+   "clashnode",
+   "tg:@byxiaoxi→blog"
+  ],
+  "latency": 19,
+  "jitter": 1,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.905,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "vmess",
+  "server": "38.128.66.212",
+  "port": 1270,
+  "name": "n10064",
+  "source": "clashnode",
+  "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": true,
+  "sni": "xmfhlpy.com",
+  "network": "tcp",
+  "fp": "82db9b50cbbdd81f",
+  "sources": [
+   "clashnode"
+  ],
+  "latency": 20,
+  "jitter": 2,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "ss",
+  "server": "216.106.178.169",
+  "port": 19999,
+  "cipher": "aes-256-gcm",
+  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+  "name": "n2241",
+  "source": "mahdibland",
+  "fp": "19fad34997c210ef",
+  "sources": [
+   "mahdibland",
+   "xinshoucun",
+   "clashnode",
+   "tg:@byxiaoxi→blog"
+  ],
+  "latency": 20,
+  "jitter": 1,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9,
   "speed": 0.0,
   "cn_ok": null
  }
