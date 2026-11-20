@@ -1,33 +1,5 @@
 [
  {
-  "proto": "trojan",
-  "server": "169.197.140.171",
-  "port": 443,
-  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-  "sni": "cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com",
-  "network": "tcp",
-  "path": "",
-  "host": "",
-  "skipCertVerify": false,
-  "name": "n3148",
-  "source": "tg:@byxiaoxi→blog",
-  "fp": "e6e26dcb0db9a7d4",
-  "sources": [
-   "tg:@byxiaoxi→blog"
-  ],
-  "latency": 34,
-  "jitter": 18,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9979,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
   "proto": "http",
   "server": "138.199.35.201",
   "port": 9002,
@@ -249,6 +221,34 @@
   "sni": "",
   "skipCertVerify": true,
   "fp": "7a4f7ef41ce5a58b",
+  "sources": [
+   "go4sharing/arch",
+   "clashnode"
+  ],
+  "latency": 19,
+  "jitter": 8,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9116,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "http",
+  "server": "138.199.35.220",
+  "port": 9002,
+  "name": "n0243",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "209a5155aad9c7a0",
   "sources": [
    "go4sharing/arch",
    "clashnode"

@@ -1,75 +1,74 @@
-# nodepool  生成于 2026-11-20 14:03:53 (北京时间)
+# nodepool  生成于 2026-11-20 17:02:48 (北京时间)
 # 节点数 10  (自建 0 / 免费额度 0 / 免费池 10)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
 proxies:
-  - name: N01 169.197.140.171
-    type: trojan
-    server: 169.197.140.171
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-  - name: N02 138.199.35.201
+  - name: N01 138.199.35.201
     type: http
     server: 138.199.35.201
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N03 107.151.182.253
+  - name: N02 107.151.182.253
     type: ss
     server: 107.151.182.253
     port: 8080
     cipher: rc4-md5
     password: 14fFPrbezE3HDZzsMOr6
     udp: true
-  - name: N04 104.238.140.45
+  - name: N03 104.238.140.45
     type: ss
     server: 104.238.140.45
     port: 11051
     cipher: chacha20-ietf-poly1305
     password: JUXsy78dSs6ROkasikmoaL
     udp: true
-  - name: N05 138.199.35.204
+  - name: N04 138.199.35.204
     type: http
     server: 138.199.35.204
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N06 138.199.35.203
+  - name: N05 138.199.35.203
     type: http
     server: 138.199.35.203
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N07 138.199.35.209
+  - name: N06 138.199.35.209
     type: http
     server: 138.199.35.209
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N08 173.244.56.9
+  - name: N07 173.244.56.9
     type: ss
     server: 173.244.56.9
     port: 443
     cipher: aes-128-gcm
     password: shadowsocks
     udp: true
-  - name: N09 216.132.114.182
+  - name: N08 216.132.114.182
     type: socks5
     server: 216.132.114.182
     port: 62000
     udp: false
     username: u_rf6ba87
     password: r1703057as
-  - name: N10 138.199.35.215
+  - name: N09 138.199.35.215
     type: http
     server: 138.199.35.215
+    port: 9002
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N10 138.199.35.220
+    type: http
+    server: 138.199.35.220
     port: 9002
     udp: false
     tls: true
@@ -80,46 +79,46 @@ proxy-groups:
     proxies:
       - 自动选择
       - ③ 免费池
-      - N01 169.197.140.171
-      - N02 138.199.35.201
-      - N03 107.151.182.253
-      - N04 104.238.140.45
-      - N05 138.199.35.204
-      - N06 138.199.35.203
-      - N07 138.199.35.209
-      - N08 173.244.56.9
-      - N09 216.132.114.182
-      - N10 138.199.35.215
+      - N01 138.199.35.201
+      - N02 107.151.182.253
+      - N03 104.238.140.45
+      - N04 138.199.35.204
+      - N05 138.199.35.203
+      - N06 138.199.35.209
+      - N07 173.244.56.9
+      - N08 216.132.114.182
+      - N09 138.199.35.215
+      - N10 138.199.35.220
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 120
     tolerance: 100
     proxies:
-      - N01 169.197.140.171
-      - N02 138.199.35.201
-      - N03 107.151.182.253
-      - N04 104.238.140.45
-      - N05 138.199.35.204
-      - N06 138.199.35.203
-      - N07 138.199.35.209
-      - N08 173.244.56.9
-      - N09 216.132.114.182
-      - N10 138.199.35.215
+      - N01 138.199.35.201
+      - N02 107.151.182.253
+      - N03 104.238.140.45
+      - N04 138.199.35.204
+      - N05 138.199.35.203
+      - N06 138.199.35.209
+      - N07 173.244.56.9
+      - N08 216.132.114.182
+      - N09 138.199.35.215
+      - N10 138.199.35.220
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
     interval: 600
     proxies:
-      - N01 169.197.140.171
-      - N02 138.199.35.201
-      - N03 107.151.182.253
-      - N04 104.238.140.45
-      - N05 138.199.35.204
-      - N06 138.199.35.203
-      - N07 138.199.35.209
-      - N08 173.244.56.9
-      - N09 216.132.114.182
-      - N10 138.199.35.215
+      - N01 138.199.35.201
+      - N02 107.151.182.253
+      - N03 104.238.140.45
+      - N04 138.199.35.204
+      - N05 138.199.35.203
+      - N06 138.199.35.209
+      - N07 173.244.56.9
+      - N08 216.132.114.182
+      - N09 138.199.35.215
+      - N10 138.199.35.220
 rules:
   - "MATCH,节点选择"
