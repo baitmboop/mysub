@@ -26431,7 +26431,8 @@
   "fp": "5d34c5d35e714589",
   "sources": [
    "clashnode",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -37518,7 +37519,8 @@
    "go4sharing/arch",
    "xinshoucun",
    "clashnode",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -38800,6 +38802,19 @@
   "fp": "73f464812c71d8c0",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "afg.pasmazy1.ir",
+  "port": 2017,
+  "cipher": "2022-blake3-aes-128-gcm",
+  "password": "iSBCJnkIxg/Q+tcZfGQBlQ==:BZSie1M16PDDtPnXKoVbaw==",
+  "name": "filembad-9",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "91d961cdaca36e86",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -59991,6 +60006,23 @@
  },
  {
   "proto": "trojan",
+  "server": "openai.com",
+  "port": 443,
+  "password": "MITIVPN",
+  "sni": "UsAba-bUbks.App-CloUd.IR",
+  "network": "ws",
+  "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=U-S-a",
+  "host": "my-usjca-ohl.App-CloUd.IR",
+  "skipCertVerify": false,
+  "name": "canfingV2rayNG-56",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "321639ee7645271a",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "outgoing-cockatoo.rooster465.autos",
   "port": 443,
   "name": "波兰 - 华沙 - 2",
@@ -64072,6 +64104,28 @@
    "ermaozi",
    "clashnode",
    "anaer/Sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.253.74.39",
+  "port": 8080,
+  "uuid": "deb79775-35dc-4376-adf0-5b4fd26c691c",
+  "tls": true,
+  "sni": "yahoo.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "NJrlB9wz9ctlwMOIK8Jp7Ml25j77QlFOjpha1lEktkg",
+  "sid": "4a9acf81b8773e1e",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-377",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "093140a0660d7b3a",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -71487,6 +71541,28 @@
  },
  {
   "proto": "vless",
+  "server": "185.32.6.61",
+  "port": 443,
+  "uuid": "0ce122a3-1c91-4cf5-a2cc-67f25e8cb56f",
+  "tls": true,
+  "sni": "dropbox.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "xy8AHr_xZCNqFOuLq_t2fe4oLlrv5iu38uCQ1hUJ40w",
+  "sid": "954c99065465428d",
+  "utls": "firefox",
+  "reality": true,
+  "name": "canfingV2rayNG-86",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "3de1393e1824e518",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "185.36.142.55",
   "port": 443,
   "name": "@ffqidfx 🇪🇪爱沙尼亚 03",
@@ -78593,6 +78669,28 @@
  },
  {
   "proto": "vless",
+  "server": "48.102.163.136",
+  "port": 8443,
+  "uuid": "e07a6d05-f665-4811-91f0-9b3dc1094e4d",
+  "tls": true,
+  "sni": "tradingview.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38",
+  "sid": "8f3c6e2a1b5d4f09",
+  "utls": "edge",
+  "reality": true,
+  "name": "ProxyMtpVPN-378",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "09194ff45f8f57ac",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "49.13.3.51",
   "port": 443,
   "name": "@ffqidfx 🇩🇪德国 10",
@@ -79214,7 +79312,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "8ff418c8d41c4551",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -81701,6 +81800,28 @@
   "sources": [
    "tg:@oneclickvpnkeys",
    "anaer/Sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "87.58.205.88",
+  "port": 443,
+  "uuid": "d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02",
+  "tls": true,
+  "sni": "google.com",
+  "network": "xhttp",
+  "path": "/",
+  "host": "",
+  "flow": "",
+  "pbk": "v_s3GW5_7jvB081tdUeyoDUUTq6fZwqKbVS7CdvLFA0",
+  "sid": "72cd47c079c0a3df",
+  "utls": "random",
+  "reality": true,
+  "name": "canfingV2rayNG-362",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "046c6eca27318827",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -86462,6 +86583,28 @@
  },
  {
   "proto": "vless",
+  "server": "nl-tx.sbrf-cdn342.ru",
+  "port": 443,
+  "uuid": "01ea3b87-b7b1-4aef-b24a-9c43fbd3b26f",
+  "tls": true,
+  "sni": "sub.sbrf-cdn342.ru",
+  "network": "tcp",
+  "path": "",
+  "host": "/",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "qq",
+  "reality": false,
+  "name": "canfingV2rayNG-77",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "037c7c8188c6b73a",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "nl.point.cookie-line.cc",
   "port": 443,
   "uuid": "dfe50e18-28ce-459e-a6b9-0f2585bcc3b6",
@@ -86823,6 +86966,28 @@
  },
  {
   "proto": "vless",
+  "server": "pl.fantoff.online",
+  "port": 443,
+  "uuid": "b95dd8e5-2758-408f-be99-9362eecee609",
+  "tls": true,
+  "sni": "yahoo.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "BoWKSM1aSfcTRgKX_kZYPlauG0jLIqku3zPBAiHpUgs",
+  "sid": "5ea7e22e889dabc5",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-335",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "933050f314c9ccc9",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "pl1.obxodvpn.us",
   "port": 443,
   "uuid": "146d567c-6335-4e63-a8aa-7ec068642440",
@@ -86995,6 +87160,28 @@
   "fp": "f0fc96f646e43db0",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "rial-gee3.torshikhoone.ir",
+  "port": 443,
+  "uuid": "91fee5d4-ebf5-40b3-80a9-d4927cf093e9",
+  "tls": true,
+  "sni": "www.hetzner.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "eCt1lJtFXHID16IAEA4nw3xFcMejrnauZqIE_Jf5qEw",
+  "sid": "b1c9c3d3cc3b662b",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-285",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c7ba41c7f4d4ae4b",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -88651,6 +88838,28 @@
   "fp": "1438b9aa47915d8b",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "www.pexqelo.ir",
+  "port": 443,
+  "uuid": "3af2930e-8ea0-4b50-98b0-499df9b269dc",
+  "tls": true,
+  "sni": "opensuse.org",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "EMMr7Eqwy3wpgbatnOaAmym5Tm4nXyJlC83iVvCadmk",
+  "sid": "f3f00787a8b3f471",
+  "utls": "ios",
+  "reality": true,
+  "name": "filembad-132",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c380873f2c70e5df",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
