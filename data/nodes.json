@@ -24702,7 +24702,8 @@
    "ermaozi",
    "mahdibland",
    "xinshoucun",
-   "clashnode"
+   "clashnode",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -33169,6 +33170,19 @@
  },
  {
   "proto": "ss",
+  "server": "35.159.25.20",
+  "port": 443,
+  "cipher": "2022-blake3-chacha20-poly1305",
+  "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=",
+  "name": "filembad-2",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "93534a2a0de67d16",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "35.175.185.227",
   "port": 443,
   "name": "美国 - Ashburn - 5",
@@ -39308,7 +39322,8 @@
    "mahdibland",
    "xinshoucun",
    "clashnode",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -43417,6 +43432,23 @@
   "sources": [
    "clashnode",
    "anaer/Sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "104.18.152.246",
+  "port": 443,
+  "password": "humanity",
+  "sni": "www.calmloud.com",
+  "network": "ws",
+  "path": "/assignment",
+  "host": "www.calmloud.com",
+  "skipCertVerify": false,
+  "name": "canfingV2rayNG-69",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "a71452e3614bc0ee",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -71827,6 +71859,28 @@
  },
  {
   "proto": "vless",
+  "server": "138.124.251.98",
+  "port": 443,
+  "uuid": "1d1eda2e-0bd7-4478-877b-1c5425c6c4dd",
+  "tls": true,
+  "sni": "tradingview.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38",
+  "sid": "8f3c6e2a1b5d4f09",
+  "utls": "",
+  "reality": true,
+  "name": "⭕14@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "440bed430898f10e",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "138.124.39.252",
   "port": 443,
   "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
@@ -72325,6 +72379,28 @@
   "fp": "b8f5733377d64bc8",
   "sources": [
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "139.59.152.166",
+  "port": 443,
+  "uuid": "40992c2a-513e-4837-9594-23411fd42afd",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "/",
+  "host": "store.steampowered.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "⭕1@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "a68e7ed8e0cd5fd9",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -73010,6 +73086,28 @@
    "NoMoreWalls",
    "ermaozi",
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "146.190.21.145",
+  "port": 443,
+  "uuid": "40992c2a-513e-4837-9594-23411fd42afd",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "/",
+  "host": "fast.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "⭕2@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "ead8caf97af2c6d2",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -75004,6 +75102,28 @@
   "fp": "d448c61d654f3660",
   "sources": [
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "161.35.37.106",
+  "port": 443,
+  "uuid": "40992c2a-513e-4837-9594-23411fd42afd",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "/",
+  "host": "fast.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "⭕12@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "34079f27d2d953e2",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -78091,6 +78211,28 @@
  },
  {
   "proto": "vless",
+  "server": "178.62.212.162",
+  "port": 443,
+  "uuid": "40992c2a-513e-4837-9594-23411fd42afd",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "/",
+  "host": "store.steampowered.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "⭕3@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "79cb03c5a23fedd6",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "178.94.25.73",
   "port": 10443,
   "name": "🇸🇬SG_8|396KB/s|A001-260618 [107d28d9ca5d]",
@@ -80950,6 +81092,28 @@
   "fp": "ee97ee0eb79771c8",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "193.233.198.117",
+  "port": 443,
+  "uuid": "03786aa4-21a5-4e7c-83d6-873aafc41217",
+  "tls": true,
+  "sni": "de-03.neverspy.tech",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "zT-G11tZiOO7DFJD23MCeZC3TwaUJr6NMDHW4CLif1Y",
+  "sid": "5eebb4b74e873b14",
+  "utls": "",
+  "reality": true,
+  "name": "⭕4@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "e8b9a17c82683acd",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -84381,6 +84545,28 @@
   "path": "/announcement",
   "host": "eu-central.862400.xyz",
   "fp": "100cb25cf38d8214",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "2406:da12:a01:f703:f9a5:2fe3:2fe0:6957",
+  "port": 23478,
+  "uuid": "af8e3c87-2a75-44fa-9a8b-0227a9d2cb82",
+  "tls": true,
+  "sni": "apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "wGnSYvV6s1cBduAKWC4GE1YiKdk2bdrHnn-JdC-GtQo",
+  "sid": "05af1c72",
+  "utls": "chrome",
+  "reality": true,
+  "name": "韩国 IPv6 @befriendsvpn",
+  "source": "tg:@wxdy666→sub",
+  "fp": "5e3e10dd3df1fb48",
   "sources": [
    "tg:@wxdy666→sub"
   ]
@@ -87954,6 +88140,50 @@
  },
  {
   "proto": "vless",
+  "server": "48.103.133.47",
+  "port": 8443,
+  "uuid": "2ed34e7c-45c5-4e0e-bcab-42fe99a7bd25",
+  "tls": true,
+  "sni": "apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+  "sid": "6ba85179e30d4fc2",
+  "utls": "",
+  "reality": true,
+  "name": "⭕9@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "db765cd6a49ffd73",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "48.103.231.2",
+  "port": 443,
+  "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
+  "tls": true,
+  "sni": "ee1-r.bankai.party",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+  "sid": "457fab2ac885dbe0",
+  "utls": "",
+  "reality": true,
+  "name": "⭕6@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "56ca5282e4b9de3d",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "49.13.3.51",
   "port": 443,
   "name": "@ffqidfx 🇩🇪德国 10",
@@ -88425,6 +88655,28 @@
  },
  {
   "proto": "vless",
+  "server": "51.15.16.68",
+  "port": 2053,
+  "uuid": "2e7c6265-6933-4a91-bd43-b4fd2e9566c8",
+  "tls": true,
+  "sni": "www.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "nyBUWOwOLHOrVSomGfHaPjt-lgbSGk-XSv89voR6T3o",
+  "sid": "e9272cf492b43a48",
+  "utls": "",
+  "reality": true,
+  "name": "⭕7@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "db9e83aa27487dce",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "51.158.206.103",
   "port": 23576,
   "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -88806,6 +89058,28 @@
  },
  {
   "proto": "vless",
+  "server": "51.170.191.10",
+  "port": 63286,
+  "uuid": "478d6288-3745-4558-bf38-47ab9bf16462",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "U7t4RFE9MSMtC-o1DoJ8pYzKMfgVpTg6ZhTTknBrVkU",
+  "sid": "1f2519bb96e5589c",
+  "utls": "",
+  "reality": true,
+  "name": "⭕5@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "7ecc72b6581c4360",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "51.38.71.147",
   "port": 443,
   "name": "🇬🇧GB_4|1.4MB/s|B007-260618 [4cd4021cb207]",
@@ -89153,6 +89427,28 @@
  },
  {
   "proto": "vless",
+  "server": "57.131.21.102",
+  "port": 8443,
+  "uuid": "69ac162b-1643-4acb-9f49-09d8b0fad609",
+  "tls": true,
+  "sni": "milan.adaspoloandco.com",
+  "network": "ws",
+  "path": "/RoBeRt",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-249",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "8fea16136426149f",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "57.183.24.46",
   "port": 33001,
   "uuid": "24184696-1b21-4d99-8f36-f5c729b955fa",
@@ -89321,7 +89617,8 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -91704,6 +92001,28 @@
  },
  {
   "proto": "vless",
+  "server": "88.216.70.125",
+  "port": 443,
+  "uuid": "88e79aa6-f431-4453-8dcc-652a0c747198",
+  "tls": true,
+  "sni": "o685y.save-node.com",
+  "network": "ws",
+  "path": "/api/se1k2rfxlsuer3ry4u6e84kl8rqp721p",
+  "host": "o685y.save-node.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "⭕8@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "f80203d01b7ff315",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "88.216.72.172",
   "port": 443,
   "uuid": "31e407b3-6e1e-425f-98ea-fcf8f494c6a0",
@@ -92698,6 +93017,28 @@
  },
  {
   "proto": "vless",
+  "server": "93.123.101.198",
+  "port": 443,
+  "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
+  "tls": true,
+  "sni": "de14-r.bankai.party",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+  "sid": "",
+  "utls": "",
+  "reality": true,
+  "name": "⭕15@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "f3e66049a0f253a7",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "93.123.85.103",
   "port": 443,
   "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
@@ -93466,6 +93807,28 @@
   "fp": "c18ec50c705b794f",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "DE.IPSENTER.ORG",
+  "port": 443,
+  "uuid": "c381ed79-f3c9-4028-85ae-687795d89ece",
+  "tls": true,
+  "sni": "play.google.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "4-ou3SyJYZ2ptF0vXFdc02yIRTF4VF8m2XcUKJPsUyQ",
+  "sid": "1128da54b05ec30c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-351",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "6661f2eb17a0037f",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -97858,6 +98221,28 @@
  },
  {
   "proto": "vless",
+  "server": "o685y.save-node.com",
+  "port": 443,
+  "uuid": "88e79aa6-f431-4453-8dcc-652a0c747198",
+  "tls": true,
+  "sni": "o685y.save-node.com",
+  "network": "ws",
+  "path": "/api/se1k2rfxlsuer3ry4u6e84kl8rqp721p",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "⭕10@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "dc851ca76f55c42b",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "one-for-all.levikogjgfdd.ir",
   "port": 2096,
   "name": "❓Other_65|139KB/s|B007-260618 [2626aa2dc1e1]",
@@ -98362,6 +98747,28 @@
    "NoMoreWalls",
    "ermaozi",
    "anaer/Sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "rel2.pasmazy.ir",
+  "port": 8585,
+  "uuid": "f30b81f9-929e-426e-9d48-dd228c37e159",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "play.google.com",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "filembad-406",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "66ef2dc2d48e5198",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
