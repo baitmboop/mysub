@@ -28,33 +28,6 @@
   "cn_ok": null
  },
  {
-  "proto": "http",
-  "server": "138.199.35.201",
-  "port": 9002,
-  "name": "n0224",
-  "source": "clashnode",
-  "username": "",
-  "password": "",
-  "tls": true,
-  "sni": "",
-  "skipCertVerify": true,
-  "fp": "3a4244c62267c9bd",
-  "sources": [
-   "clashnode"
-  ],
-  "latency": 15,
-  "jitter": 12,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9302,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
   "proto": "ss",
   "server": "107.151.182.253",
   "port": 8080,
@@ -270,6 +243,30 @@
    "cf-trace": "ok"
   },
   "score": 0.8884,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "ss",
+  "server": "138.199.43.159",
+  "port": 8080,
+  "name": "n1638",
+  "source": "clashnode",
+  "cipher": "rc4-md5",
+  "password": "14fFPrbezE3HDZzsMOr6",
+  "fp": "9fad17edf347eb6a",
+  "sources": [
+   "clashnode"
+  ],
+  "latency": 25,
+  "jitter": 2,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8837,
   "speed": 0.0,
   "cn_ok": null
  }
