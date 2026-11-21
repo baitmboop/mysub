@@ -132,35 +132,6 @@
  },
  {
   "proto": "vmess",
-  "server": "172.111.38.246",
-  "port": 1270,
-  "name": "n9798",
-  "source": "clashnode",
-  "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-  "alterId": 0,
-  "cipher": "auto",
-  "tls": true,
-  "sni": "xmfhlpy.com",
-  "network": "tcp",
-  "fp": "3cc0c05c3c5b3701",
-  "sources": [
-   "clashnode",
-   "tg:@byxiaoxi→blog"
-  ],
-  "latency": 19,
-  "jitter": 9,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.905,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "vmess",
   "server": "38.64.138.187",
   "port": 1270,
   "name": "n10087",
@@ -244,23 +215,53 @@
   "cn_ok": null
  },
  {
+  "proto": "http",
+  "server": "154.26.192.123",
+  "port": 10988,
+  "name": "n0299",
+  "source": "go4sharing/arch",
+  "username": "fQ67Dpe5dU",
+  "password": "gs4BXwT6SW",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "19c3170426569206",
+  "sources": [
+   "go4sharing/arch"
+  ],
+  "latency": 24,
+  "jitter": 13,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8884,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
   "proto": "vmess",
-  "server": "134.195.196.154",
-  "port": 1270,
-  "name": "n9449",
-  "source": "clashnode",
-  "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+  "server": "84.17.41.2",
+  "port": 18000,
+  "name": "n6742",
+  "source": "go4sharing/arch",
+  "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
   "alterId": 0,
   "cipher": "auto",
-  "tls": true,
-  "sni": "xmfhlpy.com",
+  "tls": false,
+  "sni": "",
   "network": "tcp",
-  "fp": "fe1805c4cb01bd05",
+  "fp": "e96ade2932aef52f",
   "sources": [
+   "go4sharing/arch",
    "clashnode",
-   "tg:@wxdy666→sub"
+   "tg:@byxiaoxi→blog",
+   "anaer/Sub",
+   "tg:@vpnfail_v2ray"
   ],
-  "latency": 21,
+  "latency": 24,
   "jitter": 2,
   "verify_ok": 3,
   "verify": {
@@ -268,7 +269,7 @@
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.895,
+  "score": 0.8884,
   "speed": 0.0,
   "cn_ok": null
  }
