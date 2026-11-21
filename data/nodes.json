@@ -25145,7 +25145,8 @@
    "NoMoreWalls",
    "ermaozi",
    "mahdibland",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -47151,6 +47152,23 @@
   "fp": "13b2f71149cfea46",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "151.101.56.101",
+  "port": 443,
+  "password": "MiTiVPN",
+  "sni": "ssl.fastly.com",
+  "network": "ws",
+  "path": "@mehrosaboran",
+  "host": "mitivpn---ss--s---mitivpn-5.global.ssl.fastly.net",
+  "skipCertVerify": false,
+  "name": "canfingV2rayNG-59",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "6a1f5167cf7b9aac",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -80087,6 +80105,28 @@
  },
  {
   "proto": "vless",
+  "server": "185.79.138.71",
+  "port": 448,
+  "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
+  "tls": true,
+  "sni": "www.samsung.com",
+  "network": "tcp",
+  "path": "",
+  "host": "/?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI",
+  "flow": "",
+  "pbk": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+  "sid": "cd21e552537c7c0b",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-89",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "5b35bd97d2eb57d5",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "185.81.28.7",
   "port": 443,
   "name": "@ffqidfx 🇸🇬新加坡 02",
@@ -89811,7 +89851,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "e6a97fd126552d4d",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -99803,6 +99844,28 @@
  },
  {
   "proto": "vless",
+  "server": "mx.bexumconnect.ltd",
+  "port": 443,
+  "uuid": "1e06c388-d31c-420e-916a-94a990648e34",
+  "tls": true,
+  "sni": "mx.bexumconnect.ltd",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "qq",
+  "reality": false,
+  "name": "canfingV2rayNG-115",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "3e013cae00c80786",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "mx001.zestapp778.com",
   "port": 19167,
   "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
@@ -103389,6 +103452,28 @@
   "fp": "b509e15ee9d0c721",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "wwww.qarvian.ir",
+  "port": 443,
+  "uuid": "97e0ea78-67ae-4984-8a14-a7d1a51e58de",
+  "tls": true,
+  "sni": "cdn.akamai.steamstatic.com",
+  "network": "ws",
+  "path": "",
+  "host": "copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-309",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "9ac1d9a73b79bda6",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
