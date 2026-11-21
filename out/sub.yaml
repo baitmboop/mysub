@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-21 19:45:39 (北京时间)
+# nodepool  生成于 2026-11-21 22:51:27 (北京时间)
 # 节点数 10  (自建 0 / 免费额度 0 / 免费池 10)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -64,28 +64,29 @@ proxies:
     udp: false
     username: kingstar123
     password: kingstar123++
-  - name: N08 167.88.61.193
-    type: trojan
-    server: 167.88.61.193
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: browseseniorrolesandenhanceyourcareertoday.com
-  - name: N09 79.110.53.169
-    type: ss
-    server: 79.110.53.169
-    port: 8080
-    cipher: rc4-md5
-    password: 14fFPrbezE3HDZzsMOr6
-    udp: true
-  - name: N10 fan.365747.xyz
+  - name: N08 purposebydesig.club
     type: http
-    server: fan.365747.xyz
+    server: purposebydesig.club
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
+  - name: N09 167.88.61.52
+    type: trojan
+    server: 167.88.61.52
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: courses.browseseniorrolesandenhanceyourcareertoday.com
+  - name: N10 167.88.61.20
+    type: trojan
+    server: 167.88.61.20
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: api.browseseniorrolesandenhanceyourcareertoday.com
 proxy-groups:
   - name: 节点选择
     type: select
@@ -99,9 +100,9 @@ proxy-groups:
       - N05 38.128.66.212
       - N06 216.106.178.169
       - N07 23.230.200.250
-      - N08 167.88.61.193
-      - N09 79.110.53.169
-      - N10 fan.365747.xyz
+      - N08 purposebydesig.club
+      - N09 167.88.61.52
+      - N10 167.88.61.20
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -115,9 +116,9 @@ proxy-groups:
       - N05 38.128.66.212
       - N06 216.106.178.169
       - N07 23.230.200.250
-      - N08 167.88.61.193
-      - N09 79.110.53.169
-      - N10 fan.365747.xyz
+      - N08 purposebydesig.club
+      - N09 167.88.61.52
+      - N10 167.88.61.20
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -130,8 +131,8 @@ proxy-groups:
       - N05 38.128.66.212
       - N06 216.106.178.169
       - N07 23.230.200.250
-      - N08 167.88.61.193
-      - N09 79.110.53.169
-      - N10 fan.365747.xyz
+      - N08 purposebydesig.club
+      - N09 167.88.61.52
+      - N10 167.88.61.20
 rules:
   - "MATCH,节点选择"

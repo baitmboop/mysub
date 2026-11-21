@@ -190,20 +190,20 @@
   "cn_ok": null
  },
  {
-  "proto": "trojan",
-  "server": "167.88.61.193",
+  "proto": "http",
+  "server": "purposebydesig.club",
   "port": 443,
-  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-  "sni": "browseseniorrolesandenhanceyourcareertoday.com",
-  "network": "tcp",
-  "path": "",
-  "host": "",
-  "skipCertVerify": false,
-  "name": "n3484",
-  "source": "tg:@byxiaoxi→blog",
-  "fp": "a71ec610054a1d1b",
+  "name": "n0938",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "dadf5b067c0498df",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "go4sharing/arch",
+   "clashnode"
   ],
   "latency": 18,
   "jitter": 1,
@@ -218,19 +218,25 @@
   "cn_ok": null
  },
  {
-  "proto": "ss",
-  "server": "79.110.53.169",
-  "port": 8080,
-  "name": "n2765",
-  "source": "clashnode",
-  "cipher": "rc4-md5",
-  "password": "14fFPrbezE3HDZzsMOr6",
-  "fp": "cb25ccce4f0fc05b",
+  "proto": "trojan",
+  "server": "167.88.61.52",
+  "port": 443,
+  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+  "sni": "courses.browseseniorrolesandenhanceyourcareertoday.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "n3487",
+  "source": "ermaozi",
+  "fp": "23648fdf89c3365f",
   "sources": [
-   "clashnode",
-   "tg:@byxiaoxi→blog"
+   "ermaozi",
+   "mahdibland",
+   "tg:@byxiaoxi→blog",
+   "tg:@wxdy666→sub"
   ],
-  "latency": 18,
+  "latency": 19,
   "jitter": 2,
   "verify_ok": 3,
   "verify": {
@@ -238,35 +244,35 @@
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.9,
+  "score": 0.8944,
   "speed": 0.0,
   "cn_ok": null
  },
  {
-  "proto": "http",
-  "server": "fan.365747.xyz",
+  "proto": "trojan",
+  "server": "167.88.61.20",
   "port": 443,
-  "name": "n0920",
-  "source": "go4sharing/arch",
-  "username": "",
-  "password": "",
-  "tls": true,
-  "sni": "",
-  "skipCertVerify": true,
-  "fp": "2aca724d530a089a",
+  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+  "sni": "api.browseseniorrolesandenhanceyourcareertoday.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "n3486",
+  "source": "tg:@wxdy666→sub",
+  "fp": "065975514e76a5fe",
   "sources": [
-   "go4sharing/arch",
-   "clashnode"
+   "tg:@wxdy666→sub"
   ],
-  "latency": 18,
-  "jitter": 4,
+  "latency": 19,
+  "jitter": 0,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.9,
+  "score": 0.8944,
   "speed": 0.0,
   "cn_ok": null
  }
