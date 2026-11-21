@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-22 01:43:31 (北京时间)
+# nodepool  生成于 2026-11-22 04:43:36 (北京时间)
 # 节点数 10  (自建 0 / 免费额度 0 / 免费池 10)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -11,69 +11,74 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-  - name: N02 138.199.35.201
-    type: http
-    server: 138.199.35.201
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N03 138.199.35.196
-    type: http
-    server: 138.199.35.196
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N04 138.199.35.197
-    type: http
-    server: 138.199.35.197
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N05 138.199.35.204
+  - name: N02 138.199.35.204
     type: http
     server: 138.199.35.204
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N06 138.199.35.199
+  - name: N03 79.110.54.250
+    type: ss
+    server: 79.110.54.250
+    port: 8080
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
+    udp: true
+  - name: N04 107.151.182.253
+    type: ss
+    server: 107.151.182.253
+    port: 8080
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
+    udp: true
+  - name: N05 138.199.35.200
     type: http
-    server: 138.199.35.199
+    server: 138.199.35.200
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N07 138.199.35.216
+  - name: N06 23.230.200.250
+    type: socks5
+    server: 23.230.200.250
+    port: 62000
+    udp: false
+    username: kingstar123
+    password: kingstar123++
+  - name: N07 38.128.66.212
+    type: vmess
+    server: 38.128.66.212
+    port: 1270
+    uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: xmfhlpy.com
+    skipCertVerify: true
+  - name: N08 216.106.178.169
+    type: ss
+    server: 216.106.178.169
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N09 purposebydesig.club
     type: http
-    server: 138.199.35.216
-    port: 9002
+    server: purposebydesig.club
+    port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N08 138.199.35.217
-    type: http
-    server: 138.199.35.217
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N09 138.199.35.198
-    type: http
-    server: 138.199.35.198
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N10 138.199.35.207
-    type: http
-    server: 138.199.35.207
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
+  - name: N10 167.88.61.52
+    type: trojan
+    server: 167.88.61.52
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: courses.browseseniorrolesandenhanceyourcareertoday.com
 proxy-groups:
   - name: 节点选择
     type: select
@@ -81,15 +86,15 @@ proxy-groups:
       - 自动选择
       - ③ 免费池
       - N01 169.197.140.171
-      - N02 138.199.35.201
-      - N03 138.199.35.196
-      - N04 138.199.35.197
-      - N05 138.199.35.204
-      - N06 138.199.35.199
-      - N07 138.199.35.216
-      - N08 138.199.35.217
-      - N09 138.199.35.198
-      - N10 138.199.35.207
+      - N02 138.199.35.204
+      - N03 79.110.54.250
+      - N04 107.151.182.253
+      - N05 138.199.35.200
+      - N06 23.230.200.250
+      - N07 38.128.66.212
+      - N08 216.106.178.169
+      - N09 purposebydesig.club
+      - N10 167.88.61.52
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -97,29 +102,29 @@ proxy-groups:
     tolerance: 100
     proxies:
       - N01 169.197.140.171
-      - N02 138.199.35.201
-      - N03 138.199.35.196
-      - N04 138.199.35.197
-      - N05 138.199.35.204
-      - N06 138.199.35.199
-      - N07 138.199.35.216
-      - N08 138.199.35.217
-      - N09 138.199.35.198
-      - N10 138.199.35.207
+      - N02 138.199.35.204
+      - N03 79.110.54.250
+      - N04 107.151.182.253
+      - N05 138.199.35.200
+      - N06 23.230.200.250
+      - N07 38.128.66.212
+      - N08 216.106.178.169
+      - N09 purposebydesig.club
+      - N10 167.88.61.52
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
     interval: 600
     proxies:
       - N01 169.197.140.171
-      - N02 138.199.35.201
-      - N03 138.199.35.196
-      - N04 138.199.35.197
-      - N05 138.199.35.204
-      - N06 138.199.35.199
-      - N07 138.199.35.216
-      - N08 138.199.35.217
-      - N09 138.199.35.198
-      - N10 138.199.35.207
+      - N02 138.199.35.204
+      - N03 79.110.54.250
+      - N04 107.151.182.253
+      - N05 138.199.35.200
+      - N06 23.230.200.250
+      - N07 38.128.66.212
+      - N08 216.106.178.169
+      - N09 purposebydesig.club
+      - N10 167.88.61.52
 rules:
   - "MATCH,节点选择"
