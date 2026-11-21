@@ -13628,6 +13628,20 @@
  },
  {
   "proto": "hysteria2",
+  "server": "103.88.243.142",
+  "port": 11592,
+  "password": "41edb44c8e",
+  "sni": "srv-17e124.21freedom.net",
+  "skipCertVerify": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇷🇺俄罗斯-116",
+  "source": "tg:@wxdy666→sub",
+  "fp": "e94784abfa50c210",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "hysteria2",
   "server": "104.165.205.42",
   "port": 8443,
   "password": "54d2f622-fd71-4f5f-8813-832b68f4ca3b",
@@ -13638,6 +13652,20 @@
   "fp": "1ae02fa00a58df69",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "hysteria2",
+  "server": "104.233.178.178",
+  "port": 443,
+  "password": "fanvpn.net",
+  "sni": "www.bing.com",
+  "skipCertVerify": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-52",
+  "source": "tg:@wxdy666→sub",
+  "fp": "de22747c9dad6d58",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -14010,6 +14038,20 @@
   "fp": "b26e494439f2fc52",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "hysteria2",
+  "server": "172.87.24.53",
+  "port": 8443,
+  "password": "fce629d692a7b1ad71a17dae29d8b3c6",
+  "sni": "hy2k2p.local",
+  "skipCertVerify": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-51",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6ed740d2ee98ad45",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -14802,6 +14844,20 @@
  },
  {
   "proto": "hysteria2",
+  "server": "43.103.2.53",
+  "port": 443,
+  "password": "hAUdd15a7YGHUSgiPOUz",
+  "sni": "43.103.2.53",
+  "skipCertVerify": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇭🇰香港-3",
+  "source": "tg:@wxdy666→sub",
+  "fp": "f13a578d5a0eff5c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "hysteria2",
   "server": "43.201.150.9",
   "port": 443,
   "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
@@ -15222,6 +15278,62 @@
  },
  {
   "proto": "hysteria2",
+  "server": "fanasdhj.fanajkshy10.fandjlsadhlkadhlkqwdsadasjhas.com",
+  "port": 21310,
+  "password": "83fe8343-f0a3-4424-8ad0-05ae71ad766a",
+  "sni": "fanasdhj.fanajkshy10.fandjlsadhlkadhlkqwdsadasjhas.com",
+  "skipCertVerify": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-41",
+  "source": "tg:@wxdy666→sub",
+  "fp": "4ec680fc4411e6d1",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "hysteria2",
+  "server": "fanasdhj.fanajkshy11.fandjlsadhlkadhlkqwdsadasjhas.com",
+  "port": 21311,
+  "password": "83fe8343-f0a3-4424-8ad0-05ae71ad766a",
+  "sni": "fanasdhj.fanajkshy11.fandjlsadhlkadhlkqwdsadasjhas.com",
+  "skipCertVerify": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-29",
+  "source": "tg:@wxdy666→sub",
+  "fp": "ccfa2b4b6aed991e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "hysteria2",
+  "server": "fanasdhj.fanajkshy12.fandjlsadhlkadhlkqwdsadasjhas.com",
+  "port": 21312,
+  "password": "83fe8343-f0a3-4424-8ad0-05ae71ad766a",
+  "sni": "fanasdhj.fanajkshy12.fandjlsadhlkadhlkqwdsadasjhas.com",
+  "skipCertVerify": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-50",
+  "source": "tg:@wxdy666→sub",
+  "fp": "76bb1664d08a7989",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "hysteria2",
+  "server": "fanasdhj.fanajkshy13.fandjlsadhlkadhlkqwdsadasjhas.com",
+  "port": 21313,
+  "password": "83fe8343-f0a3-4424-8ad0-05ae71ad766a",
+  "sni": "fanasdhj.fanajkshy13.fandjlsadhlkadhlkqwdsadasjhas.com",
+  "skipCertVerify": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-49",
+  "source": "tg:@wxdy666→sub",
+  "fp": "8934271d7a42938d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "hysteria2",
   "server": "fi1.obxodvpn.us",
   "port": 443,
   "password": "146d567c-6335-4e63-a8aa-7ec068642440",
@@ -15367,6 +15479,20 @@
  },
  {
   "proto": "hysteria2",
+  "server": "jpk.wentibuxiaobuda.xyz",
+  "port": 443,
+  "password": "36187bef1c708c82fd4099b9d70116ffd8c0f1f5bfd19cbb319eeb67899714f6",
+  "sni": "jpk.wentibuxiaobuda.xyz",
+  "skipCertVerify": false,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-27",
+  "source": "tg:@wxdy666→sub",
+  "fp": "bcb73134b347e44b",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "hysteria2",
   "server": "kr1.miyazono-kaori.com",
   "port": 42556,
   "name": "韩国 - 春川市 - Oracle Corporation - 8",
@@ -15462,6 +15588,20 @@
   "fp": "89e5238aaae269d2",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "hysteria2",
+  "server": "srv-17e124.21freedom.net",
+  "port": 11592,
+  "password": "41edb44c8e",
+  "sni": "srv-17e124.21freedom.net",
+  "skipCertVerify": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇷🇺俄罗斯-115",
+  "source": "tg:@wxdy666→sub",
+  "fp": "24eefe57f0a185c5",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -41416,6 +41556,19 @@
  },
  {
   "proto": "ss",
+  "server": "jp01-ipv6.linkms001.com",
+  "port": 22222,
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "jcZ1WR03oknoEJYA",
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-26",
+  "source": "tg:@wxdy666→sub",
+  "fp": "ff5c7c1b7328325f",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "jp2.mhw7e2.online",
   "port": 20014,
   "cipher": "chacha20-ietf-poly1305",
@@ -47684,6 +47837,23 @@
   "fp": "9861c8f2654ffbcf",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "156.246.93.237",
+  "port": 17443,
+  "password": "LDSLDq9XlM4-92pvTPOUuklMb99BLOCrdyejsupEca4",
+  "sni": "jpk.wentibuxiaobuda.xyz",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-28",
+  "source": "tg:@wxdy666→sub",
+  "fp": "ed46d9e634e0eec8",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -61860,6 +62030,23 @@
  },
  {
   "proto": "trojan",
+  "server": "ipfast.kingmna.com",
+  "port": 443,
+  "password": "6-FrR5YsfjfyNp6AIFZgcQ",
+  "sni": "cdn.akamai.steamstatic.com",
+  "network": "ws",
+  "path": "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER",
+  "host": "copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.",
+  "skipCertVerify": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-68",
+  "source": "tg:@wxdy666→sub",
+  "fp": "f01d1a5c82823141",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "ja262.magiclampcloud.cn",
   "port": 59443,
   "password": "433eeaa26c6cfb611ac76aa154368ed1",
@@ -61873,6 +62060,23 @@
   "fp": "60dbd0713289a3c1",
   "sources": [
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "ja304.magiclampcloud.cn",
+  "port": 59443,
+  "password": "06cf12a7fab279375e55e2f0cfdef381",
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "HK三网精品线路 100MB/S",
+  "source": "tg:@wxdy666",
+  "fp": "e4e74226fa2af3e7",
+  "sources": [
+   "tg:@wxdy666"
   ]
  },
  {
@@ -70741,7 +70945,8 @@
   "source": "tg:@oneclickvpnkeys",
   "fp": "5db0642b552fa448",
   "sources": [
-   "tg:@oneclickvpnkeys"
+   "tg:@oneclickvpnkeys",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -71023,6 +71228,28 @@
   "fp": "04e3102042ee65c7",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "122.8.92.7",
+  "port": 8443,
+  "uuid": "4fabeed0-790e-9724-8f12-138ed31ac60e",
+  "tls": true,
+  "sni": "download.nvidia.com",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk",
+  "sid": "",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-222",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "e5ace416e9e329c4",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -71477,6 +71704,28 @@
  },
  {
   "proto": "vless",
+  "server": "13.143.187.220",
+  "port": 443,
+  "uuid": "66c78912-4e2d-41dc-8742-aaae2590804e",
+  "tls": true,
+  "sni": "fi-s1.kadrhub.tech",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "eDzVz3bxkv3IoN3BUCa_aA-RicoeG7ACylYSnmS2Pgg",
+  "sid": "",
+  "utls": "firefox",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-62",
+  "source": "tg:@wxdy666→sub",
+  "fp": "c08b434f4f606262",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "13.143.188.155",
   "port": 8443,
   "uuid": "12910384-1ef8-40a3-818a-57277063ea66",
@@ -71540,6 +71789,28 @@
   "name": "🇳🇱_荷兰 (17)",
   "source": "tg:@wxdy666→sub",
   "fp": "bbc75338f2fafac2",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "13.211.155.89",
+  "port": 443,
+  "uuid": "e3a1c7f2-9b4d-4e8a-a6c5-1f2d3b4a5e6f",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "ws",
+  "path": "/7b9977b2af9da85fa86adc065c362efe",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇦🇺澳大利亚-105",
+  "source": "tg:@wxdy666→sub",
+  "fp": "b2cfaf2992f985f6",
   "sources": [
    "tg:@wxdy666→sub"
   ]
@@ -72406,6 +72677,28 @@
  },
  {
   "proto": "vless",
+  "server": "138.2.86.205",
+  "port": 443,
+  "uuid": "b2d4f6a8-1c3e-4a5b-9d7f-2e4a6c8b0d1f",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "ws",
+  "path": "/7b9977b2af9da85fa86adc065c362efe",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-34",
+  "source": "tg:@wxdy666→sub",
+  "fp": "25ace0c7f6bb3153",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "139.162.101.74",
   "port": 443,
   "uuid": "1e709d98-d4c3-45c1-bdcc-4268cf83eff8",
@@ -73220,6 +73513,28 @@
  },
  {
   "proto": "vless",
+  "server": "144.24.206.147",
+  "port": 443,
+  "uuid": "eb5fc2f2-6d5e-4799-b957-67fae0a1130e",
+  "tls": true,
+  "sni": "updates.cdn-apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "PbE_bZXVNqPOIdkffGIuwgJRlRrW2FLinx3bZ9jgdkk",
+  "sid": "558ae2c2",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇫🇷法国-94",
+  "source": "tg:@wxdy666→sub",
+  "fp": "b99e82293d5a25b3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "144.31.0.101",
   "port": 443,
   "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
@@ -73477,7 +73792,8 @@
   "source": "tg:@oneclickvpnkeys",
   "fp": "cac1bbce2d8d8c6c",
   "sources": [
-   "tg:@oneclickvpnkeys"
+   "tg:@oneclickvpnkeys",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -73736,7 +74052,8 @@
   "fp": "307e980514c60091",
   "sources": [
    "clashnode",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -75161,6 +75478,28 @@
  },
  {
   "proto": "vless",
+  "server": "156.243.244.19",
+  "port": 443,
+  "uuid": "e062e0eb-6c21-47e3-8300-7eece5f8941d",
+  "tls": true,
+  "sni": "jp.kbkkb.de5.net",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-17",
+  "source": "tg:@wxdy666→sub",
+  "fp": "819b5724f80e1220",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "157.180.98.124",
   "port": 49659,
   "name": "芬兰(mibei77.com 米贝节点分享)",
@@ -75242,6 +75581,28 @@
  },
  {
   "proto": "vless",
+  "server": "158.101.195.118",
+  "port": 443,
+  "uuid": "eb5fc2f2-6d5e-4799-b957-67fae0a1130e",
+  "tls": true,
+  "sni": "updates.cdn-apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "zqxFCQCJpH6bAW8Rx3mlL_Cl9AQthiEWFOd6iFyMwAI",
+  "sid": "38d05146",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇳🇱荷兰-97",
+  "source": "tg:@wxdy666→sub",
+  "fp": "736ade7155322e6d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "158.173.51.122",
   "port": 443,
   "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
@@ -75280,6 +75641,28 @@
   "name": "filembad-355",
   "source": "tg:@vpnfail_v2ray",
   "fp": "9890ea2033c2575c",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "158.220.95.242",
+  "port": 443,
+  "uuid": "5980f1e1-970c-43b9-b3e8-a8ddd70ceadc",
+  "tls": true,
+  "sni": "www.samsung.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "PCm0k-SvNd00cgNuqqnbCzmwVZd5vkgX2ZLk2_qngRs",
+  "sid": "b60a93",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-233",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "dd0336eafc75241c",
   "sources": [
    "tg:@vpnfail_v2ray"
   ]
@@ -76076,6 +76459,50 @@
  },
  {
   "proto": "vless",
+  "server": "163.128.99.154",
+  "port": 443,
+  "uuid": "3a1c6827-72a1-4d1c-9413-44109ff815f4",
+  "tls": true,
+  "sni": "navi.bankrate.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
+  "sid": "2da72ce6",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-36",
+  "source": "tg:@wxdy666→sub",
+  "fp": "2498782814c4fe6f",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "163.172.213.174",
+  "port": 80,
+  "uuid": "e73df646-1f62-41bf-8c50-653497d603d0",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/vless/",
+  "host": "SC-TheNetherlands2.09vpn.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "filembad-442",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "1b01c8f1cdaa7250",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "163.172.214.188",
   "port": 80,
   "name": "🇳🇱NL_49|122KB/s|A004-260618 [3a24dd49f5c1]",
@@ -76628,6 +77055,28 @@
   "fp": "0c2ddec96e2e6b76",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "168.107.79.37",
+  "port": 443,
+  "uuid": "c5e7a9b1-3d5f-4a6c-8b0d-2f4a6c8e0b2d",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "ws",
+  "path": "/7b9977b2af9da85fa86adc065c362efe",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-35",
+  "source": "tg:@wxdy666→sub",
+  "fp": "beefc25b4c76b1f8",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -80251,6 +80700,28 @@
  },
  {
   "proto": "vless",
+  "server": "186.241.72.210",
+  "port": 8080,
+  "uuid": "6aaf9c9e-1bb2-4be6-91a7-945a261f7052",
+  "tls": true,
+  "sni": "images.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "hp5yxgJWnnxhXB-tnQye5RbC1_JPtUKrBHPgiQP0Pl4",
+  "sid": "1623547890abcdef",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-60",
+  "source": "tg:@wxdy666→sub",
+  "fp": "8e2ce402dbcec484",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "186.243.218.221",
   "port": 8443,
   "uuid": "fa937345-6d3e-4ff4-8127-1a836987a0db",
@@ -80859,6 +81330,28 @@
   "fp": "eae24df13b1781be",
   "sources": [
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "189.24.115.30",
+  "port": 443,
+  "uuid": "3a1c6827-72a1-4d1c-9413-44109ff815f4",
+  "tls": true,
+  "sni": "navi.bankrate.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
+  "sid": "2da72ce6",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇩🇪德国-86",
+  "source": "tg:@wxdy666→sub",
+  "fp": "40bfda29be4bfa9c",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -85512,6 +86005,28 @@
  },
  {
   "proto": "vless",
+  "server": "23.144.132.46",
+  "port": 443,
+  "uuid": "a1bd17a7-cd13-46e5-a0cc-2f1f5109f664",
+  "tls": true,
+  "sni": "gateway.icloud.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "yKDS7iNuq77KTCJwrOuxon5zCQtf_aKiWOGfHZLjARo",
+  "sid": "6ca9a839cffd7543",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-69",
+  "source": "tg:@wxdy666→sub",
+  "fp": "da82dded8a9bc0e3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "23.95.222.127",
   "port": 8443,
   "uuid": "352ff568-f971-4613-bf48-92997a5d44ed",
@@ -87047,6 +87562,28 @@
  },
  {
   "proto": "vless",
+  "server": "38.60.230.151",
+  "port": 443,
+  "uuid": "3a1c6827-72a1-4d1c-9413-44109ff815f4",
+  "tls": true,
+  "sni": "navi.bankrate.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
+  "sid": "2da72ce6",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇻🇳越南-110",
+  "source": "tg:@wxdy666→sub",
+  "fp": "ba4a670490297fac",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "382218.xyz",
   "port": 443,
   "uuid": "d801d4d9-111a-46e8-91fc-e2fb39ef2d22",
@@ -88429,6 +88966,28 @@
   "fp": "d82b78241d78c2b4",
   "sources": [
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "45.63.115.136",
+  "port": 46122,
+  "uuid": "4e932df2-a06a-4043-861c-87fe8d217aae",
+  "tls": true,
+  "sni": "yahoo.com",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24/",
+  "flow": "",
+  "pbk": "NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs",
+  "sid": "c077229044b68285",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-215",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "523b78e67ea3997a",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -95408,6 +95967,28 @@
  },
  {
   "proto": "vless",
+  "server": "95.179.145.100",
+  "port": 40118,
+  "uuid": "4e932df2-a06a-4043-861c-87fe8d217aae",
+  "tls": true,
+  "sni": "delivery.mp.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs",
+  "sid": "c39acc8cb9481d24",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-220",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "904645ceabe0ad55",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "95.182.94.233",
   "port": 8080,
   "uuid": "46112a9c-da7a-4f04-a740-1caa1a6bb5d7",
@@ -95998,7 +96579,8 @@
   "fp": "37b99354654a4cef",
   "sources": [
    "clashnode",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -97819,6 +98401,1216 @@
  },
  {
   "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2106,
+  "uuid": "0139a4c9-73f2-481b-91f4-ccd6b461f5bc",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇭🇰香港-4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "d9dd821635a8bbdd",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2009,
+  "uuid": "a0c2a1f0-f659-4d26-b772-ce6eb951b593",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇨🇳台湾-9",
+  "source": "tg:@wxdy666→sub",
+  "fp": "773831407898dbd0",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 1501,
+  "uuid": "4f17ce03-b9cc-4eb7-bad6-cf606f546a1e",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-20",
+  "source": "tg:@wxdy666→sub",
+  "fp": "30cbd4950d1ac47c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2007,
+  "uuid": "52c2c023-e670-4a7d-9abe-9334b216985e",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-21",
+  "source": "tg:@wxdy666→sub",
+  "fp": "86a24bc062eb05ee",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2103,
+  "uuid": "0ee7b0ea-2152-4099-9407-80f1f69f720f",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-22",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1a7a2dda8e70db2e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 1101,
+  "uuid": "12165c6f-5c2f-4b72-bf96-c44ccdfe602b",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-23",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a6c1eb2619f9a3dc",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 1200,
+  "uuid": "3c60aa0c-3a38-4acc-92bc-8d71b780ef6c",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-25",
+  "source": "tg:@wxdy666→sub",
+  "fp": "19158c02f0fe53e3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 1100,
+  "uuid": "7e45687a-ab5d-4730-a140-e0b5ffa16996",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-38",
+  "source": "tg:@wxdy666→sub",
+  "fp": "5c2666c17d841fca",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2309,
+  "uuid": "d8a7f310-dddb-40ef-a703-70deb99a39fc",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-40",
+  "source": "tg:@wxdy666→sub",
+  "fp": "09f07f638460a2f8",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2006,
+  "uuid": "1d487e00-518d-4b3f-aadf-d259d4f51caa",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-44",
+  "source": "tg:@wxdy666→sub",
+  "fp": "f422af1c382fb48a",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2102,
+  "uuid": "1ccbce31-2d27-4f50-ab0f-e5c944055876",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-45",
+  "source": "tg:@wxdy666→sub",
+  "fp": "cda0af4ec5911727",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2107,
+  "uuid": "8c885ba7-7b93-4026-bec1-74bac31581e1",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-46",
+  "source": "tg:@wxdy666→sub",
+  "fp": "f9ed1314382c1678",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 1102,
+  "uuid": "f8f23861-620f-42d6-b2ed-8900baa1295e",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-47",
+  "source": "tg:@wxdy666→sub",
+  "fp": "b875699dae83b619",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 1201,
+  "uuid": "186eeed1-6342-482b-9129-28ba003c6419",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-48",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1a0b5d197f937f69",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 1500,
+  "uuid": "217ce741-ac07-418c-8693-1f7f14f3c746",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-71",
+  "source": "tg:@wxdy666→sub",
+  "fp": "5130138fc349ddd9",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2300,
+  "uuid": "02814c8f-787c-4f1f-9dfa-0a2dc08c79b1",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-72",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a999445307988037",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2302,
+  "uuid": "5dbc31ce-ec0c-4c96-b4f8-e6bc84cd7c36",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-73",
+  "source": "tg:@wxdy666→sub",
+  "fp": "05034b3afddc1a2a",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 1000,
+  "uuid": "84609d26-ecd4-437f-8c7b-239d3c9d71d5",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-74",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6396dd02b8f7ee36",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 1400,
+  "uuid": "d38a207d-0d81-47e6-a314-76f2223990ba",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-75",
+  "source": "tg:@wxdy666→sub",
+  "fp": "3258e464086bd635",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2109,
+  "uuid": "15649825-3eb9-4d41-a7de-e9b22439ea7b",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇨🇦加拿大-81",
+  "source": "tg:@wxdy666→sub",
+  "fp": "949be271973c49d2",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 1300,
+  "uuid": "02721edf-6c7e-4b5b-9ace-66f451092052",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇨🇦加拿大-82",
+  "source": "tg:@wxdy666→sub",
+  "fp": "5f4a1db8806b7a34",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 1002,
+  "uuid": "dc4c7daf-3c71-4c0b-82e9-393fb837050d",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇬🇧英国-83",
+  "source": "tg:@wxdy666→sub",
+  "fp": "56b81d2db7ab5315",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 1600,
+  "uuid": "a441dbc9-9e75-451d-95a3-463c1c155d35",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇬🇧英国-84",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6fbcca20bbc01e96",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2003,
+  "uuid": "aba81d15-f8cf-4c6f-8076-341fb039c66c",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇫🇷法国-96",
+  "source": "tg:@wxdy666→sub",
+  "fp": "f5fbab4598e2484c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2005,
+  "uuid": "8230b843-3a92-4094-bc06-e5a07d1a92fe",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇳🇱荷兰-104",
+  "source": "tg:@wxdy666→sub",
+  "fp": "bdee8e6ff470e1c2",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2000,
+  "uuid": "e38687d9-ba8e-43d6-a18f-e3ec584fb76d",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇦🇺澳大利亚-106",
+  "source": "tg:@wxdy666→sub",
+  "fp": "9f657609b6ec0262",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2004,
+  "uuid": "25b0b2fe-fb99-4c6e-a345-08400034f638",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇲🇾马来西亚-107",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a2db232017072c26",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2104,
+  "uuid": "ff50026c-51ee-42b6-ac27-fb701eeefff1",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇹🇭泰国-108",
+  "source": "tg:@wxdy666→sub",
+  "fp": "747bd457ee2e1edd",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 1301,
+  "uuid": "de471931-cbe0-400b-b63f-ae3845bdf591",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇹🇭泰国-109",
+  "source": "tg:@wxdy666→sub",
+  "fp": "c15629364bcea883",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2105,
+  "uuid": "25025fe0-b7e0-4a8e-ad7d-4c77fc4c484a",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇻🇳越南-111",
+  "source": "tg:@wxdy666→sub",
+  "fp": "54c112f77dfa7fe9",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2008,
+  "uuid": "c928ce0f-eff6-4f99-841b-0f845b9492c6",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇮🇳印度-113",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6204a00a6802c6d0",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2306,
+  "uuid": "df465cf5-1dd0-4a88-a7b5-3813ef0bf723",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇹🇷土耳其-114",
+  "source": "tg:@wxdy666→sub",
+  "fp": "f108c7577151cebc",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 1401,
+  "uuid": "f1d3d683-4595-487a-bffb-25053ee76703",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇷🇺俄罗斯-120",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6ffe4336e39f910e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2315,
+  "uuid": "e9050ed0-1b05-43f5-9a5f-5be3bdc72f69",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇦🇪阿联酋-121",
+  "source": "tg:@wxdy666→sub",
+  "fp": "9678847bbd0be907",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2312,
+  "uuid": "335a665e-ca86-4b07-9642-b47f0b1d2d31",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇦🇷阿根廷-122",
+  "source": "tg:@wxdy666→sub",
+  "fp": "0b874cfb19b4a425",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2001,
+  "uuid": "64498fb9-46fe-4ae0-b6fa-46ed2cfe4ac7",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇧🇷巴西-123",
+  "source": "tg:@wxdy666→sub",
+  "fp": "4420d19d1720c362",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2303,
+  "uuid": "24eff211-9f96-4f6b-a1d0-0c54d0c71995",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇨🇱智利-124",
+  "source": "tg:@wxdy666→sub",
+  "fp": "982c10a08073bc51",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2101,
+  "uuid": "93a0fb88-a650-4a9b-ad66-b5311d47dfeb",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇪🇬埃及-127",
+  "source": "tg:@wxdy666→sub",
+  "fp": "d3381437da0854df",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2002,
+  "uuid": "577bdbd9-add1-4db2-a9fb-3f136e35a0f4",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇫🇮芬兰-129",
+  "source": "tg:@wxdy666→sub",
+  "fp": "fa0331f94f99a563",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2311,
+  "uuid": "776c3bd3-3676-4f19-a46e-48b561486332",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇬🇷希腊-131",
+  "source": "tg:@wxdy666→sub",
+  "fp": "3b4df6934a093e4a",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2108,
+  "uuid": "6bbee369-f29f-4f19-8515-2ffc179625e3",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇮🇩印度尼西亚-134",
+  "source": "tg:@wxdy666→sub",
+  "fp": "7f037438190fd9cd",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 1103,
+  "uuid": "fc75fc07-e982-4056-b769-eb829a94a12c",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇲🇦摩洛哥-135",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1d5df1a954fe2a39",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2100,
+  "uuid": "822a486a-a106-405a-a0b1-d295f3035a25",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇲🇦摩洛哥-136",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a72a89fac210a949",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2313,
+  "uuid": "0b8f1ebc-c6ee-487c-b4dd-aa760336092b",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇲🇽墨西哥-137",
+  "source": "tg:@wxdy666→sub",
+  "fp": "ebd689d5eca0a574",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2314,
+  "uuid": "c36c48e5-0105-4274-9d9d-9dc583bfa8a4",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇳🇴挪威-139",
+  "source": "tg:@wxdy666→sub",
+  "fp": "df0a82b813f2788c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2310,
+  "uuid": "f0636a96-6579-4278-a12b-f37b0fda5c90",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇵🇭菲律宾-140",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1b64a4cfae7050d1",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 1601,
+  "uuid": "78ef1186-cf41-4dbb-8bac-df2a1c8ebe56",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇵🇱波兰-141",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1b83fb5a0e90ec12",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2307,
+  "uuid": "782bb879-904b-4d52-bd6e-d7c37f822759",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇸🇦沙特阿拉伯-142",
+  "source": "tg:@wxdy666→sub",
+  "fp": "71423b1b14496881",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2316,
+  "uuid": "b7e0dea6-9630-46e2-a73e-89b4dd370dec",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇸🇪瑞典-143",
+  "source": "tg:@wxdy666→sub",
+  "fp": "13650fe82e7ed6d3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2301,
+  "uuid": "96504997-7505-41ae-9c78-9de6f5cc5089",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇸🇳塞内加尔-144",
+  "source": "tg:@wxdy666→sub",
+  "fp": "e054150ed38ee54b",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dt.toe.qd.je",
+  "port": 2308,
+  "uuid": "a8b2f64b-5678-4852-850e-c4e4e55b15b2",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇦乌克兰-145",
+  "source": "tg:@wxdy666→sub",
+  "fp": "710b48e51403628b",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dtt4.toe.qd.je",
+  "port": 2305,
+  "uuid": "4ada6098-6b38-4b82-8ee1-b029898b7246",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-18",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6464c0e85dd50738",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dtt4.toe.qd.je",
+  "port": 2304,
+  "uuid": "943567e5-f74f-4713-b6f4-ac0d053ce722",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-43",
+  "source": "tg:@wxdy666→sub",
+  "fp": "7017c44aba85d563",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dtt4.toe.qd.je",
+  "port": 1003,
+  "uuid": "e1d5c665-bfac-42b9-b85c-11e81f52834d",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-64",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a10f4500c6eca8a2",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dtt4.toe.qd.je",
+  "port": 2317,
+  "uuid": "a48bd9fc-f896-47c4-be68-e4371ef12b9d",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY",
+  "sid": "cdba94063c08331c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-65",
+  "source": "tg:@wxdy666→sub",
+  "fp": "509ce7fdc12a852c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "durov.sky-vault.top",
   "port": 8443,
   "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
@@ -98125,6 +99917,94 @@
   "name": "🇪🇪|EE|@wxgqlfx|51",
   "source": "tg:@wxdy666→sub",
   "fp": "244660b1d782340f",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "fanasdhj.fajksvle10.fandjlsadhlkadhlkqwdsadasjhas.com",
+  "port": 22510,
+  "uuid": "83fe8343-f0a3-4424-8ad0-05ae71ad766a",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "aCMX1OLSOnNbaZoo6IIW6K93jMjCWaJRyJu1gOw-ig8",
+  "sid": "4654f9b4",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇨🇳台湾-13",
+  "source": "tg:@wxdy666→sub",
+  "fp": "50d991a82f324163",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "fanasdhj.fajksvle2.fandjlsadhlkadhlkqwdsadasjhas.com",
+  "port": 22402,
+  "uuid": "83fe8343-f0a3-4424-8ad0-05ae71ad766a",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "aCMX1OLSOnNbaZoo6IIW6K93jMjCWaJRyJu1gOw-ig8",
+  "sid": "4654f9b4",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-78",
+  "source": "tg:@wxdy666→sub",
+  "fp": "e94caf6b6ec4009c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "fanasdhj.fajksvle4.fandjlsadhlkadhlkqwdsadasjhas.com",
+  "port": 22404,
+  "uuid": "83fe8343-f0a3-4424-8ad0-05ae71ad766a",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "aCMX1OLSOnNbaZoo6IIW6K93jMjCWaJRyJu1gOw-ig8",
+  "sid": "4654f9b4",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-42",
+  "source": "tg:@wxdy666→sub",
+  "fp": "07e33c21b043dd4b",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "fanasdhj.fajksvle9.fandjlsadhlkadhlkqwdsadasjhas.com",
+  "port": 22509,
+  "uuid": "83fe8343-f0a3-4424-8ad0-05ae71ad766a",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "aCMX1OLSOnNbaZoo6IIW6K93jMjCWaJRyJu1gOw-ig8",
+  "sid": "4654f9b4",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-30",
+  "source": "tg:@wxdy666→sub",
+  "fp": "5bfeed94d0ec86a5",
   "sources": [
    "tg:@wxdy666→sub"
   ]
@@ -99357,6 +101237,28 @@
  },
  {
   "proto": "vless",
+  "server": "hi.sdm.kids",
+  "port": 443,
+  "uuid": "4ab98b31-d323-4f0c-aaef-03675fb80206",
+  "tls": true,
+  "sni": "www.fom-international.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "xDwT0cZeODAC-qrh3Xnnp_DHGeJDHELgqXs5koz70AI",
+  "sid": "a2474a2a",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇨🇳台湾-14",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1432f21149445e9d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "hk3.wawojk.dpdns.org",
   "port": 51314,
   "uuid": "affd72c9-0870-4c92-b6e5-af7d0e06313e",
@@ -99375,6 +101277,28 @@
   "fp": "0c23d6d1301c0971",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "hkt.sdm.kids",
+  "port": 443,
+  "uuid": "4ab98b31-d323-4f0c-aaef-03675fb80206",
+  "tls": true,
+  "sni": "updates.cdn-apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "Q6pBdDTfdbZ4UzoUQr66GWeh8CWvlXDoECcA2_I4D0o",
+  "sid": "3037b328",
+  "utls": "chrome",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇭🇰香港-5",
+  "source": "tg:@wxdy666→sub",
+  "fp": "5b08a55ef26807c4",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -99619,6 +101543,28 @@
   "sources": [
    "NoMoreWalls",
    "tg:@wxdy666"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "jp.kbkkb.de5.net",
+  "port": 443,
+  "uuid": "e062e0eb-6c21-47e3-8300-7eece5f8941d",
+  "tls": true,
+  "sni": "jp.kbkkb.de5.net",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-19",
+  "source": "tg:@wxdy666→sub",
+  "fp": "2b35f2edbb4af9d8",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -100864,7 +102810,8 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "anaer/Sub"
+   "anaer/Sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -101060,6 +103007,28 @@
   "fp": "933050f314c9ccc9",
   "sources": [
    "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "pl.galacticworld.online",
+  "port": 443,
+  "uuid": "ecc0e60a-f2cc-4266-8353-b228df89730a",
+  "tls": true,
+  "sni": "pl.galacticworld.online",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4",
+  "sid": "",
+  "utls": "qq",
+  "reality": true,
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-76",
+  "source": "tg:@wxdy666→sub",
+  "fp": "70301a8e5e2f7be2",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -105282,6 +107251,25 @@
   "fp": "06a58980bea2d240",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "103.150.8.228",
+  "port": 443,
+  "uuid": "e4976414-87ef-48d1-b6d1-26f1f9839053",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-16",
+  "source": "tg:@wxdy666→sub",
+  "fp": "28744758f481031d",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -162682,7 +164670,8 @@
   "sources": [
    "clashnode",
    "tg:@byxiaoxi→blog",
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -172818,6 +174807,25 @@
  },
  {
   "proto": "vmess",
+  "server": "2001:bc8:32d7:1a9::7",
+  "port": 18901,
+  "uuid": "3a966d20-7b9d-48cc-ba2c-8d38161b6d3a",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/github.com/Alvin9999-newpac/fanqiang",
+  "host": "",
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇫🇷法国-95",
+  "source": "tg:@wxdy666→sub",
+  "fp": "40fa09c4a8d370ba",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
   "server": "2001:bc8:32d7:225::3",
   "port": 55009,
   "name": "🇸🇬 SG新加坡",
@@ -175436,6 +177444,25 @@
  },
  {
   "proto": "vmess",
+  "server": "39.108.113.127",
+  "port": 10086,
+  "uuid": "a625d148-e988-4008-b957-e9051a6371d2",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/",
+  "host": "",
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇨🇳中国-125",
+  "source": "tg:@wxdy666→sub",
+  "fp": "39ba98b5cd04395d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
   "server": "3a62be79-t70f40-tdfzix-fm2v.hkt.gotochinatown.net",
   "port": 80,
   "name": "中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 65",
@@ -175830,6 +177857,25 @@
   "fp": "5f2a7bdb35a3b6a8",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "45.128.220.40",
+  "port": 443,
+  "uuid": "e4976414-87ef-48d1-b6d1-26f1f9839053",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇭🇰香港-1",
+  "source": "tg:@wxdy666→sub",
+  "fp": "7ba106ca76eb79b4",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -180959,6 +183005,44 @@
  },
  {
   "proto": "vmess",
+  "server": "US032014.ssgreen.org",
+  "port": 443,
+  "uuid": "4f695567-e753-4183-b88c-ea2bbd57faa5",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "US032014.ssgreen.org",
+  "network": "ws",
+  "path": "/wes",
+  "host": "",
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-80",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a9d1fccbc771299d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "US032022.ssgreen.org",
+  "port": 443,
+  "uuid": "d6a1fc77-c11a-41ee-a60a-89f51da5663f",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "US032022.ssgreen.org",
+  "network": "ws",
+  "path": "/wes",
+  "host": "",
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-79",
+  "source": "tg:@wxdy666→sub",
+  "fp": "5109d06c6460dec3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
   "server": "USA.SixMax.ir",
   "port": 110,
   "name": "美国 - New York City - 1",
@@ -183942,6 +186026,44 @@
   "fp": "f9675eb625342df2",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "d1eyz.xiaoyan.io",
+  "port": 16622,
+  "uuid": "904f0569-8695-466f-97cf-0de2face1b46",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com",
+  "network": "ws",
+  "path": "/",
+  "host": "f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com",
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇭🇰香港-6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "53f40230d72bc33a",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "d1eyz.xiaoyan.io",
+  "port": 16616,
+  "uuid": "904f0569-8695-466f-97cf-0de2face1b46",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com",
+  "network": "ws",
+  "path": "/",
+  "host": "f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com",
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇨🇳台湾-7",
+  "source": "tg:@wxdy666→sub",
+  "fp": "2508378c6c054cea",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -189516,6 +191638,25 @@
  },
  {
   "proto": "vmess",
+  "server": "nsg1.anyco.vip",
+  "port": 443,
+  "uuid": "e4976414-87ef-48d1-b6d1-26f1f9839053",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "nsg1.anyco.vip",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-32",
+  "source": "tg:@wxdy666→sub",
+  "fp": "7cebfad59214f0c0",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vmess",
   "server": "obdii.cfd",
   "port": 443,
   "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
@@ -192266,6 +194407,25 @@
   "fp": "e3dea0b704e8abc1",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "us01n.anyco.vip",
+  "port": 443,
+  "uuid": "e4976414-87ef-48d1-b6d1-26f1f9839053",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-55",
+  "source": "tg:@wxdy666→sub",
+  "fp": "99a745a9ce6d150f",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
