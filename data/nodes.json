@@ -65856,6 +65856,28 @@
  },
  {
   "proto": "vless",
+  "server": "103.18.49.100",
+  "port": 443,
+  "uuid": "1a5b24bc-6180-4fa7-922d-ba7ee8a7a2b7",
+  "tls": true,
+  "sni": "support.zoom.us.cyylr.eu.cc",
+  "network": "ws",
+  "path": "/id-pusat",
+  "host": "support.zoom.us.cyylr.eu.cc",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "canfingV2rayNG-112",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "fe96e094f536384f",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "103.184.44.62",
   "port": 2053,
   "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
@@ -85987,7 +86009,8 @@
   "source": "tg:@oneclickvpnkeys",
   "fp": "8beb8196eb9a4baa",
   "sources": [
-   "tg:@oneclickvpnkeys"
+   "tg:@oneclickvpnkeys",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -93774,6 +93797,28 @@
  },
  {
   "proto": "vless",
+  "server": "91.107.140.160",
+  "port": 443,
+  "uuid": "301f9f35-73c7-4ae0-bbe9-7dd86da19f50",
+  "tls": true,
+  "sni": "aws.amazon.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "Efid51phV7wQ6vF48DC97364AyVl7tQa22ILzIOLYgg",
+  "sid": "d04733f30a13",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-150",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "f8d131a899df08e5",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "91.107.255.63",
   "port": 39653,
   "uuid": "baded307-189c-4ffc-a271-9acdab51a324",
@@ -96516,6 +96561,28 @@
   "fp": "b4196cdcfc1ddfbc",
   "sources": [
    "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "de-apix.locallynet.org",
+  "port": 4443,
+  "uuid": "68a67906-5b37-4779-a6cc-58a1655f18b4",
+  "tls": true,
+  "sni": "de-apix.locallynet.org",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-258",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "ec57efeb2be321b8",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -100243,6 +100310,28 @@
  },
  {
   "proto": "vless",
+  "server": "mypanel.unixzone.us",
+  "port": 12068,
+  "uuid": "05caca6c-9e97-4c0f-8edf-7b88a6e572c5",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/",
+  "host": "mypanel.unixzone.us",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-89",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "ebf5f6772fc6dd27",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "netra-28e601.ruzgarsis053gmailcomsaccount.workers.dev",
   "port": 443,
   "name": "🇫🇷FR_43|519KB/s|M003-260806 [e44ed51c2c4f]",
@@ -103188,6 +103277,28 @@
   "name": "canfingV2rayNG-436",
   "source": "tg:@vpnfail_v2ray",
   "fp": "bfaf1dca492cc201",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "x4g-production-ea42.up.railway.app",
+  "port": 443,
+  "uuid": "2650433b-4ee1-3c57-e3a7-43c678e8068c",
+  "tls": true,
+  "sni": "x4g-production-ea42.up.railway.app",
+  "network": "ws",
+  "path": "/ws/2650433b-4ee1-3c57-e3a7-43c678e8068c",
+  "host": "x4g-production-ea42.up.railway.app",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "firefox",
+  "reality": false,
+  "name": "canfingV2rayNG-133",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c61868fcfa9540d6",
   "sources": [
    "tg:@vpnfail_v2ray"
   ]
@@ -126886,6 +126997,25 @@
  },
  {
   "proto": "vmess",
+  "server": "sonau.yaremonta.loc.cc",
+  "port": 8081,
+  "uuid": "c5468915-f60c-4134-b4d3-eb24501d7c65",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/vmess",
+  "host": "",
+  "name": "filembad-516",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "f537657869c2fbc1",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vmess",
   "server": "speedtest.org",
   "port": 80,
   "name": "德国 - Frankfurt Am Main - 1",
@@ -127516,6 +127646,25 @@
   "fp": "6a88ca4d83f45598",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "tr-tls.drhomes.ir",
+  "port": 8080,
+  "uuid": "e4f17f20-49a1-43b3-83fc-29b2ed37055a",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "tr-tls.drhomes.ir",
+  "network": "ws",
+  "path": "/turky-test",
+  "host": "tr-tls.drhomes.ir",
+  "name": "filembad-511",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "873ee3e19556cccd",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
