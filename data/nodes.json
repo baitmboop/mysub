@@ -48984,7 +48984,8 @@
   "fp": "39a4b88bf47c2896",
   "sources": [
    "clashnode",
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -66311,6 +66312,28 @@
  },
  {
   "proto": "vless",
+  "server": "104.16.72.101",
+  "port": 443,
+  "uuid": "14b59caf-a196-4ec2-8c70-c7b388062f5b",
+  "tls": true,
+  "sni": "vangoghhh.info",
+  "network": "ws",
+  "path": "/rdfgtws",
+  "host": "vangoghhh.info",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-108",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "154e1127ac373f66",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.16.72.41",
   "port": 443,
   "uuid": "7e544a9d-7667-413b-bbb0-b3bb1aac6d77",
@@ -75928,7 +75951,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "1b01c8f1cdaa7250",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -76943,7 +76967,8 @@
   "fp": "6863936fed18cdff",
   "sources": [
    "tg:@wxdy666→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -77952,6 +77977,28 @@
   "fp": "16662283226f6acc",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "172.64.229.88",
+  "port": 8443,
+  "uuid": "a8d9c86f-cddb-4fa5-96f7-f68eb48b3cb3",
+  "tls": true,
+  "sni": "sg01.cdn00.top",
+  "network": "ws",
+  "path": "/shanhai/sg01",
+  "host": "sg01.cdn00.top",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "firefox",
+  "reality": false,
+  "name": "canfingV2rayNG-365",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "50395579e1ac00f6",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -82990,6 +83037,28 @@
   "fp": "31c680db9d223782",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "199.232.239.239",
+  "port": 443,
+  "uuid": "5a4db896-caab-4b9c-f747-52ce95b0f9ad",
+  "tls": true,
+  "sni": "community.fastly.steamstatic.com",
+  "network": "xhttp",
+  "path": "/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel",
+  "host": "cloudvpn2026-4.global.prod.fastly.net.global.prod.fastly.net",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "firefox",
+  "reality": false,
+  "name": "canfingV2rayNG-245",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "8d73c224dca5a428",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -90526,6 +90595,28 @@
  },
  {
   "proto": "vless",
+  "server": "51.44.137.10",
+  "port": 22222,
+  "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-452",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "8f9932d59ebde71b",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "51.77.217.70",
   "port": 2053,
   "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
@@ -90895,7 +90986,8 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -95327,6 +95419,28 @@
  },
  {
   "proto": "vless",
+  "server": "94.242.55.42",
+  "port": 443,
+  "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922",
+  "tls": true,
+  "sni": "enterprisekitten.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+  "sid": "6ba85179e30d4fc2",
+  "utls": "firefox",
+  "reality": true,
+  "name": "canfingV2rayNG-301",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "4178ef8024f9c959",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "94.247.142.245",
   "port": 8443,
   "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
@@ -97331,6 +97445,28 @@
   "fp": "f119ceadf75112dd",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dl1.mbndadwsdf132131.torkey.ir",
+  "port": 443,
+  "uuid": "b856294d-5767-4878-8cf5-c1d5ffbfb284",
+  "tls": true,
+  "sni": "www.samsung.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "MnhL-gBMmVwS3TDfl6rMbGmMhfpFCQQ1QCuefgztY2U",
+  "sid": "7670b1aff090e4f0",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-385",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "5431831af4d82bfa",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -107749,7 +107885,8 @@
    "clashnode",
    "tg:@wxdy666→sub",
    "tg:@byxiaoxi→blog",
-   "anaer/Sub"
+   "anaer/Sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
