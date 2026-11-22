@@ -11119,6 +11119,20 @@
  },
  {
   "proto": "hysteria2",
+  "server": "129.225.181.46",
+  "port": 8443,
+  "password": "oracle_hy2_pass_2026",
+  "sni": "bing.com",
+  "skipCertVerify": true,
+  "name": "📗96@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "6f2eb5d89848b7cb",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "hysteria2",
   "server": "13.212.60.244",
   "port": 443,
   "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
@@ -44627,7 +44641,8 @@
    "ermaozi",
    "ripaojiedian",
    "tg:@wxdy666→sub",
-   "anaer/Sub"
+   "anaer/Sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -66103,7 +66118,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "94d400ae96a803cc",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -77745,7 +77761,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "b95f17c7b95f6686",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -79126,7 +79143,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "32ead24b013fd5f2",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -86101,6 +86119,28 @@
  },
  {
   "proto": "vless",
+  "server": "31.56.179.171",
+  "port": 8888,
+  "uuid": "4e73a85c-21fb-4caf-97aa-af9f835d439c",
+  "tls": true,
+  "sni": "www.amd.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "rmlmwP6tNn5lLikyi_aFYzglzL_yXrik3-W-XyBpE0Q",
+  "sid": "48850a2e",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-212",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "3d0c50e2d00baf2f",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "31.56.187.211",
   "port": 443,
   "uuid": "0259e5aa-c188-4334-b204-32cd5ea859f6",
@@ -90415,7 +90455,8 @@
   "fp": "74dadc12cc63578e",
   "sources": [
    "tg:@wxdy666→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -97015,6 +97056,28 @@
  },
  {
   "proto": "vless",
+  "server": "ch.zoroem.opik.net",
+  "port": 80,
+  "uuid": "98a0fab4-3be2-48ae-a99e-3d812315e11b",
+  "tls": true,
+  "sni": "Www.yahoo.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "ch8e7oMj3tLwZRnLDW2qWsXqxxbOcL95z6FItmfSS0s",
+  "sid": "9c4c37f240",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-314",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "d5c4addc6f654ce7",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "chess.com",
   "port": 443,
   "uuid": "0280c276-641b-49af-b699-4931c30ac137",
@@ -101889,6 +101952,50 @@
  },
  {
   "proto": "vless",
+  "server": "platform103.golnamakcert.top",
+  "port": 80,
+  "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/platform103",
+  "host": "platform103.halalkhor.info",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "📗91@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "3dd6fff4365bc8f8",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "platform109.golnamakcert.top",
+  "port": 80,
+  "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/platform109",
+  "host": "['platform109.halalkhor.info']",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "📗93@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "4d7c804a314b32c9",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "prvtch.titun.su",
   "port": 443,
   "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
@@ -104268,6 +104375,28 @@
   "fp": "b509e15ee9d0c721",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "wwww.qarvian.ir",
+  "port": 443,
+  "uuid": "97e0ea78-67ae-4984-8a14-a7d1a51e58de",
+  "tls": true,
+  "sni": "cdn.akamai.steamstatic.com",
+  "network": "ws",
+  "path": "",
+  "host": "copy_az_channel_NUFiLTER_7i.global.ssl.fastly.net.",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-313",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "9ac1d9a73b79bda6",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
