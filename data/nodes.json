@@ -24222,7 +24222,8 @@
   "sources": [
    "mahdibland",
    "xinshoucun",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -33549,7 +33550,8 @@
   "fp": "36d01490bc0d26c0",
   "sources": [
    "mahdibland",
-   "xinshoucun"
+   "xinshoucun",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -33711,7 +33713,8 @@
   "sources": [
    "mahdibland",
    "go4sharing/arch",
-   "xinshoucun"
+   "xinshoucun",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -45277,6 +45280,23 @@
   "fp": "051de2a73adcc490",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "199.232.78.159",
+  "port": 443,
+  "password": "jcTG9WSWMJAmR4rv10xpww",
+  "sni": "cdn.akamai.steamstatic.com",
+  "network": "ws",
+  "path": "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER",
+  "host": "copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.",
+  "skipCertVerify": false,
+  "name": "canfingV2rayNG-75",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c1fa89ae276f2b99",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -60946,6 +60966,28 @@
  },
  {
   "proto": "vless",
+  "server": "146.103.42.117",
+  "port": 9543,
+  "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6",
+  "tls": true,
+  "sni": "storage.yandexcloud.net",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+  "sid": "123abcdf",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-286",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "e6d49af15fff8c0c",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "146.103.42.165",
   "port": 9543,
   "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6",
@@ -62966,6 +63008,28 @@
  },
  {
   "proto": "vless",
+  "server": "167.233.147.162",
+  "port": 2096,
+  "uuid": "7eb360e0-3bf4-4e9b-9192-ca25a2f54b73",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "filembad-261",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "037bb443f6cffb7c",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "167.82.101.251",
   "port": 443,
   "name": "🇺🇸 US美國丨yoyapai.com (2)",
@@ -64953,6 +65017,28 @@
   "fp": "f1c50c28ff62e1df",
   "sources": [
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.19.33.2",
+  "port": 443,
+  "uuid": "ee1c12a4-ab85-4808-8c44-e758010b5ee6",
+  "tls": true,
+  "sni": "www.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "8P5fdZ7ozMHK_iHFV0r1wpBDoVwi2yyo3SWdy4dtbBA",
+  "sid": "b3",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-419",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "ad4c36a5069f6bbf",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -72339,6 +72425,28 @@
  },
  {
   "proto": "vless",
+  "server": "87.199.205.28",
+  "port": 443,
+  "uuid": "501a2da5-cb22-4a3f-915e-e3b821d1d62d",
+  "tls": true,
+  "sni": "vkvd754.okcdn.ru",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "W-9zyiOq287RtXVTZlTFbSDJ0Mx8joyBLJoA7ZE7eBw",
+  "sid": "ef1d3554c652a436",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-216",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "0b1a7055c986cf06",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "87.242.94.43",
   "port": 443,
   "uuid": "fd90e601-a56c-42b8-aab7-aa02d26fcb04",
@@ -73579,6 +73687,28 @@
   "fp": "264dd1fd350b6d04",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "961ec0g.nl17.h1clayd.click",
+  "port": 443,
+  "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+  "tls": true,
+  "sni": "961ec0g.nl17.h1clayd.click",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA",
+  "sid": "6d289ff0f47c0aac",
+  "utls": "ios",
+  "reality": true,
+  "name": "canfingV2rayNG-383",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "1796e868af613c2d",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -84567,7 +84697,8 @@
   "sources": [
    "clashnode",
    "tg:@byxiaoxi→blog",
-   "anaer/Sub"
+   "anaer/Sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
