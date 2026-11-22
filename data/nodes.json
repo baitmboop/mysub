@@ -36638,7 +36638,8 @@
   "fp": "c3884838170b3693",
   "sources": [
    "clashnode",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -65418,7 +65419,8 @@
   "fp": "ecfa8b57be0adf74",
   "sources": [
    "clashnode",
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -70387,7 +70389,8 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -72446,7 +72449,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "121c55c0f9486e6e",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -75718,7 +75722,8 @@
   "fp": "ffe518663fcbc2a9",
   "sources": [
    "tg:@wxdy666→sub",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -79415,6 +79420,28 @@
   "sources": [
    "tg:@oneclickvpnkeys",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.255.115.103",
+  "port": 443,
+  "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
+  "tls": true,
+  "sni": "4935e4t.de25.h1clayd.click",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw",
+  "sid": "6976d670818644cc",
+  "utls": "ios",
+  "reality": true,
+  "name": "canfingV2rayNG-156",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "9043062559916556",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -89648,6 +89675,28 @@
  },
  {
   "proto": "vless",
+  "server": "57.129.41.216",
+  "port": 80,
+  "uuid": "7d74eae4-8a06-4306-a923-ad686f30bf26",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/vless/",
+  "host": "ov-germany1.09vpn.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "filembad-286",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "788c02a732725ca9",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "59.4.80.188",
   "port": 30040,
   "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
@@ -93341,7 +93390,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "ba4cb75bf79b17ce",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -94266,6 +94316,28 @@
   "fp": "1a9b1d65d421e7f7",
   "sources": [
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "DE.IPSENTER.ORG",
+  "port": 443,
+  "uuid": "c381ed79-f3c9-4028-85ae-687795d89ece",
+  "tls": true,
+  "sni": "play.google.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "4-ou3SyJYZ2ptF0vXFdc02yIRTF4VF8m2XcUKJPsUyQ",
+  "sid": "1128da54b05ec30c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-412",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "6661f2eb17a0037f",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -97514,6 +97586,28 @@
  },
  {
   "proto": "vless",
+  "server": "fn.fifapes.monster",
+  "port": 2090,
+  "uuid": "eab915bc-d2df-73d1-47d0-6eb240497055",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-459",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "7d49dde2a74c0677",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "fr-free.fastestrelay.com",
   "port": 443,
   "uuid": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
@@ -99462,6 +99556,28 @@
   "sources": [
    "tg:@oneclickvpnkeys",
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "p2real22.greewebservices.ir",
+  "port": 1320,
+  "uuid": "bee52362-4183-42c5-b065-d3a3f344d00c",
+  "tls": true,
+  "sni": "play.googleapis.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
+  "sid": "9b60d3",
+  "utls": "ios",
+  "reality": true,
+  "name": "filembad-398",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "80c4a86521caf404",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
