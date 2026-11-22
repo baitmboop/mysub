@@ -28,82 +28,6 @@
   "cn_ok": null
  },
  {
-  "proto": "ss",
-  "server": "79.110.54.250",
-  "port": 8080,
-  "name": "n2776",
-  "source": "clashnode",
-  "cipher": "rc4-md5",
-  "password": "14fFPrbezE3HDZzsMOr6",
-  "fp": "cd3f41f152c1f84b",
-  "sources": [
-   "clashnode",
-   "tg:@byxiaoxi→blog"
-  ],
-  "latency": 11,
-  "jitter": 3,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9353,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "ss",
-  "server": "107.151.182.253",
-  "port": 8080,
-  "name": "n1520",
-  "source": "clashnode",
-  "cipher": "rc4-md5",
-  "password": "14fFPrbezE3HDZzsMOr6",
-  "fp": "ca2bc469067f677e",
-  "sources": [
-   "clashnode"
-  ],
-  "latency": 15,
-  "jitter": 9,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9302,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "http",
-  "server": "138.199.35.200",
-  "port": 9002,
-  "name": "n0220",
-  "source": "clashnode",
-  "username": "",
-  "password": "",
-  "tls": true,
-  "sni": "",
-  "skipCertVerify": true,
-  "fp": "6f5856dcc416dcaf",
-  "sources": [
-   "clashnode"
-  ],
-  "latency": 12,
-  "jitter": 2,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9294,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
   "proto": "trojan",
   "server": "167.88.61.198",
   "port": 443,
@@ -214,32 +138,6 @@
  },
  {
   "proto": "trojan",
-  "server": "216.152.155.59",
-  "port": 443,
-  "name": "n3585",
-  "source": "clashnode",
-  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-  "sni": "api.nextjobopportunityandclaimyouridealrole.com",
-  "network": "tcp",
-  "fp": "69006a7b303c4067",
-  "sources": [
-   "clashnode",
-   "tg:@wxdy666→sub"
-  ],
-  "latency": 19,
-  "jitter": 3,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9026,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "trojan",
   "server": "216.152.155.158",
   "port": 443,
   "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -263,6 +161,118 @@
    "cf-trace": "ok"
   },
   "score": 0.9026,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "trojan",
+  "server": "167.88.61.193",
+  "port": 443,
+  "name": "n3345",
+  "source": "clashnode",
+  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+  "sni": "browseseniorrolesandenhanceyourcareertoday.com",
+  "network": "tcp",
+  "fp": "a71ec610054a1d1b",
+  "sources": [
+   "clashnode",
+   "tg:@byxiaoxi→blog"
+  ],
+  "latency": 24,
+  "jitter": 0,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.902,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "vmess",
+  "server": "23.162.200.198",
+  "port": 18000,
+  "name": "n6764",
+  "source": "clashnode",
+  "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "learn.healthcarejobshubenhancemedicalprofessionalskillstoday.com",
+  "network": "tcp",
+  "fp": "1e222655121cc2f0",
+  "sources": [
+   "clashnode",
+   "tg:@wxdy666→sub",
+   "tg:@byxiaoxi→blog",
+   "anaer/Sub"
+  ],
+  "latency": 26,
+  "jitter": 1,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9019,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "http",
+  "server": "purposebydesig.club",
+  "port": 443,
+  "name": "n0938",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "dadf5b067c0498df",
+  "sources": [
+   "go4sharing/arch",
+   "clashnode"
+  ],
+  "latency": 18,
+  "jitter": 1,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "http",
+  "server": "137.175.22.120",
+  "port": 443,
+  "name": "n7760",
+  "source": "clashnode",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "da3d5eefb7b9dd1a",
+  "sources": [
+   "clashnode"
+  ],
+  "latency": 25,
+  "jitter": 2,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.898,
   "speed": 0.0,
   "cn_ok": null
  }
