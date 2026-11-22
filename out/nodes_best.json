@@ -1,33 +1,5 @@
 [
  {
-  "proto": "trojan",
-  "server": "169.197.140.171",
-  "port": 443,
-  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-  "sni": "cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com",
-  "network": "tcp",
-  "path": "",
-  "host": "",
-  "skipCertVerify": false,
-  "name": "n3148",
-  "source": "tg:@byxiaoxi→blog",
-  "fp": "e6e26dcb0db9a7d4",
-  "sources": [
-   "tg:@byxiaoxi→blog"
-  ],
-  "latency": 34,
-  "jitter": 18,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9979,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
   "proto": "http",
   "server": "138.199.35.204",
   "port": 9002,
@@ -132,72 +104,20 @@
   "cn_ok": null
  },
  {
-  "proto": "vmess",
-  "server": "38.128.66.212",
-  "port": 1270,
-  "name": "n7722",
+  "proto": "trojan",
+  "server": "167.88.61.198",
+  "port": 443,
+  "name": "n3346",
   "source": "clashnode",
-  "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-  "alterId": 0,
-  "cipher": "auto",
-  "tls": true,
-  "sni": "xmfhlpy.com",
+  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+  "sni": "cdn.browseseniorrolesandenhanceyourcareertoday.com",
   "network": "tcp",
-  "fp": "82db9b50cbbdd81f",
+  "fp": "cae41507b9f9df74",
   "sources": [
-   "clashnode"
-  ],
-  "latency": 19,
-  "jitter": 0,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9026,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "ss",
-  "server": "216.106.178.169",
-  "port": 19999,
-  "cipher": "aes-256-gcm",
-  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-  "name": "n2086",
-  "source": "mahdibland",
-  "fp": "19fad34997c210ef",
-  "sources": [
-   "mahdibland",
-   "tg:@wxdy666→sub",
+   "clashnode",
    "tg:@byxiaoxi→blog"
   ],
-  "latency": 19,
-  "jitter": 1,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9026,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "ss",
-  "server": "38.64.138.135",
-  "port": 19999,
-  "name": "n2309",
-  "source": "clashnode",
-  "cipher": "aes-256-gcm",
-  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-  "fp": "30c0c7fd1b90162c",
-  "sources": [
-   "clashnode"
-  ],
-  "latency": 19,
+  "latency": 22,
   "jitter": 0,
   "verify_ok": 3,
   "verify": {
@@ -205,7 +125,61 @@
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.9026,
+  "score": 0.9102,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "http",
+  "server": "137.175.22.96",
+  "port": 443,
+  "name": "n7776",
+  "source": "clashnode",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "f3c7611c5b77ff5d",
+  "sources": [
+   "clashnode"
+  ],
+  "latency": 22,
+  "jitter": 0,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9102,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "http",
+  "server": "137.175.22.84",
+  "port": 443,
+  "name": "n0187",
+  "source": "clashnode",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "ed02fc62934aac3e",
+  "sources": [
+   "clashnode"
+  ],
+  "latency": 23,
+  "jitter": 3,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9061,
   "speed": 0.0,
   "cn_ok": null
  },
@@ -239,23 +213,49 @@
   "cn_ok": null
  },
  {
-  "proto": "vmess",
-  "server": "162.251.60.97",
-  "port": 1270,
-  "name": "n6604",
+  "proto": "trojan",
+  "server": "216.152.155.59",
+  "port": 443,
+  "name": "n3585",
   "source": "clashnode",
-  "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-  "alterId": 0,
-  "cipher": "auto",
-  "tls": true,
-  "sni": "xmfhlpy.com",
+  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+  "sni": "api.nextjobopportunityandclaimyouridealrole.com",
   "network": "tcp",
-  "fp": "67e7bfeca910d087",
+  "fp": "69006a7b303c4067",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ],
   "latency": 19,
-  "jitter": 2,
+  "jitter": 3,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.9026,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "trojan",
+  "server": "216.152.155.158",
+  "port": 443,
+  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+  "sni": "resources.nextjobopportunityandclaimyouridealrole.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "n3581",
+  "source": "tg:@wxdy666→sub",
+  "fp": "fb6973dda997d907",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ],
+  "latency": 19,
+  "jitter": 0,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
