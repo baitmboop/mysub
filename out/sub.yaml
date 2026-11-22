@@ -1,16 +1,9 @@
-# nodepool  生成于 2026-11-22 22:51:12 (北京时间)
+# nodepool  生成于 2026-11-23 01:44:03 (北京时间)
 # 节点数 10  (自建 0 / 免费额度 0 / 免费池 10)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
 proxies:
-  - name: N01 138.199.35.204
-    type: http
-    server: 138.199.35.204
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N02 167.88.61.198
+  - name: N01 167.88.61.198
     type: trojan
     server: 167.88.61.198
     port: 443
@@ -18,21 +11,21 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: cdn.browseseniorrolesandenhanceyourcareertoday.com
-  - name: N03 137.175.22.96
+  - name: N02 137.175.22.96
     type: http
     server: 137.175.22.96
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N04 137.175.22.84
+  - name: N03 137.175.22.84
     type: http
     server: 137.175.22.84
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N05 216.152.155.23
+  - name: N04 216.152.155.23
     type: trojan
     server: 216.152.155.23
     port: 443
@@ -40,7 +33,7 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: courses.nextjobopportunityandclaimyouridealrole.com
-  - name: N06 216.152.155.158
+  - name: N05 216.152.155.158
     type: trojan
     server: 216.152.155.158
     port: 443
@@ -48,7 +41,7 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: resources.nextjobopportunityandclaimyouridealrole.com
-  - name: N07 167.88.61.193
+  - name: N06 167.88.61.193
     type: trojan
     server: 167.88.61.193
     port: 443
@@ -56,74 +49,88 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: browseseniorrolesandenhanceyourcareertoday.com
-  - name: N08 23.162.200.198
-    type: vmess
-    server: 23.162.200.198
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    udp: true
-  - name: N09 purposebydesig.club
+  - name: N07 purposebydesig.club
     type: http
     server: purposebydesig.club
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N10 137.175.22.120
+  - name: N08 137.175.22.120
     type: http
     server: 137.175.22.120
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
+  - name: N09 216.152.155.50
+    type: trojan
+    server: 216.152.155.50
+    port: 443
+    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+    udp: true
+    skipCertVerify: true
+    sni: cdn.nextjobopportunityandclaimyouridealrole.com
+  - name: N10 67.220.73.204
+    type: vless
+    server: 67.220.73.204
+    port: 16016
+    uuid: 814bd064-544d-4255-a070-5705c03f6da9
+    udp: true
+    skipCertVerify: true
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+      short-id: 48050fab
+    client-fingerprint: chrome
 proxy-groups:
   - name: 节点选择
     type: select
     proxies:
       - 自动选择
       - ③ 免费池
-      - N01 138.199.35.204
-      - N02 167.88.61.198
-      - N03 137.175.22.96
-      - N04 137.175.22.84
-      - N05 216.152.155.23
-      - N06 216.152.155.158
-      - N07 167.88.61.193
-      - N08 23.162.200.198
-      - N09 purposebydesig.club
-      - N10 137.175.22.120
+      - N01 167.88.61.198
+      - N02 137.175.22.96
+      - N03 137.175.22.84
+      - N04 216.152.155.23
+      - N05 216.152.155.158
+      - N06 167.88.61.193
+      - N07 purposebydesig.club
+      - N08 137.175.22.120
+      - N09 216.152.155.50
+      - N10 67.220.73.204
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 120
     tolerance: 100
     proxies:
-      - N01 138.199.35.204
-      - N02 167.88.61.198
-      - N03 137.175.22.96
-      - N04 137.175.22.84
-      - N05 216.152.155.23
-      - N06 216.152.155.158
-      - N07 167.88.61.193
-      - N08 23.162.200.198
-      - N09 purposebydesig.club
-      - N10 137.175.22.120
+      - N01 167.88.61.198
+      - N02 137.175.22.96
+      - N03 137.175.22.84
+      - N04 216.152.155.23
+      - N05 216.152.155.158
+      - N06 167.88.61.193
+      - N07 purposebydesig.club
+      - N08 137.175.22.120
+      - N09 216.152.155.50
+      - N10 67.220.73.204
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
     interval: 600
     proxies:
-      - N01 138.199.35.204
-      - N02 167.88.61.198
-      - N03 137.175.22.96
-      - N04 137.175.22.84
-      - N05 216.152.155.23
-      - N06 216.152.155.158
-      - N07 167.88.61.193
-      - N08 23.162.200.198
-      - N09 purposebydesig.club
-      - N10 137.175.22.120
+      - N01 167.88.61.198
+      - N02 137.175.22.96
+      - N03 137.175.22.84
+      - N04 216.152.155.23
+      - N05 216.152.155.158
+      - N06 167.88.61.193
+      - N07 purposebydesig.club
+      - N08 137.175.22.120
+      - N09 216.152.155.50
+      - N10 67.220.73.204
 rules:
   - "MATCH,节点选择"

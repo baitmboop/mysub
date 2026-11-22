@@ -1,33 +1,5 @@
 [
  {
-  "proto": "http",
-  "server": "138.199.35.204",
-  "port": 9002,
-  "name": "n0224",
-  "source": "go4sharing/arch",
-  "username": "",
-  "password": "",
-  "tls": true,
-  "sni": "",
-  "skipCertVerify": true,
-  "fp": "81359b1902b2035f",
-  "sources": [
-   "go4sharing/arch",
-   "clashnode"
-  ],
-  "latency": 10,
-  "jitter": 5,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9412,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
   "proto": "trojan",
   "server": "167.88.61.198",
   "port": 443,
@@ -191,37 +163,6 @@
   "cn_ok": null
  },
  {
-  "proto": "vmess",
-  "server": "23.162.200.198",
-  "port": 18000,
-  "name": "n6764",
-  "source": "clashnode",
-  "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-  "alterId": 0,
-  "cipher": "auto",
-  "tls": false,
-  "sni": "learn.healthcarejobshubenhancemedicalprofessionalskillstoday.com",
-  "network": "tcp",
-  "fp": "1e222655121cc2f0",
-  "sources": [
-   "clashnode",
-   "tg:@wxdy666→sub",
-   "tg:@byxiaoxi→blog",
-   "anaer/Sub"
-  ],
-  "latency": 26,
-  "jitter": 1,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9019,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
   "proto": "http",
   "server": "purposebydesig.club",
   "port": 443,
@@ -273,6 +214,67 @@
    "cf-trace": "ok"
   },
   "score": 0.898,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "trojan",
+  "server": "216.152.155.50",
+  "port": 443,
+  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+  "sni": "cdn.nextjobopportunityandclaimyouridealrole.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "n3584",
+  "source": "tg:@wxdy666→sub",
+  "fp": "fa2bf69ccee7fde9",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ],
+  "latency": 20,
+  "jitter": 9,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8974,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "vless",
+  "server": "67.220.73.204",
+  "port": 16016,
+  "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+  "tls": true,
+  "sni": "www.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+  "sid": "48050fab",
+  "utls": "chrome",
+  "reality": true,
+  "name": "n5768",
+  "source": "tg:@byxiaoxi→blog",
+  "fp": "fb2ccda5a2d950ec",
+  "sources": [
+   "tg:@byxiaoxi→blog"
+  ],
+  "latency": 20,
+  "jitter": 64,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8974,
   "speed": 0.0,
   "cn_ok": null
  }
