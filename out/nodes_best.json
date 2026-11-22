@@ -132,33 +132,6 @@
   "cn_ok": null
  },
  {
-  "proto": "socks5",
-  "server": "23.230.200.250",
-  "port": 62000,
-  "name": "n1210",
-  "source": "clashnode",
-  "username": "kingstar123",
-  "password": "kingstar123++",
-  "tls": false,
-  "sni": "",
-  "skipCertVerify": false,
-  "fp": "d59750ae962befcd",
-  "sources": [
-   "clashnode"
-  ],
-  "latency": 15,
-  "jitter": 27,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.9118,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
   "proto": "vmess",
   "server": "38.128.66.212",
   "port": 1270,
@@ -242,26 +215,49 @@
   "cn_ok": null
  },
  {
-  "proto": "trojan",
-  "server": "167.88.61.52",
+  "proto": "http",
+  "server": "137.175.22.41",
   "port": 443,
-  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-  "sni": "courses.browseseniorrolesandenhanceyourcareertoday.com",
-  "network": "tcp",
-  "path": "",
-  "host": "",
-  "skipCertVerify": false,
-  "name": "n3487",
-  "source": "ermaozi",
-  "fp": "23648fdf89c3365f",
+  "name": "n0203",
+  "source": "clashnode",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "1c3c7a8eb2ec1735",
   "sources": [
-   "ermaozi",
-   "mahdibland",
-   "tg:@byxiaoxi→blog",
-   "tg:@wxdy666→sub"
+   "clashnode"
   ],
   "latency": 19,
-  "jitter": 2,
+  "jitter": 1,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.8944,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "http",
+  "server": "tzoa.fun",
+  "port": 443,
+  "name": "n0942",
+  "source": "clashnode",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "tzoa.fun",
+  "skipCertVerify": true,
+  "fp": "27266ed810bcddc2",
+  "sources": [
+   "clashnode"
+  ],
+  "latency": 19,
+  "jitter": 4,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",

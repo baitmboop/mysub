@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-22 10:53:30 (北京时间)
+# nodepool  生成于 2026-11-22 13:55:26 (北京时间)
 # 节点数 10  (自建 0 / 免费额度 0 / 免费池 10)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -39,14 +39,7 @@ proxies:
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N06 23.230.200.250
-    type: socks5
-    server: 23.230.200.250
-    port: 62000
-    udp: false
-    username: kingstar123
-    password: kingstar123++
-  - name: N07 38.128.66.212
+  - name: N06 38.128.66.212
     type: vmess
     server: 38.128.66.212
     port: 1270
@@ -57,28 +50,35 @@ proxies:
     tls: true
     servername: xmfhlpy.com
     skipCertVerify: true
-  - name: N08 216.106.178.169
+  - name: N07 216.106.178.169
     type: ss
     server: 216.106.178.169
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N09 purposebydesig.club
+  - name: N08 purposebydesig.club
     type: http
     server: purposebydesig.club
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N10 167.88.61.52
-    type: trojan
-    server: 167.88.61.52
+  - name: N09 137.175.22.41
+    type: http
+    server: 137.175.22.41
     port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    udp: true
-    skipCertVerify: true
-    sni: courses.browseseniorrolesandenhanceyourcareertoday.com
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N10 tzoa.fun
+    type: http
+    server: tzoa.fun
+    port: 443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+    sni: tzoa.fun
 proxy-groups:
   - name: 节点选择
     type: select
@@ -90,11 +90,11 @@ proxy-groups:
       - N03 79.110.54.250
       - N04 107.151.182.253
       - N05 138.199.35.200
-      - N06 23.230.200.250
-      - N07 38.128.66.212
-      - N08 216.106.178.169
-      - N09 purposebydesig.club
-      - N10 167.88.61.52
+      - N06 38.128.66.212
+      - N07 216.106.178.169
+      - N08 purposebydesig.club
+      - N09 137.175.22.41
+      - N10 tzoa.fun
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -106,11 +106,11 @@ proxy-groups:
       - N03 79.110.54.250
       - N04 107.151.182.253
       - N05 138.199.35.200
-      - N06 23.230.200.250
-      - N07 38.128.66.212
-      - N08 216.106.178.169
-      - N09 purposebydesig.club
-      - N10 167.88.61.52
+      - N06 38.128.66.212
+      - N07 216.106.178.169
+      - N08 purposebydesig.club
+      - N09 137.175.22.41
+      - N10 tzoa.fun
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -121,10 +121,10 @@ proxy-groups:
       - N03 79.110.54.250
       - N04 107.151.182.253
       - N05 138.199.35.200
-      - N06 23.230.200.250
-      - N07 38.128.66.212
-      - N08 216.106.178.169
-      - N09 purposebydesig.club
-      - N10 167.88.61.52
+      - N06 38.128.66.212
+      - N07 216.106.178.169
+      - N08 purposebydesig.club
+      - N09 137.175.22.41
+      - N10 tzoa.fun
 rules:
   - "MATCH,节点选择"
