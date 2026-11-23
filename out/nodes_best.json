@@ -14,7 +14,7 @@
   "sid": "7ce8c8e1",
   "utls": "chrome",
   "reality": true,
-  "name": "n4388",
+  "name": "n4391",
   "source": "tg:@wxdy666→sub",
   "fp": "1294863934c5b5a0",
   "sources": [
@@ -105,7 +105,7 @@
   "sid": "6a5291c5",
   "utls": "chrome",
   "reality": true,
-  "name": "n4387",
+  "name": "n4390",
   "source": "tg:@wxdy666→sub",
   "fp": "b9dfb0ecfc9628d7",
   "sources": [
@@ -148,7 +148,7 @@
   "cn_latency": null,
   "cn_speed": 0.7837,
   "fp": "d29cdea5d8bc0718",
-  "name": "n6224",
+  "name": "n6230",
   "port": 8888,
   "proto": "http",
   "server": "111.192.60.106",
@@ -169,7 +169,7 @@
   "cn_latency": null,
   "cn_speed": 0.7652,
   "fp": "0d649bec5365b790",
-  "name": "n6580",
+  "name": "n6231",
   "port": 8888,
   "proto": "http",
   "server": "123.121.130.181",
@@ -209,7 +209,7 @@
   "cn_latency": null,
   "cn_speed": 0.6586,
   "fp": "acd7f3b6d023b86e",
-  "name": "n6575",
+  "name": "n6233",
   "port": 8888,
   "proto": "http",
   "server": "114.244.213.90",
@@ -249,7 +249,7 @@
   "server": "222.128.169.173",
   "port": 8888,
   "tls": false,
-  "name": "n6228",
+  "name": "n6234",
   "source": "extra:raw.githubusercontent.com/http.txt",
   "fp": "3b4c7f053ff36f32",
   "sources": [
@@ -293,7 +293,7 @@
   "server": "114.246.192.104",
   "port": 8888,
   "tls": false,
-  "name": "n0135",
+  "name": "n6236",
   "source": "extra:raw.githubusercontent.com/http.txt",
   "fp": "8e8db3d2fbf47566",
   "sources": [
@@ -343,7 +343,7 @@
   "sid": "6a5291c5",
   "utls": "chrome",
   "reality": true,
-  "name": "n4602",
+  "name": "n6238",
   "source": "tg:@wxdy666→sub",
   "fp": "7326cfb5a876958a",
   "sources": [
@@ -365,7 +365,7 @@
   "flow": "xtls-rprx-vision",
   "fp": "56956beee12fbf62",
   "host": "",
-  "name": "n6397",
+  "name": "n6239",
   "network": "tcp",
   "path": "",
   "pbk": "hARhHGV09mnEUWA1a7pG6_K4lztUhKCK3iGeboGGP2g",
@@ -394,7 +394,7 @@
   "cn_latency": null,
   "cn_speed": 0.3269,
   "fp": "c290acba4c9d4c23",
-  "name": "n6541",
+  "name": "n6240",
   "port": 8888,
   "proto": "http",
   "server": "114.249.232.231",
@@ -483,7 +483,7 @@
   "network": "ws",
   "path": "/hls/cctv5phd.m3u8",
   "host": "guanwang.awsno.com",
-  "name": "n5206",
+  "name": "n5212",
   "source": "ermaozi",
   "fp": "91c8c5bf97dfa29b",
   "sources": [
@@ -505,7 +505,7 @@
   "cn_latency": null,
   "cn_speed": 0.2414,
   "fp": "e8b70ce4860474ca",
-  "name": "n6442",
+  "name": "n6243",
   "port": 8888,
   "proto": "http",
   "server": "114.253.67.30",
@@ -525,7 +525,7 @@
   "proto": "vless",
   "server": "13.141.51.2",
   "port": 443,
-  "name": "n4143",
+  "name": "n4046",
   "source": "clashnode",
   "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
   "tls": true,
@@ -619,7 +619,7 @@
   "cn_latency": null,
   "cn_speed": 0.0573,
   "fp": "c133db2b80cd04e4",
-  "name": "n6240",
+  "name": "n6246",
   "port": 12327,
   "proto": "http",
   "server": "147.161.246.34",
@@ -657,30 +657,6 @@
    "cf-trace": "ok"
   },
   "score": 0.8658,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "ss",
-  "server": "136.148.77.250",
-  "port": 8388,
-  "cipher": "aes-256-gcm",
-  "password": "itzvpn@321",
-  "name": "n1427",
-  "source": "tg:@byxiaoxi→blog",
-  "fp": "83a6e86b615cb356",
-  "sources": [
-   "tg:@byxiaoxi→blog"
-  ],
-  "latency": 43,
-  "jitter": 46,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8542,
   "speed": 0.0,
   "cn_ok": null
  },
@@ -763,6 +739,87 @@
   "cn_ok": null
  },
  {
+  "proto": "http",
+  "server": "138.199.35.204",
+  "port": 9002,
+  "name": "n0169",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "81359b1902b2035f",
+  "sources": [
+   "go4sharing/arch"
+  ],
+  "latency": 39,
+  "jitter": 8,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.834,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "http",
+  "server": "138.199.35.199",
+  "port": 9002,
+  "name": "n0167",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "8478b5048dd1483b",
+  "sources": [
+   "go4sharing/arch"
+  ],
+  "latency": 39,
+  "jitter": 2,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.834,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
+  "proto": "http",
+  "server": "138.199.35.208",
+  "port": 9002,
+  "name": "n0173",
+  "source": "go4sharing/arch",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "db22a76934d38e3e",
+  "sources": [
+   "go4sharing/arch"
+  ],
+  "latency": 39,
+  "jitter": 0,
+  "verify_ok": 3,
+  "verify": {
+   "gstatic": "ok",
+   "github": "ok",
+   "cf-trace": "ok"
+  },
+  "score": 0.834,
+  "speed": 0.0,
+  "cn_ok": null
+ },
+ {
   "proto": "ss",
   "server": "38.91.100.39",
   "port": 19999,
@@ -812,31 +869,6 @@
  },
  {
   "proto": "ss",
-  "server": "15.204.247.244",
-  "port": 4444,
-  "name": "n1502",
-  "source": "go4sharing/arch",
-  "cipher": "aes-256-gcm",
-  "password": "pKEW8JPByTVTLtM",
-  "fp": "6aa53568b4576949",
-  "sources": [
-   "go4sharing/arch",
-   "tg:@byxiaoxi→blog"
-  ],
-  "latency": 41,
-  "jitter": 10,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8292,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "ss",
   "server": "149.40.57.134",
   "port": 19999,
   "cipher": "aes-256-gcm",
@@ -849,39 +881,15 @@
    "xinshoucun",
    "tg:@byxiaoxi→blog"
   ],
-  "latency": 67,
-  "jitter": 0,
+  "latency": 40,
+  "jitter": 15,
   "verify_ok": 3,
   "verify": {
    "gstatic": "ok",
    "github": "ok",
    "cf-trace": "ok"
   },
-  "score": 0.8282,
-  "speed": 0.0,
-  "cn_ok": null
- },
- {
-  "proto": "ss",
-  "server": "149.40.57.135",
-  "port": 19999,
-  "cipher": "aes-256-gcm",
-  "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-  "name": "n1405",
-  "source": "tg:@byxiaoxi→blog",
-  "fp": "48bc4612b940c29d",
-  "sources": [
-   "tg:@byxiaoxi→blog"
-  ],
-  "latency": 67,
-  "jitter": 0,
-  "verify_ok": 3,
-  "verify": {
-   "gstatic": "ok",
-   "github": "ok",
-   "cf-trace": "ok"
-  },
-  "score": 0.8282,
+  "score": 0.8298,
   "speed": 0.0,
   "cn_ok": null
  }
