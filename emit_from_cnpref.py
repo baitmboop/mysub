@@ -43,6 +43,31 @@ def main() -> int:
     if not isinstance(nodes, list) or not nodes:
         print(f"读不出 {NODES} 或为空, 中止")
         return 1
+
+    # 并上"普查时的配置清单"。
+    #
+    # data/nodes.json 是云端每 3 小时按当前源重建的; 源里下架了的节点配置就没了,
+    # 但它在 cn_pref 里的实测结论还留着 7 天。只读 nodes.json 会让"刚测通、
+    # 配置已被源下架"的节点彻底消失 —— 2026-11-23 实测这一项就丢了 28 个。
+    #
+    # 清单由 cn_refresh.sh 在开测前写, 缺了就跳过(老版本没有这个文件)。
+    seen = {(n.get("server"), n.get("port")) for n in nodes if isinstance(n, dict)}
+    snap = os.path.join(gateway.DATA, "nodes.at-census.json")
+    if os.path.exists(snap):
+        extra = gateway.load_json(snap, [])
+        added = 0
+        for n in extra if isinstance(extra, list) else []:
+            if not isinstance(n, dict) or not n.get("server") or not n.get("port"):
+                continue
+            if (n["server"], n["port"]) in seen:
+                continue
+            seen.add((n["server"], n["port"]))
+            nodes.append(n)
+            added += 1
+        if added:
+            print(f"   从普查清单补回 {added} 个已下架节点的配置")
+    else:
+        print("   (无 data/nodes.at-census.json, 只用当前 nodes.json)")
     if not isinstance(cn, dict) or not cn:
         print(f"读不出 {gateway.CN_PREF} 或为空, 中止")
         return 1
@@ -106,15 +131,43 @@ def main() -> int:
     # 报告必须说清它到底是什么, 不能自相矛盾。
     import time as _t
     stamp = _t.strftime("%Y-%m-%d %H:%M", _t.localtime(newest)) if newest else "未知"
+
+    # 订阅里真实有几个节点 —— 必须去基数, 不能沿用 pool 的长度。
+    #
+    # 2026-11-23 实测: pool 63 个, base64 里只有 53 个。差的那 10 个是
+    # gateway.build_base64 按 (server, port) 去重掉的, 报告却照抄 63。
+    # 用户拿 63 去核对客户端看到 53, 只会以为是客户端出错。
+    import base64 as _b64
+    import ci_build
+    sub_path = os.path.join(ci_build.OUT, "sub-base64.txt")
+    n_sub = len(pool)
+    try:
+        with open(sub_path, encoding="utf-8") as f:
+            raw = f.read().strip()
+        text = _b64.b64decode(raw + "=" * (-len(raw) % 4)).decode("utf-8", "replace")
+        n_sub = len([x for x in text.strip().splitlines() if x.strip()])
+    except Exception:
+        pass
+
+    # 过期与否要按真实天数说, 不能写死。
+    if age_d > 7:
+        fresh_note = (f"已超出 7 天有效期 —— 结论可能过时, 节点可能已死。")
+        age_warn = "⚠️ "
+    else:
+        fresh_note = "仍在 7 天有效期内。"
+        age_warn = ""
+
     lines = [
         "# 节点池日报（应急重建）", "",
         f"- 生成时间: {_t.strftime('%Y-%m-%d %H:%M:%S')} (UTC)",
         f"- ⚠️ **这是一份应急产物**: 国内普查正在重跑, 本文件由"
         f" `emit_from_cnpref.py` 直接从「全量节点配置 ∩ 历史实测结论」生成,"
         f" 未做任何新的探测。",
-        f"- 国内实测来源: {stamp} (**{age_d:.1f} 天前**), "
-        f"已超出 7 天有效期 —— 结论可能过时, 节点可能已死。",
-        f"- 最终订阅: **{len(pool)}** 个节点, 全部是当时实测能传数据的",
+        f"- 国内实测来源: {stamp} (**{age_d:.1f} 天前**), {age_warn}{fresh_note}",
+        f"- 最终订阅: **{n_sub}** 个节点"
+        + (f"（配置池 {len(pool)} 个，按 server:port 去重后 {n_sub} 个）"
+           if n_sub != len(pool) else "")
+        + ", 全部是当时实测能传数据的",
         f"- 下一轮 `ci_build.py` 会用新的普查结果整体覆盖本文件", "",
         "| # | 协议 | 服务器 | 当时速度 | 来源 |",
         "|---|------|--------|----------|------|",
@@ -123,7 +176,8 @@ def main() -> int:
         sp = n.get("cn_speed") or 0
         lines.append(f"| {i} | {n.get('proto')} | {n['server']}:{n['port']} | "
                      f"{sp * 1024:.0f} KB/s | {n.get('source') or '-'} |")
-    lines += ["", "> 「当时速度」是 10 天前国内实测的结果, 不代表现在还能跑。"]
+    age_txt = "今天" if age_d < 1 else f"{age_d:.0f} 天前"
+    lines += ["", f"> 「当时速度」是{age_txt}国内实测的结果, 不代表现在还能跑。"]
     import ci_build
     os.makedirs(ci_build.OUT, exist_ok=True)
     with open(os.path.join(ci_build.OUT, "report.md"), "w", encoding="utf-8") as f:

@@ -93,6 +93,22 @@ fi
 git pull --rebase --autostash -q origin main || echo "拉取失败, 用本地已有候选继续"
 
 START=$(date +%s)
+
+# 普查开始前把"本轮要测的配置清单"存一份。
+#
+# 为什么必须存: verify.py 只把「IP:端口 + 测速结论」写进 cn_pref, 配置
+# (uuid / path / sni / ws-host) 全在 nodes.json 里。而 data/nodes.json
+# 是云端每 3 小时按**当前源**重建的 —— 源里下架了的节点, 配置就没了,
+# 它在 cn_pref 里的实测结论却还留着(7 天)。
+#
+# 2026-11-23 实测: cn_pref 里 83 个"能传数据", 其中 28 个是当天刚测通的,
+# 但 nodes.json 里已经找不到配置, 发不进订阅。订阅因此只剩 39 个;
+# 补回清单后同一批数据能出 62 个。
+#
+# 这份快照只在本机用(已 gitignore): 2.3MB/次, 每天提交一次会把仓库撑爆。
+cp data/nodes.json data/nodes.at-census.json 2>/dev/null ||
+    echo "警告: 无法写 data/nodes.at-census.json, 本轮测通的节点可能丢配置"
+
 "$PY" verify.py --file data/nodes.json --refresh --cull --apply data/nodes.json \
     --out "$OUT"
 rc=$?

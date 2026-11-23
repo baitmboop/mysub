@@ -31,3 +31,6 @@ out/sub_self*
 out/cf_relay.yaml
 out/worker.js
 worker/.test_worker.mjs
+
+# 普查时的配置清单快照: 只在本机用, 2.3MB/次, 不进库(每天一份会把仓库撑爆)
+data/nodes.at-census.json
