@@ -160,9 +160,8 @@ def main() -> int:
     lines = [
         "# 节点池日报（应急重建）", "",
         f"- 生成时间: {_t.strftime('%Y-%m-%d %H:%M:%S')} (UTC)",
-        f"- ⚠️ **这是一份应急产物**: 国内普查正在重跑, 本文件由"
-        f" `emit_from_cnpref.py` 直接从「全量节点配置 ∩ 历史实测结论」生成,"
-        f" 未做任何新的探测。",
+        f"- ⚠️ **应急产物**: 本文件由 `emit_from_cnpref.py` 从「全量节点配置 ∩ 历史"
+        f"实测结论」直接生成, **未做任何新的探测**。",
         f"- 国内实测来源: {stamp} (**{age_d:.1f} 天前**), {age_warn}{fresh_note}",
         f"- 最终订阅: **{n_sub}** 个节点"
         + (f"（配置池 {len(pool)} 个，按 server:port 去重后 {n_sub} 个）"
