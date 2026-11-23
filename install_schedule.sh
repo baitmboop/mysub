@@ -1,5 +1,6 @@
 #!/bin/zsh
-# 一次性安装: 把国内普查挂到 launchd, 每 7 天跑一次。
+# 一次性安装: 把国内普查挂到 launchd, 每天 04:30 检查一次
+# (数据没超过 CN_REFRESH_MIN_DAYS 天就自动跳过, 不白烧机器)。
 #
 # 必须在**你自己的 Terminal 窗口**里跑(或双击运行)。原因: launchctl 只能在
 # 登录会话(Aqua)里注册 LaunchAgent, 从非交互/沙箱进程里执行 bootstrap 会报
@@ -46,8 +47,8 @@ if launchctl print "gui/$(id -u)/$LABEL" >>"$LOG" 2>&1; then
 fi
 
 say ""
-say "下一次运行: 每周四 04:30(错过则在开机/唤醒后补跑)"
-say "手动跑一次:  $REPO/cn_refresh.sh"
+say "下一次检查: 每天 04:30(数据超过 3 天才真的重测, 错过则在开机/唤醒后补跑)"
+say "手动强制跑:  CN_REFRESH_FORCE=1 $REPO/cn_refresh.sh"
 say "看日志:      $REPO/logs/cn-refresh.log"
 say "卸载:        launchctl bootout gui/$(id -u)/$LABEL"
 echo
