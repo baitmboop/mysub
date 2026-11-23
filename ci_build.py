@@ -232,6 +232,32 @@ def main() -> int:
         extra += 1
     log(f"并入历史池未收录节点 {extra} 个, 合计 {len(nodes)} 个待测")
 
+    # 再并上"已知可用节点的完整配置"库。
+    #
+    # 历史池只留 7 天内**进过订阅**的节点(约 300 个), 而 cn_pref 里实测能传
+    # 数据的有几十个根本不在这 300 里 —— 它们要么是 http 代理(云端测不通,
+    # 永远进不了池), 要么上一轮被挤出去了。两条路径的交集小得可怜:
+    # 2026-11-23 实测 83 个能传数据, 交集只有 12 个, 最终订阅 18 个。
+    #
+    # known_good.json 由 archive_known_good.py 维护, 只存"实测能传数据"的
+    # 节点配置(几十 KB, 云端构建也能读到), 与历史池互补。
+    known_good = gateway.load_json(os.path.join(DATA, "known_good.json"), {})
+    extra2 = 0
+    if isinstance(known_good, dict):
+        for key, rec in known_good.items():
+            if not isinstance(rec, dict) or not rec.get("server") or not rec.get("port"):
+                continue
+            n = dict(rec)
+            n.pop("archived_at", None)
+            fp = gateway.fp_key(n)
+            if fp in seen:
+                continue
+            n["fp"] = fp
+            nodes.append(n)
+            seen.add(fp)
+            extra2 += 1
+    log(f"并入已知可用配置 {extra2} 个, 合计 {len(nodes)} 个待测")
+
     # ---------- 1. 生成内核配置(会自动剔除非法节点) ----------
     log("生成内核配置...")
     name_map, n_ok = probe.build_config(nodes)

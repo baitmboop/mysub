@@ -1,0 +1,652 @@
+{
+"111.192.19.3:8888": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.1822,
+"fp": "218bbabeceb6a2e7",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "111.192.19.3",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"111.192.60.106:8888": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.7837,
+"fp": "d29cdea5d8bc0718",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "111.192.60.106",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"114.244.212.147:8888": {
+"archived_at": 1795429705,
+"cn_at": 1795428532,
+"cn_latency": null,
+"cn_speed": 1.1862,
+"fp": "9759d61719e992b4",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "114.244.212.147",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"114.244.213.90:8888": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.6586,
+"fp": "acd7f3b6d023b86e",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "114.244.213.90",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"114.246.201.27:8888": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.1821,
+"fp": "3e368d9f00dd6d24",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "114.246.201.27",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"114.246.207.179:8888": {
+"archived_at": 1795429705,
+"cn_at": 1795428532,
+"cn_latency": null,
+"cn_speed": 0.9577,
+"fp": "fe202905dc4e29ef",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "114.246.207.179",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"114.249.219.234:8888": {
+"archived_at": 1795429705,
+"cn_at": 1795428532,
+"cn_latency": null,
+"cn_speed": 0.2997,
+"fp": "eac6f576620b2122",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "114.249.219.234",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"114.249.232.231:8888": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.3269,
+"fp": "c290acba4c9d4c23",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "114.249.232.231",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"114.253.67.30:8888": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.2414,
+"fp": "e8b70ce4860474ca",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "114.253.67.30",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"121.169.46.116:1090": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.8434,
+"fp": "6b55776907dc2f86",
+"name": "韩国 - 烏山市 - Korea Telecom - 2",
+"password": "",
+"port": 1090,
+"proto": "socks5",
+"server": "121.169.46.116",
+"skipCertVerify": true,
+"sni": "",
+"source": "go4sharing/arch",
+"sources": [
+"go4sharing/arch"
+],
+"tls": false,
+"username": "Og%3D%3D"
+},
+"123.121.121.123:8888": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 1.1797,
+"fp": "443f736151928893",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "123.121.121.123",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"123.121.130.181:8888": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.7652,
+"fp": "0d649bec5365b790",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "123.121.130.181",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"123.121.135.227:8888": {
+"archived_at": 1795429705,
+"cn_at": 1795428532,
+"cn_latency": null,
+"cn_speed": 0.7614,
+"fp": "4646ba9d807627cc",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "123.121.135.227",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"123.121.139.50:8888": {
+"archived_at": 1795429705,
+"cn_at": 1795428532,
+"cn_latency": null,
+"cn_speed": 0.3033,
+"fp": "86d616f5b1e4ed56",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "123.121.139.50",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"123.121.142.252:8888": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.3696,
+"fp": "4bc76de2eb3859d4",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "123.121.142.252",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"13.141.51.2:443": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": 2597,
+"cn_speed": 0.2044,
+"flow": "",
+"fp": "0dee6fb95b0ee5fc",
+"name": "NL荷兰(mibei77.com 米贝节点分享) (4)",
+"network": "tcp",
+"pbk": "UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY",
+"port": 443,
+"proto": "vless",
+"reality": true,
+"server": "13.141.51.2",
+"sid": "ba2a3dce62b99092",
+"sni": "04535dt.us8.h1clayd.click",
+"source": "clashnode",
+"sources": [
+"clashnode"
+],
+"tls": true,
+"utls": "firefox",
+"uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+},
+"141.94.22.37:3128": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 1.1748,
+"fp": "f1cf96300a2e5f91",
+"name": "",
+"port": 3128,
+"proto": "http",
+"server": "141.94.22.37",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"147.161.246.34:12327": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.0573,
+"fp": "c133db2b80cd04e4",
+"name": "",
+"port": 12327,
+"proto": "http",
+"server": "147.161.246.34",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"154.26.192.123:10988": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.1462,
+"fp": "19c3170426569206",
+"name": "美国 - 洛杉矶 - FSC NETWORK LTD - 3",
+"password": "gs4BXwT6SW",
+"port": 10988,
+"proto": "http",
+"server": "154.26.192.123",
+"skipCertVerify": true,
+"sni": "",
+"source": "go4sharing/arch",
+"sources": [
+"go4sharing/arch"
+],
+"tls": false,
+"username": "fQ67Dpe5dU"
+},
+"172.67.190.164:443": {
+"alterId": 0,
+"archived_at": 1795429705,
+"cipher": "auto",
+"cn_at": 1795428577,
+"cn_latency": 2218,
+"cn_speed": 0.288,
+"fp": "91c8c5bf97dfa29b",
+"host": "guanwang.awsno.com",
+"name": "🇺🇸 机场推荐:dafei.de 美国 15_IPV4",
+"network": "ws",
+"path": "/hls/cctv5phd.m3u8",
+"port": 443,
+"proto": "vmess",
+"server": "172.67.190.164",
+"sni": "guanwang.awsno.com",
+"source": "clashnode",
+"sources": [
+"clashnode",
+"anaer/Sub"
+],
+"tls": true,
+"uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a"
+},
+"189.51.168.165:999": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.1907,
+"fp": "dbe06ed03dd61f2d",
+"name": "",
+"port": 999,
+"proto": "http",
+"server": "189.51.168.165",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"20.98.234.24:8080": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.5191,
+"fp": "859ec375c371d121",
+"name": "",
+"port": 8080,
+"proto": "http",
+"server": "20.98.234.24",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"222.128.169.173:8888": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.5222,
+"fp": "3b4c7f053ff36f32",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "222.128.169.173",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"2a0e:97c0:3f0:1::598:24685": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": 2833,
+"cn_speed": 0.9814,
+"flow": "xtls-rprx-vision",
+"fp": "b9dfb0ecfc9628d7",
+"host": "",
+"name": "香港 IPv6 @befriendsvpn",
+"network": "tcp",
+"path": "",
+"pbk": "FrBq4UHHiaXWDFC2X0Mag16onOfX6lPBuaCSYVgHQ1Q",
+"port": 24685,
+"proto": "vless",
+"reality": true,
+"server": "2a0e:97c0:3f0:1::598",
+"sid": "6a5291c5",
+"sni": "apple.com",
+"source": "tg:@wxdy666→sub",
+"sources": [
+"tg:@wxdy666→sub"
+],
+"tls": true,
+"utls": "chrome",
+"uuid": "1582f5d8-f535-4b99-af49-9d2a1d025069"
+},
+"2a14:7586:6109:1::a125:25680": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": 915,
+"cn_speed": 1.5419,
+"flow": "xtls-rprx-vision",
+"fp": "1294863934c5b5a0",
+"host": "",
+"name": "日本 IPv6 @befriendsvpn",
+"network": "tcp",
+"path": "",
+"pbk": "hARhHGV09mnEUWA1a7pG6_K4lztUhKCK3iGeboGGP2g",
+"port": 25680,
+"proto": "vless",
+"reality": true,
+"server": "2a14:7586:6109:1::a125",
+"sid": "7ce8c8e1",
+"sni": "apple.com",
+"source": "tg:@wxdy666→sub",
+"sources": [
+"tg:@wxdy666→sub"
+],
+"tls": true,
+"utls": "chrome",
+"uuid": "1582f5d8-f535-4b99-af49-9d2a1d025069"
+},
+"4.144.146.21:80": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 1.4038,
+"fp": "f4d743b675bda911",
+"name": "",
+"port": 80,
+"proto": "http",
+"server": "4.144.146.21",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"45.155.226.177:3128": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.5717,
+"fp": "fe5c0129c66a0fbd",
+"name": "",
+"port": 3128,
+"proto": "http",
+"server": "45.155.226.177",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"47.111.78.144:24685": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": 610,
+"cn_speed": 0.3346,
+"flow": "xtls-rprx-vision",
+"fp": "7326cfb5a876958a",
+"host": "",
+"name": "香港 @befriendsvpn",
+"network": "tcp",
+"path": "",
+"pbk": "FrBq4UHHiaXWDFC2X0Mag16onOfX6lPBuaCSYVgHQ1Q",
+"port": 24685,
+"proto": "vless",
+"reality": true,
+"server": "47.111.78.144",
+"sid": "6a5291c5",
+"sni": "apple.com",
+"source": "tg:@wxdy666→sub",
+"sources": [
+"tg:@wxdy666→sub"
+],
+"tls": true,
+"utls": "chrome",
+"uuid": "1582f5d8-f535-4b99-af49-9d2a1d025069"
+},
+"77.67.18.110:25680": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": 2343,
+"cn_speed": 0.3322,
+"flow": "xtls-rprx-vision",
+"fp": "56956beee12fbf62",
+"host": "",
+"name": "剩余流量：406.63 GB",
+"network": "tcp",
+"path": "",
+"pbk": "hARhHGV09mnEUWA1a7pG6_K4lztUhKCK3iGeboGGP2g",
+"port": 25680,
+"proto": "vless",
+"reality": true,
+"server": "77.67.18.110",
+"sid": "7ce8c8e1",
+"sni": "apple.com",
+"source": "tg:@wxdy666→sub",
+"sources": [
+"tg:@wxdy666→sub"
+],
+"tls": true,
+"utls": "chrome",
+"uuid": "1582f5d8-f535-4b99-af49-9d2a1d025069"
+},
+"fan.226278.xyz:443": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.2933,
+"fp": "c58f7f408e690149",
+"name": "美国 - Los Angeles - 16",
+"password": "",
+"port": 443,
+"proto": "http",
+"server": "fan.226278.xyz",
+"skipCertVerify": true,
+"sni": "",
+"source": "go4sharing/arch",
+"sources": [
+"go4sharing/arch"
+],
+"tls": true,
+"username": ""
+},
+"fan.365747.xyz:443": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.0963,
+"fp": "2aca724d530a089a",
+"name": "美国 - San Jose - 5",
+"password": "",
+"port": 443,
+"proto": "http",
+"server": "fan.365747.xyz",
+"skipCertVerify": true,
+"sni": "",
+"source": "go4sharing/arch",
+"sources": [
+"go4sharing/arch"
+],
+"tls": true,
+"username": ""
+},
+"fan.596189.xyz:443": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.3189,
+"fp": "267a97f672b4924c",
+"name": "美国 - San Jose - 1",
+"password": "",
+"port": 443,
+"proto": "http",
+"server": "fan.596189.xyz",
+"skipCertVerify": true,
+"sni": "",
+"source": "go4sharing/arch",
+"sources": [
+"go4sharing/arch"
+],
+"tls": true,
+"username": ""
+},
+"free.fugui.lol:51283": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": 4496,
+"cn_speed": 0.1042,
+"flow": "xtls-rprx-vision",
+"fp": "d6be9129064f63b6",
+"name": "TW台湾(mibei77.com 米贝节点分享) (2)",
+"network": "tcp",
+"pbk": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+"port": 51283,
+"proto": "vless",
+"reality": true,
+"server": "free.fugui.lol",
+"sid": "fa514b83",
+"sni": "swdist.apple.com",
+"source": "clashnode",
+"sources": [
+"clashnode"
+],
+"tls": true,
+"utls": "chrome",
+"uuid": "ead3595f-4020-4e76-a3ec-c248e1a2f2f7"
+},
+"twmoon1-cdn-route.couldflare-cdn.com:1443": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.0911,
+"fp": "3e7d15f9d80a45a0",
+"name": "",
+"password": "exaxgqkKkd0TAMrCxeonWg==",
+"port": 1443,
+"proto": "http",
+"server": "twmoon1-cdn-route.couldflare-cdn.com",
+"source": "NoMoreWalls",
+"sources": [
+"NoMoreWalls",
+"go4sharing/arch"
+],
+"tls": true,
+"username": "mrwdfNTD8M79LCukCieldrqZWqs="
+},
+"usgp1-cdn-route.couldflare-cdn.com:443": {
+"archived_at": 1795429705,
+"cn_at": 1795428577,
+"cn_latency": null,
+"cn_speed": 0.6926,
+"fp": "334aee3cd2bf43f9",
+"name": "",
+"password": "exaxgqkKkd0TAMrCxeonWg==",
+"port": 443,
+"proto": "http",
+"server": "usgp1-cdn-route.couldflare-cdn.com",
+"source": "NoMoreWalls",
+"sources": [
+"NoMoreWalls",
+"ermaozi"
+],
+"tls": true,
+"username": "mrwdfNTD8M79LCukCieldrqZWqs="
+}
+}

@@ -116,7 +116,13 @@ echo "普查结束 rc=$rc, 用时 $(( $(date +%s) - START ))s"
 [ $rc -ne 0 ] && exit $rc
 
 # 只提交实测证据。产物 out/ 由云端生成, 这里绝不碰。
-git add data/cn_pref.json data/pool_history.json
+#
+# known_good.json: 把"实测能传数据"的节点完整配置留档。nodes.json 会被云端
+# 按当前源重建, 源里下架了的节点配置就没了, 而云端 CI 又恰好只在历史池里
+# 找候选 —— 两者叠加会让刚测通的节点发不进订阅。这个文件几十 KB, 可以进库。
+"$PY" archive_known_good.py || echo "警告: 更新 known_good 失败, 不影响本次普查"
+
+git add data/cn_pref.json data/pool_history.json data/known_good.json 2>/dev/null
 if git diff --cached --quiet; then
     echo "数据无变化, 不提交"
     exit 0
