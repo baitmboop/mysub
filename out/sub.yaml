@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-23 10:55:25 (北京时间)
+# nodepool  生成于 2026-11-23 14:04:26 (北京时间)
 # 节点数 10  (自建 0 / 免费额度 0 / 免费池 10)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -29,21 +29,7 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: cdn.browseseniorrolesandenhanceyourcareertoday.com
-  - name: N04 137.175.22.96
-    type: http
-    server: 137.175.22.96
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N05 137.175.22.84
-    type: http
-    server: 137.175.22.84
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N06 216.152.155.23
+  - name: N04 216.152.155.23
     type: trojan
     server: 216.152.155.23
     port: 443
@@ -51,7 +37,7 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: courses.nextjobopportunityandclaimyouridealrole.com
-  - name: N07 167.88.61.193
+  - name: N05 167.88.61.193
     type: trojan
     server: 167.88.61.193
     port: 443
@@ -59,21 +45,14 @@ proxies:
     udp: true
     skipCertVerify: true
     sni: browseseniorrolesandenhanceyourcareertoday.com
-  - name: N08 purposebydesig.club
+  - name: N06 purposebydesig.club
     type: http
     server: purposebydesig.club
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N09 137.175.22.120
-    type: http
-    server: 137.175.22.120
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N10 147.224.54.25
+  - name: N07 147.224.54.25
     type: vless
     server: 147.224.54.25
     port: 2053
@@ -86,6 +65,41 @@ proxies:
       public-key: DEFJSLdILrvauMpwtpvFZddadpt3rNtv03Dui2EkmRk
       short-id: 68
     client-fingerprint: chrome
+  - name: N08 67.220.73.204
+    type: vless
+    server: 67.220.73.204
+    port: 16016
+    uuid: 814bd064-544d-4255-a070-5705c03f6da9
+    udp: true
+    skipCertVerify: true
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+      short-id: 48050fab
+    client-fingerprint: chrome
+  - name: N09 38.128.66.32
+    type: ss
+    server: 38.128.66.32
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N10 15.204.97.219
+    type: vless
+    server: 15.204.97.219
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    skipCertVerify: true
+    flow: xtls-rprx-vision
+    tls: true
+    servername: fuck.rkn
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: ""
+    client-fingerprint: chrome
 proxy-groups:
   - name: 节点选择
     type: select
@@ -95,13 +109,13 @@ proxy-groups:
       - N01 162.251.60.97
       - N02 184.107.106.77
       - N03 167.88.61.198
-      - N04 137.175.22.96
-      - N05 137.175.22.84
-      - N06 216.152.155.23
-      - N07 167.88.61.193
-      - N08 purposebydesig.club
-      - N09 137.175.22.120
-      - N10 147.224.54.25
+      - N04 216.152.155.23
+      - N05 167.88.61.193
+      - N06 purposebydesig.club
+      - N07 147.224.54.25
+      - N08 67.220.73.204
+      - N09 38.128.66.32
+      - N10 15.204.97.219
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -111,13 +125,13 @@ proxy-groups:
       - N01 162.251.60.97
       - N02 184.107.106.77
       - N03 167.88.61.198
-      - N04 137.175.22.96
-      - N05 137.175.22.84
-      - N06 216.152.155.23
-      - N07 167.88.61.193
-      - N08 purposebydesig.club
-      - N09 137.175.22.120
-      - N10 147.224.54.25
+      - N04 216.152.155.23
+      - N05 167.88.61.193
+      - N06 purposebydesig.club
+      - N07 147.224.54.25
+      - N08 67.220.73.204
+      - N09 38.128.66.32
+      - N10 15.204.97.219
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -126,12 +140,12 @@ proxy-groups:
       - N01 162.251.60.97
       - N02 184.107.106.77
       - N03 167.88.61.198
-      - N04 137.175.22.96
-      - N05 137.175.22.84
-      - N06 216.152.155.23
-      - N07 167.88.61.193
-      - N08 purposebydesig.club
-      - N09 137.175.22.120
-      - N10 147.224.54.25
+      - N04 216.152.155.23
+      - N05 167.88.61.193
+      - N06 purposebydesig.club
+      - N07 147.224.54.25
+      - N08 67.220.73.204
+      - N09 38.128.66.32
+      - N10 15.204.97.219
 rules:
   - "MATCH,节点选择"
