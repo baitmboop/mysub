@@ -150,3 +150,13 @@ for i in 1 2 3; do
 done
 echo "推送失败, 本地已提交但未推送。下次运行会先 rebase 再试, 也可以手动 git push"
 exit 1
+
+# 2026-11-23 补记: 本脚本从对话式后台运行时, 后台进程会随会话结束被回收 ——
+# 本轮跑到 570/691 就被中断了。好消息是 verify.py 的 --out 缓存是增量的,
+# 中断后用下面这条命令就能把已有结论落库, 不必重测:
+#
+#   python3 verify.py --file data/nodes.json --report --apply data/nodes.json \
+#       --cull --out /tmp/nodepool-verify.json
+#
+# 注意: --cull 的 timeout 判定是"连续两轮", 所以不要连续跑两次, 否则第二轮
+# 会把只超时过一次的节点也判死(实测 2737 → 3132)。
