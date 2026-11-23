@@ -1,52 +1,54 @@
 {
- "generated_at": "2026-11-23T18:40:22+08:00",
+ "generated_at": "2026-11-24T04:44:42+08:00",
  "mode": "full",
- "total_nodes": 6382,
+ "total_nodes": 6222,
  "base_nodes": 0,
- "new_nodes": 6382,
+ "new_nodes": 6222,
  "by_source": {
-  "go4sharing/arch": 3953,
-  "tg:@byxiaoxi→blog": 477,
+  "go4sharing/arch": 3969,
+  "tg:@byxiaoxi→blog": 504,
   "Auto_proxy": 470,
   "extra:raw.githubusercontent.com/http.txt": 400,
-  "NoMoreWalls": 373,
-  "clashnode": 176,
-  "ermaozi": 125,
-  "mahdibland": 124,
-  "tg:@wxdy666→sub": 110,
-  "tg:@oneclickvpnkeys": 65,
-  "tg:@freeVPNjd→sub": 34,
-  "xinshoucun": 24,
+  "NoMoreWalls": 314,
+  "clashnode": 181,
+  "mahdibland": 123,
+  "tg:@oneclickvpnkeys": 71,
+  "tg:@freeVPNjd→sub": 54,
+  "tg:@wxdy666→sub": 39,
+  "xinshoucun": 22,
   "oneclash": 20,
-  "tg:@vpnfail_v2ray": 17,
-  "freefq": 14
+  "ermaozi": 17,
+  "tg:@vpnfail_v2ray": 16,
+  "freefq": 14,
+  "go4sharing/sub": 6,
+  "tg:@wxdy666": 2
  },
  "raw_hits": {
-  "go4sharing/arch": 9503,
+  "go4sharing/arch": 9524,
   "anaer/Sub": 2143,
-  "tg:@byxiaoxi→blog": 1731,
+  "tg:@byxiaoxi→blog": 1729,
   "clashnode": 930,
   "Auto_proxy": 560,
-  "ermaozi": 465,
+  "ermaozi": 406,
   "extra:raw.githubusercontent.com/http.txt": 400,
   "xinshoucun": 393,
-  "NoMoreWalls": 388,
+  "NoMoreWalls": 323,
   "mahdibland": 200,
-  "tg:@wxdy666→sub": 185,
-  "tg:@oneclickvpnkeys": 95,
-  "tg:@freeVPNjd→sub": 57,
+  "tg:@oneclickvpnkeys": 89,
+  "tg:@freeVPNjd→sub": 84,
+  "tg:@wxdy666→sub": 83,
   "oneclash": 42,
   "ripaojiedian": 21,
-  "tg:@vpnfail_v2ray": 20,
+  "go4sharing/sub": 21,
+  "tg:@vpnfail_v2ray": 18,
   "freefq": 15,
-  "Pawdroid/Free-servers": 11,
-  "go4sharing/sub": 10,
+  "Pawdroid/Free-servers": 12,
+  "tg:@wxdy666": 2,
   "tg:@ssrsub": 0,
   "tg:@ripaojiedian": 0,
   "tg:@freefq": 0,
   "tg:@freeVPNjd": 0,
   "tg:@go4sharing": 0,
-  "tg:@wxdy666": 0,
   "tg:@xiaoxibanyun": 0
  },
  "candidates": {
@@ -67,8 +69,8 @@
   },
   "Pawdroid/Free-servers": {
    "ok": true,
-   "raw": 11,
-   "new": 1
+   "raw": 12,
+   "new": 0
   },
   "Barabama/FreeNodes": {
    "ok": false,
@@ -78,7 +80,7 @@
   "anaer/Sub": {
    "ok": true,
    "raw": 2143,
-   "new": 1943
+   "new": 1951
   }
  }
 }
