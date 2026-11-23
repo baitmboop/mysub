@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!--
-  每 7 天跑一次国内普查(cn_refresh.sh)。
+  国内普查(cn_refresh.sh)的定时入口。**每天 04:30 来问一次**,
+  但是否真的开跑由脚本自己判断: 数据超过 CN_REFRESH_MIN_DAYS(默认 3)天才重测。
+
+  为什么不是"每周四跑一次":
+    cn_pref.json 的有效期是 7 天, 而原调度是 7 天跑一次 —— 零容错。那一周只要
+    有一次没跑成(关机/睡眠中断/任务被杀), 数据就整体失效。2026-11-19 的故障
+    就是这样: 普查跑到 500/638 被中断, 锁残留 4 天, cn_pref 过期, 订阅从
+    52 个/80.8% 静默崩成 10 个/0.0%, 用户侧只看到"全是超时"。整整 4 天没有
+    任何一处报错。
 
   为什么用 launchd 而不是 cron: cron 在 macOS 上错过就错过 —— 机器关机/睡眠
   期间到点的任务不会补跑。launchd 的 StartCalendarInterval 会在开机或唤醒后
   补跑错过的这一次, 正是这里需要的行为。
 
-  Weekday 4 = 星期四, 04:30。装法:
+  装法:
     cp launchd/com.nodepool.cn-refresh.plist ~/Library/LaunchAgents/
     launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.nodepool.cn-refresh.plist
+  立即手动跑一次(不等 04:30):
+    launchctl kickstart -k gui/$(id -u)/com.nodepool.cn-refresh
   卸载:
     launchctl bootout gui/$(id -u)/com.nodepool.cn-refresh
 -->
@@ -24,8 +34,6 @@
     </array>
     <key>StartCalendarInterval</key>
     <dict>
-        <key>Weekday</key>
-        <integer>4</integer>
         <key>Hour</key>
         <integer>4</integer>
         <key>Minute</key>

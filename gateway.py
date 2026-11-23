@@ -168,7 +168,7 @@ def prune_history(history: dict, keep_days: int = KEEP_DAYS) -> dict:
     return {k: v for k, v in history.items() if v.get("last_ok", 0) >= cutoff}
 
 
-def load_cn_pref(keep_days: int = 7) -> dict:
+def load_cn_pref(keep_days: int = 0) -> dict:
     """中国网络实测过的节点: {"server:port": {"ok": 1|0, "latency": ms, "at": ts}}。
 
     为什么需要这个文件: 云端 runner 在美国, 它测出的延迟和"国内能不能连上"
@@ -177,7 +177,16 @@ def load_cn_pref(keep_days: int = 7) -> dict:
 
     由 live_test.py --save 写入, 只在国内的机器上跑才会更新。超过 keep_days
     自动失效, 避免拿半年前的结论指导今天的排序。
+
+    keep_days 传 0 时读环境变量 CN_PREF_DAYS(默认 7)。留这个口子是为了在
+    普查停摆、数据刚刚过期的那一段做紧急放行: 用 10 天前的结论, 好过一条
+    结论都没有 —— 后者会让订阅只剩"全是超时"的未验证节点。
     """
+    if not keep_days:
+        try:
+            keep_days = int(os.environ.get("CN_PREF_DAYS", "7"))
+        except ValueError:
+            keep_days = 7
     raw = load_json(CN_PREF, {})
     cutoff = time.time() - keep_days * 86400
     return {k: v for k, v in raw.items()

@@ -67,10 +67,34 @@ def trim_unmeasured(pool: list, cap: int) -> list:
 
     所以按实测分档: 测过能用的全留, 没测过的只留 cap 个当后备, 排在后面。
     实测不通的(rank=-1)一个都不留 —— 那是已验证的废节点, 塞进来只是让人多点几次。
+
+    例外: measured 为空说明**整个 cn_pref 都失效了**(过期/缺失), 而不是"这轮
+    碰巧没有好节点"。这两种情况必须区分开:
+      - 正常: 有实测结论, 只是这轮好节点少 → 守 cap=10, 别拿彩票淹没用户
+      - 异常: 一条实测结论都没有 → 10 个未测节点几乎确定全废, 用户看到的就是
+        "全是超时" (2026-11-20 到 11-23 的真实故障)。既然全是彩票, 多给几张
+        比死守 10 张强, 至少还有碰中的机会。
     """
     measured = [n for n in pool if gateway._cn_rank(n) >= 2]
-    backup = [n for n in pool if gateway._cn_rank(n) == 0][:cap]
-    return measured + backup
+    unmeasured = [n for n in pool if gateway._cn_rank(n) == 0]
+    if not measured and unmeasured:
+        cap = max(cap, 40)
+    return measured + unmeasured[:cap]
+
+
+def cn_pref_health() -> tuple[int, int, float]:
+    """国内实测数据的健康状况: (文件总条数, 7 天内有效条数, 数据最新时间戳)。
+
+    "最新时间戳"取条目里最大的 at, 不用文件 mtime —— 空跑一轮也会刷新 mtime,
+    但里面可能一条有效结论都没有。判断数据新旧必须看内容, 不能看文件。
+    """
+    raw = gateway.load_json(gateway.CN_PREF, {})
+    if not isinstance(raw, dict):
+        return 0, 0, 0.0
+    at_max = max((v.get("at", 0) for v in raw.values()
+                  if isinstance(v, dict) and isinstance(v.get("at"), (int, float))),
+                 default=0.0)
+    return len(raw), len(gateway.load_cn_pref()), float(at_max)
 
 
 def write_outputs(pool: list, private: list, fallback: list, *,
@@ -105,9 +129,29 @@ def write_outputs(pool: list, private: list, fallback: list, *,
     n_unmeasured = sum(1 for r in ranks if r == 0)
     rate = (n_fast / len(pool) * 100) if pool else 0.0
 
+    # 实测数据新鲜度必须写进报告正文。
+    #
+    # 2026-11-20~23 的故障里, 报告每天都"正常"写着"最终订阅 10 个 / 可用率 0.0%",
+    # 而真正的病因(cn_pref 过期 7 天)在任何一个字段上都看不出来 —— 10 个节点、
+    # 0.0% 都可以被解读成"今天免费节点质量差", 于是连续 4 天没人发现。
+    # 数据一旦缺失, 必须自己说出来, 不能靠读报告的人去猜。
+    n_all, n_valid, at_max = cn_pref_health()
+    if n_valid and at_max:
+        age_d = (time.time() - at_max) / 86400
+        cn_line = (f"- 国内实测: **{n_valid}** 条有效 / 共 {n_all} 条, "
+                   f"最新 {time.strftime('%Y-%m-%d %H:%M', time.gmtime(at_max))} UTC "
+                   f"({age_d:.1f} 天前)")
+        if age_d > 5:
+            cn_line += " ⚠️ **即将过期 (7 天上限), 请检查 cn_refresh**"
+    else:
+        cn_line = (f"- 国内实测: **0** 条有效 / 共 {n_all} 条 "
+                   f"⚠️ **实测数据已全部过期或缺失 —— 本订阅只剩未验证节点, "
+                   f"大概率全部超时, 请勿当主力; 修复见 cn_refresh.sh**")
+
     lines = [
         "# 节点池日报", "",
         f"- 生成时间: {time.strftime('%Y-%m-%d %H:%M:%S')} (UTC)",
+        cn_line,
         f"- 采集去重: **{num(n_collected)}** 个",
         f"- 云端延迟存活: **{num(n_delay)}** 个 (本轮送多站点复检的)",
         f"- 免筛放行: **{num(n_geo)}** 个 (http/socks5 + 国内实测已知, 不送云端复检)",
@@ -344,6 +388,14 @@ def main() -> int:
             alive_map = tested
 
         pool = gateway.pool_nodes(history, alive=alive_map)
+        n_all, n_valid, at_max = cn_pref_health()
+        if n_valid == 0:
+            log(f"! 国内实测 0 条有效 (文件共 {n_all} 条) —— 订阅将只剩未验证节点, "
+                f"用户侧表现为全部超时; 去本机跑 cn_refresh.sh")
+        elif at_max:
+            age_d = (time.time() - at_max) / 86400
+            log(f"国内实测 {n_valid}/{n_all} 条有效, 最新 {age_d:.1f} 天前"
+                + (" ⚠️ 接近 7 天上限" if age_d > 5 else ""))
         pool = trim_unmeasured(pool, args.max_unmeasured)
         private = gateway.parse_private(PRIVATE)
         fallback = gateway.parse_private(FALLBACK)
