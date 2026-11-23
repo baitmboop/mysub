@@ -93,6 +93,41 @@ jobs:
       - name: 筛选并生成订阅
         run: python3 ci_build.py --keep 40 --delay-limit 3000
 
+      - name: 产物下限校验
+        # 2026-11-20~23 的故障里, 每轮构建都"成功"了, 产物却从 52 个 / 80.8%
+        # 掉到 10 个 / 0.0%, 而且连续 4 天没人发现 —— 因为流程上一切正常。
+        # 所以这里加一道硬闸: 结果明显劣于近期水平时**不要覆盖**线上订阅,
+        # 让上一版继续服务, 同时把 job 标红。
+        #
+        # 阈值取 22: 正常产出是 30~40(--keep 40), 故障态是 18~20。
+        run: |
+          set -uo pipefail
+          N=$(python3 - <<'PY'
+          import base64
+          d = open('out/sub-base64.txt').read().strip()
+          t = base64.b64decode(d + '=' * (-len(d) % 4)).decode('utf-8', 'replace')
+          print(len([x for x in t.strip().splitlines() if x.strip()]))
+          PY
+          )
+          MEASURED=$(python3 - <<'PY'
+          import json
+          try:
+              pool = json.load(open('out/nodes_best.json'))
+          except Exception:
+              pool = []
+          print(sum(1 for n in pool if n.get('cn_ok')))
+          PY
+          )
+          echo "本轮订阅 $N 个节点, 其中实测能传数据 $MEASURED 个"
+          if [ "$N" -lt 22 ]; then
+            echo "::error::产物只有 $N 个节点 (下限 22), 判定异常, 不覆盖线上订阅"
+            exit 1
+          fi
+          if [ "$MEASURED" -lt 5 ]; then
+            echo "::error::实测能传数据的只有 $MEASURED 个 (下限 5), 判定异常, 不覆盖线上订阅"
+            exit 1
+          fi
+
       - name: 提交结果
         id: commit
         run: |
