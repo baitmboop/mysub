@@ -1,124 +1,244 @@
-# nodepool  生成于 2026-11-23 17:17:53 (北京时间)
-# 节点数 10  (自建 0 / 免费额度 0 / 免费池 10)
+# nodepool  生成于 2026-11-23 18:21:12 (北京时间)
+# 节点数 20  (自建 0 / 免费额度 0 / 免费池 20)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
 proxies:
-  - name: N01 138.199.35.206
-    type: http
-    server: 138.199.35.206
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N02 138.199.35.204
-    type: http
-    server: 138.199.35.204
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N03 138.199.35.200
-    type: http
-    server: 138.199.35.200
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N04 138.199.35.195
-    type: http
-    server: 138.199.35.195
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N05 138.199.35.212
-    type: http
-    server: 138.199.35.212
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N06 138.199.35.198
-    type: http
-    server: 138.199.35.198
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N07 138.199.35.207
-    type: http
-    server: 138.199.35.207
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N08 138.199.35.211
-    type: http
-    server: 138.199.35.211
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N09 104.238.140.45
-    type: ss
-    server: 104.238.140.45
-    port: 11051
-    cipher: chacha20-ietf-poly1305
-    password: JUXsy78dSs6ROkasikmoaL
+  - name: "N01 2a14:7586:6109:1::a125"
+    type: vless
+    server: "2a14:7586:6109:1::a125"
+    port: 25680
+    uuid: 1582f5d8-f535-4b99-af49-9d2a1d025069
     udp: true
-  - name: N10 138.199.35.202
+    skipCertVerify: true
+    flow: xtls-rprx-vision
+    tls: true
+    servername: apple.com
+    reality-opts:
+      public-key: hARhHGV09mnEUWA1a7pG6_K4lztUhKCK3iGeboGGP2g
+      short-id: 7ce8c8e1
+    client-fingerprint: chrome
+  - name: N02 114.244.212.147
     type: http
-    server: 138.199.35.202
-    port: 9002
+    server: 114.244.212.147
+    port: 8888
+    udp: false
+  - name: "N03 2a0e:97c0:3f0:1::598"
+    type: vless
+    server: "2a0e:97c0:3f0:1::598"
+    port: 24685
+    uuid: 1582f5d8-f535-4b99-af49-9d2a1d025069
+    udp: true
+    skipCertVerify: true
+    flow: xtls-rprx-vision
+    tls: true
+    servername: apple.com
+    reality-opts:
+      public-key: FrBq4UHHiaXWDFC2X0Mag16onOfX6lPBuaCSYVgHQ1Q
+      short-id: 6a5291c5
+    client-fingerprint: chrome
+  - name: N04 123.121.135.227
+    type: http
+    server: 123.121.135.227
+    port: 8888
+    udp: false
+  - name: N05 222.128.169.173
+    type: http
+    server: 222.128.169.173
+    port: 8888
+    udp: false
+  - name: N06 20.98.234.24
+    type: http
+    server: 20.98.234.24
+    port: 8080
+    udp: false
+  - name: N07 fan.596189.xyz
+    type: http
+    server: fan.596189.xyz
+    port: 443
     udp: false
     tls: true
     skip-cert-verify: true
+  - name: N08 191.44.112.170
+    type: trojan
+    server: 191.44.112.170
+    port: 443
+    password: 46d221fa-e9b4-748c-4eae-019a88e42991
+    udp: true
+    skipCertVerify: true
+    sni: orbylume.my.to
+    ws-opts:
+      path: /tvpn-trojan/bg
+      headers:
+        Host: orbylume.my.to
+    network: ws
+  - name: N09 13.141.51.2
+    type: vless
+    server: 13.141.51.2
+    port: 443
+    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+    udp: true
+    skipCertVerify: true
+    tls: true
+    servername: 04535dt.us8.h1clayd.click
+    reality-opts:
+      public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
+      short-id: ba2a3dce62b99092
+    client-fingerprint: firefox
+  - name: N10 twmoon1-cdn-route.couldflare-cdn.com
+    type: http
+    server: twmoon1-cdn-route.couldflare-cdn.com
+    port: 1443
+    udp: false
+    username: mrwdfNTD8M79LCukCieldrqZWqs=
+    password: mrwdfNTD8M79LCukCieldrqZWqs=
+    tls: true
+    skip-cert-verify: true
+  - name: N11 216.106.178.169
+    type: ss
+    server: 216.106.178.169
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N12 67.220.73.178
+    type: ss
+    server: 67.220.73.178
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N13 104.168.249.36
+    type: socks5
+    server: 104.168.249.36
+    port: 1080
+    udp: false
+    username: test123
+    password: test123
+  - name: N14 138.199.42.68
+    type: ss
+    server: 138.199.42.68
+    port: 8080
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
+    udp: true
+  - name: N15 37.19.198.160
+    type: ss
+    server: 37.19.198.160
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: N16 37.19.198.243
+    type: ss
+    server: 37.19.198.243
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: N17 37.19.198.244
+    type: ss
+    server: 37.19.198.244
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: N18 193.151.163.18
+    type: ss
+    server: 193.151.163.18
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N19 37.19.198.236
+    type: ss
+    server: 37.19.198.236
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: N20 38.91.100.39
+    type: ss
+    server: 38.91.100.39
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
 proxy-groups:
   - name: 节点选择
     type: select
     proxies:
       - 自动选择
       - ③ 免费池
-      - N01 138.199.35.206
-      - N02 138.199.35.204
-      - N03 138.199.35.200
-      - N04 138.199.35.195
-      - N05 138.199.35.212
-      - N06 138.199.35.198
-      - N07 138.199.35.207
-      - N08 138.199.35.211
-      - N09 104.238.140.45
-      - N10 138.199.35.202
+      - "N01 2a14:7586:6109:1::a125"
+      - N02 114.244.212.147
+      - "N03 2a0e:97c0:3f0:1::598"
+      - N04 123.121.135.227
+      - N05 222.128.169.173
+      - N06 20.98.234.24
+      - N07 fan.596189.xyz
+      - N08 191.44.112.170
+      - N09 13.141.51.2
+      - N10 twmoon1-cdn-route.couldflare-cdn.com
+      - N11 216.106.178.169
+      - N12 67.220.73.178
+      - N13 104.168.249.36
+      - N14 138.199.42.68
+      - N15 37.19.198.160
+      - N16 37.19.198.243
+      - N17 37.19.198.244
+      - N18 193.151.163.18
+      - N19 37.19.198.236
+      - N20 38.91.100.39
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 120
     tolerance: 100
     proxies:
-      - N01 138.199.35.206
-      - N02 138.199.35.204
-      - N03 138.199.35.200
-      - N04 138.199.35.195
-      - N05 138.199.35.212
-      - N06 138.199.35.198
-      - N07 138.199.35.207
-      - N08 138.199.35.211
-      - N09 104.238.140.45
-      - N10 138.199.35.202
+      - "N01 2a14:7586:6109:1::a125"
+      - N02 114.244.212.147
+      - "N03 2a0e:97c0:3f0:1::598"
+      - N04 123.121.135.227
+      - N05 222.128.169.173
+      - N06 20.98.234.24
+      - N07 fan.596189.xyz
+      - N08 191.44.112.170
+      - N09 13.141.51.2
+      - N10 twmoon1-cdn-route.couldflare-cdn.com
+      - N11 216.106.178.169
+      - N12 67.220.73.178
+      - N13 104.168.249.36
+      - N14 138.199.42.68
+      - N15 37.19.198.160
+      - N16 37.19.198.243
+      - N17 37.19.198.244
+      - N18 193.151.163.18
+      - N19 37.19.198.236
+      - N20 38.91.100.39
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
     interval: 600
     proxies:
-      - N01 138.199.35.206
-      - N02 138.199.35.204
-      - N03 138.199.35.200
-      - N04 138.199.35.195
-      - N05 138.199.35.212
-      - N06 138.199.35.198
-      - N07 138.199.35.207
-      - N08 138.199.35.211
-      - N09 104.238.140.45
-      - N10 138.199.35.202
+      - "N01 2a14:7586:6109:1::a125"
+      - N02 114.244.212.147
+      - "N03 2a0e:97c0:3f0:1::598"
+      - N04 123.121.135.227
+      - N05 222.128.169.173
+      - N06 20.98.234.24
+      - N07 fan.596189.xyz
+      - N08 191.44.112.170
+      - N09 13.141.51.2
+      - N10 twmoon1-cdn-route.couldflare-cdn.com
+      - N11 216.106.178.169
+      - N12 67.220.73.178
+      - N13 104.168.249.36
+      - N14 138.199.42.68
+      - N15 37.19.198.160
+      - N16 37.19.198.243
+      - N17 37.19.198.244
+      - N18 193.151.163.18
+      - N19 37.19.198.236
+      - N20 38.91.100.39
 rules:
   - "MATCH,节点选择"
