@@ -1,5 +1,5 @@
-# nodepool  生成于 2026-11-23 23:01:23 (北京时间)
-# 节点数 35  (自建 0 / 免费额度 0 / 免费池 35)
+# nodepool  生成于 2026-11-24 01:57:56 (北京时间)
+# 节点数 36  (自建 0 / 免费额度 0 / 免费池 36)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
 proxies:
@@ -160,12 +160,17 @@ proxies:
       public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
       short-id: ba2a3dce62b99092
     client-fingerprint: firefox
-  - name: N23 114.246.201.27
+  - name: N23 111.192.19.3
+    type: http
+    server: 111.192.19.3
+    port: 8888
+    udp: false
+  - name: N24 114.246.201.27
     type: http
     server: 114.246.201.27
     port: 8888
     udp: false
-  - name: N24 twmoon1-cdn-route.couldflare-cdn.com
+  - name: N25 twmoon1-cdn-route.couldflare-cdn.com
     type: http
     server: twmoon1-cdn-route.couldflare-cdn.com
     port: 1443
@@ -174,80 +179,80 @@ proxies:
     password: mrwdfNTD8M79LCukCieldrqZWqs=
     tls: true
     skip-cert-verify: true
-  - name: N25 147.161.246.34
+  - name: N26 147.161.246.34
     type: http
     server: 147.161.246.34
     port: 12327
     udp: false
-  - name: N26 136.148.77.250
-    type: ss
-    server: 136.148.77.250
-    port: 8388
-    cipher: aes-256-gcm
-    password: "itzvpn@321"
-    udp: true
-  - name: N27 216.106.178.169
-    type: ss
-    server: 216.106.178.169
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N28 67.220.73.178
-    type: ss
-    server: 67.220.73.178
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N29 104.168.249.36
-    type: socks5
-    server: 104.168.249.36
-    port: 1080
-    udp: false
-    username: test123
-    password: test123
-  - name: N30 138.199.42.68
+  - name: N27 138.199.42.68
     type: ss
     server: 138.199.42.68
     port: 8080
     cipher: rc4-md5
     password: 14fFPrbezE3HDZzsMOr6
     udp: true
-  - name: N31 94.194.165.96
-    type: socks5
-    server: 94.194.165.96
-    port: 62000
-    udp: false
-    username: QyVdo5ks
-    password: lcFa8dTH
-  - name: N32 15.204.246.111
+  - name: N28 136.148.77.250
     type: ss
-    server: 15.204.246.111
-    port: 5498
+    server: 136.148.77.250
+    port: 8388
     cipher: aes-256-gcm
-    password: lGqs95QkFHo2NV
+    password: "itzvpn@321"
     udp: true
-  - name: N33 137.184.89.151
+  - name: N29 149.40.57.134
+    type: ss
+    server: 149.40.57.134
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N30 149.40.57.138
+    type: ss
+    server: 149.40.57.138
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N31 216.106.178.169
+    type: ss
+    server: 216.106.178.169
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N32 104.168.249.36
+    type: socks5
+    server: 104.168.249.36
+    port: 1080
+    udp: false
+    username: test123
+    password: test123
+  - name: N33 149.40.57.133
+    type: ss
+    server: 149.40.57.133
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N34 149.40.57.135
+    type: ss
+    server: 149.40.57.135
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N35 137.184.89.151
     type: ss
     server: 137.184.89.151
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N34 193.151.163.18
+  - name: N36 15.204.247.244
     type: ss
-    server: 193.151.163.18
-    port: 19999
+    server: 15.204.247.244
+    port: 4444
     cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N35 198.98.53.130
-    type: ss
-    server: 198.98.53.130
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: eDfN7SODQceIOmIAbtJJtK
+    password: pKEW8JPByTVTLtM
     udp: true
 proxy-groups:
   - name: 节点选择
@@ -277,19 +282,20 @@ proxy-groups:
       - N20 114.249.219.234
       - N21 114.253.67.30
       - N22 13.141.51.2
-      - N23 114.246.201.27
-      - N24 twmoon1-cdn-route.couldflare-cdn.com
-      - N25 147.161.246.34
-      - N26 136.148.77.250
-      - N27 216.106.178.169
-      - N28 67.220.73.178
-      - N29 104.168.249.36
-      - N30 138.199.42.68
-      - N31 94.194.165.96
-      - N32 15.204.246.111
-      - N33 137.184.89.151
-      - N34 193.151.163.18
-      - N35 198.98.53.130
+      - N23 111.192.19.3
+      - N24 114.246.201.27
+      - N25 twmoon1-cdn-route.couldflare-cdn.com
+      - N26 147.161.246.34
+      - N27 138.199.42.68
+      - N28 136.148.77.250
+      - N29 149.40.57.134
+      - N30 149.40.57.138
+      - N31 216.106.178.169
+      - N32 104.168.249.36
+      - N33 149.40.57.133
+      - N34 149.40.57.135
+      - N35 137.184.89.151
+      - N36 15.204.247.244
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -318,19 +324,20 @@ proxy-groups:
       - N20 114.249.219.234
       - N21 114.253.67.30
       - N22 13.141.51.2
-      - N23 114.246.201.27
-      - N24 twmoon1-cdn-route.couldflare-cdn.com
-      - N25 147.161.246.34
-      - N26 136.148.77.250
-      - N27 216.106.178.169
-      - N28 67.220.73.178
-      - N29 104.168.249.36
-      - N30 138.199.42.68
-      - N31 94.194.165.96
-      - N32 15.204.246.111
-      - N33 137.184.89.151
-      - N34 193.151.163.18
-      - N35 198.98.53.130
+      - N23 111.192.19.3
+      - N24 114.246.201.27
+      - N25 twmoon1-cdn-route.couldflare-cdn.com
+      - N26 147.161.246.34
+      - N27 138.199.42.68
+      - N28 136.148.77.250
+      - N29 149.40.57.134
+      - N30 149.40.57.138
+      - N31 216.106.178.169
+      - N32 104.168.249.36
+      - N33 149.40.57.133
+      - N34 149.40.57.135
+      - N35 137.184.89.151
+      - N36 15.204.247.244
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -358,18 +365,19 @@ proxy-groups:
       - N20 114.249.219.234
       - N21 114.253.67.30
       - N22 13.141.51.2
-      - N23 114.246.201.27
-      - N24 twmoon1-cdn-route.couldflare-cdn.com
-      - N25 147.161.246.34
-      - N26 136.148.77.250
-      - N27 216.106.178.169
-      - N28 67.220.73.178
-      - N29 104.168.249.36
-      - N30 138.199.42.68
-      - N31 94.194.165.96
-      - N32 15.204.246.111
-      - N33 137.184.89.151
-      - N34 193.151.163.18
-      - N35 198.98.53.130
+      - N23 111.192.19.3
+      - N24 114.246.201.27
+      - N25 twmoon1-cdn-route.couldflare-cdn.com
+      - N26 147.161.246.34
+      - N27 138.199.42.68
+      - N28 136.148.77.250
+      - N29 149.40.57.134
+      - N30 149.40.57.138
+      - N31 216.106.178.169
+      - N32 104.168.249.36
+      - N33 149.40.57.133
+      - N34 149.40.57.135
+      - N35 137.184.89.151
+      - N36 15.204.247.244
 rules:
   - "MATCH,节点选择"
