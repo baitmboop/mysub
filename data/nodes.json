@@ -149,24 +149,12 @@
  },
  {
   "proto": "http",
-  "server": "102.38.21.1",
-  "port": 19000,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "bb33116196506cfa",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "102.68.129.54",
+  "server": "102.214.104.58",
   "port": 8080,
   "tls": false,
   "name": "",
   "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "7ecf5d7608e33e9b",
+  "fp": "7972f7eeffdf3074",
   "sources": [
    "extra:raw.githubusercontent.com/http.txt"
   ]
@@ -1133,96 +1121,12 @@
  },
  {
   "proto": "http",
-  "server": "103.195.142.250",
-  "port": 8180,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "dd8564281737dc45",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "103.20.191.118",
-  "port": 8080,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "d394c709bcf54574",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "103.205.178.226",
-  "port": 8080,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "674668c05d33e652",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "103.210.123.195",
-  "port": 8080,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "58a52f3c710271b4",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "103.210.35.182",
-  "port": 8080,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "5a554c0ca68c9199",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "103.213.131.106",
-  "port": 9090,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "88f415fa38cac118",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "103.217.224.29",
-  "port": 8089,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "c12c8643a2e7366d",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "103.227.187.19",
+  "server": "103.227.187.11",
   "port": 6090,
   "tls": false,
   "name": "",
   "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "62ba8bdcebdc4f57",
+  "fp": "6b1c5d8cae015ca8",
   "sources": [
    "extra:raw.githubusercontent.com/http.txt"
   ]
@@ -2048,7 +1952,7 @@
   "tls": false,
   "name": "",
   "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "2a20a66411ce755f",
+  "fp": "1e63f55cc485cbc4",
   "sources": [
    "extra:raw.githubusercontent.com/http.txt"
   ]
@@ -2235,18 +2139,6 @@
   "fp": "55ee43821d4b6580",
   "sources": [
    "ermaozi"
-  ]
- },
- {
-  "proto": "http",
-  "server": "138.0.228.121",
-  "port": 8080,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "22d67113f3e18a09",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
   ]
  },
  {
@@ -2651,19 +2543,91 @@
   "tls": false,
   "name": "",
   "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "88093e19b2d74f55",
+  "fp": "896bbcaa6b1403a0",
   "sources": [
    "extra:raw.githubusercontent.com/http.txt"
   ]
  },
  {
   "proto": "http",
-  "server": "140.227.61.201",
-  "port": 3128,
+  "server": "138.59.10.112",
+  "port": 999,
   "tls": false,
   "name": "",
   "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "e620a0cacf05b909",
+  "fp": "5bfb9d89bf841454",
+  "sources": [
+   "extra:raw.githubusercontent.com/http.txt"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "138.59.11.192",
+  "port": 999,
+  "tls": false,
+  "name": "",
+  "source": "extra:raw.githubusercontent.com/http.txt",
+  "fp": "0963d05cdf8bf406",
+  "sources": [
+   "extra:raw.githubusercontent.com/http.txt"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "138.59.11.224",
+  "port": 999,
+  "tls": false,
+  "name": "",
+  "source": "extra:raw.githubusercontent.com/http.txt",
+  "fp": "3fb258a7ae0f949a",
+  "sources": [
+   "extra:raw.githubusercontent.com/http.txt"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "138.59.11.65",
+  "port": 999,
+  "tls": false,
+  "name": "",
+  "source": "extra:raw.githubusercontent.com/http.txt",
+  "fp": "9005ced2ef940f13",
+  "sources": [
+   "extra:raw.githubusercontent.com/http.txt"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "139.135.141.12",
+  "port": 8095,
+  "tls": false,
+  "name": "",
+  "source": "extra:raw.githubusercontent.com/http.txt",
+  "fp": "87cbe819be703bea",
+  "sources": [
+   "extra:raw.githubusercontent.com/http.txt"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "139.135.182.132",
+  "port": 8081,
+  "tls": false,
+  "name": "",
+  "source": "extra:raw.githubusercontent.com/http.txt",
+  "fp": "c3974a0bfff655b0",
+  "sources": [
+   "extra:raw.githubusercontent.com/http.txt"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "139.198.113.42",
+  "port": 10023,
+  "tls": false,
+  "name": "",
+  "source": "extra:raw.githubusercontent.com/http.txt",
+  "fp": "b0bbf92e2541f687",
   "sources": [
    "extra:raw.githubusercontent.com/http.txt"
   ]
@@ -3891,30 +3855,6 @@
  },
  {
   "proto": "http",
-  "server": "157.66.16.54",
-  "port": 8989,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "f905bebe06eae766",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "157.66.66.50",
-  "port": 1080,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "fc7c22e6984fab34",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
   "server": "158.173.154.1",
   "port": 9002,
   "tls": true,
@@ -4008,20 +3948,7 @@
   "fp": "aaafd566a886eaa9",
   "sources": [
    "NoMoreWalls",
-   "ermaozi",
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "159.223.41.216",
-  "port": 9090,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "1309ceb873142d6a",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
+   "ermaozi"
   ]
  },
  {
@@ -4485,24 +4412,12 @@
  },
  {
   "proto": "http",
-  "server": "176.88.168.109",
-  "port": 8080,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "a21efe8e6af75872",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "177.234.217.43",
+  "server": "177.234.210.56",
   "port": 999,
   "tls": false,
   "name": "",
   "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "53cc7bc79cdeb0ce",
+  "fp": "77e2356297ecbf13",
   "sources": [
    "extra:raw.githubusercontent.com/http.txt"
   ]
@@ -4900,168 +4815,12 @@
  },
  {
   "proto": "http",
-  "server": "180.211.93.108",
+  "server": "185.138.114.111",
   "port": 8080,
   "tls": false,
   "name": "",
   "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "ff06e6a4b0898d02",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "181.119.111.53",
-  "port": 999,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "61aa46d91898b6f7",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "181.129.147.163",
-  "port": 8080,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "c8a26df0fea1207e",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "181.174.115.9",
-  "port": 1994,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "386eb53597769592",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "181.191.227.140",
-  "port": 999,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "27600cff35b738c4",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "181.191.227.166",
-  "port": 999,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "118b36e17aefe818",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "181.191.227.238",
-  "port": 999,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "4ce0abc534560a5f",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "181.198.55.155",
-  "port": 999,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "d09cc44c04d75acf",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "181.62.249.189",
-  "port": 8081,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "cc8fb2b1b0db5b0b",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "181.78.195.136",
-  "port": 999,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "084751c8c580bed0",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "182.176.164.41",
-  "port": 8080,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "22e32754b2790307",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "182.253.21.26",
-  "port": 46977,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "b631453295092233",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "182.52.113.109",
-  "port": 80,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "6f5a8bcaf0132588",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "185.136.185.120",
-  "port": 8080,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "670db0c9a83505f9",
+  "fp": "9604526cca40a9b7",
   "sources": [
    "extra:raw.githubusercontent.com/http.txt"
   ]
@@ -5182,18 +4941,6 @@
  },
  {
   "proto": "http",
-  "server": "185.238.238.165",
-  "port": 58080,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "f9e154d664e5d3dc",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
   "server": "185.245.84.50",
   "port": 443,
   "tls": true,
@@ -5283,7 +5030,7 @@
   "tls": false,
   "name": "",
   "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "721d43434a62cc37",
+  "fp": "73efc469337b8376",
   "sources": [
    "extra:raw.githubusercontent.com/http.txt"
   ]
@@ -5326,12 +5073,12 @@
  },
  {
   "proto": "http",
-  "server": "190.13.151.243",
+  "server": "190.237.238.102",
   "port": 999,
   "tls": false,
   "name": "",
   "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "f1b82ebf1e223e2b",
+  "fp": "4e0f6c506872900a",
   "sources": [
    "extra:raw.githubusercontent.com/http.txt"
   ]
@@ -5869,18 +5616,6 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi"
-  ]
- },
- {
-  "proto": "http",
-  "server": "199.38.169.219",
-  "port": 8080,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "5b436c4e617616eb",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
   ]
  },
  {
@@ -6692,18 +6427,6 @@
  },
  {
   "proto": "http",
-  "server": "39.100.103.171",
-  "port": 21056,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "38491337abb50637",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
   "server": "3a831701-tb71c0-tee5aa-1glq.los.west.wctype.com",
   "port": 3443,
   "name": "美国 - 洛杉矶 - Sharktech - 7",
@@ -6944,12 +6667,12 @@
  },
  {
   "proto": "http",
-  "server": "45.174.243.24",
+  "server": "45.185.163.111",
   "port": 999,
   "tls": false,
   "name": "",
   "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "62bcffdad8e8b7e2",
+  "fp": "b1799d1219e1010c",
   "sources": [
    "extra:raw.githubusercontent.com/http.txt"
   ]
@@ -7508,30 +7231,6 @@
  },
  {
   "proto": "http",
-  "server": "70.38.101.182",
-  "port": 40000,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "1a65b5d791d252d7",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
-  "server": "74.62.179.122",
-  "port": 8080,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "ab8cf991d69c391a",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
-  ]
- },
- {
-  "proto": "http",
   "server": "761d45d1-taz0g0-tcfva5-duku.cu.oshuawei.com",
   "port": 15229,
   "name": "美国 - 洛杉矶 - Sharktech - 12",
@@ -8039,18 +7738,6 @@
   "fp": "e65d8ae4ae5ba2a6",
   "sources": [
    "ermaozi"
-  ]
- },
- {
-  "proto": "http",
-  "server": "84.22.48.150",
-  "port": 8080,
-  "tls": false,
-  "name": "",
-  "source": "extra:raw.githubusercontent.com/http.txt",
-  "fp": "522cc4341462f306",
-  "sources": [
-   "extra:raw.githubusercontent.com/http.txt"
   ]
  },
  {
@@ -33170,8 +32857,8 @@
   "sources": [
    "mahdibland",
    "xinshoucun",
-   "tg:@byxiaoxi→blog",
-   "tg:@vpnfail_v2ray"
+   "tg:@vpnfail_v2ray",
+   "tg:@byxiaoxi→blog"
   ]
  },
  {
@@ -54069,23 +53756,6 @@
  },
  {
   "proto": "trojan",
-  "server": "ja304.magiclampcloud.cn",
-  "port": 59443,
-  "password": "06cf12a7fab279375e55e2f0cfdef381",
-  "sni": "",
-  "network": "tcp",
-  "path": "",
-  "host": "",
-  "skipCertVerify": false,
-  "name": "HK三网精品线路 100MB/S",
-  "source": "tg:@wxdy666",
-  "fp": "e4e74226fa2af3e7",
-  "sources": [
-   "tg:@wxdy666"
-  ]
- },
- {
-  "proto": "trojan",
   "server": "joint-ewe.rooster465.autos",
   "port": 443,
   "name": "日本 - 东京 - 25",
@@ -59207,9 +58877,9 @@
    "NoMoreWalls",
    "ermaozi",
    "clashnode",
+   "tg:@wxdy666→sub",
    "Pawdroid/Free-servers",
-   "anaer/Sub",
-   "tg:@wxdy666→sub"
+   "anaer/Sub"
   ]
  },
  {
@@ -65478,28 +65148,6 @@
  },
  {
   "proto": "vless",
-  "server": "2.27.59.255",
-  "port": 443,
-  "uuid": "5edbcb44-8d04-4fa7-a587-bc5d60c24ca1",
-  "tls": true,
-  "sni": "et-ger.letsgodance.site",
-  "network": "xhttp",
-  "path": "/xh",
-  "host": "et-ger.letsgodance.site",
-  "flow": "",
-  "pbk": "",
-  "sid": "",
-  "utls": "",
-  "reality": false,
-  "name": "canfingV2rayNG-229",
-  "source": "tg:@vpnfail_v2ray",
-  "fp": "9824559980469508",
-  "sources": [
-   "tg:@vpnfail_v2ray"
-  ]
- },
- {
-  "proto": "vless",
   "server": "2.56.204.183",
   "port": 443,
   "name": "🇦🇲_AM_亚美尼亚",
@@ -68749,7 +68397,7 @@
   "sid": "7ce8c8e1",
   "utls": "chrome",
   "reality": true,
-  "name": "剩余流量：80.38 GB",
+  "name": "剩余流量：20.67 GB",
   "source": "tg:@wxdy666→sub",
   "fp": "b7cd568a9114cb6b",
   "sources": [
@@ -73077,7 +72725,7 @@
   "sid": "",
   "utls": "chrome",
   "reality": false,
-  "name": "剩余流量：99944.53 GB",
+  "name": "剩余流量：99943.69 GB",
   "source": "tg:@freeVPNjd→sub",
   "fp": "1bc22ec525f61fa3",
   "sources": [

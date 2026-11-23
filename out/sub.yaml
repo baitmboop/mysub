@@ -1,5 +1,5 @@
-# nodepool  生成于 2026-11-23 18:38:26 (北京时间)
-# 节点数 41  (自建 0 / 免费额度 0 / 免费池 41)
+# nodepool  生成于 2026-11-23 18:51:06 (北京时间)
+# 节点数 31  (自建 0 / 免费额度 0 / 免费池 31)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
 proxies:
@@ -22,15 +22,15 @@ proxies:
     server: 4.144.146.21
     port: 80
     udp: false
-  - name: N03 123.121.121.123
+  - name: N03 114.244.212.147
+    type: http
+    server: 114.244.212.147
+    port: 8888
+    udp: false
+  - name: N04 123.121.121.123
     type: http
     server: 123.121.121.123
     port: 8888
-    udp: false
-  - name: N04 141.94.22.37
-    type: http
-    server: 141.94.22.37
-    port: 3128
     udp: false
   - name: "N05 2a0e:97c0:3f0:1::598"
     type: vless
@@ -46,62 +46,42 @@ proxies:
       public-key: FrBq4UHHiaXWDFC2X0Mag16onOfX6lPBuaCSYVgHQ1Q
       short-id: 6a5291c5
     client-fingerprint: chrome
-  - name: N06 114.246.207.179
-    type: http
-    server: 114.246.207.179
-    port: 8888
-    udp: false
-  - name: N07 121.169.46.116
-    type: socks5
-    server: 121.169.46.116
-    port: 1090
-    udp: false
-    username: "Og%3D%3D"
-  - name: N08 111.192.60.106
+  - name: N06 111.192.60.106
     type: http
     server: 111.192.60.106
     port: 8888
     udp: false
-  - name: N09 123.121.130.181
+  - name: N07 123.121.130.181
     type: http
     server: 123.121.130.181
     port: 8888
     udp: false
-  - name: N10 usgp1-cdn-route.couldflare-cdn.com
+  - name: N08 123.121.135.227
     type: http
-    server: usgp1-cdn-route.couldflare-cdn.com
-    port: 443
+    server: 123.121.135.227
+    port: 8888
     udp: false
-    username: mrwdfNTD8M79LCukCieldrqZWqs=
-    password: exaxgqkKkd0TAMrCxeonWg==
-    tls: true
-    skip-cert-verify: true
-  - name: N11 114.244.213.90
+  - name: N09 114.244.213.90
     type: http
     server: 114.244.213.90
     port: 8888
     udp: false
-  - name: N12 45.155.226.177
-    type: http
-    server: 45.155.226.177
-    port: 3128
-    udp: false
-  - name: N13 222.128.169.173
+  - name: N10 222.128.169.173
     type: http
     server: 222.128.169.173
     port: 8888
     udp: false
-  - name: N14 20.98.234.24
+  - name: N11 20.98.234.24
     type: http
     server: 20.98.234.24
     port: 8080
     udp: false
-  - name: N15 123.121.142.252
+  - name: N12 114.246.192.104
     type: http
-    server: 123.121.142.252
+    server: 114.246.192.104
     port: 8888
     udp: false
-  - name: N16 47.111.78.144
+  - name: N13 47.111.78.144
     type: vless
     server: 47.111.78.144
     port: 24685
@@ -115,7 +95,7 @@ proxies:
       public-key: FrBq4UHHiaXWDFC2X0Mag16onOfX6lPBuaCSYVgHQ1Q
       short-id: 6a5291c5
     client-fingerprint: chrome
-  - name: N17 77.67.18.110
+  - name: N14 77.67.18.110
     type: vless
     server: 77.67.18.110
     port: 25680
@@ -129,47 +109,24 @@ proxies:
       public-key: hARhHGV09mnEUWA1a7pG6_K4lztUhKCK3iGeboGGP2g
       short-id: 7ce8c8e1
     client-fingerprint: chrome
-  - name: N18 114.249.232.231
-    type: http
-    server: 114.249.232.231
-    port: 8888
-    udp: false
-  - name: N19 fan.596189.xyz
+  - name: N15 fan.596189.xyz
     type: http
     server: fan.596189.xyz
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N20 fan.226278.xyz
+  - name: N16 114.249.219.234
     type: http
-    server: fan.226278.xyz
-    port: 443
+    server: 114.249.219.234
+    port: 8888
     udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N21 172.67.190.164
-    type: vmess
-    server: 172.67.190.164
-    port: 443
-    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: guanwang.awsno.com
-    skipCertVerify: true
-    ws-opts:
-      path: /hls/cctv5phd.m3u8
-      headers:
-        Host: guanwang.awsno.com
-    network: ws
-  - name: N22 114.253.67.30
+  - name: N17 114.253.67.30
     type: http
     server: 114.253.67.30
     port: 8888
     udp: false
-  - name: N23 13.141.51.2
+  - name: N18 13.141.51.2
     type: vless
     server: 13.141.51.2
     port: 443
@@ -182,50 +139,12 @@ proxies:
       public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
       short-id: ba2a3dce62b99092
     client-fingerprint: firefox
-  - name: N24 189.51.168.165
-    type: http
-    server: 189.51.168.165
-    port: 999
-    udp: false
-  - name: N25 111.192.19.3
-    type: http
-    server: 111.192.19.3
-    port: 8888
-    udp: false
-  - name: N26 114.246.201.27
+  - name: N19 114.246.201.27
     type: http
     server: 114.246.201.27
     port: 8888
     udp: false
-  - name: N27 154.26.192.123
-    type: http
-    server: 154.26.192.123
-    port: 10988
-    udp: false
-    username: fQ67Dpe5dU
-    password: gs4BXwT6SW
-  - name: N28 free.fugui.lol
-    type: vless
-    server: free.fugui.lol
-    port: 51283
-    uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: swdist.apple.com
-    reality-opts:
-      public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
-      short-id: fa514b83
-    client-fingerprint: chrome
-  - name: N29 fan.365747.xyz
-    type: http
-    server: fan.365747.xyz
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N30 twmoon1-cdn-route.couldflare-cdn.com
+  - name: N20 twmoon1-cdn-route.couldflare-cdn.com
     type: http
     server: twmoon1-cdn-route.couldflare-cdn.com
     port: 1443
@@ -234,419 +153,83 @@ proxies:
     password: mrwdfNTD8M79LCukCieldrqZWqs=
     tls: true
     skip-cert-verify: true
-  - name: N31 147.161.246.34
+  - name: N21 147.161.246.34
     type: http
     server: 147.161.246.34
     port: 12327
     udp: false
-  - name: N32 138.199.35.206
-    type: http
-    server: 138.199.35.206
-    port: 9002
+  - name: N22 216.106.178.169
+    type: ss
+    server: 216.106.178.169
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N23 67.220.73.178
+    type: ss
+    server: 67.220.73.178
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N24 104.168.249.36
+    type: socks5
+    server: 104.168.249.36
+    port: 1080
     udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N33 138.199.35.204
+    username: test123
+    password: test123
+  - name: N25 138.199.42.68
+    type: ss
+    server: 138.199.42.68
+    port: 8080
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
+    udp: true
+  - name: N26 37.19.198.160
+    type: ss
+    server: 37.19.198.160
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: N27 37.19.198.243
+    type: ss
+    server: 37.19.198.243
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: N28 37.19.198.244
+    type: ss
+    server: 37.19.198.244
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: N29 138.199.35.204
     type: http
     server: 138.199.35.204
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N34 138.199.35.200
+  - name: N30 138.199.35.206
     type: http
-    server: 138.199.35.200
+    server: 138.199.35.206
     port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N35 138.199.35.211
-    type: http
-    server: 138.199.35.211
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N36 138.199.35.196
-    type: http
-    server: 138.199.35.196
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N37 184.107.106.77
-    type: ss
-    server: 184.107.106.77
-    port: 8388
-    cipher: aes-256-gcm
-    password: "itzvpn@321"
-    udp: true
-  - name: N38 51.79.85.185
-    type: ss
-    server: 51.79.85.185
-    port: 8118
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-    udp: true
-  - name: N39 51.222.136.236
-    type: ss
-    server: 51.222.136.236
-    port: 8882
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-    udp: true
-  - name: N40 137.175.22.56
-    type: http
-    server: 137.175.22.56
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N41 138.199.35.220
-    type: http
-    server: 138.199.35.220
-    port: 9002
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N25 123.121.142.252
-    type: http
-    server: 123.121.142.252
-    port: 8888
-    udp: false
-  - name: N26 47.111.78.144
-    type: vless
-    server: 47.111.78.144
-    port: 24685
-    uuid: 1582f5d8-f535-4b99-af49-9d2a1d025069
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: apple.com
-    reality-opts:
-      public-key: FrBq4UHHiaXWDFC2X0Mag16onOfX6lPBuaCSYVgHQ1Q
-      short-id: 6a5291c5
-    client-fingerprint: chrome
-  - name: N27 77.67.18.110
-    type: vless
-    server: 77.67.18.110
-    port: 25680
-    uuid: 1582f5d8-f535-4b99-af49-9d2a1d025069
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: apple.com
-    reality-opts:
-      public-key: hARhHGV09mnEUWA1a7pG6_K4lztUhKCK3iGeboGGP2g
-      short-id: 7ce8c8e1
-    client-fingerprint: chrome
-  - name: N28 114.249.232.231
-    type: http
-    server: 114.249.232.231
-    port: 8888
-    udp: false
-  - name: N29 fan.596189.xyz
-    type: http
-    server: fan.596189.xyz
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N30 123.121.139.50
-    type: http
-    server: 123.121.139.50
-    port: 8888
-    udp: false
-  - name: N31 114.249.219.234
-    type: http
-    server: 114.249.219.234
-    port: 8888
-    udp: false
-  - name: N32 fan.226278.xyz
-    type: http
-    server: fan.226278.xyz
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N33 172.67.190.164
-    type: vmess
-    server: 172.67.190.164
-    port: 443
-    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: guanwang.awsno.com
-    skipCertVerify: true
-    ws-opts:
-      path: /hls/cctv5phd.m3u8
-      headers:
-        Host: guanwang.awsno.com
-    network: ws
-  - name: N34 172.64.69.89
-    type: http
-    server: 172.64.69.89
-    port: 443
     udp: false
     username: null
     password: null
     tls: true
     skip-cert-verify: true
-  - name: N35 172.64.69.89
+  - name: N31 138.199.35.213
     type: http
-    server: 172.64.69.89
-    port: 443
+    server: 138.199.35.213
+    port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N36 sclass-b1.catcat321.com
-    type: trojan
-    server: sclass-b1.catcat321.com
-    port: 20027
-    password: d7563108-615c-4338-a7bd-77f359869a4a
-    udp: true
-    skipCertVerify: true
-    sni: sclass-b1.catcat321.com
-  - name: N37 114.253.67.30
-    type: http
-    server: 114.253.67.30
-    port: 8888
-    udp: false
-  - name: N38 13.141.51.2
-    type: vless
-    server: 13.141.51.2
-    port: 443
-    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-    udp: true
-    skipCertVerify: true
-    tls: true
-    servername: 04535dt.us8.h1clayd.click
-    reality-opts:
-      public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-      short-id: ba2a3dce62b99092
-    client-fingerprint: firefox
-  - name: N39 189.51.168.165
-    type: http
-    server: 189.51.168.165
-    port: 999
-    udp: false
-  - name: N40 111.192.19.3
-    type: http
-    server: 111.192.19.3
-    port: 8888
-    udp: false
-  - name: N41 114.246.201.27
-    type: http
-    server: 114.246.201.27
-    port: 8888
-    udp: false
-  - name: N42 154.26.192.123
-    type: http
-    server: 154.26.192.123
-    port: 10988
-    udp: false
-    username: fQ67Dpe5dU
-    password: gs4BXwT6SW
-  - name: N43 111.192.28.24
-    type: http
-    server: 111.192.28.24
-    port: 8888
-    udp: false
-  - name: N44 free.fugui.lol
-    type: vless
-    server: free.fugui.lol
-    port: 51283
-    uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
-    udp: true
-    skipCertVerify: true
-    flow: xtls-rprx-vision
-    tls: true
-    servername: swdist.apple.com
-    reality-opts:
-      public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
-      short-id: fa514b83
-    client-fingerprint: chrome
-  - name: N45 fan.365747.xyz
-    type: http
-    server: fan.365747.xyz
-    port: 443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N46 83.206.1.225
-    type: http
-    server: 83.206.1.225
-    port: 8090
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N47 twmoon1-cdn-route.couldflare-cdn.com
-    type: http
-    server: twmoon1-cdn-route.couldflare-cdn.com
-    port: 1443
-    udp: false
-    username: mrwdfNTD8M79LCukCieldrqZWqs=
-    password: exaxgqkKkd0TAMrCxeonWg==
-    tls: true
-    skip-cert-verify: true
-  - name: N48 twmoon1-cdn-route.couldflare-cdn.com
-    type: http
-    server: twmoon1-cdn-route.couldflare-cdn.com
-    port: 1443
-    udp: false
-    username: mrwdfNTD8M79LCukCieldrqZWqs=
-    password: mrwdfNTD8M79LCukCieldrqZWqs=
-    tls: true
-    skip-cert-verify: true
-  - name: N49 103.158.210.80
-    type: http
-    server: 103.158.210.80
-    port: 8082
-    udp: false
-  - name: N50 147.161.246.34
-    type: http
-    server: 147.161.246.34
-    port: 12327
-    udp: false
-  - name: N51 172.64.145.93
-    type: vmess
-    server: 172.64.145.93
-    port: 443
-    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: guanwang.awsno.com
-    skipCertVerify: true
-    ws-opts:
-      path: /hls/cctv5phd.m3u8
-      headers:
-        Host: guanwang.awsno.com
-    network: ws
-  - name: N52 147.161.246.34
-    type: http
-    server: 147.161.246.34
-    port: 10854
-    udp: false
-  - name: N53 sclass-b1.catcat321.com
-    type: trojan
-    server: sclass-b1.catcat321.com
-    port: 20051
-    password: d7563108-615c-4338-a7bd-77f359869a4a
-    udp: true
-    skipCertVerify: true
-    sni: hk.catxstar.com
-  - name: N54 193.124.33.31
-    type: http
-    server: 193.124.33.31
-    port: 2052
-    udp: false
-  - name: N55 190.12.150.244
-    type: http
-    server: 190.12.150.244
-    port: 999
-    udp: false
-  - name: N56 147.161.246.34
-    type: http
-    server: 147.161.246.34
-    port: 10678
-    udp: false
-  - name: N57 147.161.246.34
-    type: http
-    server: 147.161.246.34
-    port: 11172
-    udp: false
-  - name: N58 sclass-c2.catcat321.com
-    type: trojan
-    server: sclass-c2.catcat321.com
-    port: 20051
-    password: d9064589-74af-432a-9390-5d8a9da281bf
-    udp: true
-    skipCertVerify: true
-    sni: hk.catxstar.com
-  - name: N59 114.246.207.211
-    type: http
-    server: 114.246.207.211
-    port: 8888
-    udp: false
-  - name: N60 189.51.168.164
-    type: http
-    server: 189.51.168.164
-    port: 999
-    udp: false
-  - name: N61 158.247.125.5
-    type: http
-    server: 158.247.125.5
-    port: 9443
-    udp: false
-  - name: N62 147.161.246.34
-    type: http
-    server: 147.161.246.34
-    port: 11256
-    udp: false
-  - name: N63 50.238.106.26
-    type: http
-    server: 50.238.106.26
-    port: 3128
-    udp: false
-  - name: N64 91.199.137.149
-    type: socks5
-    server: 91.199.137.149
-    port: 2010
-    udp: false
-  - name: N65 147.161.246.34
-    type: http
-    server: 147.161.246.34
-    port: 80
-    udp: false
-  - name: N66 147.161.246.34
-    type: http
-    server: 147.161.246.34
-    port: 12131
-    udp: false
-  - name: N67 147.161.246.34
-    type: http
-    server: 147.161.246.34
-    port: 10146
-    udp: false
-  - name: N68 147.161.246.34
-    type: http
-    server: 147.161.246.34
-    port: 10521
-    udp: false
-  - name: N69 103.125.15.45
-    type: http
-    server: 103.125.15.45
-    port: 8181
-    udp: false
-  - name: N70 210.79.146.82
-    type: http
-    server: 210.79.146.82
-    port: 8085
-    udp: false
-  - name: N71 172.64.147.71
-    type: trojan
-    server: 172.64.147.71
-    port: 2096
-    password: 5a2c16f9
-    udp: true
-    skipCertVerify: true
-    sni: snippets.kkii.eu.org
-    ws-opts:
-      path: /Telegram🇨🇳WangCai2
-      headers:
-        Host: snippets.kkii.eu.org
-    network: ws
-  - name: N72 202.47.67.192
-    type: http
-    server: 202.47.67.192
-    port: 8080
-    udp: false
 proxy-groups:
   - name: 节点选择
     type: select
@@ -655,45 +238,35 @@ proxy-groups:
       - ③ 免费池
       - "N01 2a14:7586:6109:1::a125"
       - N02 4.144.146.21
-      - N03 123.121.121.123
-      - N04 141.94.22.37
+      - N03 114.244.212.147
+      - N04 123.121.121.123
       - "N05 2a0e:97c0:3f0:1::598"
-      - N06 114.246.207.179
-      - N07 121.169.46.116
-      - N08 111.192.60.106
-      - N09 123.121.130.181
-      - N10 usgp1-cdn-route.couldflare-cdn.com
-      - N11 114.244.213.90
-      - N12 45.155.226.177
-      - N13 222.128.169.173
-      - N14 20.98.234.24
-      - N15 123.121.142.252
-      - N16 47.111.78.144
-      - N17 77.67.18.110
-      - N18 114.249.232.231
-      - N19 fan.596189.xyz
-      - N20 fan.226278.xyz
-      - N21 172.67.190.164
-      - N22 114.253.67.30
-      - N23 13.141.51.2
-      - N24 189.51.168.165
-      - N25 111.192.19.3
-      - N26 114.246.201.27
-      - N27 154.26.192.123
-      - N28 free.fugui.lol
-      - N29 fan.365747.xyz
-      - N30 twmoon1-cdn-route.couldflare-cdn.com
-      - N31 147.161.246.34
-      - N32 138.199.35.206
-      - N33 138.199.35.204
-      - N34 138.199.35.200
-      - N35 138.199.35.211
-      - N36 138.199.35.196
-      - N37 184.107.106.77
-      - N38 51.79.85.185
-      - N39 51.222.136.236
-      - N40 137.175.22.56
-      - N41 138.199.35.220
+      - N06 111.192.60.106
+      - N07 123.121.130.181
+      - N08 123.121.135.227
+      - N09 114.244.213.90
+      - N10 222.128.169.173
+      - N11 20.98.234.24
+      - N12 114.246.192.104
+      - N13 47.111.78.144
+      - N14 77.67.18.110
+      - N15 fan.596189.xyz
+      - N16 114.249.219.234
+      - N17 114.253.67.30
+      - N18 13.141.51.2
+      - N19 114.246.201.27
+      - N20 twmoon1-cdn-route.couldflare-cdn.com
+      - N21 147.161.246.34
+      - N22 216.106.178.169
+      - N23 67.220.73.178
+      - N24 104.168.249.36
+      - N25 138.199.42.68
+      - N26 37.19.198.160
+      - N27 37.19.198.243
+      - N28 37.19.198.244
+      - N29 138.199.35.204
+      - N30 138.199.35.206
+      - N31 138.199.35.213
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -702,45 +275,35 @@ proxy-groups:
     proxies:
       - "N01 2a14:7586:6109:1::a125"
       - N02 4.144.146.21
-      - N03 123.121.121.123
-      - N04 141.94.22.37
+      - N03 114.244.212.147
+      - N04 123.121.121.123
       - "N05 2a0e:97c0:3f0:1::598"
-      - N06 114.246.207.179
-      - N07 121.169.46.116
-      - N08 111.192.60.106
-      - N09 123.121.130.181
-      - N10 usgp1-cdn-route.couldflare-cdn.com
-      - N11 114.244.213.90
-      - N12 45.155.226.177
-      - N13 222.128.169.173
-      - N14 20.98.234.24
-      - N15 123.121.142.252
-      - N16 47.111.78.144
-      - N17 77.67.18.110
-      - N18 114.249.232.231
-      - N19 fan.596189.xyz
-      - N20 fan.226278.xyz
-      - N21 172.67.190.164
-      - N22 114.253.67.30
-      - N23 13.141.51.2
-      - N24 189.51.168.165
-      - N25 111.192.19.3
-      - N26 114.246.201.27
-      - N27 154.26.192.123
-      - N28 free.fugui.lol
-      - N29 fan.365747.xyz
-      - N30 twmoon1-cdn-route.couldflare-cdn.com
-      - N31 147.161.246.34
-      - N32 138.199.35.206
-      - N33 138.199.35.204
-      - N34 138.199.35.200
-      - N35 138.199.35.211
-      - N36 138.199.35.196
-      - N37 184.107.106.77
-      - N38 51.79.85.185
-      - N39 51.222.136.236
-      - N40 137.175.22.56
-      - N41 138.199.35.220
+      - N06 111.192.60.106
+      - N07 123.121.130.181
+      - N08 123.121.135.227
+      - N09 114.244.213.90
+      - N10 222.128.169.173
+      - N11 20.98.234.24
+      - N12 114.246.192.104
+      - N13 47.111.78.144
+      - N14 77.67.18.110
+      - N15 fan.596189.xyz
+      - N16 114.249.219.234
+      - N17 114.253.67.30
+      - N18 13.141.51.2
+      - N19 114.246.201.27
+      - N20 twmoon1-cdn-route.couldflare-cdn.com
+      - N21 147.161.246.34
+      - N22 216.106.178.169
+      - N23 67.220.73.178
+      - N24 104.168.249.36
+      - N25 138.199.42.68
+      - N26 37.19.198.160
+      - N27 37.19.198.243
+      - N28 37.19.198.244
+      - N29 138.199.35.204
+      - N30 138.199.35.206
+      - N31 138.199.35.213
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -748,44 +311,34 @@ proxy-groups:
     proxies:
       - "N01 2a14:7586:6109:1::a125"
       - N02 4.144.146.21
-      - N03 123.121.121.123
-      - N04 141.94.22.37
+      - N03 114.244.212.147
+      - N04 123.121.121.123
       - "N05 2a0e:97c0:3f0:1::598"
-      - N06 114.246.207.179
-      - N07 121.169.46.116
-      - N08 111.192.60.106
-      - N09 123.121.130.181
-      - N10 usgp1-cdn-route.couldflare-cdn.com
-      - N11 114.244.213.90
-      - N12 45.155.226.177
-      - N13 222.128.169.173
-      - N14 20.98.234.24
-      - N15 123.121.142.252
-      - N16 47.111.78.144
-      - N17 77.67.18.110
-      - N18 114.249.232.231
-      - N19 fan.596189.xyz
-      - N20 fan.226278.xyz
-      - N21 172.67.190.164
-      - N22 114.253.67.30
-      - N23 13.141.51.2
-      - N24 189.51.168.165
-      - N25 111.192.19.3
-      - N26 114.246.201.27
-      - N27 154.26.192.123
-      - N28 free.fugui.lol
-      - N29 fan.365747.xyz
-      - N30 twmoon1-cdn-route.couldflare-cdn.com
-      - N31 147.161.246.34
-      - N32 138.199.35.206
-      - N33 138.199.35.204
-      - N34 138.199.35.200
-      - N35 138.199.35.211
-      - N36 138.199.35.196
-      - N37 184.107.106.77
-      - N38 51.79.85.185
-      - N39 51.222.136.236
-      - N40 137.175.22.56
-      - N41 138.199.35.220
+      - N06 111.192.60.106
+      - N07 123.121.130.181
+      - N08 123.121.135.227
+      - N09 114.244.213.90
+      - N10 222.128.169.173
+      - N11 20.98.234.24
+      - N12 114.246.192.104
+      - N13 47.111.78.144
+      - N14 77.67.18.110
+      - N15 fan.596189.xyz
+      - N16 114.249.219.234
+      - N17 114.253.67.30
+      - N18 13.141.51.2
+      - N19 114.246.201.27
+      - N20 twmoon1-cdn-route.couldflare-cdn.com
+      - N21 147.161.246.34
+      - N22 216.106.178.169
+      - N23 67.220.73.178
+      - N24 104.168.249.36
+      - N25 138.199.42.68
+      - N26 37.19.198.160
+      - N27 37.19.198.243
+      - N28 37.19.198.244
+      - N29 138.199.35.204
+      - N30 138.199.35.206
+      - N31 138.199.35.213
 rules:
   - "MATCH,节点选择"
