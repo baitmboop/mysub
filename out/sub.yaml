@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-25 05:00:42 (北京时间)
+# nodepool  生成于 2026-11-25 07:48:26 (北京时间)
 # 节点数 46  (自建 0 / 免费额度 0 / 免费池 46)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -277,55 +277,62 @@ proxies:
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N40 51.222.136.236
-    type: ss
-    server: 51.222.136.236
-    port: 8882
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-    udp: true
-  - name: N41 216.106.178.169
-    type: ss
-    server: 216.106.178.169
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N42 138.199.42.68
+  - name: N40 138.199.42.68
     type: ss
     server: 138.199.42.68
     port: 8080
     cipher: rc4-md5
     password: 14fFPrbezE3HDZzsMOr6
     udp: true
-  - name: N43 38.128.66.32
+  - name: N41 38.128.66.32
     type: ss
     server: 38.128.66.32
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N44 138.199.35.205
+  - name: N42 138.199.35.201
     type: http
-    server: 138.199.35.205
+    server: 138.199.35.201
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N45 138.199.35.218
+  - name: N43 138.199.35.211
     type: http
-    server: 138.199.35.218
+    server: 138.199.35.211
     port: 9002
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N46 138.199.35.199
-    type: http
-    server: 138.199.35.199
-    port: 9002
-    udp: false
+  - name: N44 15.204.247.244
+    type: ss
+    server: 15.204.247.244
+    port: 4444
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+    udp: true
+  - name: N45 47.253.226.114
+    type: vless
+    server: 47.253.226.114
+    port: 443
+    uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+    udp: true
+    skipCertVerify: true
+    flow: xtls-rprx-vision
     tls: true
-    skip-cert-verify: true
+    servername: www.cloudflare.com
+    reality-opts:
+      public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+      short-id: ""
+    client-fingerprint: chrome
+  - name: N46 156.146.38.170
+    type: ss
+    server: 156.146.38.170
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
 proxy-groups:
   - name: 节点选择
     type: select
@@ -371,13 +378,13 @@ proxy-groups:
       - N37 136.148.77.250
       - N38 172.64.69.89
       - N39 12.221.146.147
-      - N40 51.222.136.236
-      - N41 216.106.178.169
-      - N42 138.199.42.68
-      - N43 38.128.66.32
-      - N44 138.199.35.205
-      - N45 138.199.35.218
-      - N46 138.199.35.199
+      - N40 138.199.42.68
+      - N41 38.128.66.32
+      - N42 138.199.35.201
+      - N43 138.199.35.211
+      - N44 15.204.247.244
+      - N45 47.253.226.114
+      - N46 156.146.38.170
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -393,10 +400,11 @@ proxy-groups:
       - N30 13.141.51.2
       - N34 free.fugui.lol
       - N37 136.148.77.250
-      - N40 51.222.136.236
-      - N41 216.106.178.169
-      - N42 138.199.42.68
-      - N43 38.128.66.32
+      - N40 138.199.42.68
+      - N41 38.128.66.32
+      - N44 15.204.247.244
+      - N45 47.253.226.114
+      - N46 156.146.38.170
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -441,13 +449,13 @@ proxy-groups:
       - N37 136.148.77.250
       - N38 172.64.69.89
       - N39 12.221.146.147
-      - N40 51.222.136.236
-      - N41 216.106.178.169
-      - N42 138.199.42.68
-      - N43 38.128.66.32
-      - N44 138.199.35.205
-      - N45 138.199.35.218
-      - N46 138.199.35.199
+      - N40 138.199.42.68
+      - N41 38.128.66.32
+      - N42 138.199.35.201
+      - N43 138.199.35.211
+      - N44 15.204.247.244
+      - N45 47.253.226.114
+      - N46 156.146.38.170
 rules:
   - "IP-CIDR,127.0.0.0/8,DIRECT,no-resolve"
   - "IP-CIDR,10.0.0.0/8,DIRECT,no-resolve"
