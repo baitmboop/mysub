@@ -80,6 +80,43 @@ acquire_lock || exit 0
 echo $$ > "$LOCK/pid"
 trap 'rm -rf "$LOCK" 2>/dev/null' EXIT
 
+# ---- 新鲜度闸门 ----------------------------------------------------------
+# launchd 每天 04:30 拉起一次, 但整体普查(691 个节点)要 20 分钟。真没必要
+# 天天全测: cn_pref 有效期 7 天, 每 3 天测一次最坏是 3~6 天龄, 仍在有效期内,
+# 而且中间还有每天一次的补跑机会。
+#
+# 这段是 2026-11-24 补的。在那之前 CN_REFRESH_MIN_DAYS 只写在注释和安装脚本
+# 的回显里, 代码里根本没有这个判断 —— 界面上写着"数据超过 3 天才真的重测",
+# 实际是每天真的跑满一轮。注释和代码对不上, 比没有注释更糟。
+MIN_DAYS="${CN_REFRESH_MIN_DAYS:-3}"
+if [ "${CN_REFRESH_FORCE:-0}" != "1" ]; then
+    AGE_H=$("$PY" - <<'PYEOF' 2>/dev/null
+import json, time, sys
+try:
+    d = json.load(open("data/cn_pref.json"))
+except Exception:
+    print(""); sys.exit()
+ts = [v.get("at", 0) for v in d.values() if isinstance(v, dict) and v.get("at")]
+print(f"{(time.time() - max(ts)) / 3600:.1f}" if ts else "")
+PYEOF
+)
+    if [ -n "$AGE_H" ]; then
+        # 用整数比较小时数, 避免依赖 bc(launchd 的 PATH 里没有)
+        AGE_H_INT="${AGE_H%%.*}"
+        LIMIT_H=$(( MIN_DAYS * 24 ))
+        if [ "${AGE_H_INT:-0}" -lt "$LIMIT_H" ]; then
+            echo "国内实测数据 ${AGE_H}h 前更新, 未满 ${MIN_DAYS} 天(${LIMIT_H}h), 本轮跳过。"
+            echo "想强制重测: CN_REFRESH_FORCE=1 $REPO/cn_refresh.sh"
+            exit 0
+        fi
+        echo "国内实测数据已 ${AGE_H}h 未更新(阈值 ${LIMIT_H}h), 开始普查。"
+    else
+        echo "读不出 data/cn_pref.json 的新鲜度, 保守起见照常普查。"
+    fi
+else
+    echo "CN_REFRESH_FORCE=1, 忽略新鲜度闸门。"
+fi
+
 # 上一次可能死在 rebase 中间(云端同时在推 pool_history, 撞上就冲突)。
 # 残留状态会让之后每次 git pull/push 全部失败, 而且每小时都撞同一堵墙 ——
 # 2026-11-12 就发生过一次: 普查数据提交留在本地, 后面所有推送都被挡住。
