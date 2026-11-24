@@ -17925,6 +17925,19 @@
  },
  {
   "proto": "ss",
+  "server": "121.54.188.7",
+  "port": 26934,
+  "cipher": "aes-256-gcm",
+  "password": "vyrzxzt9yix5jocj",
+  "name": "Hong Kong 02 ss汐云",
+  "source": "tg:@wxdy666",
+  "fp": "c0d8228d5aa39c3e",
+  "sources": [
+   "tg:@wxdy666"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "125.141.26.12",
   "port": 52713,
   "name": "韩国 - Geumcheon-gu - Korea Telecom - 13",
@@ -18077,7 +18090,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "afac24476546a0d1",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -65040,7 +65054,8 @@
   "fp": "9f0fe0c672d5f410",
   "sources": [
    "tg:@oneclickvpnkeys",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -68350,7 +68365,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "c836142f6ba835d1",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -73547,6 +73563,28 @@
  },
  {
   "proto": "vless",
+  "server": "homestead-walloping.sports-streams.org",
+  "port": 443,
+  "uuid": "6ae5e517-c618-4ff6-9d71-8b717507221a",
+  "tls": true,
+  "sni": "lockheart.info",
+  "network": "xhttp",
+  "path": "/",
+  "host": "lockheart.info",
+  "flow": "",
+  "pbk": "iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM",
+  "sid": "",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-211",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "66dde1fc91e716c5",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "ide.vipvirtualnet.eu",
   "port": 9990,
   "name": "🇦🇪AE阿联酋丨yoyapai.com",
@@ -74846,6 +74884,28 @@
   "fp": "2cf624bb7ffb3c36",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "sca33.myfymain.com",
+  "port": 8880,
+  "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+  "tls": false,
+  "sni": "",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-237",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "4779e498bec9ff9f",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -87763,7 +87823,8 @@
   "fp": "6ab060d07d3f1a00",
   "sources": [
    "tg:@byxiaoxi→blog",
-   "anaer/Sub"
+   "anaer/Sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
