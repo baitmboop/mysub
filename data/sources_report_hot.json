@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24T18:29:15+08:00",
+ "generated_at": "2026-11-24T20:27:26+08:00",
  "mode": "only-hot",
- "total_nodes": 6322,
- "base_nodes": 6310,
- "new_nodes": 12,
+ "total_nodes": 6340,
+ "base_nodes": 6322,
+ "new_nodes": 18,
  "by_source": {
   "go4sharing/arch": 3953,
   "tg:@byxiaoxi→blog": 505,
@@ -12,23 +12,23 @@
   "NoMoreWalls": 357,
   "clashnode": 200,
   "mahdibland": 122,
-  "tg:@oneclickvpnkeys": 78,
+  "tg:@oneclickvpnkeys": 88,
   "tg:@freeVPNjd→sub": 68,
   "ermaozi": 56,
   "xinshoucun": 34,
-  "tg:@vpnfail_v2ray": 26,
+  "tg:@vpnfail_v2ray": 33,
   "oneclash": 20,
   "freefq": 14,
   "tg:@wxdy666→sub": 11,
   "go4sharing/sub": 5,
-  "tg:@wxdy666": 3
+  "tg:@wxdy666": 4
  },
  "raw_hits": {
-  "tg:@oneclickvpnkeys": 30,
-  "tg:@vpnfail_v2ray": 20,
+  "tg:@oneclickvpnkeys": 45,
+  "tg:@vpnfail_v2ray": 19,
   "tg:@wxdy666→sub": 10,
   "tg:@freeVPNjd→sub": 2,
-  "tg:@wxdy666": 1,
+  "tg:@wxdy666": 2,
   "tg:@freeVPNjd": 0,
   "tg:@ripaojiedian": 0
  },
