@@ -18096,6 +18096,20 @@
  },
  {
   "proto": "ss",
+  "server": "127.0.0.1",
+  "port": 1,
+  "cipher": "aes-128-gcm",
+  "password": "subscription-unavailable",
+  "name": "请前往官网重新获取订阅",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "c570d0623f333b47",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "128.1.186.132",
   "port": 8080,
   "name": "新加坡 - 新加坡 - 2",
@@ -28633,6 +28647,19 @@
   "fp": "75455fddb7c4d708",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "4.168.233.69",
+  "port": 443,
+  "cipher": "chacha20-ietf-poly1305",
+  "password": "cdrSQWa9CwUAVdt3",
+  "name": "canfingV2rayNG-9",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "55de8cf5164f86a9",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -43510,6 +43537,23 @@
   "fp": "051de2a73adcc490",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "199.232.78.159",
+  "port": 443,
+  "password": "jcTG9WSWMJAmR4rv10xpww",
+  "sni": "cdn.akamai.steamstatic.com",
+  "network": "ws",
+  "path": "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER",
+  "host": "copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.",
+  "skipCertVerify": false,
+  "name": "canfingV2rayNG-63",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c1fa89ae276f2b99",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -65558,6 +65602,50 @@
  },
  {
   "proto": "vless",
+  "server": "2a0e:97c0:3f0:1::598",
+  "port": 24685,
+  "uuid": "dee5babb-860f-4442-9747-7c3ec7e2c0b6",
+  "tls": true,
+  "sni": "apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "FrBq4UHHiaXWDFC2X0Mag16onOfX6lPBuaCSYVgHQ1Q",
+  "sid": "6a5291c5",
+  "utls": "chrome",
+  "reality": true,
+  "name": "香港 IPv6 @befriendsvpn",
+  "source": "tg:@wxdy666→sub",
+  "fp": "7c20824e44ddf615",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "2a14:7586:6109:1::a125",
+  "port": 25680,
+  "uuid": "dee5babb-860f-4442-9747-7c3ec7e2c0b6",
+  "tls": true,
+  "sni": "apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "hARhHGV09mnEUWA1a7pG6_K4lztUhKCK3iGeboGGP2g",
+  "sid": "7ce8c8e1",
+  "utls": "chrome",
+  "reality": true,
+  "name": "日本 IPv6 @befriendsvpn",
+  "source": "tg:@wxdy666→sub",
+  "fp": "c92c7546b3f263a7",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "3.112.21.102",
   "port": 443,
   "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
@@ -65639,6 +65727,28 @@
   "fp": "3eea4f4d5112ae70",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "31.15.18.198",
+  "port": 4380,
+  "uuid": "a3e33194-2443-41f0-a420-b700dddf96f6",
+  "tls": true,
+  "sni": "www.filimo.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "QqCnWBom6-2scHYTXSqTZuTZT2dNCF4sS6ACtpLELyg",
+  "sid": "00",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-282",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "428818873a6d5e3c",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -67613,6 +67723,50 @@
  },
  {
   "proto": "vless",
+  "server": "47.117.25.211",
+  "port": 25680,
+  "uuid": "dee5babb-860f-4442-9747-7c3ec7e2c0b6",
+  "tls": true,
+  "sni": "apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "hARhHGV09mnEUWA1a7pG6_K4lztUhKCK3iGeboGGP2g",
+  "sid": "7ce8c8e1",
+  "utls": "chrome",
+  "reality": true,
+  "name": "剩余流量：188.65 GB",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a78cff126074f782",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "47.117.25.211",
+  "port": 24685,
+  "uuid": "dee5babb-860f-4442-9747-7c3ec7e2c0b6",
+  "tls": true,
+  "sni": "apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "FrBq4UHHiaXWDFC2X0Mag16onOfX6lPBuaCSYVgHQ1Q",
+  "sid": "6a5291c5",
+  "utls": "chrome",
+  "reality": true,
+  "name": "香港 @befriendsvpn",
+  "source": "tg:@wxdy666→sub",
+  "fp": "f53e8bad4013f870",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "47.128.164.52",
   "port": 9999,
   "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
@@ -68543,7 +68697,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "55bbba1576c99bc5",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -70271,6 +70426,28 @@
   "sources": [
    "tg:@byxiaoxi→blog",
    "anaer/Sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "87.58.205.88",
+  "port": 443,
+  "uuid": "d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02",
+  "tls": true,
+  "sni": "google.com",
+  "network": "xhttp",
+  "path": "/",
+  "host": "",
+  "flow": "",
+  "pbk": "v_s3GW5_7jvB081tdUeyoDUUTq6fZwqKbVS7CdvLFA0",
+  "sid": "72cd47c079c0a3df",
+  "utls": "random",
+  "reality": true,
+  "name": "canfingV2rayNG-337",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "046c6eca27318827",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -72377,6 +72554,28 @@
   "fp": "b4196cdcfc1ddfbc",
   "sources": [
    "tg:@freeVPNjd→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "de-apix.locallynet.org",
+  "port": 4443,
+  "uuid": "68a67906-5b37-4779-a6cc-58a1655f18b4",
+  "tls": true,
+  "sni": "de-apix.locallynet.org",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-204",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "ec57efeb2be321b8",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -74502,6 +74701,28 @@
   "fp": "4e5371f335cbb178",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "pl.fantoff.online",
+  "port": 443,
+  "uuid": "b95dd8e5-2758-408f-be99-9362eecee609",
+  "tls": true,
+  "sni": "yahoo.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "BoWKSM1aSfcTRgKX_kZYPlauG0jLIqku3zPBAiHpUgs",
+  "sid": "5ea7e22e889dabc5",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-311",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "933050f314c9ccc9",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -86608,6 +86829,25 @@
    "mahdibland",
    "xinshoucun",
    "anaer/Sub"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "47.244.120.197",
+  "port": 36703,
+  "uuid": "45b83519-9c4f-4052-a11b-02e017b636d4",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/arki?ed=2048",
+  "host": "",
+  "name": "filembad-392",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "185f9b5d0d639100",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
