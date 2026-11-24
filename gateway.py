@@ -66,6 +66,24 @@ AUTO_INTERVAL = 120
 # url-test 的切换阈值(毫秒)。延迟差不到这个数就不换节点, 防止两个节点
 # 数值来回抖时客户端跟着反复切, 每次切换都要重建连接。
 AUTO_TOLERANCE = 100
+
+# 分流规则。此前订阅只有一条 "MATCH,节点选择" —— 所有流量一律走代理。
+# 2026-11-24 实测代价: 经 CF 节点(落地阿姆斯特丹)访问国内站点, 百度 2466ms、
+# 京东 4152ms、淘宝 2797ms, 而直连只要 54~217ms, 慢了 10~63 倍。对国内站点
+# 而言代理是纯粹的负担 —— 节点再好也绕不过"出境再入境"这一趟。
+# 现在: 局域网与国内 IP 直连, 只有剩下(被墙的)才走代理。
+DIRECT_RULES = [
+    "IP-CIDR,127.0.0.0/8,DIRECT,no-resolve",
+    "IP-CIDR,10.0.0.0/8,DIRECT,no-resolve",
+    "IP-CIDR,172.16.0.0/12,DIRECT,no-resolve",
+    "IP-CIDR,192.168.0.0/16,DIRECT,no-resolve",
+    "IP-CIDR,100.64.0.0/10,DIRECT,no-resolve",   # 运营商级 NAT
+    "IP-CIDR6,fc00::/7,DIRECT,no-resolve",
+    "IP-CIDR6,fe80::/10,DIRECT,no-resolve",
+    "GEOIP,CN,DIRECT",
+    "MATCH,节点选择",
+]
+
 KEEP_DAYS = 7          # 历史池保留天数
 MAX_POOL = 300         # 历史池上限, 防文件无限膨胀
 MIN_KEEP = 5           # 剔除"中国实测不通"后至少要剩这么多个, 否则全留
@@ -778,7 +796,7 @@ def build_config(pool: list, private: list, fallback: list,
         cfg = {
             "proxy-groups": [{"name": "节点选择", "type": "select",
                               "proxies": ["DIRECT"]}],
-            "rules": ["MATCH,节点选择"],
+            "rules": list(DIRECT_RULES),
         }
         return "# 池内暂无可用节点\n" + emit(cfg) + "\n"
 
@@ -834,13 +852,13 @@ def build_config(pool: list, private: list, fallback: list,
             "tcp-concurrent": True,
             "proxies": proxies,
             "proxy-groups": groups,
-            "rules": ["MATCH,节点选择"],
+            "rules": list(DIRECT_RULES),
         }
     else:
         cfg = {
             "proxies": proxies,
             "proxy-groups": groups,
-            "rules": ["MATCH,节点选择"],
+            "rules": list(DIRECT_RULES),
         }
     # 云端 runner 是 UTC，直接打本地时间会让人看糊涂（显示 20:05 而北京是次日 04:05）。
     # 统一按北京时间标注。
