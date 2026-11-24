@@ -51399,6 +51399,23 @@
  },
  {
   "proto": "trojan",
+  "server": "fastly2.dunnexa.ir",
+  "port": 443,
+  "password": "jcTG9WSWMJAmR4rv10xpww",
+  "sni": "cdn.akamai.steamstatic.com",
+  "network": "ws",
+  "path": "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER",
+  "host": "copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.",
+  "skipCertVerify": false,
+  "name": "canfingV2rayNG-66",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "3032f74c302d9617",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "fbxt0765gh0pielsss.ftisthebest.com",
   "port": 56251,
   "name": "美国 - 沙加緬度 - 4",
@@ -62674,6 +62691,28 @@
  },
  {
   "proto": "vless",
+  "server": "199.232.78.159",
+  "port": 443,
+  "uuid": "921b248d-f094-4a59-a794-cdbab080c26a",
+  "tls": true,
+  "sni": "community.fastly.steamstatic.com",
+  "network": "ws",
+  "path": "/",
+  "host": "canoijji.global.ssl.fastly.net.",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-256",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "f34ff5924de8390d",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "199.7.140.201",
   "port": 443,
   "uuid": "a52ac672-0f5f-4070-b8fd-6b5685fc8004",
@@ -66188,7 +66227,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "e6a97fd126552d4d",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -66320,7 +66360,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "d26ba5658d70d6af",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -68290,6 +68331,28 @@
   "fp": "29aaca6a1de3ea85",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "91.107.140.160",
+  "port": 443,
+  "uuid": "301f9f35-73c7-4ae0-bbe9-7dd86da19f50",
+  "tls": true,
+  "sni": "aws.amazon.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "Efid51phV7wQ6vF48DC97364AyVl7tQa22ILzIOLYgg",
+  "sid": "d04733f30a13",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-120",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "f8d131a899df08e5",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
