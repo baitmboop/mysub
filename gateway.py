@@ -799,9 +799,23 @@ def build_config(pool: list, private: list, fallback: list,
     #
     # 想回到"按顺序降级"的老行为, 在节点选择里改选「③ 免费池」即可 —— 它还是
     # fallback, 成员完全一样。
+    #
+    # 2026-11-24: 「自动选择」把 http 代理剔出去, 只留 vless/vmess/ss/socks5。
+    # 两个理由, 都是实测出来的:
+    #   1. 假健康。http 代理对 generate_204 响应极快(514ms), 真实 HTTPS 却
+    #      5 秒传不出一个字节 —— url-test 每次都优先挑中它们, 挑完就不能用。
+    #   2. 测速互相挤。成员越多, 客户端每次 refresh 并发发起的测速越多(实测
+    #      42 个同时测时, 单个节点的延迟会从 250ms 涨到 1.5~3s, 偶尔直接超过
+    #      5 秒超时被判死)。http 代理占了池子的 2/3, 是并发的大头。
+    # http 节点仍然留在「节点选择」和「③ 免费池」里, 想手动用随时能选。
+    auto_names = [p["name"] for p in proxies
+                  if str(p.get("type", "")).lower() not in ("http", "https")]
+    if not auto_names:
+        auto_names = flat
     groups.insert(0, {
         "name": "自动选择", "type": "url-test", "url": TEST_URL,
-        "interval": AUTO_INTERVAL, "tolerance": AUTO_TOLERANCE, "proxies": flat,
+        "interval": AUTO_INTERVAL, "tolerance": AUTO_TOLERANCE,
+        "proxies": auto_names,
     })
     # 顶层必须是 select。Clash Verge 的"当前节点"卡片只认 select 组里选中的东西,
     # 出口本身若是 fallback(尤其是指向另一个组的 fallback), 它解析不出具体节点,
