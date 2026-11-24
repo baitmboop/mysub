@@ -1,15 +1,15 @@
 # 节点池日报
 
-- 生成时间: 2026-11-24 07:59:07 (UTC)
-- 国内实测: **3682** 条有效 / 共 6867 条, 最新 2026-11-23 10:09 UTC (0.9 天前)
-- 采集去重: **6442** 个
-- 云端延迟存活: **720** 个 (本轮送多站点复检的)
-- 免筛放行: **579** 个 (http/socks5 + 国内实测已知, 不送云端复检)
-- 复检通过: **116** 个 (送检 720)
-- 进候选: **619** 个 (116 复检 + 579 免筛)
+- 生成时间: 2026-11-24 09:03:41 (UTC)
+- 国内实测: **3682** 条有效 / 共 6867 条, 最新 2026-11-23 10:09 UTC (1.0 天前)
+- 采集去重: **6441** 个
+- 云端延迟存活: **631** 个 (本轮送多站点复检的)
+- 免筛放行: **650** 个 (http/socks5 + 国内实测已知, 不送云端复检)
+- 复检通过: **117** 个 (送检 631)
+- 进候选: **690** 个 (117 复检 + 650 免筛)
 - 历史池: **300** 个 (含 7 天内可用过的)
-- 最终订阅: **44** 个节点
-- 订阅内可用率: **77.3%** (能传数据 34 / 未测后备 10 / 共 44)
+- 最终订阅: **45** 个节点
+- 订阅内可用率: **77.8%** (能传数据 35 / 未测后备 10 / 共 45)
 
 | # | 协议 | 服务器 | 延迟 | 中国实测 | 速度 | 来源 |
 |---|------|--------|------|----------|------|------|
@@ -28,7 +28,7 @@
 | 13 | http | 45.155.226.177:3128 | -ms | ✓ 能传数据 | 585 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 14 | http | 114.249.231.103:8888 | -ms | ✓ 能传数据 | 552 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 15 | http | 222.128.169.173:8888 | -ms | ✓ 能传数据 | 535 KB/s | extra:raw.githubusercontent.com/http.txt |
-| 16 | http | 20.98.234.24:8080 | 34ms | ✓ 能传数据 | 532 KB/s | extra:raw.githubusercontent.com/http.txt |
+| 16 | http | 20.98.234.24:8080 | 43ms | ✓ 能传数据 | 532 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 17 | http | 114.246.207.138:8888 | -ms | ✓ 能传数据 | 515 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 18 | http | 114.249.221.91:8888 | -ms | ✓ 能传数据 | 492 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 19 | http | 114.246.192.104:8888 | -ms | ✓ 能传数据 | 459 KB/s | extra:raw.githubusercontent.com/http.txt |
@@ -44,18 +44,19 @@
 | 29 | vless | 13.141.51.2:443 | 2597ms | ✓ 能传数据 | 209 KB/s | clashnode |
 | 30 | http | 111.192.19.3:8888 | -ms | ✓ 能传数据 | 187 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 31 | http | 114.246.201.27:8888 | -ms | ✓ 能传数据 | 186 KB/s | extra:raw.githubusercontent.com/http.txt |
-| 32 | http | 154.26.192.123:10988 | 47ms | ✓ 能传数据 | 150 KB/s | go4sharing/arch |
-| 33 | http | twmoon1-cdn-route.couldflare-cdn.com:1443 | -ms | ✓ 能传数据 | 93 KB/s | go4sharing/arch |
-| 34 | http | 147.161.246.34:12327 | -ms | ✓ 能传数据 | 59 KB/s | extra:raw.githubusercontent.com/http.txt |
-| 35 | ss | 134.195.198.163:443 | 25ms | 未测 | - | tg:@byxiaoxi→blog |
+| 32 | http | 154.26.192.123:10988 | 44ms | ✓ 能传数据 | 150 KB/s | go4sharing/arch |
+| 33 | vless | free.fugui.lol:51283 | 4496ms | ✓ 能传数据 | 107 KB/s | clashnode |
+| 34 | http | twmoon1-cdn-route.couldflare-cdn.com:1443 | -ms | ✓ 能传数据 | 93 KB/s | go4sharing/arch |
+| 35 | http | 147.161.246.34:12327 | -ms | ✓ 能传数据 | 59 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 36 | ss | 51.222.12.127:445 | 26ms | 未测 | - | NoMoreWalls |
-| 37 | ss | 158.51.121.221:19999 | 27ms | 未测 | - | tg:@byxiaoxi→blog |
-| 38 | ss | 136.148.77.250:8388 | 28ms | 未测 | - | tg:@byxiaoxi→blog |
-| 39 | http | 172.64.69.89:443 | 29ms | 未测 | - | NoMoreWalls |
-| 40 | http | 12.221.146.147:443 | 37ms | 未测 | - | ermaozi |
-| 41 | ss | 51.222.136.236:8882 | 32ms | 未测 | - | NoMoreWalls |
-| 42 | ss | 38.128.66.32:19999 | 38ms | 未测 | - | mahdibland |
-| 43 | ss | 45.86.51.18:19999 | 33ms | 未测 | - | mahdibland |
-| 44 | ss | 67.220.73.247:443 | 39ms | 未测 | - | tg:@byxiaoxi→blog |
+| 37 | ss | 136.148.77.250:8388 | 28ms | 未测 | - | tg:@byxiaoxi→blog |
+| 38 | http | 172.64.69.89:443 | 29ms | 未测 | - | NoMoreWalls |
+| 39 | http | 12.221.146.147:443 | 37ms | 未测 | - | ermaozi |
+| 40 | ss | 38.128.66.32:19999 | 38ms | 未测 | - | mahdibland |
+| 41 | ss | 67.220.73.247:443 | 39ms | 未测 | - | tg:@byxiaoxi→blog |
+| 42 | ss | 138.199.42.68:8080 | 49ms | 未测 | - | go4sharing/arch |
+| 43 | ss | 216.106.178.169:19999 | 49ms | 未测 | - | mahdibland |
+| 44 | socks5 | 104.168.249.36:1080 | 50ms | 未测 | - | NoMoreWalls |
+| 45 | ss | 15.204.233.41:8882 | 39ms | 未测 | - | tg:@byxiaoxi→blog |
 
 > 排序依据是中国网络实测下载速度; 手机端的 url-test 会在当场再择优一次。

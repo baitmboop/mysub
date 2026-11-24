@@ -1,5 +1,5 @@
-# nodepool  生成于 2026-11-24 15:59:07 (北京时间)
-# 节点数 44  (自建 0 / 免费额度 0 / 免费池 44)
+# nodepool  生成于 2026-11-24 17:03:41 (北京时间)
+# 节点数 45  (自建 0 / 免费额度 0 / 免费池 45)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
 proxies:
@@ -220,7 +220,21 @@ proxies:
     udp: false
     username: fQ67Dpe5dU
     password: gs4BXwT6SW
-  - name: N33 twmoon1-cdn-route.couldflare-cdn.com
+  - name: N33 free.fugui.lol
+    type: vless
+    server: free.fugui.lol
+    port: 51283
+    uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
+    udp: true
+    skipCertVerify: true
+    flow: xtls-rprx-vision
+    tls: true
+    servername: swdist.apple.com
+    reality-opts:
+      public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
+      short-id: fa514b83
+    client-fingerprint: chrome
+  - name: N34 twmoon1-cdn-route.couldflare-cdn.com
     type: http
     server: twmoon1-cdn-route.couldflare-cdn.com
     port: 1443
@@ -229,18 +243,11 @@ proxies:
     password: mrwdfNTD8M79LCukCieldrqZWqs=
     tls: true
     skip-cert-verify: true
-  - name: N34 147.161.246.34
+  - name: N35 147.161.246.34
     type: http
     server: 147.161.246.34
     port: 12327
     udp: false
-  - name: N35 134.195.198.163
-    type: ss
-    server: 134.195.198.163
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: PmCqK98WqhSC
-    udp: true
   - name: N36 51.222.12.127
     type: ss
     server: 51.222.12.127
@@ -248,61 +255,68 @@ proxies:
     cipher: aes-256-gcm
     password: zDNVedRFPQexG9v
     udp: true
-  - name: N37 158.51.121.221
-    type: ss
-    server: 158.51.121.221
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N38 136.148.77.250
+  - name: N37 136.148.77.250
     type: ss
     server: 136.148.77.250
     port: 8388
     cipher: aes-256-gcm
     password: "itzvpn@321"
     udp: true
-  - name: N39 172.64.69.89
+  - name: N38 172.64.69.89
     type: http
     server: 172.64.69.89
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N40 12.221.146.147
+  - name: N39 12.221.146.147
     type: http
     server: 12.221.146.147
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N41 51.222.136.236
-    type: ss
-    server: 51.222.136.236
-    port: 8882
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-    udp: true
-  - name: N42 38.128.66.32
+  - name: N40 38.128.66.32
     type: ss
     server: 38.128.66.32
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N43 45.86.51.18
-    type: ss
-    server: 45.86.51.18
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N44 67.220.73.247
+  - name: N41 67.220.73.247
     type: ss
     server: 67.220.73.247
     port: 443
     cipher: chacha20-ietf-poly1305
     password: DGjtV63aPW3E
+    udp: true
+  - name: N42 138.199.42.68
+    type: ss
+    server: 138.199.42.68
+    port: 8080
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
+    udp: true
+  - name: N43 216.106.178.169
+    type: ss
+    server: 216.106.178.169
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N44 104.168.249.36
+    type: socks5
+    server: 104.168.249.36
+    port: 1080
+    udp: false
+    username: test123
+    password: test123
+  - name: N45 15.204.233.41
+    type: ss
+    server: 15.204.233.41
+    port: 8882
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
     udp: true
 proxy-groups:
   - name: 节点选择
@@ -342,18 +356,19 @@ proxy-groups:
       - N30 111.192.19.3
       - N31 114.246.201.27
       - N32 154.26.192.123
-      - N33 twmoon1-cdn-route.couldflare-cdn.com
-      - N34 147.161.246.34
-      - N35 134.195.198.163
+      - N33 free.fugui.lol
+      - N34 twmoon1-cdn-route.couldflare-cdn.com
+      - N35 147.161.246.34
       - N36 51.222.12.127
-      - N37 158.51.121.221
-      - N38 136.148.77.250
-      - N39 172.64.69.89
-      - N40 12.221.146.147
-      - N41 51.222.136.236
-      - N42 38.128.66.32
-      - N43 45.86.51.18
-      - N44 67.220.73.247
+      - N37 136.148.77.250
+      - N38 172.64.69.89
+      - N39 12.221.146.147
+      - N40 38.128.66.32
+      - N41 67.220.73.247
+      - N42 138.199.42.68
+      - N43 216.106.178.169
+      - N44 104.168.249.36
+      - N45 15.204.233.41
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -367,14 +382,15 @@ proxy-groups:
       - N22 77.67.18.110
       - N27 172.67.190.164
       - N29 13.141.51.2
-      - N35 134.195.198.163
+      - N33 free.fugui.lol
       - N36 51.222.12.127
-      - N37 158.51.121.221
-      - N38 136.148.77.250
-      - N41 51.222.136.236
-      - N42 38.128.66.32
-      - N43 45.86.51.18
-      - N44 67.220.73.247
+      - N37 136.148.77.250
+      - N40 38.128.66.32
+      - N41 67.220.73.247
+      - N42 138.199.42.68
+      - N43 216.106.178.169
+      - N44 104.168.249.36
+      - N45 15.204.233.41
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -412,18 +428,19 @@ proxy-groups:
       - N30 111.192.19.3
       - N31 114.246.201.27
       - N32 154.26.192.123
-      - N33 twmoon1-cdn-route.couldflare-cdn.com
-      - N34 147.161.246.34
-      - N35 134.195.198.163
+      - N33 free.fugui.lol
+      - N34 twmoon1-cdn-route.couldflare-cdn.com
+      - N35 147.161.246.34
       - N36 51.222.12.127
-      - N37 158.51.121.221
-      - N38 136.148.77.250
-      - N39 172.64.69.89
-      - N40 12.221.146.147
-      - N41 51.222.136.236
-      - N42 38.128.66.32
-      - N43 45.86.51.18
-      - N44 67.220.73.247
+      - N37 136.148.77.250
+      - N38 172.64.69.89
+      - N39 12.221.146.147
+      - N40 38.128.66.32
+      - N41 67.220.73.247
+      - N42 138.199.42.68
+      - N43 216.106.178.169
+      - N44 104.168.249.36
+      - N45 15.204.233.41
 rules:
   - "IP-CIDR,127.0.0.0/8,DIRECT,no-resolve"
   - "IP-CIDR,10.0.0.0/8,DIRECT,no-resolve"
