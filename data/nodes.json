@@ -18132,6 +18132,20 @@
  },
  {
   "proto": "ss",
+  "server": "127.0.0.1",
+  "port": 7800,
+  "cipher": "aes-128-gcm",
+  "password": "30ceceae-04b4-4ee5-8347-66a1b9a97fb2",
+  "name": "已超过套餐标注的设备数量限额。",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "b8bb3c2cfb5df6f6",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "128.1.186.132",
   "port": 8080,
   "name": "新加坡 - 新加坡 - 2",
@@ -32508,7 +32522,8 @@
   "sources": [
    "mahdibland",
    "go4sharing/arch",
-   "xinshoucun"
+   "xinshoucun",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -34475,6 +34490,19 @@
   "fp": "ed9f7f64a3683bd6",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "kyiv02.npvnot.com",
+  "port": 443,
+  "cipher": "aes-256-gcm",
+  "password": "MzRlYzA0ZGY0Njc2ZjQ2YTRiMTg2YTkzNjM4OGI1",
+  "name": "canfingV2rayNG-44",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "7414318f25afbc47",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -64932,6 +64960,28 @@
  },
  {
   "proto": "vless",
+  "server": "43.110.39.161",
+  "port": 443,
+  "uuid": "da39704f-79b2-460e-b77f-8d12397b3112",
+  "tls": true,
+  "sni": "www.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "OsXk2qNUNsQsjMHAx6z6GdVflb0gD5AI8izM5W_J_00",
+  "sid": "db9af76e455811d0",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-347",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "525b0780d9a5e803",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "43.134.187.97",
   "port": 8443,
   "uuid": "b69cf773-da16-486e-afce-a45b94f998b3",
@@ -65915,6 +65965,28 @@
  },
  {
   "proto": "vless",
+  "server": "47.253.226.114",
+  "port": 443,
+  "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+  "flow": "xtls-rprx-vision",
+  "pbk": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+  "sid": "",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-73",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c0f1022df6591f15",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "47.75.101.0",
   "port": 3443,
   "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
@@ -66091,6 +66163,28 @@
    "ermaozi",
    "tg:@oneclickvpnkeys",
    "anaer/Sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "48.102.204.67",
+  "port": 8443,
+  "uuid": "1d1eda2e-0bd7-4478-877b-1c5425c6c4dd",
+  "tls": true,
+  "sni": "tradingview.com",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP",
+  "flow": "xtls-rprx-vision",
+  "pbk": "yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38",
+  "sid": "8f3c6e2a1b5d4f09",
+  "utls": "edge",
+  "reality": true,
+  "name": "filembad-98",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "d301abfad3e793b6",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -66340,6 +66434,28 @@
   "name": "canfingV2rayNG-316",
   "source": "tg:@vpnfail_v2ray",
   "fp": "e02e8223e8c5ba91",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "5.75.207.247",
+  "port": 4227,
+  "uuid": "a1d262a9-6d57-4ff0-99e4-594782c2ca7c",
+  "tls": true,
+  "sni": "aws.amazon.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "L5dWvFThmaEvNqnz8xbBkyT10TWINOZbn-BAdKtXNzk",
+  "sid": "0c26b2e657586df6",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-278",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "2f9b1833a978127f",
   "sources": [
    "tg:@vpnfail_v2ray"
   ]
@@ -66717,7 +66833,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "802eb8e7685bb917",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -72153,6 +72270,28 @@
  },
  {
   "proto": "vless",
+  "server": "refiqq.dextter.ir",
+  "port": 2095,
+  "uuid": "e835fdc7-c453-4e4e-9d9d-b3c5adb90082",
+  "tls": false,
+  "sni": "",
+  "network": "httpupgrade",
+  "path": "/",
+  "host": "areeedaee.dextter.ir",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-359",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "e01e1b2c5912c31d",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "render.com",
   "port": 2083,
   "uuid": "97be5ac0-dae3-43c1-aae8-3fcb7b130c59",
@@ -72885,6 +73024,28 @@
   "fp": "549cabe3aaafb082",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "vajm5bz324c3.vtret.com",
+  "port": 8379,
+  "uuid": "a2292e36-fafb-6634-051d-1d99f45503c7",
+  "tls": true,
+  "sni": "play.google.com",
+  "network": "xhttp",
+  "path": "/phpMyAdmin?q=一位處女在孫先生的農場工作。",
+  "host": "google.com",
+  "flow": "",
+  "pbk": "qIRHacDVKAuyQJrOJMSpwYyKhw-5KwvOX0W3d-TiB3w",
+  "sid": "07529200e1fe",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-281",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "5eb183dd6b3aa926",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -98408,6 +98569,25 @@
   "fp": "b152f996aa12331b",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "x4.topspeedarash.com",
+  "port": 42188,
+  "uuid": "83d6fcc7-bb82-49ce-a955-38757bab22e6",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "filembad-418",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "641bb389a8dd86b4",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
