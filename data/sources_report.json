@@ -1,48 +1,48 @@
 {
- "generated_at": "2026-11-24T04:44:42+08:00",
+ "generated_at": "2026-11-24T09:45:50+08:00",
  "mode": "full",
- "total_nodes": 6222,
+ "total_nodes": 6130,
  "base_nodes": 0,
- "new_nodes": 6222,
+ "new_nodes": 6130,
  "by_source": {
-  "go4sharing/arch": 3969,
-  "tg:@byxiaoxi→blog": 504,
+  "go4sharing/arch": 3953,
+  "tg:@byxiaoxi→blog": 515,
   "Auto_proxy": 470,
-  "extra:raw.githubusercontent.com/http.txt": 400,
-  "NoMoreWalls": 314,
-  "clashnode": 181,
-  "mahdibland": 123,
+  "extra:raw.githubusercontent.com/http.txt": 399,
+  "NoMoreWalls": 357,
+  "mahdibland": 122,
   "tg:@oneclickvpnkeys": 71,
-  "tg:@freeVPNjd→sub": 54,
-  "tg:@wxdy666→sub": 39,
-  "xinshoucun": 22,
+  "tg:@freeVPNjd→sub": 68,
+  "ermaozi": 56,
+  "xinshoucun": 33,
+  "tg:@wxdy666→sub": 27,
   "oneclash": 20,
-  "ermaozi": 17,
-  "tg:@vpnfail_v2ray": 16,
+  "tg:@vpnfail_v2ray": 17,
   "freefq": 14,
-  "go4sharing/sub": 6,
-  "tg:@wxdy666": 2
+  "go4sharing/sub": 5,
+  "tg:@wxdy666": 2,
+  "clashnode": 1
  },
  "raw_hits": {
   "go4sharing/arch": 9524,
   "anaer/Sub": 2143,
   "tg:@byxiaoxi→blog": 1729,
-  "clashnode": 930,
   "Auto_proxy": 560,
-  "ermaozi": 406,
+  "ermaozi": 446,
   "extra:raw.githubusercontent.com/http.txt": 400,
   "xinshoucun": 393,
-  "NoMoreWalls": 323,
+  "NoMoreWalls": 367,
   "mahdibland": 200,
+  "tg:@freeVPNjd→sub": 103,
   "tg:@oneclickvpnkeys": 89,
-  "tg:@freeVPNjd→sub": 84,
   "tg:@wxdy666→sub": 83,
   "oneclash": 42,
+  "clashnode": 23,
   "ripaojiedian": 21,
   "go4sharing/sub": 21,
-  "tg:@vpnfail_v2ray": 18,
+  "tg:@vpnfail_v2ray": 20,
+  "Pawdroid/Free-servers": 16,
   "freefq": 15,
-  "Pawdroid/Free-servers": 12,
   "tg:@wxdy666": 2,
   "tg:@ssrsub": 0,
   "tg:@ripaojiedian": 0,
@@ -69,8 +69,8 @@
   },
   "Pawdroid/Free-servers": {
    "ok": true,
-   "raw": 12,
-   "new": 0
+   "raw": 16,
+   "new": 6
   },
   "Barabama/FreeNodes": {
    "ok": false,
@@ -80,7 +80,7 @@
   "anaer/Sub": {
    "ok": true,
    "raw": 2143,
-   "new": 1951
+   "new": 1926
   }
  }
 }
