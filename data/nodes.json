@@ -61121,6 +61121,28 @@
  },
  {
   "proto": "vless",
+  "server": "168.119.103.176",
+  "port": 8585,
+  "uuid": "459a27d0-8782-48b8-8048-564afcd03196",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "www.dell.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-155",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c8ed4029af858cb4",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "169.40.42.163",
   "port": 443,
   "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
@@ -69222,7 +69244,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "1ef2c8ea615c72bf",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -70950,7 +70973,8 @@
   "fp": "0b1a7055c986cf06",
   "sources": [
    "NoMoreWalls",
-   "ermaozi"
+   "ermaozi",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -72886,6 +72910,28 @@
   "fp": "027dd370c5b2ce72",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "ch.zoroem.opik.net",
+  "port": 80,
+  "uuid": "98a0fab4-3be2-48ae-a99e-3d812315e11b",
+  "tls": true,
+  "sni": "Www.yahoo.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "ch8e7oMj3tLwZRnLDW2qWsXqxxbOcL95z6FItmfSS0s",
+  "sid": "9c4c37f240",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-298",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "d5c4addc6f654ce7",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -76070,6 +76116,50 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "static.99.177.233.167.clients.your-server.de",
+  "port": 443,
+  "uuid": "89d096e6-6d55-4dff-bed7-0d8064665ee6",
+  "tls": true,
+  "sni": "static.132.5.245.188.clients.your-server.de",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "canfingV2rayNG-267",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "d4696c28a876a609",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "static.lotussec.com",
+  "port": 443,
+  "uuid": "14b48651-3738-4926-bc09-4c04e87ff80b",
+  "tls": true,
+  "sni": "static.lotussec.com",
+  "network": "xhttp",
+  "path": "/Join-JavidnamanIran-on-Telegram",
+  "host": "static.lotussec.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "firefox",
+  "reality": false,
+  "name": "canfingV2rayNG-104",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "8b3187282f40aed1",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
