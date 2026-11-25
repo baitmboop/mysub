@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-26 01:49:53 (北京时间)
+# nodepool  生成于 2026-11-26 04:57:48 (北京时间)
 # 节点数 47  (自建 0 / 免费额度 0 / 免费池 47)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -190,9 +190,6 @@ proxies:
     alterId: 0
     cipher: auto
     udp: true
-    tls: true
-    servername: 172.67.190.164
-    skipCertVerify: true
     ws-opts:
       path: /hls/cctv5phd.m3u8
       headers:
@@ -275,61 +272,61 @@ proxies:
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N40 156.146.38.168
+  - name: N40 51.222.136.236
+    type: ss
+    server: 51.222.136.236
+    port: 8882
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
+    udp: true
+  - name: N41 156.146.38.168
     type: ss
     server: 156.146.38.168
     port: 443
     cipher: aes-128-gcm
     password: shadowsocks
     udp: true
-  - name: N41 67.220.73.178
+  - name: N42 67.220.73.178
     type: ss
     server: 67.220.73.178
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N42 216.106.178.169
+  - name: N43 149.22.95.183
+    type: ss
+    server: 149.22.95.183
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: N44 216.106.178.169
     type: ss
     server: 216.106.178.169
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N43 138.199.42.68
+  - name: N45 138.199.42.68
     type: ss
     server: 138.199.42.68
     port: 8080
     cipher: rc4-md5
     password: 14fFPrbezE3HDZzsMOr6
     udp: true
-  - name: N44 38.128.66.32
-    type: ss
-    server: 38.128.66.32
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N45 67.220.73.247
+  - name: N46 67.220.73.247
     type: ss
     server: 67.220.73.247
     port: 443
     cipher: chacha20-ietf-poly1305
     password: DGjtV63aPW3E
     udp: true
-  - name: N46 136.148.77.250
+  - name: N47 38.128.66.32
     type: ss
-    server: 136.148.77.250
-    port: 8388
+    server: 38.128.66.32
+    port: 19999
     cipher: aes-256-gcm
-    password: "itzvpn@321"
-    udp: true
-  - name: N47 149.22.95.183
-    type: ss
-    server: 149.22.95.183
-    port: 443
-    cipher: aes-128-gcm
-    password: shadowsocks
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
 proxy-groups:
   - name: 节点选择
@@ -376,14 +373,14 @@ proxy-groups:
       - N37 147.161.246.34
       - N38 172.64.69.89
       - N39 12.221.146.147
-      - N40 156.146.38.168
-      - N41 67.220.73.178
-      - N42 216.106.178.169
-      - N43 138.199.42.68
-      - N44 38.128.66.32
-      - N45 67.220.73.247
-      - N46 136.148.77.250
-      - N47 149.22.95.183
+      - N40 51.222.136.236
+      - N41 156.146.38.168
+      - N42 67.220.73.178
+      - N43 149.22.95.183
+      - N44 216.106.178.169
+      - N45 138.199.42.68
+      - N46 67.220.73.247
+      - N47 38.128.66.32
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -398,14 +395,14 @@ proxy-groups:
       - N29 172.67.190.164
       - N31 13.141.51.2
       - N35 free.fugui.lol
-      - N40 156.146.38.168
-      - N41 67.220.73.178
-      - N42 216.106.178.169
-      - N43 138.199.42.68
-      - N44 38.128.66.32
-      - N45 67.220.73.247
-      - N46 136.148.77.250
-      - N47 149.22.95.183
+      - N40 51.222.136.236
+      - N41 156.146.38.168
+      - N42 67.220.73.178
+      - N43 149.22.95.183
+      - N44 216.106.178.169
+      - N45 138.199.42.68
+      - N46 67.220.73.247
+      - N47 38.128.66.32
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -450,14 +447,14 @@ proxy-groups:
       - N37 147.161.246.34
       - N38 172.64.69.89
       - N39 12.221.146.147
-      - N40 156.146.38.168
-      - N41 67.220.73.178
-      - N42 216.106.178.169
-      - N43 138.199.42.68
-      - N44 38.128.66.32
-      - N45 67.220.73.247
-      - N46 136.148.77.250
-      - N47 149.22.95.183
+      - N40 51.222.136.236
+      - N41 156.146.38.168
+      - N42 67.220.73.178
+      - N43 149.22.95.183
+      - N44 216.106.178.169
+      - N45 138.199.42.68
+      - N46 67.220.73.247
+      - N47 38.128.66.32
 rules:
   - "IP-CIDR,127.0.0.0/8,DIRECT,no-resolve"
   - "IP-CIDR,10.0.0.0/8,DIRECT,no-resolve"
