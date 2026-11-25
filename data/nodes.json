@@ -173,6 +173,22 @@
  },
  {
   "proto": "http",
+  "server": "102.244.78.61",
+  "port": 8086,
+  "name": "喀麦隆-02【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "",
+  "password": "",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "a63d7921269b1c63",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "http",
   "server": "102.69.196.5",
   "port": 8080,
   "tls": false,
@@ -1297,6 +1313,22 @@
  },
  {
   "proto": "http",
+  "server": "109.116.41.154",
+  "port": 443,
+  "name": "意大利-01【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "cf831b7bd3077398",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "http",
   "server": "109.127.199.122",
   "port": 9999,
   "tls": false,
@@ -1689,6 +1721,22 @@
   "fp": "4c19b0d432e04e1f",
   "sources": [
    "extra:raw.githubusercontent.com/http.txt"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "120.232.204.58",
+  "port": 40583,
+  "name": "中国-广州-03【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "120.232.204.58",
+  "skipCertVerify": true,
+  "fp": "d2f46500c225b2af",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -6894,7 +6942,8 @@
   "source": "NoMoreWalls",
   "fp": "0f75aa01d57632f3",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -6910,7 +6959,8 @@
   "skipCertVerify": true,
   "fp": "3e69f80e796ed08c",
   "sources": [
-   "go4sharing/arch"
+   "go4sharing/arch",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -8847,6 +8897,22 @@
  },
  {
   "proto": "http",
+  "server": "93.42.177.250",
+  "port": 443,
+  "name": "意大利-米兰-21【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "b6c62977cb414290",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "http",
   "server": "95.0.15.137",
   "port": 8080,
   "tls": false,
@@ -8855,6 +8921,22 @@
   "fp": "b87297ef2caedb19",
   "sources": [
    "extra:raw.githubusercontent.com/http.txt"
+  ]
+ },
+ {
+  "proto": "http",
+  "server": "95.153.32.2",
+  "port": 443,
+  "name": "爱沙尼亚-04【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "",
+  "password": "",
+  "tls": true,
+  "sni": "",
+  "skipCertVerify": true,
+  "fp": "04172feb332cdb4d",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -11787,6 +11869,22 @@
  },
  {
   "proto": "socks5",
+  "server": "109.66.135.179",
+  "port": 62000,
+  "name": "泰国-曼谷-07【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "BKE6uict",
+  "password": "iPCfwOuw",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "d25e1e60a712e313",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
   "server": "121.169.46.116",
   "port": 1090,
   "name": "韩国 - 烏山市 - Korea Telecom - 2",
@@ -11813,6 +11911,22 @@
   "fp": "4111d623be4f4879",
   "sources": [
    "NoMoreWalls"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "183.106.215.208",
+  "port": 1080,
+  "name": "韩国-07【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "",
+  "password": "",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "7dda0db3b5e64971",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -11909,6 +12023,70 @@
   "fp": "35b6ed4caaf5543f",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "198.87.102.119",
+  "port": 62000,
+  "name": "印度尼西亚-雅加达-04【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "u_fe50a6a",
+  "password": "4xcdrwgki6",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "d58fd23afc48288e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "198.87.102.86",
+  "port": 62000,
+  "name": "印度尼西亚-雅加达-06【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "Q7rN4d2S",
+  "password": "KzL82W3E",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "95e2a0482b17c4e8",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "202.155.99.119",
+  "port": 62000,
+  "name": "印度尼西亚-雅加达-05【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "gebHTLF6",
+  "password": "APJ7RmY9",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "9a10266a6cb48a42",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "202.155.99.222",
+  "port": 62000,
+  "name": "印度尼西亚-雅加达-07【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "gebHTLF6",
+  "password": "APJ7RmY9",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "50e5a7ca241700c2",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -12054,6 +12232,134 @@
  },
  {
   "proto": "socks5",
+  "server": "87.81.70.159",
+  "port": 42000,
+  "name": "泰国-曼谷-12【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "user2523",
+  "password": "Ksnervw2",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "3ebe0bd0d837a356",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "87.81.70.239",
+  "port": 42000,
+  "name": "泰国-曼谷-22【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "user2523",
+  "password": "Ksnervw2",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "1b86c5bcd9b1af66",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "87.81.70.250",
+  "port": 42000,
+  "name": "泰国-曼谷-13【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "user2523",
+  "password": "Ksnervw2",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "201c4c92f5ecba6b",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "87.81.70.254",
+  "port": 42000,
+  "name": "泰国-曼谷-14【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "user2523",
+  "password": "Ksnervw2",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "813f7ad3780cad40",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "87.81.71.89",
+  "port": 42000,
+  "name": "泰国-曼谷-19【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "user9353",
+  "password": "KsIJdV2U",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "ccd849af7a33d5db",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "87.83.236.186",
+  "port": 62000,
+  "name": "泰国-曼谷-20【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "ks8783236c597",
+  "password": "-D3s0GRfhYcd9Z4vaBy04ina",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "c6a79ffa508a8c83",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "87.83.236.228",
+  "port": 62000,
+  "name": "泰国-曼谷-15【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "ks8783236c597",
+  "password": "-D3s0GRfhYcd9Z4vaBy04ina",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "2ccd17e8b2f327fa",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "87.84.49.140",
+  "port": 62000,
+  "name": "泰国-曼谷-16【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "ks878449260d",
+  "password": "YlRoWvE0dL_cUqS94wPeKnA4",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "160126b546aaab6a",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
   "server": "87.84.49.206",
   "port": 62000,
   "tls": false,
@@ -12063,7 +12369,88 @@
   "password": "YlRoWvE0dL_cUqS94wPeKnA4",
   "fp": "775058928154f827",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "87.84.49.245",
+  "port": 62000,
+  "name": "泰国-曼谷-29【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "ks878449260d",
+  "password": "YlRoWvE0dL_cUqS94wPeKnA4",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "d77b3114165b02b8",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "94.194.164.147",
+  "port": 62000,
+  "name": "墨西哥-墨西哥城-11【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "rVkkraqT",
+  "password": "2j7CCZQb",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "398bed5b850b37c2",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "94.194.165.131",
+  "port": 62000,
+  "name": "墨西哥-墨西哥城-12【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "QyVdo5ks",
+  "password": "lcFa8dTH",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "d438fa8cfa83f63a",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "94.194.165.32",
+  "port": 62000,
+  "name": "墨西哥-墨西哥城-08【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "QyVdo5ks",
+  "password": "lcFa8dTH",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "ef2c7cfc65f9f854",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "socks5",
+  "server": "94.194.165.96",
+  "port": 62000,
+  "name": "墨西哥-墨西哥城-09【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "username": "QyVdo5ks",
+  "password": "lcFa8dTH",
+  "tls": false,
+  "sni": "",
+  "skipCertVerify": false,
+  "fp": "137b23776435065f",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -12077,7 +12464,8 @@
   "password": "KsPAxZGn",
   "fp": "f50483153cdaa044",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -17157,6 +17545,19 @@
   "fp": "beb1c351d56ecd3c",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "103.238.140.162",
+  "port": 10002,
+  "name": "中国-01【家宽】",
+  "source": "tg:@wxdy666→sub",
+  "cipher": "2022-blake3-aes-128-gcm",
+  "password": "qryl6xVLkWXZlqD7CccpQw==",
+  "fp": "a194955807c3ea64",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -24411,7 +24812,8 @@
   "sources": [
    "mahdibland",
    "go4sharing/arch",
-   "xinshoucun"
+   "xinshoucun",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -43314,6 +43716,23 @@
  },
  {
   "proto": "trojan",
+  "server": "199.232.78.101",
+  "port": 443,
+  "password": "MiTiVPN",
+  "sni": "ssl.fastly.com",
+  "network": "ws",
+  "path": "/--TELEGRAM--TOOTFFARANGI",
+  "host": "mitivpn---ss--s---mitivpn-11.global.ssl.fastly.net",
+  "skipCertVerify": false,
+  "name": "canfingV2rayNG-48",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "7df74e9a42126f27",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "199.232.78.159",
   "port": 443,
   "password": "jcTG9WSWMJAmR4rv10xpww",
@@ -52893,7 +53312,8 @@
   "fp": "e4e74226fa2af3e7",
   "sources": [
    "go4sharing/sub",
-   "go4sharing/arch"
+   "go4sharing/arch",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -56317,6 +56737,28 @@
  },
  {
   "proto": "vless",
+  "server": "104.16.72.41",
+  "port": 443,
+  "uuid": "659a9075-d5ab-4fd2-bf34-b37043fae832",
+  "tls": true,
+  "sni": "nbhhh.mrcool.kdns.fr",
+  "network": "ws",
+  "path": "/proxyip",
+  "host": "nbhhh.mrcool.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-215",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "1d8e24f5ad4dc1cf",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.17.102.95",
   "port": 2096,
   "name": "美国 - 聖荷西 - Cloudflare, Inc. - 6",
@@ -57679,7 +58121,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "566ac73a037d3c5c",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -58619,6 +59062,28 @@
   "fp": "7ca390b4bc5589bc",
   "sources": [
    "ermaozi"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "144.31.166.72",
+  "port": 443,
+  "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+  "tls": true,
+  "sni": "gemsubbgem.world",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "6PJlXT9xrgJP8RXfhpWDMKPh4eqGt_IZmenc_a6v0gg",
+  "sid": "",
+  "utls": "firefox",
+  "reality": true,
+  "name": "canfingV2rayNG-200",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "b85288b135c4b181",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -63881,6 +64346,28 @@
   "fp": "1843a5f335340ffa",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "195.226.93.224",
+  "port": 443,
+  "uuid": "ad295072-0049-4981-a9aa-6314c43e87e5",
+  "tls": true,
+  "sni": "n2.fernstatic.com",
+  "network": "xhttp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "xRIN4AZSp2c_yaCurN9DNoh0q8zSj-AlMCflpb1pwBA",
+  "sid": "00a9d4acc75cf31c",
+  "utls": "",
+  "reality": true,
+  "name": "filembad-310",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "3679ff8853f9102f",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -73562,7 +74049,8 @@
   "source": "NoMoreWalls",
   "fp": "0f12cd92a5c079b5",
   "sources": [
-   "NoMoreWalls"
+   "NoMoreWalls",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -74261,6 +74749,28 @@
   "fp": "8ed2cd835a06be87",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "kia.ipsafe2.site",
+  "port": 24329,
+  "uuid": "b96d18f1-eb38-47e9-ae79-42e78fcc0ff8",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "play.google.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-320",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "94a99ed2e29952b1",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -88573,7 +89083,8 @@
   "host": "57.129.132.223",
   "fp": "c24ac54e9a81016e",
   "sources": [
-   "xinshoucun"
+   "xinshoucun",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
