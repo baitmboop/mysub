@@ -63680,6 +63680,28 @@
  },
  {
   "proto": "vless",
+  "server": "199.232.78.120",
+  "port": 443,
+  "uuid": "921b248d-f094-4a59-a794-cdbab080c26a",
+  "tls": true,
+  "sni": "cdn.akamai.steamstatic.com",
+  "network": "ws",
+  "path": "/",
+  "host": "finalnsdger.global.ssl.fastly.net.",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "canfingV2rayNG-283",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "8e6e5623c9bbac68",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "199.232.78.159",
   "port": 443,
   "name": "🇺🇸_US美國丨yoyapai.com",
@@ -65866,6 +65888,28 @@
  },
  {
   "proto": "vless",
+  "server": "3at0z.sannest.ir",
+  "port": 443,
+  "uuid": "05f0037e-bf24-49e6-8c71-5560e9324144",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "play.google.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-84",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "cc053c6ada2ce56c",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "43.134.187.97",
   "port": 8443,
   "uuid": "b69cf773-da16-486e-afce-a45b94f998b3",
@@ -66288,6 +66332,28 @@
   "fp": "7ac30717bef2e7b5",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "45.144.52.195",
+  "port": 443,
+  "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
+  "tls": true,
+  "sni": "fl-modx.nodexphere.net",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "wpKYWqa_j7WXClXDdSL-llXhjH918G_U7jfpHAMSGWk",
+  "sid": "",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-286",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "3e9e4bfd84702207",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -67797,7 +67863,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "802eb8e7685bb917",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -68174,7 +68241,8 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -73954,6 +74022,28 @@
   "sources": [
    "ermaozi",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "refiqq.dextter.ir",
+  "port": 2095,
+  "uuid": "e835fdc7-c453-4e4e-9d9d-b3c5adb90082",
+  "tls": false,
+  "sni": "",
+  "network": "httpupgrade",
+  "path": "/",
+  "host": "areeedaee.dextter.ir",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-396",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "e01e1b2c5912c31d",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -87493,7 +87583,8 @@
   "fp": "6ab060d07d3f1a00",
   "sources": [
    "tg:@byxiaoxi→blog",
-   "anaer/Sub"
+   "anaer/Sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
