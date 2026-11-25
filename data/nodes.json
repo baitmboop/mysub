@@ -32205,7 +32205,8 @@
    "mahdibland",
    "go4sharing/arch",
    "xinshoucun",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -32412,7 +32413,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "c3884838170b3693",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -58413,7 +58415,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "60a2b153f7fee636",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -59000,7 +59003,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "46f39e13cf98c58c",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -67774,7 +67778,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "8ff418c8d41c4551",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -68217,7 +68222,8 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -70598,6 +70604,28 @@
   "fp": "e815716c65667c4e",
   "sources": [
    "NoMoreWalls"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "DE.IPSENTER.ORG",
+  "port": 443,
+  "uuid": "c381ed79-f3c9-4028-85ae-687795d89ece",
+  "tls": true,
+  "sni": "play.google.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "4-ou3SyJYZ2ptF0vXFdc02yIRTF4VF8m2XcUKJPsUyQ",
+  "sid": "1128da54b05ec30c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-334",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "6661f2eb17a0037f",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -74257,6 +74285,28 @@
   "sources": [
    "ermaozi",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "sca33.myfymain.com",
+  "port": 8880,
+  "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+  "tls": false,
+  "sni": "",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-239",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "4779e498bec9ff9f",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
