@@ -1,5 +1,5 @@
-# nodepool  生成于 2026-11-25 13:58:40 (北京时间)
-# 节点数 46  (自建 0 / 免费额度 0 / 免费池 46)
+# nodepool  生成于 2026-11-25 17:05:11 (北京时间)
+# 节点数 47  (自建 0 / 免费额度 0 / 免费池 47)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
 proxies:
@@ -46,88 +46,93 @@ proxies:
       public-key: FrBq4UHHiaXWDFC2X0Mag16onOfX6lPBuaCSYVgHQ1Q
       short-id: 6a5291c5
     client-fingerprint: chrome
-  - name: N06 121.169.46.116
+  - name: N06 114.246.207.179
+    type: http
+    server: 114.246.207.179
+    port: 8888
+    udp: false
+  - name: N07 121.169.46.116
     type: socks5
     server: 121.169.46.116
     port: 1090
     udp: false
     username: "Og%3D%3D"
-  - name: N07 111.192.60.106
+  - name: N08 111.192.60.106
     type: http
     server: 111.192.60.106
     port: 8888
     udp: false
-  - name: N08 111.201.98.99
+  - name: N09 111.201.98.99
     type: http
     server: 111.201.98.99
     port: 8888
     udp: false
-  - name: N09 114.249.231.192
+  - name: N10 114.249.231.192
     type: http
     server: 114.249.231.192
     port: 8888
     udp: false
-  - name: N10 123.121.130.181
+  - name: N11 123.121.130.181
     type: http
     server: 123.121.130.181
     port: 8888
     udp: false
-  - name: N11 123.121.135.227
+  - name: N12 123.121.135.227
     type: http
     server: 123.121.135.227
     port: 8888
     udp: false
-  - name: N12 114.244.213.90
+  - name: N13 114.244.213.90
     type: http
     server: 114.244.213.90
     port: 8888
     udp: false
-  - name: N13 111.192.21.154
+  - name: N14 111.192.21.154
     type: http
     server: 111.192.21.154
     port: 8888
     udp: false
-  - name: N14 45.155.226.177
+  - name: N15 45.155.226.177
     type: http
     server: 45.155.226.177
     port: 3128
     udp: false
-  - name: N15 114.249.231.103
+  - name: N16 114.249.231.103
     type: http
     server: 114.249.231.103
     port: 8888
     udp: false
-  - name: N16 222.128.169.173
+  - name: N17 222.128.169.173
     type: http
     server: 222.128.169.173
     port: 8888
     udp: false
-  - name: N17 20.98.234.24
+  - name: N18 20.98.234.24
     type: http
     server: 20.98.234.24
     port: 8080
     udp: false
-  - name: N18 114.246.207.138
+  - name: N19 114.246.207.138
     type: http
     server: 114.246.207.138
     port: 8888
     udp: false
-  - name: N19 114.249.221.91
+  - name: N20 114.249.221.91
     type: http
     server: 114.249.221.91
     port: 8888
     udp: false
-  - name: N20 114.246.192.104
+  - name: N21 114.246.192.104
     type: http
     server: 114.246.192.104
     port: 8888
     udp: false
-  - name: N21 123.121.142.252
+  - name: N22 123.121.142.252
     type: http
     server: 123.121.142.252
     port: 8888
     udp: false
-  - name: N22 47.111.78.144
+  - name: N23 47.111.78.144
     type: vless
     server: 47.111.78.144
     port: 24685
@@ -141,7 +146,7 @@ proxies:
       public-key: FrBq4UHHiaXWDFC2X0Mag16onOfX6lPBuaCSYVgHQ1Q
       short-id: 6a5291c5
     client-fingerprint: chrome
-  - name: N23 77.67.18.110
+  - name: N24 77.67.18.110
     type: vless
     server: 77.67.18.110
     port: 25680
@@ -155,29 +160,29 @@ proxies:
       public-key: hARhHGV09mnEUWA1a7pG6_K4lztUhKCK3iGeboGGP2g
       short-id: 7ce8c8e1
     client-fingerprint: chrome
-  - name: N24 114.249.232.231
+  - name: N25 114.249.232.231
     type: http
     server: 114.249.232.231
     port: 8888
     udp: false
-  - name: N25 fan.596189.xyz
+  - name: N26 fan.596189.xyz
     type: http
     server: fan.596189.xyz
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N26 123.121.139.50
+  - name: N27 123.121.139.50
     type: http
     server: 123.121.139.50
     port: 8888
     udp: false
-  - name: N27 114.249.219.234
+  - name: N28 114.249.219.234
     type: http
     server: 114.249.219.234
     port: 8888
     udp: false
-  - name: N28 172.67.190.164
+  - name: N29 172.67.190.164
     type: vmess
     server: 172.67.190.164
     port: 443
@@ -193,12 +198,12 @@ proxies:
       headers:
         Host: guanwang.awsno.com
     network: ws
-  - name: N29 114.253.67.30
+  - name: N30 114.253.67.30
     type: http
     server: 114.253.67.30
     port: 8888
     udp: false
-  - name: N30 13.141.51.2
+  - name: N31 13.141.51.2
     type: vless
     server: 13.141.51.2
     port: 443
@@ -211,24 +216,24 @@ proxies:
       public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
       short-id: ba2a3dce62b99092
     client-fingerprint: firefox
-  - name: N31 111.192.19.3
+  - name: N32 111.192.19.3
     type: http
     server: 111.192.19.3
     port: 8888
     udp: false
-  - name: N32 114.246.201.27
+  - name: N33 114.246.201.27
     type: http
     server: 114.246.201.27
     port: 8888
     udp: false
-  - name: N33 154.26.192.123
+  - name: N34 154.26.192.123
     type: http
     server: 154.26.192.123
     port: 10988
     udp: false
     username: fQ67Dpe5dU
     password: gs4BXwT6SW
-  - name: N34 free.fugui.lol
+  - name: N35 free.fugui.lol
     type: vless
     server: free.fugui.lol
     port: 51283
@@ -242,7 +247,7 @@ proxies:
       public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
       short-id: fa514b83
     client-fingerprint: chrome
-  - name: N35 twmoon1-cdn-route.couldflare-cdn.com
+  - name: N36 twmoon1-cdn-route.couldflare-cdn.com
     type: http
     server: twmoon1-cdn-route.couldflare-cdn.com
     port: 1443
@@ -251,18 +256,11 @@ proxies:
     password: mrwdfNTD8M79LCukCieldrqZWqs=
     tls: true
     skip-cert-verify: true
-  - name: N36 147.161.246.34
+  - name: N37 147.161.246.34
     type: http
     server: 147.161.246.34
     port: 12327
     udp: false
-  - name: N37 136.148.77.250
-    type: ss
-    server: 136.148.77.250
-    port: 8388
-    cipher: aes-256-gcm
-    password: "itzvpn@321"
-    udp: true
   - name: N38 172.64.69.89
     type: http
     server: 172.64.69.89
@@ -298,28 +296,35 @@ proxies:
     cipher: aes-256-gcm
     password: kDWvXYZoTBcGkC4
     udp: true
-  - name: N43 149.40.57.133
+  - name: N43 156.146.38.168
+    type: ss
+    server: 156.146.38.168
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: N44 149.40.57.133
     type: ss
     server: 149.40.57.133
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N44 149.40.57.138
+  - name: N45 149.40.57.138
     type: ss
     server: 149.40.57.138
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N45 149.40.57.134
+  - name: N46 149.40.57.134
     type: ss
     server: 149.40.57.134
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N46 149.40.57.135
+  - name: N47 149.40.57.135
     type: ss
     server: 149.40.57.135
     port: 19999
@@ -337,47 +342,48 @@ proxy-groups:
       - N03 114.244.212.147
       - N04 123.121.121.123
       - "N05 2a0e:97c0:3f0:1::598"
-      - N06 121.169.46.116
-      - N07 111.192.60.106
-      - N08 111.201.98.99
-      - N09 114.249.231.192
-      - N10 123.121.130.181
-      - N11 123.121.135.227
-      - N12 114.244.213.90
-      - N13 111.192.21.154
-      - N14 45.155.226.177
-      - N15 114.249.231.103
-      - N16 222.128.169.173
-      - N17 20.98.234.24
-      - N18 114.246.207.138
-      - N19 114.249.221.91
-      - N20 114.246.192.104
-      - N21 123.121.142.252
-      - N22 47.111.78.144
-      - N23 77.67.18.110
-      - N24 114.249.232.231
-      - N25 fan.596189.xyz
-      - N26 123.121.139.50
-      - N27 114.249.219.234
-      - N28 172.67.190.164
-      - N29 114.253.67.30
-      - N30 13.141.51.2
-      - N31 111.192.19.3
-      - N32 114.246.201.27
-      - N33 154.26.192.123
-      - N34 free.fugui.lol
-      - N35 twmoon1-cdn-route.couldflare-cdn.com
-      - N36 147.161.246.34
-      - N37 136.148.77.250
+      - N06 114.246.207.179
+      - N07 121.169.46.116
+      - N08 111.192.60.106
+      - N09 111.201.98.99
+      - N10 114.249.231.192
+      - N11 123.121.130.181
+      - N12 123.121.135.227
+      - N13 114.244.213.90
+      - N14 111.192.21.154
+      - N15 45.155.226.177
+      - N16 114.249.231.103
+      - N17 222.128.169.173
+      - N18 20.98.234.24
+      - N19 114.246.207.138
+      - N20 114.249.221.91
+      - N21 114.246.192.104
+      - N22 123.121.142.252
+      - N23 47.111.78.144
+      - N24 77.67.18.110
+      - N25 114.249.232.231
+      - N26 fan.596189.xyz
+      - N27 123.121.139.50
+      - N28 114.249.219.234
+      - N29 172.67.190.164
+      - N30 114.253.67.30
+      - N31 13.141.51.2
+      - N32 111.192.19.3
+      - N33 114.246.201.27
+      - N34 154.26.192.123
+      - N35 free.fugui.lol
+      - N36 twmoon1-cdn-route.couldflare-cdn.com
+      - N37 147.161.246.34
       - N38 172.64.69.89
       - N39 104.168.249.36
       - N40 38.143.66.146
       - N41 12.221.146.147
       - N42 51.222.136.236
-      - N43 149.40.57.133
-      - N44 149.40.57.138
-      - N45 149.40.57.134
-      - N46 149.40.57.135
+      - N43 156.146.38.168
+      - N44 149.40.57.133
+      - N45 149.40.57.138
+      - N46 149.40.57.134
+      - N47 149.40.57.135
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -386,20 +392,20 @@ proxy-groups:
     proxies:
       - "N01 2a14:7586:6109:1::a125"
       - "N05 2a0e:97c0:3f0:1::598"
-      - N06 121.169.46.116
-      - N22 47.111.78.144
-      - N23 77.67.18.110
-      - N28 172.67.190.164
-      - N30 13.141.51.2
-      - N34 free.fugui.lol
-      - N37 136.148.77.250
+      - N07 121.169.46.116
+      - N23 47.111.78.144
+      - N24 77.67.18.110
+      - N29 172.67.190.164
+      - N31 13.141.51.2
+      - N35 free.fugui.lol
       - N39 104.168.249.36
       - N40 38.143.66.146
       - N42 51.222.136.236
-      - N43 149.40.57.133
-      - N44 149.40.57.138
-      - N45 149.40.57.134
-      - N46 149.40.57.135
+      - N43 156.146.38.168
+      - N44 149.40.57.133
+      - N45 149.40.57.138
+      - N46 149.40.57.134
+      - N47 149.40.57.135
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -410,47 +416,48 @@ proxy-groups:
       - N03 114.244.212.147
       - N04 123.121.121.123
       - "N05 2a0e:97c0:3f0:1::598"
-      - N06 121.169.46.116
-      - N07 111.192.60.106
-      - N08 111.201.98.99
-      - N09 114.249.231.192
-      - N10 123.121.130.181
-      - N11 123.121.135.227
-      - N12 114.244.213.90
-      - N13 111.192.21.154
-      - N14 45.155.226.177
-      - N15 114.249.231.103
-      - N16 222.128.169.173
-      - N17 20.98.234.24
-      - N18 114.246.207.138
-      - N19 114.249.221.91
-      - N20 114.246.192.104
-      - N21 123.121.142.252
-      - N22 47.111.78.144
-      - N23 77.67.18.110
-      - N24 114.249.232.231
-      - N25 fan.596189.xyz
-      - N26 123.121.139.50
-      - N27 114.249.219.234
-      - N28 172.67.190.164
-      - N29 114.253.67.30
-      - N30 13.141.51.2
-      - N31 111.192.19.3
-      - N32 114.246.201.27
-      - N33 154.26.192.123
-      - N34 free.fugui.lol
-      - N35 twmoon1-cdn-route.couldflare-cdn.com
-      - N36 147.161.246.34
-      - N37 136.148.77.250
+      - N06 114.246.207.179
+      - N07 121.169.46.116
+      - N08 111.192.60.106
+      - N09 111.201.98.99
+      - N10 114.249.231.192
+      - N11 123.121.130.181
+      - N12 123.121.135.227
+      - N13 114.244.213.90
+      - N14 111.192.21.154
+      - N15 45.155.226.177
+      - N16 114.249.231.103
+      - N17 222.128.169.173
+      - N18 20.98.234.24
+      - N19 114.246.207.138
+      - N20 114.249.221.91
+      - N21 114.246.192.104
+      - N22 123.121.142.252
+      - N23 47.111.78.144
+      - N24 77.67.18.110
+      - N25 114.249.232.231
+      - N26 fan.596189.xyz
+      - N27 123.121.139.50
+      - N28 114.249.219.234
+      - N29 172.67.190.164
+      - N30 114.253.67.30
+      - N31 13.141.51.2
+      - N32 111.192.19.3
+      - N33 114.246.201.27
+      - N34 154.26.192.123
+      - N35 free.fugui.lol
+      - N36 twmoon1-cdn-route.couldflare-cdn.com
+      - N37 147.161.246.34
       - N38 172.64.69.89
       - N39 104.168.249.36
       - N40 38.143.66.146
       - N41 12.221.146.147
       - N42 51.222.136.236
-      - N43 149.40.57.133
-      - N44 149.40.57.138
-      - N45 149.40.57.134
-      - N46 149.40.57.135
+      - N43 156.146.38.168
+      - N44 149.40.57.133
+      - N45 149.40.57.138
+      - N46 149.40.57.134
+      - N47 149.40.57.135
 rules:
   - "IP-CIDR,127.0.0.0/8,DIRECT,no-resolve"
   - "IP-CIDR,10.0.0.0/8,DIRECT,no-resolve"
