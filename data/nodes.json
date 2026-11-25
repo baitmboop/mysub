@@ -58122,6 +58122,28 @@
  },
  {
   "proto": "vless",
+  "server": "13.250.112.15",
+  "port": 8443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "cdn-sg01.download.pikoport.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "safari",
+  "reality": false,
+  "name": "🇸🇬 狮城肉骨茶 | IPv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1631727bda4e3685",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "13.250.131.37",
   "port": 443,
   "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
@@ -58274,7 +58296,8 @@
   "source": "tg:@vpnfail_v2ray",
   "fp": "c54b89270daba3f4",
   "sources": [
-   "tg:@vpnfail_v2ray"
+   "tg:@vpnfail_v2ray",
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -58341,6 +58364,28 @@
   "fp": "2547b9fb0e1ebead",
   "sources": [
    "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "132.243.242.97",
+  "port": 9543,
+  "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6",
+  "tls": true,
+  "sni": "storage.yandexcloud.net",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+  "sid": "123abcdf",
+  "utls": "",
+  "reality": true,
+  "name": "🈸72@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "e6b67fbbe0fa2e65",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -58637,6 +58682,50 @@
   "fp": "20665fd477e9cf1e",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "136.85.90.54",
+  "port": 8443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "fastcdn.hoyoverse.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "6tZ4-sKZoUDDkjCPqpsJlWWo8Q5eW7IXuZUuUPPh2h8",
+  "sid": "9cd7cae9",
+  "utls": "ios",
+  "reality": true,
+  "name": "🇸🇬 狮城沙嗲串 | SGGCPv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "92f810351eea67ac",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "136.85.90.54",
+  "port": 18443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "cdn-sg01.download.pikoport.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "🇸🇬 狮城肉骨茶 | SGGCPv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a8d720d1a13748eb",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -59262,6 +59351,28 @@
  },
  {
   "proto": "vless",
+  "server": "146.103.42.6",
+  "port": 9543,
+  "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6",
+  "tls": true,
+  "sni": "storage.yandexcloud.net",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+  "sid": "123abcdf",
+  "utls": "",
+  "reality": true,
+  "name": "🈸62@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "069e2bc2146a401c",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "146.103.42.78",
   "port": 9543,
   "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6",
@@ -59563,6 +59674,72 @@
   "fp": "61460b773c0990e8",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "148.135.105.206",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "download.windowsupdate.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "eN-hpk_h3mbxeGOfINunn7Ij_nsfFkgja3w5breOygg",
+  "sid": "296d5815",
+  "utls": "chrome",
+  "reality": true,
+  "name": "🇺🇸 美国龙虾卷 | IPv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "b81808ed5af81eae",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "148.135.105.211",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "www.bing.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "bKG1vbvrxm4NfSqBx-0Co84M_uLLEEftv2Ql8G7rjhM",
+  "sid": "157eb31c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "🇺🇸 美国奶油派 | IPv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "ca977e301f42c11c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "148.135.105.212",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "software.download.prss.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "TC-wWnqm1nHfUrk4q8JEdhHxAEoXngklzEoDd4-qnBA",
+  "sid": "5633178b",
+  "utls": "chrome",
+  "reality": true,
+  "name": "🇺🇸 美国冰激凌 | IPv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "21be6f238d9745c6",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -60088,6 +60265,28 @@
   "fp": "c19e0f335c135ac2",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "152.233.41.30",
+  "port": 16923,
+  "uuid": "c065e1bb-cb56-41e5-b043-9dfd15b67565",
+  "tls": true,
+  "sni": "api-maps.yandex.ru",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA",
+  "sid": "10ffb85da1c2d986",
+  "utls": "",
+  "reality": true,
+  "name": "canfingV2rayNG-279",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "98df480a2173a2de",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -61662,6 +61861,28 @@
  },
  {
   "proto": "vless",
+  "server": "170.114.45.6",
+  "port": 80,
+  "uuid": "9ce32242-557a-4d18-864d-c9c385b3dfa4",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/",
+  "host": "matrix.learnpodedu.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-235",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "ce615e5c0e102da9",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "170.168.32.125",
   "port": 443,
   "uuid": "148917bd-0b37-42b8-98f4-aa94ca73e75a",
@@ -61884,6 +62105,28 @@
  },
  {
   "proto": "vless",
+  "server": "172.64.145.105",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "ak4.chinapolice.lol",
+  "network": "ws",
+  "path": "/e8686e70-8e5d-4005-b6f5-a75ea324e276",
+  "host": "ak4.chinapolice.lol",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "safari",
+  "reality": false,
+  "name": "🇭🇰 香港碗仔翅 | IP",
+  "source": "tg:@wxdy666→sub",
+  "fp": "9ad9e69acd89b189",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "172.64.145.94",
   "port": 443,
   "uuid": "5dc15e15-f285-4a9d-959b-0e4fbdd77b63",
@@ -62026,6 +62269,28 @@
   "fp": "5172aa26ad0006ea",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "172.64.229.88",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "us3.chinapolice.lol",
+  "network": "ws",
+  "path": "/dd73283c-c37a-43b1-b514-65a9861bdd6d",
+  "host": "us3.chinapolice.lol",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "safari",
+  "reality": false,
+  "name": "🇺🇸 美国汉堡包 | CT IP",
+  "source": "tg:@wxdy666→sub",
+  "fp": "41fa7a2e270b3432",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -62283,6 +62548,28 @@
   "fp": "d1a63a91d7fc7af4",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "177.3.213.177",
+  "port": 8444,
+  "uuid": "43add026-128a-47d3-a403-b3875b4638db",
+  "tls": true,
+  "sni": "yastatic.net",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "1hJPKCOTjPXm93o2JEeb-dOuFSkCvHj41uKM6yrP32Q",
+  "sid": "bcefc042d39188e0",
+  "utls": "",
+  "reality": true,
+  "name": "🈸63@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "0f3e6d62a78ca189",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -62593,6 +62880,50 @@
   "fp": "a03e1fabf731449e",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "18.138.226.29",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "fastcdn.hoyoverse.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "6tZ4-sKZoUDDkjCPqpsJlWWo8Q5eW7IXuZUuUPPh2h8",
+  "sid": "9cd7cae9",
+  "utls": "ios",
+  "reality": true,
+  "name": "🇸🇬 狮城沙嗲串 | IPv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a3d6313ba04ceaee",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "18.181.226.22",
+  "port": 8443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "cdn-jp01.download.pikoport.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "safari",
+  "reality": false,
+  "name": "🇯🇵 日本关东煮 | IPv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "14f3a0260ea7076c",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -64323,6 +64654,28 @@
   "fp": "f1d373e0bc9493a4",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "195.123.235.183",
+  "port": 443,
+  "uuid": "c14ec728-3eca-4750-87fc-fd1e6aeb81d5",
+  "tls": true,
+  "sni": "gateway.icloud.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "H3R3BUAl7thrIZsznTbb-eRREIjQOH2f3WO0oTN7OGY",
+  "sid": "a0e2a6074c6456b0",
+  "utls": "",
+  "reality": true,
+  "name": "🈸73@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "3eed64c6c3190b83",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -66505,6 +66858,94 @@
  },
  {
   "proto": "vless",
+  "server": "2406:da14:127c:6600:388:d8bc:6027:7f27",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "download-porter.hoyoverse.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "upIlaFG6DWfKE8wjn_qXYqb9ohDNavC3LRayjJ4Wp1o",
+  "sid": "94d3f4df",
+  "utls": "safari",
+  "reality": true,
+  "name": "🇯🇵 日本天妇罗 | IPv6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "e7d9d47ca71276de",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "2406:da14:a37:3600:6867:39dd:e0a4:79a7",
+  "port": 8443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "cdn-jp01.download.pikoport.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "safari",
+  "reality": false,
+  "name": "🇯🇵 日本关东煮 | IPv6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6714b15743bd8fef",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "2406:da18:1a2:9900:45ee:6faa:d995:3319",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "fastcdn.hoyoverse.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "6tZ4-sKZoUDDkjCPqpsJlWWo8Q5eW7IXuZUuUPPh2h8",
+  "sid": "9cd7cae9",
+  "utls": "ios",
+  "reality": true,
+  "name": "🇸🇬 狮城沙嗲串 | IPv6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "4ad209e6a9d9bdcc",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "2406:da18:8ab:cb00:2611:1eed:5f6:63b4",
+  "port": 8443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "cdn-sg01.download.pikoport.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "🇸🇬 狮城肉骨茶 | IPv6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "e80302a6713a665d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "25.129.197.138",
   "port": 2053,
   "name": "美国 - 聖荷西 - Cloudflare, Inc. - 8",
@@ -66520,6 +66961,72 @@
   "fp": "4f9bb5c016225fbd",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "2607:f130:0:113::8e",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "download.windowsupdate.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "eN-hpk_h3mbxeGOfINunn7Ij_nsfFkgja3w5breOygg",
+  "sid": "296d5815",
+  "utls": "chrome",
+  "reality": true,
+  "name": "🇺🇸 美国龙虾卷 | IPv6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "b40ca7d45ec3bb50",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "2607:f130:0:113::91",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "www.bing.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "bKG1vbvrxm4NfSqBx-0Co84M_uLLEEftv2Ql8G7rjhM",
+  "sid": "157eb31c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "🇺🇸 美国奶油派 | IPv6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "0199380c6eca9f02",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "2607:f130:0:113::94",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "software.download.prss.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "TC-wWnqm1nHfUrk4q8JEdhHxAEoXngklzEoDd4-qnBA",
+  "sid": "5633178b",
+  "utls": "chrome",
+  "reality": true,
+  "name": "🇺🇸 美国冰激凌 | IPv6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1b7d1f1101a2ed45",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -66805,6 +67312,28 @@
  },
  {
   "proto": "vless",
+  "server": "31.58.191.93",
+  "port": 443,
+  "uuid": "ad295072-0049-4981-a9aa-6314c43e87e5",
+  "tls": true,
+  "sni": "n4.fernstatic.com",
+  "network": "xhttp",
+  "path": "/",
+  "host": "31.58.191.93",
+  "flow": "",
+  "pbk": "0MSoevDfxrS1SB5IVdzFT2sMmicWY3Q1FjgZWbqsvXo",
+  "sid": "3b1a6acf74e481e7",
+  "utls": "",
+  "reality": true,
+  "name": "🈸68@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "157d1281c132fb4d",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "31.76.3.51",
   "port": 443,
   "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
@@ -66976,6 +67505,50 @@
  },
  {
   "proto": "vless",
+  "server": "35.221.95.252",
+  "port": 8443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "download-porter.hoyoverse.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "upIlaFG6DWfKE8wjn_qXYqb9ohDNavC3LRayjJ4Wp1o",
+  "sid": "94d3f4df",
+  "utls": "safari",
+  "reality": true,
+  "name": "🇯🇵 日本天妇罗 | JPGCPv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "3b93807982e8efe8",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "35.221.95.252",
+  "port": 18443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "cdn-jp01.download.pikoport.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "safari",
+  "reality": false,
+  "name": "🇯🇵 日本关东煮 | JPGCPv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "5840bda1fc882569",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "35.240.184.147",
   "port": 8092,
   "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
@@ -67014,6 +67587,28 @@
   "sources": [
    "oneclash",
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "35.74.234.44",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "download-porter.hoyoverse.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "upIlaFG6DWfKE8wjn_qXYqb9ohDNavC3LRayjJ4Wp1o",
+  "sid": "94d3f4df",
+  "utls": "safari",
+  "reality": true,
+  "name": "🇯🇵 日本天妇罗 | IPv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "36c40688feb9329e",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67858,6 +68453,28 @@
   "fp": "03fd39c620531c1e",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "45.142.212.191",
+  "port": 443,
+  "uuid": "148917bd-0b37-42b8-98f4-aa94ca73e75a",
+  "tls": true,
+  "sni": "travel.yandex.ru",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "tp7awfnKLbhIDkdYlT7Avf-SfUwt7ncX5oyWS5wQmR0",
+  "sid": "24c4",
+  "utls": "",
+  "reality": true,
+  "name": "🈸71@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "06064cd5759274e9",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -71658,6 +72275,28 @@
  },
  {
   "proto": "vless",
+  "server": "8f075ed5.alidns-3.com",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "ak4.chinapolice.lol",
+  "network": "ws",
+  "path": "/e8686e70-8e5d-4005-b6f5-a75ea324e276",
+  "host": "ak4.chinapolice.lol",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "safari",
+  "reality": false,
+  "name": "🇭🇰 香港碗仔翅",
+  "source": "tg:@wxdy666→sub",
+  "fp": "da7d861b084a62df",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "9.247.54.241",
   "port": 443,
   "uuid": "4618cebd-e1e9-45c3-be98-d9d6e3ee8bef",
@@ -72287,6 +72926,28 @@
  },
  {
   "proto": "vless",
+  "server": "94.183.206.227",
+  "port": 443,
+  "uuid": "7ce93cef-119d-4cba-9d9d-da0056ba979c",
+  "tls": true,
+  "sni": "nl3.green-tg.com",
+  "network": "xhttp",
+  "path": "/api/v2/7d94497a",
+  "host": "",
+  "flow": "",
+  "pbk": "EhKlZ3cHsJQRkNH7Qeya0ZeAy5jovCT-H4VNivwPyls",
+  "sid": "0bf13fb706784403",
+  "utls": "",
+  "reality": true,
+  "name": "🈸61@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "d5a564a5dd131d7c",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "94.183.234.245",
   "port": 443,
   "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
@@ -72550,6 +73211,28 @@
  },
  {
   "proto": "vless",
+  "server": "SUR.Deev-Guard.ir",
+  "port": 15470,
+  "uuid": "d1ec39e3-ad7b-4b65-9f65-813696f9a04e",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "filembad-310",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "6d606dcb990ebf5b",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "a2.arshia-nova.ir",
   "port": 443,
   "name": "🇺🇸_US_美国->🇫🇮_FI_芬兰",
@@ -72791,7 +73474,30 @@
    "ermaozi",
    "clashnode",
    "tg:@byxiaoxi→blog",
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "ar4nh.sannest.ir",
+  "port": 443,
+  "uuid": "26acab49-7cf6-489a-924d-7fae7b643f5a",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "play.google.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-106",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "0625bdd572c2dbdb",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -73545,6 +74251,28 @@
  },
  {
   "proto": "vless",
+  "server": "ctcu.alidns-1.com",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "us3.chinapolice.lol",
+  "network": "ws",
+  "path": "/dd73283c-c37a-43b1-b514-65a9861bdd6d",
+  "host": "us3.chinapolice.lol",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "safari",
+  "reality": false,
+  "name": "🇺🇸 美国汉堡包 | CT CU",
+  "source": "tg:@wxdy666→sub",
+  "fp": "ca67829b27b01980",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "cucc.cloudflare.seeck.cn",
   "port": 443,
   "name": "新加坡 - 新加坡 - Cloudflare, Inc. - 2",
@@ -73560,6 +74288,28 @@
   "fp": "77939f27cc7b3433",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dc.insidenet.ru",
+  "port": 20443,
+  "uuid": "67a31bdf-5846-409d-8b49-3d795e1a2a4f",
+  "tls": true,
+  "sni": "dc.insidenet.ru",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "xE2CNenfDgtu28WQ23Bq2KfdkEj3XN42P_ZVou1YRC4",
+  "sid": "f847646adc2b82fe",
+  "utls": "",
+  "reality": true,
+  "name": "🈸70@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "3050278371ab45d7",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -75014,6 +75764,94 @@
  },
  {
   "proto": "vless",
+  "server": "jp01-v6.5392a812-9a56-456f-b89a-9e5b4208168a.genshinimpact.cyou",
+  "port": 8443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "cdn-jp01.download.pikoport.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "safari",
+  "reality": false,
+  "name": "🇯🇵 日本关东煮 | DDNSv6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "c96db6de3ebb19d6",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "jp01.5392a812-9a56-456f-b89a-9e5b4208168a.genshinimpact.cyou",
+  "port": 8443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "cdn-jp01.download.pikoport.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "safari",
+  "reality": false,
+  "name": "🇯🇵 日本关东煮 | DDNSv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "d14b93228d01c1bc",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "jp03-v6.73c01f37-d10a-4317-a43a-380fc51d0bc4.genshinimpact.cyou",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "download-porter.hoyoverse.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "upIlaFG6DWfKE8wjn_qXYqb9ohDNavC3LRayjJ4Wp1o",
+  "sid": "94d3f4df",
+  "utls": "safari",
+  "reality": true,
+  "name": "🇯🇵 日本天妇罗 | DDNSv6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "711e5ce7044f6d65",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "jp03.73c01f37-d10a-4317-a43a-380fc51d0bc4.genshinimpact.cyou",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "download-porter.hoyoverse.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "upIlaFG6DWfKE8wjn_qXYqb9ohDNavC3LRayjJ4Wp1o",
+  "sid": "94d3f4df",
+  "utls": "safari",
+  "reality": true,
+  "name": "🇯🇵 日本天妇罗 | DDNSv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "e3e25fefd822c6f3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "kia.ipsafe2.site",
   "port": 24329,
   "uuid": "b96d18f1-eb38-47e9-ae79-42e78fcc0ff8",
@@ -75246,6 +76084,28 @@
   "fp": "3d7b5094c16707fe",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "leviko-nl2962.shopingggg.ir",
+  "port": 9543,
+  "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6",
+  "tls": true,
+  "sni": "storage.yandexcloud.net",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+  "sid": "123abcdf",
+  "utls": "",
+  "reality": true,
+  "name": "🈸69@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "3ca3b127cb323b1d",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -75537,6 +76397,28 @@
   "fp": "e9acd3c2a8fd09ea",
   "sources": [
    "ermaozi",
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "lt.memepn.com",
+  "port": 443,
+  "uuid": "f69e272f-e0e5-4e9d-b180-5be63930cde9",
+  "tls": true,
+  "sni": "lt.memepn.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+  "sid": "868419504747f6de",
+  "utls": "",
+  "reality": true,
+  "name": "🈸66@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "336a690b5969abe2",
+  "sources": [
    "tg:@oneclickvpnkeys"
   ]
  },
@@ -76467,6 +77349,94 @@
  },
  {
   "proto": "vless",
+  "server": "sg01-v6.ebf263c3-0b7e-4e71-87b9-26978dc121c4.genshinimpact.cyou",
+  "port": 8443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "cdn-sg01.download.pikoport.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "🇸🇬 狮城肉骨茶 | DDNSv6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "8b9959f69981e5a8",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "sg01.ebf263c3-0b7e-4e71-87b9-26978dc121c4.genshinimpact.cyou",
+  "port": 8443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "cdn-sg01.download.pikoport.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "safari",
+  "reality": false,
+  "name": "🇸🇬 狮城肉骨茶 | DDNSv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "298ae4054ae1767c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "sg03-v6.ea9c2ab8-b920-4e14-a158-f1c21c866378.genshinimpact.cyou",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "fastcdn.hoyoverse.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "6tZ4-sKZoUDDkjCPqpsJlWWo8Q5eW7IXuZUuUPPh2h8",
+  "sid": "9cd7cae9",
+  "utls": "ios",
+  "reality": true,
+  "name": "🇸🇬 狮城沙嗲串 | DDNSv6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "c0b0bdd6d7bd9586",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "sg03.ea9c2ab8-b920-4e14-a158-f1c21c866378.genshinimpact.cyou",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "fastcdn.hoyoverse.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "6tZ4-sKZoUDDkjCPqpsJlWWo8Q5eW7IXuZUuUPPh2h8",
+  "sid": "9cd7cae9",
+  "utls": "ios",
+  "reality": true,
+  "name": "剩余流量：886.86 GB",
+  "source": "tg:@wxdy666→sub",
+  "fp": "e3780bdb59aa989c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "singapore.com",
   "port": 2053,
   "name": "德国 - 德赖艾希 - Cloudflare, Inc. - 1",
@@ -77072,6 +78042,138 @@
   "fp": "13fe20d1c3ae9c8d",
   "sources": [
    "tg:@wxdy666"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "us01-v6.d168f27a-5efc-4699-891d-eda6ea40be1d.genshinimpact.cyou",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "download.windowsupdate.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "eN-hpk_h3mbxeGOfINunn7Ij_nsfFkgja3w5breOygg",
+  "sid": "296d5815",
+  "utls": "chrome",
+  "reality": true,
+  "name": "🇺🇸 美国龙虾卷 | DDNSv6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "8f242e318a321075",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "us01.d168f27a-5efc-4699-891d-eda6ea40be1d.genshinimpact.cyou",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "download.windowsupdate.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "eN-hpk_h3mbxeGOfINunn7Ij_nsfFkgja3w5breOygg",
+  "sid": "296d5815",
+  "utls": "chrome",
+  "reality": true,
+  "name": "🇺🇸 美国龙虾卷 | DDNSv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "70936ac6d226da94",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "us02-v6.4b214271-fd51-4e6b-9303-fe6e915f406d.genshinimpact.cyou",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "www.bing.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "bKG1vbvrxm4NfSqBx-0Co84M_uLLEEftv2Ql8G7rjhM",
+  "sid": "157eb31c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "🇺🇸 美国奶油派 | DDNSv6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "19f05d4ff90c6dcb",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "us02.4b214271-fd51-4e6b-9303-fe6e915f406d.genshinimpact.cyou",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "www.bing.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "bKG1vbvrxm4NfSqBx-0Co84M_uLLEEftv2Ql8G7rjhM",
+  "sid": "157eb31c",
+  "utls": "chrome",
+  "reality": true,
+  "name": "🇺🇸 美国奶油派 | DDNSv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "fee6c5f0e3451cf6",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "us03-v6.e8cdce9e-40a0-4487-8a8d-de8de7d8f3c8.genshinimpact.cyou",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "software.download.prss.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "TC-wWnqm1nHfUrk4q8JEdhHxAEoXngklzEoDd4-qnBA",
+  "sid": "5633178b",
+  "utls": "chrome",
+  "reality": true,
+  "name": "🇺🇸 美国冰激凌 | DDNS",
+  "source": "tg:@wxdy666→sub",
+  "fp": "650d12dd29ee672c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "us03.e8cdce9e-40a0-4487-8a8d-de8de7d8f3c8.genshinimpact.cyou",
+  "port": 443,
+  "uuid": "ad318b59-08a6-463b-a423-d3bc5dc77ec3",
+  "tls": true,
+  "sni": "software.download.prss.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "TC-wWnqm1nHfUrk4q8JEdhHxAEoXngklzEoDd4-qnBA",
+  "sid": "5633178b",
+  "utls": "chrome",
+  "reality": true,
+  "name": "🇺🇸 美国冰激凌 | DDNSv4",
+  "source": "tg:@wxdy666→sub",
+  "fp": "ffeeafa3647f7e58",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -77894,6 +78996,28 @@
   "fp": "1438b9aa47915d8b",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "www.pexqelo.ir",
+  "port": 443,
+  "uuid": "42cae401-bc43-4edc-878e-d8ab59b3f7cc",
+  "tls": true,
+  "sni": "opensuse.org",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "EMMr7Eqwy3wpgbatnOaAmym5Tm4nXyJlC83iVvCadmk",
+  "sid": "f3f00787a8b3f471",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-130",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "d51fffc717f2098a",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -79312,6 +80436,50 @@
   "fp": "1b0226ac70ee7a48",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "zibanabz.jonsonvip.ir",
+  "port": 8080,
+  "uuid": "378a0205-c4a4-4c03-b015-5c4cbff77f6c",
+  "tls": true,
+  "sni": "ssh.webdade.com",
+  "network": "tcp",
+  "path": "/@zibanabz@zibanabz@zibanabz",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "aiFPeLurQNAOYZhwdXsYwxCxBgw6qg8rt0UvdrdNPTY",
+  "sid": "ed516450fce897dd",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-118",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "088ab9d435b831c9",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "zibanabz.jonsonvip.ir",
+  "port": 3939,
+  "uuid": "378a0205-c4a4-4c03-b015-5c4cbff77f6c",
+  "tls": true,
+  "sni": "ai.android",
+  "network": "tcp",
+  "path": "/@zibanabz",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "dnnN66V_xqEbGoG5P8E_Zqk3TaZt2lM4SI9N7Ana7FA",
+  "sid": "d9a2600fdecd7be2",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-117",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "5f4ad47f68362150",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
