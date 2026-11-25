@@ -22095,6 +22095,19 @@
  },
  {
   "proto": "ss",
+  "server": "18.197.131.255",
+  "port": 443,
+  "cipher": "2022-blake3-chacha20-poly1305",
+  "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=",
+  "name": "filembad-1",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "327e501f1392bc2f",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "18.205.21.144",
   "port": 443,
   "name": "美国 - Ashburn - 3",
@@ -27909,6 +27922,19 @@
  },
  {
   "proto": "ss",
+  "server": "38.180.104.37",
+  "port": 19084,
+  "cipher": "aes-128-gcm",
+  "password": "ff4d354078394558933d699be149ad69",
+  "name": "请自行注册rustyun-b.top免费使用土耳其01",
+  "source": "tg:@wxdy666→sub",
+  "fp": "289fae5d0ac645c8",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "38.180.161.123",
   "port": 8119,
   "name": "瑞士 - 苏黎世 - Private Layer INC - 1",
@@ -32053,6 +32079,19 @@
  },
  {
   "proto": "ss",
+  "server": "81.12.33.254",
+  "port": 8080,
+  "cipher": "2022-blake3-aes-128-gcm",
+  "password": "Dig9t4E8rdydV1374b3Euw==:qYMu8sklQzO6qlpM5iVtjg==",
+  "name": "filembad-7",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "918c310712ba9767",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "82.110.60.9",
   "port": 19999,
   "cipher": "aes-256-gcm",
@@ -32566,7 +32605,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "df229e0fea821a79",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -59875,6 +59915,28 @@
  },
  {
   "proto": "vless",
+  "server": "151.115.164.110",
+  "port": 8880,
+  "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+  "tls": false,
+  "sni": "",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-206",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c9f7c41b70f0cc34",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "151.158.0.83",
   "port": 8443,
   "uuid": "b69cf773-da16-486e-afce-a45b94f998b3",
@@ -61844,6 +61906,28 @@
  },
  {
   "proto": "vless",
+  "server": "172.64.147.255",
+  "port": 80,
+  "uuid": "478cc26d-16b3-4fdd-be64-60d5a58c1622",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/",
+  "host": "tt.andishehparenting.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-132",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "f03b920526d0ab3a",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "172.64.149.88",
   "port": 443,
   "name": "CA加拿大(mibei77.com 米贝节点分享)",
@@ -62090,6 +62174,28 @@
   "fp": "9b892a80a0d88b60",
   "sources": [
    "ermaozi"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "173.245.58.75",
+  "port": 443,
+  "uuid": "b2f6aa3a-2550-4a1c-b2c0-1c94b1207217",
+  "tls": true,
+  "sni": "terazhediii.info",
+  "network": "ws",
+  "path": "/hdgrbws",
+  "host": "terazhediii.info",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-272",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "b19cef0b81696cc6",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -62377,6 +62483,28 @@
   "fp": "d0a0b8969c823609",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "179.254.169.116",
+  "port": 8443,
+  "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
+  "tls": true,
+  "sni": "durov.sky-vault.top",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI",
+  "sid": "3cbc3d737fb9c4af",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-289",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "1fc03aaf4d4ecfca",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -63073,7 +63201,8 @@
   "source": "tg:@oneclickvpnkeys",
   "fp": "1c7ddb6405a56c2e",
   "sources": [
-   "tg:@oneclickvpnkeys"
+   "tg:@oneclickvpnkeys",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -63705,6 +63834,28 @@
   "fp": "025f9192ca498e95",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "192.71.82.2",
+  "port": 443,
+  "uuid": "a5c05c1e-aa68-443f-8598-09800244bd4b",
+  "tls": true,
+  "sni": "kingcloud.biack.ir",
+  "network": "ws",
+  "path": "/LiL?ed=2560",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "firefox",
+  "reality": false,
+  "name": "canfingV2rayNG-255",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "1cacf7800a5a4a5e",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -65012,6 +65163,28 @@
  },
  {
   "proto": "vless",
+  "server": "199.232.78.159",
+  "port": 443,
+  "uuid": "a953509f-af22-42d5-a34c-aa29405369b0",
+  "tls": true,
+  "sni": "cdn.akamai.steamstatic.com",
+  "network": "ws",
+  "path": "/",
+  "host": "finalnsdger.global.ssl.fastly.net.",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "canfingV2rayNG-265",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "b58a6e24b99018a0",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "199.7.140.201",
   "port": 443,
   "uuid": "a52ac672-0f5f-4070-b8fd-6b5685fc8004",
@@ -65753,6 +65926,28 @@
   "fp": "9d6f9dddc33b2c0a",
   "sources": [
    "NoMoreWalls"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "209.127.228.114",
+  "port": 443,
+  "uuid": "d205ae68-0819-473c-b425-6c5947ac2f8d",
+  "tls": true,
+  "sni": "cars.morro-settings.ru",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "8vqOvJ5eoG_9oHla4B3Vh1E-o39RrCXW6Wr7OcXZGmI",
+  "sid": "dd",
+  "utls": "firefox",
+  "reality": true,
+  "name": "canfingV2rayNG-312",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "7322a1e30a5b2c47",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -67410,6 +67605,28 @@
  },
  {
   "proto": "vless",
+  "server": "43.174.247.53",
+  "port": 443,
+  "uuid": "0fc3eba4-2774-4c99-cfc7-c38b007908b0",
+  "tls": true,
+  "sni": "sni.irandoc.info",
+  "network": "ws",
+  "path": "/55072/api",
+  "host": "aron.irandoc.info",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "canfingV2rayNG-79",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "4f2763c734fcf610",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "43.198.53.11",
   "port": 443,
   "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
@@ -68956,6 +69173,28 @@
   "fp": "30a2da294e9b5bc2",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "5.75.207.247",
+  "port": 443,
+  "uuid": "a1d262a9-6d57-4ff0-99e4-594782c2ca7c",
+  "tls": true,
+  "sni": "www.nvidia.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "AQdYxjoMA0fxO8O9BX5bW4EMfRyiH09K0Hwjwse51AM",
+  "sid": "f5",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-284",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "e02e8223e8c5ba91",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -73727,6 +73966,28 @@
   "sources": [
    "clashnode",
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "edge.mediacorphub.org",
+  "port": 443,
+  "uuid": "1653818d-532e-46be-b825-384107fb7c3a",
+  "tls": true,
+  "sni": "edge.mediacorphub.org",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "firefox",
+  "reality": false,
+  "name": "canfingV2rayNG-88",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "5c7caf23a812c712",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -99718,6 +99979,25 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "mk33hz8-g01.jp03-j7-vm0.entry.fr0528.art",
+  "port": 21581,
+  "uuid": "91710d35-76ad-3513-bb14-4caddae68539",
+  "alterId": 1,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "mk33hz8-g01.jp03-j7-vm0.entry.fr0528.art",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "name": "请自行注册rustyun-b.top免费使用-日本01",
+  "source": "tg:@wxdy666→sub",
+  "fp": "552261deaeaa8611",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
