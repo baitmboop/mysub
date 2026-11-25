@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-25 19:58:19 (北京时间)
+# nodepool  生成于 2026-11-26 01:49:53 (北京时间)
 # 节点数 47  (自建 0 / 免费额度 0 / 免费池 47)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -268,65 +268,65 @@ proxies:
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N39 104.168.249.36
-    type: socks5
-    server: 104.168.249.36
-    port: 1080
-    udp: false
-    username: test123
-    password: test123
-  - name: N40 38.143.66.146
-    type: ss
-    server: 38.143.66.146
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N41 12.221.146.147
+  - name: N39 12.221.146.147
     type: http
     server: 12.221.146.147
     port: 443
     udp: false
     tls: true
     skip-cert-verify: true
-  - name: N42 51.222.136.236
-    type: ss
-    server: 51.222.136.236
-    port: 8882
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-    udp: true
-  - name: N43 149.40.57.133
-    type: ss
-    server: 149.40.57.133
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N44 149.40.57.138
-    type: ss
-    server: 149.40.57.138
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N45 149.40.57.134
-    type: ss
-    server: 149.40.57.134
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N46 149.40.57.135
-    type: ss
-    server: 149.40.57.135
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N47 156.146.38.168
+  - name: N40 156.146.38.168
     type: ss
     server: 156.146.38.168
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: N41 67.220.73.178
+    type: ss
+    server: 67.220.73.178
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N42 216.106.178.169
+    type: ss
+    server: 216.106.178.169
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N43 138.199.42.68
+    type: ss
+    server: 138.199.42.68
+    port: 8080
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
+    udp: true
+  - name: N44 38.128.66.32
+    type: ss
+    server: 38.128.66.32
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N45 67.220.73.247
+    type: ss
+    server: 67.220.73.247
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: DGjtV63aPW3E
+    udp: true
+  - name: N46 136.148.77.250
+    type: ss
+    server: 136.148.77.250
+    port: 8388
+    cipher: aes-256-gcm
+    password: "itzvpn@321"
+    udp: true
+  - name: N47 149.22.95.183
+    type: ss
+    server: 149.22.95.183
     port: 443
     cipher: aes-128-gcm
     password: shadowsocks
@@ -375,15 +375,15 @@ proxy-groups:
       - N36 twmoon1-cdn-route.couldflare-cdn.com
       - N37 147.161.246.34
       - N38 172.64.69.89
-      - N39 104.168.249.36
-      - N40 38.143.66.146
-      - N41 12.221.146.147
-      - N42 51.222.136.236
-      - N43 149.40.57.133
-      - N44 149.40.57.138
-      - N45 149.40.57.134
-      - N46 149.40.57.135
-      - N47 156.146.38.168
+      - N39 12.221.146.147
+      - N40 156.146.38.168
+      - N41 67.220.73.178
+      - N42 216.106.178.169
+      - N43 138.199.42.68
+      - N44 38.128.66.32
+      - N45 67.220.73.247
+      - N46 136.148.77.250
+      - N47 149.22.95.183
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -398,14 +398,14 @@ proxy-groups:
       - N29 172.67.190.164
       - N31 13.141.51.2
       - N35 free.fugui.lol
-      - N39 104.168.249.36
-      - N40 38.143.66.146
-      - N42 51.222.136.236
-      - N43 149.40.57.133
-      - N44 149.40.57.138
-      - N45 149.40.57.134
-      - N46 149.40.57.135
-      - N47 156.146.38.168
+      - N40 156.146.38.168
+      - N41 67.220.73.178
+      - N42 216.106.178.169
+      - N43 138.199.42.68
+      - N44 38.128.66.32
+      - N45 67.220.73.247
+      - N46 136.148.77.250
+      - N47 149.22.95.183
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -449,15 +449,15 @@ proxy-groups:
       - N36 twmoon1-cdn-route.couldflare-cdn.com
       - N37 147.161.246.34
       - N38 172.64.69.89
-      - N39 104.168.249.36
-      - N40 38.143.66.146
-      - N41 12.221.146.147
-      - N42 51.222.136.236
-      - N43 149.40.57.133
-      - N44 149.40.57.138
-      - N45 149.40.57.134
-      - N46 149.40.57.135
-      - N47 156.146.38.168
+      - N39 12.221.146.147
+      - N40 156.146.38.168
+      - N41 67.220.73.178
+      - N42 216.106.178.169
+      - N43 138.199.42.68
+      - N44 38.128.66.32
+      - N45 67.220.73.247
+      - N46 136.148.77.250
+      - N47 149.22.95.183
 rules:
   - "IP-CIDR,127.0.0.0/8,DIRECT,no-resolve"
   - "IP-CIDR,10.0.0.0/8,DIRECT,no-resolve"
