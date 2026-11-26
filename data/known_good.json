@@ -1,4 +1,120 @@
 {
+"102.244.78.61:8086": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.1855,
+"fp": "a63d7921269b1c63",
+"name": "喀麦隆-02【家宽】",
+"password": "",
+"port": 8086,
+"proto": "http",
+"server": "102.244.78.61",
+"skipCertVerify": true,
+"sni": "",
+"source": "tg:@wxdy666→sub",
+"sources": [
+"tg:@wxdy666→sub"
+],
+"tls": false,
+"username": ""
+},
+"103.109.173.171:80": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.1025,
+"fp": "ab18d4fca51af549",
+"name": "",
+"port": 80,
+"proto": "http",
+"server": "103.109.173.171",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"103.144.54.71:8082": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.1185,
+"fp": "d31203dfa57d832c",
+"name": "",
+"port": 8082,
+"proto": "http",
+"server": "103.144.54.71",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"103.162.17.203:8080": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.3228,
+"fp": "03d3231d751cad8c",
+"name": "",
+"port": 8080,
+"proto": "http",
+"server": "103.162.17.203",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"103.176.97.195:8082": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.366,
+"fp": "f67eebf063b5f8fb",
+"name": "",
+"port": 8082,
+"proto": "http",
+"server": "103.176.97.195",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"103.185.48.50:8080": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.2145,
+"fp": "c0158ca9cabf9d6b",
+"name": "",
+"port": 8080,
+"proto": "http",
+"server": "103.185.48.50",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"103.38.101.194:1111": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.1146,
+"fp": "b563693919cd32a7",
+"name": "",
+"port": 1111,
+"proto": "http",
+"server": "103.38.101.194",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
 "111.192.19.3:8888": {
 "archived_at": 1795429705,
 "cn_at": 1795428577,
@@ -9,6 +125,22 @@
 "port": 8888,
 "proto": "http",
 "server": "111.192.19.3",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"111.192.28.24:8888": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.3892,
+"fp": "bcbe35951e313198",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "111.192.28.24",
 "source": "extra:raw.githubusercontent.com/http.txt",
 "sources": [
 "extra:raw.githubusercontent.com/http.txt"
@@ -95,6 +227,22 @@
 ],
 "tls": false
 },
+"114.249.211.7:8888": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.6755,
+"fp": "aa131654c02617ec",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "114.249.211.7",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
 "114.249.219.234:8888": {
 "archived_at": 1795429705,
 "cn_at": 1795428532,
@@ -127,6 +275,22 @@
 ],
 "tls": false
 },
+"114.249.234.70:8888": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.4894,
+"fp": "d03cd69ec616d8a7",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "114.249.234.70",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
 "114.253.67.30:8888": {
 "archived_at": 1795429705,
 "cn_at": 1795428577,
@@ -144,8 +308,8 @@
 "tls": false
 },
 "121.169.46.116:1090": {
-"archived_at": 1795429705,
-"cn_at": 1795428577,
+"archived_at": 1795731528,
+"cn_at": 1795731527,
 "cn_latency": null,
 "cn_speed": 0.8434,
 "fp": "6b55776907dc2f86",
@@ -162,6 +326,22 @@
 ],
 "tls": false,
 "username": "Og%3D%3D"
+},
+"123.121.120.25:8888": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 2.1283,
+"fp": "36cf6b7b32e8aea7",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "123.121.120.25",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
 },
 "123.121.121.123:8888": {
 "archived_at": 1795429705,
@@ -180,8 +360,8 @@
 "tls": false
 },
 "123.121.130.181:8888": {
-"archived_at": 1795429705,
-"cn_at": 1795428577,
+"archived_at": 1795731528,
+"cn_at": 1795731527,
 "cn_latency": null,
 "cn_speed": 0.7652,
 "fp": "0d649bec5365b790",
@@ -227,9 +407,25 @@
 ],
 "tls": false
 },
+"123.121.139.85:8888": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.2966,
+"fp": "e2f3171104e775ba",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "123.121.139.85",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
 "123.121.142.252:8888": {
-"archived_at": 1795429705,
-"cn_at": 1795428577,
+"archived_at": 1795731528,
+"cn_at": 1795731527,
 "cn_latency": null,
 "cn_speed": 0.3696,
 "fp": "4bc76de2eb3859d4",
@@ -243,14 +439,46 @@
 ],
 "tls": false
 },
+"124.128.149.84:8090": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.4162,
+"fp": "aec13c19e10c7cbd",
+"name": "",
+"port": 8090,
+"proto": "http",
+"server": "124.128.149.84",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"124.64.9.117:8888": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 1.2979,
+"fp": "0d3fa554b75eee5a",
+"name": "",
+"port": 8888,
+"proto": "http",
+"server": "124.64.9.117",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
 "13.141.51.2:443": {
-"archived_at": 1795429705,
-"cn_at": 1795428577,
+"archived_at": 1795731528,
+"cn_at": 1795731527,
 "cn_latency": 2597,
 "cn_speed": 0.2044,
 "flow": "",
 "fp": "0dee6fb95b0ee5fc",
-"name": "NL荷兰(mibei77.com 米贝节点分享) (4)",
+"name": "US美国(mibei77.com 米贝节点分享) (33)",
 "network": "tcp",
 "pbk": "UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY",
 "port": 443,
@@ -300,8 +528,8 @@
 "tls": false
 },
 "154.26.192.123:10988": {
-"archived_at": 1795429705,
-"cn_at": 1795428577,
+"archived_at": 1795731528,
+"cn_at": 1795731527,
 "cn_latency": null,
 "cn_speed": 0.1462,
 "fp": "19c3170426569206",
@@ -319,11 +547,43 @@
 "tls": false,
 "username": "fQ67Dpe5dU"
 },
+"157.20.239.237:9090": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.1062,
+"fp": "80668e64a18608b7",
+"name": "",
+"port": 9090,
+"proto": "http",
+"server": "157.20.239.237",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"160.25.196.30:8090": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 1.0454,
+"fp": "a1e6d9083c0fd79a",
+"name": "",
+"port": 8090,
+"proto": "http",
+"server": "160.25.196.30",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
 "172.67.190.164:443": {
 "alterId": 0,
-"archived_at": 1795429705,
+"archived_at": 1795731528,
 "cipher": "auto",
-"cn_at": 1795428577,
+"cn_at": 1795731527,
 "cn_latency": 2218,
 "cn_speed": 0.288,
 "fp": "91c8c5bf97dfa29b",
@@ -335,13 +595,89 @@
 "proto": "vmess",
 "server": "172.67.190.164",
 "sni": "guanwang.awsno.com",
-"source": "clashnode",
+"source": "ermaozi",
 "sources": [
-"clashnode",
+"ermaozi",
+"xinshoucun",
 "anaer/Sub"
 ],
-"tls": true,
+"tls": false,
 "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a"
+},
+"179.253.66.78:3128": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.6349,
+"fp": "a596d45d18901215",
+"name": "",
+"port": 3128,
+"proto": "http",
+"server": "179.253.66.78",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"183.106.215.208:1080": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.9516,
+"fp": "7dda0db3b5e64971",
+"name": "",
+"port": 1080,
+"proto": "socks5",
+"server": "183.106.215.208",
+"source": "NoMoreWalls",
+"sources": [
+"NoMoreWalls",
+"tg:@wxdy666→sub"
+],
+"tls": false
+},
+"185.78.113.230:81": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.1919,
+"fp": "d0102787d9c16f68",
+"name": "",
+"port": 81,
+"proto": "http",
+"server": "185.78.113.230",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"188.225.33.67:443": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": 2080,
+"cn_speed": 0.11,
+"flow": "",
+"fp": "e1031efd78a5ed20",
+"host": "e2.cdnwh.icu",
+"name": "🔷67@oneclickvpnkeys",
+"network": "ws",
+"path": "/stream/segment/3078a41dd7eb/",
+"pbk": "",
+"port": 443,
+"proto": "vless",
+"reality": false,
+"server": "188.225.33.67",
+"sid": "",
+"sni": "e2.cdnwh.icu",
+"source": "tg:@oneclickvpnkeys",
+"sources": [
+"tg:@oneclickvpnkeys"
+],
+"tls": true,
+"utls": "safari",
+"uuid": "b432a23a-acff-425c-bf69-70480cd6ed09"
 },
 "189.51.168.165:999": {
 "archived_at": 1795429705,
@@ -374,6 +710,101 @@
 "extra:raw.githubusercontent.com/http.txt"
 ],
 "tls": false
+},
+"202.47.189.15:1111": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.1692,
+"fp": "92731ea194f2c030",
+"name": "",
+"port": 1111,
+"proto": "http",
+"server": "202.47.189.15",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"202.50.253.27:19999": {
+"archived_at": 1795731528,
+"cipher": "aes-256-gcm",
+"cn_at": 1795731527,
+"cn_latency": 741,
+"cn_speed": 2.1514,
+"fp": "5889e2f9e2922c07",
+"name": "🇮🇹 意大利 | ITA #3",
+"password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+"port": 19999,
+"proto": "ss",
+"server": "202.50.253.27",
+"source": "NoMoreWalls",
+"sources": [
+"NoMoreWalls",
+"ermaozi",
+"ripaojiedian",
+"mahdibland",
+"go4sharing/sub",
+"go4sharing/arch",
+"xinshoucun",
+"clashnode",
+"tg:@wxdy666→sub",
+"tg:@byxiaoxi→blog",
+"Pawdroid/Free-servers"
+]
+},
+"202.50.253.81:19999": {
+"archived_at": 1795731528,
+"cipher": "aes-256-gcm",
+"cn_at": 1795731527,
+"cn_latency": 733,
+"cn_speed": 2.0797,
+"fp": "303e5a2070ad53b2",
+"name": "🇮🇹 意大利 | ITA #1",
+"password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+"port": 19999,
+"proto": "ss",
+"server": "202.50.253.81",
+"source": "NoMoreWalls",
+"sources": [
+"NoMoreWalls",
+"ermaozi",
+"mahdibland",
+"go4sharing/sub",
+"go4sharing/arch",
+"xinshoucun",
+"clashnode",
+"tg:@wxdy666→sub",
+"tg:@byxiaoxi→blog",
+"Pawdroid/Free-servers"
+]
+},
+"213.183.45.23:8454": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": 1506,
+"cn_speed": 0.2877,
+"flow": "",
+"fp": "1ed05cf23bdeca13",
+"host": "",
+"name": "🇫🇷 法国 | FRA",
+"network": "ws",
+"path": "/ws",
+"pbk": "",
+"port": 8454,
+"proto": "vless",
+"reality": false,
+"server": "213.183.45.23",
+"sid": "",
+"sni": "store.plumstatic.com",
+"source": "ermaozi",
+"sources": [
+"ermaozi"
+],
+"tls": true,
+"utls": "firefox",
+"uuid": "eb62cabf-5901-403a-aa0c-b1d9ed1b346d"
 },
 "222.128.169.173:8888": {
 "archived_at": 1795429705,
@@ -443,9 +874,41 @@
 "utls": "chrome",
 "uuid": "1582f5d8-f535-4b99-af49-9d2a1d025069"
 },
+"34.105.252.3:3128": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.5526,
+"fp": "b37abadc3d56d77b",
+"name": "",
+"port": 3128,
+"proto": "http",
+"server": "34.105.252.3",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
+"34.65.99.32:3128": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": null,
+"cn_speed": 0.1985,
+"fp": "b375f7c3b910b6ee",
+"name": "",
+"port": 3128,
+"proto": "http",
+"server": "34.65.99.32",
+"source": "extra:raw.githubusercontent.com/http.txt",
+"sources": [
+"extra:raw.githubusercontent.com/http.txt"
+],
+"tls": false
+},
 "4.144.146.21:80": {
-"archived_at": 1795429705,
-"cn_at": 1795428577,
+"archived_at": 1795731528,
+"cn_at": 1795731527,
 "cn_latency": null,
 "cn_speed": 1.4038,
 "fp": "f4d743b675bda911",
@@ -501,6 +964,31 @@
 "utls": "chrome",
 "uuid": "1582f5d8-f535-4b99-af49-9d2a1d025069"
 },
+"5d0319t.nl7.h1clayd.click:443": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": 2461,
+"cn_speed": 0.962,
+"flow": "",
+"fp": "48b8088c1a438ee8",
+"name": "US美国(mibei77.com 米贝节点分享) (24)",
+"network": "tcp",
+"pbk": "l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs",
+"port": 443,
+"proto": "vless",
+"reality": true,
+"server": "5d0319t.nl7.h1clayd.click",
+"sid": "361d0dd59c70516f",
+"sni": "5d0319t.nl7.h1clayd.click",
+"source": "clashnode",
+"sources": [
+"clashnode",
+"Pawdroid/Free-servers"
+],
+"tls": true,
+"utls": "chrome",
+"uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+},
 "77.67.18.110:25680": {
 "archived_at": 1795429705,
 "cn_at": 1795428577,
@@ -528,8 +1016,8 @@
 "uuid": "1582f5d8-f535-4b99-af49-9d2a1d025069"
 },
 "fan.226278.xyz:443": {
-"archived_at": 1795429705,
-"cn_at": 1795428577,
+"archived_at": 1795731528,
+"cn_at": 1795731527,
 "cn_latency": null,
 "cn_speed": 0.2933,
 "fp": "c58f7f408e690149",
@@ -548,8 +1036,8 @@
 "username": ""
 },
 "fan.365747.xyz:443": {
-"archived_at": 1795429705,
-"cn_at": 1795428577,
+"archived_at": 1795731528,
+"cn_at": 1795731527,
 "cn_latency": null,
 "cn_speed": 0.0963,
 "fp": "2aca724d530a089a",
@@ -568,8 +1056,8 @@
 "username": ""
 },
 "fan.596189.xyz:443": {
-"archived_at": 1795429705,
-"cn_at": 1795428577,
+"archived_at": 1795731528,
+"cn_at": 1795731527,
 "cn_latency": null,
 "cn_speed": 0.3189,
 "fp": "267a97f672b4924c",
@@ -588,8 +1076,8 @@
 "username": ""
 },
 "free.fugui.lol:51283": {
-"archived_at": 1795429705,
-"cn_at": 1795428577,
+"archived_at": 1795731528,
+"cn_at": 1795731527,
 "cn_latency": 4496,
 "cn_speed": 0.1042,
 "flow": "xtls-rprx-vision",
@@ -612,27 +1100,28 @@
 "uuid": "ead3595f-4020-4e76-a3ec-c248e1a2f2f7"
 },
 "twmoon1-cdn-route.couldflare-cdn.com:1443": {
-"archived_at": 1795429705,
-"cn_at": 1795428577,
+"archived_at": 1795731528,
+"cn_at": 1795731527,
 "cn_latency": null,
 "cn_speed": 0.0911,
 "fp": "3e7d15f9d80a45a0",
-"name": "",
+"name": "中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 5",
 "password": "exaxgqkKkd0TAMrCxeonWg==",
 "port": 1443,
 "proto": "http",
 "server": "twmoon1-cdn-route.couldflare-cdn.com",
-"source": "NoMoreWalls",
+"skipCertVerify": true,
+"sni": "",
+"source": "go4sharing/arch",
 "sources": [
-"NoMoreWalls",
 "go4sharing/arch"
 ],
 "tls": true,
 "username": "mrwdfNTD8M79LCukCieldrqZWqs="
 },
 "usgp1-cdn-route.couldflare-cdn.com:443": {
-"archived_at": 1795429705,
-"cn_at": 1795428577,
+"archived_at": 1795731528,
+"cn_at": 1795731527,
 "cn_latency": null,
 "cn_speed": 0.6926,
 "fp": "334aee3cd2bf43f9",
@@ -648,5 +1137,27 @@
 ],
 "tls": true,
 "username": "mrwdfNTD8M79LCukCieldrqZWqs="
+},
+"xray-dmr3b3hy-calm-maple-7.cloady.io:443": {
+"archived_at": 1795731528,
+"cn_at": 1795731527,
+"cn_latency": 1721,
+"cn_speed": 0.4205,
+"flow": "",
+"fp": "1d4cf6697b066491",
+"name": "IN印度(mibei77.com 米贝节点分享)",
+"network": "ws",
+"path": "/0175469f14317d82",
+"port": 443,
+"proto": "vless",
+"server": "xray-dmr3b3hy-calm-maple-7.cloady.io",
+"sni": "xray-dmr3b3hy-calm-maple-7.cloady.io",
+"source": "clashnode",
+"sources": [
+"clashnode"
+],
+"tls": true,
+"utls": "",
+"uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636"
 }
 }
