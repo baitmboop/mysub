@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-26T12:37:33+08:00",
+ "generated_at": "2026-11-26T14:24:08+08:00",
  "mode": "only-hot",
- "total_nodes": 6409,
- "base_nodes": 6400,
- "new_nodes": 9,
+ "total_nodes": 6415,
+ "base_nodes": 6409,
+ "new_nodes": 6,
  "by_source": {
   "go4sharing/arch": 3965,
   "tg:@byxiaoxi→blog": 496,
@@ -15,8 +15,8 @@
   "ermaozi": 113,
   "tg:@oneclickvpnkeys": 79,
   "tg:@wxdy666→sub": 75,
+  "tg:@vpnfail_v2ray": 43,
   "xinshoucun": 38,
-  "tg:@vpnfail_v2ray": 37,
   "tg:@freeVPNjd→sub": 26,
   "oneclash": 20,
   "freefq": 14,

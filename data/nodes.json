@@ -20576,7 +20576,8 @@
   "sources": [
    "mahdibland",
    "xinshoucun",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -20662,6 +20663,19 @@
    "mahdibland",
    "xinshoucun",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "158.173.20.208",
+  "port": 443,
+  "cipher": "aes-128-gcm",
+  "password": "shadowsocks",
+  "name": "filembad-42",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "9b9efff86882b35b",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -62071,6 +62085,28 @@
  },
  {
   "proto": "vless",
+  "server": "172.64.147.255",
+  "port": 80,
+  "uuid": "478cc26d-16b3-4fdd-be64-60d5a58c1622",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/",
+  "host": "tt.andishehparenting.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-145",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "f03b920526d0ab3a",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "172.64.149.88",
   "port": 443,
   "name": "CA加拿大(mibei77.com 米贝节点分享)",
@@ -63317,6 +63353,28 @@
   "name": "filembad-311",
   "source": "tg:@vpnfail_v2ray",
   "fp": "34c066e8f5bfc9b3",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.179.154.10",
+  "port": 8443,
+  "uuid": "b5b563ad-e4ef-4873-9d35-66cc08202aec",
+  "tls": true,
+  "sni": "www.datadoghq.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "I6qe1zV_bwYHfPkNNJFKZWMoqkHOrsDsQaQRB9ihFWM",
+  "sid": "10374ee0",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-314",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "82d86a702f7327b1",
   "sources": [
    "tg:@vpnfail_v2ray"
   ]
@@ -73764,6 +73822,28 @@
  },
  {
   "proto": "vless",
+  "server": "95.38.233.100",
+  "port": 28110,
+  "uuid": "fe75304a-2e17-4eae-b5ce-05b39aff83b2",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-392",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "54e2ae1a841093b2",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "98.142.251.69",
   "port": 443,
   "uuid": "f8cb3c89-32af-4255-bebc-d90aad175069",
@@ -75388,6 +75468,28 @@
  },
  {
   "proto": "vless",
+  "server": "fr1oo.sublinkplas.ir",
+  "port": 12190,
+  "uuid": "b28e9267-bb15-4e09-b126-a49aad8a52a2",
+  "tls": true,
+  "sni": "delivery.mp.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "33hVTwP-1rQYG0F92oXJ-o1zPo4Cc8n2Uml_i9tv6XM",
+  "sid": "3e5cba1bd6eb6221",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-307",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "86e58ec2015c6c95",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "fr5.wizard.select",
   "port": 443,
   "name": "🇪🇪EE爱沙尼亚丨yoyapai.com",
@@ -75518,7 +75620,8 @@
   "fp": "92c044d08f026f5e",
   "sources": [
    "ermaozi",
-   "clashnode"
+   "clashnode",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -103079,6 +103182,25 @@
   "name": "filembad-450",
   "source": "tg:@vpnfail_v2ray",
   "fp": "52ed386763ac7b96",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "vmnl31-multi.multiserver-adelshoop.com",
+  "port": 80,
+  "uuid": "91917e63-75c3-4b9f-9721-ea0916919b49",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "",
+  "host": "",
+  "name": "filembad-443",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "4e926b7419865d35",
   "sources": [
    "tg:@vpnfail_v2ray"
   ]
