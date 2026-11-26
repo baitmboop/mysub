@@ -31911,6 +31911,19 @@
  },
  {
   "proto": "ss",
+  "server": "81.12.35.242",
+  "port": 8443,
+  "cipher": "2022-blake3-aes-128-gcm",
+  "password": "kNek+POwGgn5qhhcIOxN+w==:qYMu8sklQzO6qlpM5iVtjg==",
+  "name": "filembad-8",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "f0a2b528c3a947e5",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "82.110.60.9",
   "port": 19999,
   "cipher": "aes-256-gcm",
@@ -34581,6 +34594,19 @@
   "fp": "14d3e68f3b59b382",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "hl33.thugiping.com",
+  "port": 443,
+  "cipher": "aes-256-gcm",
+  "password": "dad9f029-e280-4dc4-8855-fec0f8143925",
+  "name": "filembad-47",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "5597a78f0fb08b24",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -56671,6 +56697,28 @@
  },
  {
   "proto": "vless",
+  "server": "104.16.72.41",
+  "port": 443,
+  "uuid": "7e544a9d-7667-413b-bbb0-b3bb1aac6d77",
+  "tls": true,
+  "sni": "shegeftihaaa.net",
+  "network": "ws",
+  "path": "/rsedgws",
+  "host": "shegeftihaaa.net",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-226",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "aa697df4ccb2c8dc",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.17.102.95",
   "port": 2096,
   "name": "美国 - 聖荷西 - Cloudflare, Inc. - 6",
@@ -58215,7 +58263,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "1631727bda4e3685",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -58259,7 +58308,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "3b3d8688578c3406",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -58681,7 +58731,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "92f810351eea67ac",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -58703,7 +58754,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "a8d720d1a13748eb",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -58725,7 +58777,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "a5bb9eb86e2e8f53",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -58747,7 +58800,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "67facb8aff022aae",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -58769,7 +58823,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "d16e2a9f30ff0c66",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -58791,7 +58846,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "a0df0b93e3a2631c",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -59673,7 +59729,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "b81808ed5af81eae",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -59695,7 +59752,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "ca977e301f42c11c",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -59717,7 +59775,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "21be6f238d9745c6",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -61959,7 +62018,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "9ad9e69acd89b189",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -62132,7 +62192,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "41fa7a2e270b3432",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -62528,6 +62589,28 @@
  },
  {
   "proto": "vless",
+  "server": "178.62.115.140",
+  "port": 443,
+  "uuid": "40992c2a-513e-4837-9594-23411fd42afd",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "/",
+  "host": "store.steampowered.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-145",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "ca75c37a1c1df794",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "178.62.58.181",
   "port": 443,
   "uuid": "40992c2a-513e-4837-9594-23411fd42afd",
@@ -62728,7 +62811,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "dd6a925f39c3ccea",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -62822,7 +62906,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "14f3a0260ea7076c",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -63212,6 +63297,28 @@
   "fp": "4ac090176c62ccd0",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.179.154.10",
+  "port": 443,
+  "uuid": "b5b563ad-e4ef-4873-9d35-66cc08202aec",
+  "tls": true,
+  "sni": "www.tesla.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "XF2dqpfcen9a8T2jpM1QJ2V5SCy83kIgt2EElfNBZDk",
+  "sid": "c61ab85d",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-311",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "34c066e8f5bfc9b3",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -67006,7 +67113,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "e7d9d47ca71276de",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -67028,7 +67136,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "6714b15743bd8fef",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -67050,7 +67159,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "4ad209e6a9d9bdcc",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -67072,7 +67182,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "e80302a6713a665d",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -67113,7 +67224,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "b40ca7d45ec3bb50",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -67135,7 +67247,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "0199380c6eca9f02",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -67157,7 +67270,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "1b7d1f1101a2ed45",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -67655,7 +67769,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "3b93807982e8efe8",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -67677,7 +67792,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "5840bda1fc882569",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -67699,7 +67815,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "3808ebb9662c4673",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -67721,7 +67838,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "e6935c37feac5861",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -67743,7 +67861,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "22b2ee84579c3d8a",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -67765,7 +67884,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "a7ead6dcdc3bb4ad",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -67829,7 +67949,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "36c40688feb9329e",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -70285,7 +70406,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "1ef2c8ea615c72bf",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -70374,6 +70496,28 @@
   "fp": "ab7359bc9647f3d9",
   "sources": [
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "51.21.253.12",
+  "port": 61483,
+  "uuid": "6593f6ad-a7f2-41fa-9166-b3cc5587f7f8",
+  "tls": true,
+  "sni": "gateway-sr-china.icloud.com",
+  "network": "xhttp",
+  "path": "/t.me-SubGift",
+  "host": "51.21.253.12",
+  "flow": "xtls-rprx-vision",
+  "pbk": "VCVumwlIhEVFWJ5mfqa0dzCe89iUdZei2v3a4GzwfzY",
+  "sid": "fcac23caeed68f",
+  "utls": "safari",
+  "reality": true,
+  "name": "canfingV2rayNG-210",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "37b7accbca68bd4e",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -71216,6 +71360,28 @@
   "name": "canfingV2rayNG-176",
   "source": "tg:@vpnfail_v2ray",
   "fp": "a0c51328daf2d4fe",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "79.133.126.86",
+  "port": 443,
+  "uuid": "5be9cd41-d66c-4ffa-903b-f99ac830f444",
+  "tls": true,
+  "sni": "1bwwcizm4c0a.vtret.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-199",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "ea1457bd7ab309d8",
   "sources": [
    "tg:@vpnfail_v2ray"
   ]
@@ -72236,6 +72402,28 @@
  },
  {
   "proto": "vless",
+  "server": "87.58.205.88",
+  "port": 443,
+  "uuid": "d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02",
+  "tls": true,
+  "sni": "google.com",
+  "network": "xhttp",
+  "path": "/",
+  "host": "",
+  "flow": "",
+  "pbk": "v_s3GW5_7jvB081tdUeyoDUUTq6fZwqKbVS7CdvLFA0",
+  "sid": "72cd47c079c0a3df",
+  "utls": "random",
+  "reality": true,
+  "name": "canfingV2rayNG-358",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "046c6eca27318827",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "87.76.154.28",
   "port": 57231,
   "uuid": "c34a41b6-598f-46ac-bea3-8b39a906f922",
@@ -72602,7 +72790,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "da7d861b084a62df",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -74688,7 +74877,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "ca67829b27b01980",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -75809,7 +75999,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "c96db6de3ebb19d6",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -75831,7 +76022,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "d14b93228d01c1bc",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -75853,7 +76045,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "711e5ce7044f6d65",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -75875,7 +76068,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "e3e25fefd822c6f3",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -77459,7 +77653,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "8b9959f69981e5a8",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -77481,7 +77676,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "298ae4054ae1767c",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -77503,7 +77699,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "c0b0bdd6d7bd9586",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -77525,7 +77722,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "e3780bdb59aa989c",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -77898,7 +78096,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "8f242e318a321075",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -77920,7 +78119,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "70936ac6d226da94",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -77942,7 +78142,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "19f05d4ff90c6dcb",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -77964,7 +78165,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "fee6c5f0e3451cf6",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -77986,7 +78188,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "650d12dd29ee672c",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -78008,7 +78211,8 @@
   "source": "tg:@wxdy666→sub",
   "fp": "ffeeafa3647f7e58",
   "sources": [
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -101704,6 +101908,25 @@
   "fp": "1ed6459eed132487",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "sr-vip6.arwandping.com",
+  "port": 8443,
+  "uuid": "e49eb540-0e7f-4072-909a-4305b5fde5c1",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "/",
+  "host": "",
+  "name": "filembad-460",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "577da9da049c9aa8",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
