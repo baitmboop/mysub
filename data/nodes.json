@@ -49468,6 +49468,23 @@
  },
  {
   "proto": "trojan",
+  "server": "199.232.78.159",
+  "port": 443,
+  "password": "jcTG9WSWMJAmR4rv10xpww",
+  "sni": "cdn.akamai.steamstatic.com",
+  "network": "ws",
+  "path": "/TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER",
+  "host": "copy_az_channel_NUFiLTER_7i.global.ssl.fastly.net.",
+  "skipCertVerify": false,
+  "name": "canfingV2rayNG-84",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c1fa89ae276f2b99",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "199.34.229.253",
   "port": 443,
   "name": "美国 - 聖荷西 - 25",
@@ -64953,6 +64970,28 @@
  },
  {
   "proto": "vless",
+  "server": "146.103.43.124",
+  "port": 9543,
+  "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6",
+  "tls": true,
+  "sni": "storage.yandexcloud.net",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+  "sid": "123abcdf",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-289",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "51f9ed26e57f3a9a",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "146.103.43.70",
   "port": 9543,
   "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6",
@@ -66420,7 +66459,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "07862dbd176b92a2",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -67260,7 +67300,8 @@
   "host": "matrix.learnpodedu.com",
   "fp": "ce615e5c0e102da9",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -75203,7 +75244,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "55bbba1576c99bc5",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -83035,6 +83077,28 @@
  },
  {
   "proto": "vless",
+  "server": "varzesh.com.tiket.paxaro.ir",
+  "port": 4433,
+  "uuid": "9d464bfa-c8b2-4a4f-9bf7-9ec31b339b67",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "/",
+  "host": "play.google.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-272",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "5755367bec67c6a1",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "vip1.kaixincloud.top",
   "port": 8443,
   "name": "美国 - 達拉斯 - HostPapa - 35",
@@ -87115,7 +87179,8 @@
   "fp": "20e11c64981fa628",
   "sources": [
    "clashnode",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -90095,6 +90160,25 @@
   "sources": [
    "clashnode",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "194.110.210.41",
+  "port": 28059,
+  "uuid": "c38605a8-89ae-4e57-b9b0-35606df2e1a3",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "/?Telegram---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24/",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24/",
+  "name": "filembad-448",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "a67cf0881606e19e",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
