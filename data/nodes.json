@@ -36401,6 +36401,19 @@
  },
  {
   "proto": "ss",
+  "server": "54.37.235.208",
+  "port": 11169,
+  "cipher": "aes-128-gcm",
+  "password": "122e6f90890e2691f3da63eddf951495",
+  "name": "filembad-51",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "b8b756dea6f0d5e8",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "54.37.77.214",
   "port": 11201,
   "name": "德国 - 萨尔布吕肯 - OVH SAS - 3",
@@ -62974,6 +62987,28 @@
  },
  {
   "proto": "vless",
+  "server": "104.19.250.20",
+  "port": 443,
+  "uuid": "24d49ddd-67c1-4821-b5b9-f12107366978",
+  "tls": true,
+  "sni": "bahari.kiamobilepart.com",
+  "network": "ws",
+  "path": "/api",
+  "host": "bahari.kiamobilepart.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "canfingV2rayNG-131",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "160a1aee9bb006f7",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.19.39.97",
   "port": 443,
   "name": "加拿大 - 多伦多 - Cloudflare, Inc. - 8",
@@ -67367,7 +67402,8 @@
   "source": "tg:@oneclickvpnkeys",
   "fp": "d426028c2fa10f62",
   "sources": [
-   "tg:@oneclickvpnkeys"
+   "tg:@oneclickvpnkeys",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -74977,7 +75013,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "7b01c8d8450fc276",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -75133,7 +75170,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "d26ba5658d70d6af",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -75289,7 +75327,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "1ef2c8ea615c72bf",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -78138,6 +78177,28 @@
  },
  {
   "proto": "vless",
+  "server": "a.333333331.xyz",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "a.333333331.xyz",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "a.333333331.xyz",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 a IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6b0976f2f6749d82",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "a2.arshia-nova.ir",
   "port": 443,
   "name": "🇺🇸_US_美国->🇫🇮_FI_芬兰",
@@ -78197,6 +78258,160 @@
    "NoMoreWalls",
    "ermaozi",
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "aa.333333331.xyz",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "aa.333333331.xyz",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "aa.333333331.xyz",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 aa IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "142aabd4de8d7da0",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "aaa.333333331.xyz",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "aaa.333333331.xyz",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "aaa.333333331.xyz",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 aaa IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "3f10e95122e0f510",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "aaaa.333333331.xyz",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "aaaa.333333331.xyz",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "aaaa.333333331.xyz",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 aaaa IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "7b4942676c6d4c1f",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "aaaaa.333333331.xyz",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "aaaaa.333333331.xyz",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "aaaaa.333333331.xyz",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 aaaaa IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "4e65d7ef8e74f016",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "aaaaaa.333333331.xyz",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "aaaaaa.333333331.xyz",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "aaaaaa.333333331.xyz",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 aaaaaa IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6da9999358190d73",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "aaaaaaa.333333331.xyz",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "aaaaaaa.333333331.xyz",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "aaaaaaa.333333331.xyz",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 aaaaaaa IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "7a39882b83d13790",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "aaaaaaaa.333333331.xyz",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "aaaaaaaa.333333331.xyz",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "aaaaaaaa.333333331.xyz",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 aaaaaaaa IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "ddfd6131440861a0",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -78604,6 +78819,28 @@
   "name": "canfingV2rayNG-374",
   "source": "tg:@vpnfail_v2ray",
   "fp": "c922f714e517a230",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "cd3.postshup.ir",
+  "port": 2086,
+  "uuid": "3b715892-8610-4fdc-9086-647b36af5443",
+  "tls": false,
+  "sni": "",
+  "network": "xhttp",
+  "path": "/?ed=8192",
+  "host": "B.cafearen.ir",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-164",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "f05f11eaed535f94",
   "sources": [
    "tg:@vpnfail_v2ray"
   ]
@@ -79443,6 +79680,28 @@
  },
  {
   "proto": "vless",
+  "server": "dl3.gooniforoshi.fun",
+  "port": 443,
+  "uuid": "73e08fcb-a0c7-45d0-b55d-f78c903c64a6",
+  "tls": true,
+  "sni": "dl3.gooniforoshi.fun",
+  "network": "ws",
+  "path": "/download.php",
+  "host": "dl3.gooniforoshi.fun",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-260",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "bab269816ac7aec1",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "docker.1panel.live",
   "port": 2053,
   "name": "荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 1",
@@ -79789,6 +80048,167 @@
   "fp": "d6be9129064f63b6",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "free.fugui.lol",
+  "port": 47396,
+  "uuid": "36edddde-95f7-4f30-966e-6c19c737ef55",
+  "tls": true,
+  "sni": "swdist.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+  "sid": "fa514b83",
+  "utls": "ios",
+  "reality": true,
+  "name": "剩余流量：500 GB",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "4c4029610e8e8980",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "free.fugui.lol",
+  "port": 54075,
+  "uuid": "36edddde-95f7-4f30-966e-6c19c737ef55",
+  "tls": true,
+  "sni": "swdist.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+  "sid": "fa514b83",
+  "utls": "ios",
+  "reality": true,
+  "name": "香港2 免费线路 0x",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "0ee0fe8365da3a21",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "free.fugui.lol",
+  "port": 24519,
+  "uuid": "36edddde-95f7-4f30-966e-6c19c737ef55",
+  "tls": true,
+  "sni": "swdist.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+  "sid": "fa514b83",
+  "utls": "ios",
+  "reality": true,
+  "name": "日本1 免费线路 0x",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "698d8eac1d520e9c",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "free.fugui.lol",
+  "port": 51283,
+  "uuid": "36edddde-95f7-4f30-966e-6c19c737ef55",
+  "tls": true,
+  "sni": "swdist.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+  "sid": "fa514b83",
+  "utls": "ios",
+  "reality": true,
+  "name": "新加坡1 免费线路 0x",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "7633988f643d1802",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "free.fugui.lol",
+  "port": 38741,
+  "uuid": "36edddde-95f7-4f30-966e-6c19c737ef55",
+  "tls": true,
+  "sni": "swdist.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+  "sid": "fa514b83",
+  "utls": "ios",
+  "reality": true,
+  "name": "美国1 免费线路 0x",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "0888f85df798fc0d",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "free.fugui.lol",
+  "port": 62015,
+  "uuid": "36edddde-95f7-4f30-966e-6c19c737ef55",
+  "tls": true,
+  "sni": "swdist.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+  "sid": "fa514b83",
+  "utls": "ios",
+  "reality": true,
+  "name": "英国1 免费线路 0x",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "fa11f1e0eeb4da13",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "free.fugui.lol",
+  "port": 19482,
+  "uuid": "36edddde-95f7-4f30-966e-6c19c737ef55",
+  "tls": true,
+  "sni": "swdist.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+  "sid": "fa514b83",
+  "utls": "ios",
+  "reality": true,
+  "name": "德国1 免费线路 0x",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "773b8f4d20cab97d",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -81005,6 +81425,28 @@
  },
  {
   "proto": "vless",
+  "server": "nl3ww.sublinkplas.ir",
+  "port": 12190,
+  "uuid": "0099141e-7d84-483f-9fdc-292d37773a62",
+  "tls": true,
+  "sni": "delivery.mp.microsoft.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "33hVTwP-1rQYG0F92oXJ-o1zPo4Cc8n2Uml_i9tv6XM",
+  "sid": "aa74a7a98e86f2ed",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-92",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "9eeb67ed0b39e66d",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "nlkk.milkabebar.ir",
   "port": 46122,
   "uuid": "4e932df2-a06a-4043-861c-87fe8d217aae",
@@ -81457,6 +81899,28 @@
  },
  {
   "proto": "vless",
+  "server": "q.bn-02.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "q.bn-02.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "q.bn-02.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 q IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "47f5fd4ac1ba0284",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "qq.99944444.xyz",
   "port": 443,
   "uuid": "d2f2639b-ff62-4553-abce-d75e231b300c",
@@ -81473,6 +81937,28 @@
   "name": "xhttp vless TLS H1 🔀 qq IP4/6",
   "source": "tg:@wxdy666→sub",
   "fp": "895dd5b441e88b76",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "qq.bn-02.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "qq.bn-02.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "qq.bn-02.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 qq IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "4bac2cf012527fa3",
   "sources": [
    "tg:@wxdy666→sub"
   ]
@@ -81501,6 +81987,28 @@
  },
  {
   "proto": "vless",
+  "server": "qqq.bn-02.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "qqq.bn-02.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "qqq.bn-02.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 qqq IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "9b2022a2056f015e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "qqqq.99944444.xyz",
   "port": 443,
   "uuid": "d2f2639b-ff62-4553-abce-d75e231b300c",
@@ -81517,6 +82025,28 @@
   "name": "xhttp vless TLS H1 🔀 qqqq IP4/6",
   "source": "tg:@wxdy666→sub",
   "fp": "b48726111cc16332",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "qqqq.bn-02.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "qqqq.bn-02.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "qqqq.bn-02.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 qqqq IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "2d42a37a6ea1484b",
   "sources": [
    "tg:@wxdy666→sub"
   ]
@@ -81545,6 +82075,28 @@
  },
  {
   "proto": "vless",
+  "server": "qqqqq.bn-02.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "qqqqq.bn-02.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "qqqqq.bn-02.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 qqqqq IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "bddbeb8b804b9030",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "qqqqqq.99944444.xyz",
   "port": 443,
   "uuid": "d2f2639b-ff62-4553-abce-d75e231b300c",
@@ -81561,6 +82113,28 @@
   "name": "xhttp vless TLS H1 🔀 qqqqqq IP4/6",
   "source": "tg:@wxdy666→sub",
   "fp": "4966a9ae57ef55f1",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "qqqqqq.bn-02.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "qqqqqq.bn-02.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "qqqqqq.bn-02.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 qqqqqq IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "794cd88e8b1e0fd1",
   "sources": [
    "tg:@wxdy666→sub"
   ]
@@ -81589,6 +82163,28 @@
  },
  {
   "proto": "vless",
+  "server": "qqqqqqq.bn-02.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "qqqqqqq.bn-02.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "qqqqqqq.bn-02.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 qqqqqqq IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "94eccf0b2ebf94d0",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "qqqqqqqq.99944444.xyz",
   "port": 443,
   "uuid": "d2f2639b-ff62-4553-abce-d75e231b300c",
@@ -81605,6 +82201,28 @@
   "name": "xhttp vless TLS H1 🔀 qqqqqqqq IP4/6",
   "source": "tg:@wxdy666→sub",
   "fp": "523fcaa39b927604",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "qqqqqqqq.bn-02.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "qqqqqqqq.bn-02.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "qqqqqqqq.bn-02.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 qqqqqqqq IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "c3f72e6b1ef550af",
   "sources": [
    "tg:@wxdy666→sub"
   ]
@@ -81817,6 +82435,28 @@
   "name": "xhttp vless TLS H1 🔀 s IP4/6",
   "source": "tg:@wxdy666→sub",
   "fp": "ffc7c54870e8ced1",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "s.qw14.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "s.qw14.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "s.qw14.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 s IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "d6073a037d82b9b9",
   "sources": [
    "tg:@wxdy666→sub"
   ]
@@ -82180,6 +82820,28 @@
  },
  {
   "proto": "vless",
+  "server": "ss.qw14.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "ss.qw14.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "ss.qw14.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 ss IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "2b14f16d88e8a11f",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "sss.0ab62183-3cf1-45db-9b75-fc16b366e4af.ccwu.cc",
   "port": 443,
   "uuid": "d2f2639b-ff62-4553-abce-d75e231b300c",
@@ -82240,6 +82902,28 @@
   "name": "xhttp vless TLS H1 🔀 sss IP4/6",
   "source": "tg:@wxdy666→sub",
   "fp": "a57b143770042941",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "sss.qw14.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "sss.qw14.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "sss.qw14.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 sss IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "20ee3b0133f8ce5b",
   "sources": [
    "tg:@wxdy666→sub"
   ]
@@ -82312,6 +82996,28 @@
  },
  {
   "proto": "vless",
+  "server": "ssss.qw14.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "ssss.qw14.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "ssss.qw14.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 ssss IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "2b45dcd45206d354",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "sssss.0ab62183-3cf1-45db-9b75-fc16b366e4af.ccwu.cc",
   "port": 443,
   "uuid": "d2f2639b-ff62-4553-abce-d75e231b300c",
@@ -82372,6 +83078,28 @@
   "name": "xhttp vless TLS H1 🔀 sssss IP4/6",
   "source": "tg:@wxdy666→sub",
   "fp": "ba47c3a21fa6e187",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "sssss.qw14.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "sssss.qw14.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "sssss.qw14.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 sssss IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "17e5833b22330aca",
   "sources": [
    "tg:@wxdy666→sub"
   ]
@@ -82444,6 +83172,28 @@
  },
  {
   "proto": "vless",
+  "server": "ssssss.qw14.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "ssssss.qw14.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "ssssss.qw14.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 ssssss IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "81beb84a30800716",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "sssssss.22299999.xyz",
   "port": 443,
   "uuid": "da988d4c-540f-4719-896e-a878812bad69",
@@ -82488,6 +83238,28 @@
  },
  {
   "proto": "vless",
+  "server": "sssssss.qw14.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "sssssss.qw14.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "sssssss.qw14.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 sssssss IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "562ad25d89a57e6e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "ssssssss.22299999.xyz",
   "port": 443,
   "uuid": "da988d4c-540f-4719-896e-a878812bad69",
@@ -82526,6 +83298,28 @@
   "name": "xhttp vless TLS H1 🔀 ssssssss IP4/6",
   "source": "tg:@wxdy666→sub",
   "fp": "142d9083840d6fb2",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "ssssssss.qw14.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "ssssssss.qw14.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "ssssssss.qw14.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 ssssssss IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "0aab6a5846e7d95d",
   "sources": [
    "tg:@wxdy666→sub"
   ]
@@ -82768,6 +83562,28 @@
  },
  {
   "proto": "vless",
+  "server": "uktun.electrowizard.ir",
+  "port": 5560,
+  "uuid": "41bcd5ea-f90c-4227-ab6f-23de50b0a226",
+  "tls": true,
+  "sni": "aparat.com",
+  "network": "xhttp",
+  "path": "/",
+  "host": "aparat.com",
+  "flow": "",
+  "pbk": "JQrJ48ZmxVAkEIhb_bze6E2TEWEFOHRZcRPVNVq_nS0",
+  "sid": "0bdf592bcca01abb",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-182",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "de530e61011a9a29",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "unamecf.xn--ghqu5fm27b67w.com",
   "port": 443,
   "name": "日本 - 东京 - GSL Networks Pty LTD - 1",
@@ -82975,6 +83791,28 @@
   "fp": "afc53cf563c2a93e",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "uvgl4cjd0475.vtret.com",
+  "port": 32567,
+  "uuid": "c34c6869-e454-4413-a7b2-052ba4a42fd5",
+  "tls": true,
+  "sni": "uvgl4cjd0475.vtret.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "canfingV2rayNG-360",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "c21d8722e29312bc",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -92868,7 +93706,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "fec017becf922f54",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -94968,7 +95807,8 @@
   "sources": [
    "clashnode",
    "tg:@byxiaoxi→blog",
-   "anaer/Sub"
+   "anaer/Sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -94987,7 +95827,8 @@
   "sources": [
    "clashnode",
    "tg:@byxiaoxi→blog",
-   "anaer/Sub"
+   "anaer/Sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
