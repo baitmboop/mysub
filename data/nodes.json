@@ -13713,6 +13713,20 @@
  },
  {
   "proto": "hysteria2",
+  "server": "128.254.186.163",
+  "port": 13337,
+  "password": "900c8c92-1979-4c7c-8f2f-63e87d53d8fe",
+  "sni": "mother-earth.fyi",
+  "skipCertVerify": false,
+  "name": "#️⃣11@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "936792174b20e250",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "hysteria2",
   "server": "128.254.186.190",
   "port": 13337,
   "password": "900c8c92-1979-4c7c-8f2f-63e87d53d8fe",
@@ -13727,6 +13741,20 @@
    "tg:@oneclickvpnkeys",
    "tg:@byxiaoxi→blog",
    "Pawdroid/Free-servers"
+  ]
+ },
+ {
+  "proto": "hysteria2",
+  "server": "128.254.186.213",
+  "port": 13337,
+  "password": "900c8c92-1979-4c7c-8f2f-63e87d53d8fe",
+  "sni": "mother-earth.fyi",
+  "skipCertVerify": false,
+  "name": "#️⃣3@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "e0a13ffeb707408a",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -13877,6 +13905,20 @@
   "fp": "42cf0bef5e6eb358",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "hysteria2",
+  "server": "147.45.149.88",
+  "port": 8443,
+  "password": "NL2026hy",
+  "sni": "nl.nobelchat.ru",
+  "skipCertVerify": false,
+  "name": "#️⃣6@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "0bd63914c1d44cfd",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -14551,7 +14593,8 @@
   "fp": "2dcf17bac45c636b",
   "sources": [
    "NoMoreWalls",
-   "ermaozi"
+   "ermaozi",
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -29085,7 +29128,8 @@
    "go4sharing/arch",
    "xinshoucun",
    "clashnode",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -29125,7 +29169,8 @@
    "go4sharing/arch",
    "xinshoucun",
    "clashnode",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -35216,6 +35261,71 @@
  },
  {
   "proto": "ss",
+  "server": "47.245.32.129",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "eab715db247e9fcf",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.245.40.193",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "337601efc5f22ba8",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.245.42.226",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "2b4a3247e93b0569",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.245.54.15",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "5b5a672898947a32",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.245.63.105",
+  "port": 6666,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "cbee7295d7b65ada",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "47.254.128.109",
   "port": 443,
   "cipher": "2022-blake3-chacha20-poly1305",
@@ -35255,6 +35365,136 @@
   "fp": "5a8fd6a7d3088004",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.74.0.207",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "e788a381202bf168",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.74.17.125",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "7dbde4b47ea10f2d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.74.18.249",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "56c1f26bcebc31a7",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.74.24.29",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "32e8519bfb8b95e3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.74.27.11",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "c3bfc0fdb64f8c82",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.74.40.243",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "f5fc8a4160637c9e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.74.40.77",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "c524939d024c698d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.74.41.139",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "dfcebc342520ab33",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.74.49.154",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "e02d50db6f1d7cc1",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.74.9.21",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "ea24f9551d0304bf",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -35333,6 +35573,97 @@
   "fp": "ccb1990e6b2ee6c6",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.91.15.111",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "d944a2db9a6fd7fb",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.91.15.175",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "d08abb82e12b102d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.91.16.50",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "29297ad95da15304",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.91.18.202",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6732c93e105938ff",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.91.2.13",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "11987e9f754f9a7e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.91.29.60",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "11b52c4d9435ea38",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "47.91.31.150",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "3a9224c79ad13336",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -37379,6 +37710,838 @@
  },
  {
   "proto": "ss",
+  "server": "8.209.196.11",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6a2156257f6ffe89",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.209.196.228",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "3770d41341de210a",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.209.197.190",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "49e4e32b372dcce8",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.209.198.176",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6fb8f276a16e8a38",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.209.199.75",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "92f4cd0c87ae763a",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.209.221.183",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "707116aec04672bb",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.209.221.90",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "d7810b8c3514079c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.209.222.150",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "47e139fb312a0961",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.209.236.164",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "5884a6dd22b2bf02",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.209.236.2",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "9aeb01c0fa8b111a",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.209.245.25",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "8c56b23f78653e46",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.209.249.190",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "5e6ab35d7dd7c788",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.209.249.205",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1806dfc9c8df8208",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.209.253.213",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "dc95a4aa27bf7b61",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.211.128.146",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "3f0d7657769b315a",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.211.129.80",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1b044548f70ca335",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.211.130.59",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "ec747bbb6de1d319",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.211.131.30",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a113912128411790",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.211.132.94",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "e2a6cdb72207a421",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.211.154.126",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "468628c527447066",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.211.174.191",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "f03f433eb2a0b5d0",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.211.174.60",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "ee4959acc7a40492",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.0.168",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "dafdacd398823ee0",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.1.127",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6cac96ad1e938683",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.10.204",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "e8f92d4a8fbf2628",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.11.25",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "176977558f11d8a3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.14.14",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "7e6a31a1da7a4034",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.14.94",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "4743f62361f9f7e2",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.15.30",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "97232e431f8a0446",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.15.46",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "874470008947cce3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.15.55",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "52c67355dac90e0b",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.16.102",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a1f38a876d149060",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.16.98",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "09ee524d425bb139",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.17.189",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "3a18a44da4880ecd",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.17.19",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "28cc80bc793f7566",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.17.52",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "47fb5b70073f8ce0",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.17.86",
+  "port": 6666,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "8d45b47ce5adcf81",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.18.139",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "b5ebb286cb1b08b7",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.18.167",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1c80391519ed319d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.18.170",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "b82f4bb08c1f685f",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.18.173",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "f198322839730353",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.18.189",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "44c6896534c0f6fa",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.19.169",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "90bda366fa878140",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.3.160",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "992d76ccf8b46d72",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.3.83",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "8f6e0c5894e31eb2",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.4.146",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "dc56716c9b46c778",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.4.158",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "05f9dbe3ae14386f",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.5.230",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "fbbe317af8d63a33",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.5.89",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6c06b01fd562a48a",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.6.19",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "93001dcf3d886ce3",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.6.223",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "03dc50cfd6d9beb5",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.8.0",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6015074a1e8841b1",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.8.135",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "33d192499ac1e34c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.8.176",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "ecaa15f7da0facbe",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.8.185",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "4626ab8f23ccd7e7",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.8.84",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1755d55a41059bec",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.9.142",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "d1bd70034c43617d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.9.15",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "912a6084b018b905",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.9.151",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "12cf0acde10a8642",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.9.154",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "5aac94292b85adac",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.9.190",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "0c7dd891eb2dcf99",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.9.217",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "d39f43f7225ec0b0",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.9.41",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "b2d80533ba8ec212",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
+  "server": "8.216.9.42",
+  "port": 5555,
+  "cipher": "aes-256-gcm",
+  "password": "123456",
+  "name": "JP日本(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "204ff0cba08affaa",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "ss",
   "server": "8.218.196.35",
   "port": 443233338,
   "cipher": "aes-128-gcm",
@@ -38028,7 +39191,8 @@
   "fp": "825ee1e2a017c99a",
   "sources": [
    "clashnode",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -49106,6 +50270,23 @@
   "fp": "611dd8d5723791f1",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "193.108.119.96",
+  "port": 443,
+  "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+  "sni": "learn.iloverussia2026.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "#️⃣1@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "ff39ca727933b04a",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -61739,7 +62920,8 @@
   "path": "/",
   "fp": "a9448cb6c7ab8bd6",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -62303,6 +63485,28 @@
  },
  {
   "proto": "vless",
+  "server": "103.88.241.220",
+  "port": 443,
+  "uuid": "9df9ee1a-0671-4c6c-93c7-65598fb946f7",
+  "tls": true,
+  "sni": "ruhongmicro2.gangplatform.com",
+  "network": "tcp",
+  "path": "/",
+  "host": "ruhongmicro2.gangplatform.com",
+  "flow": "xtls-rprx-vision",
+  "pbk": "u9GnN8KGzfV0xQj6R8Ydp1nvY4exEWlTIcIbA27N0Wo",
+  "sid": "bad10ef561d2e2a1",
+  "utls": "qq",
+  "reality": true,
+  "name": "RU俄罗斯(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "d85b76b01527e76d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.143.204.23",
   "port": 8443,
   "name": "🇹🇷_TR_土耳其->🇳🇱_NL_荷兰",
@@ -62319,6 +63523,72 @@
   "sources": [
    "oneclash",
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.16.119.58",
+  "port": 443,
+  "uuid": "e2480514-5bb7-4ca8-b8cd-727f261b3db0",
+  "tls": true,
+  "sni": "a1275.ve8nzuk.com",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "US美国(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a5ebf2cca1407c36",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.16.119.58",
+  "port": 443,
+  "uuid": "b2d54357-fe85-4ffb-bdc8-2b73f04c4029",
+  "tls": true,
+  "sni": "a1110.afl7t8f.com",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "US美国(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "881cd9a0cfcfe274",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.16.119.58",
+  "port": 8443,
+  "uuid": "f9c4c29f-b018-431b-b9c8-444b59fffe8f",
+  "tls": true,
+  "sni": "a1029.afl7t8f.com",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "US美国(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "e849268af180f61f",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -62470,7 +63740,8 @@
   "host": "rezanoori4295.pages.dev",
   "fp": "997bb8ec66fe7b85",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -62527,7 +63798,8 @@
   "host": "b.rack.sxsc.dpdns.org",
   "fp": "3cba6bdd51821faf",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -62691,6 +63963,138 @@
  },
  {
   "proto": "vless",
+  "server": "104.18.12.225",
+  "port": 443,
+  "uuid": "e9db00d0-e30d-4e42-ac13-815c95374fa1",
+  "tls": true,
+  "sni": "a1178.o7c4pzv.com",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "US美国(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "5ae4977fd8605f9e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.18.12.225",
+  "port": 2087,
+  "uuid": "c6771b7c-2ea6-4ced-afb5-f135cf2fd585",
+  "tls": true,
+  "sni": "a1040.o7c4pzv.com",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "US美国(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "4d481ba9cbe8760f",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.18.12.225",
+  "port": 443,
+  "uuid": "48bec683-7bcf-44e9-9abb-4d287fd1c752",
+  "tls": true,
+  "sni": "a1015.afl7t8f.com",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "US美国(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "d56ce6c8c996cf3d",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.18.12.225",
+  "port": 443,
+  "uuid": "e359a619-0ba6-495b-97f1-746475c8e215",
+  "tls": true,
+  "sni": "a1078.o7c4pzv.com",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "US美国(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "7f9e6dfdb0a24832",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.18.125.108",
+  "port": 8443,
+  "uuid": "63daab7f-4ae1-4d19-af87-d2f515dd8e6a",
+  "tls": true,
+  "sni": "a1038.o7c4pzv.com",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "US美国(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "d042db4deeb86448",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.18.125.108",
+  "port": 443,
+  "uuid": "c0f5dd4d-8277-4eef-b27d-b211b57676f5",
+  "tls": true,
+  "sni": "a1009.o7c4pzv.com",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "US美国(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "83c1191a2e20e746",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.18.125.69",
   "port": 443,
   "name": "日本 - 东京 - GSL Networks Pty LTD - 2",
@@ -62819,7 +64223,8 @@
   "host": "jp3.yohototo.top",
   "fp": "32ab4ce0a7a0d6ea",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -62858,6 +64263,116 @@
   "fp": "ab48af0ae00b70ee",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.18.3.64",
+  "port": 443,
+  "uuid": "85161972-fbc0-4c64-b350-bcc41a9ee4da",
+  "tls": true,
+  "sni": "a1258.kmgikch.com",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "US美国(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "7fcd15df0a8b675c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.18.3.64",
+  "port": 443,
+  "uuid": "96f4dd70-066c-4788-962d-d74761ca38cc",
+  "tls": true,
+  "sni": "a1149.yanbckh.biz",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "US美国(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "b3132d0e7d76f063",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.18.3.64",
+  "port": 443,
+  "uuid": "2f60f0a0-b3ee-487b-a796-5029932c9cd0",
+  "tls": true,
+  "sni": "a1142.yanbckh.biz",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "US美国(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "f9c4277c6f55d05c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.18.3.64",
+  "port": 443,
+  "uuid": "5d3048ae-a31f-45f9-9313-87a93bdc0a3f",
+  "tls": true,
+  "sni": "a1254.bmkznx6.com",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "US美国(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "fd47e6223623df0e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "104.18.3.64",
+  "port": 443,
+  "uuid": "74d4f00b-df30-4015-8223-e2ba5e67a196",
+  "tls": true,
+  "sni": "a1148.yanbckh.biz",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "US美国(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "43cb8f1fe460c424",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -62946,6 +64461,28 @@
  },
  {
   "proto": "vless",
+  "server": "104.18.41.183",
+  "port": 8443,
+  "uuid": "3a8739a5-468b-4980-ae9f-1d2407f80a59",
+  "tls": true,
+  "sni": "a1076.yanbckh.biz",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "US美国(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a65f19ebe1d8d2d7",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "104.18.42.98",
   "port": 443,
   "name": "DE德国(mibei77.com 米贝节点分享) (9)",
@@ -62960,7 +64497,8 @@
   "host": "jp3.yohototo.top",
   "fp": "c0324873a807ac93",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -63860,7 +65398,8 @@
   "sid": "cc678f10161992a9",
   "fp": "2e90183e258316ca",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -63990,6 +65529,28 @@
   "sources": [
    "tg:@vpnfail_v2ray",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "130.78.30.147",
+  "port": 443,
+  "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
+  "tls": true,
+  "sni": "105ky37.virtual-network.lol",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "#️⃣8@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "550e6e0296f3412b",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -64254,7 +65815,8 @@
    "NoMoreWalls",
    "ermaozi",
    "clashnode",
-   "Pawdroid/Free-servers"
+   "Pawdroid/Free-servers",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -64279,7 +65841,8 @@
    "NoMoreWalls",
    "ermaozi",
    "clashnode",
-   "Pawdroid/Free-servers"
+   "Pawdroid/Free-servers",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -66114,6 +67677,28 @@
  },
  {
   "proto": "vless",
+  "server": "153.56.231.73",
+  "port": 443,
+  "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+  "tls": true,
+  "sni": "717252g.nl8.h1clayd.click",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU",
+  "sid": "d3bd772514c87d28",
+  "utls": "firefox",
+  "reality": true,
+  "name": "DE德国(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "63074a20589d6cd1",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "153.76.185.161",
   "port": 3090,
   "name": "🇨🇿CZ捷克丨yoyapai.com",
@@ -67001,7 +68586,8 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67621,7 +69207,8 @@
   "fp": "d426028c2fa10f62",
   "sources": [
    "tg:@oneclickvpnkeys",
-   "tg:@vpnfail_v2ray"
+   "tg:@vpnfail_v2ray",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67905,7 +69492,8 @@
   "host": "top-e4s.pages.dev",
   "fp": "eeba8f29c11dadaa",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67924,7 +69512,8 @@
   "host": "jp3.yohototo.top",
   "fp": "aa96c400a0ff9281",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68212,7 +69801,8 @@
   "host": "1.proxy2.us.ci.",
   "fp": "733c2af204af8942",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68344,7 +69934,8 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "ripaojiedian"
+   "ripaojiedian",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68431,7 +70022,8 @@
   "sid": "d05a120d3506d2cc",
   "fp": "32ead24b013fd5f2",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68620,7 +70212,8 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "ripaojiedian"
+   "ripaojiedian",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68831,7 +70424,8 @@
   "host": "1.proxy2.us.ci.",
   "fp": "e13d3804399ceea0",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -68965,6 +70559,28 @@
   "sources": [
    "clashnode",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.141.34.93",
+  "port": 443,
+  "uuid": "9c69546a-e435-4037-bc63-f9e5829a8be3",
+  "tls": true,
+  "sni": "static.lormit.digital",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "k_DjUz2cP6QGuDVwyvTrk3QTuJVntXCPjxJmO-UZchI",
+  "sid": "9f07e56cfce2b9a3",
+  "utls": "",
+  "reality": true,
+  "name": "#️⃣9@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "420168d8110c32a6",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -69164,6 +70780,28 @@
   "fp": "170753d52e1f6c74",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "185.236.8.42",
+  "port": 443,
+  "uuid": "379b1f28-8109-43bc-9317-8f1f24cdc85b",
+  "tls": true,
+  "sni": "edge-tr.lindenpixel.com",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "edge",
+  "reality": false,
+  "name": "#️⃣5@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "5f814abe066c1b3e",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -69407,6 +71045,28 @@
  },
  {
   "proto": "vless",
+  "server": "187.7.205.47",
+  "port": 443,
+  "uuid": "a55c7536-980a-4d82-abd0-f14909f2489e",
+  "tls": true,
+  "sni": "static-uk.song69.fun",
+  "network": "xhttp",
+  "path": "/api/v2/assets",
+  "host": "static-uk.song69.fun",
+  "flow": "",
+  "pbk": "yhMfSjVFqXJGarYnXw8pTZWcvfqFcc-MwxoCfRPqZwg",
+  "sid": "",
+  "utls": "",
+  "reality": true,
+  "name": "#️⃣15@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "5ba3bee528302fcc",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "187.7.206.176",
   "port": 443,
   "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
@@ -69563,6 +71223,28 @@
  },
  {
   "proto": "vless",
+  "server": "188.114.98.0",
+  "port": 443,
+  "uuid": "53bbdad4-2f4e-45db-8df4-fa491a6a7227",
+  "tls": true,
+  "sni": "freeceshi6.frii.site",
+  "network": "ws",
+  "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
+  "host": "freeceshi6.frii.site",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "#️⃣14@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "a9bf508922a78452",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "188.114.99.137",
   "port": 80,
   "uuid": "c762af05-2e92-4133-bc30-8cf45dd40a28",
@@ -69619,7 +71301,8 @@
   "host": "imanvipreserved.pages.dev",
   "fp": "7cbeb0ba176dc6b6",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -70789,7 +72472,8 @@
   "sid": "8d0d0679f42ffd98",
   "fp": "c0cb4fc0f28edcf1",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -70962,7 +72646,8 @@
   "sid": "ba2a3dce62b99092",
   "fp": "8b33d466bdb8b3da",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -71764,7 +73449,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "b52a9299db06a207",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -72240,7 +73926,30 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "tg:@oneclickvpnkeys"
+   "tg:@oneclickvpnkeys",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "213.183.45.23",
+  "port": 8454,
+  "uuid": "eb62cabf-5901-403a-aa0c-b1d9ed1b346d",
+  "tls": true,
+  "sni": "store.plumstatic.com",
+  "network": "ws",
+  "path": "/ws",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "RU俄罗斯(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1ed05cf23bdeca13",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -72910,6 +74619,28 @@
  },
  {
   "proto": "vless",
+  "server": "31.43.179.111",
+  "port": 2096,
+  "uuid": "359b9ad3-0009-4655-8872-d0ab566751d3",
+  "tls": true,
+  "sni": "d03298146e8e2fe6.hozheen.ir",
+  "network": "ws",
+  "path": "/ws?ed=2560",
+  "host": "newgen14.hozheen.ir",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "canfingV2rayNG-150",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "17caa7055bcdc595",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "31.58.191.93",
   "port": 443,
   "uuid": "ad295072-0049-4981-a9aa-6314c43e87e5",
@@ -72949,7 +74680,8 @@
   "source": "tg:@oneclickvpnkeys",
   "fp": "9011edc276b7c161",
   "sources": [
-   "tg:@oneclickvpnkeys"
+   "tg:@oneclickvpnkeys",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -73834,6 +75566,28 @@
  },
  {
   "proto": "vless",
+  "server": "4.vbp.ccwu.cc",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "4.vbp.ccwu.cc",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "4.vbp.ccwu.cc",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 4 IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6c0be1855c7f1a2f",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "43.154.196.20",
   "port": 65432,
   "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
@@ -73875,6 +75629,28 @@
  },
  {
   "proto": "vless",
+  "server": "43.163.112.174",
+  "port": 443,
+  "uuid": "0dedd47d-47b9-4ed1-9c9f-cbeecad57a68",
+  "tls": true,
+  "sni": "www.cloudflare.com",
+  "network": "tcp",
+  "path": "/",
+  "host": "www.cloudflare.com",
+  "flow": "xtls-rprx-vision",
+  "pbk": "mXQudYHNu0pebcdk1_qn-UgcmwhjaV7y9UrYu3HX7Rg",
+  "sid": "0123456789abcdef",
+  "utls": "chrome",
+  "reality": true,
+  "name": "SG新加坡(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "98a1fb952bebf1a1",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "43.170.8.95",
   "port": 443,
   "name": "SG新加坡(mibei77.com 米贝节点分享)",
@@ -73889,7 +75665,8 @@
   "host": "jp3.yohototo.top",
   "fp": "e28fad40fcbd3d9a",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -73916,6 +75693,182 @@
  },
  {
   "proto": "vless",
+  "server": "44.vbp.ccwu.cc",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "44.vbp.ccwu.cc",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "44.vbp.ccwu.cc",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 44 IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "4ff42f8dba7bc618",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "444.vbp.ccwu.cc",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "444.vbp.ccwu.cc",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "444.vbp.ccwu.cc",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 444 IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "8bae3c1ee2dbdbe6",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "4444.vbp.ccwu.cc",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "4444.vbp.ccwu.cc",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "4444.vbp.ccwu.cc",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 4444 IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "d1aafdf3d713a27b",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "44444.vbp.ccwu.cc",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "44444.vbp.ccwu.cc",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "44444.vbp.ccwu.cc",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 44444 IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "1ff3993db9bf0537",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "444444.vbp.ccwu.cc",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "444444.vbp.ccwu.cc",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "444444.vbp.ccwu.cc",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 444444 IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "7aab9870781a84aa",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "4444444.vbp.ccwu.cc",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "4444444.vbp.ccwu.cc",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "4444444.vbp.ccwu.cc",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 4444444 IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "bdbe44ecb20065c1",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "44444444.vbp.ccwu.cc",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "44444444.vbp.ccwu.cc",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "44444444.vbp.ccwu.cc",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 44444444 IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "87d3dd8d29de7599",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "444444444.vbp.ccwu.cc",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "444444444.vbp.ccwu.cc",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "444444444.vbp.ccwu.cc",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 444444444 IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "b3be6b7de7677254",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "45.129.242.56",
   "port": 443,
   "uuid": "ebdfaf99-41d8-4e48-8196-d54510ffb556",
@@ -73935,6 +75888,28 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "45.130.125.76",
+  "port": 443,
+  "uuid": "1f9d104e-ca0e-4202-ba4b-a0afb969c747",
+  "tls": true,
+  "sni": "www.multiplydose.cc.cd",
+  "network": "xhttp",
+  "path": "/assignment",
+  "host": "www.multiplydose.cc.cd",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "canfingV2rayNG-119",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "06a068c4fb65aacf",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -74226,6 +76201,28 @@
   "sources": [
    "tg:@oneclickvpnkeys",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "45.150.37.169",
+  "port": 443,
+  "uuid": "9df9ee1a-0671-4c6c-93c7-65598fb946f7",
+  "tls": true,
+  "sni": "rumicro641.richhoodfoc.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "2GYWewnpSKVqp2AXm1hEZ-av8iApLPa62V7rxpxt1SE",
+  "sid": "b9bb317e9c9e2627",
+  "utls": "firefox",
+  "reality": true,
+  "name": "RU俄罗斯(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a2b02a2a45d241bd",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -75236,7 +77233,8 @@
   "source": "tg:@oneclickvpnkeys",
   "fp": "adedb8f77e13e8cf",
   "sources": [
-   "tg:@oneclickvpnkeys"
+   "tg:@oneclickvpnkeys",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -75705,6 +77703,28 @@
   "fp": "7ecc72b6581c4360",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "51.194.118.38",
+  "port": 443,
+  "uuid": "7ff1e7e1-2b5a-4e53-ae77-1516f9eb7754",
+  "tls": true,
+  "sni": "a1259.ve8nzuk.com",
+  "network": "grpc",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "#️⃣7@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "17795fbf57bed780",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -76396,7 +78416,8 @@
   "source": "tg:@byxiaoxi→blog",
   "fp": "fb0e231939b292a3",
   "sources": [
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -76636,7 +78657,8 @@
   "host": "d39333476.pages.dev",
   "fp": "01e7a4865c88322f",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -76655,7 +78677,8 @@
   "host": "newwk1.f1w.de5.net",
   "fp": "bf3fb3ff6167ab2b",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -76826,7 +78849,8 @@
   "sid": "7a7d19880a9ee786",
   "fp": "ca72c6f4f92bb84c",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -76999,6 +79023,28 @@
   "fp": "db4eb26b8ea04c08",
   "sources": [
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "84.54.44.117",
+  "port": 443,
+  "uuid": "9df9ee1a-0671-4c6c-93c7-65598fb946f7",
+  "tls": true,
+  "sni": "rumicro642.richhoodfoc.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "fPvZxeP0GErdI22fbEAqbMaz-QMumNIDzBNgKZmRsWY",
+  "sid": "a7b12f3265f97f4a",
+  "utls": "firefox",
+  "reality": true,
+  "name": "RU俄罗斯(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "34a59ba6bd75f503",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -77686,6 +79732,28 @@
  },
  {
   "proto": "vless",
+  "server": "91.107.140.160",
+  "port": 443,
+  "uuid": "301f9f35-73c7-4ae0-bbe9-7dd86da19f50",
+  "tls": true,
+  "sni": "aws.amazon.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "Efid51phV7wQ6vF48DC97364AyVl7tQa22ILzIOLYgg",
+  "sid": "d04733f30a13",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-148",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "f8d131a899df08e5",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "91.193.58.117",
   "port": 443,
   "name": "🇭🇰HK香港節點丨yoyapai.com (4)",
@@ -77777,6 +79845,28 @@
   "fp": "0056849d3f00f1cb",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "91.193.58.201",
+  "port": 443,
+  "uuid": "14b59caf-a196-4ec2-8c70-c7b388062f5b",
+  "tls": true,
+  "sni": "vangoghhh.info",
+  "network": "ws",
+  "path": "/rdfgtws",
+  "host": "vangoghhh.info",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-104",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "326dbf6ed03d5edb",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -78440,7 +80530,8 @@
   "fp": "ed53ce85bce3e9a0",
   "sources": [
    "NoMoreWalls",
-   "ermaozi"
+   "ermaozi",
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -78566,7 +80657,8 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -78916,7 +81008,8 @@
   "sources": [
    "clashnode",
    "tg:@oneclickvpnkeys",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -79256,7 +81349,8 @@
   "host": "mao.kipfelmao.de5.net",
   "fp": "1bc22ec525f61fa3",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -79647,7 +81741,8 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "ripaojiedian"
+   "ripaojiedian",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -79771,6 +81866,28 @@
  },
  {
   "proto": "vless",
+  "server": "d.rr89.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "d.rr89.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "d.rr89.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 d IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "117e6742498bea15",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "d1lruvm1fs0rkb.cloudfront.net",
   "port": 443,
   "uuid": "f8b63f3a-d418-499f-9d00-2b33f90199d5",
@@ -79812,6 +81929,160 @@
   "fp": "3050278371ab45d7",
   "sources": [
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dd.rr89.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "dd.rr89.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "dd.rr89.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 dd IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "f035e06faedf1438",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "ddd.rr89.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "ddd.rr89.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "ddd.rr89.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 ddd IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "428e75aa3ad6e2a5",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dddd.rr89.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "dddd.rr89.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "dddd.rr89.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 dddd IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "526d72d978732e6a",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "ddddd.rr89.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "ddddd.rr89.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "ddddd.rr89.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 ddddd IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "0ec2a88d94bb280f",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dddddd.rr89.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "dddddd.rr89.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "dddddd.rr89.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 dddddd IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "27cef793bfc92131",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "ddddddd.rr89.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "ddddddd.rr89.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "ddddddd.rr89.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 ddddddd IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "0520eba7c9deeb45",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "dddddddd.rr89.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "dddddddd.rr89.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "dddddddd.rr89.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 dddddddd IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "3c8c337e2c921c64",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -80204,6 +82475,28 @@
  },
  {
   "proto": "vless",
+  "server": "e.y9-00.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "e.y9-00.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "e.y9-00.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 e IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "cbb791fe26485eee",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "edge-d6d4b0609348.eu-cdn391.com",
   "port": 443,
   "name": "❓未知丨yoyapai.com (43)",
@@ -80237,6 +82530,182 @@
   "fp": "6bcf454ebaf6f4e8",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "ee.y9-00.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "ee.y9-00.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "ee.y9-00.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 ee IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "baefaa4ad74d1cac",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "eee.y9-00.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "eee.y9-00.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "eee.y9-00.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 eee IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "21886aab0ed3ea9e",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "eeee.y9-00.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "eeee.y9-00.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "eeee.y9-00.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 eeee IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "a8a6064c33c89af5",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "eeeee.y9-00.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "eeeee.y9-00.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "eeeee.y9-00.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 eeeee IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "8631cedbd775e559",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "eeeeee.y9-00.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "eeeeee.y9-00.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "eeeeee.y9-00.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 eeeeee IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "07442c206e97070c",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "eeeeeee.y9-00.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "eeeeeee.y9-00.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "eeeeeee.y9-00.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 eeeeeee IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "42148e302c2b4cf8",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "eeeeeeee.y9-00.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "eeeeeeee.y9-00.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "eeeeeeee.y9-00.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 eeeeeeee IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "22703d9c9ff41af4",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "eeeeeeeee.y9-00.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "eeeeeeeee.y9-00.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "eeeeeeeee.y9-00.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 eeeeeeeee IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "6c8a383eb9424a42",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -80383,7 +82852,8 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -80403,7 +82873,8 @@
   "sid": "fa514b83",
   "fp": "92c044d08f026f5e",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -80423,7 +82894,8 @@
   "sid": "fa514b83",
   "fp": "d6be9129064f63b6",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -80582,6 +83054,167 @@
   "name": "德国1 免费线路 0x",
   "source": "tg:@freeVPNjd→sub",
   "fp": "773b8f4d20cab97d",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "free.fugui.lol",
+  "port": 47396,
+  "uuid": "a76b07ff-6fde-48d3-9c00-17a17ec3850d",
+  "tls": true,
+  "sni": "swdist.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+  "sid": "fa514b83",
+  "utls": "ios",
+  "reality": true,
+  "name": "剩余流量：500 GB",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "8f71baf5be3d124f",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "free.fugui.lol",
+  "port": 54075,
+  "uuid": "a76b07ff-6fde-48d3-9c00-17a17ec3850d",
+  "tls": true,
+  "sni": "swdist.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+  "sid": "fa514b83",
+  "utls": "ios",
+  "reality": true,
+  "name": "香港2 免费线路 0x",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "9891f8282d1014a3",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "free.fugui.lol",
+  "port": 24519,
+  "uuid": "a76b07ff-6fde-48d3-9c00-17a17ec3850d",
+  "tls": true,
+  "sni": "swdist.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+  "sid": "fa514b83",
+  "utls": "ios",
+  "reality": true,
+  "name": "日本1 免费线路 0x",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "d7c4889bec27f70b",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "free.fugui.lol",
+  "port": 51283,
+  "uuid": "a76b07ff-6fde-48d3-9c00-17a17ec3850d",
+  "tls": true,
+  "sni": "swdist.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+  "sid": "fa514b83",
+  "utls": "ios",
+  "reality": true,
+  "name": "新加坡1 免费线路 0x",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "23cbbfbd23ed7301",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "free.fugui.lol",
+  "port": 38741,
+  "uuid": "a76b07ff-6fde-48d3-9c00-17a17ec3850d",
+  "tls": true,
+  "sni": "swdist.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+  "sid": "fa514b83",
+  "utls": "ios",
+  "reality": true,
+  "name": "美国1 免费线路 0x",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "9fb44a2a72fc2cae",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "free.fugui.lol",
+  "port": 62015,
+  "uuid": "a76b07ff-6fde-48d3-9c00-17a17ec3850d",
+  "tls": true,
+  "sni": "swdist.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+  "sid": "fa514b83",
+  "utls": "ios",
+  "reality": true,
+  "name": "英国1 免费线路 0x",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e84bccd37d6e8c28",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "free.fugui.lol",
+  "port": 19482,
+  "uuid": "a76b07ff-6fde-48d3-9c00-17a17ec3850d",
+  "tls": true,
+  "sni": "swdist.apple.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+  "sid": "fa514b83",
+  "utls": "ios",
+  "reality": true,
+  "name": "德国1 免费线路 0x",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "46a52f270f008e0a",
   "sources": [
    "tg:@freeVPNjd→sub",
    "tg:@wxdy666→sub"
@@ -80962,6 +83595,28 @@
   "fp": "a944e8962e0169dd",
   "sources": [
    "clashnode"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "ipfast.kingmna.com",
+  "port": 443,
+  "uuid": "16b6e5a8-1b90-42d2-9726-30945bd80f4b",
+  "tls": true,
+  "sni": "community.fastly.steamstatic.com",
+  "network": "ws",
+  "path": "/",
+  "host": "looabnetheroijji.global.ssl.fastly.net.",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "chrome",
+  "reality": false,
+  "name": "#️⃣13@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "1e4430c8eb77eeb7",
+  "sources": [
+   "tg:@oneclickvpnkeys"
   ]
  },
  {
@@ -81721,6 +84376,28 @@
  },
  {
   "proto": "vless",
+  "server": "mos02.electrowizard.ir",
+  "port": 5002,
+  "uuid": "41bcd5ea-f90c-4227-ab6f-23de50b0a226",
+  "tls": false,
+  "sni": "",
+  "network": "tcp",
+  "path": "/",
+  "host": "iranserver.com",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "#️⃣2@oneclickvpnkeys",
+  "source": "tg:@oneclickvpnkeys",
+  "fp": "1d78e9f7a375ca32",
+  "sources": [
+   "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "mypanel.unixzone.us",
   "port": 12068,
   "uuid": "05caca6c-9e97-4c0f-8edf-7b88a6e572c5",
@@ -82164,6 +84841,28 @@
   "sources": [
    "tg:@freeVPNjd→sub",
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "pl.fantoff.online",
+  "port": 443,
+  "uuid": "b95dd8e5-2758-408f-be99-9362eecee609",
+  "tls": true,
+  "sni": "yahoo.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "BoWKSM1aSfcTRgKX_kZYPlauG0jLIqku3zPBAiHpUgs",
+  "sid": "5ea7e22e889dabc5",
+  "utls": "chrome",
+  "reality": true,
+  "name": "canfingV2rayNG-337",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "933050f314c9ccc9",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -82895,7 +85594,8 @@
   "host": "v2n6.11676767.xyz",
   "fp": "c55d4f054510b9d5",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -83126,6 +85826,28 @@
   "fp": "fc583287d94b2d9a",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "snapp.ir",
+  "port": 2095,
+  "uuid": "41bc5a50-7c41-4078-9a2a-611ab1c6dddb",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/",
+  "host": "lizardf1.fastshop11.ir",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-162",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "6822efccc76925d4",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -84336,6 +87058,28 @@
  },
  {
   "proto": "vless",
+  "server": "v2new.nimbaha9.ir",
+  "port": 8080,
+  "uuid": "f279c19a-b324-40cf-af57-049f9b1b68f2",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/XDS45",
+  "host": "v2new.nimbaha9.ir",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "filembad-413",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "5a0399c9d50868e3",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "varzesh.com.tiket.paxaro.ir",
   "port": 443,
   "uuid": "c88e3f12-ad4a-4960-8a81-eecd2289b128",
@@ -85180,6 +87924,50 @@
  },
  {
   "proto": "vless",
+  "server": "wwww.qarvian.ir",
+  "port": 443,
+  "uuid": "97e0ea78-67ae-4984-8a14-a7d1a51e58de",
+  "tls": true,
+  "sni": "cdn.akamai.steamstatic.com",
+  "network": "ws",
+  "path": "",
+  "host": "copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-291",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "9ac1d9a73b79bda6",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "x.rr-0h.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "x.rr-0h.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "x.rr-0h.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 x IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "792ee270f2bc93d2",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "xray-b8ct4r2f-sahdon-hosaindoost.cloady.io",
   "port": 443,
   "uuid": "1fd2e2d1-96f5-2056-19fd-b375b1a9d851",
@@ -85216,7 +88004,30 @@
   "path": "/0175469f14317d82",
   "fp": "1d4cf6697b066491",
   "sources": [
-   "clashnode"
+   "clashnode",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "xray-ikmqcro3-rapid-river-6.cloady.io",
+  "port": 443,
+  "uuid": "213224a4-6cd1-b7f4-8bbc-4f50e5ed847b",
+  "tls": true,
+  "sni": "xray-ikmqcro3-rapid-river-6.cloady.io",
+  "network": "ws",
+  "path": "/c54a815e676d9acc",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "RU俄罗斯(v2clash.blog 2026-11.26更新)",
+  "source": "tg:@wxdy666→sub",
+  "fp": "270cc13f38760b60",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -85284,6 +88095,182 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "xx.rr-0h.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "xx.rr-0h.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "xx.rr-0h.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 xx IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "d11f7e607d348979",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "xxx.rr-0h.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "xxx.rr-0h.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "xxx.rr-0h.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 xxx IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "d463a1ff69f54839",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "xxxx.rr-0h.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "xxxx.rr-0h.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "xxxx.rr-0h.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 xxxx IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "bf9d63f33903c0aa",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "xxxxx.rr-0h.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "xxxxx.rr-0h.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "xxxxx.rr-0h.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 xxxxx IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "99094c60d84f1901",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "xxxxxx.rr-0h.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "xxxxxx.rr-0h.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "xxxxxx.rr-0h.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 xxxxxx IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "e83c49c7b2428d24",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "xxxxxxx.rr-0h.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "xxxxxxx.rr-0h.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "xxxxxxx.rr-0h.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 xxxxxxx IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "9d36d60be7d540bc",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "xxxxxxxx.rr-0h.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "xxxxxxxx.rr-0h.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "xxxxxxxx.rr-0h.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 xxxxxxxx IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "86effcdae84cb8dd",
+  "sources": [
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "xxxxxxxxx.rr-0h.kdns.fr",
+  "port": 443,
+  "uuid": "467277d6-839f-42d0-8916-f5494524b68f",
+  "tls": true,
+  "sni": "xxxxxxxxx.rr-0h.kdns.fr",
+  "network": "xhttp",
+  "path": "/CZK6ob8lbxAsm52J3mPmJg8j",
+  "host": "xxxxxxxxx.rr-0h.kdns.fr",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "android",
+  "reality": false,
+  "name": "xhttp vless TLS H1 🔀 xxxxxxxxx IP4/6",
+  "source": "tg:@wxdy666→sub",
+  "fp": "496b2207ffd3def4",
+  "sources": [
+   "tg:@wxdy666→sub"
   ]
  },
  {
