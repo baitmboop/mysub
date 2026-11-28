@@ -39104,7 +39104,8 @@
    "go4sharing/arch",
    "xinshoucun",
    "clashnode",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -48452,6 +48453,23 @@
  },
  {
   "proto": "trojan",
+  "server": "167.82.76.7",
+  "port": 443,
+  "password": "MiTiVPN",
+  "sni": "ssl.fastly.com",
+  "network": "ws",
+  "path": "@mehrosaboran",
+  "host": "mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net",
+  "skipCertVerify": false,
+  "name": "canfingV2rayNG-55",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "24f322eedc845455",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "167.88.61.175",
   "port": 443,
   "name": "🇺🇸US_126|941KB/s|A004-260618 [0cfa17981459]",
@@ -55489,6 +55507,564 @@
  },
  {
   "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 10124,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "日本实验性 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "1e099b1479c17ff3",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 10154,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "美国实验性 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "c6fd32012f5c3601",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 12113,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "日本高级 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "796c51ebb0a1e447",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 12114,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "日本高级 IEPL 专线 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "fcbfbbac663dd716",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 12115,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "日本高级 IEPL 专线 3",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "225c6616257f940c",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 12123,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "美国高级 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "9b39b7527a32fb78",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 12124,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "美国高级 IEPL 专线 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "93f9dd02d5019015",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 12125,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "美国高级 IEPL 专线 3",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "89468edc0073709b",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11114,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "日本标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "7ec530682a4bb330",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11116,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "日本标准 IEPL 专线 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "4734c77e7f5505f9",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11113,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "日本标准 IEPL 专线 3",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "de242eb0792ed5f9",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11112,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "日本标准 IEPL 专线 4",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "801da3c8a48eb450",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11117,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "日本标准 IEPL 专线 5",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "ae581517bd18b3cb",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11111,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "日本标准 IEPL 专线 6",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e4623d0c4a408659",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11118,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "日本标准 IEPL 专线 7",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "b673090efef6905a",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11115,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "日本标准 IEPL 专线 8",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "8dc02c756d067c96",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11124,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "美国标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "cfa4acf17a1f1bc1",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11126,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "美国标准 IEPL 专线 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "6e12909ed0dfa69e",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11123,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "美国标准 IEPL 专线 3",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "b1ee21b2a1ff2b98",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11122,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "美国标准 IEPL 专线 4",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "5e0555aa81412d5e",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11127,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "美国标准 IEPL 专线 5",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "24be59ca991a8bd1",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11121,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "美国标准 IEPL 专线 6",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "a53add8f662ebc37",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11128,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "美国标准 IEPL 专线 7",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "401d67533a82eb1b",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11125,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "美国标准 IEPL 专线 8",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "a3fcbec177ec6d47",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11164,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "加拿大标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "02b0569df7a451be",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11165,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "加拿大标准 IEPL 专线 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "7f28ae610c62fa48",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11166,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "阿根廷标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "29aed69e473e8e60",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11167,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "巴西标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "6979778a1ca78c46",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11168,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "智利标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "8a8d30961b7ef80c",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11171,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "韩国标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "26faa630beda848a",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "63182sh7-4d7b.aws-agent.net",
+  "port": 11172,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "韩国标准 IEPL 专线 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "629deeff36aeb74e",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "64.110.104.30",
   "port": 443,
   "name": "日本 - Ōkubo-naka - 6",
@@ -56632,6 +57208,726 @@
  },
  {
   "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 10114,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "Traffic流量使用详情: 2.47 GB | 400 GB",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "fa6c2beb341758a6",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 10134,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "新加坡实验性 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e8538fa4af22bec0",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 12103,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "香港高级 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "50c2ba0993154ae6",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 12104,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "香港高级 IEPL 专线 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "705d89c1bae36849",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 12105,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "香港高级 IEPL 专线 3",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "612e00b373298da8",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 12133,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "新加坡高级 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "f9cd86adf14d8617",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 12134,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "新加坡高级 IEPL 专线 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "b18b181656bdd648",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 12135,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "新加坡高级 IEPL 专线 3",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "101cfb8e6f6f05e8",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 12143,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "台湾高级 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "98e21df0985ae2dd",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 12144,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "台湾高级 IEPL 专线 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "2adfc187c0f67e1e",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 12145,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "台湾高级 IEPL 专线 3",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "7636d56598700292",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11104,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "香港标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "37ec1329908b9b9d",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11106,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "香港标准 IEPL 专线 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "0a3f50a2737dc2ff",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11103,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "香港标准 IEPL 专线 3",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "7e38b53ce7ff1f85",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11102,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "香港标准 IEPL 专线 4",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "56d8cd5372dd5df0",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11107,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "香港标准 IEPL 专线 5",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "87c3849b077b1bfd",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11101,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "香港标准 IEPL 专线 6",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "5046640dfcd3e476",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11108,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "香港标准 IEPL 专线 7",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "ef2b549bfeb74add",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11105,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "香港标准 IEPL 专线 8",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "07f420575a69bae2",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11134,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "新加坡标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "cb9f6111dbd8c0ae",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11136,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "新加坡标准 IEPL 专线 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "ea84da7e8e159611",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11133,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "新加坡标准 IEPL 专线 3",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "dc7d869d69165f5e",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11132,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "新加坡标准 IEPL 专线 4",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "60f45975c5d84191",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11137,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "新加坡标准 IEPL 专线 5",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "250b949eaa6d1b75",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11131,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "新加坡标准 IEPL 专线 6",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "8d042140098d29fb",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11138,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "新加坡标准 IEPL 专线 7",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "85fecff8f42b0f2f",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11135,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "新加坡标准 IEPL 专线 8",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "a675ebe2ae1483b0",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11142,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "台湾标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "4b1a57a54aad566b",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11143,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "台湾标准 IEPL 专线 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "2159c2ba8cd91e27",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11141,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "台湾标准 IEPL 专线 3",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "6e045dd2ec95369c",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11169,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "澳大利亚标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "cd0810f1168d02c7",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11170,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "新西兰标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "b744ab2632a93a4b",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11173,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "印尼标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "64b8c1e035269a94",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11174,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "泰国标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "c397d6a5bcef80ca",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11175,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "越南标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "6caeeb5fc7a5542e",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11180,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "印度标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "ff7af47782ba83eb",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11181,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "巴基斯坦标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "f1040093975e84a4",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11183,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "阿联酋标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "84bf3f9c22c0d1cf",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11184,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "菲律宾标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "28c87d7fb6795f1d",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "7d0a2gz8-7a0c.aws-agent.net",
+  "port": 11185,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "马来西亚标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "ab0bcafc8c74bbeb",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "8.219.195.31",
   "port": 443,
   "name": "日本 - 成田市 - 1",
@@ -57149,6 +58445,312 @@
   "fp": "d6b7367ab409eb55",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11150,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "摩尔多瓦标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "0a899cabac78b77c",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11151,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "乌克兰标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "3c1a924d23585be3",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11152,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "意大利标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "37d2854ec6059227",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11153,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "匈牙利标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "7a68b6df331dd435",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11154,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "西班牙标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "057dd96e074833a3",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11155,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "土耳其标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "6afa804cddf69cbd",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11156,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "德国标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "f36bec18415ab003",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11157,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "德国标准 IEPL 专线 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "6e5422be901f5dab",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11158,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "英国标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "a2067d17c8dd2016",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11159,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "英国标准 IEPL 专线 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "e4a4effec25c6b38",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11160,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "荷兰标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "702c754f46c5dcc4",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11161,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "荷兰标准 IEPL 专线 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "cee860cf97f09c9f",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11162,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "法国标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "bca54a4b993b4792",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11163,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "法国标准 IEPL 专线 2",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "4da4bb9d31225b99",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11182,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "以色列标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "54de4112cb47a956",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11186,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "埃及标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "f37053a8c6ac4b3c",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "trojan",
+  "server": "8bf71bj0-dc2c.aws-agent.net",
+  "port": 11187,
+  "password": "5D50269A-02DB-6453-0FEF-D26A49FAA8BF",
+  "sni": "m.ctrip.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": true,
+  "name": "尼日利亚标准 IEPL 专线 1",
+  "source": "tg:@freeVPNjd→sub",
+  "fp": "2476da6f4c05762a",
+  "sources": [
+   "tg:@freeVPNjd→sub",
+   "tg:@wxdy666→sub"
   ]
  },
  {
@@ -67737,6 +69339,28 @@
  },
  {
   "proto": "vless",
+  "server": "151.101.110.219",
+  "port": 443,
+  "uuid": "4da72a60-61b9-4571-a054-1bba24bf6728",
+  "tls": true,
+  "sni": "speedtest.net",
+  "network": "ws",
+  "path": "/",
+  "host": "nesfeshzksab.global.ssl.fastly.neT.",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-214",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "fb59aef68516d346",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "151.101.3.8",
   "port": 80,
   "name": "日本 - 成田市 - Cloudflare, Inc. - 18",
@@ -76752,6 +78376,28 @@
  },
  {
   "proto": "vless",
+  "server": "45.134.38.247",
+  "port": 3039,
+  "uuid": "5da871c5-3629-4fba-b361-4124afba7022",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/rmagr",
+  "host": "",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "filembad-233",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "034976b28acf1694",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "45.136.14.140",
   "port": 20086,
   "name": "GB英国(mibei77.com 米贝节点分享) (10)",
@@ -76934,6 +78580,28 @@
   "sources": [
    "clashnode",
    "tg:@wxdy666→sub"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "45.154.186.136",
+  "port": 443,
+  "uuid": "2daecc81-dc8e-000e-8148-239a66ebb477",
+  "tls": true,
+  "sni": "yabro-wbplugin.edadeal.yandex.ru",
+  "network": "tcp",
+  "path": "",
+  "host": "/?Telegram---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24/",
+  "flow": "xtls-rprx-vision",
+  "pbk": "BaonkRPNfYDTXYDgLmKRXA_Oqo8MCvTOwpUbhT9AFD4",
+  "sid": "cf8e76b5637df2ba",
+  "utls": "firefox",
+  "reality": true,
+  "name": "filembad-120",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "a2fb97c47f9e78b5",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -78690,7 +80358,8 @@
   "sources": [
    "NoMoreWalls",
    "ermaozi",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -79514,6 +81183,23 @@
   "sources": [
    "NoMoreWalls",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "82.152.18.32",
+  "port": 443,
+  "name": "🇨🇦加拿大01",
+  "source": "tg:@freeVPNjd→sub",
+  "uuid": "a61ce788-6cfe-4bbe-9f81-155ea8fa8e16",
+  "tls": true,
+  "sni": "diyichongdi.us.ci",
+  "network": "tcp",
+  "flow": "",
+  "utls": "",
+  "fp": "5d3533fbbb9f2dbd",
+  "sources": [
+   "tg:@freeVPNjd→sub"
   ]
  },
  {
@@ -80663,6 +82349,28 @@
  },
  {
   "proto": "vless",
+  "server": "91.193.58.201",
+  "port": 443,
+  "uuid": "14b59caf-a196-4ec2-8c70-c7b388062f5b",
+  "tls": true,
+  "sni": "vangoghhh.info",
+  "network": "ws",
+  "path": "/rdfgtws",
+  "host": "vangoghhh.info",
+  "flow": "",
+  "pbk": "",
+  "sid": "",
+  "utls": "",
+  "reality": false,
+  "name": "canfingV2rayNG-98",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "326dbf6ed03d5edb",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "vless",
   "server": "91.193.58.209",
   "port": 80,
   "name": "🇭🇰HK香港丨yoyapai.com",
@@ -81337,7 +83045,8 @@
   "source": "ermaozi",
   "fp": "eff5502bb4516313",
   "sources": [
-   "ermaozi"
+   "ermaozi",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -83231,6 +84940,28 @@
   "sources": [
    "clashnode",
    "tg:@byxiaoxi→blog"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "digital-Robin.wp-toolbox.ir",
+  "port": 1610,
+  "uuid": "64a28ed6-2238-42d9-8452-b83674f741e5",
+  "tls": true,
+  "sni": "play.google.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "",
+  "pbk": "uGYj7gkQdNaabDVQZdbHeSVizGPrzj8YD5jdYm7stG0",
+  "sid": "3a622700e73c6642",
+  "utls": "edge",
+  "reality": true,
+  "name": "canfingV2rayNG-254",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "f6fe2fbb6253301d",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -92419,7 +94150,8 @@
   "fp": "20e11c64981fa628",
   "sources": [
    "clashnode",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -101224,6 +102956,25 @@
   "fp": "b602636e192ede89",
   "sources": [
    "go4sharing/arch"
+  ]
+ },
+ {
+  "proto": "vmess",
+  "server": "8.222.172.146",
+  "port": 54327,
+  "uuid": "8a3d03bc-9b35-43b4-d901-c8531f2bbc6d",
+  "alterId": 0,
+  "cipher": "auto",
+  "tls": false,
+  "sni": "",
+  "network": "ws",
+  "path": "/pages",
+  "host": "",
+  "name": "filembad-464",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "3f6ed12a5707d388",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
