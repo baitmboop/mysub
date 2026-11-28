@@ -32887,7 +32887,8 @@
    "mahdibland",
    "xinshoucun",
    "clashnode",
-   "tg:@byxiaoxi→blog"
+   "tg:@byxiaoxi→blog",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -38534,7 +38535,8 @@
   "fp": "1755d55a41059bec",
   "sources": [
    "clashnode",
-   "tg:@wxdy666→sub"
+   "tg:@wxdy666→sub",
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -64208,6 +64210,23 @@
  },
  {
   "proto": "trojan",
+  "server": "sclass-c1.catcat321.com",
+  "port": 20086,
+  "password": "d9064589-74af-432a-9390-5d8a9da281bf",
+  "sni": "hk.catxstar.com",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "skipCertVerify": false,
+  "name": "canfingV2rayNG-67",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "bd59fe4fe0ac94a9",
+  "sources": [
+   "tg:@vpnfail_v2ray"
+  ]
+ },
+ {
+  "proto": "trojan",
   "server": "sclass-c2.catcat321.com",
   "port": 20200,
   "password": "40a8a71b-91d3-4b63-9907-5e12ad2259c1",
@@ -70697,6 +70716,28 @@
   "fp": "9f3242df3f025548",
   "sources": [
    "Auto_proxy"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "154.83.159.240",
+  "port": 8443,
+  "uuid": "0047a8bc-0025-4d45-899b-c75c669f3ede",
+  "tls": true,
+  "sni": "storage.yandex.net",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo",
+  "sid": "6f15101ff2cc4887",
+  "utls": "",
+  "reality": true,
+  "name": "canfingV2rayNG-81",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "8da6a152ed140e87",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
@@ -90180,6 +90221,28 @@
   "fp": "1e4430c8eb77eeb7",
   "sources": [
    "tg:@oneclickvpnkeys"
+  ]
+ },
+ {
+  "proto": "vless",
+  "server": "ir2f2.artativa.ir",
+  "port": 1320,
+  "uuid": "c9312e8b-28db-4c47-a968-3656a25a4173",
+  "tls": true,
+  "sni": "soft98.ir",
+  "network": "tcp",
+  "path": "",
+  "host": "",
+  "flow": "xtls-rprx-vision",
+  "pbk": "KZLp_cZajilUYAQ8guKDfeG_gJWKhqBV3d3ZL23PwDk",
+  "sid": "9995846367252a27",
+  "utls": "chrome",
+  "reality": true,
+  "name": "filembad-339",
+  "source": "tg:@vpnfail_v2ray",
+  "fp": "3a9b17b36b32f747",
+  "sources": [
+   "tg:@vpnfail_v2ray"
   ]
  },
  {
