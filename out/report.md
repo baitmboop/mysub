@@ -1,12 +1,12 @@
 # 节点池日报
 
-- 生成时间: 2026-11-27 23:52:02 (UTC)
-- 国内实测: **4492** 条有效 / 共 7567 条, 最新 2026-11-26 22:18 UTC (1.1 天前)
-- 采集去重: **7162** 个
-- 云端延迟存活: **1099** 个 (本轮送多站点复检的)
-- 免筛放行: **644** 个 (http/socks5 + 国内实测已知, 不送云端复检)
-- 复检通过: **105** 个 (送检 1099)
-- 进候选: **684** 个 (105 复检 + 644 免筛)
+- 生成时间: 2026-11-28 02:52:31 (UTC)
+- 国内实测: **4492** 条有效 / 共 7567 条, 最新 2026-11-26 22:18 UTC (1.2 天前)
+- 采集去重: **7319** 个
+- 云端延迟存活: **1233** 个 (本轮送多站点复检的)
+- 免筛放行: **603** 个 (http/socks5 + 国内实测已知, 不送云端复检)
+- 复检通过: **107** 个 (送检 1233)
+- 进候选: **643** 个 (107 复检 + 603 免筛)
 - 历史池: **300** 个 (含 7 天内可用过的)
 - 最终订阅: **80** 个节点
 - 订阅内可用率: **87.5%** (能传数据 70 / 未测后备 10 / 共 80)
@@ -42,7 +42,7 @@
 | 27 | http | 34.105.252.3:3128 | -ms | ✓ 能传数据 | 566 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 28 | http | 114.249.231.103:8888 | -ms | ✓ 能传数据 | 552 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 29 | http | 222.128.169.173:8888 | -ms | ✓ 能传数据 | 535 KB/s | extra:raw.githubusercontent.com/http.txt |
-| 30 | http | 20.98.234.24:8080 | 27ms | ✓ 能传数据 | 532 KB/s | extra:raw.githubusercontent.com/http.txt |
+| 30 | http | 20.98.234.24:8080 | 12ms | ✓ 能传数据 | 532 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 31 | http | 114.246.207.138:8888 | -ms | ✓ 能传数据 | 515 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 32 | http | 114.249.234.70:8888 | -ms | ✓ 能传数据 | 501 KB/s | extra:raw.githubusercontent.com/http.txt |
 | 33 | http | 114.249.221.91:8888 | -ms | ✓ 能传数据 | 492 KB/s | extra:raw.githubusercontent.com/http.txt |

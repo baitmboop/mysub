@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-28 07:52:02 (北京时间)
+# nodepool  生成于 2026-11-28 10:52:31 (北京时间)
 # 节点数 80  (自建 0 / 免费额度 0 / 免费池 80)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -473,67 +473,69 @@ proxies:
     cipher: aes-256-gcm
     password: pKEW8JPByTVTLtM
     udp: true
-  - name: N72 149.40.57.134
-    type: ss
-    server: 149.40.57.134
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N73 149.40.57.133
-    type: ss
-    server: 149.40.57.133
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N74 51.222.136.236
+  - name: N72 51.222.136.236
     type: ss
     server: 51.222.136.236
     port: 8882
     cipher: aes-256-gcm
     password: kDWvXYZoTBcGkC4
     udp: true
-  - name: N75 15.204.246.132
+  - name: N73 15.204.246.132
     type: ss
     server: 15.204.246.132
     port: 7307
     cipher: aes-256-gcm
     password: FoOiGlkAA9yPEGP
     udp: true
-  - name: N76 216.132.114.27
+  - name: N74 216.132.114.27
     type: socks5
     server: 216.132.114.27
     port: 62000
     udp: false
     username: JzufiJ62
     password: 75bPoRcB
-  - name: N77 69.55.49.177
-    type: socks5
-    server: 69.55.49.177
-    port: 38182
-    udp: false
-  - name: N78 38.64.138.135
+  - name: N75 38.64.138.135
     type: ss
     server: 38.64.138.135
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N79 67.220.73.247
+  - name: N76 67.220.73.247
     type: ss
     server: 67.220.73.247
     port: 443
     cipher: chacha20-ietf-poly1305
     password: DGjtV63aPW3E
     udp: true
-  - name: N80 156.146.38.170
+  - name: N77 156.146.38.170
     type: ss
     server: 156.146.38.170
     port: 443
     cipher: aes-128-gcm
     password: shadowsocks
     udp: true
+  - name: N78 156.146.38.168
+    type: ss
+    server: 156.146.38.168
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: N79 156.146.38.169
+    type: ss
+    server: 156.146.38.169
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    udp: true
+  - name: N80 23.133.176.14
+    type: http
+    server: 23.133.176.14
+    port: 443
+    udp: false
+    tls: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 节点选择
     type: select
@@ -611,15 +613,15 @@ proxy-groups:
       - N69 twmoon1-cdn-route.couldflare-cdn.com
       - N70 147.161.246.34
       - N71 15.204.247.244
-      - N72 149.40.57.134
-      - N73 149.40.57.133
-      - N74 51.222.136.236
-      - N75 15.204.246.132
-      - N76 216.132.114.27
-      - N77 69.55.49.177
-      - N78 38.64.138.135
-      - N79 67.220.73.247
-      - N80 156.146.38.170
+      - N72 51.222.136.236
+      - N73 15.204.246.132
+      - N74 216.132.114.27
+      - N75 38.64.138.135
+      - N76 67.220.73.247
+      - N77 156.146.38.170
+      - N78 156.146.38.168
+      - N79 156.146.38.169
+      - N80 23.133.176.14
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -642,15 +644,14 @@ proxy-groups:
       - N64 188.225.33.67
       - N66 free.fugui.lol
       - N71 15.204.247.244
-      - N72 149.40.57.134
-      - N73 149.40.57.133
-      - N74 51.222.136.236
-      - N75 15.204.246.132
-      - N76 216.132.114.27
-      - N77 69.55.49.177
-      - N78 38.64.138.135
-      - N79 67.220.73.247
-      - N80 156.146.38.170
+      - N72 51.222.136.236
+      - N73 15.204.246.132
+      - N74 216.132.114.27
+      - N75 38.64.138.135
+      - N76 67.220.73.247
+      - N77 156.146.38.170
+      - N78 156.146.38.168
+      - N79 156.146.38.169
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -727,15 +728,15 @@ proxy-groups:
       - N69 twmoon1-cdn-route.couldflare-cdn.com
       - N70 147.161.246.34
       - N71 15.204.247.244
-      - N72 149.40.57.134
-      - N73 149.40.57.133
-      - N74 51.222.136.236
-      - N75 15.204.246.132
-      - N76 216.132.114.27
-      - N77 69.55.49.177
-      - N78 38.64.138.135
-      - N79 67.220.73.247
-      - N80 156.146.38.170
+      - N72 51.222.136.236
+      - N73 15.204.246.132
+      - N74 216.132.114.27
+      - N75 38.64.138.135
+      - N76 67.220.73.247
+      - N77 156.146.38.170
+      - N78 156.146.38.168
+      - N79 156.146.38.169
+      - N80 23.133.176.14
 rules:
   - "IP-CIDR,127.0.0.0/8,DIRECT,no-resolve"
   - "IP-CIDR,10.0.0.0/8,DIRECT,no-resolve"
