@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-28 16:51:50 (北京时间)
+# nodepool  生成于 2026-11-28 19:49:22 (北京时间)
 # 节点数 80  (自建 0 / 免费额度 0 / 免费池 80)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -473,69 +473,70 @@ proxies:
     cipher: aes-256-gcm
     password: pKEW8JPByTVTLtM
     udp: true
-  - name: N72 51.222.136.236
+  - name: N72 193.151.163.18
     type: ss
-    server: 51.222.136.236
-    port: 8882
+    server: 193.151.163.18
+    port: 19999
     cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: N73 15.204.246.132
+  - name: N73 198.98.53.130
+    type: ss
+    server: 198.98.53.130
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: eDfN7SODQceIOmIAbtJJtK
+    udp: true
+  - name: N74 15.204.246.132
     type: ss
     server: 15.204.246.132
     port: 7307
     cipher: aes-256-gcm
     password: FoOiGlkAA9yPEGP
     udp: true
-  - name: N74 216.132.114.27
-    type: socks5
-    server: 216.132.114.27
-    port: 62000
+  - name: N75 216.107.139.82
+    type: http
+    server: 216.107.139.82
+    port: 443
     udp: false
-    username: JzufiJ62
-    password: 75bPoRcB
-  - name: N75 67.220.73.247
+    tls: true
+    skip-cert-verify: true
+    sni: 991cc80f13caf81d3426ddebb2da7f49-92ff472ddc24e5b7.apache-iv.com
+  - name: N76 67.220.73.247
     type: ss
     server: 67.220.73.247
     port: 443
     cipher: chacha20-ietf-poly1305
     password: DGjtV63aPW3E
     udp: true
-  - name: N76 156.146.38.169
-    type: ss
-    server: 156.146.38.169
-    port: 443
-    cipher: aes-128-gcm
-    password: shadowsocks
-    udp: true
-  - name: N77 200.102.179.179
+  - name: N77 216.132.114.27
+    type: socks5
+    server: 216.132.114.27
+    port: 62000
+    udp: false
+    username: JzufiJ62
+    password: 75bPoRcB
+  - name: N78 200.102.179.179
     type: ss
     server: 200.102.179.179
     port: 8388
     cipher: aes-256-gcm
     password: "itzvpn@321"
     udp: true
-  - name: N78 67.220.73.178
+  - name: N79 135.148.42.13
     type: ss
-    server: 67.220.73.178
-    port: 19999
+    server: 135.148.42.13
+    port: 8388
     cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    password: "itzvpn@321"
     udp: true
-  - name: N79 181.215.52.6
-    type: http
-    server: 181.215.52.6
-    port: 9443
-    udp: false
-    tls: true
-    skip-cert-verify: true
-  - name: N80 198.44.157.19
-    type: http
-    server: 198.44.157.19
-    port: 9443
-    udp: false
-    tls: true
-    skip-cert-verify: true
+  - name: N80 184.107.106.77
+    type: ss
+    server: 184.107.106.77
+    port: 8388
+    cipher: aes-256-gcm
+    password: "itzvpn@321"
+    udp: true
 proxy-groups:
   - name: 节点选择
     type: select
@@ -613,15 +614,15 @@ proxy-groups:
       - N69 twmoon1-cdn-route.couldflare-cdn.com
       - N70 147.161.246.34
       - N71 15.204.247.244
-      - N72 51.222.136.236
-      - N73 15.204.246.132
-      - N74 216.132.114.27
-      - N75 67.220.73.247
-      - N76 156.146.38.169
-      - N77 200.102.179.179
-      - N78 67.220.73.178
-      - N79 181.215.52.6
-      - N80 198.44.157.19
+      - N72 193.151.163.18
+      - N73 198.98.53.130
+      - N74 15.204.246.132
+      - N75 216.107.139.82
+      - N76 67.220.73.247
+      - N77 216.132.114.27
+      - N78 200.102.179.179
+      - N79 135.148.42.13
+      - N80 184.107.106.77
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -644,13 +645,14 @@ proxy-groups:
       - N64 188.225.33.67
       - N66 free.fugui.lol
       - N71 15.204.247.244
-      - N72 51.222.136.236
-      - N73 15.204.246.132
-      - N74 216.132.114.27
-      - N75 67.220.73.247
-      - N76 156.146.38.169
-      - N77 200.102.179.179
-      - N78 67.220.73.178
+      - N72 193.151.163.18
+      - N73 198.98.53.130
+      - N74 15.204.246.132
+      - N76 67.220.73.247
+      - N77 216.132.114.27
+      - N78 200.102.179.179
+      - N79 135.148.42.13
+      - N80 184.107.106.77
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -727,15 +729,15 @@ proxy-groups:
       - N69 twmoon1-cdn-route.couldflare-cdn.com
       - N70 147.161.246.34
       - N71 15.204.247.244
-      - N72 51.222.136.236
-      - N73 15.204.246.132
-      - N74 216.132.114.27
-      - N75 67.220.73.247
-      - N76 156.146.38.169
-      - N77 200.102.179.179
-      - N78 67.220.73.178
-      - N79 181.215.52.6
-      - N80 198.44.157.19
+      - N72 193.151.163.18
+      - N73 198.98.53.130
+      - N74 15.204.246.132
+      - N75 216.107.139.82
+      - N76 67.220.73.247
+      - N77 216.132.114.27
+      - N78 200.102.179.179
+      - N79 135.148.42.13
+      - N80 184.107.106.77
 rules:
   - "IP-CIDR,127.0.0.0/8,DIRECT,no-resolve"
   - "IP-CIDR,10.0.0.0/8,DIRECT,no-resolve"
