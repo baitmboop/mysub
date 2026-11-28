@@ -1,4 +1,4 @@
-# nodepool  生成于 2026-11-28 13:58:12 (北京时间)
+# nodepool  生成于 2026-11-28 16:51:50 (北京时间)
 # 节点数 80  (自建 0 / 免费额度 0 / 免费池 80)
 # 节点选择 = select, 下设"自动选择"(url-test, 每 120s 全测一遍, 取延迟最低)
 # 想改成按顺序降级, 在节点选择里切到「③ 免费池」(fallback, 成员相同)
@@ -494,45 +494,45 @@ proxies:
     udp: false
     username: JzufiJ62
     password: 75bPoRcB
-  - name: N75 38.64.138.135
-    type: ss
-    server: 38.64.138.135
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: N76 67.220.73.247
+  - name: N75 67.220.73.247
     type: ss
     server: 67.220.73.247
     port: 443
     cipher: chacha20-ietf-poly1305
     password: DGjtV63aPW3E
     udp: true
-  - name: N77 156.146.38.170
-    type: ss
-    server: 156.146.38.170
-    port: 443
-    cipher: aes-128-gcm
-    password: shadowsocks
-    udp: true
-  - name: N78 156.146.38.168
-    type: ss
-    server: 156.146.38.168
-    port: 443
-    cipher: aes-128-gcm
-    password: shadowsocks
-    udp: true
-  - name: N79 156.146.38.169
+  - name: N76 156.146.38.169
     type: ss
     server: 156.146.38.169
     port: 443
     cipher: aes-128-gcm
     password: shadowsocks
     udp: true
-  - name: N80 23.133.176.14
+  - name: N77 200.102.179.179
+    type: ss
+    server: 200.102.179.179
+    port: 8388
+    cipher: aes-256-gcm
+    password: "itzvpn@321"
+    udp: true
+  - name: N78 67.220.73.178
+    type: ss
+    server: 67.220.73.178
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: N79 181.215.52.6
     type: http
-    server: 23.133.176.14
-    port: 443
+    server: 181.215.52.6
+    port: 9443
+    udp: false
+    tls: true
+    skip-cert-verify: true
+  - name: N80 198.44.157.19
+    type: http
+    server: 198.44.157.19
+    port: 9443
     udp: false
     tls: true
     skip-cert-verify: true
@@ -616,12 +616,12 @@ proxy-groups:
       - N72 51.222.136.236
       - N73 15.204.246.132
       - N74 216.132.114.27
-      - N75 38.64.138.135
-      - N76 67.220.73.247
-      - N77 156.146.38.170
-      - N78 156.146.38.168
-      - N79 156.146.38.169
-      - N80 23.133.176.14
+      - N75 67.220.73.247
+      - N76 156.146.38.169
+      - N77 200.102.179.179
+      - N78 67.220.73.178
+      - N79 181.215.52.6
+      - N80 198.44.157.19
   - name: 自动选择
     type: url-test
     url: "https://www.gstatic.com/generate_204"
@@ -647,11 +647,10 @@ proxy-groups:
       - N72 51.222.136.236
       - N73 15.204.246.132
       - N74 216.132.114.27
-      - N75 38.64.138.135
-      - N76 67.220.73.247
-      - N77 156.146.38.170
-      - N78 156.146.38.168
-      - N79 156.146.38.169
+      - N75 67.220.73.247
+      - N76 156.146.38.169
+      - N77 200.102.179.179
+      - N78 67.220.73.178
   - name: ③ 免费池
     type: fallback
     url: "https://www.gstatic.com/generate_204"
@@ -731,12 +730,12 @@ proxy-groups:
       - N72 51.222.136.236
       - N73 15.204.246.132
       - N74 216.132.114.27
-      - N75 38.64.138.135
-      - N76 67.220.73.247
-      - N77 156.146.38.170
-      - N78 156.146.38.168
-      - N79 156.146.38.169
-      - N80 23.133.176.14
+      - N75 67.220.73.247
+      - N76 156.146.38.169
+      - N77 200.102.179.179
+      - N78 67.220.73.178
+      - N79 181.215.52.6
+      - N80 198.44.157.19
 rules:
   - "IP-CIDR,127.0.0.0/8,DIRECT,no-resolve"
   - "IP-CIDR,10.0.0.0/8,DIRECT,no-resolve"
